@@ -45,9 +45,9 @@ const STRINGS = {
     hero_answer_yes: "YES",
     hero_answer_soon: "ANY MOMENT",
     hero_sub_no:
-      "Governor rejected TVK's claim citing lack of majority. Confirmed coalition stands at 113 — five short of 118. Talks resume with Left, IUML, VCK.",
+      "Confirmed: TVK 108 + INC 5 = 113. CPI, CPI(M) publicly leaning support — state committee decisions pending today. VCK formal announcement Saturday morning. If all three flip: 119 — majority crossed.",
     hero_sub_yes: "Sworn in as the 9th Chief Minister of Tamil Nadu.",
-    hero_sub_soon: "Coalition secured. Oath imminent.",
+    hero_sub_soon: "Coalition secured. TVK 108 + INC 5 + VCK 2 + CPI 2 + CPI(M) 2 = 119. Majority crossed. Awaiting Governor's invitation.",
     live: "LIVE",
     last_updated: "Last updated",
     days_since: "days since polling",
@@ -102,9 +102,9 @@ const STRINGS = {
     hero_answer_yes: "ஆம்",
     hero_answer_soon: "எந்நேரத்திலும்",
     hero_sub_no:
-      "ஆளுநர் பெரும்பான்மை இல்லை எனக் கூறி திவிக-வின் கோரிக்கையை நிராகரித்தார். உறுதிசெய்யப்பட்ட கூட்டணி 113 — 118-க்கு ஐந்து குறைவு. இடதுசாரிகள், இ.யூ.எம்.எல், விசிக-வுடன் பேச்சுவார்த்தை மீண்டும்.",
+      "உறுதிசெய்யப்பட்டது: திவிக 108 + காங்கிரஸ் 5 = 113. சிபிஐ, சிபிஎம் ஆதரவை நோக்கி சாய்வு — மாநில குழு முடிவுகள் இன்று. விசிக சனிக்கிழமை காலை அதிகாரப்பூர்வ அறிவிப்பு. மூன்றும் ஆதரித்தால்: 119 — பெரும்பான்மை தாண்டப்படும்.",
     hero_sub_yes: "தமிழ்நாட்டின் 9-ஆம் முதலமைச்சராக பதவியேற்றார்.",
-    hero_sub_soon: "கூட்டணி உறுதி. பதவியேற்பு நெருங்குகிறது.",
+    hero_sub_soon: "கூட்டணி உறுதி. திவிக 108 + காங்கிரஸ் 5 + விசிக 2 + சிபிஐ 2 + சிபிஎம் 2 = 119. பெரும்பான்மை தாண்டியது. ஆளுநரின் அழைப்புக்காக காத்திருக்கிறது.",
     live: "நேரலை",
     last_updated: "கடைசி புதுப்பிப்பு",
     days_since: "வாக்குப்பதிவுக்குப் பின்",
@@ -138,9 +138,13 @@ const STRINGS = {
 };
 
 // Status: "no" | "soon" | "yes" — flip as situation evolves.
-// As of May 8, 2026: Governor Arlekar has rejected Vijay's claim citing lack of
-// majority. TVK + INC = 113 confirmed (short by 5). Left/IUML/VCK still in SPA
-// per their own clarification, though re-engaged in talks. Status: "no".
+// As of May 8, 2026 evening IST: Confirmed = TVK 108 + INC 5 = 113.
+// CPI and CPI(M) state committees deliberating today; both publicly leaning
+// toward support but no formal statements yet. VCK formal announcement
+// Saturday May 9 morning (Thirumavalavan's own words). IUML stays with DMK.
+// AIADMK faction signaling external support; Palaniswami opposes.
+// If CPI + CPI(M) + VCK all confirm: 119 — majority crossed. Holding "no"
+// until formal commitments land.
 const CURRENT_STATUS = "no";
 
 const CONFIRMED = [
@@ -149,15 +153,15 @@ const CONFIRMED = [
 ];
 
 const IN_TALKS = [
-  { party: "CPI", seats: 2, color: "#F87171", note: "Currently in SPA", source: 3 },
-  { party: "CPI(M)", seats: 2, color: "#EF4444", note: "Currently in SPA", source: 3 },
-  { party: "VCK", seats: 2, color: "#3B82F6", note: "Leaning, not committed", source: 4 },
-  { party: "IUML", seats: 2, color: "#10B981", note: "Currently in SPA", source: 3 },
+  { party: "CPI", seats: 2, color: "#F87171", note: "Publicly urging Governor to invite TVK; state committee decision today", source: 23 },
+  { party: "CPI(M)", seats: 2, color: "#EF4444", note: "GS M.A. Baby + TN secretary publicly backing TVK; state committee decision today", source: 24 },
+  { party: "VCK", seats: 2, color: "#3B82F6", note: "Formal announcement Saturday May 9 morning (Thirumavalavan)", source: 23 },
+  { party: "AIADMK*", seats: 47, color: "#16A34A", note: "Faction signals external support; Palaniswami opposes", source: 20 },
 ];
 
 const OPPOSITION = [
   { party: "DMK", seats: 59, color: "#1D4ED8" },
-  { party: "AIADMK", seats: 47, color: "#16A34A" },
+  { party: "IUML", seats: 2, color: "#10B981" },
   { party: "PMK", seats: 4, color: "#84CC16" },
   { party: "BJP", seats: 1, color: "#F97316" },
   { party: "DMDK", seats: 1, color: "#A855F7" },
@@ -309,6 +313,48 @@ const SOURCES = [
     url: "https://en.wikipedia.org/wiki/Tamilaga_Vettri_Kazhagam",
     date: "Mar 2026",
   },
+  {
+    n: 20,
+    label: "TVK threatens mass MLA resignation if DMK/AIADMK form govt; Vijay must vacate one of two won seats",
+    org: "LatestLY / NewsFirstPrime / Sakshi Post",
+    url: "https://www.latestly.com/india/politics/tamil-nadu-hung-assembly-vijays-tvk-warns-of-mass-mla-resignation-if-dmk-or-aiadmk-try-to-form-government-say-sources-7420839.html",
+    date: "May 8, 2026",
+  },
+  {
+    n: 21,
+    label: "Left parties huddle, VCK decision Saturday May 9 — Thirumavalavan calls 5pm video meeting",
+    org: "The Tribune",
+    url: "https://www.tribuneindia.com/news/india/support-for-vijays-tvk-in-tamil-nadu-left-in-huddle-vck-to-announce-stand-on-saturday/",
+    date: "May 8, 2026",
+  },
+  {
+    n: 22,
+    label: "Cross-party support: Kamal Haasan, P. Chidambaram, Prakash Raj back TVK's claim to government",
+    org: "India.com / The Week",
+    url: "https://www.theweek.in/news/india/2026/05/06/will-vck-back-tvk-vijay-has-48-hours-to-prove-majority-but-cpim-and-cpi-rule-out-alliance.html",
+    date: "May 8, 2026",
+  },
+  {
+    n: 23,
+    label: "The Hindu live blog: CPI/CPI(M)/VCK key to government formation; Vijay seeks floor-test path",
+    org: "The Hindu",
+    url: "https://www.thehindu.com/elections/tamil-nadu-assembly/tamil-nadu-government-formation-live-updates-cpi-cpim-vck-key-to-govt-formation-dmk-aiadmk-tvk-politics/article70953684.ece",
+    date: "May 8, 2026",
+  },
+  {
+    n: 24,
+    label: "Left reversal: CPI(M) GS M.A. Baby + TN state secretary publicly demand Governor invite TVK; CPI cites SC precedents",
+    org: "ANI / Business Standard / The Federal",
+    url: "https://aninews.in/news/national/politics/cpm-demands-governor-invite-tvks-vijay-to-form-government-in-hung-tamil-nadu-assembly20260508083526/",
+    date: "May 8, 2026",
+  },
+  {
+    n: 25,
+    label: "BusinessToday claims joint press conference at 4:30pm where VCK+CPI+CPI(M) commit support — single-source, not yet corroborated by PTI/The Hindu (which still describe VCK decision as Saturday)",
+    org: "BusinessToday",
+    url: "https://www.businesstoday.in/india/story/tamil-nadu-government-formation-thalapathy-vijay-tvk-vck-cpm-cpi-530535-2026-05-08",
+    date: "May 8, 2026",
+  },
 ];
 
 // Manifesto promises: organized by TVK's "Nine Guarantees" — the policy-theme
@@ -451,8 +497,8 @@ const TIMELINE = [
   {
     date: "May 6, 2026",
     title: "Mr. Vijay stakes claim",
-    body: "Meets Governor Arlekar. Governor demands letters of support from 118 MLAs. CM-designate convoy withdrawn.",
-    sources: [1],
+    body: "Meets Governor Arlekar. Governor demands letters of support from 118 MLAs and gives TVK a 48-hour ultimatum. CM-designate convoy withdrawn.",
+    sources: [1, 17],
   },
   {
     date: "May 6, 2026",
@@ -462,9 +508,15 @@ const TIMELINE = [
   },
   {
     date: "May 7, 2026",
-    title: "Left, IUML stay in SPA",
-    body: "CPI, CPI(M) and IUML clarify they remain in the SPA. Lone DMDK MLA Premalatha confirms continued SPA membership.",
-    sources: [3],
+    title: "Initial signals: Left + IUML stay with DMK",
+    body: "CPI, CPI(M) and IUML MLAs-elect meet Mr. Stalin at Anna Arivalayam, signal continued SPA loyalty. Lone DMDK MLA Premalatha confirms continued SPA membership. Position will reverse for Left parties next day; IUML stays.",
+    sources: [3, 17],
+  },
+  {
+    date: "May 8, 2026",
+    title: "Left parties pivot toward TVK",
+    body: "CPI(M) general secretary Mr. M.A. Baby publicly calls on Governor to invite TVK as single largest party (cites Vajpayee 1996 precedent). CPI Tamil Nadu state secretary asserts 'TVK should be allowed to form the government' per Constitution. Both parties' state committees in active deliberation; formal announcements expected today/tomorrow.",
+    sources: [23, 24],
   },
   {
     date: "May 8, 2026",
@@ -480,9 +532,33 @@ const TIMELINE = [
   },
   {
     date: "May 8, 2026",
-    title: "AIADMK faction in play",
-    body: "Reports that ~28 of 47 AIADMK MLAs have been moved to a Puducherry resort; a faction is reportedly willing to back TVK. General Secretary Palaniswami opposes.",
-    sources: [7],
+    title: "TVK threatens mass MLA resignation",
+    body: "TVK warns all 107 MLAs (Mr. Vijay must vacate one of his two seats) will resign if DMK or AIADMK attempt to form government — would force statewide bypolls.",
+    sources: [20, 21],
+  },
+  {
+    date: "May 8, 2026",
+    title: "AIADMK opens external support window",
+    body: "AIADMK leader Kovai Sathyan: 'ball is in Vijay's court' on outside support for TVK government. ~28 of 47 AIADMK MLAs reportedly at Puducherry resort. General Secretary Palaniswami opposes any tie-up.",
+    sources: [7, 17],
+  },
+  {
+    date: "May 8, 2026",
+    title: "Cross-party voices back Mr. Vijay",
+    body: "Mr. Kamal Haasan (MNM) says not inviting Mr. Vijay would 'disrespect the mandate'. Mr. P. Chidambaram cites rulebook: 'leader of single-largest party must be invited'. Mr. Prakash Raj also publicly backs TVK.",
+    sources: [22],
+  },
+  {
+    date: "May 8, 2026",
+    title: "Path to majority emerging",
+    body: "CPI publicly urges Governor to invite TVK without prior floor test, citing Supreme Court precedents. CPI(M) GS Mr. M.A. Baby and TN secretary make similar demand. Both parties' state committees meeting today; formal announcements pending. Combined potential coalition (TVK+INC+CPI+CPI(M)+VCK) = 119 if all confirm.",
+    sources: [23, 24, 25],
+  },
+  {
+    date: "May 9, 2026",
+    title: "VCK formal decision expected",
+    body: "Mr. Thol. Thirumavalavan: 'I will formally address the press tomorrow morning to announce our official stand.' VCK high-level video meeting at 5pm Friday May 8 to deliberate.",
+    sources: [21, 23],
   },
 ];
 
