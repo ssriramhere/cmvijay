@@ -99,7 +99,7 @@ const STRINGS = {
     hero_sub_no:
       "Confirmed: TVK 108 + INC 5 + CPI 2 + CPI(M) 2 = 117 — one short of 118. VCK formal announcement Saturday morning. If yes: 119 and majority crossed.",
     hero_sub_yes: "Sworn in as the 9th Chief Minister of Tamil Nadu.",
-    hero_sub_soon: "Coalition secured. TVK 108 + INC 5 + VCK 2 + CPI 2 + CPI(M) 2 = 119. Majority crossed. Awaiting Governor's invitation.",
+    hero_sub_soon: "Coalition secured. TVK 108 + INC 5 + CPI 2 + CPI(M) 2 + VCK 2 = 119. Majority crossed (118 needed). Mr. Vijay meeting Governor this evening — third meeting this week.",
     live: "LIVE",
     last_updated: "Last updated",
     days_since: "days since polling",
@@ -156,7 +156,7 @@ const STRINGS = {
     hero_sub_no:
       "உறுதிசெய்யப்பட்டது: திவிக 108 + காங்கிரஸ் 5 + சிபிஐ 2 + சிபிஎம் 2 = 117 — 118-க்கு ஒன்று குறைவு. விசிக சனிக்கிழமை காலை அதிகாரப்பூர்வ அறிவிப்பு. ஆம் என்றால்: 119 — பெரும்பான்மை தாண்டப்படும்.",
     hero_sub_yes: "தமிழ்நாட்டின் 9-ஆம் முதலமைச்சராக பதவியேற்றார்.",
-    hero_sub_soon: "கூட்டணி உறுதி. திவிக 108 + காங்கிரஸ் 5 + விசிக 2 + சிபிஐ 2 + சிபிஎம் 2 = 119. பெரும்பான்மை தாண்டியது. ஆளுநரின் அழைப்புக்காக காத்திருக்கிறது.",
+    hero_sub_soon: "கூட்டணி உறுதி. திவிக 108 + காங்கிரஸ் 5 + சிபிஐ 2 + சிபிஎம் 2 + விசிக 2 = 119. பெரும்பான்மை தாண்டியது (தேவை 118). திரு. விஜய் இன்று மாலை ஆளுநரை சந்திக்கிறார் — இந்த வாரத்தில் மூன்றாவது சந்திப்பு.",
     live: "நேரலை",
     last_updated: "கடைசி புதுப்பிப்பு",
     days_since: "வாக்குப்பதிவுக்குப் பின்",
@@ -190,21 +190,23 @@ const STRINGS = {
 };
 
 // Status: "no" | "soon" | "yes" — flip as situation evolves.
-// As of May 8, 2026 evening IST: CPI and CPI(M) have formally backed TVK
-// per The Hindu and Dinamalar. Confirmed = TVK 108 + INC 5 + CPI 2 + CPI(M) 2 = 117.
-// One short of 118. VCK formal announcement Saturday May 9 morning will likely
-// settle it. IUML stays with DMK. AIADMK faction signals external support.
-const CURRENT_STATUS = "no";
+// As of May 8, 2026 evening IST: VCK has joined CPI + CPI(M) + INC in backing
+// TVK per India TV, Deccan Chronicle, and WION (multi-source corroborated).
+// Coalition = TVK 108 + INC 5 + CPI 2 + CPI(M) 2 + VCK 2 = 119. MAJORITY CROSSED.
+// (After Mr. Vijay vacates one of his two won seats, operating count = 118 — exact.)
+// Mr. Vijay meeting Governor Arlekar this evening — his third meeting this week.
+// Awaiting Governor's invitation to swear in. Status: "soon".
+const CURRENT_STATUS = "soon";
 
 const CONFIRMED = [
   { party: "TVK", seats: 108, color: "#E63946", source: 1 },
   { party: "INC", seats: 5, color: "#FCD34D", source: 2 },
   { party: "CPI", seats: 2, color: "#F87171", source: 23 },
   { party: "CPI(M)", seats: 2, color: "#EF4444", source: 23 },
+  { party: "VCK", seats: 2, color: "#3B82F6", source: 27 },
 ];
 
 const IN_TALKS = [
-  { party: "VCK", seats: 2, color: "#3B82F6", note: "Formal announcement Saturday May 9 morning (Thirumavalavan)", source: 23 },
   { party: "AIADMK*", seats: 47, color: "#16A34A", note: "Faction signals external support; Palaniswami opposes", source: 20 },
 ];
 
@@ -411,6 +413,27 @@ const SOURCES = [
     url: "https://www.dinamalar.com",
     date: "May 8, 2026",
   },
+  {
+    n: 27,
+    label: "India TV — TVK secures majority as VCK, CPI(M) and CPI extend support; Vijay to meet Governor evening of May 8",
+    org: "India TV",
+    url: "https://www.indiatvnews.com/tamil-nadu/chennai-tamil-nadu-vijay-s-tvk-secures-numbers-to-form-govt-as-vck-cpm-and-cpi-extend-support-say-sources-2026-05-08-1040396",
+    date: "May 8, 2026",
+  },
+  {
+    n: 28,
+    label: "Deccan Chronicle — Vijay reaches majority with INC, VCK, CPI, CPI(M); 119 total / 118 after seat vacation",
+    org: "Deccan Chronicle",
+    url: "https://www.deccanchronicle.com/southern-states/tamil-nadu/vijay-reaches-majority-mark-as-tvk-gets-support-from-congress-vck-cpi-and-cpim-1955434",
+    date: "May 8, 2026",
+  },
+  {
+    n: 29,
+    label: "WION — TVK crosses majority mark with VCK and Left support; alliance at 119",
+    org: "WION",
+    url: "https://www.wionews.com/india-news/vijay-s-tvk-crosses-majority-mark-in-tamil-nadu-with-vck-and-left-support-1778238339010",
+    date: "May 8, 2026",
+  },
 ];
 
 // Manifesto promises: organized by TVK's "Nine Guarantees" — the policy-theme
@@ -611,10 +634,16 @@ const TIMELINE = [
     sources: [23, 26, 24],
   },
   {
-    date: "May 9, 2026",
-    title: "VCK formal decision expected",
-    body: "Mr. Thol. Thirumavalavan: 'I will formally address the press tomorrow morning to announce our official stand.' VCK high-level video meeting at 5pm Friday May 8 to deliberate. If yes: coalition reaches 119, majority crossed.",
-    sources: [21, 23],
+    date: "May 8, 2026 · evening",
+    title: "VCK joins — majority crossed",
+    body: "VCK announces support for the Mr. Vijay-led alliance per India TV, Deccan Chronicle, and WION. Coalition reaches TVK 108 + INC 5 + CPI 2 + CPI(M) 2 + VCK 2 = 119 — one above 118 majority. After Mr. Vijay vacates one of his two won seats, operating count = 118 (exact majority).",
+    sources: [27, 28, 29],
+  },
+  {
+    date: "May 8, 2026 · evening",
+    title: "Mr. Vijay's third meeting with Governor",
+    body: "Mr. Vijay meets Governor Arlekar to formally re-stake claim with the new 119 coalition. Third such meeting in seven days. Governor's invitation to form government now anticipated.",
+    sources: [27],
   },
 ];
 
