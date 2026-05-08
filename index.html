@@ -97,7 +97,7 @@ const STRINGS = {
     hero_answer_yes: "YES",
     hero_answer_soon: "ANY MOMENT",
     hero_sub_no:
-      "Confirmed: TVK 108 + INC 5 = 113. CPI, CPI(M) publicly leaning support — state committee decisions pending today. VCK formal announcement Saturday morning. If all three flip: 119 — majority crossed.",
+      "Confirmed: TVK 108 + INC 5 + CPI 2 + CPI(M) 2 = 117 — one short of 118. VCK formal announcement Saturday morning. If yes: 119 and majority crossed.",
     hero_sub_yes: "Sworn in as the 9th Chief Minister of Tamil Nadu.",
     hero_sub_soon: "Coalition secured. TVK 108 + INC 5 + VCK 2 + CPI 2 + CPI(M) 2 = 119. Majority crossed. Awaiting Governor's invitation.",
     live: "LIVE",
@@ -154,7 +154,7 @@ const STRINGS = {
     hero_answer_yes: "ஆம்",
     hero_answer_soon: "எந்நேரத்திலும்",
     hero_sub_no:
-      "உறுதிசெய்யப்பட்டது: திவிக 108 + காங்கிரஸ் 5 = 113. சிபிஐ, சிபிஎம் ஆதரவை நோக்கி சாய்வு — மாநில குழு முடிவுகள் இன்று. விசிக சனிக்கிழமை காலை அதிகாரப்பூர்வ அறிவிப்பு. மூன்றும் ஆதரித்தால்: 119 — பெரும்பான்மை தாண்டப்படும்.",
+      "உறுதிசெய்யப்பட்டது: திவிக 108 + காங்கிரஸ் 5 + சிபிஐ 2 + சிபிஎம் 2 = 117 — 118-க்கு ஒன்று குறைவு. விசிக சனிக்கிழமை காலை அதிகாரப்பூர்வ அறிவிப்பு. ஆம் என்றால்: 119 — பெரும்பான்மை தாண்டப்படும்.",
     hero_sub_yes: "தமிழ்நாட்டின் 9-ஆம் முதலமைச்சராக பதவியேற்றார்.",
     hero_sub_soon: "கூட்டணி உறுதி. திவிக 108 + காங்கிரஸ் 5 + விசிக 2 + சிபிஐ 2 + சிபிஎம் 2 = 119. பெரும்பான்மை தாண்டியது. ஆளுநரின் அழைப்புக்காக காத்திருக்கிறது.",
     live: "நேரலை",
@@ -190,23 +190,20 @@ const STRINGS = {
 };
 
 // Status: "no" | "soon" | "yes" — flip as situation evolves.
-// As of May 8, 2026 evening IST: Confirmed = TVK 108 + INC 5 = 113.
-// CPI and CPI(M) state committees deliberating today; both publicly leaning
-// toward support but no formal statements yet. VCK formal announcement
-// Saturday May 9 morning (Thirumavalavan's own words). IUML stays with DMK.
-// AIADMK faction signaling external support; Palaniswami opposes.
-// If CPI + CPI(M) + VCK all confirm: 119 — majority crossed. Holding "no"
-// until formal commitments land.
+// As of May 8, 2026 evening IST: CPI and CPI(M) have formally backed TVK
+// per The Hindu and Dinamalar. Confirmed = TVK 108 + INC 5 + CPI 2 + CPI(M) 2 = 117.
+// One short of 118. VCK formal announcement Saturday May 9 morning will likely
+// settle it. IUML stays with DMK. AIADMK faction signals external support.
 const CURRENT_STATUS = "no";
 
 const CONFIRMED = [
   { party: "TVK", seats: 108, color: "#E63946", source: 1 },
   { party: "INC", seats: 5, color: "#FCD34D", source: 2 },
+  { party: "CPI", seats: 2, color: "#F87171", source: 23 },
+  { party: "CPI(M)", seats: 2, color: "#EF4444", source: 23 },
 ];
 
 const IN_TALKS = [
-  { party: "CPI", seats: 2, color: "#F87171", note: "Publicly urging Governor to invite TVK; state committee decision today", source: 23 },
-  { party: "CPI(M)", seats: 2, color: "#EF4444", note: "GS M.A. Baby + TN secretary publicly backing TVK; state committee decision today", source: 24 },
   { party: "VCK", seats: 2, color: "#3B82F6", note: "Formal announcement Saturday May 9 morning (Thirumavalavan)", source: 23 },
   { party: "AIADMK*", seats: 47, color: "#16A34A", note: "Faction signals external support; Palaniswami opposes", source: 20 },
 ];
@@ -407,6 +404,13 @@ const SOURCES = [
     url: "https://www.businesstoday.in/india/story/tamil-nadu-government-formation-thalapathy-vijay-tvk-vck-cpm-cpi-530535-2026-05-08",
     date: "May 8, 2026",
   },
+  {
+    n: 26,
+    label: "Dinamalar — Tamil-language coverage of CPI and CPI(M) formal support announcement",
+    org: "Dinamalar",
+    url: "https://www.dinamalar.com",
+    date: "May 8, 2026",
+  },
 ];
 
 // Manifesto promises: organized by TVK's "Nine Guarantees" — the policy-theme
@@ -602,14 +606,14 @@ const TIMELINE = [
   },
   {
     date: "May 8, 2026",
-    title: "Path to majority emerging",
-    body: "CPI publicly urges Governor to invite TVK without prior floor test, citing Supreme Court precedents. CPI(M) GS Mr. M.A. Baby and TN secretary make similar demand. Both parties' state committees meeting today; formal announcements pending. Combined potential coalition (TVK+INC+CPI+CPI(M)+VCK) = 119 if all confirm.",
-    sources: [23, 24, 25],
+    title: "CPI and CPI(M) formally back TVK",
+    body: "Both Left parties extend formal support to the Mr. Vijay-led alliance per The Hindu and Dinamalar. CPI(M) GS Mr. M.A. Baby cites Vajpayee 1996 precedent. CPI urges Governor to invite TVK without prior floor test, citing Supreme Court precedents. Coalition rises to TVK 108 + INC 5 + CPI 2 + CPI(M) 2 = 117 — one short of 118.",
+    sources: [23, 26, 24],
   },
   {
     date: "May 9, 2026",
     title: "VCK formal decision expected",
-    body: "Mr. Thol. Thirumavalavan: 'I will formally address the press tomorrow morning to announce our official stand.' VCK high-level video meeting at 5pm Friday May 8 to deliberate.",
+    body: "Mr. Thol. Thirumavalavan: 'I will formally address the press tomorrow morning to announce our official stand.' VCK high-level video meeting at 5pm Friday May 8 to deliberate. If yes: coalition reaches 119, majority crossed.",
     sources: [21, 23],
   },
 ];
