@@ -99,7 +99,7 @@ const STRINGS = {
     hero_sub_no:
       "Confirmed: TVK 108 + INC 5 + CPI 2 + CPI(M) 2 = 117 — one short of 118. VCK passed internal resolutions May 8 but Mr. Thirumavalavan's formal announcement is Saturday May 9 morning. If yes: 119, majority crossed.",
     hero_sub_yes: "Sworn in as the 9th Chief Minister of Tamil Nadu.",
-    hero_sub_soon: "Coalition secured. TVK 108 + INC 5 + CPI 2 + CPI(M) 2 + VCK 2 = 119. Majority crossed (118 needed). Mr. Vijay met Governor tonight — third meeting this week.",
+    hero_sub_soon: "Oath ceremony scheduled: Saturday May 9, 11am IST. VCK joins TVK + INC + CPI + CPI(M) — coalition at 119. Mr. Vijay's third Governor meeting tonight delivered support letters. AMMK files counter-letter for Mr. Palaniswami; majority math contested by Lok Bhavan sources.",
     live: "LIVE",
     last_updated: "Last updated",
     days_since: "days since polling",
@@ -156,7 +156,7 @@ const STRINGS = {
     hero_sub_no:
       "உறுதிசெய்யப்பட்டது: திவிக 108 + காங்கிரஸ் 5 + சிபிஐ 2 + சிபிஎம் 2 = 117 — 118-க்கு ஒன்று குறைவு. விசிக மே 8 அன்று உள்ளக தீர்மானங்கள் நிறைவேற்றியது; திரு. திருமாவளவன் அதிகாரப்பூர்வ அறிவிப்பு சனிக்கிழமை மே 9 காலையில். ஆம் என்றால்: 119, பெரும்பான்மை தாண்டப்படும்.",
     hero_sub_yes: "தமிழ்நாட்டின் 9-ஆம் முதலமைச்சராக பதவியேற்றார்.",
-    hero_sub_soon: "கூட்டணி உறுதி. திவிக 108 + காங்கிரஸ் 5 + சிபிஐ 2 + சிபிஎம் 2 + விசிக 2 = 119. பெரும்பான்மை தாண்டியது (தேவை 118). திரு. விஜய் இன்றிரவு ஆளுநரை சந்தித்தார் — இந்த வாரத்தில் மூன்றாவது சந்திப்பு.",
+    hero_sub_soon: "பதவியேற்பு திட்டமிடப்பட்டது: சனிக்கிழமை மே 9, காலை 11 மணி (இ.நே.). விசிக சேர்ந்து கூட்டணி 119-ஐ எட்டியது. திரு. விஜய்யின் மூன்றாவது ஆளுநர் சந்திப்பில் ஆதரவு கடிதங்கள் ஒப்படைக்கப்பட்டன. அமமுக எதிர்-கடிதம் திரு. பழனிசாமிக்கு; பெரும்பான்மை கணக்கு லோக் பவன் ஆதாரங்களால் சர்ச்சைக்குரியது.",
     live: "நேரலை",
     last_updated: "கடைசி புதுப்பிப்பு",
     days_since: "வாக்குப்பதிவுக்குப் பின்",
@@ -190,25 +190,25 @@ const STRINGS = {
 };
 
 // Status: "no" | "soon" | "yes" — flip as situation evolves.
-// As of late May 8, 2026: CPI and CPI(M) have formally and unconditionally
-// committed support at a joint press conference. VCK held its high-level
-// meeting and passed resolutions, but its official spokesperson explicitly
-// stated the decision will be announced by Mr. Thirumavalavan on May 9
-// morning, and called out earlier media reports of VCK support as premature.
-// Confirmed coalition = TVK 108 + INC 5 + CPI 2 + CPI(M) 2 = 117 — one
-// short of 118. Status: "no" until VCK formally lands on Saturday morning.
-const CURRENT_STATUS = "no";
+// As of late May 8, 2026: Mr. Thirumavalavan formally announces VCK support.
+// Oath scheduled for Saturday May 9, 11am IST (per India TV reporting).
+// Confirmed coalition = TVK 108 + INC 5 + CPI 2 + CPI(M) 2 + VCK 2 = 119.
+// Operational count after Mr. Vijay vacates one of two won seats and one MLA
+// becomes Speaker = 117. Governor's office sources reportedly cite only 116
+// — disputed. AMMK files counter-letter for AIADMK's Mr. Palaniswami.
+// IUML clarifies it stays with DMK and has no role in new government.
+const CURRENT_STATUS = "soon";
 
 const CONFIRMED = [
   { party: "TVK", seats: 108, color: "#E63946", source: 1 },
   { party: "INC", seats: 5, color: "#FCD34D", source: 2 },
   { party: "CPI", seats: 2, color: "#F87171", source: 23 },
   { party: "CPI(M)", seats: 2, color: "#EF4444", source: 23 },
+  { party: "VCK", seats: 2, color: "#3B82F6", source: 31 },
 ];
 
 const IN_TALKS = [
-  { party: "VCK", seats: 2, color: "#3B82F6", note: "Resolutions passed at May 8 meeting; Mr. Thirumavalavan formal announcement Saturday May 9 morning. Party publicly disputes premature media reports.", source: 30 },
-  { party: "AIADMK*", seats: 47, color: "#16A34A", note: "Faction signals external support; Palaniswami opposes", source: 20 },
+  { party: "AIADMK*", seats: 47, color: "#16A34A", note: "Faction signals external support; AMMK letter claims 120 MLAs back EPS — disputed", source: 20 },
 ];
 
 const OPPOSITION = [
@@ -442,6 +442,27 @@ const SOURCES = [
     url: "https://www.thenewsminute.com/tamil-nadu/tvk-or-dmk-vck-to-announce-decision-on-may-9-says-media-creating-confusion",
     date: "May 8, 2026",
   },
+  {
+    n: 31,
+    label: "The Hindu — Mr. Thirumavalavan formally announces VCK support for TVK ahead of May 9",
+    org: "The Hindu",
+    url: "https://www.thehindu.com/elections/tamil-nadu-assembly/viduthalai-chiruthaigal-katchi-vck-thirumavalavan-support-to-vijay-tvk-may-9-2026/article70958026.ece",
+    date: "May 8, 2026",
+  },
+  {
+    n: 32,
+    label: "India TV live blog — VCK demands Deputy CM post for Mr. Thirumavalavan; oath scheduled May 9 11AM; IUML stays with DMK; AMMK counter-letter for Mr. Palaniswami",
+    org: "India TV",
+    url: "https://www.indiatvnews.com/tamil-nadu/news-tamil-nadu-government-formation-live-updates-c-joseph-vijay-tvk-dmk-aiadmk-congress-left-bjp-governor-rajendra-arlekar-tamil-nadu-election-result-2026-1040347",
+    date: "May 8, 2026",
+  },
+  {
+    n: 33,
+    label: "The Wire — TVK chief crosses halfway mark, oath at Jawaharlal Nehru Indoor Stadium possible; conflicting reports on majority math (117 vs 116)",
+    org: "The Wire",
+    url: "https://m.thewire.in/article/politics/tvk-chief-vijay-makes-it-across-halfway-mark-will-be-sworn-in-as-tamil-nadu-chief-minister-on-saturday",
+    date: "May 8, 2026",
+  },
 ];
 
 // Manifesto promises: organized by TVK's "Nine Guarantees" — the policy-theme
@@ -643,15 +664,39 @@ const TIMELINE = [
   },
   {
     date: "May 8, 2026 · evening",
-    title: "VCK passes resolutions, defers formal announcement",
-    body: "VCK high-level committee meets via video conferencing at 5pm under the leadership of TN secretary Mr. M. Veerapandian. Spokesperson Mr. Ku Ka Pavalan releases late-night statement: 'Resolutions have been passed; our leader will officially announce them tomorrow.' Statement explicitly disputes 'two differing and contradictory views' in media as 'creating confusion'. Formal announcement deferred to Saturday May 9 morning by Mr. Thirumavalavan.",
-    sources: [30],
+    title: "VCK formally backs TVK",
+    body: "Mr. Thirumavalavan formally announces VCK's support for the TVK-led alliance per The Hindu. Letters of support handed to Mr. Vijay alongside CPI and CPI(M) commitments. Coalition crosses 118.",
+    sources: [31, 30],
+  },
+  {
+    date: "May 8, 2026 · evening",
+    title: "VCK demands Deputy CM post for Mr. Thirumavalavan",
+    body: "VCK reportedly seeks the Deputy Chief Minister's post for Mr. Thirumavalavan in the new government. Cabinet structure under negotiation.",
+    sources: [32],
+  },
+  {
+    date: "May 8, 2026 · evening",
+    title: "IUML clarifies: stays with DMK, no role in new government",
+    body: "Indian Union Muslim League issues clarification: it had only expressed willingness to support the Governor's decision on government formation, not the structure of the new administration. IUML continues to remain part of the DMK alliance.",
+    sources: [32],
   },
   {
     date: "May 8, 2026 · evening",
     title: "Mr. Vijay's third meeting with Governor",
-    body: "Mr. Vijay met Governor Arlekar tonight to formally re-stake claim with the 117-strong coalition (TVK + INC + CPI + CPI(M)). Third such meeting in seven days. Governor's response now anticipated.",
+    body: "Mr. Vijay met Governor Arlekar tonight with letters of support from Congress, CPI, CPI(M), and now VCK. Third such meeting in seven days.",
     sources: [27, 30],
+  },
+  {
+    date: "May 8, 2026 · 8:05 PM",
+    title: "Oath ceremony scheduled — May 9, 11 AM",
+    body: "Per India TV: Mr. Vijay set to take oath as the 9th Chief Minister of Tamil Nadu on Saturday May 9 at 11 AM. Reports suggest the ceremony at Jawaharlal Nehru Indoor Stadium in Chennai. Possible attendees include Congress's Mr. Rahul Gandhi and Mr. Mallikarjun Kharge. NDTV separately reports no swearing-in (majority not proven). Lok Bhavan yet to confirm.",
+    sources: [32, 33],
+  },
+  {
+    date: "May 8, 2026 · evening",
+    title: "AMMK Mr. Dhinakaran files counter-letter for AIADMK",
+    body: "AMMK general secretary Mr. T.T.V. Dhinakaran reportedly submits letter to Governor stating Mr. E. Palaniswami enjoys support of 120 MLAs and should be granted permission to stake claim. Calls TVK letter 'horse trading and forgery'. Lone AMMK MLA-elect Kamaraj S declared loyal to NDA/AIADMK.",
+    sources: [32],
   },
   {
     date: "May 8, 2026",
