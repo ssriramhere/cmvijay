@@ -45,9 +45,9 @@ const STRINGS = {
     hero_answer_yes: "YES",
     hero_answer_soon: "ANY MOMENT",
     hero_sub_no:
-      "Confirmed: TVK 108 + INC 5 + CPI 2 + CPI(M) 2 = 117 — one short of 118. VCK formal announcement Saturday morning. If yes: 119 and majority crossed.",
+      "Confirmed: TVK 108 + INC 5 + CPI 2 + CPI(M) 2 = 117 — one short of 118. VCK passed internal resolutions May 8 but Mr. Thirumavalavan's formal announcement is Saturday May 9 morning. If yes: 119, majority crossed.",
     hero_sub_yes: "Sworn in as the 9th Chief Minister of Tamil Nadu.",
-    hero_sub_soon: "Coalition secured. TVK 108 + INC 5 + CPI 2 + CPI(M) 2 + VCK 2 = 119. Majority crossed (118 needed). Mr. Vijay meeting Governor this evening — third meeting this week.",
+    hero_sub_soon: "Coalition secured. TVK 108 + INC 5 + CPI 2 + CPI(M) 2 + VCK 2 = 119. Majority crossed (118 needed). Mr. Vijay met Governor tonight — third meeting this week.",
     live: "LIVE",
     last_updated: "Last updated",
     days_since: "days since polling",
@@ -102,9 +102,9 @@ const STRINGS = {
     hero_answer_yes: "ஆம்",
     hero_answer_soon: "எந்நேரத்திலும்",
     hero_sub_no:
-      "உறுதிசெய்யப்பட்டது: திவிக 108 + காங்கிரஸ் 5 + சிபிஐ 2 + சிபிஎம் 2 = 117 — 118-க்கு ஒன்று குறைவு. விசிக சனிக்கிழமை காலை அதிகாரப்பூர்வ அறிவிப்பு. ஆம் என்றால்: 119 — பெரும்பான்மை தாண்டப்படும்.",
+      "உறுதிசெய்யப்பட்டது: திவிக 108 + காங்கிரஸ் 5 + சிபிஐ 2 + சிபிஎம் 2 = 117 — 118-க்கு ஒன்று குறைவு. விசிக மே 8 அன்று உள்ளக தீர்மானங்கள் நிறைவேற்றியது; திரு. திருமாவளவன் அதிகாரப்பூர்வ அறிவிப்பு சனிக்கிழமை மே 9 காலையில். ஆம் என்றால்: 119, பெரும்பான்மை தாண்டப்படும்.",
     hero_sub_yes: "தமிழ்நாட்டின் 9-ஆம் முதலமைச்சராக பதவியேற்றார்.",
-    hero_sub_soon: "கூட்டணி உறுதி. திவிக 108 + காங்கிரஸ் 5 + சிபிஐ 2 + சிபிஎம் 2 + விசிக 2 = 119. பெரும்பான்மை தாண்டியது (தேவை 118). திரு. விஜய் இன்று மாலை ஆளுநரை சந்திக்கிறார் — இந்த வாரத்தில் மூன்றாவது சந்திப்பு.",
+    hero_sub_soon: "கூட்டணி உறுதி. திவிக 108 + காங்கிரஸ் 5 + சிபிஐ 2 + சிபிஎம் 2 + விசிக 2 = 119. பெரும்பான்மை தாண்டியது (தேவை 118). திரு. விஜய் இன்றிரவு ஆளுநரை சந்தித்தார் — இந்த வாரத்தில் மூன்றாவது சந்திப்பு.",
     live: "நேரலை",
     last_updated: "கடைசி புதுப்பிப்பு",
     days_since: "வாக்குப்பதிவுக்குப் பின்",
@@ -138,23 +138,24 @@ const STRINGS = {
 };
 
 // Status: "no" | "soon" | "yes" — flip as situation evolves.
-// As of May 8, 2026 evening IST: VCK has joined CPI + CPI(M) + INC in backing
-// TVK per India TV, Deccan Chronicle, and WION (multi-source corroborated).
-// Coalition = TVK 108 + INC 5 + CPI 2 + CPI(M) 2 + VCK 2 = 119. MAJORITY CROSSED.
-// (After Mr. Vijay vacates one of his two won seats, operating count = 118 — exact.)
-// Mr. Vijay meeting Governor Arlekar this evening — his third meeting this week.
-// Awaiting Governor's invitation to swear in. Status: "soon".
-const CURRENT_STATUS = "soon";
+// As of late May 8, 2026: CPI and CPI(M) have formally and unconditionally
+// committed support at a joint press conference. VCK held its high-level
+// meeting and passed resolutions, but its official spokesperson explicitly
+// stated the decision will be announced by Mr. Thirumavalavan on May 9
+// morning, and called out earlier media reports of VCK support as premature.
+// Confirmed coalition = TVK 108 + INC 5 + CPI 2 + CPI(M) 2 = 117 — one
+// short of 118. Status: "no" until VCK formally lands on Saturday morning.
+const CURRENT_STATUS = "no";
 
 const CONFIRMED = [
   { party: "TVK", seats: 108, color: "#E63946", source: 1 },
   { party: "INC", seats: 5, color: "#FCD34D", source: 2 },
   { party: "CPI", seats: 2, color: "#F87171", source: 23 },
   { party: "CPI(M)", seats: 2, color: "#EF4444", source: 23 },
-  { party: "VCK", seats: 2, color: "#3B82F6", source: 27 },
 ];
 
 const IN_TALKS = [
+  { party: "VCK", seats: 2, color: "#3B82F6", note: "Resolutions passed at May 8 meeting; Mr. Thirumavalavan formal announcement Saturday May 9 morning. Party publicly disputes premature media reports.", source: 30 },
   { party: "AIADMK*", seats: 47, color: "#16A34A", note: "Faction signals external support; Palaniswami opposes", source: 20 },
 ];
 
@@ -363,23 +364,30 @@ const SOURCES = [
   },
   {
     n: 27,
-    label: "India TV — TVK secures majority as VCK, CPI(M) and CPI extend support; Vijay to meet Governor evening of May 8",
+    label: "India TV — sources-based 'TVK secures numbers' report (later disputed by VCK's own statement, May 8 night)",
     org: "India TV",
     url: "https://www.indiatvnews.com/tamil-nadu/chennai-tamil-nadu-vijay-s-tvk-secures-numbers-to-form-govt-as-vck-cpm-and-cpi-extend-support-say-sources-2026-05-08-1040396",
     date: "May 8, 2026",
   },
   {
     n: 28,
-    label: "Deccan Chronicle — Vijay reaches majority with INC, VCK, CPI, CPI(M); 119 total / 118 after seat vacation",
+    label: "Deccan Chronicle — '119 majority' framing (premature; VCK formal announcement still pending May 9)",
     org: "Deccan Chronicle",
     url: "https://www.deccanchronicle.com/southern-states/tamil-nadu/vijay-reaches-majority-mark-as-tvk-gets-support-from-congress-vck-cpi-and-cpim-1955434",
     date: "May 8, 2026",
   },
   {
     n: 29,
-    label: "WION — TVK crosses majority mark with VCK and Left support; alliance at 119",
+    label: "WION — '119 with VCK and Left support' framing (premature; VCK formal announcement still pending May 9)",
     org: "WION",
     url: "https://www.wionews.com/india-news/vijay-s-tvk-crosses-majority-mark-in-tamil-nadu-with-vck-and-left-support-1778238339010",
+    date: "May 8, 2026",
+  },
+  {
+    n: 30,
+    label: "The News Minute — VCK's own late-night statement clarifying decision deferred to Saturday May 9; party explicitly disputes media reports of premature support",
+    org: "The News Minute",
+    url: "https://www.thenewsminute.com/tamil-nadu/tvk-or-dmk-vck-to-announce-decision-on-may-9-says-media-creating-confusion",
     date: "May 8, 2026",
   },
 ];
@@ -583,15 +591,27 @@ const TIMELINE = [
   },
   {
     date: "May 8, 2026 · evening",
-    title: "VCK joins — majority crossed",
-    body: "VCK announces support for the Mr. Vijay-led alliance per India TV, Deccan Chronicle, and WION. Coalition reaches TVK 108 + INC 5 + CPI 2 + CPI(M) 2 + VCK 2 = 119 — one above 118 majority. After Mr. Vijay vacates one of his two won seats, operating count = 118 (exact majority).",
-    sources: [27, 28, 29],
+    title: "VCK passes resolutions, defers formal announcement",
+    body: "VCK high-level committee meets via video conferencing at 5pm under the leadership of TN secretary Mr. M. Veerapandian. Spokesperson Mr. Ku Ka Pavalan releases late-night statement: 'Resolutions have been passed; our leader will officially announce them tomorrow.' Statement explicitly disputes 'two differing and contradictory views' in media as 'creating confusion'. Formal announcement deferred to Saturday May 9 morning by Mr. Thirumavalavan.",
+    sources: [30],
   },
   {
     date: "May 8, 2026 · evening",
     title: "Mr. Vijay's third meeting with Governor",
-    body: "Mr. Vijay meets Governor Arlekar to formally re-stake claim with the new 119 coalition. Third such meeting in seven days. Governor's invitation to form government now anticipated.",
-    sources: [27],
+    body: "Mr. Vijay met Governor Arlekar tonight to formally re-stake claim with the 117-strong coalition (TVK + INC + CPI + CPI(M)). Third such meeting in seven days. Governor's response now anticipated.",
+    sources: [27, 30],
+  },
+  {
+    date: "May 8, 2026",
+    title: "Supreme Court writ petition filed",
+    body: "Public-interest writ filed in the Supreme Court seeking direction that the Governor is duty-bound to invite Mr. Vijay — as leader of the single largest party — to form the government, and to prove the majority on the floor of the House thereafter. Constitutional escalation of the formation crisis.",
+    sources: [23],
+  },
+  {
+    date: "May 8, 2026",
+    title: "AMMK denies TVK support",
+    body: "AMMK chief Mr. T.T.V. Dhinakaran refutes media reports that his party had extended support to TVK. Note: AMMK has minimal seat count in the new Assembly; impact on coalition arithmetic is negligible but underscores the active rumor-and-denial cycle around alliance formation.",
+    sources: [23],
   },
 ];
 
