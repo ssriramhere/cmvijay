@@ -47,7 +47,7 @@ const STRINGS = {
     hero_sub_no:
       "Confirmed: TVK 108 + INC 5 + CPI 2 + CPI(M) 2 = 117 — one short of 118. VCK passed internal resolutions May 8 but Mr. Thirumavalavan's formal announcement is Saturday May 9 morning. If yes: 119, majority crossed.",
     hero_sub_yes: "Sworn in as the 9th Chief Minister of Tamil Nadu.",
-    hero_sub_soon: "Oath ceremony scheduled: Saturday May 9, 11am IST. VCK joins TVK + INC + CPI + CPI(M) — coalition at 119. Mr. Vijay's third Governor meeting tonight delivered support letters. AMMK files counter-letter for Mr. Palaniswami; majority math contested by Lok Bhavan sources.",
+    hero_sub_soon: "Governor formally invites Mr. Vijay to form the government. Oath: Sunday May 10, 11 AM IST at Jawaharlal Nehru Indoor Stadium, Chennai. Confidence vote in Assembly by May 13. Coalition at 121 (TVK 108 + INC 5 + CPI 2 + CPI(M) 2 + VCK 2 + IUML 2). First non-DMK / non-AIADMK government in Tamil Nadu since 1967.",
     live: "LIVE",
     last_updated: "Last updated",
     days_since: "days since polling",
@@ -104,7 +104,7 @@ const STRINGS = {
     hero_sub_no:
       "உறுதிசெய்யப்பட்டது: திவிக 108 + காங்கிரஸ் 5 + சிபிஐ 2 + சிபிஎம் 2 = 117 — 118-க்கு ஒன்று குறைவு. விசிக மே 8 அன்று உள்ளக தீர்மானங்கள் நிறைவேற்றியது; திரு. திருமாவளவன் அதிகாரப்பூர்வ அறிவிப்பு சனிக்கிழமை மே 9 காலையில். ஆம் என்றால்: 119, பெரும்பான்மை தாண்டப்படும்.",
     hero_sub_yes: "தமிழ்நாட்டின் 9-ஆம் முதலமைச்சராக பதவியேற்றார்.",
-    hero_sub_soon: "பதவியேற்பு திட்டமிடப்பட்டது: சனிக்கிழமை மே 9, காலை 11 மணி (இ.நே.). விசிக சேர்ந்து கூட்டணி 119-ஐ எட்டியது. திரு. விஜய்யின் மூன்றாவது ஆளுநர் சந்திப்பில் ஆதரவு கடிதங்கள் ஒப்படைக்கப்பட்டன. அமமுக எதிர்-கடிதம் திரு. பழனிசாமிக்கு; பெரும்பான்மை கணக்கு லோக் பவன் ஆதாரங்களால் சர்ச்சைக்குரியது.",
+    hero_sub_soon: "ஆளுநர் திரு. விஜயை அரசு அமைக்க அதிகாரப்பூர்வமாக அழைத்தார். பதவியேற்பு: ஞாயிற்றுக்கிழமை மே 10, காலை 11 மணி (இ.நே.) — ஜவஹர்லால் நேரு உட்புற அரங்கம், சென்னை. மே 13-க்குள் சட்டப்பேரவையில் நம்பிக்கை வாக்கெடுப்பு. கூட்டணி 121 (திவிக 108 + காங்கிரஸ் 5 + சிபிஐ 2 + சிபிஎம் 2 + விசிக 2 + இ.யூ.எம்.எல் 2). 1967-க்குப் பிறகு தமிழ்நாட்டில் முதல் முறையாக திமுக-அதிமுக அல்லாத அரசு.",
     live: "நேரலை",
     last_updated: "கடைசி புதுப்பிப்பு",
     days_since: "வாக்குப்பதிவுக்குப் பின்",
@@ -138,13 +138,13 @@ const STRINGS = {
 };
 
 // Status: "no" | "soon" | "yes" — flip as situation evolves.
-// As of late May 8, 2026: Mr. Thirumavalavan formally announces VCK support.
-// Oath scheduled for Saturday May 9, 11am IST (per India TV reporting).
-// Confirmed coalition = TVK 108 + INC 5 + CPI 2 + CPI(M) 2 + VCK 2 = 119.
-// Operational count after Mr. Vijay vacates one of two won seats and one MLA
-// becomes Speaker = 117. Governor's office sources reportedly cite only 116
-// — disputed. AMMK files counter-letter for AIADMK's Mr. Palaniswami.
-// IUML clarifies it stays with DMK and has no role in new government.
+// As of May 9, 2026: Governor Arlekar has formally invited Mr. Vijay to form
+// the government per Dinamalar. Oath ceremony scheduled for Sunday May 10 at
+// 11 AM IST at the Jawaharlal Nehru Indoor Stadium, Chennai. Confidence vote
+// in the Assembly to be held by May 13 per The Hindu.
+// IUML has reversed and extended support to TVK. Confirmed coalition =
+// TVK 108 + INC 5 + CPI 2 + CPI(M) 2 + VCK 2 + IUML 2 = 121 (+3 over majority).
+// AIADMK firmly in opposition; AMMK letter for EPS is now moot.
 const CURRENT_STATUS = "soon";
 
 const CONFIRMED = [
@@ -153,15 +153,14 @@ const CONFIRMED = [
   { party: "CPI", seats: 2, color: "#F87171", source: 23 },
   { party: "CPI(M)", seats: 2, color: "#EF4444", source: 23 },
   { party: "VCK", seats: 2, color: "#3B82F6", source: 31 },
+  { party: "IUML", seats: 2, color: "#10B981", source: 36 },
 ];
 
-const IN_TALKS = [
-  { party: "AIADMK*", seats: 47, color: "#16A34A", note: "Faction signals external support; AMMK letter claims 120 MLAs back EPS — disputed", source: 20 },
-];
+const IN_TALKS = [];
 
 const OPPOSITION = [
   { party: "DMK", seats: 59, color: "#1D4ED8" },
-  { party: "IUML", seats: 2, color: "#10B981" },
+  { party: "AIADMK", seats: 47, color: "#16A34A" },
   { party: "PMK", seats: 4, color: "#84CC16" },
   { party: "BJP", seats: 1, color: "#F97316" },
   { party: "DMDK", seats: 1, color: "#A855F7" },
@@ -411,6 +410,34 @@ const SOURCES = [
     url: "https://m.thewire.in/article/politics/tvk-chief-vijay-makes-it-across-halfway-mark-will-be-sworn-in-as-tamil-nadu-chief-minister-on-saturday",
     date: "May 8, 2026",
   },
+  {
+    n: 34,
+    label: "ANI — confirms oath May 9, 11 AM at Jawaharlal Nehru Indoor Stadium; Mr. Rahul Gandhi to attend; CPI(M) M.A. Baby and CPI Veerapandian on-record",
+    org: "ANI / Asianet Newsable",
+    url: "https://newsable.asianetnews.com/india/actor-vijay-to-be-sworn-in-as-tamil-nadu-cm-ends-60year-duopoly-articleshow-to5zegn",
+    date: "May 8, 2026",
+  },
+  {
+    n: 35,
+    label: "ANI — 'Thalapathy takes over Tamil Nadu' — first non-DMK / non-AIADMK government since 1967, ending six-decade Dravidian duopoly",
+    org: "ANI",
+    url: "https://www.aninews.in/news/national/politics/thalapathy-takes-over-tamil-nadu-vijay-to-take-oath-as-cm-tomorrow-after-vck-left-cong-support20260508223148/",
+    date: "May 8, 2026",
+  },
+  {
+    n: 36,
+    label: "Dinamalar (Tamil) — Governor formally invites Mr. Vijay to form government; oath May 10. IUML extends support.",
+    org: "Dinamalar",
+    url: "https://www.dinamalar.com/news/tamil-nadu-news/vijay-become-cm-governor-arlekkar-apporves/4218556",
+    date: "May 9, 2026",
+  },
+  {
+    n: 37,
+    label: "The Hindu — CM-designate Mr. Vijay to take oath May 10; vote of confidence in Assembly by May 13",
+    org: "The Hindu",
+    url: "https://www.thehindu.com/elections/tamil-nadu-assembly/tamil-nadu-government-formation-live-updates-cpi-cpim-vck-dmk-aiadmk-ammk-tvk-alliance-parties-may-9-2026/article70958001.ece",
+    date: "May 9, 2026",
+  },
 ];
 
 // Manifesto promises: organized by TVK's "Nine Guarantees" — the policy-theme
@@ -624,8 +651,8 @@ const TIMELINE = [
   },
   {
     date: "May 8, 2026 · evening",
-    title: "IUML clarifies: stays with DMK, no role in new government",
-    body: "Indian Union Muslim League issues clarification: it had only expressed willingness to support the Governor's decision on government formation, not the structure of the new administration. IUML continues to remain part of the DMK alliance.",
+    title: "IUML initially says: stays with DMK, no role in new government",
+    body: "Indian Union Muslim League issues clarification: it had only expressed willingness to support the Governor's decision on government formation, not the structure of the new administration. IUML stated it continues to remain part of the DMK alliance. Note: this position reverses on May 9 (see below).",
     sources: [32],
   },
   {
@@ -635,10 +662,28 @@ const TIMELINE = [
     sources: [27, 30],
   },
   {
-    date: "May 8, 2026 · 8:05 PM",
-    title: "Oath ceremony scheduled — May 9, 11 AM",
-    body: "Per India TV: Mr. Vijay set to take oath as the 9th Chief Minister of Tamil Nadu on Saturday May 9 at 11 AM. Reports suggest the ceremony at Jawaharlal Nehru Indoor Stadium in Chennai. Possible attendees include Congress's Mr. Rahul Gandhi and Mr. Mallikarjun Kharge. NDTV separately reports no swearing-in (majority not proven). Lok Bhavan yet to confirm.",
-    sources: [32, 33],
+    date: "May 9, 2026",
+    title: "IUML reverses — extends support to TVK",
+    body: "Indian Union Muslim League formally extends support to the TVK-led alliance, reversing its May 8 evening position. Coalition rises from 119 to 121.",
+    sources: [36],
+  },
+  {
+    date: "May 9, 2026",
+    title: "Governor formally invites Mr. Vijay to form government",
+    body: "Governor Arlekar formally invites Mr. Vijay to form the government per Dinamalar. Coalition stands at 121 (TVK 108 + INC 5 + CPI 2 + CPI(M) 2 + VCK 2 + IUML 2) — three above the 118 majority threshold.",
+    sources: [36, 37],
+  },
+  {
+    date: "May 10, 2026 · 11 AM",
+    title: "🟨 Oath scheduled — first non-Dravidian govt in TN since 1967",
+    body: "Mr. Vijay set to be sworn in as the 9th Chief Minister of Tamil Nadu at the Jawaharlal Nehru Indoor Stadium, Chennai. First time since 1967 that a party other than DMK or AIADMK leads the state — ending nearly six decades of Dravidian duopoly. Mr. Rahul Gandhi (Leader of Opposition, Lok Sabha) confirmed to attend per INC sources. CPI(M) GS Mr. M.A. Baby on the Left's reasoning: 'There are various other moves to organise opportunistic alliances by those who have been rejected by people. We have decided that this has to be stopped at any cost.' CPI State Secretary Mr. Veerapandian: 'TVK is the single-largest party. It needs 6 MLAs to form the Govt. We have given 6 MLAs of CPI, CPI(M) and VCK. It is our democratic duty.'",
+    sources: [34, 35, 37],
+  },
+  {
+    date: "May 13, 2026 (by)",
+    title: "Confidence vote in Assembly",
+    body: "Per The Hindu: Mr. Vijay must prove majority on the floor of the House by May 13. Coalition arithmetic stands at 121 (or 118-119 operating, after speakership and seat vacation). Floor test will be the constitutional close of the formation crisis.",
+    sources: [37],
   },
   {
     date: "May 8, 2026 · evening",
@@ -1099,8 +1144,8 @@ export default function CMVijayAI() {
             </div>
           </div>
 
-          {/* Three honest buckets */}
-          <div className="mt-12 grid md:grid-cols-3 gap-px bg-stone-800 border border-stone-800">
+          {/* Three (or two) honest buckets */}
+          <div className={`mt-12 grid ${IN_TALKS.length > 0 ? "md:grid-cols-3" : "md:grid-cols-2"} gap-px bg-stone-800 border border-stone-800`}>
             {/* Confirmed */}
             <div className="bg-black p-6">
               <div className="flex items-center justify-between mb-4">
@@ -1123,30 +1168,32 @@ export default function CMVijayAI() {
               </ul>
             </div>
 
-            {/* In talks */}
-            <div className="bg-black p-6">
-              <div className="flex items-center justify-between mb-4">
-                <p className="font-mono-d text-[10px] uppercase tracking-[0.25em] text-stone-300 flex items-center gap-1.5">
-                  <AlertCircle size={11} /> {t.math_in_talks}
+            {/* In talks (hidden when empty — coalition fully confirmed) */}
+            {IN_TALKS.length > 0 && (
+              <div className="bg-black p-6">
+                <div className="flex items-center justify-between mb-4">
+                  <p className="font-mono-d text-[10px] uppercase tracking-[0.25em] text-stone-300 flex items-center gap-1.5">
+                    <AlertCircle size={11} /> {t.math_in_talks}
+                  </p>
+                  <span className="font-display text-2xl text-stone-300">{inTalksSeats}</span>
+                </div>
+                <ul className="space-y-2">
+                  {IN_TALKS.map((p) => (
+                    <li key={p.party} className="flex items-center justify-between text-sm">
+                      <span className="flex items-center gap-2">
+                        <span className="w-2 h-2 inline-block opacity-50" style={{ backgroundColor: p.color }} />
+                        <span className="text-stone-400">{p.party}</span>
+                        <Cite n={p.source} />
+                      </span>
+                      <span className="font-mono-d text-stone-500">{p.seats}</span>
+                    </li>
+                  ))}
+                </ul>
+                <p className="font-mono-d text-[10px] text-stone-600 mt-4 leading-relaxed">
+                  {t.math_in_talks_note}
                 </p>
-                <span className="font-display text-2xl text-stone-300">{inTalksSeats}</span>
               </div>
-              <ul className="space-y-2">
-                {IN_TALKS.map((p) => (
-                  <li key={p.party} className="flex items-center justify-between text-sm">
-                    <span className="flex items-center gap-2">
-                      <span className="w-2 h-2 inline-block opacity-50" style={{ backgroundColor: p.color }} />
-                      <span className="text-stone-400">{p.party}</span>
-                      <Cite n={p.source} />
-                    </span>
-                    <span className="font-mono-d text-stone-500">{p.seats}</span>
-                  </li>
-                ))}
-              </ul>
-              <p className="font-mono-d text-[10px] text-stone-600 mt-4 leading-relaxed">
-                {t.math_in_talks_note}
-              </p>
-            </div>
+            )}
 
             {/* Opposition */}
             <div className="bg-black p-6">
@@ -1212,20 +1259,24 @@ export default function CMVijayAI() {
                 <span className="w-3 h-3 bg-yellow-300 inline-block" />
                 Confirmed
               </span>
-              <span className="flex items-center gap-1.5">
-                <span
-                  className="w-3 h-3 inline-block"
-                  style={{
-                    background:
-                      "repeating-linear-gradient(45deg, #FCD34D40, #FCD34D40 2px, transparent 2px, transparent 4px)",
-                  }}
-                />
-                In talks (uncommitted)
-              </span>
-              <span className="text-yellow-300 ml-auto">
-                If all in-talks join: {confirmedSeats + inTalksSeats}{" "}
-                ({potentialDelta >= 0 ? `+${potentialDelta}` : potentialDelta})
-              </span>
+              {IN_TALKS.length > 0 && (
+                <>
+                  <span className="flex items-center gap-1.5">
+                    <span
+                      className="w-3 h-3 inline-block"
+                      style={{
+                        background:
+                          "repeating-linear-gradient(45deg, #FCD34D40, #FCD34D40 2px, transparent 2px, transparent 4px)",
+                      }}
+                    />
+                    In talks (uncommitted)
+                  </span>
+                  <span className="text-yellow-300 ml-auto">
+                    If all in-talks join: {confirmedSeats + inTalksSeats}{" "}
+                    ({potentialDelta >= 0 ? `+${potentialDelta}` : potentialDelta})
+                  </span>
+                </>
+              )}
             </div>
           </div>
 
