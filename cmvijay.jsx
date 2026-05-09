@@ -633,6 +633,24 @@ const TIMELINE = [
   },
   {
     date: "May 8, 2026",
+    title: "Supreme Court writ petition filed",
+    body: "Public-interest writ filed in the Supreme Court seeking direction that the Governor is duty-bound to invite Mr. Vijay — as leader of the single largest party — to form the government, and to prove the majority on the floor of the House thereafter. Constitutional escalation of the formation crisis.",
+    sources: [23],
+  },
+  {
+    date: "May 8, 2026",
+    title: "AMMK Mr. Dhinakaran files counter-letter for AIADMK",
+    body: "AMMK general secretary Mr. T.T.V. Dhinakaran reportedly submits letter to Governor stating Mr. E. Palaniswami enjoys support of 120 MLAs and should be granted permission to stake claim. Calls TVK letter 'horse trading and forgery'. Lone AMMK MLA-elect Kamaraj S declared loyal to NDA/AIADMK.",
+    sources: [32],
+  },
+  {
+    date: "May 8, 2026",
+    title: "AMMK denies TVK support",
+    body: "AMMK chief Mr. T.T.V. Dhinakaran refutes media reports that his party had extended support to TVK. Note: AMMK has minimal seat count in the new Assembly; impact on coalition arithmetic is negligible but underscores the active rumor-and-denial cycle around alliance formation.",
+    sources: [23],
+  },
+  {
+    date: "May 8, 2026",
     title: "CPI and CPI(M) formally back TVK",
     body: "Both Left parties extend formal support to the Mr. Vijay-led alliance per The Hindu and Dinamalar. CPI(M) GS Mr. M.A. Baby cites Vajpayee 1996 precedent. CPI urges Governor to invite TVK without prior floor test, citing Supreme Court precedents. Coalition rises to TVK 108 + INC 5 + CPI 2 + CPI(M) 2 = 117 — one short of 118.",
     sources: [23, 26, 24],
@@ -684,24 +702,6 @@ const TIMELINE = [
     title: "Confidence vote in Assembly",
     body: "Per The Hindu: Mr. Vijay must prove majority on the floor of the House by May 13. Coalition arithmetic stands at 121 (or 118-119 operating, after speakership and seat vacation). Floor test will be the constitutional close of the formation crisis.",
     sources: [37],
-  },
-  {
-    date: "May 8, 2026 · evening",
-    title: "AMMK Mr. Dhinakaran files counter-letter for AIADMK",
-    body: "AMMK general secretary Mr. T.T.V. Dhinakaran reportedly submits letter to Governor stating Mr. E. Palaniswami enjoys support of 120 MLAs and should be granted permission to stake claim. Calls TVK letter 'horse trading and forgery'. Lone AMMK MLA-elect Kamaraj S declared loyal to NDA/AIADMK.",
-    sources: [32],
-  },
-  {
-    date: "May 8, 2026",
-    title: "Supreme Court writ petition filed",
-    body: "Public-interest writ filed in the Supreme Court seeking direction that the Governor is duty-bound to invite Mr. Vijay — as leader of the single largest party — to form the government, and to prove the majority on the floor of the House thereafter. Constitutional escalation of the formation crisis.",
-    sources: [23],
-  },
-  {
-    date: "May 8, 2026",
-    title: "AMMK denies TVK support",
-    body: "AMMK chief Mr. T.T.V. Dhinakaran refutes media reports that his party had extended support to TVK. Note: AMMK has minimal seat count in the new Assembly; impact on coalition arithmetic is negligible but underscores the active rumor-and-denial cycle around alliance formation.",
-    sources: [23],
   },
 ];
 
