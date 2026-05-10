@@ -82,6 +82,8 @@ const STRINGS = {
     promises_status_partial: "Partial",
     promises_status_broken: "Broken",
     promises_total_label: "Total promises",
+    promises_by_guarantee: "By Guarantee — at a glance",
+    promises_click_filter: "Click any bar to filter the list below",
     promises_active_note:
       "Status will flip from 'Pending' to one of: In Progress / Partial / Delivered / Broken — based on cabinet orders, budget allocations, GOs, and independent verification.",
     hero_question: "Is Vijay CM yet?",
@@ -140,6 +142,8 @@ const STRINGS = {
     promises_status_partial: "பகுதியளவில்",
     promises_status_broken: "நிறைவேற்றப்படவில்லை",
     promises_total_label: "மொத்த வாக்குறுதிகள்",
+    promises_by_guarantee: "உத்தரவாதம் வாரியாக — ஒரு பார்வையில்",
+    promises_click_filter: "கீழே வடிகட்ட எந்த வரிசையையும் கிளிக் செய்யவும்",
     promises_active_note:
       "மந்திரிசபை ஆணைகள், பட்ஜெட் ஒதுக்கீடுகள், அரசாணைகள் மற்றும் சுயாதீன சரிபார்ப்பின் அடிப்படையில் நிலை மாறும்.",
     hero_question: "விஜய் இன்னும் முதல்வரா ஆனாரா?",
@@ -911,6 +915,107 @@ function PromiseScorecard({ t, lang }) {
               {t.promises_status_broken}
             </p>
             <p className="font-display text-5xl text-red-500">{counts.broken || 0}</p>
+          </div>
+        </div>
+
+        {/* Per-Guarantee progress bars — at-a-glance which areas the new govt has touched */}
+        <div className="mb-10 border border-stone-800 bg-stone-950 p-6">
+          <p className="font-mono-d text-[10px] uppercase tracking-[0.25em] text-stone-500 mb-5">
+            {t.promises_by_guarantee}
+          </p>
+          <div className="space-y-3">
+            {CATEGORIES.filter((c) => c !== "All").map((cat) => {
+              const items = MANIFESTO.filter((p) => p.category === cat);
+              if (items.length === 0) return null;
+              const counts = items.reduce((acc, p) => {
+                acc[p.status] = (acc[p.status] || 0) + 1;
+                return acc;
+              }, {});
+              const delivered = counts.delivered || 0;
+              const inProg = counts.in_progress || 0;
+              const partial = counts.partial || 0;
+              const broken = counts.broken || 0;
+              const active = delivered + inProg + partial + broken;
+              const pct = Math.round((active / items.length) * 100);
+              const isFiltered = filter === cat;
+              return (
+                <button
+                  key={cat}
+                  onClick={() => setFilter(isFiltered ? "All" : cat)}
+                  className={`w-full text-left group transition ${isFiltered ? "opacity-100" : "opacity-90 hover:opacity-100"}`}
+                  title={`Click to filter to ${cat}`}
+                >
+                  <div className="flex items-baseline justify-between mb-1.5">
+                    <span className={`text-xs md:text-sm ${isFiltered ? "text-yellow-300" : "text-stone-300 group-hover:text-stone-100"} transition`}>
+                      {cat}
+                    </span>
+                    <span className="font-mono-d text-[10px] text-stone-500 tabular-nums">
+                      {active}/{items.length}{" "}
+                      <span className={active > 0 ? "text-yellow-300" : "text-stone-700"}>
+                        ({pct}%)
+                      </span>
+                    </span>
+                  </div>
+                  <div className="h-1.5 bg-stone-900 overflow-hidden flex">
+                    {/* Stacked: delivered (green) → in_progress (yellow) → partial (orange) → broken (red) → pending (empty/dark) */}
+                    {delivered > 0 && (
+                      <div
+                        className="h-full bg-green-400 transition-all duration-700"
+                        style={{ width: `${(delivered / items.length) * 100}%` }}
+                        title={`${delivered} delivered`}
+                      />
+                    )}
+                    {inProg > 0 && (
+                      <div
+                        className="h-full bg-yellow-300 transition-all duration-700"
+                        style={{ width: `${(inProg / items.length) * 100}%` }}
+                        title={`${inProg} in progress`}
+                      />
+                    )}
+                    {partial > 0 && (
+                      <div
+                        className="h-full bg-orange-400 transition-all duration-700"
+                        style={{ width: `${(partial / items.length) * 100}%` }}
+                        title={`${partial} partial`}
+                      />
+                    )}
+                    {broken > 0 && (
+                      <div
+                        className="h-full bg-red-500 transition-all duration-700"
+                        style={{ width: `${(broken / items.length) * 100}%` }}
+                        title={`${broken} broken`}
+                      />
+                    )}
+                  </div>
+                </button>
+              );
+            })}
+          </div>
+          {/* Legend */}
+          <div className="flex flex-wrap items-center gap-4 mt-5 pt-4 border-t border-stone-900 font-mono-d text-[9px] uppercase tracking-wider text-stone-500">
+            <span className="flex items-center gap-1.5">
+              <span className="w-2.5 h-2.5 bg-green-400 inline-block" />
+              {t.promises_status_delivered}
+            </span>
+            <span className="flex items-center gap-1.5">
+              <span className="w-2.5 h-2.5 bg-yellow-300 inline-block" />
+              {t.promises_status_in_progress}
+            </span>
+            <span className="flex items-center gap-1.5">
+              <span className="w-2.5 h-2.5 bg-orange-400 inline-block" />
+              {t.promises_status_partial}
+            </span>
+            <span className="flex items-center gap-1.5">
+              <span className="w-2.5 h-2.5 bg-red-500 inline-block" />
+              {t.promises_status_broken}
+            </span>
+            <span className="flex items-center gap-1.5">
+              <span className="w-2.5 h-2.5 bg-stone-900 border border-stone-800 inline-block" />
+              {t.promises_status_pending}
+            </span>
+            <span className="ml-auto text-stone-600 italic">
+              {t.promises_click_filter}
+            </span>
           </div>
         </div>
 
