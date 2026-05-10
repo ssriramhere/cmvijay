@@ -95,6 +95,7 @@ const STRINGS = {
     live: "LIVE",
     last_updated: "Last updated",
     days_since: "days since polling",
+    days_since_cm: "days since Vijay became CM",
     share_label: "Share status",
     math_title: "Coalition Math",
     math_sub: "The path to 118",
@@ -152,6 +153,7 @@ const STRINGS = {
     live: "நேரலை",
     last_updated: "கடைசி புதுப்பிப்பு",
     days_since: "வாக்குப்பதிவுக்குப் பின்",
+    days_since_cm: "விஜய் முதல்வரான பின்",
     share_label: "பகிர்",
     math_title: "கூட்டணி கணக்கு",
     math_sub: "118-ஐ நோக்கி",
@@ -985,8 +987,13 @@ export default function CMVijayAI() {
   const now = useTimeAgo();
 
   const pollDay = useMemo(() => new Date("2026-04-23T00:00:00+05:30"), []);
+  const cmDay = useMemo(() => new Date("2026-05-10T11:00:00+05:30"), []);
   const daysSincePoll = Math.floor(
     (now - pollDay) / (1000 * 60 * 60 * 24)
+  );
+  const daysSinceCM = Math.max(
+    0,
+    Math.floor((now - cmDay) / (1000 * 60 * 60 * 24))
   );
 
   const confirmedSeats = CONFIRMED.reduce((s, p) => s + p.seats, 0);
@@ -1108,6 +1115,14 @@ export default function CMVijayAI() {
             <span className="font-mono-d text-[11px] uppercase tracking-[0.2em] text-stone-400">
               Day {daysSincePoll} {t.days_since}
             </span>
+            {CURRENT_STATUS === "yes" && (
+              <>
+                <span className="text-stone-600">·</span>
+                <span className="font-mono-d text-[11px] uppercase tracking-[0.2em] text-yellow-300">
+                  Day {daysSinceCM} {t.days_since_cm}
+                </span>
+              </>
+            )}
           </div>
 
           {/* Question */}
