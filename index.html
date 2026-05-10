@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -16,6 +17,7 @@
   <meta name="twitter:card" content="summary_large_image" />
 
   <script src="https://cdn.tailwindcss.com"></script>
+
   <script src="https://unpkg.com/@babel/standalone@7.24.7/babel.min.js"></script>
 
   <script type="importmap">
@@ -37,6 +39,7 @@
       font-size: 12px; letter-spacing: 0.3em; text-transform: uppercase;
     }
   </style>
+
 </head>
 <body>
   <div id="root"></div>
@@ -479,6 +482,20 @@ const SOURCES = [
     url: "https://www.thehindu.com/elections/tamil-nadu-assembly/tamil-nadu-government-formation-live-updates-cpi-cpim-vck-dmk-aiadmk-ammk-tvk-alliance-parties-may-9-2026/article70958001.ece",
     date: "May 9, 2026",
   },
+  {
+    n: 38,
+    label: "DT Next — Mr. Vijay signs first three executive orders post-oath: 200u/2mo electricity, Singappen women safety force, anti-narcotics units",
+    org: "DT Next",
+    url: "https://www.dtnext.in/amp/story/news/politics/live-race-for-tn-govt-governor-seeks-proof-of-118-seats-from-tvks-vijay-dmk-allies-back-his-bid",
+    date: "May 10, 2026",
+  },
+  {
+    n: 39,
+    label: "The Federal — Oath ceremony coverage; Mr. Vijay's address; Modi + Kamal Haasan congratulations; 9 names recommended for cabinet",
+    org: "The Federal",
+    url: "https://thefederal.com/elections-2026/tamil-nadu-kerala-west-bengal-assembly-elections-tvk-vijay-242502",
+    date: "May 10, 2026",
+  },
 ];
 
 // Manifesto promises: organized by TVK's "Nine Guarantees" — the policy-theme
@@ -498,7 +515,7 @@ const MANIFESTO = [
   { id: "g1_marriage", category: "01 · Women's Welfare", text: "Singa Pengal Marriage Assistance: 1 sovereign (8g) gold + silk saree, families <₹5L income", status: "pending", sources: [10, 11, 12] },
   { id: "g1_newborn", category: "01 · Women's Welfare", text: "Thaai Maaman Gold Ring Scheme: gold ring + welcome kit for every newborn", status: "pending", sources: [10, 11, 13] },
   { id: "g1_shg", category: "01 · Women's Welfare", text: "Singa Pengal Empowerment Scheme: ₹5L interest-free SHG loans + ₹5L grant for SHGs transitioning to MSMEs", status: "pending", sources: [10, 12, 13] },
-  { id: "g1_safety", category: "01 · Women's Welfare", text: "Dedicated women safety: fast-track courts, anonymous reporting channels, mandatory conviction-rate audits", status: "pending", sources: [10, 11, 14] },
+  { id: "g1_safety", category: "01 · Women's Welfare", text: "Dedicated women safety: fast-track courts, anonymous reporting channels, mandatory conviction-rate audits", status: "in_progress", sources: [10, 11, 14, 38] },
   { id: "g1_dept", category: "01 · Women's Welfare", text: "Dedicated Department for Women, Children & Senior Citizens — under direct CM supervision", status: "pending", sources: [10, 14, 17] },
 
   // ============= 02. HEALTH FOR ALL =============
@@ -542,7 +559,7 @@ const MANIFESTO = [
   { id: "g5_fish_msp", category: "05 · Farmer First", text: "Fishermen: India's first statutory Minimum Support Price for fish", status: "pending", sources: [10, 15] },
 
   // ============= 06. ELECTRICITY & MSME =============
-  { id: "g6_elec", category: "06 · Electricity & MSME", text: "200 units of free electricity per family per month", status: "pending", sources: [10, 11, 16] },
+  { id: "g6_elec", category: "06 · Electricity & MSME", text: "200 units of free electricity per family per month", status: "partial", sources: [10, 11, 16, 38] },
   { id: "g6_water", category: "06 · Electricity & MSME", text: "Drinking water pipeline connections to every household", status: "pending", sources: [10, 11, 16] },
   { id: "g6_peak", category: "06 · Electricity & MSME", text: "Scrap peak-hour electricity charges for small businesses", status: "pending", sources: [10, 11] },
   { id: "g6_msmetax", category: "06 · Electricity & MSME", text: "Tax-free electricity for 5 years for MSMEs", status: "pending", sources: [10, 11] },
@@ -553,8 +570,8 @@ const MANIFESTO = [
   { id: "g6_weavers_digital", category: "06 · Electricity & MSME", text: "Weavers: expanded market access through digital platforms", status: "pending", sources: [10, 14] },
 
   // ============= 07. ANTI-DRUG & SOCIAL HARMONY =============
-  { id: "g7_mission", category: "07 · Anti-Drug & Harmony", text: "Drug-Free Tamil Nadu Mission: inter-agency intelligence, asset-seizure fast-tracking, mandatory de-addiction infrastructure in every district", status: "pending", sources: [10, 11] },
-  { id: "g7_zones", category: "07 · Anti-Drug & Harmony", text: "Anti-Drug Protection Zones around all schools and colleges", status: "pending", sources: [10, 11] },
+  { id: "g7_mission", category: "07 · Anti-Drug & Harmony", text: "Drug-Free Tamil Nadu Mission: inter-agency intelligence, asset-seizure fast-tracking, mandatory de-addiction infrastructure in every district", status: "in_progress", sources: [10, 11, 38] },
+  { id: "g7_zones", category: "07 · Anti-Drug & Harmony", text: "Anti-Drug Protection Zones around all schools and colleges", status: "in_progress", sources: [10, 11, 38] },
   { id: "g7_harmony", category: "07 · Anti-Drug & Harmony", text: "Social Harmony programme: community dialogue, inter-faith councils, legal enforcement against hate speech", status: "pending", sources: [10, 11] },
 
   // ============= 08. CLEAN GOVERNANCE =============
@@ -741,8 +758,14 @@ const TIMELINE = [
   {
     date: "May 10, 2026 · 11 AM",
     title: "✅ Mr. Vijay sworn in as 9th Chief Minister of Tamil Nadu",
-    body: "Mr. Vijay takes oath as the 9th Chief Minister of Tamil Nadu at the Jawaharlal Nehru Indoor Stadium, Chennai. First non-DMK / non-AIADMK Chief Minister in 59 years, ending six decades of Dravidian duopoly. Mr. Rahul Gandhi (Leader of Opposition, Lok Sabha) and Mr. Mallikarjun Kharge attended. Cabinet announcements to follow.",
-    sources: [37],
+    body: "Mr. C. Joseph Vijay takes oath as the 9th Chief Minister of Tamil Nadu at the Jawaharlal Nehru Indoor Stadium, Chennai. First non-DMK / non-AIADMK Chief Minister in 59 years. Mr. Rahul Gandhi (Leader of Opposition, Lok Sabha) attended; PM Mr. Narendra Modi and Mr. Kamal Haasan publicly congratulated. Vijay's address: 'I'm an ordinary man. I will never give you false promises.' Recommended 9 individuals for cabinet appointments: Mr. N. Anand, Mr. Aadhav Arjuna, Dr. K.G. Arunraj, Mr. K.A. Sengottaiyan, Mr. P. Venkataramanan, Mr. R. Nirmalkumar, Mr. Rajmohan, Dr. T.K. Prabhu, and Ms. S. Keerthana.",
+    sources: [37, 38, 39],
+  },
+  {
+    date: "May 10, 2026 · post-oath",
+    title: "🟢 First three executive orders signed",
+    body: "CM Mr. Vijay signs his first three executive orders: (1) free electricity for consumption up to 200 units once every two months — note: the manifesto pledged 200 units per month, the order halves this; (2) creation of a special 'Singappen' (Lioness) rapid response force for women's safety; (3) establishment of anti-narcotics units across the State. These translate three of the Nine Guarantees from manifesto to government order on Day 0. Scorecard updated.",
+    sources: [38, 39],
   },
   {
     date: "May 13, 2026 (by)",
@@ -1034,499 +1057,502 @@ export default function CMVijayAI() {
         .reveal { animation: slide-up 0.8s cubic-bezier(.16,1,.3,1) both; }
       `}</style>
 
-      {/* NAV */}
-      <nav className="border-b border-stone-800 sticky top-0 bg-black/80 backdrop-blur-md z-50">
-        <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-          <div className="flex items-baseline gap-2">
-            <span className="font-display text-xl">cmvijay</span>
-            <span className="font-mono-d text-xs text-red-500">.ai</span>
-          </div>
-          <div className="hidden md:flex items-center gap-7 text-sm font-mono-d uppercase tracking-wider">
-            <a href="#math" className="hover:text-yellow-300">{t.nav_math}</a>
-            <a href="#timeline" className="hover:text-yellow-300">{t.nav_timeline}</a>
-            <a href="#promises" className="hover:text-yellow-300">{t.nav_promises}</a>
-            <a href="#journey" className="hover:text-yellow-300">{t.nav_journey}</a>
-            <a href="#sources" className="hover:text-yellow-300 text-stone-400">{t.sources_title}</a>
-          </div>
-          <button
-            onClick={() => setLang(lang === "en" ? "ta" : "en")}
-            className="font-mono-d text-xs uppercase tracking-wider border border-stone-700 hover:border-yellow-300 hover:text-yellow-300 px-3 py-1.5 rounded-sm flex items-center gap-1.5 transition"
-          >
-            <Globe size={12} />
-            {lang === "en" ? "தமிழ்" : "EN"}
-          </button>
-        </div>
-      </nav>
+```
+  {/* NAV */}
+  <nav className="border-b border-stone-800 sticky top-0 bg-black/80 backdrop-blur-md z-50">
+    <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div className="flex items-baseline gap-2">
+        <span className="font-display text-xl">cmvijay</span>
+        <span className="font-mono-d text-xs text-red-500">.ai</span>
+      </div>
+      <div className="hidden md:flex items-center gap-7 text-sm font-mono-d uppercase tracking-wider">
+        <a href="#math" className="hover:text-yellow-300">{t.nav_math}</a>
+        <a href="#timeline" className="hover:text-yellow-300">{t.nav_timeline}</a>
+        <a href="#promises" className="hover:text-yellow-300">{t.nav_promises}</a>
+        <a href="#journey" className="hover:text-yellow-300">{t.nav_journey}</a>
+        <a href="#sources" className="hover:text-yellow-300 text-stone-400">{t.sources_title}</a>
+      </div>
+      <button
+        onClick={() => setLang(lang === "en" ? "ta" : "en")}
+        className="font-mono-d text-xs uppercase tracking-wider border border-stone-700 hover:border-yellow-300 hover:text-yellow-300 px-3 py-1.5 rounded-sm flex items-center gap-1.5 transition"
+      >
+        <Globe size={12} />
+        {lang === "en" ? "தமிழ்" : "EN"}
+      </button>
+    </div>
+  </nav>
 
-      {/* HERO */}
-      <section className="relative overflow-hidden border-b border-stone-800">
-        <div className="absolute inset-0 grain opacity-40 pointer-events-none" />
-        <div className="absolute -top-40 -right-40 w-[600px] h-[600px] rounded-full bg-red-600/20 blur-[120px] pointer-events-none" />
-        <div className="absolute -bottom-40 -left-40 w-[500px] h-[500px] rounded-full bg-yellow-500/10 blur-[120px] pointer-events-none" />
+  {/* HERO */}
+  <section className="relative overflow-hidden border-b border-stone-800">
+    <div className="absolute inset-0 grain opacity-40 pointer-events-none" />
+    <div className="absolute -top-40 -right-40 w-[600px] h-[600px] rounded-full bg-red-600/20 blur-[120px] pointer-events-none" />
+    <div className="absolute -bottom-40 -left-40 w-[500px] h-[500px] rounded-full bg-yellow-500/10 blur-[120px] pointer-events-none" />
 
-        <div className="max-w-7xl mx-auto px-6 pt-16 pb-20 md:pt-24 md:pb-32 relative">
-          {/* Live ticker */}
-          <div className="flex items-center gap-3 mb-12 reveal" style={{ animationDelay: "0ms" }}>
-            <span className="relative w-2.5 h-2.5">
-              <span className="absolute inset-0 rounded-full bg-red-500 animate-ping opacity-75" />
-              <span className="absolute inset-0 rounded-full bg-red-500" />
-            </span>
-            <span className="font-mono-d text-[11px] uppercase tracking-[0.25em] text-red-500">
-              {t.live}
-            </span>
-            <span className="text-stone-600">·</span>
-            <span className="font-mono-d text-[11px] uppercase tracking-[0.2em] text-stone-400">
-              {now.toLocaleString(lang === "ta" ? "ta-IN" : "en-IN", {
-                timeZone: "Asia/Kolkata",
-                hour: "2-digit",
-                minute: "2-digit",
-                day: "2-digit",
-                month: "short",
-              })} IST
-            </span>
-            <span className="text-stone-600">·</span>
-            <span className="font-mono-d text-[11px] uppercase tracking-[0.2em] text-stone-400">
-              Day {daysSincePoll} {t.days_since}
-            </span>
-          </div>
+    <div className="max-w-7xl mx-auto px-6 pt-16 pb-20 md:pt-24 md:pb-32 relative">
+      {/* Live ticker */}
+      <div className="flex items-center gap-3 mb-12 reveal" style={{ animationDelay: "0ms" }}>
+        <span className="relative w-2.5 h-2.5">
+          <span className="absolute inset-0 rounded-full bg-red-500 animate-ping opacity-75" />
+          <span className="absolute inset-0 rounded-full bg-red-500" />
+        </span>
+        <span className="font-mono-d text-[11px] uppercase tracking-[0.25em] text-red-500">
+          {t.live}
+        </span>
+        <span className="text-stone-600">·</span>
+        <span className="font-mono-d text-[11px] uppercase tracking-[0.2em] text-stone-400">
+          {now.toLocaleString(lang === "ta" ? "ta-IN" : "en-IN", {
+            timeZone: "Asia/Kolkata",
+            hour: "2-digit",
+            minute: "2-digit",
+            day: "2-digit",
+            month: "short",
+          })} IST
+        </span>
+        <span className="text-stone-600">·</span>
+        <span className="font-mono-d text-[11px] uppercase tracking-[0.2em] text-stone-400">
+          Day {daysSincePoll} {t.days_since}
+        </span>
+      </div>
 
-          {/* Question */}
-          <div className="reveal" style={{ animationDelay: "120ms" }}>
-            <p className={`${lang === "ta" ? "font-tamil" : "font-serif-d"} text-3xl md:text-5xl text-stone-300 italic mb-3`}>
-              {t.hero_question}
-            </p>
-          </div>
+      {/* Question */}
+      <div className="reveal" style={{ animationDelay: "120ms" }}>
+        <p className={`${lang === "ta" ? "font-tamil" : "font-serif-d"} text-3xl md:text-5xl text-stone-300 italic mb-3`}>
+          {t.hero_question}
+        </p>
+      </div>
 
-          {/* Massive answer */}
-          <h1
-            className={`${lang === "ta" ? "font-tamil" : "font-display"} ${heroColor} text-[18vw] md:text-[14rem] leading-[0.85] tracking-tighter mb-8 reveal`}
-            style={{ animationDelay: "240ms" }}
-          >
-            {heroAnswer}.
-          </h1>
+      {/* Massive answer */}
+      <h1
+        className={`${lang === "ta" ? "font-tamil" : "font-display"} ${heroColor} text-[18vw] md:text-[14rem] leading-[0.85] tracking-tighter mb-8 reveal`}
+        style={{ animationDelay: "240ms" }}
+      >
+        {heroAnswer}.
+      </h1>
 
-          <p
-            className={`${lang === "ta" ? "font-tamil" : ""} text-xl md:text-2xl text-stone-300 max-w-3xl leading-snug mb-10 reveal`}
-            style={{ animationDelay: "360ms" }}
-          >
-            {heroSub}
+      <p
+        className={`${lang === "ta" ? "font-tamil" : ""} text-xl md:text-2xl text-stone-300 max-w-3xl leading-snug mb-10 reveal`}
+        style={{ animationDelay: "360ms" }}
+      >
+        {heroSub}
+      </p>
+
+      <div className="flex flex-wrap gap-3 reveal" style={{ animationDelay: "480ms" }}>
+        <a
+          href="#math"
+          className="bg-yellow-300 text-black font-mono-d text-sm uppercase tracking-wider px-6 py-3 hover:bg-yellow-200 transition flex items-center gap-2"
+        >
+          {t.cta_primary} <ChevronRight size={16} />
+        </a>
+        <button
+          onClick={handleShare}
+          className="border border-stone-600 text-stone-200 font-mono-d text-sm uppercase tracking-wider px-6 py-3 hover:border-yellow-300 hover:text-yellow-300 transition flex items-center gap-2"
+        >
+          <Share2 size={14} /> {t.share_label}
+        </button>
+      </div>
+    </div>
+  </section>
+
+  {/* COALITION MATH */}
+  <section id="math" className="border-b border-stone-800 py-20 md:py-28">
+    <div className="max-w-7xl mx-auto px-6">
+      <div className="mb-12">
+        <p className="font-mono-d text-xs uppercase tracking-[0.3em] text-red-500 mb-3">
+          §01 / {t.math_sub}
+        </p>
+        <h2 className={`${lang === "ta" ? "font-tamil" : "font-display"} text-5xl md:text-7xl mb-2`}>
+          {t.math_title}
+        </h2>
+      </div>
+
+      <div className="grid md:grid-cols-3 gap-6 md:gap-8">
+        {/* Target */}
+        <div className="border border-stone-800 p-8 hover:border-yellow-300 transition">
+          <p className="font-mono-d text-[10px] uppercase tracking-[0.25em] text-stone-500 mb-4">
+            {t.math_target}
           </p>
-
-          <div className="flex flex-wrap gap-3 reveal" style={{ animationDelay: "480ms" }}>
-            <a
-              href="#math"
-              className="bg-yellow-300 text-black font-mono-d text-sm uppercase tracking-wider px-6 py-3 hover:bg-yellow-200 transition flex items-center gap-2"
-            >
-              {t.cta_primary} <ChevronRight size={16} />
-            </a>
-            <button
-              onClick={handleShare}
-              className="border border-stone-600 text-stone-200 font-mono-d text-sm uppercase tracking-wider px-6 py-3 hover:border-yellow-300 hover:text-yellow-300 transition flex items-center gap-2"
-            >
-              <Share2 size={14} /> {t.share_label}
-            </button>
-          </div>
+          <p className="font-display text-7xl md:text-8xl text-stone-100">{TARGET}</p>
+          <p className="font-mono-d text-xs text-stone-500 mt-2">/ 234 seats</p>
         </div>
-      </section>
+        {/* Confirmed */}
+        <div className="border border-yellow-300 bg-yellow-300/5 p-8">
+          <p className="font-mono-d text-[10px] uppercase tracking-[0.25em] text-yellow-300 mb-4 flex items-center gap-1">
+            <CheckCircle2 size={12} /> {t.math_have}
+          </p>
+          <p className="font-display text-7xl md:text-8xl text-yellow-300">
+            {confirmedSeats}
+          </p>
+          <p className="font-mono-d text-xs text-stone-400 mt-2">
+            {CONFIRMED.map((p) => `${p.party} ${p.seats}`).join(" + ")}
+          </p>
+        </div>
+        {/* Delta */}
+        <div
+          className={`border p-8 ${
+            delta >= 0
+              ? "border-green-500/60 bg-green-500/5"
+              : "border-red-500/60 bg-red-500/5"
+          }`}
+        >
+          <p
+            className={`font-mono-d text-[10px] uppercase tracking-[0.25em] mb-4 ${
+              delta >= 0 ? "text-green-400" : "text-red-400"
+            }`}
+          >
+            {delta >= 0 ? t.math_safe : t.math_short}
+          </p>
+          <p
+            className={`font-display text-7xl md:text-8xl ${
+              delta >= 0 ? "text-green-400" : "text-red-400"
+            }`}
+          >
+            {delta >= 0 ? "+" : ""}
+            {delta}
+          </p>
+          <p className="font-mono-d text-xs text-stone-500 mt-2">
+            {delta >= 0 ? "majority secured" : "MLAs needed"}
+          </p>
+        </div>
+      </div>
 
-      {/* COALITION MATH */}
-      <section id="math" className="border-b border-stone-800 py-20 md:py-28">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="mb-12">
-            <p className="font-mono-d text-xs uppercase tracking-[0.3em] text-red-500 mb-3">
-              §01 / {t.math_sub}
+      {/* Three (or two) honest buckets */}
+      <div className={`mt-12 grid ${IN_TALKS.length > 0 ? "md:grid-cols-3" : "md:grid-cols-2"} gap-px bg-stone-800 border border-stone-800`}>
+        {/* Confirmed */}
+        <div className="bg-black p-6">
+          <div className="flex items-center justify-between mb-4">
+            <p className="font-mono-d text-[10px] uppercase tracking-[0.25em] text-yellow-300 flex items-center gap-1.5">
+              <CheckCircle2 size={11} /> {t.math_confirmed}
             </p>
-            <h2 className={`${lang === "ta" ? "font-tamil" : "font-display"} text-5xl md:text-7xl mb-2`}>
-              {t.math_title}
-            </h2>
+            <span className="font-display text-2xl text-yellow-300">{confirmedSeats}</span>
           </div>
-
-          <div className="grid md:grid-cols-3 gap-6 md:gap-8">
-            {/* Target */}
-            <div className="border border-stone-800 p-8 hover:border-yellow-300 transition">
-              <p className="font-mono-d text-[10px] uppercase tracking-[0.25em] text-stone-500 mb-4">
-                {t.math_target}
-              </p>
-              <p className="font-display text-7xl md:text-8xl text-stone-100">{TARGET}</p>
-              <p className="font-mono-d text-xs text-stone-500 mt-2">/ 234 seats</p>
-            </div>
-            {/* Confirmed */}
-            <div className="border border-yellow-300 bg-yellow-300/5 p-8">
-              <p className="font-mono-d text-[10px] uppercase tracking-[0.25em] text-yellow-300 mb-4 flex items-center gap-1">
-                <CheckCircle2 size={12} /> {t.math_have}
-              </p>
-              <p className="font-display text-7xl md:text-8xl text-yellow-300">
-                {confirmedSeats}
-              </p>
-              <p className="font-mono-d text-xs text-stone-400 mt-2">
-                {CONFIRMED.map((p) => `${p.party} ${p.seats}`).join(" + ")}
-              </p>
-            </div>
-            {/* Delta */}
-            <div
-              className={`border p-8 ${
-                delta >= 0
-                  ? "border-green-500/60 bg-green-500/5"
-                  : "border-red-500/60 bg-red-500/5"
-              }`}
-            >
-              <p
-                className={`font-mono-d text-[10px] uppercase tracking-[0.25em] mb-4 ${
-                  delta >= 0 ? "text-green-400" : "text-red-400"
-                }`}
-              >
-                {delta >= 0 ? t.math_safe : t.math_short}
-              </p>
-              <p
-                className={`font-display text-7xl md:text-8xl ${
-                  delta >= 0 ? "text-green-400" : "text-red-400"
-                }`}
-              >
-                {delta >= 0 ? "+" : ""}
-                {delta}
-              </p>
-              <p className="font-mono-d text-xs text-stone-500 mt-2">
-                {delta >= 0 ? "majority secured" : "MLAs needed"}
-              </p>
-            </div>
-          </div>
-
-          {/* Three (or two) honest buckets */}
-          <div className={`mt-12 grid ${IN_TALKS.length > 0 ? "md:grid-cols-3" : "md:grid-cols-2"} gap-px bg-stone-800 border border-stone-800`}>
-            {/* Confirmed */}
-            <div className="bg-black p-6">
-              <div className="flex items-center justify-between mb-4">
-                <p className="font-mono-d text-[10px] uppercase tracking-[0.25em] text-yellow-300 flex items-center gap-1.5">
-                  <CheckCircle2 size={11} /> {t.math_confirmed}
-                </p>
-                <span className="font-display text-2xl text-yellow-300">{confirmedSeats}</span>
-              </div>
-              <ul className="space-y-2">
-                {CONFIRMED.map((p) => (
-                  <li key={p.party} className="flex items-center justify-between text-sm">
-                    <span className="flex items-center gap-2">
-                      <span className="w-2 h-2 inline-block" style={{ backgroundColor: p.color }} />
-                      {p.party}
-                      <Cite n={p.source} />
-                    </span>
-                    <span className="font-mono-d text-stone-300">{p.seats}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* In talks (hidden when empty — coalition fully confirmed) */}
-            {IN_TALKS.length > 0 && (
-              <div className="bg-black p-6">
-                <div className="flex items-center justify-between mb-4">
-                  <p className="font-mono-d text-[10px] uppercase tracking-[0.25em] text-stone-300 flex items-center gap-1.5">
-                    <AlertCircle size={11} /> {t.math_in_talks}
-                  </p>
-                  <span className="font-display text-2xl text-stone-300">{inTalksSeats}</span>
-                </div>
-                <ul className="space-y-2">
-                  {IN_TALKS.map((p) => (
-                    <li key={p.party} className="flex items-center justify-between text-sm">
-                      <span className="flex items-center gap-2">
-                        <span className="w-2 h-2 inline-block opacity-50" style={{ backgroundColor: p.color }} />
-                        <span className="text-stone-400">{p.party}</span>
-                        <Cite n={p.source} />
-                      </span>
-                      <span className="font-mono-d text-stone-500">{p.seats}</span>
-                    </li>
-                  ))}
-                </ul>
-                <p className="font-mono-d text-[10px] text-stone-600 mt-4 leading-relaxed">
-                  {t.math_in_talks_note}
-                </p>
-              </div>
-            )}
-
-            {/* Opposition */}
-            <div className="bg-black p-6">
-              <div className="flex items-center justify-between mb-4">
-                <p className="font-mono-d text-[10px] uppercase tracking-[0.25em] text-stone-500">
-                  {t.math_opposition}
-                </p>
-                <span className="font-display text-2xl text-stone-500">{oppositionSeats}</span>
-              </div>
-              <ul className="space-y-2">
-                {OPPOSITION.map((p) => (
-                  <li key={p.party} className="flex items-center justify-between text-sm">
-                    <span className="flex items-center gap-2">
-                      <span className="w-2 h-2 inline-block opacity-50" style={{ backgroundColor: p.color }} />
-                      <span className="text-stone-500">{p.party}</span>
-                    </span>
-                    <span className="font-mono-d text-stone-600">{p.seats}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-
-          {/* Stacked progress: confirmed vs target, with in-talks ghosted */}
-          <div className="mt-10">
-            <p className="font-mono-d text-[10px] uppercase tracking-[0.25em] text-stone-500 mb-4">
-              Progress to 118
-            </p>
-            <div className="h-12 flex border border-stone-800 overflow-hidden bg-stone-950 relative">
-              {CONFIRMED.map((p) => (
-                <div
-                  key={p.party}
-                  className="flex items-center justify-center border-r border-black"
-                  style={{
-                    width: `${(p.seats / TARGET) * 100}%`,
-                    backgroundColor: p.color,
-                  }}
-                  title={`${p.party}: ${p.seats} (confirmed)`}
-                >
-                  <span className="font-mono-d text-[10px] text-black font-bold">
-                    {p.seats > 4 ? `${p.party} ${p.seats}` : p.seats}
-                  </span>
-                </div>
-              ))}
-              {IN_TALKS.map((p) => (
-                <div
-                  key={p.party}
-                  className="flex items-center justify-center border-r border-black"
-                  style={{
-                    width: `${(p.seats / TARGET) * 100}%`,
-                    background: `repeating-linear-gradient(45deg, ${p.color}40, ${p.color}40 4px, transparent 4px, transparent 8px)`,
-                  }}
-                  title={`${p.party}: ${p.seats} (in talks — not confirmed)`}
-                >
-                  <span className="font-mono-d text-[10px] text-stone-300">
-                    {p.party}?
-                  </span>
-                </div>
-              ))}
-            </div>
-            <div className="flex flex-wrap items-center gap-4 font-mono-d text-[10px] text-stone-500 mt-3">
-              <span className="flex items-center gap-1.5">
-                <span className="w-3 h-3 bg-yellow-300 inline-block" />
-                Confirmed
-              </span>
-              {IN_TALKS.length > 0 && (
-                <>
-                  <span className="flex items-center gap-1.5">
-                    <span
-                      className="w-3 h-3 inline-block"
-                      style={{
-                        background:
-                          "repeating-linear-gradient(45deg, #FCD34D40, #FCD34D40 2px, transparent 2px, transparent 4px)",
-                      }}
-                    />
-                    In talks (uncommitted)
-                  </span>
-                  <span className="text-yellow-300 ml-auto">
-                    If all in-talks join: {confirmedSeats + inTalksSeats}{" "}
-                    ({potentialDelta >= 0 ? `+${potentialDelta}` : potentialDelta})
-                  </span>
-                </>
-              )}
-            </div>
-          </div>
-
-          {/* Full house */}
-          <div className="mt-16">
-            <p className="font-mono-d text-[10px] uppercase tracking-[0.25em] text-stone-500 mb-4">
-              {t.seat_chart_title} <Cite n={1} />
-            </p>
-            <div className="h-8 flex border border-stone-800 overflow-hidden">
-              {FULL_HOUSE.map((p) => (
-                <div
-                  key={p.party}
-                  className="border-r border-black last:border-r-0"
-                  style={{
-                    width: `${(p.seats / 234) * 100}%`,
-                    backgroundColor: p.color,
-                  }}
-                  title={`${p.party}: ${p.seats}`}
-                />
-              ))}
-            </div>
-            <div className="flex flex-wrap gap-x-5 gap-y-2 mt-3 font-mono-d text-[10px] uppercase">
-              {FULL_HOUSE.map((p) => (
-                <span key={p.party} className="flex items-center gap-1.5">
-                  <span
-                    className="w-2 h-2 inline-block"
-                    style={{ backgroundColor: p.color }}
-                  />
-                  {p.party} {p.seats}
+          <ul className="space-y-2">
+            {CONFIRMED.map((p) => (
+              <li key={p.party} className="flex items-center justify-between text-sm">
+                <span className="flex items-center gap-2">
+                  <span className="w-2 h-2 inline-block" style={{ backgroundColor: p.color }} />
+                  {p.party}
+                  <Cite n={p.source} />
                 </span>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* TIMELINE */}
-      <section id="timeline" className="border-b border-stone-800 py-20 md:py-28 bg-stone-950">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="mb-12">
-            <p className="font-mono-d text-xs uppercase tracking-[0.3em] text-red-500 mb-3">
-              §02
-            </p>
-            <h2 className={`${lang === "ta" ? "font-tamil" : "font-display"} text-5xl md:text-7xl`}>
-              {t.timeline_title}
-            </h2>
-          </div>
-
-          <div className="relative">
-            <div className="absolute left-3 md:left-4 top-2 bottom-2 w-px bg-stone-800" />
-            <div className="space-y-8">
-              {TIMELINE.map((ev, i) => (
-                <div key={i} className="relative flex gap-6 md:gap-8 pl-2">
-                  <div className="relative z-10 mt-1.5">
-                    <div className="w-3 h-3 md:w-4 md:h-4 rounded-full bg-red-500 ring-4 ring-stone-950" />
-                  </div>
-                  <div className="flex-1 grid md:grid-cols-[160px_1fr] gap-2 md:gap-8 pb-2 border-b border-stone-900">
-                    <div className="font-mono-d text-xs uppercase tracking-wider text-stone-500">
-                      {ev.date}
-                    </div>
-                    <div>
-                      <h3 className="font-display text-xl mb-1">
-                        {ev.title} <Cite n={ev.sources} />
-                      </h3>
-                      <p className="text-stone-400 text-sm leading-relaxed">{ev.body}</p>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* JOURNEY */}
-      <section id="journey" className="border-b border-stone-800 py-20 md:py-28">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="mb-12">
-            <p className="font-mono-d text-xs uppercase tracking-[0.3em] text-red-500 mb-3">
-              §03 / {t.journey_sub}
-            </p>
-            <h2 className={`${lang === "ta" ? "font-tamil" : "font-serif-d"} text-5xl md:text-7xl italic`}>
-              {t.journey_title}
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-px bg-stone-800">
-            {JOURNEY.map((step, i) => (
-              <div
-                key={i}
-                className="bg-black p-6 hover:bg-stone-900 transition group"
-              >
-                <p className="font-mono-d text-[10px] uppercase tracking-[0.25em] text-yellow-300 mb-3">
-                  Step {String(i + 1).padStart(2, "0")}
-                </p>
-                <p className="font-display text-2xl md:text-3xl mb-3 group-hover:text-yellow-300 transition">
-                  {step.year}
-                </p>
-                <p className="text-xs text-stone-400 leading-relaxed">{step.note}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* PROMISE SCORECARD */}
-      <PromiseScorecard t={t} lang={lang} />
-
-      {/* SOURCES */}
-      <section id="sources" className="border-b border-stone-800 py-20 md:py-24 bg-stone-950">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="mb-10">
-            <p className="font-mono-d text-xs uppercase tracking-[0.3em] text-red-500 mb-3">
-              §05
-            </p>
-            <h2 className={`${lang === "ta" ? "font-tamil" : "font-display"} text-5xl md:text-7xl mb-3`}>
-              {t.sources_title}
-            </h2>
-            <p className={`${lang === "ta" ? "font-tamil" : ""} text-stone-400`}>
-              {t.sources_sub}
-            </p>
-          </div>
-          <ol className="space-y-3">
-            {SOURCES.map((s) => (
-              <li
-                key={s.n}
-                id={`source-${s.n}`}
-                className="border-l-2 border-stone-800 hover:border-yellow-300 pl-5 py-2 transition group"
-              >
-                <div className="flex flex-wrap items-baseline gap-x-4 gap-y-1">
-                  <span className="font-mono-d text-yellow-300 text-sm">[{s.n}]</span>
-                  <span className="text-stone-200 flex-1 min-w-[200px]">
-                    {s.label}
-                  </span>
-                  <span className="font-mono-d text-[10px] uppercase tracking-wider text-stone-500">
-                    {s.org}
-                  </span>
-                  <span className="font-mono-d text-[10px] text-stone-600">
-                    {s.date}
-                  </span>
-                  <a
-                    href={s.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="font-mono-d text-[10px] uppercase tracking-wider text-stone-500 hover:text-yellow-300 flex items-center gap-1"
-                  >
-                    Verify <ExternalLink size={10} />
-                  </a>
-                </div>
+                <span className="font-mono-d text-stone-300">{p.seats}</span>
               </li>
             ))}
-          </ol>
-          <p className="font-mono-d text-[10px] text-stone-600 uppercase tracking-wider mt-8 leading-relaxed max-w-2xl">
-            Reporting on this fast-moving situation is fluid. Where sources conflict, this site reflects the most recent reliable update. Spot an error? Email corrections@cmvijay.ai
+          </ul>
+        </div>
+
+        {/* In talks (hidden when empty — coalition fully confirmed) */}
+        {IN_TALKS.length > 0 && (
+          <div className="bg-black p-6">
+            <div className="flex items-center justify-between mb-4">
+              <p className="font-mono-d text-[10px] uppercase tracking-[0.25em] text-stone-300 flex items-center gap-1.5">
+                <AlertCircle size={11} /> {t.math_in_talks}
+              </p>
+              <span className="font-display text-2xl text-stone-300">{inTalksSeats}</span>
+            </div>
+            <ul className="space-y-2">
+              {IN_TALKS.map((p) => (
+                <li key={p.party} className="flex items-center justify-between text-sm">
+                  <span className="flex items-center gap-2">
+                    <span className="w-2 h-2 inline-block opacity-50" style={{ backgroundColor: p.color }} />
+                    <span className="text-stone-400">{p.party}</span>
+                    <Cite n={p.source} />
+                  </span>
+                  <span className="font-mono-d text-stone-500">{p.seats}</span>
+                </li>
+              ))}
+            </ul>
+            <p className="font-mono-d text-[10px] text-stone-600 mt-4 leading-relaxed">
+              {t.math_in_talks_note}
+            </p>
+          </div>
+        )}
+
+        {/* Opposition */}
+        <div className="bg-black p-6">
+          <div className="flex items-center justify-between mb-4">
+            <p className="font-mono-d text-[10px] uppercase tracking-[0.25em] text-stone-500">
+              {t.math_opposition}
+            </p>
+            <span className="font-display text-2xl text-stone-500">{oppositionSeats}</span>
+          </div>
+          <ul className="space-y-2">
+            {OPPOSITION.map((p) => (
+              <li key={p.party} className="flex items-center justify-between text-sm">
+                <span className="flex items-center gap-2">
+                  <span className="w-2 h-2 inline-block opacity-50" style={{ backgroundColor: p.color }} />
+                  <span className="text-stone-500">{p.party}</span>
+                </span>
+                <span className="font-mono-d text-stone-600">{p.seats}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+
+      {/* Stacked progress: confirmed vs target, with in-talks ghosted */}
+      <div className="mt-10">
+        <p className="font-mono-d text-[10px] uppercase tracking-[0.25em] text-stone-500 mb-4">
+          Progress to 118
+        </p>
+        <div className="h-12 flex border border-stone-800 overflow-hidden bg-stone-950 relative">
+          {CONFIRMED.map((p) => (
+            <div
+              key={p.party}
+              className="flex items-center justify-center border-r border-black"
+              style={{
+                width: `${(p.seats / TARGET) * 100}%`,
+                backgroundColor: p.color,
+              }}
+              title={`${p.party}: ${p.seats} (confirmed)`}
+            >
+              <span className="font-mono-d text-[10px] text-black font-bold">
+                {p.seats > 4 ? `${p.party} ${p.seats}` : p.seats}
+              </span>
+            </div>
+          ))}
+          {IN_TALKS.map((p) => (
+            <div
+              key={p.party}
+              className="flex items-center justify-center border-r border-black"
+              style={{
+                width: `${(p.seats / TARGET) * 100}%`,
+                background: `repeating-linear-gradient(45deg, ${p.color}40, ${p.color}40 4px, transparent 4px, transparent 8px)`,
+              }}
+              title={`${p.party}: ${p.seats} (in talks — not confirmed)`}
+            >
+              <span className="font-mono-d text-[10px] text-stone-300">
+                {p.party}?
+              </span>
+            </div>
+          ))}
+        </div>
+        <div className="flex flex-wrap items-center gap-4 font-mono-d text-[10px] text-stone-500 mt-3">
+          <span className="flex items-center gap-1.5">
+            <span className="w-3 h-3 bg-yellow-300 inline-block" />
+            Confirmed
+          </span>
+          {IN_TALKS.length > 0 && (
+            <>
+              <span className="flex items-center gap-1.5">
+                <span
+                  className="w-3 h-3 inline-block"
+                  style={{
+                    background:
+                      "repeating-linear-gradient(45deg, #FCD34D40, #FCD34D40 2px, transparent 2px, transparent 4px)",
+                  }}
+                />
+                In talks (uncommitted)
+              </span>
+              <span className="text-yellow-300 ml-auto">
+                If all in-talks join: {confirmedSeats + inTalksSeats}{" "}
+                ({potentialDelta >= 0 ? `+${potentialDelta}` : potentialDelta})
+              </span>
+            </>
+          )}
+        </div>
+      </div>
+
+      {/* Full house */}
+      <div className="mt-16">
+        <p className="font-mono-d text-[10px] uppercase tracking-[0.25em] text-stone-500 mb-4">
+          {t.seat_chart_title} <Cite n={1} />
+        </p>
+        <div className="h-8 flex border border-stone-800 overflow-hidden">
+          {FULL_HOUSE.map((p) => (
+            <div
+              key={p.party}
+              className="border-r border-black last:border-r-0"
+              style={{
+                width: `${(p.seats / 234) * 100}%`,
+                backgroundColor: p.color,
+              }}
+              title={`${p.party}: ${p.seats}`}
+            />
+          ))}
+        </div>
+        <div className="flex flex-wrap gap-x-5 gap-y-2 mt-3 font-mono-d text-[10px] uppercase">
+          {FULL_HOUSE.map((p) => (
+            <span key={p.party} className="flex items-center gap-1.5">
+              <span
+                className="w-2 h-2 inline-block"
+                style={{ backgroundColor: p.color }}
+              />
+              {p.party} {p.seats}
+            </span>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/* TIMELINE */}
+  <section id="timeline" className="border-b border-stone-800 py-20 md:py-28 bg-stone-950">
+    <div className="max-w-7xl mx-auto px-6">
+      <div className="mb-12">
+        <p className="font-mono-d text-xs uppercase tracking-[0.3em] text-red-500 mb-3">
+          §02
+        </p>
+        <h2 className={`${lang === "ta" ? "font-tamil" : "font-display"} text-5xl md:text-7xl`}>
+          {t.timeline_title}
+        </h2>
+      </div>
+
+      <div className="relative">
+        <div className="absolute left-3 md:left-4 top-2 bottom-2 w-px bg-stone-800" />
+        <div className="space-y-8">
+          {TIMELINE.map((ev, i) => (
+            <div key={i} className="relative flex gap-6 md:gap-8 pl-2">
+              <div className="relative z-10 mt-1.5">
+                <div className="w-3 h-3 md:w-4 md:h-4 rounded-full bg-red-500 ring-4 ring-stone-950" />
+              </div>
+              <div className="flex-1 grid md:grid-cols-[160px_1fr] gap-2 md:gap-8 pb-2 border-b border-stone-900">
+                <div className="font-mono-d text-xs uppercase tracking-wider text-stone-500">
+                  {ev.date}
+                </div>
+                <div>
+                  <h3 className="font-display text-xl mb-1">
+                    {ev.title} <Cite n={ev.sources} />
+                  </h3>
+                  <p className="text-stone-400 text-sm leading-relaxed">{ev.body}</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/* JOURNEY */}
+  <section id="journey" className="border-b border-stone-800 py-20 md:py-28">
+    <div className="max-w-7xl mx-auto px-6">
+      <div className="mb-12">
+        <p className="font-mono-d text-xs uppercase tracking-[0.3em] text-red-500 mb-3">
+          §03 / {t.journey_sub}
+        </p>
+        <h2 className={`${lang === "ta" ? "font-tamil" : "font-serif-d"} text-5xl md:text-7xl italic`}>
+          {t.journey_title}
+        </h2>
+      </div>
+
+      <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-px bg-stone-800">
+        {JOURNEY.map((step, i) => (
+          <div
+            key={i}
+            className="bg-black p-6 hover:bg-stone-900 transition group"
+          >
+            <p className="font-mono-d text-[10px] uppercase tracking-[0.25em] text-yellow-300 mb-3">
+              Step {String(i + 1).padStart(2, "0")}
+            </p>
+            <p className="font-display text-2xl md:text-3xl mb-3 group-hover:text-yellow-300 transition">
+              {step.year}
+            </p>
+            <p className="text-xs text-stone-400 leading-relaxed">{step.note}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  {/* PROMISE SCORECARD */}
+  <PromiseScorecard t={t} lang={lang} />
+
+  {/* SOURCES */}
+  <section id="sources" className="border-b border-stone-800 py-20 md:py-24 bg-stone-950">
+    <div className="max-w-7xl mx-auto px-6">
+      <div className="mb-10">
+        <p className="font-mono-d text-xs uppercase tracking-[0.3em] text-red-500 mb-3">
+          §05
+        </p>
+        <h2 className={`${lang === "ta" ? "font-tamil" : "font-display"} text-5xl md:text-7xl mb-3`}>
+          {t.sources_title}
+        </h2>
+        <p className={`${lang === "ta" ? "font-tamil" : ""} text-stone-400`}>
+          {t.sources_sub}
+        </p>
+      </div>
+      <ol className="space-y-3">
+        {SOURCES.map((s) => (
+          <li
+            key={s.n}
+            id={`source-${s.n}`}
+            className="border-l-2 border-stone-800 hover:border-yellow-300 pl-5 py-2 transition group"
+          >
+            <div className="flex flex-wrap items-baseline gap-x-4 gap-y-1">
+              <span className="font-mono-d text-yellow-300 text-sm">[{s.n}]</span>
+              <span className="text-stone-200 flex-1 min-w-[200px]">
+                {s.label}
+              </span>
+              <span className="font-mono-d text-[10px] uppercase tracking-wider text-stone-500">
+                {s.org}
+              </span>
+              <span className="font-mono-d text-[10px] text-stone-600">
+                {s.date}
+              </span>
+              <a
+                href={s.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-mono-d text-[10px] uppercase tracking-wider text-stone-500 hover:text-yellow-300 flex items-center gap-1"
+              >
+                Verify <ExternalLink size={10} />
+              </a>
+            </div>
+          </li>
+        ))}
+      </ol>
+      <p className="font-mono-d text-[10px] text-stone-600 uppercase tracking-wider mt-8 leading-relaxed max-w-2xl">
+        Reporting on this fast-moving situation is fluid. Where sources conflict, this site reflects the most recent reliable update. Spot an error? Email corrections@cmvijay.ai
+      </p>
+    </div>
+  </section>
+
+  {/* SHARE / FOOTER */}
+  <footer className="py-16 md:py-20 bg-black">
+    <div className="max-w-7xl mx-auto px-6">
+      <div className="grid md:grid-cols-2 gap-12 mb-16">
+        <div>
+          <p className="font-display text-4xl md:text-5xl mb-4">
+            Built for the moment.
+          </p>
+          <p className="text-stone-400 max-w-md leading-relaxed">
+            Tamil Nadu just broke a 59-year political pattern. cmvijay.ai
+            tracks the formation of the next government — and what it
+            delivers, day by day.
           </p>
         </div>
-      </section>
-
-      {/* SHARE / FOOTER */}
-      <footer className="py-16 md:py-20 bg-black">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="grid md:grid-cols-2 gap-12 mb-16">
-            <div>
-              <p className="font-display text-4xl md:text-5xl mb-4">
-                Built for the moment.
-              </p>
-              <p className="text-stone-400 max-w-md leading-relaxed">
-                Tamil Nadu just broke a 59-year political pattern. cmvijay.ai
-                tracks the formation of the next government — and what it
-                delivers, day by day.
-              </p>
-            </div>
-            <div className="flex flex-col gap-3 md:items-end">
-              <button
-                onClick={handleShare}
-                className="bg-red-600 text-white font-mono-d text-sm uppercase tracking-wider px-6 py-4 hover:bg-red-500 transition flex items-center gap-2 self-start md:self-end"
-              >
-                <Share2 size={16} /> Share this site
-              </button>
-              <p className="font-mono-d text-xs text-stone-500">
-                cmvijay.ai → WhatsApp, X, Telegram
-              </p>
-            </div>
-          </div>
-
-          <div className="border-t border-stone-900 pt-8 flex flex-col md:flex-row justify-between gap-6">
-            <p className="text-xs text-stone-500 max-w-3xl leading-relaxed">
-              {t.footer_disclaimer}
-            </p>
-            <div className="font-mono-d text-[10px] uppercase tracking-[0.25em] text-stone-600 flex items-center gap-2">
-              <span className="w-1.5 h-1.5 bg-red-500 inline-block" />
-              {t.footer_credit}
-            </div>
-          </div>
+        <div className="flex flex-col gap-3 md:items-end">
+          <button
+            onClick={handleShare}
+            className="bg-red-600 text-white font-mono-d text-sm uppercase tracking-wider px-6 py-4 hover:bg-red-500 transition flex items-center gap-2 self-start md:self-end"
+          >
+            <Share2 size={16} /> Share this site
+          </button>
+          <p className="font-mono-d text-xs text-stone-500">
+            cmvijay.ai → WhatsApp, X, Telegram
+          </p>
         </div>
-      </footer>
+      </div>
+
+      <div className="border-t border-stone-900 pt-8 flex flex-col md:flex-row justify-between gap-6">
+        <p className="text-xs text-stone-500 max-w-3xl leading-relaxed">
+          {t.footer_disclaimer}
+        </p>
+        <div className="font-mono-d text-[10px] uppercase tracking-[0.25em] text-stone-600 flex items-center gap-2">
+          <span className="w-1.5 h-1.5 bg-red-500 inline-block" />
+          {t.footer_credit}
+        </div>
+      </div>
     </div>
-  );
+  </footer>
+</div>
+```
+
+);
 }
 
+import { createRoot } from “react-dom/client”;
+createRoot(document.getElementById(“root”)).render(<CMVijayAI />);
+</script>
 
-import { createRoot } from "react-dom/client";
-createRoot(document.getElementById("root")).render(<CMVijayAI />);
-  </script>
 </body>
 </html>
