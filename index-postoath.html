@@ -1,0 +1,1532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>cmvijay.ai — Is Vijay CM yet? Live civic tracker</title>
+  <meta name="description" content="Independent civic tracker for Tamil Nadu's 2026 government formation. Coalition math, timeline, and TVK Nine Guarantees scorecard." />
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23000'/%3E%3Ctext y='80' font-size='80' fill='%23E63946' font-family='Arial Black' font-weight='900'%3EC%3C/text%3E%3C/svg%3E" />
+
+  <meta property="og:title" content="cmvijay.ai" />
+  <meta property="og:description" content="Live civic tracker for TVK government formation and manifesto delivery." />
+  <meta property="og:url" content="https://cmvijay.ai" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://cmvijay.ai/og.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.24.7/babel.min.js"></script>
+
+  <script type="importmap">
+  {
+    "imports": {
+      "react": "https://esm.sh/react@18.2.0",
+      "react-dom/client": "https://esm.sh/react-dom@18.2.0/client",
+      "lucide-react": "https://esm.sh/lucide-react@0.383.0?external=react"
+    }
+  }
+  </script>
+
+  <style>
+    body { background: #000; color: #f5f5f4; }
+    #root:empty::before {
+      content: "Loading…";
+      display: flex; align-items: center; justify-content: center;
+      height: 100vh; font-family: monospace; color: #57534e;
+      font-size: 12px; letter-spacing: 0.3em; text-transform: uppercase;
+    }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+
+  <script type="text/babel" data-type="module" data-presets="react">
+import React, { useState, useEffect, useMemo } from "react";
+import {
+  Activity,
+  TrendingUp,
+  Calendar,
+  Users,
+  Share2,
+  ChevronRight,
+  CheckCircle2,
+  Circle,
+  AlertCircle,
+  ExternalLink,
+  Globe,
+  Clock,
+  Zap,
+} from "lucide-react";
+
+// =============================================================================
+// cmvijay.ai — Live civic tracker for Tamil Nadu's 2026 government formation
+// Independent project. Not affiliated with TVK, Vijay, or any political party.
+// =============================================================================
+
+const STRINGS = {
+  en: {
+    nav_about: "About",
+    nav_math: "Coalition Math",
+    nav_timeline: "Timeline",
+    nav_promises: "Promise Tracker",
+    nav_journey: "The Journey",
+    promises_title: "Manifesto Promise Scorecard",
+    promises_sub:
+      "TVK's 'Nine Guarantees' manifesto, released by Vijay in Chennai on April 16, 2026. Each line below is sourced to the manifesto PDF on tvkvijay.com (semi-official), the chapter-by-chapter transcription on vijay.com (fan-affiliated), and corroborating reporting from ThePrint, Times of India, FilmiBeat, Daily Pioneer, The Logical Indian, and others. Tracking flips from 'Pending' to live status the day a TVK-led government takes oath.",
+    promises_filter: "Filter",
+    promises_meter: "Tracked",
+    promises_status_pending: "Pending",
+    promises_status_in_progress: "In Progress",
+    promises_status_delivered: "Delivered",
+    promises_status_partial: "Partial",
+    promises_status_broken: "Broken",
+    promises_total_label: "Total promises",
+    promises_active_note:
+      "Status will flip from 'Pending' to one of: In Progress / Partial / Delivered / Broken — based on cabinet orders, budget allocations, GOs, and independent verification.",
+    hero_question: "Is Vijay CM yet?",
+    hero_answer_no: "NOT YET",
+    hero_answer_yes: "YES",
+    hero_answer_soon: "ANY MOMENT",
+    hero_sub_no:
+      "Confirmed: TVK 108 + INC 5 + CPI 2 + CPI(M) 2 = 117 — one short of 118. VCK passed internal resolutions May 8 but Mr. Thirumavalavan's formal announcement is Saturday May 9 morning. If yes: 119, majority crossed.",
+    hero_sub_yes: "Sworn in as the 9th Chief Minister of Tamil Nadu on May 10, 2026 at the Jawaharlal Nehru Indoor Stadium, Chennai. First non-DMK / non-AIADMK government in the state since 1967 — ending six decades of Dravidian duopoly. Confidence vote in Assembly by May 13.",
+    hero_sub_soon: "Governor formally invites Mr. Vijay to form the government. Oath: Sunday May 10, 11 AM IST at Jawaharlal Nehru Indoor Stadium, Chennai. Confidence vote in Assembly by May 13. Coalition at 121 (TVK 108 + INC 5 + CPI 2 + CPI(M) 2 + VCK 2 + IUML 2). First non-DMK / non-AIADMK government in Tamil Nadu since 1967.",
+    live: "LIVE",
+    last_updated: "Last updated",
+    days_since: "days since polling",
+    share_label: "Share status",
+    math_title: "Coalition Math",
+    math_sub: "The path to 118",
+    math_target: "Majority needed",
+    math_have: "Confirmed coalition",
+    math_short: "Short by",
+    math_safe: "Surplus of",
+    math_confirmed: "Confirmed",
+    math_in_talks: "In negotiation",
+    math_opposition: "Opposition",
+    math_in_talks_note: "Currently in SPA or uncommitted. Decision expected next day.",
+    sources_title: "Sources",
+    sources_sub: "Every claim, sourced. Click to verify.",
+    timeline_title: "How we got here",
+    journey_title: "From Thalapathy to CM",
+    journey_sub: "A four-decade arc",
+    footer_disclaimer:
+      "cmvijay.ai is an independent, non-partisan civic tracker. Not affiliated with Tamilaga Vettri Kazhagam, Mr. Joseph Vijay, or any political party or government body. Data sourced from Election Commission of India and public news reporting.",
+    footer_credit: "A civic project",
+    seat_chart_title: "234 seats. The arithmetic.",
+    party_tvk: "TVK",
+    party_dmk: "DMK",
+    party_aiadmk: "AIADMK",
+    party_inc: "INC",
+    party_others: "Others",
+    cta_primary: "See coalition math",
+  },
+  ta: {
+    nav_about: "பற்றி",
+    nav_math: "கூட்டணி கணக்கு",
+    nav_timeline: "கால வரிசை",
+    nav_promises: "வாக்குறுதி கண்காணிப்பு",
+    nav_journey: "பயணம்",
+    promises_title: "வாக்குறுதி மதிப்பெண் அட்டவணை",
+    promises_sub:
+      "திவிக-வின் 'ஒன்பது உத்தரவாதங்கள்' அறிக்கை, விஜய் சென்னையில் ஏப்ரல் 16, 2026 அன்று வெளியிட்டார். ஒவ்வொரு வரியும் tvkvijay.com (அதிகாரப்பூர்வமற்ற) ஆவணம், vijay.com (அபிமானிகள் தளம்) பகுப்பாய்வு, மற்றும் ThePrint, Times of India உட்பட சரிபார்த்தலுக்கு குறிப்பிடப்பட்டுள்ளது. திவிக அரசு பதவியேற்கும் நாளில் இருந்து கண்காணிப்பு செயல்படும்.",
+    promises_filter: "வடிகட்டி",
+    promises_meter: "கண்காணிக்கப்படுகிறது",
+    promises_status_pending: "நிலுவையில்",
+    promises_status_in_progress: "நடைபெறுகிறது",
+    promises_status_delivered: "நிறைவேற்றப்பட்டது",
+    promises_status_partial: "பகுதியளவில்",
+    promises_status_broken: "நிறைவேற்றப்படவில்லை",
+    promises_total_label: "மொத்த வாக்குறுதிகள்",
+    promises_active_note:
+      "மந்திரிசபை ஆணைகள், பட்ஜெட் ஒதுக்கீடுகள், அரசாணைகள் மற்றும் சுயாதீன சரிபார்ப்பின் அடிப்படையில் நிலை மாறும்.",
+    hero_question: "விஜய் இன்னும் முதல்வரா ஆனாரா?",
+    hero_answer_no: "இன்னும் இல்லை",
+    hero_answer_yes: "ஆம்",
+    hero_answer_soon: "எந்நேரத்திலும்",
+    hero_sub_no:
+      "உறுதிசெய்யப்பட்டது: திவிக 108 + காங்கிரஸ் 5 + சிபிஐ 2 + சிபிஎம் 2 = 117 — 118-க்கு ஒன்று குறைவு. விசிக மே 8 அன்று உள்ளக தீர்மானங்கள் நிறைவேற்றியது; திரு. திருமாவளவன் அதிகாரப்பூர்வ அறிவிப்பு சனிக்கிழமை மே 9 காலையில். ஆம் என்றால்: 119, பெரும்பான்மை தாண்டப்படும்.",
+    hero_sub_yes: "மே 10, 2026 அன்று ஜவஹர்லால் நேரு உட்புற அரங்கம், சென்னையில் தமிழ்நாட்டின் 9-ஆம் முதலமைச்சராக பதவியேற்றார். 1967-க்குப் பிறகு திமுக-அதிமுக அல்லாத முதல் அரசு — ஆறு தசாப்த திராவிடக் கொள்கை ஆதிக்கம் முடிவுக்கு. மே 13-க்குள் சட்டப்பேரவையில் நம்பிக்கை வாக்கெடுப்பு.",
+    hero_sub_soon: "ஆளுநர் திரு. விஜயை அரசு அமைக்க அதிகாரப்பூர்வமாக அழைத்தார். பதவியேற்பு: ஞாயிற்றுக்கிழமை மே 10, காலை 11 மணி (இ.நே.) — ஜவஹர்லால் நேரு உட்புற அரங்கம், சென்னை. மே 13-க்குள் சட்டப்பேரவையில் நம்பிக்கை வாக்கெடுப்பு. கூட்டணி 121 (திவிக 108 + காங்கிரஸ் 5 + சிபிஐ 2 + சிபிஎம் 2 + விசிக 2 + இ.யூ.எம்.எல் 2). 1967-க்குப் பிறகு தமிழ்நாட்டில் முதல் முறையாக திமுக-அதிமுக அல்லாத அரசு.",
+    live: "நேரலை",
+    last_updated: "கடைசி புதுப்பிப்பு",
+    days_since: "வாக்குப்பதிவுக்குப் பின்",
+    share_label: "பகிர்",
+    math_title: "கூட்டணி கணக்கு",
+    math_sub: "118-ஐ நோக்கி",
+    math_target: "தேவையான பெரும்பான்மை",
+    math_have: "உறுதிசெய்யப்பட்ட கூட்டணி",
+    math_short: "குறைவு",
+    math_safe: "மிகை",
+    math_confirmed: "உறுதிசெய்யப்பட்டது",
+    math_in_talks: "பேச்சுவார்த்தையில்",
+    math_opposition: "எதிர்க்கட்சி",
+    math_in_talks_note: "தற்போது SPA-வில் அல்லது உறுதிசெய்யப்படவில்லை. முடிவு அடுத்த நாளில்.",
+    sources_title: "ஆதாரங்கள்",
+    sources_sub: "ஒவ்வொரு கூற்றுக்கும் ஆதாரம். சரிபார்க்க கிளிக் செய்யவும்.",
+    timeline_title: "இங்கு எப்படி வந்தோம்",
+    journey_title: "தளபதியிலிருந்து முதல்வராக",
+    journey_sub: "நான்கு தசாப்த வளைவு",
+    footer_disclaimer:
+      "cmvijay.ai ஒரு சுயாதீன, அரசியல் சார்பற்ற குடிமை கண்காணிப்பான். தமிழக வெற்றிக் கழகம், திரு. ஜோசப் விஜய், அல்லது எந்த அரசியல் கட்சி அல்லது அரசு அமைப்புடனும் தொடர்பில்லை.",
+    footer_credit: "ஒரு குடிமை திட்டம்",
+    seat_chart_title: "234 இடங்கள். கணக்கீடு.",
+    party_tvk: "திவிக",
+    party_dmk: "திமுக",
+    party_aiadmk: "அதிமுக",
+    party_inc: "காங்கிரஸ்",
+    party_others: "மற்றவை",
+    cta_primary: "கூட்டணி கணக்கைப் பார்",
+  },
+};
+
+// Status: "no" | "soon" | "yes" — flip as situation evolves.
+// Mr. Vijay sworn in as 9th Chief Minister of Tamil Nadu on May 10, 2026
+// at the Jawaharlal Nehru Indoor Stadium, Chennai. First non-DMK / non-AIADMK
+// CM in 59 years. Coalition: TVK 108 + INC 5 + CPI 2 + CPI(M) 2 + VCK 2 +
+// IUML 2 = 121 (+3 over majority). Confidence vote in Assembly by May 13.
+const CURRENT_STATUS = "yes";
+
+const CONFIRMED = [
+  { party: "TVK", seats: 108, color: "#E63946", source: 1 },
+  { party: "INC", seats: 5, color: "#FCD34D", source: 2 },
+  { party: "CPI", seats: 2, color: "#F87171", source: 23 },
+  { party: "CPI(M)", seats: 2, color: "#EF4444", source: 23 },
+  { party: "VCK", seats: 2, color: "#3B82F6", source: 31 },
+  { party: "IUML", seats: 2, color: "#10B981", source: 36 },
+];
+
+const IN_TALKS = [];
+
+const OPPOSITION = [
+  { party: "DMK", seats: 59, color: "#1D4ED8" },
+  { party: "AIADMK", seats: 47, color: "#16A34A" },
+  { party: "PMK", seats: 4, color: "#84CC16" },
+  { party: "BJP", seats: 1, color: "#F97316" },
+  { party: "DMDK", seats: 1, color: "#A855F7" },
+];
+
+const FULL_HOUSE = [
+  { party: "TVK", seats: 108, color: "#E63946" },
+  { party: "DMK", seats: 59, color: "#1D4ED8" },
+  { party: "AIADMK", seats: 47, color: "#16A34A" },
+  { party: "INC", seats: 5, color: "#FCD34D" },
+  { party: "PMK", seats: 4, color: "#84CC16" },
+  { party: "CPI/CPI(M)", seats: 4, color: "#EF4444" },
+  { party: "VCK", seats: 2, color: "#3B82F6" },
+  { party: "IUML", seats: 2, color: "#10B981" },
+  { party: "Others", seats: 3, color: "#6B7280" },
+];
+
+const SOURCES = [
+  {
+    n: 1,
+    label: "ECI seat counts",
+    org: "Election Commission of India / Wikipedia",
+    url: "https://en.wikipedia.org/wiki/2026_Tamil_Nadu_Legislative_Assembly_election",
+    date: "May 4, 2026",
+  },
+  {
+    n: 2,
+    label: "INC accepts TVK invitation, exits SPA — conditional on no BJP ties",
+    org: "Wikipedia (citing TNCC/AICC decision)",
+    url: "https://en.wikipedia.org/wiki/2026_Tamil_Nadu_Legislative_Assembly_election",
+    date: "May 6, 2026",
+  },
+  {
+    n: 3,
+    label: "Left parties and IUML clarify they remain in SPA",
+    org: "Wikipedia / India.com",
+    url: "https://en.wikipedia.org/wiki/2026_Tamil_Nadu_Legislative_Assembly_election",
+    date: "May 7, 2026",
+  },
+  {
+    n: 4,
+    label: "VCK signals support, decision pending",
+    org: "India.com live blog",
+    url: "https://www.india.com/news/india/tamil-nadu-government-formation-news-2026-live-thalapathy-vijay-tvk-chief-oath-new-tamil-nadu-cm-lok-bhavan-governor-rajendra-arlekar-election-results-congress-rahul-gandhi-aiadmk-dmk-bjp-politics-8406475/",
+    date: "May 8, 2026",
+  },
+  {
+    n: 5,
+    label: "Governor Arlekar rejects TVK's claim citing lack of majority",
+    org: "India.com / Lok Bhavan statement",
+    url: "https://www.india.com/news/india/tamil-nadu-government-formation-news-2026-live-thalapathy-vijay-tvk-chief-oath-new-tamil-nadu-cm-lok-bhavan-governor-rajendra-arlekar-election-results-congress-rahul-gandhi-aiadmk-dmk-bjp-politics-8406475/",
+    date: "May 8, 2026",
+  },
+  {
+    n: 6,
+    label: "TNCC calls statewide protests at 11am, May 8",
+    org: "TNCC press statement via India.com",
+    url: "https://www.india.com/news/india/tamil-nadu-government-formation-news-2026-live-thalapathy-vijay-tvk-chief-oath-new-tamil-nadu-cm-lok-bhavan-governor-rajendra-arlekar-election-results-congress-rahul-gandhi-aiadmk-dmk-bjp-politics-8406475/",
+    date: "May 8, 2026",
+  },
+  {
+    n: 7,
+    label: "AIADMK faction reportedly moved to Puducherry; some willing to back TVK",
+    org: "Wikipedia (citing media reports)",
+    url: "https://en.wikipedia.org/wiki/2026_Tamil_Nadu_Legislative_Assembly_election",
+    date: "May 7, 2026",
+  },
+  {
+    n: 8,
+    label: "GOAT (Sept 2024) — Vijay's penultimate film, $52M gross",
+    org: "Wikipedia / Variety",
+    url: "https://en.wikipedia.org/wiki/The_Greatest_of_All_Time",
+    date: "Sept 5, 2024",
+  },
+  {
+    n: 9,
+    label: "Jana Nayagan — currently unreleased; CBFC review delays blocked Jan 9 2026 Pongal release",
+    org: "Wikipedia / IMDb / Variety",
+    url: "https://en.wikipedia.org/wiki/Jana_Nayagan",
+    date: "Apr 2026",
+  },
+  {
+    n: 10,
+    label: "TVK Manifesto — 'Nine Guarantees', released by Vijay April 16, 2026 (96-page PDF)",
+    org: "tvkvijay.com (semi-official)",
+    url: "https://tvkvijay.com/en/manifesto",
+    date: "Apr 16, 2026",
+  },
+  {
+    n: 11,
+    label: "vijay.com — 9 Guarantee Chapters (full prose transcription of the manifesto)",
+    org: "vijay.com (Unofficial / fan-affiliated)",
+    url: "https://vijay.com/en/political/manifesto",
+    date: "Apr 2026",
+  },
+  {
+    n: 12,
+    label: "ThePrint — '10 Guarantees for Victorious TN' marketing list, Govt Employees package, ₹1.5T economy target",
+    org: "ThePrint",
+    url: "https://theprint.in/politics/vijay-unveils-tvks-manifesto-promises-free-gas-cylinders-8gm-gold-silk-saree-for-bride/2906861/",
+    date: "Apr 16, 2026",
+  },
+  {
+    n: 13,
+    label: "Times of India / MSN — '40-point' breakdown, scheme names (Singa Pengal, Thaai Maaman, Vettri Skill, Entrepreneurship)",
+    org: "Times of India via MSN",
+    url: "https://www.msn.com/en-in/news/other/tamil-nadu-election-results-2026-how-tvk-s-40-point-manifesto-powered-vijay-s-rise-as-mudhalamaichar/ar-AA22mhH8",
+    date: "May 4, 2026",
+  },
+  {
+    n: 14,
+    label: "FilmiBeat — Police salary revision, MSME credit funds, Weavers raw material subsidies",
+    org: "FilmiBeat",
+    url: "https://www.filmibeat.com/tamil/news/2026/vijay-tvk-manifesto-key-welfare-jobs-governance-promises-as-party-heads-for-power-in-tamil-nadu-514719.html",
+    date: "May 4, 2026",
+  },
+  {
+    n: 15,
+    label: "The Logical Indian — fishermen specifics (₹27K relief, ₹25L insurance, statutory fish MSP)",
+    org: "The Logical Indian",
+    url: "https://thelogicalindian.com/vijays-8-promises-power-tvk-past-100-mark-triggering-tamil-nadus-2026-political-shake-up/",
+    date: "May 4, 2026",
+  },
+  {
+    n: 16,
+    label: "Daily Pioneer — household welfare details (200u electricity, 100% piped water, ₹3K pension)",
+    org: "Daily Pioneer",
+    url: "https://dailypioneer.com/news/vijay-tvk-manifesto-promises-8-gram-gold-cash-aid-jobs-as-party-nears-majority-tamil-nadu-",
+    date: "May 4, 2026",
+  },
+  {
+    n: 17,
+    label: "voterlist.co.in — Mudhavar Makkal Seva Nanban (5L jobs at ₹18K via panchayats), 2.5% SGST + 5% electricity subsidy",
+    org: "voterlist.co.in",
+    url: "https://voterlist.co.in/tvk-manifesto-2026/",
+    date: "Apr 2026",
+  },
+  {
+    n: 18,
+    label: "The Quint — Katchatheevu retrieval, BJP as 'ideological enemy' framing",
+    org: "The Quint",
+    url: "https://www.thequint.com/news/breaking-news/tvk-vijay-poll-promises-youth-transparency-social-justice",
+    date: "May 4, 2026",
+  },
+  {
+    n: 19,
+    label: "Wikipedia TVK — NEET abolition stance, education to State List, founding history",
+    org: "Wikipedia",
+    url: "https://en.wikipedia.org/wiki/Tamilaga_Vettri_Kazhagam",
+    date: "Mar 2026",
+  },
+  {
+    n: 20,
+    label: "TVK threatens mass MLA resignation if DMK/AIADMK form govt; Vijay must vacate one of two won seats",
+    org: "LatestLY / NewsFirstPrime / Sakshi Post",
+    url: "https://www.latestly.com/india/politics/tamil-nadu-hung-assembly-vijays-tvk-warns-of-mass-mla-resignation-if-dmk-or-aiadmk-try-to-form-government-say-sources-7420839.html",
+    date: "May 8, 2026",
+  },
+  {
+    n: 21,
+    label: "Left parties huddle, VCK decision Saturday May 9 — Thirumavalavan calls 5pm video meeting",
+    org: "The Tribune",
+    url: "https://www.tribuneindia.com/news/india/support-for-vijays-tvk-in-tamil-nadu-left-in-huddle-vck-to-announce-stand-on-saturday/",
+    date: "May 8, 2026",
+  },
+  {
+    n: 22,
+    label: "Cross-party support: Kamal Haasan, P. Chidambaram, Prakash Raj back TVK's claim to government",
+    org: "India.com / The Week",
+    url: "https://www.theweek.in/news/india/2026/05/06/will-vck-back-tvk-vijay-has-48-hours-to-prove-majority-but-cpim-and-cpi-rule-out-alliance.html",
+    date: "May 8, 2026",
+  },
+  {
+    n: 23,
+    label: "The Hindu live blog: CPI/CPI(M)/VCK key to government formation; Vijay seeks floor-test path",
+    org: "The Hindu",
+    url: "https://www.thehindu.com/elections/tamil-nadu-assembly/tamil-nadu-government-formation-live-updates-cpi-cpim-vck-key-to-govt-formation-dmk-aiadmk-tvk-politics/article70953684.ece",
+    date: "May 8, 2026",
+  },
+  {
+    n: 24,
+    label: "Left reversal: CPI(M) GS M.A. Baby + TN state secretary publicly demand Governor invite TVK; CPI cites SC precedents",
+    org: "ANI / Business Standard / The Federal",
+    url: "https://aninews.in/news/national/politics/cpm-demands-governor-invite-tvks-vijay-to-form-government-in-hung-tamil-nadu-assembly20260508083526/",
+    date: "May 8, 2026",
+  },
+  {
+    n: 25,
+    label: "BusinessToday claims joint press conference at 4:30pm where VCK+CPI+CPI(M) commit support — single-source, not yet corroborated by PTI/The Hindu (which still describe VCK decision as Saturday)",
+    org: "BusinessToday",
+    url: "https://www.businesstoday.in/india/story/tamil-nadu-government-formation-thalapathy-vijay-tvk-vck-cpm-cpi-530535-2026-05-08",
+    date: "May 8, 2026",
+  },
+  {
+    n: 26,
+    label: "Dinamalar — Tamil-language coverage of CPI and CPI(M) formal support announcement",
+    org: "Dinamalar",
+    url: "https://www.dinamalar.com",
+    date: "May 8, 2026",
+  },
+  {
+    n: 27,
+    label: "India TV — sources-based 'TVK secures numbers' report (later disputed by VCK's own statement, May 8 night)",
+    org: "India TV",
+    url: "https://www.indiatvnews.com/tamil-nadu/chennai-tamil-nadu-vijay-s-tvk-secures-numbers-to-form-govt-as-vck-cpm-and-cpi-extend-support-say-sources-2026-05-08-1040396",
+    date: "May 8, 2026",
+  },
+  {
+    n: 28,
+    label: "Deccan Chronicle — '119 majority' framing (premature; VCK formal announcement still pending May 9)",
+    org: "Deccan Chronicle",
+    url: "https://www.deccanchronicle.com/southern-states/tamil-nadu/vijay-reaches-majority-mark-as-tvk-gets-support-from-congress-vck-cpi-and-cpim-1955434",
+    date: "May 8, 2026",
+  },
+  {
+    n: 29,
+    label: "WION — '119 with VCK and Left support' framing (premature; VCK formal announcement still pending May 9)",
+    org: "WION",
+    url: "https://www.wionews.com/india-news/vijay-s-tvk-crosses-majority-mark-in-tamil-nadu-with-vck-and-left-support-1778238339010",
+    date: "May 8, 2026",
+  },
+  {
+    n: 30,
+    label: "The News Minute — VCK's own late-night statement clarifying decision deferred to Saturday May 9; party explicitly disputes media reports of premature support",
+    org: "The News Minute",
+    url: "https://www.thenewsminute.com/tamil-nadu/tvk-or-dmk-vck-to-announce-decision-on-may-9-says-media-creating-confusion",
+    date: "May 8, 2026",
+  },
+  {
+    n: 31,
+    label: "The Hindu — Mr. Thirumavalavan formally announces VCK support for TVK ahead of May 9",
+    org: "The Hindu",
+    url: "https://www.thehindu.com/elections/tamil-nadu-assembly/viduthalai-chiruthaigal-katchi-vck-thirumavalavan-support-to-vijay-tvk-may-9-2026/article70958026.ece",
+    date: "May 8, 2026",
+  },
+  {
+    n: 32,
+    label: "India TV live blog — VCK demands Deputy CM post for Mr. Thirumavalavan; oath scheduled May 9 11AM; IUML stays with DMK; AMMK counter-letter for Mr. Palaniswami",
+    org: "India TV",
+    url: "https://www.indiatvnews.com/tamil-nadu/news-tamil-nadu-government-formation-live-updates-c-joseph-vijay-tvk-dmk-aiadmk-congress-left-bjp-governor-rajendra-arlekar-tamil-nadu-election-result-2026-1040347",
+    date: "May 8, 2026",
+  },
+  {
+    n: 33,
+    label: "The Wire — TVK chief crosses halfway mark, oath at Jawaharlal Nehru Indoor Stadium possible; conflicting reports on majority math (117 vs 116)",
+    org: "The Wire",
+    url: "https://m.thewire.in/article/politics/tvk-chief-vijay-makes-it-across-halfway-mark-will-be-sworn-in-as-tamil-nadu-chief-minister-on-saturday",
+    date: "May 8, 2026",
+  },
+  {
+    n: 34,
+    label: "ANI — confirms oath May 9, 11 AM at Jawaharlal Nehru Indoor Stadium; Mr. Rahul Gandhi to attend; CPI(M) M.A. Baby and CPI Veerapandian on-record",
+    org: "ANI / Asianet Newsable",
+    url: "https://newsable.asianetnews.com/india/actor-vijay-to-be-sworn-in-as-tamil-nadu-cm-ends-60year-duopoly-articleshow-to5zegn",
+    date: "May 8, 2026",
+  },
+  {
+    n: 35,
+    label: "ANI — 'Thalapathy takes over Tamil Nadu' — first non-DMK / non-AIADMK government since 1967, ending six-decade Dravidian duopoly",
+    org: "ANI",
+    url: "https://www.aninews.in/news/national/politics/thalapathy-takes-over-tamil-nadu-vijay-to-take-oath-as-cm-tomorrow-after-vck-left-cong-support20260508223148/",
+    date: "May 8, 2026",
+  },
+  {
+    n: 36,
+    label: "Dinamalar (Tamil) — Governor formally invites Mr. Vijay to form government; oath May 10. IUML extends support.",
+    org: "Dinamalar",
+    url: "https://www.dinamalar.com/news/tamil-nadu-news/vijay-become-cm-governor-arlekkar-apporves/4218556",
+    date: "May 9, 2026",
+  },
+  {
+    n: 37,
+    label: "The Hindu — CM-designate Mr. Vijay to take oath May 10; vote of confidence in Assembly by May 13",
+    org: "The Hindu",
+    url: "https://www.thehindu.com/elections/tamil-nadu-assembly/tamil-nadu-government-formation-live-updates-cpi-cpim-vck-dmk-aiadmk-ammk-tvk-alliance-parties-may-9-2026/article70958001.ece",
+    date: "May 9, 2026",
+  },
+];
+
+// Manifesto promises: organized by TVK's "Nine Guarantees" — the policy-theme
+// taxonomy used on vijay.com (a verbatim transcription of the manifesto PDF
+// hosted at tvkvijay.com/en/manifesto). A 10th "Tamil Identity" category
+// captures cross-cutting positions (Katchatheevu, NEET abolition).
+//
+// Sources: numbers map to the SOURCES array. [10] is tvkvijay.com (semi-official),
+// [11] is the vijay.com chapter transcription, then secondary corroboration.
+//
+// Status: pending | in_progress | delivered | partial | broken
+const MANIFESTO = [
+  // ============= 01. WOMEN'S WELFARE =============
+  { id: "g1_2500", category: "01 · Women's Welfare", text: "₹2,500/month direct transfer to women heads of households below 60 — guaranteed income floor reaching 1.5 crore families", status: "pending", sources: [10, 11, 12] },
+  { id: "g1_bus", category: "01 · Women's Welfare", text: "Free travel for women on all government buses, no restrictions", status: "pending", sources: [10, 11] },
+  { id: "g1_lpg", category: "01 · Women's Welfare", text: "6 free LPG cylinders per year for every family", status: "pending", sources: [10, 11, 12] },
+  { id: "g1_marriage", category: "01 · Women's Welfare", text: "Singa Pengal Marriage Assistance: 1 sovereign (8g) gold + silk saree, families <₹5L income", status: "pending", sources: [10, 11, 12] },
+  { id: "g1_newborn", category: "01 · Women's Welfare", text: "Thaai Maaman Gold Ring Scheme: gold ring + welcome kit for every newborn", status: "pending", sources: [10, 11, 13] },
+  { id: "g1_shg", category: "01 · Women's Welfare", text: "Singa Pengal Empowerment Scheme: ₹5L interest-free SHG loans + ₹5L grant for SHGs transitioning to MSMEs", status: "pending", sources: [10, 12, 13] },
+  { id: "g1_safety", category: "01 · Women's Welfare", text: "Dedicated women safety: fast-track courts, anonymous reporting channels, mandatory conviction-rate audits", status: "pending", sources: [10, 11, 14] },
+  { id: "g1_dept", category: "01 · Women's Welfare", text: "Dedicated Department for Women, Children & Senior Citizens — under direct CM supervision", status: "pending", sources: [10, 14, 17] },
+
+  // ============= 02. HEALTH FOR ALL =============
+  { id: "g2_25l", category: "02 · Health for All", text: "₹25 lakh health insurance for every family — not just BPL households", status: "pending", sources: [10, 11, 16] },
+  { id: "g2_hospital", category: "02 · Health for All", text: "Upgraded govt hospitals: advanced diagnostics, specialist access in Tier-2 districts, telemedicine for rural areas", status: "pending", sources: [10, 11] },
+  { id: "g2_check", category: "02 · Health for All", text: "Free annual health check-ups", status: "pending", sources: [10, 16] },
+  { id: "g2_cpc", category: "02 · Health for All", text: "Citizen Privilege Card — single bribe-free gateway to all welfare schemes", status: "pending", sources: [10, 11] },
+
+  // ============= 03. EDUCATION REVOLUTION =============
+  { id: "g3_freehe", category: "03 · Education", text: "Free higher education for children of small and marginal farmers", status: "pending", sources: [10, 11] },
+  { id: "g3_loans", category: "03 · Education", text: "Interest-free + collateral-free education loans up to ₹20 lakh (Class XII → PhD), full govt guarantee", status: "pending", sources: [10, 11, 16] },
+  { id: "g3_creative", category: "03 · Education", text: "500 'Creative Schools' with quality residential education", status: "pending", sources: [10, 11] },
+  { id: "g3_kamarajar", category: "03 · Education", text: "100 residential 'Kamarajar' Special Schools", status: "pending", sources: [10, 16, 15] },
+  { id: "g3_exams", category: "03 · Education", text: "Timely conduct of all government examinations — no last-minute rescheduling", status: "pending", sources: [10, 11] },
+  { id: "g3_15k", category: "03 · Education", text: "₹15,000/year to mother of every child in govt/aided schools (Classes 1-12) — anti-dropout", status: "pending", sources: [10, 12, 16] },
+  { id: "g3_loanwaive", category: "03 · Education", text: "Waive existing education loans for students from poor families", status: "pending", sources: [10] },
+  { id: "g3_aicoach", category: "03 · Education", text: "AI-powered free competitive exam coaching centres", status: "pending", sources: [10, 15] },
+
+  // ============= 04. JOBS & OPPORTUNITIES =============
+  { id: "g4_grad", category: "04 · Jobs & Opportunities", text: "₹4,000/month unemployment allowance for graduates above 29", status: "pending", sources: [10, 11, 12] },
+  { id: "g4_diploma", category: "04 · Jobs & Opportunities", text: "₹2,000-2,500/month support for unemployed diploma holders", status: "pending", sources: [10, 11] },
+  { id: "g4_internship", category: "04 · Jobs & Opportunities", text: "Vettri Skill Training Scheme: 5 lakh internships annually with ₹10K stipend (graduates) / ₹8K (IT/diploma)", status: "pending", sources: [10, 11, 13] },
+  { id: "g4_75pct", category: "04 · Jobs & Opportunities", text: "'Local Employment for Local People' — 75% of all private + public sector jobs reserved for Tamil Nadu locals", status: "pending", sources: [10, 11, 13] },
+  { id: "g4_subsidy", category: "04 · Jobs & Opportunities", text: "2.5% SGST + 5% electricity subsidy for companies hiring 75%+ Tamil workforce; priority in govt procurement", status: "pending", sources: [10, 17] },
+  { id: "g4_panchayat", category: "04 · Jobs & Opportunities", text: "Mudhavar Makkal Seva Nanban: 5 lakh youth posts at ₹18,000/month in every gram panchayat & urban local body", status: "pending", sources: [10, 17] },
+  { id: "g4_entrep", category: "04 · Jobs & Opportunities", text: "Entrepreneurship Scheme: collateral-free loans up to ₹25 lakh for youth", status: "pending", sources: [10, 13, 17] },
+  { id: "g4_creator", category: "04 · Jobs & Opportunities", text: "Startup & Creative Entrepreneurs Support: 1.5 lakh creators", status: "pending", sources: [10, 11] },
+  { id: "g4_skilling", category: "04 · Jobs & Opportunities", text: "Skill Development & AI-Driven Opportunities for future-ready workforce", status: "pending", sources: [10, 11] },
+  { id: "g4_merit", category: "04 · Jobs & Opportunities", text: "Transparent Recruitment, Transfers & Promotions — No Bribery, Only Merit", status: "pending", sources: [10, 11, 14] },
+  { id: "g4_council", category: "04 · Jobs & Opportunities", text: "Tamil Nadu Youth Advisory Council — first state in India to set one up", status: "pending", sources: [10, 17] },
+
+  // ============= 05. FARMER FIRST =============
+  { id: "g5_loan", category: "05 · Farmer First", text: "Complete crop loan waiver for holdings <5 acres; 50% waiver for larger holdings", status: "pending", sources: [10, 11, 12] },
+  { id: "g5_insure", category: "05 · Farmer First", text: "100% crop insurance for all farmers", status: "pending", sources: [10, 11] },
+  { id: "g5_msp", category: "05 · Farmer First", text: "Minimum Support Price of ₹4,500/ton for sugarcane with farmer-friendly procurement", status: "pending", sources: [10, 11] },
+  { id: "g5_msp_general", category: "05 · Farmer First", text: "Legally backed MSP for key crops (incl. paddy)", status: "pending", sources: [10, 12, 14] },
+  { id: "g5_tenant", category: "05 · Farmer First", text: "Financial assistance for tenant farmers", status: "pending", sources: [10, 14] },
+  { id: "g5_lakshya", category: "05 · Farmer First", text: "Lakshya Veetu Scheme: permanent houses for all fishermen families", status: "pending", sources: [10, 11] },
+  { id: "g5_fish_relief", category: "05 · Farmer First", text: "Fishermen: ₹27,000 lean-season relief", status: "pending", sources: [10, 15] },
+  { id: "g5_fish_insure", category: "05 · Farmer First", text: "Fishermen: ₹25 lakh accident insurance + subsidised diesel for fishing boats", status: "pending", sources: [10, 15] },
+  { id: "g5_fish_msp", category: "05 · Farmer First", text: "Fishermen: India's first statutory Minimum Support Price for fish", status: "pending", sources: [10, 15] },
+
+  // ============= 06. ELECTRICITY & MSME =============
+  { id: "g6_elec", category: "06 · Electricity & MSME", text: "200 units of free electricity per family per month", status: "pending", sources: [10, 11, 16] },
+  { id: "g6_water", category: "06 · Electricity & MSME", text: "Drinking water pipeline connections to every household", status: "pending", sources: [10, 11, 16] },
+  { id: "g6_peak", category: "06 · Electricity & MSME", text: "Scrap peak-hour electricity charges for small businesses", status: "pending", sources: [10, 11] },
+  { id: "g6_msmetax", category: "06 · Electricity & MSME", text: "Tax-free electricity for 5 years for MSMEs", status: "pending", sources: [10, 11] },
+  { id: "g6_msme15k", category: "06 · Electricity & MSME", text: "₹15,000 crore MSME Guarantee Fund — largest state commitment to small-business survival in TN history", status: "pending", sources: [10, 11, 12] },
+  { id: "g6_credit", category: "06 · Electricity & MSME", text: "Credit guarantee funds + modernisation subsidies for small businesses", status: "pending", sources: [10, 14] },
+  { id: "g6_business", category: "06 · Electricity & MSME", text: "Issue business licences within 21 days", status: "pending", sources: [10, 16] },
+  { id: "g6_weavers_finance", category: "06 · Electricity & MSME", text: "Weavers: direct financial assistance + raw material subsidies", status: "pending", sources: [10, 14] },
+  { id: "g6_weavers_digital", category: "06 · Electricity & MSME", text: "Weavers: expanded market access through digital platforms", status: "pending", sources: [10, 14] },
+
+  // ============= 07. ANTI-DRUG & SOCIAL HARMONY =============
+  { id: "g7_mission", category: "07 · Anti-Drug & Harmony", text: "Drug-Free Tamil Nadu Mission: inter-agency intelligence, asset-seizure fast-tracking, mandatory de-addiction infrastructure in every district", status: "pending", sources: [10, 11] },
+  { id: "g7_zones", category: "07 · Anti-Drug & Harmony", text: "Anti-Drug Protection Zones around all schools and colleges", status: "pending", sources: [10, 11] },
+  { id: "g7_harmony", category: "07 · Anti-Drug & Harmony", text: "Social Harmony programme: community dialogue, inter-faith councils, legal enforcement against hate speech", status: "pending", sources: [10, 11] },
+
+  // ============= 08. CLEAN GOVERNANCE =============
+  { id: "g8_app", category: "08 · Clean Governance", text: "Vetri TN Super App — One App, One Click, One Solution for all govt services", status: "pending", sources: [10, 11] },
+  { id: "g8_21days", category: "08 · Clean Governance", text: "All certificates delivered within 21 days, guaranteed by law (Right to Service Act)", status: "pending", sources: [10, 11] },
+  { id: "g8_corruption", category: "08 · Clean Governance", text: "Strict Action Against Corruption — Zero Tolerance, Zero Corruption across all officials", status: "pending", sources: [10, 11] },
+  { id: "g8_doorstep", category: "08 · Clean Governance", text: "100% Doorstep Delivery of Govt Services (incl. ration) with Zero Exclusion Guarantee", status: "pending", sources: [10, 12, 17] },
+  { id: "g8_realtime", category: "08 · Clean Governance", text: "Real-time monitoring system for govt spending and projects", status: "pending", sources: [10, 14] },
+  { id: "g8_participate", category: "08 · Clean Governance", text: "People's Participation in Policy Making: 'Your Voice, Your Plan, Your Future'", status: "pending", sources: [10, 11] },
+  { id: "g8_mandala", category: "08 · Clean Governance", text: "District-Wise 'Mandala Plans' for balanced regional growth", status: "pending", sources: [10, 12] },
+  { id: "g8_aimin", category: "08 · Clean Governance", text: "India's First Ministry of Artificial Intelligence", status: "pending", sources: [10, 12, 13] },
+  { id: "g8_aiuni", category: "08 · Clean Governance", text: "AI University + AI City — TN as 'AI Capital of India'", status: "pending", sources: [10, 11, 12] },
+  { id: "g8_economy", category: "08 · Clean Governance", text: "₹1.5 trillion (₹150 lakh crore) economy target by 2036", status: "pending", sources: [10, 12] },
+
+  // ============= 09. FUTURE READY TAMIL NADU =============
+  { id: "g9_climate", category: "09 · Future Ready", text: "₹3,000 crore Climate Budget — renewable energy, green corridors, coastal resilience", status: "pending", sources: [10, 11] },
+  { id: "g9_renew", category: "09 · Future Ready", text: "Renewable Energy & Green Growth — TN as clean energy leader", status: "pending", sources: [10, 11] },
+  { id: "g9_regularise", category: "09 · Future Ready", text: "Regularisation of Nurses, Teachers & Anganwadi Workers (end contract labour exploitation)", status: "pending", sources: [10, 11, 12] },
+  { id: "g9_anganwadi", category: "09 · Future Ready", text: "₹18,000/month guaranteed salary for Anganwadi Workers — empowering 2 lakh women", status: "pending", sources: [10, 11, 12] },
+  { id: "g9_sanitation", category: "09 · Future Ready", text: "₹10,000/month salary for sanitation workers", status: "pending", sources: [10, 12] },
+  { id: "g9_super", category: "09 · Future Ready", text: "₹15 lakh on superannuation for govt employees", status: "pending", sources: [10, 12] },
+  { id: "g9_ops", category: "09 · Future Ready", text: "Review restoring the Old Pension Scheme", status: "pending", sources: [10, 12] },
+  { id: "g9_police", category: "09 · Future Ready", text: "Police Welfare & Salary Hikes — for a motivated, professional force", status: "pending", sources: [10, 11, 14] },
+  { id: "g9_housing", category: "09 · Future Ready", text: "Housing & Welfare Schemes — home with dignity for every family", status: "pending", sources: [10, 11] },
+
+  // ============= TAMIL IDENTITY (derived) =============
+  { id: "ti_katcha", category: "10 · Tamil Identity", text: "Pursue retrieval of Katchatheevu island from Sri Lanka", status: "pending", sources: [18] },
+  { id: "ti_neet", category: "10 · Tamil Identity", text: "Abolish NEET; demand education move from Concurrent List back to State List", status: "pending", sources: [19] },
+];
+
+const CATEGORIES = [
+  "All",
+  "01 · Women's Welfare",
+  "02 · Health for All",
+  "03 · Education",
+  "04 · Jobs & Opportunities",
+  "05 · Farmer First",
+  "06 · Electricity & MSME",
+  "07 · Anti-Drug & Harmony",
+  "08 · Clean Governance",
+  "09 · Future Ready",
+  "10 · Tamil Identity",
+];
+
+const TIMELINE = [
+  {
+    date: "Apr 23, 2026",
+    title: "Polling day",
+    body: "All 234 constituencies vote. Highest-ever turnout: 85.1%.",
+    sources: [1],
+  },
+  {
+    date: "May 4, 2026",
+    title: "Results declared",
+    body: "TVK emerges as single largest party with 108 seats. DMK 59. AIADMK 47.",
+    sources: [1],
+  },
+  {
+    date: "May 5, 2026",
+    title: "Mr. Stalin resigns",
+    body: "Mr. M.K. Stalin resigns as Chief Minister after losing his Kolathur seat.",
+    sources: [1],
+  },
+  {
+    date: "May 6, 2026",
+    title: "Mr. Vijay stakes claim",
+    body: "Meets Governor Arlekar. Governor demands letters of support from 118 MLAs and gives TVK a 48-hour ultimatum. CM-designate convoy withdrawn.",
+    sources: [1, 17],
+  },
+  {
+    date: "May 6, 2026",
+    title: "INC switches sides",
+    body: "TNCC accepts TVK's invitation, exits the DMK-led Secular Progressive Alliance — conditional on TVK never tying up with BJP. AICC routes decision back to state unit.",
+    sources: [2],
+  },
+  {
+    date: "May 7, 2026",
+    title: "Initial signals: Left + IUML stay with DMK",
+    body: "CPI, CPI(M) and IUML MLAs-elect meet Mr. Stalin at Anna Arivalayam, signal continued SPA loyalty. Lone DMDK MLA Premalatha confirms continued SPA membership. Position will reverse for Left parties next day; IUML stays.",
+    sources: [3, 17],
+  },
+  {
+    date: "May 8, 2026",
+    title: "Left parties pivot toward TVK",
+    body: "CPI(M) general secretary Mr. M.A. Baby publicly calls on Governor to invite TVK as single largest party (cites Vajpayee 1996 precedent). CPI Tamil Nadu state secretary asserts 'TVK should be allowed to form the government' per Constitution. Both parties' state committees in active deliberation; formal announcements expected today/tomorrow.",
+    sources: [23, 24],
+  },
+  {
+    date: "May 8, 2026",
+    title: "Governor rejects claim",
+    body: "Lok Bhavan informs TVK that the party lacks the requisite numbers. Mr. Vijay re-engages CPI, CPI(M), IUML and VCK for support; decision expected next day.",
+    sources: [5, 4],
+  },
+  {
+    date: "May 8, 2026",
+    title: "TNCC calls statewide protests",
+    body: "Tamil Nadu Congress Committee announces protests across district HQs at 11am, condemning Governor and Union government for 'acting against the Constitution'.",
+    sources: [6],
+  },
+  {
+    date: "May 8, 2026",
+    title: "TVK threatens mass MLA resignation",
+    body: "TVK warns all 107 MLAs (Mr. Vijay must vacate one of his two seats) will resign if DMK or AIADMK attempt to form government — would force statewide bypolls.",
+    sources: [20, 21],
+  },
+  {
+    date: "May 8, 2026",
+    title: "AIADMK opens external support window",
+    body: "AIADMK leader Kovai Sathyan: 'ball is in Vijay's court' on outside support for TVK government. ~28 of 47 AIADMK MLAs reportedly at Puducherry resort. General Secretary Palaniswami opposes any tie-up.",
+    sources: [7, 17],
+  },
+  {
+    date: "May 8, 2026",
+    title: "Cross-party voices back Mr. Vijay",
+    body: "Mr. Kamal Haasan (MNM) says not inviting Mr. Vijay would 'disrespect the mandate'. Mr. P. Chidambaram cites rulebook: 'leader of single-largest party must be invited'. Mr. Prakash Raj also publicly backs TVK.",
+    sources: [22],
+  },
+  {
+    date: "May 8, 2026",
+    title: "Supreme Court writ petition filed",
+    body: "Public-interest writ filed in the Supreme Court seeking direction that the Governor is duty-bound to invite Mr. Vijay — as leader of the single largest party — to form the government, and to prove the majority on the floor of the House thereafter. Constitutional escalation of the formation crisis.",
+    sources: [23],
+  },
+  {
+    date: "May 8, 2026",
+    title: "AMMK Mr. Dhinakaran files counter-letter for AIADMK",
+    body: "AMMK general secretary Mr. T.T.V. Dhinakaran reportedly submits letter to Governor stating Mr. E. Palaniswami enjoys support of 120 MLAs and should be granted permission to stake claim. Calls TVK letter 'horse trading and forgery'. Lone AMMK MLA-elect Kamaraj S declared loyal to NDA/AIADMK.",
+    sources: [32],
+  },
+  {
+    date: "May 8, 2026",
+    title: "AMMK denies TVK support",
+    body: "AMMK chief Mr. T.T.V. Dhinakaran refutes media reports that his party had extended support to TVK. Note: AMMK has minimal seat count in the new Assembly; impact on coalition arithmetic is negligible but underscores the active rumor-and-denial cycle around alliance formation.",
+    sources: [23],
+  },
+  {
+    date: "May 8, 2026",
+    title: "CPI and CPI(M) formally back TVK",
+    body: "Both Left parties extend formal support to the Mr. Vijay-led alliance per The Hindu and Dinamalar. CPI(M) GS Mr. M.A. Baby cites Vajpayee 1996 precedent. CPI urges Governor to invite TVK without prior floor test, citing Supreme Court precedents. Coalition rises to TVK 108 + INC 5 + CPI 2 + CPI(M) 2 = 117 — one short of 118.",
+    sources: [23, 26, 24],
+  },
+  {
+    date: "May 8, 2026 · evening",
+    title: "VCK formally backs TVK",
+    body: "Mr. Thirumavalavan formally announces VCK's support for the TVK-led alliance per The Hindu. Letters of support handed to Mr. Vijay alongside CPI and CPI(M) commitments. Coalition crosses 118.",
+    sources: [31, 30],
+  },
+  {
+    date: "May 8, 2026 · evening",
+    title: "VCK demands Deputy CM post for Mr. Thirumavalavan",
+    body: "VCK reportedly seeks the Deputy Chief Minister's post for Mr. Thirumavalavan in the new government. Cabinet structure under negotiation.",
+    sources: [32],
+  },
+  {
+    date: "May 8, 2026 · evening",
+    title: "IUML initially says: stays with DMK, no role in new government",
+    body: "Indian Union Muslim League issues clarification: it had only expressed willingness to support the Governor's decision on government formation, not the structure of the new administration. IUML stated it continues to remain part of the DMK alliance. Note: this position reverses on May 9 (see below).",
+    sources: [32],
+  },
+  {
+    date: "May 8, 2026 · evening",
+    title: "Mr. Vijay's third meeting with Governor",
+    body: "Mr. Vijay met Governor Arlekar tonight with letters of support from Congress, CPI, CPI(M), and now VCK. Third such meeting in seven days.",
+    sources: [27, 30],
+  },
+  {
+    date: "May 9, 2026",
+    title: "IUML reverses — extends support to TVK",
+    body: "Indian Union Muslim League formally extends support to the TVK-led alliance, reversing its May 8 evening position. Coalition rises from 119 to 121.",
+    sources: [36],
+  },
+  {
+    date: "May 9, 2026",
+    title: "Governor formally invites Mr. Vijay to form government",
+    body: "Governor Arlekar formally invites Mr. Vijay to form the government per Dinamalar. Coalition stands at 121 (TVK 108 + INC 5 + CPI 2 + CPI(M) 2 + VCK 2 + IUML 2) — three above the 118 majority threshold.",
+    sources: [36, 37],
+  },
+  {
+    date: "May 10, 2026 · 11 AM",
+    title: "🟨 Oath scheduled — first non-Dravidian govt in TN since 1967",
+    body: "Mr. Vijay set to be sworn in as the 9th Chief Minister of Tamil Nadu at the Jawaharlal Nehru Indoor Stadium, Chennai. First time since 1967 that a party other than DMK or AIADMK leads the state — ending nearly six decades of Dravidian duopoly. Mr. Rahul Gandhi (Leader of Opposition, Lok Sabha) confirmed to attend per INC sources. CPI(M) GS Mr. M.A. Baby on the Left's reasoning: 'There are various other moves to organise opportunistic alliances by those who have been rejected by people. We have decided that this has to be stopped at any cost.' CPI State Secretary Mr. Veerapandian: 'TVK is the single-largest party. It needs 6 MLAs to form the Govt. We have given 6 MLAs of CPI, CPI(M) and VCK. It is our democratic duty.'",
+    sources: [34, 35, 37],
+  },
+  {
+    date: "May 10, 2026 · 11 AM",
+    title: "✅ Mr. Vijay sworn in as 9th Chief Minister of Tamil Nadu",
+    body: "Mr. Vijay takes oath as the 9th Chief Minister of Tamil Nadu at the Jawaharlal Nehru Indoor Stadium, Chennai. First non-DMK / non-AIADMK Chief Minister in 59 years, ending six decades of Dravidian duopoly. Mr. Rahul Gandhi (Leader of Opposition, Lok Sabha) and Mr. Mallikarjun Kharge attended. Cabinet announcements to follow.",
+    sources: [37],
+  },
+  {
+    date: "May 13, 2026 (by)",
+    title: "Confidence vote in Assembly",
+    body: "Per The Hindu: Mr. Vijay must prove majority on the floor of the House by May 13. Coalition arithmetic stands at 121 (or 118-119 operating, after speakership and seat vacation). Floor test will be the constitutional close of the formation crisis.",
+    sources: [37],
+  },
+];
+
+const JOURNEY = [
+  { year: "1984", note: "Child role in Vetri (S.A. Chandrasekhar)" },
+  { year: "1992", note: "Lead debut: Naalaiya Theerpu, age 18" },
+  { year: "2003", note: "Action turn with Thirumalai" },
+  { year: "2017", note: "Mersal — first overt political signaling" },
+  { year: "Feb 2024", note: "Founds TVK. Announces future retirement after two pending films." },
+  { year: "Sept 2024", note: "GOAT released — penultimate film, ~$52M gross" },
+  { year: "Oct 2024", note: "First TVK political conference at Vikravandi — over 800,000 attendees. Ideology unveiled." },
+  { year: "Nov 2025", note: "Officially declared CM candidate at Mahabalipuram" },
+  { year: "Jan 2026", note: "Jana Nayagan scheduled for Pongal — blocked by CBFC review delays. Still unreleased." },
+  { year: "Apr 2026", note: "Polls Apr 23 in Perambur & Tiruchirappalli East" },
+  { year: "May 2026", note: "Wins both seats (May 4). Stakes claim. Governor rejects. Coalition in motion." },
+];
+
+// ============================================================================
+
+function useTimeAgo() {
+  const [now, setNow] = useState(new Date());
+  useEffect(() => {
+    const id = setInterval(() => setNow(new Date()), 1000);
+    return () => clearInterval(id);
+  }, []);
+  return now;
+}
+
+function pulseClass() {
+  return "before:absolute before:inset-0 before:rounded-full before:bg-red-500 before:animate-ping before:opacity-75";
+}
+
+// Inline citation footnote — superscript number that links to Sources section
+function Cite({ n }) {
+  if (!n) return null;
+  const arr = Array.isArray(n) ? n : [n];
+  return (
+    <sup className="font-mono-d text-[9px] text-yellow-300/90">
+      {arr.map((num, i) => (
+        <React.Fragment key={num}>
+          {i > 0 && <span className="text-stone-600">,</span>}
+          <a
+            href={`#source-${num}`}
+            className="hover:text-yellow-200 ml-0.5 underline decoration-dotted underline-offset-2"
+          >
+            [{num}]
+          </a>
+        </React.Fragment>
+      ))}
+    </sup>
+  );
+}
+
+// =============================================================================
+// PROMISE SCORECARD
+// =============================================================================
+const STATUS_META = {
+  pending: { color: "text-stone-500", bg: "bg-stone-800", label_key: "promises_status_pending", icon: Circle },
+  in_progress: { color: "text-yellow-300", bg: "bg-yellow-300/20", label_key: "promises_status_in_progress", icon: Clock },
+  delivered: { color: "text-green-400", bg: "bg-green-500/20", label_key: "promises_status_delivered", icon: CheckCircle2 },
+  partial: { color: "text-orange-400", bg: "bg-orange-500/20", label_key: "promises_status_partial", icon: AlertCircle },
+  broken: { color: "text-red-500", bg: "bg-red-500/20", label_key: "promises_status_broken", icon: AlertCircle },
+};
+
+function PromiseScorecard({ t, lang }) {
+  const [filter, setFilter] = useState("All");
+
+  const filtered = filter === "All" ? MANIFESTO : MANIFESTO.filter((p) => p.category === filter);
+
+  const counts = MANIFESTO.reduce(
+    (acc, p) => {
+      acc[p.status] = (acc[p.status] || 0) + 1;
+      return acc;
+    },
+    {}
+  );
+
+  const trackedPct = Math.round(
+    (((counts.delivered || 0) +
+      (counts.partial || 0) +
+      (counts.in_progress || 0) +
+      (counts.broken || 0)) /
+      MANIFESTO.length) *
+      100
+  );
+
+  return (
+    <section id="promises" className="border-b border-stone-800 py-20 md:py-28 relative overflow-hidden">
+      <div className="absolute inset-0 grain opacity-20 pointer-events-none" />
+      <div className="max-w-7xl mx-auto px-6 relative">
+        <div className="mb-10">
+          <p className="font-mono-d text-xs uppercase tracking-[0.3em] text-red-500 mb-3">
+            §04
+          </p>
+          <h2 className={`${lang === "ta" ? "font-tamil" : "font-display"} text-5xl md:text-7xl mb-4`}>
+            {t.promises_title} <Cite n={10} />
+          </h2>
+          <p className={`${lang === "ta" ? "font-tamil" : ""} text-stone-400 text-lg max-w-3xl leading-relaxed mb-6`}>
+            {t.promises_sub}
+          </p>
+          <div className="flex flex-wrap gap-3 items-center">
+            <a
+              href="https://tvkvijay.com/en/manifesto"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border border-yellow-300 text-yellow-300 font-mono-d text-xs uppercase tracking-wider px-4 py-2.5 hover:bg-yellow-300 hover:text-black transition flex items-center gap-2"
+            >
+              <ExternalLink size={12} /> View manifesto on tvkvijay.com (semi-official)
+            </a>
+            <span className="font-mono-d text-[10px] text-stone-600 uppercase tracking-wider">
+              Source document: 96-page PDF · Nine Guarantees · Released Apr 16, 2026
+            </span>
+          </div>
+        </div>
+
+        {/* Meter */}
+        <div className="grid md:grid-cols-4 gap-px bg-stone-800 border border-stone-800 mb-10">
+          <div className="bg-black p-6">
+            <p className="font-mono-d text-[10px] uppercase tracking-[0.25em] text-stone-500 mb-2">
+              {t.promises_total_label}
+            </p>
+            <p className="font-display text-5xl text-stone-100">{MANIFESTO.length}</p>
+          </div>
+          <div className="bg-black p-6">
+            <p className="font-mono-d text-[10px] uppercase tracking-[0.25em] text-yellow-300 mb-2">
+              {t.promises_status_in_progress}
+            </p>
+            <p className="font-display text-5xl text-yellow-300">{counts.in_progress || 0}</p>
+          </div>
+          <div className="bg-black p-6">
+            <p className="font-mono-d text-[10px] uppercase tracking-[0.25em] text-green-400 mb-2">
+              {t.promises_status_delivered}
+            </p>
+            <p className="font-display text-5xl text-green-400">{counts.delivered || 0}</p>
+          </div>
+          <div className="bg-black p-6">
+            <p className="font-mono-d text-[10px] uppercase tracking-[0.25em] text-red-500 mb-2">
+              {t.promises_status_broken}
+            </p>
+            <p className="font-display text-5xl text-red-500">{counts.broken || 0}</p>
+          </div>
+        </div>
+
+        {/* Progress bar */}
+        <div className="mb-10">
+          <div className="flex justify-between font-mono-d text-[10px] uppercase tracking-wider mb-2">
+            <span className="text-stone-500">{t.promises_meter}</span>
+            <span className="text-stone-300">{trackedPct}%</span>
+          </div>
+          <div className="h-2 bg-stone-900 overflow-hidden">
+            <div
+              className="h-full bg-yellow-300 transition-all duration-700"
+              style={{ width: `${trackedPct}%` }}
+            />
+          </div>
+        </div>
+
+        {/* Filter chips */}
+        <div className="flex flex-wrap gap-2 mb-8">
+          {CATEGORIES.map((c) => (
+            <button
+              key={c}
+              onClick={() => setFilter(c)}
+              className={`font-mono-d text-[11px] uppercase tracking-wider px-3 py-1.5 border transition ${
+                filter === c
+                  ? "border-yellow-300 text-yellow-300 bg-yellow-300/5"
+                  : "border-stone-800 text-stone-400 hover:border-stone-600 hover:text-stone-200"
+              }`}
+            >
+              {c}
+            </button>
+          ))}
+        </div>
+
+        {/* Promise rows */}
+        <div className="border border-stone-800 divide-y divide-stone-800">
+          {filtered.map((p) => {
+            const meta = STATUS_META[p.status];
+            const Icon = meta.icon;
+            return (
+              <div
+                key={p.id}
+                className="grid grid-cols-[100px_1fr_auto] gap-4 md:gap-6 items-center px-4 md:px-6 py-4 hover:bg-stone-950 transition"
+              >
+                <span className="font-mono-d text-[10px] uppercase tracking-wider text-stone-500">
+                  {p.category}
+                </span>
+                <span className="text-sm md:text-base text-stone-200 leading-snug">
+                  {p.text}
+                  <Cite n={p.sources} />
+                </span>
+                <span className={`flex items-center gap-1.5 font-mono-d text-[10px] uppercase tracking-wider ${meta.color} px-2.5 py-1 ${meta.bg}`}>
+                  <Icon size={10} />
+                  {t[meta.label_key]}
+                </span>
+              </div>
+            );
+          })}
+        </div>
+
+        <p className="font-mono-d text-[10px] text-stone-600 uppercase tracking-wider mt-6 leading-relaxed max-w-3xl">
+          {t.promises_active_note}
+        </p>
+      </div>
+    </section>
+  );
+}
+
+// ============================================================================
+
+export default function CMVijayAI() {
+  const [lang, setLang] = useState("en");
+  const t = STRINGS[lang];
+  const now = useTimeAgo();
+
+  const pollDay = useMemo(() => new Date("2026-04-23T00:00:00+05:30"), []);
+  const daysSincePoll = Math.floor(
+    (now - pollDay) / (1000 * 60 * 60 * 24)
+  );
+
+  const confirmedSeats = CONFIRMED.reduce((s, p) => s + p.seats, 0);
+  const inTalksSeats = IN_TALKS.reduce((s, p) => s + p.seats, 0);
+  const oppositionSeats = OPPOSITION.reduce((s, p) => s + p.seats, 0);
+  const TARGET = 118;
+  const delta = confirmedSeats - TARGET;
+  const potentialDelta = confirmedSeats + inTalksSeats - TARGET;
+
+  const heroAnswer =
+    CURRENT_STATUS === "yes"
+      ? t.hero_answer_yes
+      : CURRENT_STATUS === "soon"
+      ? t.hero_answer_soon
+      : t.hero_answer_no;
+
+  const heroSub =
+    CURRENT_STATUS === "yes"
+      ? t.hero_sub_yes
+      : CURRENT_STATUS === "soon"
+      ? t.hero_sub_soon
+      : t.hero_sub_no;
+
+  const heroColor =
+    CURRENT_STATUS === "yes"
+      ? "text-yellow-300"
+      : CURRENT_STATUS === "soon"
+      ? "text-yellow-300"
+      : "text-red-500";
+
+  const handleShare = () => {
+    const text = `${t.hero_question} ${heroAnswer}. ${heroSub} → cmvijay.ai`;
+    if (navigator.share) {
+      navigator.share({ title: "cmvijay.ai", text, url: "https://cmvijay.ai" });
+    } else {
+      navigator.clipboard.writeText(text + " https://cmvijay.ai");
+    }
+  };
+
+  return (
+    <div className="min-h-screen bg-black text-stone-100 selection:bg-yellow-300 selection:text-black">
+      {/* Embedded fonts + global styles */}
+      <style>{`
+        @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Serif+Display:ital@0;1&family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;500;600&family=Noto+Sans+Tamil:wght@400;600;800&display=swap');
+        html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+        .font-display { font-family: 'Archivo Black', 'Noto Sans Tamil', sans-serif; letter-spacing: -0.02em; }
+        .font-serif-d { font-family: 'DM Serif Display', 'Noto Sans Tamil', serif; }
+        .font-mono-d { font-family: 'IBM Plex Mono', monospace; }
+        .font-tamil { font-family: 'Noto Sans Tamil', sans-serif; }
+        body { font-family: 'IBM Plex Sans', 'Noto Sans Tamil', sans-serif; }
+        .grain {
+          background-image: radial-gradient(rgba(255,255,255,0.04) 1px, transparent 1px);
+          background-size: 3px 3px;
+        }
+        .scanline::after {
+          content: '';
+          position: absolute; inset: 0;
+          background: repeating-linear-gradient(0deg, rgba(255,255,255,0.02) 0 1px, transparent 1px 3px);
+          pointer-events: none;
+        }
+        @keyframes slide-up {
+          from { opacity: 0; transform: translateY(24px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+        .reveal { animation: slide-up 0.8s cubic-bezier(.16,1,.3,1) both; }
+      `}</style>
+
+      {/* NAV */}
+      <nav className="border-b border-stone-800 sticky top-0 bg-black/80 backdrop-blur-md z-50">
+        <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+          <div className="flex items-baseline gap-2">
+            <span className="font-display text-xl">cmvijay</span>
+            <span className="font-mono-d text-xs text-red-500">.ai</span>
+          </div>
+          <div className="hidden md:flex items-center gap-7 text-sm font-mono-d uppercase tracking-wider">
+            <a href="#math" className="hover:text-yellow-300">{t.nav_math}</a>
+            <a href="#timeline" className="hover:text-yellow-300">{t.nav_timeline}</a>
+            <a href="#promises" className="hover:text-yellow-300">{t.nav_promises}</a>
+            <a href="#journey" className="hover:text-yellow-300">{t.nav_journey}</a>
+            <a href="#sources" className="hover:text-yellow-300 text-stone-400">{t.sources_title}</a>
+          </div>
+          <button
+            onClick={() => setLang(lang === "en" ? "ta" : "en")}
+            className="font-mono-d text-xs uppercase tracking-wider border border-stone-700 hover:border-yellow-300 hover:text-yellow-300 px-3 py-1.5 rounded-sm flex items-center gap-1.5 transition"
+          >
+            <Globe size={12} />
+            {lang === "en" ? "தமிழ்" : "EN"}
+          </button>
+        </div>
+      </nav>
+
+      {/* HERO */}
+      <section className="relative overflow-hidden border-b border-stone-800">
+        <div className="absolute inset-0 grain opacity-40 pointer-events-none" />
+        <div className="absolute -top-40 -right-40 w-[600px] h-[600px] rounded-full bg-red-600/20 blur-[120px] pointer-events-none" />
+        <div className="absolute -bottom-40 -left-40 w-[500px] h-[500px] rounded-full bg-yellow-500/10 blur-[120px] pointer-events-none" />
+
+        <div className="max-w-7xl mx-auto px-6 pt-16 pb-20 md:pt-24 md:pb-32 relative">
+          {/* Live ticker */}
+          <div className="flex items-center gap-3 mb-12 reveal" style={{ animationDelay: "0ms" }}>
+            <span className="relative w-2.5 h-2.5">
+              <span className="absolute inset-0 rounded-full bg-red-500 animate-ping opacity-75" />
+              <span className="absolute inset-0 rounded-full bg-red-500" />
+            </span>
+            <span className="font-mono-d text-[11px] uppercase tracking-[0.25em] text-red-500">
+              {t.live}
+            </span>
+            <span className="text-stone-600">·</span>
+            <span className="font-mono-d text-[11px] uppercase tracking-[0.2em] text-stone-400">
+              {now.toLocaleString(lang === "ta" ? "ta-IN" : "en-IN", {
+                timeZone: "Asia/Kolkata",
+                hour: "2-digit",
+                minute: "2-digit",
+                day: "2-digit",
+                month: "short",
+              })} IST
+            </span>
+            <span className="text-stone-600">·</span>
+            <span className="font-mono-d text-[11px] uppercase tracking-[0.2em] text-stone-400">
+              Day {daysSincePoll} {t.days_since}
+            </span>
+          </div>
+
+          {/* Question */}
+          <div className="reveal" style={{ animationDelay: "120ms" }}>
+            <p className={`${lang === "ta" ? "font-tamil" : "font-serif-d"} text-3xl md:text-5xl text-stone-300 italic mb-3`}>
+              {t.hero_question}
+            </p>
+          </div>
+
+          {/* Massive answer */}
+          <h1
+            className={`${lang === "ta" ? "font-tamil" : "font-display"} ${heroColor} text-[18vw] md:text-[14rem] leading-[0.85] tracking-tighter mb-8 reveal`}
+            style={{ animationDelay: "240ms" }}
+          >
+            {heroAnswer}.
+          </h1>
+
+          <p
+            className={`${lang === "ta" ? "font-tamil" : ""} text-xl md:text-2xl text-stone-300 max-w-3xl leading-snug mb-10 reveal`}
+            style={{ animationDelay: "360ms" }}
+          >
+            {heroSub}
+          </p>
+
+          <div className="flex flex-wrap gap-3 reveal" style={{ animationDelay: "480ms" }}>
+            <a
+              href="#math"
+              className="bg-yellow-300 text-black font-mono-d text-sm uppercase tracking-wider px-6 py-3 hover:bg-yellow-200 transition flex items-center gap-2"
+            >
+              {t.cta_primary} <ChevronRight size={16} />
+            </a>
+            <button
+              onClick={handleShare}
+              className="border border-stone-600 text-stone-200 font-mono-d text-sm uppercase tracking-wider px-6 py-3 hover:border-yellow-300 hover:text-yellow-300 transition flex items-center gap-2"
+            >
+              <Share2 size={14} /> {t.share_label}
+            </button>
+          </div>
+        </div>
+      </section>
+
+      {/* COALITION MATH */}
+      <section id="math" className="border-b border-stone-800 py-20 md:py-28">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="mb-12">
+            <p className="font-mono-d text-xs uppercase tracking-[0.3em] text-red-500 mb-3">
+              §01 / {t.math_sub}
+            </p>
+            <h2 className={`${lang === "ta" ? "font-tamil" : "font-display"} text-5xl md:text-7xl mb-2`}>
+              {t.math_title}
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-6 md:gap-8">
+            {/* Target */}
+            <div className="border border-stone-800 p-8 hover:border-yellow-300 transition">
+              <p className="font-mono-d text-[10px] uppercase tracking-[0.25em] text-stone-500 mb-4">
+                {t.math_target}
+              </p>
+              <p className="font-display text-7xl md:text-8xl text-stone-100">{TARGET}</p>
+              <p className="font-mono-d text-xs text-stone-500 mt-2">/ 234 seats</p>
+            </div>
+            {/* Confirmed */}
+            <div className="border border-yellow-300 bg-yellow-300/5 p-8">
+              <p className="font-mono-d text-[10px] uppercase tracking-[0.25em] text-yellow-300 mb-4 flex items-center gap-1">
+                <CheckCircle2 size={12} /> {t.math_have}
+              </p>
+              <p className="font-display text-7xl md:text-8xl text-yellow-300">
+                {confirmedSeats}
+              </p>
+              <p className="font-mono-d text-xs text-stone-400 mt-2">
+                {CONFIRMED.map((p) => `${p.party} ${p.seats}`).join(" + ")}
+              </p>
+            </div>
+            {/* Delta */}
+            <div
+              className={`border p-8 ${
+                delta >= 0
+                  ? "border-green-500/60 bg-green-500/5"
+                  : "border-red-500/60 bg-red-500/5"
+              }`}
+            >
+              <p
+                className={`font-mono-d text-[10px] uppercase tracking-[0.25em] mb-4 ${
+                  delta >= 0 ? "text-green-400" : "text-red-400"
+                }`}
+              >
+                {delta >= 0 ? t.math_safe : t.math_short}
+              </p>
+              <p
+                className={`font-display text-7xl md:text-8xl ${
+                  delta >= 0 ? "text-green-400" : "text-red-400"
+                }`}
+              >
+                {delta >= 0 ? "+" : ""}
+                {delta}
+              </p>
+              <p className="font-mono-d text-xs text-stone-500 mt-2">
+                {delta >= 0 ? "majority secured" : "MLAs needed"}
+              </p>
+            </div>
+          </div>
+
+          {/* Three (or two) honest buckets */}
+          <div className={`mt-12 grid ${IN_TALKS.length > 0 ? "md:grid-cols-3" : "md:grid-cols-2"} gap-px bg-stone-800 border border-stone-800`}>
+            {/* Confirmed */}
+            <div className="bg-black p-6">
+              <div className="flex items-center justify-between mb-4">
+                <p className="font-mono-d text-[10px] uppercase tracking-[0.25em] text-yellow-300 flex items-center gap-1.5">
+                  <CheckCircle2 size={11} /> {t.math_confirmed}
+                </p>
+                <span className="font-display text-2xl text-yellow-300">{confirmedSeats}</span>
+              </div>
+              <ul className="space-y-2">
+                {CONFIRMED.map((p) => (
+                  <li key={p.party} className="flex items-center justify-between text-sm">
+                    <span className="flex items-center gap-2">
+                      <span className="w-2 h-2 inline-block" style={{ backgroundColor: p.color }} />
+                      {p.party}
+                      <Cite n={p.source} />
+                    </span>
+                    <span className="font-mono-d text-stone-300">{p.seats}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* In talks (hidden when empty — coalition fully confirmed) */}
+            {IN_TALKS.length > 0 && (
+              <div className="bg-black p-6">
+                <div className="flex items-center justify-between mb-4">
+                  <p className="font-mono-d text-[10px] uppercase tracking-[0.25em] text-stone-300 flex items-center gap-1.5">
+                    <AlertCircle size={11} /> {t.math_in_talks}
+                  </p>
+                  <span className="font-display text-2xl text-stone-300">{inTalksSeats}</span>
+                </div>
+                <ul className="space-y-2">
+                  {IN_TALKS.map((p) => (
+                    <li key={p.party} className="flex items-center justify-between text-sm">
+                      <span className="flex items-center gap-2">
+                        <span className="w-2 h-2 inline-block opacity-50" style={{ backgroundColor: p.color }} />
+                        <span className="text-stone-400">{p.party}</span>
+                        <Cite n={p.source} />
+                      </span>
+                      <span className="font-mono-d text-stone-500">{p.seats}</span>
+                    </li>
+                  ))}
+                </ul>
+                <p className="font-mono-d text-[10px] text-stone-600 mt-4 leading-relaxed">
+                  {t.math_in_talks_note}
+                </p>
+              </div>
+            )}
+
+            {/* Opposition */}
+            <div className="bg-black p-6">
+              <div className="flex items-center justify-between mb-4">
+                <p className="font-mono-d text-[10px] uppercase tracking-[0.25em] text-stone-500">
+                  {t.math_opposition}
+                </p>
+                <span className="font-display text-2xl text-stone-500">{oppositionSeats}</span>
+              </div>
+              <ul className="space-y-2">
+                {OPPOSITION.map((p) => (
+                  <li key={p.party} className="flex items-center justify-between text-sm">
+                    <span className="flex items-center gap-2">
+                      <span className="w-2 h-2 inline-block opacity-50" style={{ backgroundColor: p.color }} />
+                      <span className="text-stone-500">{p.party}</span>
+                    </span>
+                    <span className="font-mono-d text-stone-600">{p.seats}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+
+          {/* Stacked progress: confirmed vs target, with in-talks ghosted */}
+          <div className="mt-10">
+            <p className="font-mono-d text-[10px] uppercase tracking-[0.25em] text-stone-500 mb-4">
+              Progress to 118
+            </p>
+            <div className="h-12 flex border border-stone-800 overflow-hidden bg-stone-950 relative">
+              {CONFIRMED.map((p) => (
+                <div
+                  key={p.party}
+                  className="flex items-center justify-center border-r border-black"
+                  style={{
+                    width: `${(p.seats / TARGET) * 100}%`,
+                    backgroundColor: p.color,
+                  }}
+                  title={`${p.party}: ${p.seats} (confirmed)`}
+                >
+                  <span className="font-mono-d text-[10px] text-black font-bold">
+                    {p.seats > 4 ? `${p.party} ${p.seats}` : p.seats}
+                  </span>
+                </div>
+              ))}
+              {IN_TALKS.map((p) => (
+                <div
+                  key={p.party}
+                  className="flex items-center justify-center border-r border-black"
+                  style={{
+                    width: `${(p.seats / TARGET) * 100}%`,
+                    background: `repeating-linear-gradient(45deg, ${p.color}40, ${p.color}40 4px, transparent 4px, transparent 8px)`,
+                  }}
+                  title={`${p.party}: ${p.seats} (in talks — not confirmed)`}
+                >
+                  <span className="font-mono-d text-[10px] text-stone-300">
+                    {p.party}?
+                  </span>
+                </div>
+              ))}
+            </div>
+            <div className="flex flex-wrap items-center gap-4 font-mono-d text-[10px] text-stone-500 mt-3">
+              <span className="flex items-center gap-1.5">
+                <span className="w-3 h-3 bg-yellow-300 inline-block" />
+                Confirmed
+              </span>
+              {IN_TALKS.length > 0 && (
+                <>
+                  <span className="flex items-center gap-1.5">
+                    <span
+                      className="w-3 h-3 inline-block"
+                      style={{
+                        background:
+                          "repeating-linear-gradient(45deg, #FCD34D40, #FCD34D40 2px, transparent 2px, transparent 4px)",
+                      }}
+                    />
+                    In talks (uncommitted)
+                  </span>
+                  <span className="text-yellow-300 ml-auto">
+                    If all in-talks join: {confirmedSeats + inTalksSeats}{" "}
+                    ({potentialDelta >= 0 ? `+${potentialDelta}` : potentialDelta})
+                  </span>
+                </>
+              )}
+            </div>
+          </div>
+
+          {/* Full house */}
+          <div className="mt-16">
+            <p className="font-mono-d text-[10px] uppercase tracking-[0.25em] text-stone-500 mb-4">
+              {t.seat_chart_title} <Cite n={1} />
+            </p>
+            <div className="h-8 flex border border-stone-800 overflow-hidden">
+              {FULL_HOUSE.map((p) => (
+                <div
+                  key={p.party}
+                  className="border-r border-black last:border-r-0"
+                  style={{
+                    width: `${(p.seats / 234) * 100}%`,
+                    backgroundColor: p.color,
+                  }}
+                  title={`${p.party}: ${p.seats}`}
+                />
+              ))}
+            </div>
+            <div className="flex flex-wrap gap-x-5 gap-y-2 mt-3 font-mono-d text-[10px] uppercase">
+              {FULL_HOUSE.map((p) => (
+                <span key={p.party} className="flex items-center gap-1.5">
+                  <span
+                    className="w-2 h-2 inline-block"
+                    style={{ backgroundColor: p.color }}
+                  />
+                  {p.party} {p.seats}
+                </span>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* TIMELINE */}
+      <section id="timeline" className="border-b border-stone-800 py-20 md:py-28 bg-stone-950">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="mb-12">
+            <p className="font-mono-d text-xs uppercase tracking-[0.3em] text-red-500 mb-3">
+              §02
+            </p>
+            <h2 className={`${lang === "ta" ? "font-tamil" : "font-display"} text-5xl md:text-7xl`}>
+              {t.timeline_title}
+            </h2>
+          </div>
+
+          <div className="relative">
+            <div className="absolute left-3 md:left-4 top-2 bottom-2 w-px bg-stone-800" />
+            <div className="space-y-8">
+              {TIMELINE.map((ev, i) => (
+                <div key={i} className="relative flex gap-6 md:gap-8 pl-2">
+                  <div className="relative z-10 mt-1.5">
+                    <div className="w-3 h-3 md:w-4 md:h-4 rounded-full bg-red-500 ring-4 ring-stone-950" />
+                  </div>
+                  <div className="flex-1 grid md:grid-cols-[160px_1fr] gap-2 md:gap-8 pb-2 border-b border-stone-900">
+                    <div className="font-mono-d text-xs uppercase tracking-wider text-stone-500">
+                      {ev.date}
+                    </div>
+                    <div>
+                      <h3 className="font-display text-xl mb-1">
+                        {ev.title} <Cite n={ev.sources} />
+                      </h3>
+                      <p className="text-stone-400 text-sm leading-relaxed">{ev.body}</p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* JOURNEY */}
+      <section id="journey" className="border-b border-stone-800 py-20 md:py-28">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="mb-12">
+            <p className="font-mono-d text-xs uppercase tracking-[0.3em] text-red-500 mb-3">
+              §03 / {t.journey_sub}
+            </p>
+            <h2 className={`${lang === "ta" ? "font-tamil" : "font-serif-d"} text-5xl md:text-7xl italic`}>
+              {t.journey_title}
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-px bg-stone-800">
+            {JOURNEY.map((step, i) => (
+              <div
+                key={i}
+                className="bg-black p-6 hover:bg-stone-900 transition group"
+              >
+                <p className="font-mono-d text-[10px] uppercase tracking-[0.25em] text-yellow-300 mb-3">
+                  Step {String(i + 1).padStart(2, "0")}
+                </p>
+                <p className="font-display text-2xl md:text-3xl mb-3 group-hover:text-yellow-300 transition">
+                  {step.year}
+                </p>
+                <p className="text-xs text-stone-400 leading-relaxed">{step.note}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* PROMISE SCORECARD */}
+      <PromiseScorecard t={t} lang={lang} />
+
+      {/* SOURCES */}
+      <section id="sources" className="border-b border-stone-800 py-20 md:py-24 bg-stone-950">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="mb-10">
+            <p className="font-mono-d text-xs uppercase tracking-[0.3em] text-red-500 mb-3">
+              §05
+            </p>
+            <h2 className={`${lang === "ta" ? "font-tamil" : "font-display"} text-5xl md:text-7xl mb-3`}>
+              {t.sources_title}
+            </h2>
+            <p className={`${lang === "ta" ? "font-tamil" : ""} text-stone-400`}>
+              {t.sources_sub}
+            </p>
+          </div>
+          <ol className="space-y-3">
+            {SOURCES.map((s) => (
+              <li
+                key={s.n}
+                id={`source-${s.n}`}
+                className="border-l-2 border-stone-800 hover:border-yellow-300 pl-5 py-2 transition group"
+              >
+                <div className="flex flex-wrap items-baseline gap-x-4 gap-y-1">
+                  <span className="font-mono-d text-yellow-300 text-sm">[{s.n}]</span>
+                  <span className="text-stone-200 flex-1 min-w-[200px]">
+                    {s.label}
+                  </span>
+                  <span className="font-mono-d text-[10px] uppercase tracking-wider text-stone-500">
+                    {s.org}
+                  </span>
+                  <span className="font-mono-d text-[10px] text-stone-600">
+                    {s.date}
+                  </span>
+                  <a
+                    href={s.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-mono-d text-[10px] uppercase tracking-wider text-stone-500 hover:text-yellow-300 flex items-center gap-1"
+                  >
+                    Verify <ExternalLink size={10} />
+                  </a>
+                </div>
+              </li>
+            ))}
+          </ol>
+          <p className="font-mono-d text-[10px] text-stone-600 uppercase tracking-wider mt-8 leading-relaxed max-w-2xl">
+            Reporting on this fast-moving situation is fluid. Where sources conflict, this site reflects the most recent reliable update. Spot an error? Email corrections@cmvijay.ai
+          </p>
+        </div>
+      </section>
+
+      {/* SHARE / FOOTER */}
+      <footer className="py-16 md:py-20 bg-black">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid md:grid-cols-2 gap-12 mb-16">
+            <div>
+              <p className="font-display text-4xl md:text-5xl mb-4">
+                Built for the moment.
+              </p>
+              <p className="text-stone-400 max-w-md leading-relaxed">
+                Tamil Nadu just broke a 59-year political pattern. cmvijay.ai
+                tracks the formation of the next government — and what it
+                delivers, day by day.
+              </p>
+            </div>
+            <div className="flex flex-col gap-3 md:items-end">
+              <button
+                onClick={handleShare}
+                className="bg-red-600 text-white font-mono-d text-sm uppercase tracking-wider px-6 py-4 hover:bg-red-500 transition flex items-center gap-2 self-start md:self-end"
+              >
+                <Share2 size={16} /> Share this site
+              </button>
+              <p className="font-mono-d text-xs text-stone-500">
+                cmvijay.ai → WhatsApp, X, Telegram
+              </p>
+            </div>
+          </div>
+
+          <div className="border-t border-stone-900 pt-8 flex flex-col md:flex-row justify-between gap-6">
+            <p className="text-xs text-stone-500 max-w-3xl leading-relaxed">
+              {t.footer_disclaimer}
+            </p>
+            <div className="font-mono-d text-[10px] uppercase tracking-[0.25em] text-stone-600 flex items-center gap-2">
+              <span className="w-1.5 h-1.5 bg-red-500 inline-block" />
+              {t.footer_credit}
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  );
+}
+
+
+import { createRoot } from "react-dom/client";
+createRoot(document.getElementById("root")).render(<CMVijayAI />);
+  </script>
+</body>
+</html>
