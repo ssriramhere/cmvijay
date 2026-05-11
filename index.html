@@ -3,21 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>cmvijay.ai — Is Vijay CM yet? Live civic tracker</title>
-  <meta name="description" content="Independent civic tracker for Tamil Nadu's 2026 government formation. Coalition math, timeline, and TVK Nine Guarantees scorecard." />
-
+  <title>cmvijay.ai — Is Vijay delivering? Live civic tracker</title>
+  <meta name="description" content="Independent civic tracker for Tamil Nadu's new government. Manifesto scorecard, sources, coalition math, and timeline." />
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23000'/%3E%3Ctext y='80' font-size='80' fill='%23E63946' font-family='Arial Black' font-weight='900'%3EC%3C/text%3E%3C/svg%3E" />
-
   <meta property="og:title" content="cmvijay.ai" />
-  <meta property="og:description" content="Live civic tracker for TVK government formation and manifesto delivery." />
+  <meta property="og:description" content="Live civic tracker for the new Tamil Nadu government and TVK manifesto delivery." />
   <meta property="og:url" content="https://cmvijay.ai" />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://cmvijay.ai/og.png" />
   <meta name="twitter:card" content="summary_large_image" />
-
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/@babel/standalone@7.24.7/babel.min.js"></script>
-
   <script type="importmap">
   {
     "imports": {
@@ -27,7 +23,6 @@
     }
   }
   </script>
-
   <style>
     body { background: #000; color: #f5f5f4; }
     #root:empty::before {
@@ -40,7 +35,6 @@
 </head>
 <body>
   <div id="root"></div>
-
   <script type="text/babel" data-type="module" data-presets="react">
 import React, { useState, useEffect, useMemo } from "react";
 import {
@@ -67,6 +61,10 @@ import {
 const STRINGS = {
   en: {
     nav_about: "About",
+    about_label: "About this site",
+    about_title: "An independent civic tracker.",
+    about_body_1: "cmvijay.ai tracks the formation and policy delivery of Tamil Nadu's new government. It exists to extend the transparency Chief Minister Vijay emphasised in his oath-day address: a structured, sourced, neutral resource where citizens can see exactly what's been promised and what's been delivered.",
+    about_body_2: "Built and maintained as a citizen-driven civic initiative. AI-assisted fact-checks are verified by a human editor before publication. Editorially neutral — not for or against the new government, not affiliated with any political party. Every claim is sourced to a named outlet.",
     nav_math: "Coalition Math",
     nav_timeline: "Timeline",
     nav_promises: "Promise Tracker",
@@ -86,10 +84,11 @@ const STRINGS = {
     promises_click_filter: "Click any bar to filter the list below",
     promises_active_note:
       "Status will flip from 'Pending' to one of: In Progress / Partial / Delivered / Broken — based on cabinet orders, budget allocations, GOs, and independent verification.",
-    hero_question: "Is Vijay CM yet?",
+    hero_question: "Is Vijay delivering?",
     hero_answer_no: "NOT YET",
-    hero_answer_yes: "YES",
+    hero_answer_yes: "TOO EARLY",
     hero_answer_soon: "ANY MOMENT",
+    hero_subtitle_tail: "First non-DMK / non-AIADMK government in Tamil Nadu since 1967.",
     hero_sub_no:
       "Confirmed: TVK 108 + INC 5 + CPI 2 + CPI(M) 2 = 117 — one short of 118. VCK passed internal resolutions May 8 but Mr. Thirumavalavan's formal announcement is Saturday May 9 morning. If yes: 119, majority crossed.",
     hero_sub_yes: "Sworn in as the 9th Chief Minister of Tamil Nadu on May 10, 2026 at the Jawaharlal Nehru Indoor Stadium, Chennai. First non-DMK / non-AIADMK government in the state since 1967 — ending six decades of Dravidian duopoly. Confidence vote in Assembly by May 13.",
@@ -111,6 +110,7 @@ const STRINGS = {
     math_in_talks_note: "Currently in SPA or uncommitted. Decision expected next day.",
     sources_title: "Sources",
     sources_sub: "Every claim, sourced. Click to verify.",
+    sources_show_all: "Show all 39 sources",
     timeline_title: "How we got here",
     journey_title: "From Thalapathy to CM",
     journey_sub: "A four-decade arc",
@@ -123,10 +123,14 @@ const STRINGS = {
     party_aiadmk: "AIADMK",
     party_inc: "INC",
     party_others: "Others",
-    cta_primary: "See coalition math",
+    cta_primary: "See the scorecard",
   },
   ta: {
     nav_about: "பற்றி",
+    about_label: "இந்த தளம் பற்றி",
+    about_title: "ஒரு சுயாதீன குடிமை கண்காணிப்பான்.",
+    about_body_1: "தமிழ்நாட்டின் புதிய அரசு உருவாக்கம் மற்றும் கொள்கை நிறைவேற்றத்தை cmvijay.ai கண்காணிக்கிறது. முதலமைச்சர் விஜய் தனது பதவியேற்பு உரையில் வலியுறுத்திய வெளிப்படைத்தன்மையை நீட்டிப்பதே இதன் நோக்கம்: எது வாக்குறுதியளிக்கப்பட்டது, எது நிறைவேற்றப்பட்டது என்பதை குடிமக்கள் தெளிவாக காணக்கூடிய ஒரு கட்டமைக்கப்பட்ட, ஆதாரப்பூர்வ, சார்பற்ற வளம்.",
+    about_body_2: "ஒரு குடிமை திட்டமாக கட்டமைக்கப்பட்டு பராமரிக்கப்படுகிறது. AI-உதவியுடன் செய்யப்பட்ட உண்மை சரிபார்ப்புகள் வெளியிடப்படுவதற்கு முன் மனிதரால் சரிபார்க்கப்படுகின்றன. தலையங்கரீதியாக நடுநிலையானது — புதிய அரசுக்கு ஆதரவாகவோ எதிராகவோ இல்லை, எந்த அரசியல் கட்சியுடனும் தொடர்பில்லை. ஒவ்வொரு கூற்றும் பெயரிடப்பட்ட ஊடகத்திற்கு ஆதாரம் கொடுக்கப்பட்டுள்ளது.",
     nav_math: "கூட்டணி கணக்கு",
     nav_timeline: "கால வரிசை",
     nav_promises: "வாக்குறுதி கண்காணிப்பு",
@@ -146,10 +150,11 @@ const STRINGS = {
     promises_click_filter: "கீழே வடிகட்ட எந்த வரிசையையும் கிளிக் செய்யவும்",
     promises_active_note:
       "மந்திரிசபை ஆணைகள், பட்ஜெட் ஒதுக்கீடுகள், அரசாணைகள் மற்றும் சுயாதீன சரிபார்ப்பின் அடிப்படையில் நிலை மாறும்.",
-    hero_question: "விஜய் இன்னும் முதல்வரா ஆனாரா?",
+    hero_question: "விஜய் வாக்குறுதிகளை நிறைவேற்றுகிறாரா?",
     hero_answer_no: "இன்னும் இல்லை",
-    hero_answer_yes: "ஆம்",
+    hero_answer_yes: "மிகவும் சீக்கிரம்",
     hero_answer_soon: "எந்நேரத்திலும்",
+    hero_subtitle_tail: "1967-க்குப் பிறகு தமிழ்நாட்டில் முதல் முறையாக திமுக-அதிமுக அல்லாத அரசு.",
     hero_sub_no:
       "உறுதிசெய்யப்பட்டது: திவிக 108 + காங்கிரஸ் 5 + சிபிஐ 2 + சிபிஎம் 2 = 117 — 118-க்கு ஒன்று குறைவு. விசிக மே 8 அன்று உள்ளக தீர்மானங்கள் நிறைவேற்றியது; திரு. திருமாவளவன் அதிகாரப்பூர்வ அறிவிப்பு சனிக்கிழமை மே 9 காலையில். ஆம் என்றால்: 119, பெரும்பான்மை தாண்டப்படும்.",
     hero_sub_yes: "மே 10, 2026 அன்று ஜவஹர்லால் நேரு உட்புற அரங்கம், சென்னையில் தமிழ்நாட்டின் 9-ஆம் முதலமைச்சராக பதவியேற்றார். 1967-க்குப் பிறகு திமுக-அதிமுக அல்லாத முதல் அரசு — ஆறு தசாப்த திராவிடக் கொள்கை ஆதிக்கம் முடிவுக்கு. மே 13-க்குள் சட்டப்பேரவையில் நம்பிக்கை வாக்கெடுப்பு.",
@@ -171,6 +176,7 @@ const STRINGS = {
     math_in_talks_note: "தற்போது SPA-வில் அல்லது உறுதிசெய்யப்படவில்லை. முடிவு அடுத்த நாளில்.",
     sources_title: "ஆதாரங்கள்",
     sources_sub: "ஒவ்வொரு கூற்றுக்கும் ஆதாரம். சரிபார்க்க கிளிக் செய்யவும்.",
+    sources_show_all: "39 ஆதாரங்களைக் காட்டு",
     timeline_title: "இங்கு எப்படி வந்தோம்",
     journey_title: "தளபதியிலிருந்து முதல்வராக",
     journey_sub: "நான்கு தசாப்த வளைவு",
@@ -183,7 +189,7 @@ const STRINGS = {
     party_aiadmk: "அதிமுக",
     party_inc: "காங்கிரஸ்",
     party_others: "மற்றவை",
-    cta_primary: "கூட்டணி கணக்கைப் பார்",
+    cta_primary: "மதிப்பெண் அட்டவணையைப் பார்",
   },
 };
 
@@ -862,7 +868,7 @@ function PromiseScorecard({ t, lang }) {
   );
 
   return (
-    <section id="promises" className="border-b border-stone-800 py-20 md:py-28 relative overflow-hidden">
+    <section id="scorecard" className="border-b border-stone-800 py-20 md:py-28 relative overflow-hidden">
       <div className="absolute inset-0 grain opacity-20 pointer-events-none" />
       <div className="max-w-7xl mx-auto px-6 relative">
         <div className="mb-10">
@@ -1115,9 +1121,32 @@ export default function CMVijayAI() {
       ? t.hero_answer_soon
       : t.hero_answer_no;
 
+  // Dynamic, factual hero subtitle (only for "yes" status).
+  // Reads live MANIFESTO + CONFIRMED/OPPOSITION counts. No tone-shifts.
+  const promiseCounts = MANIFESTO.reduce((acc, p) => {
+    acc[p.status] = (acc[p.status] || 0) + 1;
+    return acc;
+  }, {});
+  const confSeats = CONFIRMED.reduce((s, p) => s + p.seats, 0);
+  const oppSeats = OPPOSITION.reduce((s, p) => s + p.seats, 0);
+  const dynamicHeroSubYes =
+    `Day ${daysSinceCM} · ` +
+    `${promiseCounts.in_progress || 0} in progress · ` +
+    `${promiseCounts.partial || 0} partial · ` +
+    `${promiseCounts.delivered || 0} delivered · ` +
+    `${promiseCounts.broken || 0} broken · ` +
+    `Coalition ${confSeats} / Opposition ${oppSeats}`;
+  const dynamicHeroSubYesTa =
+    `${daysSinceCM}ஆம் நாள் · ` +
+    `${promiseCounts.in_progress || 0} நடைபெறுகிறது · ` +
+    `${promiseCounts.partial || 0} பகுதியளவில் · ` +
+    `${promiseCounts.delivered || 0} நிறைவேற்றப்பட்டது · ` +
+    `${promiseCounts.broken || 0} நிறைவேற்றப்படவில்லை · ` +
+    `கூட்டணி ${confSeats} / எதிர்க்கட்சி ${oppSeats}`;
+
   const heroSub =
     CURRENT_STATUS === "yes"
-      ? t.hero_sub_yes
+      ? (lang === "ta" ? dynamicHeroSubYesTa : dynamicHeroSubYes)
       : CURRENT_STATUS === "soon"
       ? t.hero_sub_soon
       : t.hero_sub_no;
@@ -1174,11 +1203,12 @@ export default function CMVijayAI() {
             <span className="font-mono-d text-xs text-red-500">.ai</span>
           </div>
           <div className="hidden md:flex items-center gap-7 text-sm font-mono-d uppercase tracking-wider">
+            <a href="#scorecard" className="hover:text-yellow-300">{t.nav_promises}</a>
+            <a href="#sources" className="hover:text-yellow-300">{t.sources_title}</a>
             <a href="#math" className="hover:text-yellow-300">{t.nav_math}</a>
             <a href="#timeline" className="hover:text-yellow-300">{t.nav_timeline}</a>
-            <a href="#promises" className="hover:text-yellow-300">{t.nav_promises}</a>
             <a href="#journey" className="hover:text-yellow-300">{t.nav_journey}</a>
-            <a href="#sources" className="hover:text-yellow-300 text-stone-400">{t.sources_title}</a>
+            <a href="#about" className="hover:text-yellow-300 text-stone-400">{t.nav_about}</a>
           </div>
           <button
             onClick={() => setLang(lang === "en" ? "ta" : "en")}
@@ -1246,15 +1276,23 @@ export default function CMVijayAI() {
           </h1>
 
           <p
-            className={`${lang === "ta" ? "font-tamil" : ""} text-xl md:text-2xl text-stone-300 max-w-3xl leading-snug mb-10 reveal`}
+            className={`${lang === "ta" ? "font-tamil" : "font-mono-d"} text-base md:text-lg text-stone-300 max-w-3xl leading-snug mb-3 reveal`}
             style={{ animationDelay: "360ms" }}
           >
             {heroSub}
           </p>
+          {CURRENT_STATUS === "yes" && (
+            <p
+              className={`${lang === "ta" ? "font-tamil" : "font-serif-d italic"} text-base md:text-lg text-stone-500 max-w-3xl leading-snug mb-10 reveal`}
+              style={{ animationDelay: "420ms" }}
+            >
+              {t.hero_subtitle_tail}
+            </p>
+          )}
 
           <div className="flex flex-wrap gap-3 reveal" style={{ animationDelay: "480ms" }}>
             <a
-              href="#math"
+              href="#scorecard"
               className="bg-yellow-300 text-black font-mono-d text-sm uppercase tracking-wider px-6 py-3 hover:bg-yellow-200 transition flex items-center gap-2"
             >
               {t.cta_primary} <ChevronRight size={16} />
@@ -1269,12 +1307,73 @@ export default function CMVijayAI() {
         </div>
       </section>
 
-      {/* COALITION MATH */}
+      {/* PROMISE SCORECARD */}
+      <PromiseScorecard t={t} lang={lang} />
+
+      {/* SOURCES */}
+      <section id="sources" className="border-b border-stone-800 py-20 md:py-24 bg-stone-950">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="mb-10">
+            <p className="font-mono-d text-xs uppercase tracking-[0.3em] text-red-500 mb-3">
+              §02
+            </p>
+            <h2 className={`${lang === "ta" ? "font-tamil" : "font-display"} text-5xl md:text-7xl mb-3`}>
+              {t.sources_title}
+            </h2>
+            <p className={`${lang === "ta" ? "font-tamil" : ""} text-stone-400`}>
+              {t.sources_sub}
+            </p>
+          </div>
+          <details className="group">
+            <summary className="cursor-pointer font-mono-d text-xs uppercase tracking-wider text-yellow-300 hover:text-yellow-200 mb-6 list-none flex items-center gap-2">
+              <span className="inline-block transition-transform group-open:rotate-90">▶</span>
+              <span>{t.sources_show_all}</span>
+            </summary>
+            <ol className="space-y-3">
+            {SOURCES.map((s) => (
+              <li
+                key={s.n}
+                id={`source-${s.n}`}
+                className="border-l-2 border-stone-800 hover:border-yellow-300 pl-5 py-2 transition group"
+              >
+                <div className="flex flex-wrap items-baseline gap-x-4 gap-y-1">
+                  <span className="font-mono-d text-yellow-300 text-sm">[{s.n}]</span>
+                  <span className="text-stone-200 flex-1 min-w-[200px]">
+                    {s.label}
+                  </span>
+                  <span className="font-mono-d text-[10px] uppercase tracking-wider text-stone-500">
+                    {s.org}
+                  </span>
+                  <span className="font-mono-d text-[10px] text-stone-600">
+                    {s.date}
+                  </span>
+                  <a
+                    href={s.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-mono-d text-[10px] uppercase tracking-wider text-stone-500 hover:text-yellow-300 flex items-center gap-1"
+                  >
+                    Verify <ExternalLink size={10} />
+                  </a>
+                </div>
+              </li>
+            ))}
+          </ol>
+          </details>
+          <p className="font-mono-d text-[10px] text-stone-600 uppercase tracking-wider mt-8 leading-relaxed max-w-2xl">
+            Reporting on this fast-moving situation is fluid. Where sources conflict, this site reflects the most recent reliable update. Spot an error? Email corrections@cmvijay.ai
+          </p>
+        </div>
+      </section>
+
+            {/* DESKTOP 3-COL GRID: Math + Timeline + Journey */}
+      <div className="lg:grid lg:grid-cols-3 lg:gap-0 lg:divide-x lg:divide-stone-800">
+{/* COALITION MATH */}
       <section id="math" className="border-b border-stone-800 py-20 md:py-28">
         <div className="max-w-7xl mx-auto px-6">
           <div className="mb-12">
             <p className="font-mono-d text-xs uppercase tracking-[0.3em] text-red-500 mb-3">
-              §01 / {t.math_sub}
+              §03 / {t.math_sub}
             </p>
             <h2 className={`${lang === "ta" ? "font-tamil" : "font-display"} text-5xl md:text-7xl mb-2`}>
               {t.math_title}
@@ -1505,7 +1604,7 @@ export default function CMVijayAI() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="mb-12">
             <p className="font-mono-d text-xs uppercase tracking-[0.3em] text-red-500 mb-3">
-              §02
+              §04
             </p>
             <h2 className={`${lang === "ta" ? "font-tamil" : "font-display"} text-5xl md:text-7xl`}>
               {t.timeline_title}
@@ -1543,7 +1642,7 @@ export default function CMVijayAI() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="mb-12">
             <p className="font-mono-d text-xs uppercase tracking-[0.3em] text-red-500 mb-3">
-              §03 / {t.journey_sub}
+              §05 / {t.journey_sub}
             </p>
             <h2 className={`${lang === "ta" ? "font-tamil" : "font-serif-d"} text-5xl md:text-7xl italic`}>
               {t.journey_title}
@@ -1569,60 +1668,25 @@ export default function CMVijayAI() {
         </div>
       </section>
 
-      {/* PROMISE SCORECARD */}
-      <PromiseScorecard t={t} lang={lang} />
+            </div>
 
-      {/* SOURCES */}
-      <section id="sources" className="border-b border-stone-800 py-20 md:py-24 bg-stone-950">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="mb-10">
-            <p className="font-mono-d text-xs uppercase tracking-[0.3em] text-red-500 mb-3">
-              §05
-            </p>
-            <h2 className={`${lang === "ta" ? "font-tamil" : "font-display"} text-5xl md:text-7xl mb-3`}>
-              {t.sources_title}
-            </h2>
-            <p className={`${lang === "ta" ? "font-tamil" : ""} text-stone-400`}>
-              {t.sources_sub}
-            </p>
-          </div>
-          <ol className="space-y-3">
-            {SOURCES.map((s) => (
-              <li
-                key={s.n}
-                id={`source-${s.n}`}
-                className="border-l-2 border-stone-800 hover:border-yellow-300 pl-5 py-2 transition group"
-              >
-                <div className="flex flex-wrap items-baseline gap-x-4 gap-y-1">
-                  <span className="font-mono-d text-yellow-300 text-sm">[{s.n}]</span>
-                  <span className="text-stone-200 flex-1 min-w-[200px]">
-                    {s.label}
-                  </span>
-                  <span className="font-mono-d text-[10px] uppercase tracking-wider text-stone-500">
-                    {s.org}
-                  </span>
-                  <span className="font-mono-d text-[10px] text-stone-600">
-                    {s.date}
-                  </span>
-                  <a
-                    href={s.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="font-mono-d text-[10px] uppercase tracking-wider text-stone-500 hover:text-yellow-300 flex items-center gap-1"
-                  >
-                    Verify <ExternalLink size={10} />
-                  </a>
-                </div>
-              </li>
-            ))}
-          </ol>
-          <p className="font-mono-d text-[10px] text-stone-600 uppercase tracking-wider mt-8 leading-relaxed max-w-2xl">
-            Reporting on this fast-moving situation is fluid. Where sources conflict, this site reflects the most recent reliable update. Spot an error? Email corrections@cmvijay.ai
+      {/* ABOUT */}
+      <section id="about" className="border-b border-stone-800 py-16 md:py-20 bg-stone-950">
+        <div className="max-w-4xl mx-auto px-6">
+          <p className="font-mono-d text-xs uppercase tracking-[0.3em] text-red-500 mb-3">
+            {t.about_label}
           </p>
+          <h2 className={`${lang === "ta" ? "font-tamil" : "font-display"} text-4xl md:text-5xl mb-8`}>
+            {t.about_title}
+          </h2>
+          <div className={`${lang === "ta" ? "font-tamil" : ""} space-y-5 text-stone-300 text-base md:text-lg leading-relaxed max-w-3xl`}>
+            <p>{t.about_body_1}</p>
+            <p>{t.about_body_2}</p>
+          </div>
         </div>
       </section>
 
-      {/* SHARE / FOOTER */}
+{/* SHARE / FOOTER */}
       <footer className="py-16 md:py-20 bg-black">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-12 mb-16">
