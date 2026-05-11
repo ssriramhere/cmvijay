@@ -1,0 +1,48 @@
+name: cmvijay-news-watcher
+
+# Runs every 30 minutes. Fetches news headlines about TVK government formation
+# from a curated set of RSS feeds, dedupes against state, and pings the
+# webhook (Discord / Slack / Telegram) only with NEW items.
+#
+# This watcher does NOT touch the site. It just alerts you so you can ping
+# Claude and update manually. That preserves civic-tracker discipline.
+
+on:
+  schedule:
+    # Every 30 minutes, on the hour and half-hour, IST-friendly
+    - cron: "*/30 * * * *"
+  workflow_dispatch: # Manual trigger button in GitHub Actions UI
+
+permissions:
+  contents: write # to commit the updated state file
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install deps
+        run: pip install feedparser==6.0.11 requests==2.31.0
+
+      - name: Run watcher
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python .github/scripts/watcher.py
+
+      - name: Commit updated state
+        run: |
+          git config user.name "cmvijay-watcher"
+          git config user.email "watcher@cmvijay.ai"
+          git add .github/state/seen.json || true
+          git diff --staged --quiet || git commit -m "watcher: update seen state [skip ci]"
+          git push || true
