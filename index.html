@@ -1223,7 +1223,7 @@ export default function CMVijayAI() {
   };
 
   return (
-    <div className="min-h-screen bg-black text-stone-100 selection:bg-yellow-300 selection:text-black">
+    <div id="top" className="min-h-screen bg-black text-stone-100 selection:bg-yellow-300 selection:text-black">
       {/* Embedded fonts + global styles */}
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Serif+Display:ital@0;1&family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;500;600&family=Noto+Sans+Tamil:wght@400;600;800&display=swap');
@@ -1253,10 +1253,10 @@ export default function CMVijayAI() {
       {/* NAV */}
       <nav className="border-b border-stone-800 sticky top-0 bg-black/80 backdrop-blur-md z-50">
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-          <div className="flex items-baseline gap-2">
+          <a href="#top" className="flex items-baseline gap-2 hover:opacity-80 transition" aria-label="Back to top">
             <span className="font-display text-xl">cmvijay</span>
             <span className="font-mono-d text-xs text-red-500">.ai</span>
-          </div>
+          </a>
           <div className="hidden md:flex items-center gap-7 text-sm font-mono-d uppercase tracking-wider">
             <a href="#scorecard" className="hover:text-yellow-300">{t.nav_promises}</a>
             <a href="#sources" className="hover:text-yellow-300">{t.sources_title}</a>
@@ -1436,7 +1436,7 @@ export default function CMVijayAI() {
               <p className="font-mono-d text-[10px] uppercase tracking-[0.25em] text-stone-500 mb-4">
                 {t.math_target}
               </p>
-              <p className="font-display text-6xl md:text-7xl lg:text-4xl xl:text-5xl break-words text-stone-100">{TARGET}</p>
+              <p className="font-display text-5xl md:text-6xl lg:text-4xl xl:text-5xl whitespace-nowrap text-stone-100">{TARGET}</p>
               <p className="font-mono-d text-xs text-stone-500 mt-2">/ 234 seats</p>
             </div>
             {/* Confirmed */}
@@ -1444,7 +1444,7 @@ export default function CMVijayAI() {
               <p className="font-mono-d text-[10px] uppercase tracking-[0.25em] text-yellow-300 mb-4 flex items-center gap-1">
                 <CheckCircle2 size={12} /> {t.math_have}
               </p>
-              <p className="font-display text-6xl md:text-7xl lg:text-4xl xl:text-5xl break-words text-yellow-300">
+              <p className="font-display text-5xl md:text-6xl lg:text-4xl xl:text-5xl whitespace-nowrap text-yellow-300">
                 {confirmedSeats}
               </p>
               <p className="font-mono-d text-xs text-stone-400 mt-2">
@@ -1467,7 +1467,7 @@ export default function CMVijayAI() {
                 {delta >= 0 ? t.math_safe : t.math_short}
               </p>
               <p
-                className={`font-display text-6xl md:text-7xl lg:text-4xl xl:text-5xl break-words ${
+                className={`font-display text-5xl md:text-6xl lg:text-4xl xl:text-5xl whitespace-nowrap ${
                   delta >= 0 ? "text-green-400" : "text-red-400"
                 }`}
               >
@@ -1792,11 +1792,28 @@ export default function CMVijayAI() {
               </a>.
             </p>
             <div className="font-mono-d text-[10px] uppercase tracking-[0.25em] text-stone-600 flex items-center gap-2">
-              <span className="inline-flex flex-col w-3 h-3 overflow-hidden" aria-label="Indian flag">
-                <span className="flex-1 bg-orange-500" />
-                <span className="flex-1 bg-white" />
-                <span className="flex-1 bg-green-600" />
-              </span>
+              <svg width="18" height="12" viewBox="0 0 30 20" xmlns="http://www.w3.org/2000/svg" aria-label="Indian flag" className="inline-block">
+                <rect width="30" height="6.67" y="0" fill="#FF9933" />
+                <rect width="30" height="6.67" y="6.67" fill="#FFFFFF" />
+                <rect width="30" height="6.67" y="13.33" fill="#138808" />
+                {/* Ashoka Chakra: 24 spokes, navy blue */}
+                <g transform="translate(15 10)">
+                  <circle r="2.5" fill="none" stroke="#000080" strokeWidth="0.3" />
+                  <circle r="0.4" fill="#000080" />
+                  {Array.from({ length: 24 }).map((_, i) => (
+                    <line
+                      key={i}
+                      x1="0"
+                      y1="0"
+                      x2="0"
+                      y2="-2.5"
+                      stroke="#000080"
+                      strokeWidth="0.2"
+                      transform={`rotate(${i * 15})`}
+                    />
+                  ))}
+                </g>
+              </svg>
               {t.footer_credit}
             </div>
           </div>
