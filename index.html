@@ -111,6 +111,8 @@ const STRINGS = {
     sources_title: "Sources",
     sources_sub: "Every claim, sourced. Click to verify.",
     sources_show_all: "Show all 39 sources",
+    submit_update_btn: "Submit an update",
+    submit_update_helper: "Spotted a promise being delivered, partially delivered, or broken? Share evidence with a sourced link — reviewed within 7 days, often faster.",
     timeline_title: "How we got here",
     journey_title: "From Thalapathy to CM",
     journey_sub: "A four-decade arc",
@@ -177,6 +179,8 @@ const STRINGS = {
     sources_title: "ஆதாரங்கள்",
     sources_sub: "ஒவ்வொரு கூற்றுக்கும் ஆதாரம். சரிபார்க்க கிளிக் செய்யவும்.",
     sources_show_all: "39 ஆதாரங்களைக் காட்டு",
+    submit_update_btn: "புதுப்பிப்பு சமர்ப்பிக்க",
+    submit_update_helper: "ஒரு வாக்குறுதி நிறைவேற்றப்படுவதையோ, பகுதியளவில் நிறைவேற்றப்படுவதையோ, அல்லது நிறைவேற்றப்படாததையோ கண்டறிந்தீர்களா? ஆதாரம் கொடுத்த இணைப்புடன் பகிரவும் — 7 நாட்களுக்குள் மதிப்பாய்வு செய்யப்படும்.",
     timeline_title: "இங்கு எப்படி வந்தோம்",
     journey_title: "தளபதியிலிருந்து முதல்வராக",
     journey_sub: "நான்கு தசாப்த வளைவு",
@@ -890,10 +894,21 @@ function PromiseScorecard({ t, lang }) {
             >
               <ExternalLink size={12} /> View manifesto on tvkvijay.com (semi-official)
             </a>
+            <a
+              href="https://forms.gle/GRdz2AmbfMB3b9pB6"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border border-red-500 text-red-400 font-mono-d text-xs uppercase tracking-wider px-4 py-2.5 hover:bg-red-500 hover:text-white transition flex items-center gap-2"
+            >
+              <ExternalLink size={12} /> {t.submit_update_btn}
+            </a>
             <span className="font-mono-d text-[10px] text-stone-600 uppercase tracking-wider">
               Source document: 96-page PDF · Nine Guarantees · Released Apr 16, 2026
             </span>
           </div>
+          <p className={`${lang === "ta" ? "font-tamil" : "font-serif-d italic"} text-sm text-stone-400 mt-4 max-w-2xl leading-relaxed`}>
+            {t.submit_update_helper}
+          </p>
         </div>
 
         {/* Meter */}
