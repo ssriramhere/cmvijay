@@ -1419,14 +1419,16 @@ export default function CMVijayAI() {
 {/* COALITION MATH */}
       <section id="math" className="border-b border-stone-800 py-20 md:py-28">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="mb-12">
-            <p className="font-mono-d text-xs uppercase tracking-[0.3em] text-red-500 mb-3">
+          <details open className="group">
+          <summary className="cursor-pointer list-none mb-12">
+            <p className="font-mono-d text-xs uppercase tracking-[0.3em] text-red-500 mb-3 flex items-center gap-2">
+              <span className="inline-block transition-transform group-open:rotate-90">▶</span>
               §03 / {t.math_sub}
             </p>
             <h2 className={`${lang === "ta" ? "font-tamil" : "font-display"} text-5xl md:text-7xl lg:text-3xl xl:text-5xl mb-2`}>
               {t.math_title}
             </h2>
-          </div>
+          </summary>
 
           <div className="grid md:grid-cols-3 lg:grid-cols-1 xl:grid-cols-3 gap-6 md:gap-8">
             {/* Target */}
@@ -1434,7 +1436,7 @@ export default function CMVijayAI() {
               <p className="font-mono-d text-[10px] uppercase tracking-[0.25em] text-stone-500 mb-4">
                 {t.math_target}
               </p>
-              <p className="font-display text-7xl md:text-8xl lg:text-5xl xl:text-7xl text-stone-100">{TARGET}</p>
+              <p className="font-display text-6xl md:text-7xl lg:text-4xl xl:text-5xl break-words text-stone-100">{TARGET}</p>
               <p className="font-mono-d text-xs text-stone-500 mt-2">/ 234 seats</p>
             </div>
             {/* Confirmed */}
@@ -1442,7 +1444,7 @@ export default function CMVijayAI() {
               <p className="font-mono-d text-[10px] uppercase tracking-[0.25em] text-yellow-300 mb-4 flex items-center gap-1">
                 <CheckCircle2 size={12} /> {t.math_have}
               </p>
-              <p className="font-display text-7xl md:text-8xl lg:text-5xl xl:text-7xl text-yellow-300">
+              <p className="font-display text-6xl md:text-7xl lg:text-4xl xl:text-5xl break-words text-yellow-300">
                 {confirmedSeats}
               </p>
               <p className="font-mono-d text-xs text-stone-400 mt-2">
@@ -1465,7 +1467,7 @@ export default function CMVijayAI() {
                 {delta >= 0 ? t.math_safe : t.math_short}
               </p>
               <p
-                className={`font-display text-7xl md:text-8xl lg:text-5xl xl:text-7xl ${
+                className={`font-display text-6xl md:text-7xl lg:text-4xl xl:text-5xl break-words ${
                   delta >= 0 ? "text-green-400" : "text-red-400"
                 }`}
               >
@@ -1644,20 +1646,23 @@ export default function CMVijayAI() {
               ))}
             </div>
           </div>
+          </details>
         </div>
       </section>
 
       {/* TIMELINE */}
       <section id="timeline" className="border-b border-stone-800 py-20 md:py-28 bg-stone-950">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="mb-12">
-            <p className="font-mono-d text-xs uppercase tracking-[0.3em] text-red-500 mb-3">
+          <details open className="group">
+          <summary className="cursor-pointer list-none mb-12">
+            <p className="font-mono-d text-xs uppercase tracking-[0.3em] text-red-500 mb-3 flex items-center gap-2">
+              <span className="inline-block transition-transform group-open:rotate-90">▶</span>
               §04
             </p>
             <h2 className={`${lang === "ta" ? "font-tamil" : "font-display"} text-5xl md:text-7xl lg:text-3xl xl:text-5xl`}>
               {t.timeline_title}
             </h2>
-          </div>
+          </summary>
 
           <div className="relative">
             <div className="absolute left-3 md:left-4 top-2 bottom-2 w-px bg-stone-800" />
@@ -1682,20 +1687,23 @@ export default function CMVijayAI() {
               ))}
             </div>
           </div>
+          </details>
         </div>
       </section>
 
       {/* JOURNEY */}
       <section id="journey" className="border-b border-stone-800 py-20 md:py-28">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="mb-12">
-            <p className="font-mono-d text-xs uppercase tracking-[0.3em] text-red-500 mb-3">
+          <details open className="group/section">
+          <summary className="cursor-pointer list-none mb-12">
+            <p className="font-mono-d text-xs uppercase tracking-[0.3em] text-red-500 mb-3 flex items-center gap-2">
+              <span className="inline-block transition-transform group-open/section:rotate-90">▶</span>
               §05 / {t.journey_sub}
             </p>
             <h2 className={`${lang === "ta" ? "font-tamil" : "font-serif-d"} text-5xl md:text-7xl lg:text-3xl xl:text-5xl italic`}>
               {t.journey_title}
             </h2>
-          </div>
+          </summary>
 
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-2 xl:grid-cols-3 gap-px bg-stone-800">
             {JOURNEY.map((step, i) => (
@@ -1713,6 +1721,7 @@ export default function CMVijayAI() {
               </div>
             ))}
           </div>
+          </details>
         </div>
       </section>
 
@@ -1721,12 +1730,16 @@ export default function CMVijayAI() {
       {/* ABOUT */}
       <section id="about" className="border-b border-stone-800 py-16 md:py-20 bg-stone-950">
         <div className="max-w-4xl mx-auto px-6">
-          <p className="font-mono-d text-xs uppercase tracking-[0.3em] text-red-500 mb-3">
-            {t.about_label}
-          </p>
-          <h2 className={`${lang === "ta" ? "font-tamil" : "font-display"} text-4xl md:text-5xl mb-8`}>
-            {t.about_title}
-          </h2>
+          <details open className="group">
+          <summary className="cursor-pointer list-none mb-8">
+            <p className="font-mono-d text-xs uppercase tracking-[0.3em] text-red-500 mb-3 flex items-center gap-2">
+              <span className="inline-block transition-transform group-open:rotate-90">▶</span>
+              {t.about_label}
+            </p>
+            <h2 className={`${lang === "ta" ? "font-tamil" : "font-display"} text-4xl md:text-5xl`}>
+              {t.about_title}
+            </h2>
+          </summary>
           <div className={`${lang === "ta" ? "font-tamil" : ""} space-y-5 text-stone-300 text-base md:text-lg leading-relaxed max-w-3xl`}>
             <p>{t.about_body_1}</p>
             <p>{t.about_body_2}</p>
@@ -1742,6 +1755,7 @@ export default function CMVijayAI() {
               </a>.
             </p>
           </div>
+          </details>
         </div>
       </section>
 
@@ -1791,6 +1805,7 @@ export default function CMVijayAI() {
     </div>
   );
 }
+
 
 
 import { createRoot } from "react-dom/client";
