@@ -903,7 +903,7 @@ const TIMELINE = [
   ,
   {
     date: "May 13, 2026 · in progress",
-    title: "🟨 Confidence vote underway in the 17th Tamil Nadu Legislative Assembly",
+    title: "🟨 Day 3: Confidence vote underway in the 17th Tamil Nadu Legislative Assembly",
     body: "Mr. Vijay moves the vote of confidence at 9:30 AM. Operational coalition voting strength entering today: 119 MLAs (TVK 106 + INC 5 + CPI 2 + CPI(M) 2 + VCK 2 + IUML 2), down from 121 won-seat coalition due to two procedural reductions: (1) Mr. Vijay's resignation from Tiruchy East seat on May 10 brought TVK from 108 to 107; (2) Madras HC interim order on May 12 barred TVK MLA Mr. R. Srinivasa Sethupathi from voting in the confidence motion, reducing TVK voting strength to 106 for today. Additional pre-vote support announcements from C.V. Shanmugam-led AIADMK faction and AMMK MLA Mr. S. Kamaraj remain political signals — those MLAs technically remain in opposition until formal floor-crossing. Outcome pending; this entry will be updated when verified by whitelisted sources.",
     sources: [37],
   },
@@ -1238,10 +1238,15 @@ export default function CMVijayAI() {
   const daysSincePoll = Math.floor(
     (now - pollDay) / (1000 * 60 * 60 * 24)
   );
-  const daysSinceCM = Math.max(
-    0,
-    Math.floor((now - cmDay) / (1000 * 60 * 60 * 24))
-  );
+  const daysSinceCM = useMemo(() => {
+    // Calendar days since CM oath. Oath day = Day 0; next calendar day = Day 1.
+    // Anchored to IST date so the count rolls over at midnight IST, not at 11 AM IST.
+    const fmt = (d) =>
+      d.toLocaleDateString("en-CA", { timeZone: "Asia/Kolkata" });
+    const todayIST = new Date(fmt(now));
+    const cmDayIST = new Date(fmt(cmDay));
+    return Math.max(0, Math.floor((todayIST - cmDayIST) / (1000 * 60 * 60 * 24)));
+  }, [now, cmDay]);
 
   const confirmedSeats = CONFIRMED.reduce((s, p) => s + p.seats, 0);
   const inTalksSeats = IN_TALKS.reduce((s, p) => s + p.seats, 0);
