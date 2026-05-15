@@ -111,7 +111,7 @@ const STRINGS = {
     math_in_talks_note: "Currently in SPA or uncommitted. Decision expected next day.",
     sources_title: "Sources",
     sources_sub: "Every claim, sourced. Click to verify.",
-    sources_show_all: "Show all 47 sources",
+    sources_show_all: "Show all 52 sources",
     submit_update_btn: "Submit an update",
     submit_update_helper: "Spotted a promise being delivered, partially delivered, or broken? Share evidence with a sourced link — reviewed within 7 days, often faster.",
     timeline_title: "How we got here",
@@ -181,7 +181,7 @@ const STRINGS = {
     math_in_talks_note: "தற்போது SPA-வில் அல்லது உறுதிசெய்யப்படவில்லை. முடிவு அடுத்த நாளில்.",
     sources_title: "ஆதாரங்கள்",
     sources_sub: "ஒவ்வொரு கூற்றுக்கும் ஆதாரம். சரிபார்க்க கிளிக் செய்யவும்.",
-    sources_show_all: "47 ஆதாரங்களைக் காட்டு",
+    sources_show_all: "52 ஆதாரங்களைக் காட்டு",
     submit_update_btn: "புதுப்பிப்பு சமர்ப்பிக்க",
     submit_update_helper: "ஒரு வாக்குறுதி நிறைவேற்றப்படுவதையோ, பகுதியளவில் நிறைவேற்றப்படுவதையோ, அல்லது நிறைவேற்றப்படாததையோ கண்டறிந்தீர்களா? ஆதாரம் கொடுத்த இணைப்புடன் பகிரவும் — 7 நாட்களுக்குள் மதிப்பாய்வு செய்யப்படும்.",
     timeline_title: "இங்கு எப்படி வந்தோம்",
@@ -209,7 +209,7 @@ const STRINGS = {
 const CURRENT_STATUS = "yes";
 
 const CONFIRMED = [
-  { party: "TVK", seats: 108, color: "#E63946", source: 1 },
+  { party: "TVK", seats: 107, color: "#E63946", source: 1 },
   { party: "INC", seats: 5, color: "#FCD34D", source: 2 },
   { party: "CPI", seats: 2, color: "#F87171", source: 23 },
   { party: "CPI(M)", seats: 2, color: "#EF4444", source: 23 },
@@ -228,7 +228,7 @@ const OPPOSITION = [
 ];
 
 const FULL_HOUSE = [
-  { party: "TVK", seats: 108, color: "#E63946" },
+  { party: "TVK", seats: 107, color: "#E63946" },
   { party: "DMK", seats: 59, color: "#1D4ED8" },
   { party: "AIADMK", seats: 47, color: "#16A34A" },
   { party: "INC", seats: 5, color: "#FCD34D" },
@@ -236,6 +236,7 @@ const FULL_HOUSE = [
   { party: "CPI/CPI(M)", seats: 4, color: "#EF4444" },
   { party: "VCK", seats: 2, color: "#3B82F6" },
   { party: "IUML", seats: 2, color: "#10B981" },
+  { party: "Vacant", seats: 1, color: "#44403C" },
   { party: "Others", seats: 3, color: "#6B7280" },
 ];
 
@@ -569,6 +570,41 @@ const SOURCES = [
     url: "https://aninews.in/news/national/politics/tamil-nadu-cm-vijay-resigns-from-tiruchurapalli-east-constituency-before-assuming-office20260510165301/",
     date: "May 10, 2026",
   },
+  {
+    n: 48,
+    label: "The Hindu — CM Mr. Joseph Vijay wins floor test in Assembly comfortably with 144 votes after AIADMK split; Mr. Vijay's 'minority government' speech; DMK walkout, 25 rebel AIADMK MLAs vote for; Speaker conducts vote despite Mr. Palaniswami's protest",
+    org: "The Hindu",
+    url: "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-cm-joseph-vijay-wins-floor-test-in-assembly-comfortably-with-144-votes/article70973260.ece",
+    date: "May 13, 2026",
+  },
+  {
+    n: 49,
+    label: "LiveLaw — Supreme Court stays Madras HC order restraining TVK MLA Sethupathi from voting; calls it 'atrocious'; Justices Vikram Nath, Sandeep Mehta, Vijay Bishnoi bench",
+    org: "LiveLaw",
+    url: "https://www.livelaw.in/top-stories/atrocious-supreme-court-stays-madras-hc-order-restraining-tvk-mla-sethupathi-from-voting-in-tn-floor-test-534016",
+    date: "May 13, 2026",
+  },
+  {
+    n: 50,
+    label: "ANI — Relief for TVK as SC stays HC order restraining its MLA from participating in assembly proceedings; Singhvi for TVK; Rohatgi for DMK; Article 226 jurisdiction question",
+    org: "ANI",
+    url: "https://aninews.in/news/national/general-news/relief-for-tvk-as-sc-stays-hc-order-restraining-its-mla-from-participating-in-assembly-proceedings20260513135415/",
+    date: "May 13, 2026",
+  },
+  {
+    n: 51,
+    label: "The Federal — SC stays Madras HC order barring TVK MLA from Tamil Nadu Assembly proceedings; bench calls HC order 'atrocious'",
+    org: "The Federal",
+    url: "https://thefederal.com/category/news/sc-stays-madras-hc-order-barring-tvk-mla-from-tamil-nadu-assembly-proceedings-242926",
+    date: "May 13, 2026",
+  },
+  {
+    n: 52,
+    label: "The News Minute — 'Atrocious': SC stays Madras HC order against TVK MLA's participation in floor test; full bench reasoning on election-petition jurisdiction",
+    org: "The News Minute",
+    url: "https://www.thenewsminute.com/tamil-nadu/atrocious-sc-stays-madras-hc-order-against-tvk-mlas-participation-in-floor-test",
+    date: "May 13, 2026",
+  },
 ];
 
 // Manifesto promises: organized by TVK's "Nine Guarantees" — the policy-theme
@@ -691,10 +727,16 @@ const CATEGORIES = [
 
 const TIMELINE = [
   {
+    date: "May 13, 2026 · morning",
+    title: "⚖️ Supreme Court stays Madras HC order; calls it \"atrocious\"",
+    body: "A three-judge bench of the Supreme Court (Justices Mr. Vikram Nath, Mr. Sandeep Mehta, Mr. Vijay Bishnoi) stays the Madras HC's May 12 interim order that had restrained TVK MLA Mr. R. Sreenivasa Sethupathi from voting in the confidence motion. The SC also stays further proceedings before the Madras HC in the underlying writ petition. The court questions how a writ petition under Article 226 could be entertained in an election dispute, observing that the remedy lies in an election petition. Justice Mr. Sandeep Mehta remarks: 'It's atrocious.' Senior advocate Mr. Abhishek Manu Singhvi appeared for Mr. Sethupathi; senior advocate Mr. Mukul Rohatgi for DMK candidate Mr. K.R. Periakaruppan. The court grants Mr. Periakaruppan two weeks to file a counter-affidavit; the TVK MLA has two weeks for a rejoinder. The stay clears Mr. Sethupathi to participate in the confidence motion later the same day.",
+    sources: [49, 50, 51, 52],
+  },
+  {
     date: "May 13, 2026 · afternoon",
     title: "✅ Day 3: Confidence motion PASSES — 144 for, 22 against, 5 abstain",
-    body: "The Vijay government wins the confidence vote in the 17th Tamil Nadu Legislative Assembly. Final tally: 144 in favour, 22 against, 5 abstain. 171 of 234 MLAs participated. The 144-vote yes count exceeds the simple majority threshold of 118 by a comfortable margin of 26 votes, and exceeds the operational coalition's claimed pre-vote strength of 119 — indicating substantial crossover from the C.V. Shanmugam-led AIADMK faction (~30 MLAs reported), AMMK MLA Mr. S. Kamaraj, and likely others. 63 MLAs did not participate (walked out, absent, or otherwise abstained from the count). This vote formally closes the post-election formation crisis that began with the May 4 results (hung verdict; TVK 108 single-largest) and the subsequent 9-day negotiation period. The Vijay government now has a formally tested mandate to govern.",
-    sources: [43, 37],
+    body: "The Vijay government wins the confidence vote in the 17th Tamil Nadu Legislative Assembly. Final tally: 144 in favour, 22 against, 5 abstain; Speaker Mr. JCD Prabhakar did not vote per convention. The 144 yes count exceeds the simple majority threshold of 118 by a margin of 26 votes. Coalition voting bloc: TVK 107 + INC 5 + CPI 2 + CPI(M) 2 + VCK 2 + IUML 2 + AMMK Mr. S. Kamaraj 1 = 120, plus 25 rebel AIADMK MLAs of the Mr. C.V. Shanmugam / Mr. S.P. Velumani faction. 22 NO votes from the Mr. Edappadi K. Palaniswami-led AIADMK faction. 5 abstain (PMK 4 + BJP 1). DMK's 59 MLAs walked out before the vote; DMDK's lone MLA Mrs. Premalatha Vijayakanth also walked out. Mr. S. Kamaraj (AMMK Mannargudi) was dismissed by AMMK the same day for crossing the floor; he has pledged 5-year support to TVK. Speaker Mr. JCD Prabhakar conducted the vote despite Mr. Edappadi K. Palaniswami's protest at allowing Mr. Velumani to speak on AIADMK's behalf. The 25 rebel AIADMK MLAs and Mr. Kamaraj voted with the government but have NOT formally crossed the floor — they remain in opposition for Coalition Math purposes. In his reply, Mr. Vijay said: 'The majority was missed by a thin margin. If anyone thinks that this is a minority government, we are happy. This is a minority government, which will truly safeguard the rights of the minorities.' This vote formally closes the post-election formation crisis that began with the May 4 results.",
+    sources: [43, 37, 48],
   },
   {
     date: "May 12, 2026 · afternoon",
