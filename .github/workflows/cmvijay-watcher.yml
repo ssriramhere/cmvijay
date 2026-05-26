@@ -1,3 +1,24 @@
+# ============================================================================
+# ⚠️  DISABLED — DO NOT RE-ENABLE AS-IS
+# ============================================================================
+# Parked on 2026-05-22. This watcher ran ~414 times on a 30-minute schedule
+# and auto-committed its state file to `master` on every run. That bot-commit
+# pattern was flagged by GitHub's automated abuse detection and caused a brief
+# account-suspension flag (see failed run #412: "remote: Your account is
+# suspended").
+#
+# The `schedule:` trigger below is COMMENTED OUT so this workflow cannot run
+# on a timer. Only the manual `workflow_dispatch` trigger remains, and the
+# workflow is additionally disabled in the GitHub Actions UI.
+#
+# DO NOT simply re-enable. A proper rebuild must:
+#   1. Drop frequency to 2-4x/day            (not every 30 min)
+#   2. REMOVE the "Commit updated state" step (no bot commits to the repo)
+#   3. Persist seen.json via actions/cache@v4 instead of git commits
+#
+# Until those three changes are made, leave this parked.
+# ============================================================================
+
 name: cmvijay-news-watcher
 
 # Runs every 30 minutes. Fetches news headlines about TVK government formation
@@ -8,9 +29,13 @@ name: cmvijay-news-watcher
 # Claude and update manually. That preserves civic-tracker discipline.
 
 on:
-  schedule:
-    # Every 30 minutes, on the hour and half-hour, IST-friendly
-    - cron: "*/30 * * * *"
+  # ---------------------------------------------------------------------------
+  # SCHEDULE DISABLED — see warning header above. Do not uncomment until the
+  # auto-commit step has been removed and frequency lowered.
+  # ---------------------------------------------------------------------------
+  # schedule:
+  #   # Every 30 minutes, on the hour and half-hour, IST-friendly
+  #   - cron: "*/30 * * * *"
   workflow_dispatch: # Manual trigger button in GitHub Actions UI
 
 permissions:
@@ -22,15 +47,12 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-
       - name: Install deps
         run: pip install feedparser==6.0.11 requests==2.31.0
-
       - name: Run watcher
         env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
@@ -38,7 +60,6 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python .github/scripts/watcher.py
-
       - name: Commit updated state
         run: |
           git config user.name "cmvijay-watcher"
