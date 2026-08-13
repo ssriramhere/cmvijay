@@ -32,6 +32,101 @@ import requests
 REPO_ROOT = Path(__file__).resolve().parent.parent.parent
 
 
+def _parse_entry_date(date_str: str) -> Any:
+    """Parse a TIMELINE entry date string into a comparable datetime.
+
+    Handles formats used on the site:
+      - "August 5, 2026"
+      - "June 5, 2026 · morning"
+      - "June 5, 2026 · afternoon"
+
+    Returns datetime, or None if unparseable. Suffixes like morning/afternoon
+    are handled: same-date entries with a time suffix are ordered morning
+    before afternoon within the same day (but AFTER other same-date entries
+    without a suffix, since suffixed entries are typically added first).
+    """
+    from datetime import datetime
+    if not date_str:
+        return None
+    # Strip suffix after '·' if present
+    base = date_str.split("·")[0].strip()
+    suffix = date_str.split("·")[1].strip().lower() if "·" in date_str else ""
+    try:
+        dt = datetime.strptime(base, "%B %d, %Y")
+        # Micro-adjustment for morning/afternoon suffix (afternoon > morning)
+        if suffix == "afternoon":
+            dt = dt.replace(hour=14)
+        elif suffix == "morning":
+            dt = dt.replace(hour=8)
+        return dt
+    except ValueError:
+        return None
+
+
+def _find_existing_entries(content: str, tl_content_start: int) -> list:
+    """Scan TIMELINE array and return [(entry_start, entry_end, parsed_date), ...].
+
+    Each entry looks like:
+      {
+        date: "August 5, 2026",
+        title: "...",
+        body: "...",
+        sources: [...],
+      },
+    """
+    import re as _re
+    # Find the end of the TIMELINE array
+    tl_end_match = _re.search(r"\n\];", content[tl_content_start:])
+    if not tl_end_match:
+        return []
+    tl_end = tl_content_start + tl_end_match.start()
+    tl_body = content[tl_content_start:tl_end]
+
+    entries = []
+    # Match each `{ ... },` block at top level of the array
+    # Use simple state machine to respect brace nesting
+    pos = 0
+    while pos < len(tl_body):
+        # Find next `{` at column 2 (top-level entry indent)
+        open_match = _re.search(r"\n  \{|^  \{", tl_body[pos:])
+        if not open_match:
+            break
+        entry_start_rel = pos + open_match.start()
+        if tl_body[entry_start_rel] == "\n":
+            entry_start_rel += 1  # skip the leading newline
+        # Find matching closing `},`
+        depth = 0
+        i = entry_start_rel
+        while i < len(tl_body):
+            if tl_body[i] == "{":
+                depth += 1
+            elif tl_body[i] == "}":
+                depth -= 1
+                if depth == 0:
+                    # Include closing `},` and trailing newline
+                    end_rel = i + 1
+                    if end_rel < len(tl_body) and tl_body[end_rel] == ",":
+                        end_rel += 1
+                    if end_rel < len(tl_body) and tl_body[end_rel] == "\n":
+                        end_rel += 1
+                    entry_text = tl_body[entry_start_rel:end_rel]
+                    # Extract date field
+                    date_match = _re.search(r'date:\s*"([^"]+)"', entry_text)
+                    parsed = _parse_entry_date(date_match.group(1)) if date_match else None
+                    entries.append((
+                        tl_content_start + entry_start_rel,
+                        tl_content_start + end_rel,
+                        parsed,
+                    ))
+                    pos = end_rel
+                    break
+            i += 1
+        else:
+            break  # unclosed brace, stop
+    return entries
+
+
+
 def fetch_issue_body(issue_number: int) -> str:
     token = os.environ.get("GITHUB_TOKEN")
     repo = os.environ.get("GITHUB_REPOSITORY", "")
@@ -180,12 +275,37 @@ def apply_draft_to_index(draft: dict) -> str | None:
     sources: [{src_list}],
   }},"""
 
-    # Inject at top of TIMELINE array
-    tl_marker = "const TIMELINE = [\n"
-    if tl_marker not in content:
+    # Inject entry in chronological position (reverse chrono — newest first).
+    # Parse the new entry's date and walk existing entries to find correct spot.
+    new_date = _parse_entry_date(draft["date"])
+    entry_with_newline = entry_js + "\n"
+
+    tl_start_marker = "const TIMELINE = [\n"
+    tl_start_idx = content.find(tl_start_marker)
+    if tl_start_idx == -1:
         print("ERROR: could not locate TIMELINE array", file=sys.stderr)
         return None
-    content = content.replace(tl_marker, tl_marker + entry_js + "\n", 1)
+    tl_content_start = tl_start_idx + len(tl_start_marker)
+
+    # Find each existing entry's date and its start position
+    existing_entries = _find_existing_entries(content, tl_content_start)
+
+    # Find insertion point: after the first entry whose date >= new_date
+    # (i.e., new entry goes right before the first entry that's older)
+    insert_at = tl_content_start  # default: top of array
+    for entry_start, entry_end, existing_date in existing_entries:
+        if existing_date is not None and new_date is not None:
+            if existing_date >= new_date:
+                # This existing entry is newer or same date — new entry goes AFTER it
+                insert_at = entry_end
+            else:
+                # This existing entry is older — new entry goes BEFORE it
+                break
+        else:
+            # If we can't parse dates, don't skip past this entry
+            break
+
+    content = content[:insert_at] + entry_with_newline + content[insert_at:]
 
     # Update source count strings
     total_sources = next_src - 1

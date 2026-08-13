@@ -5,11 +5,10 @@ on:
     # 14:00 UTC = 19:30 IST daily
     - cron: '0 14 * * *'
   workflow_dispatch:
-    # Manual trigger for testing
 
 permissions:
-  contents: write   # allow autonomous commits to master
-  issues: write     # allow escalation issue creation
+  contents: write
+  issues: write
 
 concurrency:
   group: cmvijay-agents
@@ -70,6 +69,17 @@ jobs:
             git config user.email "cmvijay-agent@users.noreply.github.com"
             git add agents/log/
             git diff --cached --quiet || git commit -m "log: agent run $(date -u '+%Y-%m-%d %H:%M UTC')"
+            git push origin HEAD:master || true
+          fi
+
+      - name: Generate /agents transparency JSON
+        run: |
+          python agents/log/summarize.py
+          if [ -d agents-page ] && [ -n "$(ls agents-page/*.json 2>/dev/null)" ]; then
+            git config user.name "cmvijay-agent"
+            git config user.email "cmvijay-agent@users.noreply.github.com"
+            git add agents-page/*.json
+            git diff --cached --quiet || git commit -m "agents-page: refresh stats/entries/corrections JSON"
             git push origin HEAD:master || true
           fi
 
