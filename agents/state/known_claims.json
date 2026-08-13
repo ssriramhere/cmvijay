@@ -1,0 +1,147 @@
+{
+  "_comment": "This file tells the Editor Agent what's already on the site. The agent uses it to detect contradictions and to avoid re-surfacing already-published events. Keep entries terse.",
+  "_last_updated_iso": "2026-08-11T21:00:00+05:30",
+  "_site_state_as_of": "Aug 11, 2026, post-catch-up-sweep-4",
+  "_phase": "Phase 1 — populated manually. Refresh whenever timeline/scorecard changes materially.",
+
+  "leadership": {
+    "cm": "C. Joseph Vijay (sworn in May 10, 2026; site labels as 13th CM of Madras State/Tamil Nadu counting from Jan 26, 1950; NOTE: Wikipedia uses '9th CM of Tamil Nadu' post-1969 renaming — editorial decision is to keep 13th)",
+    "speaker": "JCD Prabhakar (elected May 12, 2026, unopposed)",
+    "deputy_speaker": "M Ravisankar (elected May 12, 2026, unopposed)",
+    "governor": "Rajendra Vishwanath Arlekar (sworn in as 21st Governor March 12, 2026; also holds additional charge of Kerala)"
+  },
+
+  "coalition_math": {
+    "as_of": "Aug 11, 2026",
+    "tvk_seats_in_assembly": 107,
+    "confirmed_coalition_total": 120,
+    "coalition_partners": ["TVK 107", "INC 5", "CPI 2", "CPI(M) 2", "VCK 2", "IUML 2"],
+    "opposition": ["DMK 59 (LoP: Udhayanidhi Stalin)", "AIADMK 43 (GS: Palaniswami)", "PMK 4", "BJP 1", "DMDK 1"],
+    "vacant_seats": 5,
+    "vacant_constituencies": ["Trichy East", "Madurantakam", "Dharapuram", "Perundurai", "Ambasamudram"],
+    "wikipedia_variant": "Wikipedia shows govt at 121 counting IND 1 — site does NOT count this"
+  },
+
+  "cabinet": {
+    "sanctioned_strength": 35,
+    "sworn_in": 33,
+    "pending_inductions": 2,
+    "expansion_date": "May 21, 2026 (Congress joined after 59 years)",
+    "notable_new_portfolio": "AI, Information Technology, and Digital Services (Minister R. Kumar, Velachery) — created May 21, 2026",
+    "current_portfolio_holders": {
+      "cm_vijay": "Home, Police, IAS/IPS/IFS, GA, Welfare of Children/Aged/Differently Abled, Municipal Admin, Urban Water Supply, Special Programme Impl, Poverty Alleviation, Prohibition & Excise (nominal)",
+      "finance_planning_development": "N. Marie Wilson",
+      "revenue_disaster_management": "K.A. Sengottaiyan",
+      "women_welfare_social_welfare": "K. Jegadeshwari",
+      "labour_skill_development": "Mohamed Farvas",
+      "public_works_sports": "Aadhav Arjuna",
+      "health_medical_family_welfare": "Dr. K.G. Arunraj",
+      "energy_law": "R. Nirmalkumar",
+      "school_education_tamil_development": "Rajmohan",
+      "industries": "S. Keerthana",
+      "food_civil_supplies": "P. Venkataramanan",
+      "transportation": "Vijay Tamilan Parthiban",
+      "tourism": "S. Rajesh Kumar (INC)",
+      "higher_education": "P. Vishwanathan (INC)",
+      "hr_management": "D. Sarathkumar 'Ghilli Sarath'",
+      "handlooms_textiles_khadi": "M. Vijay Balaji",
+      "fisheries": "A. Srinath",
+      "animal_husbandry": "S. Kamali",
+      "milk_dairy_development": "C. Vijayalakshmi",
+      "forests": "R.V. Ranjithkumar",
+      "agriculture_farmers_welfare": "R. Vinoth",
+      "environment_climate_change": "Rajeev",
+      "housing_urban_development": "B. Rajkumar",
+      "co_operation": "V. Gandhiraj",
+      "msme": "P. Mathan Raja",
+      "hrce": "S. Ramesh",
+      "prohibition_excise_operational": "K. Vignesh (Kinathukadavu)",
+      "ai_it_digital_services": "R. Kumar (Velachery)"
+    }
+  },
+
+  "major_delivery_events_on_site": {
+    "may_10_singappen_ordered": "Ordered Day 0; LAUNCHED operationally June 9",
+    "may_10_electricity_200u_per_2mo": "Executive order — HALF of manifesto 200u/month (partial)",
+    "may_10_anti_narcotics_units": "Established Day 0; ongoing enforcement",
+    "may_12_tasmac_717_ordered_closed": "Ordered May 12; COMPLETED June 5, 2026",
+    "may_13_confidence_motion": "PASSED 144-22-5; Assembly adjourned sine die",
+    "may_14_da_hike_2pct": "58%→60% retroactive Jan 1, 2026; ₹1,230 cr/yr; 16 lakh beneficiaries",
+    "may_14_kmut_1000_continued": "DMK-era scheme continues; 1.31 cr women beneficiaries",
+    "may_20_madras_hc_backs_tasmac": "HC calls closure 'good decision', dismisses landlord petition",
+    "may_21_cabinet_expansion_35": "Congress joins after 59 years; AI Ministry created (Kerala did SAME one day earlier)",
+    "may_25_three_aiadmk_mlas_resign_and_join_tvk": "Kumaravel, Sathyabama, Jayakumar",
+    "may_25_crop_loan_waiver_announced": "Up to ₹50K marginal + ₹5K larger via cooperative banks",
+    "may_26_fourth_aiadmk_resigns": "Subaya (Ambasamudram)",
+    "jun_5_tasmac_completed": "All 717 outlets permanently closed; ₹1,600 cr corruption dismantled",
+    "jun_5_first_cabinet_meeting": "Vetri Thamizhagam Vision Document; 10 Thirukkural-based pillars; 436 schemes allocated",
+    "jun_9_singappen_launched": "70 units, 560 officers, ₹354.67 cr, IPS K. Bhavaneeswari heads",
+    "jun_18_assembly_reconvenes": "Governor Arlekar Address; Social Justice Survey commitment; 69% reservation reaffirmed",
+    "aug_3_tn_moves_sc_cauvery": "First major SC intervention by TVK govt on Karnataka non-compliance",
+    "aug_5_maiden_budget": "FM Marie Wilson: Thai Maaman ₹560 cr, Annanin Seer ₹812 cr, goat scheme ₹110 cr, Vetri Laptop ₹2,000 cr, bicycle scheme ₹277 cr, healthcare hubs ~₹185 cr, Climate Budget; USD 1.5T economy target by 2031; ₹13.18 lakh cr debt claim in White Paper",
+    "aug_5_budget_gap_2500_not_delivered": "₹2,500 Madhippumigu Magalir Thittam NOT delivered; ₹1,000 KMUT continues; signature promise deferred",
+    "aug_6_agriculture_budget": "R. Vinoth: Soil Conservation ₹122.51 cr, Kuruvai ₹134.83 cr, Pulses/Oilseed ₹203.64 cr, AI farmer app ₹2 cr",
+    "aug_7_mekedatu_assembly_clash": "CM rejects all-party meeting demand; legal-track-only strategy",
+    "aug_10_sc_hearing_scheduled_aug13": "SC to hear TN's Cauvery petition Aug 13; DMK filed parallel petition"
+  },
+
+  "scorecard_status_summary": {
+    "as_of": "Aug 11, 2026",
+    "delivered": 0,
+    "partial": 5,
+    "in_progress": 4,
+    "broken": 0,
+    "pending": 64,
+    "total": 73,
+    "partial_promises": [
+      {"id": "g1_newborn", "why_partial": "Thai Maaman ₹560 cr allocated — but scope narrowed to govt hospital only; no welcome kit"},
+      {"id": "g5_loan", "why_partial": "Crop loan waiver up to ₹50K + ₹5K larger — narrower than manifesto's 'complete waiver <5 acres'"},
+      {"id": "g6_elec", "why_partial": "200 units/2 months — half of manifesto's 200u/month"},
+      {"id": "g7_zones", "why_partial": "TASMAC creates alcohol-protection zones near schools — but manifesto said anti-drug not anti-alcohol"},
+      {"id": "g8_aimin", "why_partial": "AI Ministry created May 21 — but Kerala created dedicated AI portfolio May 20; 'India's First' claim NOT satisfied"}
+    ],
+    "in_progress_promises": [
+      {"id": "g1_marriage", "why_in_progress": "Annanin Seer ₹812 cr — matches 8g gold + silk saree mechanics; not delivered until distribution"},
+      {"id": "g1_safety", "why_in_progress": "Singappen operational with 560 officers — but manifesto's courts/audits not delivered"},
+      {"id": "g2_hospital", "why_in_progress": "Multi-component hospital upgrade allocations underway"},
+      {"id": "g7_mission", "why_in_progress": "Anti-narcotics + Goondas Act + gutka shop enforcement — components underway"}
+    ]
+  },
+
+  "pending_litigation": {
+    "sethupathi_case": "SC stayed HC order May 13; case ongoing",
+    "cauvery_sc_petition": "TN + DMK petitions; SC hearing Aug 13 (CJI Surya Kant + Bagchi + Mohana)"
+  },
+
+  "known_misinformation_do_not_amplify": [
+    "Aadhav Arjuna as Deputy CM — TheJanPost only, non-whitelisted; debunked by ANI + ThePrint",
+    "No Deputy CM position designated in this government",
+    "Vijay as 17th CM — OneIndia non-whitelisted; site uses 13th (Madras State from 1950)",
+    "Tamil Thai Vaazhthu anthem controversy — cinema-adjacent, out of scope",
+    "Udhayanidhi Stalin Aug 4-5 arrest incident — cinema-adjacent, TVK women's wing complaint, out of scope"
+  ],
+
+  "editorial_rules_for_agent": {
+    "status_flip_requires": "two whitelisted sources OR named government spokesperson on record",
+    "budget_allocation_semantic": "Budget allocation = commitment, NOT delivery. Allocations move promises to in_progress or partial. Delivered = scheme operationally reaching beneficiaries.",
+    "out_of_scope": [
+      "Speeches/statements without governance action",
+      "Political symbolism, cultural debates",
+      "Factional manoeuvring without policy effect",
+      "'Expected to' statements — decisions only",
+      "Cinema/personal news about Vijay",
+      "Misinformation meta-news"
+    ],
+    "vijay_name_convention": "Mr. Vijay or CM Mr. Vijay; never bare 'Vijay'",
+    "primacy_claims_require_verification": "Any promise with 'first / largest / most / only / biggest' MUST be verified against other jurisdictions. Real example: g8_aimin (Kerala beat TN by 1 day)."
+  },
+
+  "watch_list": [
+    "Aug 13 SC hearing on Cauvery — outcome may need timeline entry",
+    "Bye-election dates for 5 vacant constituencies",
+    "IUML formal cabinet induction (announced, pending)",
+    "Sethupathi case next hearings",
+    "Executive delivery of any pending manifesto promise",
+    "First actual beneficiary delivery of Thai Maaman Gold Ring or Annanin Seer schemes (would move g1_newborn / g1_marriage to delivered)"
+  ]
+}

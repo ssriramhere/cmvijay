@@ -1,0 +1,114 @@
+name: cmvijay-agents-approval-bot
+
+on:
+  issue_comment:
+    types: [created]
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  handle-slash-command:
+    if: >
+      github.event.issue.user.login == github.repository_owner ||
+      github.event.comment.user.login == github.repository_owner
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Parse command
+        id: parse
+        env:
+          BODY: ${{ github.event.comment.body }}
+        run: |
+          FIRST=$(echo "$BODY" | head -1 | tr -d '\r')
+          echo "first_line=$FIRST" >> $GITHUB_OUTPUT
+          if echo "$FIRST" | grep -q '^/approve'; then
+            echo "cmd=approve" >> $GITHUB_OUTPUT
+          elif echo "$FIRST" | grep -q '^/skip'; then
+            echo "cmd=skip" >> $GITHUB_OUTPUT
+          elif echo "$FIRST" | grep -q '^/edit'; then
+            echo "cmd=edit" >> $GITHUB_OUTPUT
+          elif echo "$FIRST" | grep -q '^/undo'; then
+            echo "cmd=undo" >> $GITHUB_OUTPUT
+            SHA=$(echo "$FIRST" | awk '{print $2}')
+            echo "sha=$SHA" >> $GITHUB_OUTPUT
+          else
+            echo "cmd=none" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Handle /approve
+        if: steps.parse.outputs.cmd == 'approve'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          curl -sS -X POST \
+            -H "Authorization: token $GH_TOKEN" \
+            -H "Accept: application/vnd.github+json" \
+            https://api.github.com/repos/${{ github.repository }}/issues/${{ github.event.issue.number }}/comments \
+            -d '{"body": "✅ Approved. Please apply the drafted entry from the issue body to `index.html` manually and push. This issue will be closed."}'
+          curl -sS -X PATCH \
+            -H "Authorization: token $GH_TOKEN" \
+            -H "Accept: application/vnd.github+json" \
+            https://api.github.com/repos/${{ github.repository }}/issues/${{ github.event.issue.number }} \
+            -d '{"state": "closed", "state_reason": "completed", "labels": ["agent-surfaced", "approved"]}'
+
+      - name: Handle /skip
+        if: steps.parse.outputs.cmd == 'skip'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          curl -sS -X POST \
+            -H "Authorization: token $GH_TOKEN" \
+            -H "Accept: application/vnd.github+json" \
+            https://api.github.com/repos/${{ github.repository }}/issues/${{ github.event.issue.number }}/comments \
+            -d '{"body": "⏭️ Skipped."}'
+          curl -sS -X PATCH \
+            -H "Authorization: token $GH_TOKEN" \
+            -H "Accept: application/vnd.github+json" \
+            https://api.github.com/repos/${{ github.repository }}/issues/${{ github.event.issue.number }} \
+            -d '{"state": "closed", "state_reason": "not_planned", "labels": ["agent-surfaced", "skipped"]}'
+
+      - name: Handle /edit
+        if: steps.parse.outputs.cmd == 'edit'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          curl -sS -X POST \
+            -H "Authorization: token $GH_TOKEN" \
+            -H "Accept: application/vnd.github+json" \
+            https://api.github.com/repos/${{ github.repository }}/issues/${{ github.event.issue.number }}/comments \
+            -d '{"body": "✏️ Edit captured. Please apply your revised wording to `index.html` manually and push. Closing this issue."}'
+          curl -sS -X PATCH \
+            -H "Authorization: token $GH_TOKEN" \
+            -H "Accept: application/vnd.github+json" \
+            https://api.github.com/repos/${{ github.repository }}/issues/${{ github.event.issue.number }} \
+            -d '{"state": "closed", "state_reason": "completed", "labels": ["agent-surfaced", "operator-edited"]}'
+
+      - name: Handle /undo
+        if: steps.parse.outputs.cmd == 'undo'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SHA: ${{ steps.parse.outputs.sha }}
+        run: |
+          if [ -z "$SHA" ]; then
+            curl -sS -X POST \
+              -H "Authorization: token $GH_TOKEN" \
+              -H "Accept: application/vnd.github+json" \
+              https://api.github.com/repos/${{ github.repository }}/issues/${{ github.event.issue.number }}/comments \
+              -d '{"body": "❌ /undo requires a commit sha, e.g. `/undo abc1234`."}'
+            exit 0
+          fi
+          git config user.name "cmvijay-agent"
+          git config user.email "cmvijay-agent@users.noreply.github.com"
+          git revert --no-edit "$SHA" || { echo "revert failed"; exit 1; }
+          git push origin HEAD:master
+          curl -sS -X POST \
+            -H "Authorization: token $GH_TOKEN" \
+            -H "Accept: application/vnd.github+json" \
+            https://api.github.com/repos/${{ github.repository }}/issues/${{ github.event.issue.number }}/comments \
+            -d "{\"body\": \"↩️ Reverted commit \`$SHA\`. Site will redeploy in ~30s.\"}"

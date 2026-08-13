@@ -1,0 +1,90 @@
+name: cmvijay-agents
+
+on:
+  schedule:
+    # 14:00 UTC = 19:30 IST daily
+    - cron: '0 14 * * *'
+  workflow_dispatch:
+    # Manual trigger for testing
+
+permissions:
+  contents: write   # allow autonomous commits to master
+  issues: write     # allow escalation issue creation
+
+concurrency:
+  group: cmvijay-agents
+  cancel-in-progress: false
+
+jobs:
+  run-agents:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Cache agent state
+        uses: actions/cache@v4
+        with:
+          path: agents/state/seen.json
+          key: cmvijay-agents-state-${{ github.run_id }}
+          restore-keys: |
+            cmvijay-agents-state-
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install anthropic requests feedparser
+
+      - name: Run agents pipeline
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          SERPER_API_KEY: ${{ secrets.SERPER_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: |
+          cd $GITHUB_WORKSPACE
+          python agents/state/orchestrator.py
+
+      - name: Push any autonomous commits
+        run: |
+          if git log HEAD ^origin/master --oneline | grep .; then
+            echo "Autonomous commits detected — pushing"
+            git push origin HEAD:master
+          else
+            echo "No autonomous commits to push"
+          fi
+
+      - name: Commit agent logs
+        run: |
+          if [ -d agents/log ] && [ -n "$(ls -A agents/log 2>/dev/null)" ]; then
+            git config user.name "cmvijay-agent"
+            git config user.email "cmvijay-agent@users.noreply.github.com"
+            git add agents/log/
+            git diff --cached --quiet || git commit -m "log: agent run $(date -u '+%Y-%m-%d %H:%M UTC')"
+            git push origin HEAD:master || true
+          fi
+
+      - name: Post daily digest
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if [ -f agents/state/daily_digest.md ]; then
+            TITLE="cmvijay-agents digest · $(TZ=Asia/Kolkata date '+%Y-%m-%d')"
+            BODY=$(cat agents/state/daily_digest.md | python3 -c 'import sys, json; print(json.dumps(sys.stdin.read()))')
+            curl -sS -X POST \
+              -H "Authorization: token $GITHUB_TOKEN" \
+              -H "Accept: application/vnd.github+json" \
+              https://api.github.com/repos/${{ github.repository }}/issues \
+              -d "{\"title\": \"$TITLE\", \"body\": $BODY, \"labels\": [\"agent-digest\"]}" \
+              > /tmp/digest_issue.json
+            cat /tmp/digest_issue.json | head -20
+          fi

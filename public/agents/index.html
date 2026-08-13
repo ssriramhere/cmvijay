@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>cmvijay.ai · Agents</title>
+  <meta name="description" content="Public transparency page for the cmvijay.ai autonomous agents system. Shows autonomy rates, per-entry reasoning, and correction log." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+    .num { font-variant-numeric: tabular-nums; }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+  </style>
+</head>
+<body class="bg-neutral-50 text-neutral-900">
+
+<header class="max-w-4xl mx-auto px-6 pt-12 pb-6">
+  <a href="/" class="text-sm text-neutral-500 hover:text-neutral-800">← cmvijay.ai</a>
+  <h1 class="mt-4 text-4xl font-bold tracking-tight">Agents</h1>
+  <p class="mt-3 text-neutral-600 max-w-2xl">
+    cmvijay.ai is maintained by a set of autonomous AI agents that surface, verify,
+    and draft candidate updates from whitelisted sources. Routine additive entries
+    are committed autonomously; anything requiring editorial judgment is escalated
+    to the human operator. Every published entry is auditable.
+  </p>
+</header>
+
+<main class="max-w-4xl mx-auto px-6 pb-20 space-y-14">
+
+  <!-- Section 1: Autonomy dashboard -->
+  <section>
+    <h2 class="text-2xl font-semibold mb-4">Autonomy dashboard</h2>
+    <p class="text-sm text-neutral-600 mb-6">Rolling 30 days. Updated after each daily agent run.</p>
+    <div id="dashboard" class="grid grid-cols-2 md:grid-cols-3 gap-4">
+      <!-- Cards populated by JS -->
+    </div>
+    <p class="mt-6 text-sm text-neutral-500">
+      The autonomy split is deliberate: agents commit routine additive entries when
+      verification is clean and no existing site claim is affected. Anything with
+      contradictions, status flips to "delivered" or "broken", or politically
+      sensitive framing goes to the human operator.
+    </p>
+  </section>
+
+  <!-- Section 2: Explain-any-entry -->
+  <section>
+    <h2 class="text-2xl font-semibold mb-4">Explain any entry</h2>
+    <p class="text-sm text-neutral-600 mb-6">
+      Enter a timeline entry title (or paste a link to a specific entry) to see
+      the agent reasoning trace that produced it. Includes the Verifier's tool
+      calls, sources checked, and any escalation decisions.
+    </p>
+    <div class="bg-white rounded-lg shadow-sm border border-neutral-200 p-6">
+      <input id="explain-input" type="text"
+             placeholder="Search by entry title, e.g. 'Maiden Budget' or 'Singappen'"
+             class="w-full px-4 py-2 border border-neutral-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent" />
+      <div id="explain-results" class="mt-4"></div>
+    </div>
+  </section>
+
+  <!-- Section 3: Correction log -->
+  <section>
+    <h2 class="text-2xl font-semibold mb-4">Correction log</h2>
+    <p class="text-sm text-neutral-600 mb-6">
+      When the agents get something wrong, the correction and its root cause are
+      published here. This is the mechanism that keeps AI-mediated civic
+      accountability accountable.
+    </p>
+    <div id="corrections" class="space-y-4">
+      <!-- Populated by JS from public/agents/corrections.json -->
+    </div>
+  </section>
+
+  <!-- Section 4: Stack (brief) -->
+  <section class="border-t border-neutral-200 pt-8">
+    <h3 class="text-lg font-semibold mb-3">The stack</h3>
+    <p class="text-sm text-neutral-600 leading-relaxed">
+      Watcher · Verifier · Drafter agents built on Anthropic Claude Sonnet 4.6 with
+      tool use. Verifier autonomously calls web_search, web_fetch, and site-state
+      lookups to check claims (especially primacy claims like "India's first").
+      Cadence: once daily at 19:30 IST. Rate-limited to 5 autonomous commits per
+      day. All commits signed as <span class="mono">cmvijay-agent</span> and revertable
+      via <span class="mono">/undo &lt;sha&gt;</span> on the daily digest issue.
+      Full source and prompts: <a class="text-red-600 hover:underline" href="https://github.com/ssriramhere/cmvijay">github.com/ssriramhere/cmvijay</a>.
+    </p>
+  </section>
+
+</main>
+
+<footer class="max-w-4xl mx-auto px-6 py-10 text-xs text-neutral-500">
+  cmvijay.ai · A civic accountability tracker for the Tamil Nadu government.
+</footer>
+
+<script>
+// Load dashboard stats from agents/log summary
+async function loadDashboard() {
+  const container = document.getElementById('dashboard');
+  try {
+    const r = await fetch('./stats.json');
+    if (!r.ok) throw new Error('stats.json not found');
+    const stats = await r.json();
+    const cards = [
+      { label: 'Candidates surfaced', value: stats.candidates_surfaced ?? '—' },
+      { label: 'Auto-verified', value: stats.auto_verified ?? '—', sub: stats.auto_verified_pct ? `${stats.auto_verified_pct}%` : '' },
+      { label: 'Escalated to operator', value: stats.escalated ?? '—', sub: stats.escalated_pct ? `${stats.escalated_pct}%` : '' },
+      { label: 'Autonomous commits', value: stats.autonomous_commits ?? '—' },
+      { label: 'Operator-edited', value: stats.operator_edited ?? '—' },
+      { label: 'Skipped as noise', value: stats.skipped ?? '—' },
+    ];
+    container.innerHTML = cards.map(c => `
+      <div class="bg-white rounded-lg shadow-sm border border-neutral-200 p-5">
+        <div class="text-xs uppercase tracking-wide text-neutral-500">${c.label}</div>
+        <div class="mt-2 text-3xl font-semibold num">${c.value}</div>
+        ${c.sub ? `<div class="mt-1 text-xs text-neutral-500">${c.sub}</div>` : ''}
+      </div>
+    `).join('');
+  } catch (e) {
+    container.innerHTML = `<div class="col-span-full text-sm text-neutral-500">Stats will populate after first agent run.</div>`;
+  }
+}
+
+async function loadCorrections() {
+  const container = document.getElementById('corrections');
+  try {
+    const r = await fetch('./corrections.json');
+    if (!r.ok) throw new Error();
+    const corrections = await r.json();
+    if (!corrections.length) {
+      container.innerHTML = `<div class="text-sm text-neutral-500">No corrections logged yet.</div>`;
+      return;
+    }
+    container.innerHTML = corrections.map(c => `
+      <div class="bg-white rounded-lg shadow-sm border border-neutral-200 p-5">
+        <div class="flex justify-between items-baseline">
+          <div class="font-semibold">${c.title}</div>
+          <div class="text-xs text-neutral-500 num">${c.date}</div>
+        </div>
+        <div class="mt-2 text-sm text-neutral-700">${c.description}</div>
+        <div class="mt-3 text-xs text-neutral-500"><strong>Root cause:</strong> ${c.root_cause}</div>
+        <div class="mt-1 text-xs text-neutral-500"><strong>Corrective action:</strong> ${c.corrective_action}</div>
+      </div>
+    `).join('');
+  } catch (e) {
+    container.innerHTML = `<div class="text-sm text-neutral-500">No corrections logged yet.</div>`;
+  }
+}
+
+document.getElementById('explain-input').addEventListener('input', async (e) => {
+  const q = e.target.value.trim().toLowerCase();
+  const results = document.getElementById('explain-results');
+  if (q.length < 3) { results.innerHTML = ''; return; }
+  try {
+    const r = await fetch('./entries.json');
+    if (!r.ok) throw new Error();
+    const entries = await r.json();
+    const matches = entries.filter(en => en.title.toLowerCase().includes(q)).slice(0, 5);
+    if (!matches.length) {
+      results.innerHTML = `<div class="text-sm text-neutral-500 mt-2">No matching entries.</div>`;
+      return;
+    }
+    results.innerHTML = matches.map(m => `
+      <div class="mt-3 p-4 border border-neutral-200 rounded-md">
+        <div class="font-medium">${m.title}</div>
+        <div class="text-xs text-neutral-500 num mt-1">${m.date}</div>
+        <details class="mt-3">
+          <summary class="text-sm text-red-600 cursor-pointer">Show agent reasoning</summary>
+          <pre class="mt-2 text-xs bg-neutral-50 p-3 rounded overflow-x-auto">${JSON.stringify(m.reasoning, null, 2)}</pre>
+        </details>
+      </div>
+    `).join('');
+  } catch (e) {
+    results.innerHTML = `<div class="text-sm text-neutral-500 mt-2">Entry index not yet available.</div>`;
+  }
+});
+
+loadDashboard();
+loadCorrections();
+</script>
+
+</body>
+</html>

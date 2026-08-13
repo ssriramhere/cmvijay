@@ -1,0 +1,11 @@
+
+# Agent state — populated by workflow; not committed
+agents/state/candidates.json
+agents/state/verified_candidates.json
+agents/state/drafts.json
+agents/state/seen.json
+agents/state/daily_digest.md
+
+# Python bytecode
+__pycache__/
+*.pyc
