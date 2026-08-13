@@ -201,14 +201,21 @@ def apply_draft_to_index(draft: dict) -> str | None:
            f"Reply /undo {{sha}} on the daily digest to revert.")
 
     try:
-        # Git identity should be set by workflow, but set here as backup
+        # Git identity should be set by workflow, but set here as backup.
+        # Suppress stdout on all git calls so only the final sha is printed
+        # to stdout — otherwise multi-line git commit output pollutes the
+        # value we return to the caller and breaks GITHUB_OUTPUT capture.
         subprocess.run(["git", "config", "user.name", "cmvijay-agent"],
-                       cwd=REPO_ROOT, check=True)
+                       cwd=REPO_ROOT, check=True,
+                       stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
         subprocess.run(["git", "config", "user.email",
                         "cmvijay-agent@users.noreply.github.com"],
-                       cwd=REPO_ROOT, check=True)
-        subprocess.run(["git", "add", "index.html"], cwd=REPO_ROOT, check=True)
-        subprocess.run(["git", "commit", "-m", msg], cwd=REPO_ROOT, check=True)
+                       cwd=REPO_ROOT, check=True,
+                       stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        subprocess.run(["git", "add", "index.html"], cwd=REPO_ROOT, check=True,
+                       stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        subprocess.run(["git", "commit", "-m", msg], cwd=REPO_ROOT, check=True,
+                       stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
         sha = subprocess.check_output(
             ["git", "rev-parse", "HEAD"], cwd=REPO_ROOT
         ).decode().strip()

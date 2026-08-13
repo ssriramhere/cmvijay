@@ -71,14 +71,22 @@ jobs:
           GITHUB_REPOSITORY: ${{ github.repository }}
         run: |
           set -e
-          SHA=$(python agents/state/apply_approved_draft.py ${{ github.event.issue.number }})
+          # Capture only the LAST line of output — defensive against any
+          # unexpected stdout leaks from git or dependencies
+          SHA=$(python agents/state/apply_approved_draft.py ${{ github.event.issue.number }} | tail -1)
+          if [ -z "$SHA" ] || [ ${#SHA} -lt 7 ]; then
+            echo "ERROR: apply script returned empty or invalid sha: '$SHA'"
+            exit 1
+          fi
           echo "commit_sha=$SHA" >> $GITHUB_OUTPUT
           git push origin HEAD:master
+          # Build the comment body via jq to avoid JSON escaping bugs
+          COMMENT_BODY="✅ Approved and applied to \`index.html\` as commit \`$SHA\`. Site redeploys via Vercel in ~30s. Reply \`/undo $SHA\` on today's digest to revert."
           curl -sS -X POST \
             -H "Authorization: token $GITHUB_TOKEN" \
             -H "Accept: application/vnd.github+json" \
             https://api.github.com/repos/${{ github.repository }}/issues/${{ github.event.issue.number }}/comments \
-            -d "{\"body\": \"✅ Approved and applied to \`index.html\` as commit \`$SHA\`. Site redeploys via Vercel in ~30s. Reply \`/undo $SHA\` on today's digest to revert.\"}"
+            -d "$(jq -nc --arg body "$COMMENT_BODY" '{body: $body}')"
           curl -sS -X PATCH \
             -H "Authorization: token $GITHUB_TOKEN" \
             -H "Accept: application/vnd.github+json" \
@@ -104,13 +112,18 @@ jobs:
         run: |
           set -e
           EDIT_TEXT=$(cat /tmp/edit_text.txt)
-          SHA=$(python agents/state/apply_approved_draft.py ${{ github.event.issue.number }} --edit-text "$EDIT_TEXT")
+          SHA=$(python agents/state/apply_approved_draft.py ${{ github.event.issue.number }} --edit-text "$EDIT_TEXT" | tail -1)
+          if [ -z "$SHA" ] || [ ${#SHA} -lt 7 ]; then
+            echo "ERROR: apply script returned empty or invalid sha: '$SHA'"
+            exit 1
+          fi
           git push origin HEAD:master
+          COMMENT_BODY="✏️ Edit applied to \`index.html\` as commit \`$SHA\` with your revised body. Site redeploys via Vercel in ~30s."
           curl -sS -X POST \
             -H "Authorization: token $GITHUB_TOKEN" \
             -H "Accept: application/vnd.github+json" \
             https://api.github.com/repos/${{ github.repository }}/issues/${{ github.event.issue.number }}/comments \
-            -d "{\"body\": \"✏️ Edit applied to \`index.html\` as commit \`$SHA\` with your revised body. Site redeploys via Vercel in ~30s.\"}"
+            -d "$(jq -nc --arg body "$COMMENT_BODY" '{body: $body}')"
           curl -sS -X PATCH \
             -H "Authorization: token $GITHUB_TOKEN" \
             -H "Accept: application/vnd.github+json" \
