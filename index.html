@@ -111,7 +111,7 @@ const STRINGS = {
     math_in_talks_note: "Currently in SPA or uncommitted. Decision expected next day.",
     sources_title: "Sources",
     sources_sub: "Every claim, sourced. Click to verify.",
-    sources_show_all: "Show all 83 sources",
+    sources_show_all: "Show all 86 sources",
     submit_update_btn: "Submit an update",
     submit_update_helper: "Spotted a promise being delivered, partially delivered, or broken? Share evidence with a sourced link — reviewed within 7 days, often faster.",
     timeline_title: "How we got here",
@@ -181,7 +181,7 @@ const STRINGS = {
     math_in_talks_note: "தற்போது SPA-வில் அல்லது உறுதிசெய்யப்படவில்லை. முடிவு அடுத்த நாளில்.",
     sources_title: "ஆதாரங்கள்",
     sources_sub: "ஒவ்வொரு கூற்றுக்கும் ஆதாரம். சரிபார்க்க கிளிக் செய்யவும்.",
-    sources_show_all: "83 ஆதாரங்களைக் காட்டு",
+    sources_show_all: "86 ஆதாரங்களைக் காட்டு",
     submit_update_btn: "புதுப்பிப்பு சமர்ப்பிக்க",
     submit_update_helper: "ஒரு வாக்குறுதி நிறைவேற்றப்படுவதையோ, பகுதியளவில் நிறைவேற்றப்படுவதையோ, அல்லது நிறைவேற்றப்படாததையோ கண்டறிந்தீர்களா? ஆதாரம் கொடுத்த இணைப்புடன் பகிரவும் — 7 நாட்களுக்குள் மதிப்பாய்வு செய்யப்படும்.",
     timeline_title: "இங்கு எப்படி வந்தோம்",
@@ -822,6 +822,27 @@ const SOURCES = [
     url: "https://www.deccanchronicle.com/southern-states/tamil-nadu/tn-sets-up-dedicated-ministry-for-artificial-intelligence-1958169",
     date: "May 21, 2026",
   },
+  {
+    n: 84,
+    label: "The Hindu — primary report on conclave outcomes, MoU count, and investment figure",
+    org: "The Hindu",
+    url: "https://www.thehindu.com/news/national/tamil-nadu/tvk-governments-first-big-business-game-scores-97-deals-67452-crore/article71337395.ece",
+    date: "2026-08-13",
+  },
+  {
+    n: 85,
+    label: "Daily Pioneer / PTI — corroborating wire report, ~₹67,000 crore figure",
+    org: "Daily Pioneer (PTI)",
+    url: "https://dailypioneer.com/news/tamil-nadu-govt-97-mous-rs-67000-crore-investment-jobs",
+    date: "2026-08-13",
+  },
+  {
+    n: 86,
+    label: "New Indian Express — confirms '1st Vettri TN Investment Conclave' framing and date",
+    org: "New Indian Express",
+    url: "https://www.newindianexpress.com/states/tamil-nadu/2026/Aug/13/1st-vettri-tn-investment-conclave-today",
+    date: "2026-08-13",
+  },
 ];
 
 // Manifesto promises: organized by TVK's "Nine Guarantees" — the policy-theme
@@ -943,6 +964,12 @@ const CATEGORIES = [
 ];
 
 const TIMELINE = [
+  {
+    date: "August 13, 2026",
+    title: "🟢 Vettri Tamil Nadu Investment Conclave closes with 97 MoUs, ₹67,452 crore committed",
+    body: "The TVK government's first investment conclave, Vettri Tamil Nadu Investment Conclave 2026, concludes in Chennai with 97 memoranda of understanding signed, representing investment commitments of ₹67,452 crore. CM Mr. Vijay presides over the event; Industries and Investment Promotion Minister Ms. S. Keerthana leads the ministerial delegation on the floor. The conclave is the first of its kind under the TVK administration — no comparable state-level investment summit was held during the party's prior period in government. A minor discrepancy exists across source versions of the total figure (₹67,452 crore in The Hindu's headline versus ₹67,542 crore in a linked subheading; PTI reports the aggregate as approximately ₹67,000 crore); the lower figure from the primary source headline is used here. Whether the MoUs translate to grounded investment and employment will be measurable only as individual projects reach financial closure.",
+    sources: [84, 85, 86],
+  },
   {
     date: "August 10, 2026",
     title: "⚖️ Supreme Court to hear TN's Cauvery petition on August 13",
