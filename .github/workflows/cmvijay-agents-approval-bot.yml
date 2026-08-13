@@ -19,6 +19,17 @@ jobs:
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies (only if needed)
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
 
       - name: Parse command
         id: parse
@@ -33,6 +44,11 @@ jobs:
             echo "cmd=skip" >> $GITHUB_OUTPUT
           elif echo "$FIRST" | grep -q '^/edit'; then
             echo "cmd=edit" >> $GITHUB_OUTPUT
+            # Extract text after /edit for the override body
+            EDIT_TEXT=$(echo "$BODY" | sed -n 's/^\/edit[[:space:]]*//p' | head -c 5000)
+            # Write to file to avoid shell escaping issues
+            echo "$EDIT_TEXT" > /tmp/edit_text.txt
+            echo "has_edit_text=true" >> $GITHUB_OUTPUT
           elif echo "$FIRST" | grep -q '^/undo'; then
             echo "cmd=undo" >> $GITHUB_OUTPUT
             SHA=$(echo "$FIRST" | awk '{print $2}')
@@ -41,8 +57,36 @@ jobs:
             echo "cmd=none" >> $GITHUB_OUTPUT
           fi
 
-      - name: Handle /approve
+      - name: Configure git identity
+        if: steps.parse.outputs.cmd == 'approve' || steps.parse.outputs.cmd == 'edit' || steps.parse.outputs.cmd == 'undo'
+        run: |
+          git config user.name "cmvijay-agent"
+          git config user.email "cmvijay-agent@users.noreply.github.com"
+
+      - name: Handle /approve — auto-apply draft to index.html
         if: steps.parse.outputs.cmd == 'approve'
+        id: approve
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: |
+          set -e
+          SHA=$(python agents/state/apply_approved_draft.py ${{ github.event.issue.number }})
+          echo "commit_sha=$SHA" >> $GITHUB_OUTPUT
+          git push origin HEAD:master
+          curl -sS -X POST \
+            -H "Authorization: token $GITHUB_TOKEN" \
+            -H "Accept: application/vnd.github+json" \
+            https://api.github.com/repos/${{ github.repository }}/issues/${{ github.event.issue.number }}/comments \
+            -d "{\"body\": \"✅ Approved and applied to \`index.html\` as commit \`$SHA\`. Site redeploys via Vercel in ~30s. Reply \`/undo $SHA\` on today's digest to revert.\"}"
+          curl -sS -X PATCH \
+            -H "Authorization: token $GITHUB_TOKEN" \
+            -H "Accept: application/vnd.github+json" \
+            https://api.github.com/repos/${{ github.repository }}/issues/${{ github.event.issue.number }} \
+            -d '{"state": "closed", "state_reason": "completed", "labels": ["agent-surfaced", "approved"]}'
+
+      - name: Handle /approve failure — post error and leave open
+        if: steps.parse.outputs.cmd == 'approve' && failure()
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
@@ -50,12 +94,28 @@ jobs:
             -H "Authorization: token $GH_TOKEN" \
             -H "Accept: application/vnd.github+json" \
             https://api.github.com/repos/${{ github.repository }}/issues/${{ github.event.issue.number }}/comments \
-            -d '{"body": "✅ Approved. Please apply the drafted entry from the issue body to `index.html` manually and push. This issue will be closed."}'
+            -d '{"body": "⚠️ /approve failed to auto-apply the draft (check workflow logs). Issue left open — apply manually if needed."}'
+
+      - name: Handle /edit — auto-apply with revised body
+        if: steps.parse.outputs.cmd == 'edit'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: |
+          set -e
+          EDIT_TEXT=$(cat /tmp/edit_text.txt)
+          SHA=$(python agents/state/apply_approved_draft.py ${{ github.event.issue.number }} --edit-text "$EDIT_TEXT")
+          git push origin HEAD:master
+          curl -sS -X POST \
+            -H "Authorization: token $GITHUB_TOKEN" \
+            -H "Accept: application/vnd.github+json" \
+            https://api.github.com/repos/${{ github.repository }}/issues/${{ github.event.issue.number }}/comments \
+            -d "{\"body\": \"✏️ Edit applied to \`index.html\` as commit \`$SHA\` with your revised body. Site redeploys via Vercel in ~30s.\"}"
           curl -sS -X PATCH \
-            -H "Authorization: token $GH_TOKEN" \
+            -H "Authorization: token $GITHUB_TOKEN" \
             -H "Accept: application/vnd.github+json" \
             https://api.github.com/repos/${{ github.repository }}/issues/${{ github.event.issue.number }} \
-            -d '{"state": "closed", "state_reason": "completed", "labels": ["agent-surfaced", "approved"]}'
+            -d '{"state": "closed", "state_reason": "completed", "labels": ["agent-surfaced", "operator-edited"]}'
 
       - name: Handle /skip
         if: steps.parse.outputs.cmd == 'skip'
@@ -73,22 +133,6 @@ jobs:
             https://api.github.com/repos/${{ github.repository }}/issues/${{ github.event.issue.number }} \
             -d '{"state": "closed", "state_reason": "not_planned", "labels": ["agent-surfaced", "skipped"]}'
 
-      - name: Handle /edit
-        if: steps.parse.outputs.cmd == 'edit'
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          curl -sS -X POST \
-            -H "Authorization: token $GH_TOKEN" \
-            -H "Accept: application/vnd.github+json" \
-            https://api.github.com/repos/${{ github.repository }}/issues/${{ github.event.issue.number }}/comments \
-            -d '{"body": "✏️ Edit captured. Please apply your revised wording to `index.html` manually and push. Closing this issue."}'
-          curl -sS -X PATCH \
-            -H "Authorization: token $GH_TOKEN" \
-            -H "Accept: application/vnd.github+json" \
-            https://api.github.com/repos/${{ github.repository }}/issues/${{ github.event.issue.number }} \
-            -d '{"state": "closed", "state_reason": "completed", "labels": ["agent-surfaced", "operator-edited"]}'
-
       - name: Handle /undo
         if: steps.parse.outputs.cmd == 'undo'
         env:
@@ -103,12 +147,10 @@ jobs:
               -d '{"body": "❌ /undo requires a commit sha, e.g. `/undo abc1234`."}'
             exit 0
           fi
-          git config user.name "cmvijay-agent"
-          git config user.email "cmvijay-agent@users.noreply.github.com"
           git revert --no-edit "$SHA" || { echo "revert failed"; exit 1; }
           git push origin HEAD:master
           curl -sS -X POST \
             -H "Authorization: token $GH_TOKEN" \
             -H "Accept: application/vnd.github+json" \
             https://api.github.com/repos/${{ github.repository }}/issues/${{ github.event.issue.number }}/comments \
-            -d "{\"body\": \"↩️ Reverted commit \`$SHA\`. Site will redeploy in ~30s.\"}"
+            -d "{\"body\": \"↩️ Reverted commit \`$SHA\`. Site redeploys via Vercel in ~30s.\"}"
