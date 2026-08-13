@@ -152,6 +152,7 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SHA: ${{ steps.parse.outputs.sha }}
         run: |
+          set +e  # don't exit on first failure — we want to report cleanly
           if [ -z "$SHA" ]; then
             curl -sS -X POST \
               -H "Authorization: token $GH_TOKEN" \
@@ -160,10 +161,36 @@ jobs:
               -d '{"body": "❌ /undo requires a commit sha, e.g. `/undo abc1234`."}'
             exit 0
           fi
-          git revert --no-edit "$SHA" || { echo "revert failed"; exit 1; }
-          git push origin HEAD:master
-          curl -sS -X POST \
-            -H "Authorization: token $GH_TOKEN" \
-            -H "Accept: application/vnd.github+json" \
-            https://api.github.com/repos/${{ github.repository }}/issues/${{ github.event.issue.number }}/comments \
-            -d "{\"body\": \"↩️ Reverted commit \`$SHA\`. Site redeploys via Vercel in ~30s.\"}"
+
+          # Use smart undo script (surgical removal, not git revert)
+          # tail -1 captures only the new sha line printed by the script
+          NEW_SHA=$(python agents/state/undo_agent_commit.py "$SHA" 2>/tmp/undo_stderr | tail -1)
+          UNDO_EXIT=$?
+
+          if [ $UNDO_EXIT -eq 0 ] && [ -n "$NEW_SHA" ] && [ ${#NEW_SHA} -ge 7 ]; then
+            git push origin HEAD:master
+            COMMENT_BODY="↩️ Removed entries from commit \`$SHA\`. New commit: \`$NEW_SHA\`. Site redeploys via Vercel in ~30s."
+            curl -sS -X POST \
+              -H "Authorization: token $GH_TOKEN" \
+              -H "Accept: application/vnd.github+json" \
+              https://api.github.com/repos/${{ github.repository }}/issues/${{ github.event.issue.number }}/comments \
+              -d "$(jq -nc --arg body "$COMMENT_BODY" '{body: $body}')"
+          elif [ $UNDO_EXIT -eq 3 ]; then
+            # Already removed (idempotent no-op)
+            COMMENT_BODY="ℹ️ Entries from commit \`$SHA\` were already removed from \`index.html\`. No changes needed."
+            curl -sS -X POST \
+              -H "Authorization: token $GH_TOKEN" \
+              -H "Accept: application/vnd.github+json" \
+              https://api.github.com/repos/${{ github.repository }}/issues/${{ github.event.issue.number }}/comments \
+              -d "$(jq -nc --arg body "$COMMENT_BODY" '{body: $body}')"
+          else
+            # Genuine failure
+            ERR=$(cat /tmp/undo_stderr | head -c 400)
+            COMMENT_BODY="⚠️ /undo failed for commit \`$SHA\` (exit $UNDO_EXIT). Error: $ERR. You may need to remove the entries manually from \`index.html\`."
+            curl -sS -X POST \
+              -H "Authorization: token $GH_TOKEN" \
+              -H "Accept: application/vnd.github+json" \
+              https://api.github.com/repos/${{ github.repository }}/issues/${{ github.event.issue.number }}/comments \
+              -d "$(jq -nc --arg body "$COMMENT_BODY" '{body: $body}')"
+            exit $UNDO_EXIT
+          fi
