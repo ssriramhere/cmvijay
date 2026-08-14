@@ -12,6 +12,18 @@
     }
   },
   {
+    "title": "⚖️ TN files Supreme Court report accusing Kerala of blocking Mullaperiyar dam works",
+    "date": "August 12, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 786,
+        "output_tokens": 793,
+        "cache_read_tokens": 1373,
+        "cache_creation_tokens": 0
+      }
+    }
+  },
+  {
     "title": "📅 Tamil Nadu Assembly passes resolution urging freeze of Lok Sabha seats at 543",
     "date": "August 11, 2026",
     "reasoning": {
@@ -113,6 +125,11 @@
   {
     "title": "✅ Day 3: Confidence motion PASSES — 144 for, 22 against, 5 abstain",
     "date": "May 13, 2026 · afternoon",
+    "reasoning": null
+  },
+  {
+    "title": "⚖️ Supreme Court stays Madras HC order; calls it \\",
+    "date": "May 13, 2026 · morning",
     "reasoning": null
   },
   {

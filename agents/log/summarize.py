@@ -123,20 +123,65 @@ def build_entries(events: list[dict]) -> list[dict]:
 
     content = INDEX_HTML.read_text(encoding="utf-8")
 
-    # Parse TIMELINE array
-    tl_start = content.find("const TIMELINE = [")
-    if tl_start == -1:
+    # Locate TIMELINE array
+    tl_start_marker = "const TIMELINE = [\n"
+    tl_start_idx = content.find(tl_start_marker)
+    if tl_start_idx == -1:
         return []
-    tl_end = content.find("\n];", tl_start)
-    tl_block = content[tl_start:tl_end + 3]
+    tl_content_start = tl_start_idx + len(tl_start_marker)
+    tl_end_match = re.search(r"\n\];", content[tl_content_start:])
+    if not tl_end_match:
+        return []
+    tl_end = tl_content_start + tl_end_match.start()
+    tl_body = content[tl_content_start:tl_end]
 
-    # Extract entries via regex
-    entry_pattern = re.compile(
-        r'\{\s*date:\s*"([^"]+)",\s*title:\s*"([^"]+)",\s*body:\s*"([^"]+)",\s*sources:\s*\[([^\]]*)\]',
-        re.DOTALL,
-    )
+    # Parse each entry via brace-matching (robust to escaped quotes, newlines,
+    # field ordering variations)
+    entries_raw = []
+    pos = 0
+    while pos < len(tl_body):
+        open_match = re.search(r"\n  \{|^  \{", tl_body[pos:])
+        if not open_match:
+            break
+        entry_start_rel = pos + open_match.start()
+        if tl_body[entry_start_rel] == "\n":
+            entry_start_rel += 1
+        depth = 0
+        i = entry_start_rel
+        in_string = False
+        escape_next = False
+        while i < len(tl_body):
+            ch = tl_body[i]
+            if escape_next:
+                escape_next = False
+            elif ch == "\\":
+                escape_next = True
+            elif ch == '"':
+                in_string = not in_string
+            elif not in_string:
+                if ch == "{":
+                    depth += 1
+                elif ch == "}":
+                    depth -= 1
+                    if depth == 0:
+                        end_rel = i + 1
+                        entry_text = tl_body[entry_start_rel:end_rel]
+                        # Extract date and title from within this entry
+                        date_match = re.search(r'date:\s*"([^"]+)"', entry_text)
+                        title_match = re.search(r'title:\s*"([^"]+)"', entry_text)
+                        if date_match and title_match:
+                            entries_raw.append({
+                                "date": date_match.group(1),
+                                "title": title_match.group(1),
+                                "text": entry_text,
+                            })
+                        pos = end_rel
+                        break
+            i += 1
+        else:
+            break
 
-    # Index reasoning by URL — matches verify_conclusion events to timeline entries
+    # Index reasoning by title (and URL as backup)
     reasoning_by_url = {}
     reasoning_by_title = {}
     for ev in events:
@@ -155,13 +200,21 @@ def build_entries(events: list[dict]) -> list[dict]:
             }
 
     entries = []
-    for match in entry_pattern.finditer(tl_block):
-        date_str, title, body, srcs = match.groups()
-        # Best-effort match reasoning by title
-        reasoning = reasoning_by_title.get(title, {})
-        # Fallback: look for URL match in reasoning_by_url — heuristic
+    for e in entries_raw:
+        title = e["title"]
+        date_str = e["date"]
+        entry_text = e["text"]
+        # Best-effort match reasoning by title (substring both ways)
+        reasoning = dict(reasoning_by_title.get(title, {}))
+        # Also try matching against draft events by first 40 chars of title
+        if not reasoning:
+            for logged_title, r in reasoning_by_title.items():
+                if title[:40] in logged_title or logged_title[:40] in title:
+                    reasoning = dict(r)
+                    break
+        # Add Verifier reasoning via URL match against entry body
         for url, r in reasoning_by_url.items():
-            if url in body or (title and title[:40] in str(r.get("verifier_reasoning", ""))):
+            if url and url in entry_text:
                 reasoning.update(r)
                 break
         entries.append({
