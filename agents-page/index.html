@@ -96,7 +96,7 @@
 async function loadDashboard() {
   const container = document.getElementById('dashboard');
   try {
-    const r = await fetch('./stats.json');
+    const r = await fetch('/agents-page/stats.json');
     if (!r.ok) throw new Error('stats.json not found');
     const stats = await r.json();
     const cards = [
@@ -122,7 +122,7 @@ async function loadDashboard() {
 async function loadCorrections() {
   const container = document.getElementById('corrections');
   try {
-    const r = await fetch('./corrections.json');
+    const r = await fetch('/agents-page/corrections.json');
     if (!r.ok) throw new Error();
     const corrections = await r.json();
     if (!corrections.length) {
@@ -150,7 +150,7 @@ document.getElementById('explain-input').addEventListener('input', async (e) => 
   const results = document.getElementById('explain-results');
   if (q.length < 3) { results.innerHTML = ''; return; }
   try {
-    const r = await fetch('./entries.json');
+    const r = await fetch('/agents-page/entries.json');
     if (!r.ok) throw new Error();
     const entries = await r.json();
     const matches = entries.filter(en => en.title.toLowerCase().includes(q)).slice(0, 5);
