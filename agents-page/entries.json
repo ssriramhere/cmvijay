@@ -1,5 +1,17 @@
 [
   {
+    "title": "⚖️ Madras HC reserves orders on plea to quash DVAC FIR in TASMAC irregularities case",
+    "date": "August 14, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 1007,
+        "output_tokens": 584,
+        "cache_read_tokens": 0,
+        "cache_creation_tokens": 1373
+      }
+    }
+  },
+  {
     "title": "🟢 Vettri Tamil Nadu Investment Conclave closes with 97 MoUs, ₹67,452 crore committed",
     "date": "August 13, 2026",
     "reasoning": {
@@ -8,6 +20,30 @@
         "output_tokens": 815,
         "cache_read_tokens": 0,
         "cache_creation_tokens": 1373
+      }
+    }
+  },
+  {
+    "title": "🟨 CM Mr. Vijay writes to PM Modi urging constitutional freeze of Lok Sabha at 543 seats",
+    "date": "August 13, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 788,
+        "output_tokens": 799,
+        "cache_read_tokens": 1373,
+        "cache_creation_tokens": 0
+      }
+    }
+  },
+  {
+    "title": "🟨 Centre rejects Coimbatore Metro Rail; TN minister says DPR will be reworked and resubmitted",
+    "date": "August 13, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 687,
+        "output_tokens": 785,
+        "cache_read_tokens": 1373,
+        "cache_creation_tokens": 0
       }
     }
   },

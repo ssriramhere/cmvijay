@@ -1,14 +1,14 @@
 {
   "period": "Rolling 30 days",
-  "as_of": "2026-08-14T07:46:27.477437+05:30",
-  "candidates_surfaced": 40,
-  "auto_verified": 12,
-  "auto_verified_pct": 30,
-  "escalated": 6,
+  "as_of": "2026-08-14T19:58:12.798593+05:30",
+  "candidates_surfaced": 47,
+  "auto_verified": 15,
+  "auto_verified_pct": 32,
+  "escalated": 7,
   "escalated_pct": 15,
-  "autonomous_commits": 4,
+  "autonomous_commits": 7,
   "operator_edited": 0,
-  "skipped": 21,
-  "cost_this_month_usd": 2.13,
-  "cost_per_published_entry_usd": 0.53
+  "skipped": 24,
+  "cost_this_month_usd": 2.45,
+  "cost_per_published_entry_usd": 0.35
 }
