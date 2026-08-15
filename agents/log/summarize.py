@@ -160,8 +160,12 @@ def _get_recent_agent_commits() -> list[dict]:
              "--pretty=format:%h|%s|%aI"],
             cwd=REPO_ROOT,
             capture_output=True, text=True, timeout=10, check=True,
+            encoding="utf-8", errors="replace",
         )
     except (subprocess.CalledProcessError, subprocess.TimeoutExpired, FileNotFoundError):
+        return []
+
+    if not result.stdout:
         return []
 
     commits = []
