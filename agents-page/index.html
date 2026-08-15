@@ -30,10 +30,11 @@
   <!-- Section 1: Autonomy dashboard -->
   <section>
     <h2 class="text-2xl font-semibold mb-4">Autonomy dashboard</h2>
-    <p class="text-sm text-neutral-600 mb-6">Rolling 30 days. Updated after each daily agent run.</p>
+    <p class="text-sm text-neutral-600 mb-6">Rolling 30 days. Boxes marked with · are clickable to see the underlying data.</p>
     <div id="dashboard" class="grid grid-cols-2 md:grid-cols-3 gap-4">
       <!-- Cards populated by JS -->
     </div>
+    <div id="drilldown-panel" data-open-key=""></div>
     <p class="mt-6 text-sm text-neutral-500">
       The autonomy split is deliberate: agents commit routine additive entries when
       verification is clean and no existing site claim is affected. Anything with
@@ -99,17 +100,24 @@ async function loadDashboard() {
     const r = await fetch('/agents-page/stats.json');
     if (!r.ok) throw new Error('stats.json not found');
     const stats = await r.json();
+    // Store drill-down data globally for click handlers
+    window._agentStats = stats;
     const cards = [
-      { label: 'Candidates surfaced', value: stats.candidates_surfaced ?? '—' },
-      { label: 'Auto-verified', value: stats.auto_verified ?? '—', sub: stats.auto_verified_pct ? `${stats.auto_verified_pct}%` : '' },
-      { label: 'Escalated to operator', value: stats.escalated ?? '—', sub: stats.escalated_pct ? `${stats.escalated_pct}%` : '' },
-      { label: 'Autonomous commits', value: stats.autonomous_commits ?? '—' },
-      { label: 'Operator-edited', value: stats.operator_edited ?? '—' },
-      { label: 'Skipped as noise', value: stats.skipped ?? '—' },
+      { key: 'candidates', label: 'Candidates surfaced', value: stats.candidates_surfaced ?? '—', clickable: false },
+      { key: 'auto_verified', label: 'Auto-verified', value: stats.auto_verified ?? '—', sub: stats.auto_verified_pct ? `${stats.auto_verified_pct}%` : '', clickable: false },
+      { key: 'escalated', label: 'Escalated to operator', value: stats.escalated ?? '—', sub: stats.escalated_pct ? `${stats.escalated_pct}%` : '', clickable: (stats.escalated_list || []).length > 0 },
+      { key: 'commits', label: 'Autonomous commits', value: stats.autonomous_commits ?? '—', clickable: (stats.autonomous_commits_list || []).length > 0 },
+      { key: 'operator_edited', label: 'Operator-edited', value: stats.operator_edited ?? '—', clickable: false },
+      { key: 'skipped', label: 'Skipped as noise', value: stats.skipped ?? '—', clickable: (stats.skipped_list || []).length > 0 },
     ];
     container.innerHTML = cards.map(c => `
-      <div class="bg-white rounded-lg shadow-sm border border-neutral-200 p-5">
-        <div class="text-xs uppercase tracking-wide text-neutral-500">${c.label}</div>
+      <div class="bg-white rounded-lg shadow-sm border border-neutral-200 p-5 ${c.clickable ? 'cursor-pointer hover:border-neutral-400 transition-colors' : ''}"
+           ${c.clickable ? `onclick="toggleDrilldown('${c.key}')"` : ''}
+           data-key="${c.key}">
+        <div class="text-xs uppercase tracking-wide text-neutral-500 flex items-center gap-1">
+          ${c.label}
+          ${c.clickable ? '<span class="text-neutral-900">·</span>' : ''}
+        </div>
         <div class="mt-2 text-3xl font-semibold num">${c.value}</div>
         ${c.sub ? `<div class="mt-1 text-xs text-neutral-500">${c.sub}</div>` : ''}
       </div>
@@ -117,6 +125,88 @@ async function loadDashboard() {
   } catch (e) {
     container.innerHTML = `<div class="col-span-full text-sm text-neutral-500">Stats will populate after first agent run.</div>`;
   }
+}
+
+function toggleDrilldown(key) {
+  const container = document.getElementById('drilldown-panel');
+  const stats = window._agentStats;
+  if (!stats || !container) return;
+
+  // If same panel already open, close it
+  if (container.dataset.openKey === key) {
+    container.innerHTML = '';
+    container.dataset.openKey = '';
+    return;
+  }
+  container.dataset.openKey = key;
+
+  let html = '';
+  if (key === 'commits') {
+    const items = stats.autonomous_commits_list || [];
+    html = `<div class="bg-white rounded-lg shadow-sm border border-neutral-200 p-5 mt-3">
+      <div class="text-sm font-medium mb-3">Autonomous commits · ${items.length}</div>
+      <div class="mono text-xs space-y-2">
+        ${items.map(c => `
+          <div class="flex items-start gap-3 py-2 border-b border-neutral-100 last:border-0">
+            <a class="text-neutral-500 hover:underline" href="https://github.com/ssriramhere/cmvijay/commit/${c.sha}" target="_blank">${c.sha}</a>
+            <span class="text-neutral-900 flex-1">${escapeHtml(c.title)}</span>
+            <span class="text-neutral-400 whitespace-nowrap">${formatRelative(c.timestamp)}</span>
+          </div>
+        `).join('')}
+      </div>
+    </div>`;
+  } else if (key === 'escalated') {
+    const items = stats.escalated_list || [];
+    html = `<div class="bg-white rounded-lg shadow-sm border border-neutral-200 p-5 mt-3">
+      <div class="text-sm font-medium mb-3">Escalated to operator · ${items.length}</div>
+      <div class="text-xs space-y-3">
+        ${items.map(e => `
+          <div class="py-2 border-b border-neutral-100 last:border-0">
+            <div class="font-medium text-neutral-900">${escapeHtml(e.title)}</div>
+            <div class="text-neutral-500 mt-1 leading-relaxed">${escapeHtml(e.reasoning)}</div>
+            ${e.url ? `<a class="text-red-600 hover:underline mt-1 inline-block" href="${escapeHtml(e.url)}" target="_blank">source →</a>` : ''}
+          </div>
+        `).join('')}
+      </div>
+    </div>`;
+  } else if (key === 'skipped') {
+    const items = stats.skipped_list || [];
+    html = `<div class="bg-white rounded-lg shadow-sm border border-neutral-200 p-5 mt-3">
+      <div class="text-sm font-medium mb-3">Skipped as noise · ${items.length}</div>
+      <div class="text-xs space-y-3">
+        ${items.map(s => `
+          <div class="py-2 border-b border-neutral-100 last:border-0">
+            <div class="font-medium text-neutral-900">${escapeHtml(s.title)}</div>
+            <div class="text-neutral-500 mt-1 leading-relaxed">${escapeHtml(s.skip_reason)}</div>
+            ${s.url ? `<a class="text-red-600 hover:underline mt-1 inline-block" href="${escapeHtml(s.url)}" target="_blank">source →</a>` : ''}
+          </div>
+        `).join('')}
+      </div>
+    </div>`;
+  }
+  container.innerHTML = html;
+}
+
+function escapeHtml(s) {
+  if (!s) return '';
+  return String(s).replace(/[&<>"']/g, ch => ({
+    '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+  }[ch]));
+}
+
+function formatRelative(iso) {
+  if (!iso) return '';
+  try {
+    const then = new Date(iso);
+    const now = new Date();
+    const diffMin = Math.round((now - then) / 60000);
+    if (diffMin < 60) return `${diffMin}m ago`;
+    const diffHr = Math.round(diffMin / 60);
+    if (diffHr < 24) return `${diffHr}h ago`;
+    const diffDay = Math.round(diffHr / 24);
+    if (diffDay < 30) return `${diffDay}d ago`;
+    return then.toISOString().slice(0, 10);
+  } catch (e) { return ''; }
 }
 
 async function loadCorrections() {

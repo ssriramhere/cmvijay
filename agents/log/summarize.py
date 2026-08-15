@@ -60,9 +60,21 @@ def load_recent_log_events() -> list[dict]:
 
 
 def build_stats(events: list[dict]) -> dict:
-    """Aggregate event counts for the autonomy dashboard."""
+    """Aggregate event counts for the autonomy dashboard.
+
+    Also produces drill-down lists for clickable dashboard boxes:
+    - autonomous_commits_list: recent agent commits with SHA
+    - escalated_list: escalated issues (from log events)
+    - skipped_list: skipped candidates with reasons
+    - recent_commits: last 5-10 commits by cmvijay-agent (for homepage git log)
+    """
     counts = defaultdict(int)
     total_cost_cents = 0
+
+    escalated_list = []
+    skipped_list = []
+    seen_escalated_urls = set()
+    seen_skipped_urls = set()
 
     for ev in events:
         typ = ev.get("type", "")
@@ -76,17 +88,39 @@ def build_stats(events: list[dict]) -> dict:
             counts["skipped"] += ev.get("skip", 0)
         elif agent == "orchestrator" and typ == "autonomous_commit":
             counts["autonomous_commits"] += 1
-        elif agent == "orchestrator" and typ == "escalate":
-            counts["escalated_issues"] += 1
 
-        # Cost tracking (rough — Verifier + Drafter usage tokens)
+        # Capture skipped candidates with reasons
+        if agent == "verifier" and typ == "conclusion":
+            verdict = ev.get("verdict", "")
+            title = ev.get("title", "")
+            url = ev.get("url", "")
+            reasoning = ev.get("reasoning", "")
+            if verdict == "skip" and url and url not in seen_skipped_urls:
+                skipped_list.append({
+                    "title": title[:120],
+                    "url": url,
+                    "skip_reason": (ev.get("skip_reason") or reasoning)[:200] or "no reason recorded",
+                })
+                seen_skipped_urls.add(url)
+            elif verdict == "surface_escalate" and url and url not in seen_escalated_urls:
+                escalated_list.append({
+                    "title": title[:120],
+                    "url": url,
+                    "reasoning": reasoning[:300],
+                })
+                seen_escalated_urls.add(url)
+
+        # Cost tracking (Sonnet 4.6 approximate pricing)
         usage = ev.get("usage", {})
         if usage:
-            # Sonnet 4.6 approximate pricing
-            input_cost = usage.get("input_tokens", 0) * 3 / 1_000_000  # $3/M
+            input_cost = usage.get("input_tokens", 0) * 3 / 1_000_000
             cache_cost = usage.get("cache_read_tokens", 0) * 0.30 / 1_000_000
             output_cost = usage.get("output_tokens", 0) * 15 / 1_000_000
             total_cost_cents += int((input_cost + cache_cost + output_cost) * 100)
+
+    # Get recent commits by cmvijay-agent via git
+    recent_commits = _get_recent_agent_commits()
+    autonomous_commits_list = [c for c in recent_commits if c.get("prefix") == "agent"]
 
     total = counts["candidates_surfaced"] or 1
     return {
@@ -98,14 +132,72 @@ def build_stats(events: list[dict]) -> dict:
         "escalated": counts["escalated"],
         "escalated_pct": round(100 * counts["escalated"] / total),
         "autonomous_commits": counts["autonomous_commits"],
-        "operator_edited": 0,  # placeholder — requires reading issue labels
+        "operator_edited": 0,
         "skipped": counts["skipped"],
         "cost_this_month_usd": round(total_cost_cents / 100, 2),
         "cost_per_published_entry_usd": (
             round(total_cost_cents / 100 / counts["autonomous_commits"], 2)
             if counts["autonomous_commits"] > 0 else None
         ),
+        # Drill-down data for clickable dashboard boxes
+        "autonomous_commits_list": autonomous_commits_list,
+        "escalated_list": escalated_list,
+        "skipped_list": skipped_list,
+        # For homepage git log ticker (all commit types by cmvijay-agent)
+        "recent_commits": recent_commits[:10],
     }
+
+
+def _get_recent_agent_commits() -> list[dict]:
+    """Query git for recent commits by cmvijay-agent. Returns list of:
+       [{sha, prefix, title, timestamp}, ...] sorted newest first.
+    """
+    import subprocess
+    try:
+        result = subprocess.run(
+            ["git", "log", "--author=cmvijay-agent",
+             "-n", "20",
+             "--pretty=format:%h|%s|%aI"],
+            cwd=REPO_ROOT,
+            capture_output=True, text=True, timeout=10, check=True,
+        )
+    except (subprocess.CalledProcessError, subprocess.TimeoutExpired, FileNotFoundError):
+        return []
+
+    commits = []
+    for line in result.stdout.split("\n"):
+        if not line.strip():
+            continue
+        parts = line.split("|", 2)
+        if len(parts) < 3:
+            continue
+        sha, subject, timestamp = parts
+        # Parse prefix from subject: "agent: ...", "agent-approve: ...", "agent-undo: ...", "log: ..."
+        prefix = "other"
+        title = subject
+        if subject.startswith("agent-undo:"):
+            prefix = "agent-undo"
+            title = subject[len("agent-undo:"):].strip()
+        elif subject.startswith("agent-approve:") or " Applied via operator /approve" in subject:
+            prefix = "agent-approve"
+            title = subject[len("agent-approve:"):].strip() if subject.startswith("agent-approve:") else subject
+        elif subject.startswith("agent:"):
+            prefix = "agent"
+            title = subject[len("agent:"):].strip()
+        elif subject.startswith("log:"):
+            prefix = "log"
+            title = subject[len("log:"):].strip()
+        elif subject.startswith("agents-page:"):
+            prefix = "log"
+            title = subject[len("agents-page:"):].strip()
+        commits.append({
+            "sha": sha,
+            "prefix": prefix,
+            "title": title[:120],
+            "timestamp": timestamp,
+        })
+    # Filter out purely-internal log commits from what shows on homepage
+    return [c for c in commits if c["prefix"] != "log"]
 
 
 def build_entries(events: list[dict]) -> list[dict]:
