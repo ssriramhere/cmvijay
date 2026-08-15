@@ -1,16 +1,16 @@
 {
   "period": "Rolling 30 days",
-  "as_of": "2026-08-15T09:39:20.645713+05:30",
-  "candidates_surfaced": 47,
+  "as_of": "2026-08-15T19:38:36.914425+05:30",
+  "candidates_surfaced": 51,
   "auto_verified": 15,
-  "auto_verified_pct": 32,
-  "escalated": 7,
-  "escalated_pct": 15,
+  "auto_verified_pct": 29,
+  "escalated": 8,
+  "escalated_pct": 16,
   "autonomous_commits": 7,
   "operator_edited": 0,
-  "skipped": 24,
-  "cost_this_month_usd": 2.45,
-  "cost_per_published_entry_usd": 0.35,
+  "skipped": 27,
+  "cost_this_month_usd": 2.66,
+  "cost_per_published_entry_usd": 0.38,
   "autonomous_commits_list": [
     {
       "sha": "158c610",
@@ -91,6 +91,11 @@
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/vijay-virtually-inaugurates-infrastructure-facilities-at-sipcot-complex-in-ranipet/article71341182.ece",
       "reasoning": "The Hindu article is credible and internally consistent — it names specific actors (CM Mr. Vijay, Ranipet Collector Priya Ravichandran, SIPCOT Project Officer P. Maheshwari), a precise monetary figure (₹95.05 crore total; ₹51.80 crore for two plug-and-play buildings), a specific location (Panapakkam"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/vande-mataram-and-tamil-thai-vazhthu-what-is-the-protocol-explained/article71349013.ece",
+      "reasoning": "The candidate article is an 'Explained' explainer piece published August 15, 2026, but it references two real, verifiable governance actions: (1) a unanimous Tamil Nadu Assembly resolution on August 10, 2026, and (2) a Government Order issued August 12, 2026, both mandating Tamil Thai Vazhthu be sun"
     }
   ],
   "skipped_list": [
@@ -163,6 +168,21 @@
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/dmk-moving-from-covert-to-direct-alliance-with-bjp-alleges-minister-nirmalkumar/article71344299.ece",
       "skip_reason": "This article reports a press conference statement by TVK Minister R. Nirmalkumar alleging that the DMK is forming a 'direct alliance' with the BJP, prompted by Kanimozhi's attendance at Lok Sabha Spea"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/we-want-people-of-tamil-nadu-to-develop-zero-tolerance-for-corruption-cm-vijay/article71348864.ece",
+      "skip_reason": "This article covers CM Mr. Vijay's Independence Day speech at Fort St. George — a symbolic address reiterating existing TVK anti-corruption messaging. While the event and quotes are well-corroborated "
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/scores-of-palaniswamis-supporters-join-stir-aiadmk-rebels-suffer-split/article71346386.ece",
+      "skip_reason": "This article is about AIADMK opposition party internal dynamics — a statewide protest called by EPS and a split within the rebel AIADMK faction. The TVK government is the passive target of criticism, "
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tasmac-halts-sale-of-11-enrica-liquor-brands-in-tn-following-fssai-inspection/article71346570.ece",
+      "skip_reason": "This is a genuine regulatory action — TASMAC halting 11 Enrica liquor brands following an FSSAI inspection — corroborated by The Hindu and Times of India with consistent facts. However, it does not ma"
     }
   ],
   "recent_commits": [
