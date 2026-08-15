@@ -1654,6 +1654,65 @@ function PromiseScorecard({ t, lang }) {
 }
 
 // ============================================================================
+// IndependenceDayBanner — bolder tricolor bar shown only on Aug 15 IST
+// Self-cleaning: returns null after midnight IST on Aug 16, 2026
+// ============================================================================
+function IndependenceDayBanner() {
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    // Check IST date — banner shows all day Aug 15 IST, removes at midnight IST Aug 16
+    const nowIST = new Date().toLocaleDateString("en-CA", { timeZone: "Asia/Kolkata" });
+    setVisible(nowIST === "2026-08-15");
+  }, []);
+
+  if (!visible) return null;
+
+  return (
+    <div className="border-b border-stone-800">
+      {/* Tricolor bar with Ashoka Chakra */}
+      <div className="relative">
+        <div className="h-2 bg-[#FF9933]" />
+        <div className="h-16 bg-white flex items-center justify-center relative">
+          {/* Ashoka Chakra centered — subtle behind text */}
+          <svg
+            width="52"
+            height="52"
+            viewBox="0 0 30 30"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-label="Ashoka Chakra"
+            className="absolute opacity-25"
+          >
+            <g transform="translate(15 15)">
+              <circle r="12" fill="none" stroke="#000080" strokeWidth="0.6" />
+              <circle r="1.5" fill="#000080" />
+              {Array.from({ length: 24 }).map((_, i) => (
+                <line
+                  key={i}
+                  x1="0" y1="0" x2="0" y2="-12"
+                  stroke="#000080"
+                  strokeWidth="0.35"
+                  transform={`rotate(${i * 15})`}
+                />
+              ))}
+            </g>
+          </svg>
+          <div className="relative z-10 text-center px-6">
+            <div className="font-mono-d text-[10px] uppercase tracking-[0.25em] text-stone-600 mb-1">
+              15 August 2026
+            </div>
+            <div className="font-display text-lg md:text-xl text-stone-900">
+              Happy 80th Independence Day. Jai Hind.
+            </div>
+          </div>
+        </div>
+        <div className="h-2 bg-[#138808]" />
+      </div>
+    </div>
+  );
+}
+
+// ============================================================================
 // AgentTicker — git log style strip of recent agent activity
 // Fetches /agents-page/stats.json and shows last few commits by cmvijay-agent
 // ============================================================================
@@ -1867,6 +1926,9 @@ export default function CMVijayAI() {
 
       {/* AGENT ACTIVITY TICKER — git log style */}
       <AgentTicker />
+
+      {/* INDEPENDENCE DAY BANNER — self-removes after Aug 15 IST */}
+      <IndependenceDayBanner />
 
       {/* HERO */}
       <section className="relative overflow-hidden border-b border-stone-800">
