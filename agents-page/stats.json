@@ -1,16 +1,16 @@
 {
   "period": "Rolling 30 days",
-  "as_of": "2026-08-15T19:38:36.914425+05:30",
-  "candidates_surfaced": 51,
+  "as_of": "2026-08-16T19:37:52.923977+05:30",
+  "candidates_surfaced": 55,
   "auto_verified": 15,
-  "auto_verified_pct": 29,
+  "auto_verified_pct": 27,
   "escalated": 8,
-  "escalated_pct": 16,
+  "escalated_pct": 15,
   "autonomous_commits": 7,
   "operator_edited": 0,
-  "skipped": 27,
-  "cost_this_month_usd": 2.66,
-  "cost_per_published_entry_usd": 0.38,
+  "skipped": 31,
+  "cost_this_month_usd": 2.77,
+  "cost_per_published_entry_usd": 0.4,
   "autonomous_commits_list": [
     {
       "sha": "158c610",
@@ -183,6 +183,26 @@
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/tasmac-halts-sale-of-11-enrica-liquor-brands-in-tn-following-fssai-inspection/article71346570.ece",
       "skip_reason": "This is a genuine regulatory action — TASMAC halting 11 Enrica liquor brands following an FSSAI inspection — corroborated by The Hindu and Times of India with consistent facts. However, it does not ma"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-cm-vijay-condoles-death-of-police-constable-on-i-day-announces-30-lakh-relief/article71352248.ece",
+      "skip_reason": "The event is factually well-verified across three independent outlets (The Hindu, DT Next, ETV Bharat) — A. Dharmaraj, 56, a Grade-I constable, collapsed during the Independence Day parade at Fort St."
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/gk-vasan-condemns-two-chennai-students-death-calls-for-crackdown-on-illegal-drugs/article71352015.ece",
+      "skip_reason": "This article is entirely an opposition political statement — TMC(M) leader G.K. Vasan condemning the Tiruvottiyur student deaths and calling on the TN government to act. There is no governance action,"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/cities/Coimbatore/creating-reels-is-100-day-achievement-of-tvk-led-government-says-palaniswami/article71349618.ece",
+      "skip_reason": "This article is entirely an opposition press statement by AIADMK general secretary Edappadi K. Palaniswami criticising the TVK government's 100-day record. It contains no governance action, executive "
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tvk-leaders-condemn-nainar-nagenthrans-remarks-against-tn-chief-minister/article71349635.ece",
+      "skip_reason": "This article describes TVK ministers condemning BJP State president Nainar Nagenthran's personal jibe at CM Mr. Vijay made at a political gathering. There is no governance action, executive order, cab"
     }
   ],
   "recent_commits": [
