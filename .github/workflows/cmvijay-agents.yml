@@ -90,11 +90,29 @@ jobs:
           if [ -f agents/state/daily_digest.md ]; then
             TITLE="cmvijay-agents digest · $(TZ=Asia/Kolkata date '+%Y-%m-%d')"
             BODY=$(cat agents/state/daily_digest.md | python3 -c 'import sys, json; print(json.dumps(sys.stdin.read()))')
-            curl -sS -X POST \
+            RESPONSE=$(curl -sS -X POST \
               -H "Authorization: token $GITHUB_TOKEN" \
               -H "Accept: application/vnd.github+json" \
               https://api.github.com/repos/${{ github.repository }}/issues \
-              -d "{\"title\": \"$TITLE\", \"body\": $BODY, \"labels\": [\"agent-digest\"]}" \
-              > /tmp/digest_issue.json
-            cat /tmp/digest_issue.json | head -20
+              -d "{\"title\": \"$TITLE\", \"body\": $BODY, \"labels\": [\"agent-digest\"]}")
+            echo "$RESPONSE" | head -20
+            ISSUE_NUM=$(echo "$RESPONSE" | python3 -c "import sys, json; print(json.load(sys.stdin).get('number', ''))")
+
+            # Auto-close if this was a zero-activity day (nothing committed, nothing escalated)
+            # We read the digest markdown for "Autonomous commits: 0" AND "Escalated to operator: 0"
+            AUTO_COMMITS=$(grep -oP 'Autonomous commits:\**\s*\K\d+' agents/state/daily_digest.md | head -1 || echo "999")
+            ESCALATED=$(grep -oP 'Escalated to operator:\**\s*\K\d+' agents/state/daily_digest.md | head -1 || echo "999")
+            if [ "$AUTO_COMMITS" = "0" ] && [ "$ESCALATED" = "0" ] && [ -n "$ISSUE_NUM" ]; then
+              echo "Zero-activity digest — auto-closing issue #$ISSUE_NUM"
+              curl -sS -X PATCH \
+                -H "Authorization: token $GITHUB_TOKEN" \
+                -H "Accept: application/vnd.github+json" \
+                https://api.github.com/repos/${{ github.repository }}/issues/$ISSUE_NUM \
+                -d '{"state": "closed", "state_reason": "not_planned", "labels": ["agent-digest", "quiet-day"]}'
+              curl -sS -X POST \
+                -H "Authorization: token $GITHUB_TOKEN" \
+                -H "Accept: application/vnd.github+json" \
+                https://api.github.com/repos/${{ github.repository }}/issues/$ISSUE_NUM/comments \
+                -d '{"body": "🌤️ Quiet day — no autonomous commits, no escalations. Auto-closed. Historical record preserved."}'
+            fi
           fi
