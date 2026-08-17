@@ -1,5 +1,29 @@
 [
   {
+    "title": "🟢 Tamil Nadu launches Presence-less Registration for housing plots and apartments",
+    "date": "August 17, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 810,
+        "output_tokens": 796,
+        "cache_read_tokens": 0,
+        "cache_creation_tokens": 1373
+      }
+    }
+  },
+  {
+    "title": "🟢 Tamil Nadu launches Presence-less Property Registration via STAR 3.0 platform",
+    "date": "August 17, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 697,
+        "output_tokens": 668,
+        "cache_read_tokens": 1373,
+        "cache_creation_tokens": 0
+      }
+    }
+  },
+  {
     "title": "🟢 Vettri Tamil Nadu Investment Conclave closes with 97 MoUs, ₹67,452 crore committed",
     "date": "August 13, 2026",
     "reasoning": {

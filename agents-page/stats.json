@@ -1,17 +1,29 @@
 {
   "period": "Rolling 30 days",
-  "as_of": "2026-08-16T19:37:52.923977+05:30",
-  "candidates_surfaced": 55,
-  "auto_verified": 15,
+  "as_of": "2026-08-17T19:46:22.062258+05:30",
+  "candidates_surfaced": 64,
+  "auto_verified": 17,
   "auto_verified_pct": 27,
-  "escalated": 8,
-  "escalated_pct": 15,
-  "autonomous_commits": 7,
+  "escalated": 10,
+  "escalated_pct": 16,
+  "autonomous_commits": 9,
   "operator_edited": 0,
-  "skipped": 31,
-  "cost_this_month_usd": 2.77,
-  "cost_per_published_entry_usd": 0.4,
+  "skipped": 36,
+  "cost_this_month_usd": 3.2,
+  "cost_per_published_entry_usd": 0.36,
   "autonomous_commits_list": [
+    {
+      "sha": "123b33f",
+      "prefix": "agent",
+      "title": "🟢 Tamil Nadu launches Presence-less Property Registration via STAR 3.0 platform",
+      "timestamp": "2026-08-17T14:16:18Z"
+    },
+    {
+      "sha": "af99ed9",
+      "prefix": "agent",
+      "title": "🟢 Tamil Nadu launches Presence-less Registration for housing plots and apartment",
+      "timestamp": "2026-08-17T14:16:18Z"
+    },
     {
       "sha": "158c610",
       "prefix": "agent",
@@ -96,6 +108,16 @@
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/vande-mataram-and-tamil-thai-vazhthu-what-is-the-protocol-explained/article71349013.ece",
       "reasoning": "The candidate article is an 'Explained' explainer piece published August 15, 2026, but it references two real, verifiable governance actions: (1) a unanimous Tamil Nadu Assembly resolution on August 10, 2026, and (2) a Government Order issued August 12, 2026, both mandating Tamil Thai Vazhthu be sun"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tn-assembly-group-clash-not-drugs-behind-killing-of-coimbatore-student-amuthan-says-law-minister-r-nirmalkumar/article71355258.ece",
+      "reasoning": "The article documents a real Assembly event (August 17, 2026) — Law Minister R. Nirmalkumar's statement attributing Amuthan's killing to a group clash, and a ministerial compensation offer of ₹6 lakh plus a government job to the victim's brother. Both The Hindu and NIE corroborate the core facts of "
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/rooftop-solar-gets-a-fresh-boost/article71354967.ece",
+      "reasoning": "The underlying governance action — a ₹22,000 state top-up incentive for rooftop solar announced during the Tamil Nadu Budget session, bringing total subsidy to ₹1 lakh with ₹50 crore earmarked — is well-corroborated across multiple outlets (NIE Aug 6, Hindu Business Line Aug 8, Deccan Chronicle Aug "
     }
   ],
   "skipped_list": [
@@ -203,9 +225,46 @@
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/tvk-leaders-condemn-nainar-nagenthrans-remarks-against-tn-chief-minister/article71349635.ece",
       "skip_reason": "This article describes TVK ministers condemning BJP State president Nainar Nagenthran's personal jibe at CM Mr. Vijay made at a political gathering. There is no governance action, executive order, cab"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/bjp-flags-adverse-effects-of-power-cuts-on-households-and-industries-in-tn/article71355570.ece",
+      "skip_reason": "This article is a BJP opposition press statement by Nainar Nagenthran criticising the TVK government's handling of power cuts — it contains no governance action (no executive order, cabinet decision, "
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/complaint-lodged-against-bjp-leader-nainar-nagenthran-for-defamatory-remarks-against-tamil-nadu-cm-vijays-mother/article71350181.ece",
+      "skip_reason": "This article covers a private advocate's complaint to the TN DGP about defamatory remarks made by a BJP opposition leader at a party office event. There is no governance action — no executive order, c"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/drug-culture-became-a-major-problem-during-dmk-regime-alleges-minister-aadhav-arjuna/article71355606.ece",
+      "skip_reason": "This article reports a political speech by PWD Minister Aadhav Arjuna in the Tamil Nadu Assembly blaming the previous DMK government for drug culture and rising POCSO cases. There is no governance act"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tn-cm-vijay-condemns-killing-of-three-tamils-by-karnataka-forest-dept-personnel/article71353665.ece",
+      "skip_reason": "This article documents CM Mr. Vijay issuing a condemnation via an X post regarding an incident carried out by the Karnataka Forest Department — not the Tamil Nadu government. There is no TN executive "
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/annamalailevels-graft-charges-against-some-tamil-nadu-ministers-claims-to-have-audio-clip/article71353265.ece",
+      "skip_reason": "This article reports an opposition political allegation — K. Annamalai (We The Leaders founder, former BJP leader) claiming unnamed Tamil Nadu ministers demanded 2–4% kickbacks on tenders, supported o"
     }
   ],
   "recent_commits": [
+    {
+      "sha": "123b33f",
+      "prefix": "agent",
+      "title": "🟢 Tamil Nadu launches Presence-less Property Registration via STAR 3.0 platform",
+      "timestamp": "2026-08-17T14:16:18Z"
+    },
+    {
+      "sha": "af99ed9",
+      "prefix": "agent",
+      "title": "🟢 Tamil Nadu launches Presence-less Registration for housing plots and apartment",
+      "timestamp": "2026-08-17T14:16:18Z"
+    },
     {
       "sha": "158c610",
       "prefix": "agent",
@@ -252,12 +311,6 @@
       "sha": "2c14978",
       "prefix": "agent",
       "title": "⚖️ TN files Supreme Court report accusing Kerala of blocking Mullaperiyar dam wo",
-      "timestamp": "2026-08-13T09:01:27Z"
-    },
-    {
-      "sha": "689460c",
-      "prefix": "agent",
-      "title": "🟢 Vettri Tamil Nadu Investment Conclave closes with 97 MoUs, ₹67,452 crore commi",
       "timestamp": "2026-08-13T09:01:27Z"
     }
   ]
