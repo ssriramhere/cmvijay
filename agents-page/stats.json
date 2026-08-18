@@ -1,17 +1,41 @@
 {
   "period": "Rolling 30 days",
-  "as_of": "2026-08-17T19:46:22.062258+05:30",
-  "candidates_surfaced": 64,
-  "auto_verified": 17,
+  "as_of": "2026-08-18T19:55:01.602278+05:30",
+  "candidates_surfaced": 77,
+  "auto_verified": 21,
   "auto_verified_pct": 27,
-  "escalated": 10,
-  "escalated_pct": 16,
-  "autonomous_commits": 9,
+  "escalated": 16,
+  "escalated_pct": 21,
+  "autonomous_commits": 13,
   "operator_edited": 0,
-  "skipped": 36,
-  "cost_this_month_usd": 3.2,
-  "cost_per_published_entry_usd": 0.36,
+  "skipped": 39,
+  "cost_this_month_usd": 4.03,
+  "cost_per_published_entry_usd": 0.31,
   "autonomous_commits_list": [
+    {
+      "sha": "f80ba35",
+      "prefix": "agent",
+      "title": "🟢 CM expands crop loan waiver to ₹75,000 ceiling — ₹6,220 crore total, 13.34 lak",
+      "timestamp": "2026-08-18T14:24:58Z"
+    },
+    {
+      "sha": "21178aa",
+      "prefix": "agent",
+      "title": "🟢 Revenue Minister announces three-tier certificate system, ₹688.63 cr tablet ro",
+      "timestamp": "2026-08-18T14:24:58Z"
+    },
+    {
+      "sha": "6799e53",
+      "prefix": "agent",
+      "title": "🟢 Health Minister announces elderly insurance scheme — 38 lakh seniors, ₹2,997 c",
+      "timestamp": "2026-08-18T14:24:58Z"
+    },
+    {
+      "sha": "a2fd462",
+      "prefix": "agent",
+      "title": "🟢 Railway Board approves MRTS merger with Chennai Metro Rail after 15-year wait",
+      "timestamp": "2026-08-18T14:24:57Z"
+    },
     {
       "sha": "123b33f",
       "prefix": "agent",
@@ -41,36 +65,6 @@
       "prefix": "agent",
       "title": "⚖️ Madras HC reserves orders on plea to quash DVAC FIR in TASMAC irregularities",
       "timestamp": "2026-08-14T14:28:09Z"
-    },
-    {
-      "sha": "807dbcf",
-      "prefix": "agent",
-      "title": "📅 Tamil Nadu Assembly passes resolution urging freeze of Lok Sabha seats at 543",
-      "timestamp": "2026-08-13T13:38:33Z"
-    },
-    {
-      "sha": "84aafe1",
-      "prefix": "agent",
-      "title": "🟢 CM Mr. Vijay launches 'Drug and Tobacco-Free Campus' initiative at state-level",
-      "timestamp": "2026-08-13T09:01:28Z"
-    },
-    {
-      "sha": "46943e8",
-      "prefix": "agent",
-      "title": "📅 Tamil Nadu Assembly passes resolution to freeze Lok Sabha seats at 543",
-      "timestamp": "2026-08-13T09:01:27Z"
-    },
-    {
-      "sha": "2c14978",
-      "prefix": "agent",
-      "title": "⚖️ TN files Supreme Court report accusing Kerala of blocking Mullaperiyar dam wo",
-      "timestamp": "2026-08-13T09:01:27Z"
-    },
-    {
-      "sha": "689460c",
-      "prefix": "agent",
-      "title": "🟢 Vettri Tamil Nadu Investment Conclave closes with 97 MoUs, ₹67,452 crore commi",
-      "timestamp": "2026-08-13T09:01:27Z"
     }
   ],
   "escalated_list": [
@@ -118,6 +112,36 @@
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/rooftop-solar-gets-a-fresh-boost/article71354967.ece",
       "reasoning": "The underlying governance action — a ₹22,000 state top-up incentive for rooftop solar announced during the Tamil Nadu Budget session, bringing total subsidy to ₹1 lakh with ₹50 crore earmarked — is well-corroborated across multiple outlets (NIE Aug 6, Hindu Business Line Aug 8, Deccan Chronicle Aug "
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tvk-government-will-implement-taps-assures-finance-minister/article71360963.ece",
+      "reasoning": "The article is credible (The Hindu, named Finance Minister on record in Assembly) and contains a meaningful governance update — TAPS rules and operational guidelines are actively being framed, and the assurance is now unconditional, unlike the Aug 10 statement which was contingent on Centre approval"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-cm-vijay-shifting-office-to-accommodate-secretaries-visiting-dignitaries-minister-aadhav-arjuna/article71359685.ece",
+      "reasoning": "The underlying governance action — CM Mr. Vijay shifting his office from Fort St. George to the 10th floor of Namakkal Kavignar Maaligai — is real and corroborated by multiple sources (The Hindu, CNBC TV18, New Indian Express) dating back to late July 2026. However, this specific article's news hook"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-government-plans-to-offer-10-lakh-each-to-families-of-three-tamils-killed-in-karnatakaforest/article71359482.ece",
+      "reasoning": "The article is well-sourced across two whitelisted outlets (The Hindu and New Indian Express) and describes a clear governance action — Tamil Nadu Forest Minister R.V. Ranjithkumar announcing in the Legislative Assembly, per CM Mr. Vijay's direction, a proposal to offer ₹10 lakh each to families of "
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-government-to-formulate-peri-menopausal-care-policy/article71357108.ece",
+      "reasoning": "The Hindu and PTI/The Print independently confirm Health Minister K.G. Arunraj's August 17, 2026 Legislative Assembly announcement of a 'Peri-Menopausal Care Policy' — a genuine governance action with specific operational details (weekly PHC camps, referral pathways). However, The Hindu's phrase 'In"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-cm-vijay-inaugurates-2367-crore-worth-facilities-at-irukkankudi-temple-in-virudhunagar/article71359327.ece",
+      "reasoning": "The core facts — ₹23.67 crore temple facility inauguration and 80 TNPSC appointment orders for HR&CE staff — are well-corroborated by multiple independent outlets (The Hindu, The Federal, Trinity Mirror, IANS). No site-state duplication or contradiction exists, and no manifesto promise maps to this "
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/orders-issues-for-shifting-chief-minister-vijays-office-to-namakkal-kavignar-maligai/article71273985.ece",
+      "reasoning": "The core claim — Chief Secretary M. Sai Kumar issuing orders to relocate the CMO from Fort St. George to the 10th floor of Namakkal Kavignar Maaligai — is confirmed by three independent sources (The Hindu, India Today, New Indian Express). No manifesto promise maps to this, no primacy claims are mad"
     }
   ],
   "skipped_list": [
@@ -250,9 +274,48 @@
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/annamalailevels-graft-charges-against-some-tamil-nadu-ministers-claims-to-have-audio-clip/article71353265.ece",
       "skip_reason": "This article reports an opposition political allegation — K. Annamalai (We The Leaders founder, former BJP leader) claiming unnamed Tamil Nadu ministers demanded 2–4% kickbacks on tenders, supported o"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-assembly-speaker-expunges-remarks-against-karunanidhi-by-minister-nirmalkumar/article71359489.ece",
+      "skip_reason": "This article reports a routine parliamentary procedural action — the Assembly Speaker expunging off-topic remarks by Law Minister Nirmalkumar during a calling-attention motion. While corroborated by t"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/i-leave-it-to-the-mlas-to-decide-whether-they-should-get-up-when-the-chief-minister-arrives-says-tamil-nadu-assembly-speaker/article71356655.ece",
+      "skip_reason": "This article covers a parliamentary decorum debate — whether MLAs are obligated to stand when CM Mr. Vijay enters the House. Speaker J.C.D. Prabhakar issued no binding ruling, no procedural change, an"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/vijay-apologises-for-tn-forest-ministers-remarks-in-assembly/article71356869.ece",
+      "skip_reason": "This article covers an in-Assembly apology by CM Mr. Vijay for Forest Minister R.V. Ranjithkumar's remarks about the late M. Karunanidhi — specifically, referring to him by name without customary hono"
     }
   ],
   "recent_commits": [
+    {
+      "sha": "f80ba35",
+      "prefix": "agent",
+      "title": "🟢 CM expands crop loan waiver to ₹75,000 ceiling — ₹6,220 crore total, 13.34 lak",
+      "timestamp": "2026-08-18T14:24:58Z"
+    },
+    {
+      "sha": "21178aa",
+      "prefix": "agent",
+      "title": "🟢 Revenue Minister announces three-tier certificate system, ₹688.63 cr tablet ro",
+      "timestamp": "2026-08-18T14:24:58Z"
+    },
+    {
+      "sha": "6799e53",
+      "prefix": "agent",
+      "title": "🟢 Health Minister announces elderly insurance scheme — 38 lakh seniors, ₹2,997 c",
+      "timestamp": "2026-08-18T14:24:58Z"
+    },
+    {
+      "sha": "a2fd462",
+      "prefix": "agent",
+      "title": "🟢 Railway Board approves MRTS merger with Chennai Metro Rail after 15-year wait",
+      "timestamp": "2026-08-18T14:24:57Z"
+    },
     {
       "sha": "123b33f",
       "prefix": "agent",
@@ -288,30 +351,6 @@
       "prefix": "agent-undo",
       "title": "remove entries added by 46943e8",
       "timestamp": "2026-08-13T22:25:59Z"
-    },
-    {
-      "sha": "807dbcf",
-      "prefix": "agent",
-      "title": "📅 Tamil Nadu Assembly passes resolution urging freeze of Lok Sabha seats at 543",
-      "timestamp": "2026-08-13T13:38:33Z"
-    },
-    {
-      "sha": "84aafe1",
-      "prefix": "agent",
-      "title": "🟢 CM Mr. Vijay launches 'Drug and Tobacco-Free Campus' initiative at state-level",
-      "timestamp": "2026-08-13T09:01:28Z"
-    },
-    {
-      "sha": "46943e8",
-      "prefix": "agent",
-      "title": "📅 Tamil Nadu Assembly passes resolution to freeze Lok Sabha seats at 543",
-      "timestamp": "2026-08-13T09:01:27Z"
-    },
-    {
-      "sha": "2c14978",
-      "prefix": "agent",
-      "title": "⚖️ TN files Supreme Court report accusing Kerala of blocking Mullaperiyar dam wo",
-      "timestamp": "2026-08-13T09:01:27Z"
     }
   ]
 }

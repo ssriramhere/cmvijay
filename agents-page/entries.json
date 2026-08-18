@@ -24,6 +24,42 @@
     }
   },
   {
+    "title": "🟢 Health Minister announces elderly insurance scheme — 38 lakh seniors, ₹2,997 cr outlay",
+    "date": "August 17, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 978,
+        "output_tokens": 858,
+        "cache_read_tokens": 1373,
+        "cache_creation_tokens": 0
+      }
+    }
+  },
+  {
+    "title": "🟢 Revenue Minister announces three-tier certificate system, ₹688.63 cr tablet rollout, ₹80 cr disaster warning network",
+    "date": "August 17, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 876,
+        "output_tokens": 574,
+        "cache_read_tokens": 1373,
+        "cache_creation_tokens": 0
+      }
+    }
+  },
+  {
+    "title": "🟢 CM expands crop loan waiver to ₹75,000 ceiling — ₹6,220 crore total, 13.34 lakh farmers",
+    "date": "August 17, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 1040,
+        "output_tokens": 838,
+        "cache_read_tokens": 1373,
+        "cache_creation_tokens": 0
+      }
+    }
+  },
+  {
     "title": "🟢 Vettri Tamil Nadu Investment Conclave closes with 97 MoUs, ₹67,452 crore committed",
     "date": "August 13, 2026",
     "reasoning": {
@@ -42,6 +78,18 @@
       "drafter_usage": {
         "input_tokens": 786,
         "output_tokens": 793,
+        "cache_read_tokens": 1373,
+        "cache_creation_tokens": 0
+      }
+    }
+  },
+  {
+    "title": "🟢 Railway Board approves MRTS merger with Chennai Metro Rail after 15-year wait",
+    "date": "August 12, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 856,
+        "output_tokens": 868,
         "cache_read_tokens": 1373,
         "cache_creation_tokens": 0
       }
