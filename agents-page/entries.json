@@ -1,5 +1,53 @@
 [
   {
+    "title": "🟢 CM Mr. Vijay announces ₹1 lakh/month constituency support package for all 234 MLAs",
+    "date": "August 19, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 951,
+        "output_tokens": 720,
+        "cache_read_tokens": 1373,
+        "cache_creation_tokens": 0
+      }
+    }
+  },
+  {
+    "title": "🟢 Milk procurement price raised ₹38 to ₹41 per litre; state incentive doubled",
+    "date": "August 19, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 1001,
+        "output_tokens": 828,
+        "cache_read_tokens": 1373,
+        "cache_creation_tokens": 0
+      }
+    }
+  },
+  {
+    "title": "🟢 TN announces SDAT Talent Research Wing, Olympic prize hikes, and ₹15 cr excellence centres",
+    "date": "August 18, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 999,
+        "output_tokens": 885,
+        "cache_read_tokens": 1373,
+        "cache_creation_tokens": 0
+      }
+    }
+  },
+  {
+    "title": "📅 PWD Minister announces vertical building push, new infrastructure corporation, ₹750 cr road schemes",
+    "date": "August 18, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 857,
+        "output_tokens": 703,
+        "cache_read_tokens": 1373,
+        "cache_creation_tokens": 0
+      }
+    }
+  },
+  {
     "title": "🟢 Tamil Nadu launches Presence-less Registration for housing plots and apartments",
     "date": "August 17, 2026",
     "reasoning": {

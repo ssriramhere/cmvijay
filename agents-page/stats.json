@@ -1,17 +1,41 @@
 {
   "period": "Rolling 30 days",
-  "as_of": "2026-08-18T19:55:01.602278+05:30",
-  "candidates_surfaced": 77,
-  "auto_verified": 21,
-  "auto_verified_pct": 27,
-  "escalated": 16,
-  "escalated_pct": 21,
-  "autonomous_commits": 13,
+  "as_of": "2026-08-19T19:54:58.852422+05:30",
+  "candidates_surfaced": 90,
+  "auto_verified": 25,
+  "auto_verified_pct": 28,
+  "escalated": 20,
+  "escalated_pct": 22,
+  "autonomous_commits": 17,
   "operator_edited": 0,
-  "skipped": 39,
-  "cost_this_month_usd": 4.03,
-  "cost_per_published_entry_usd": 0.31,
+  "skipped": 44,
+  "cost_this_month_usd": 4.95,
+  "cost_per_published_entry_usd": 0.29,
   "autonomous_commits_list": [
+    {
+      "sha": "e885333",
+      "prefix": "agent",
+      "title": "🟢 Milk procurement price raised ₹38 to ₹41 per litre; state incentive doubled",
+      "timestamp": "2026-08-19T14:24:56Z"
+    },
+    {
+      "sha": "bfd2e83",
+      "prefix": "agent",
+      "title": "📅 PWD Minister announces vertical building push, new infrastructure corporation,",
+      "timestamp": "2026-08-19T14:24:55Z"
+    },
+    {
+      "sha": "1c876ee",
+      "prefix": "agent",
+      "title": "🟢 TN announces SDAT Talent Research Wing, Olympic prize hikes, and ₹15 cr excell",
+      "timestamp": "2026-08-19T14:24:55Z"
+    },
+    {
+      "sha": "de83ae6",
+      "prefix": "agent",
+      "title": "🟢 CM Mr. Vijay announces ₹1 lakh/month constituency support package for all 234",
+      "timestamp": "2026-08-19T14:24:55Z"
+    },
     {
       "sha": "f80ba35",
       "prefix": "agent",
@@ -47,24 +71,6 @@
       "prefix": "agent",
       "title": "🟢 Tamil Nadu launches Presence-less Registration for housing plots and apartment",
       "timestamp": "2026-08-17T14:16:18Z"
-    },
-    {
-      "sha": "158c610",
-      "prefix": "agent",
-      "title": "🟨 Centre rejects Coimbatore Metro Rail; TN minister says DPR will be reworked an",
-      "timestamp": "2026-08-14T14:28:10Z"
-    },
-    {
-      "sha": "d13c02f",
-      "prefix": "agent",
-      "title": "🟨 CM Mr. Vijay writes to PM Modi urging constitutional freeze of Lok Sabha at 54",
-      "timestamp": "2026-08-14T14:28:10Z"
-    },
-    {
-      "sha": "59c4f20",
-      "prefix": "agent",
-      "title": "⚖️ Madras HC reserves orders on plea to quash DVAC FIR in TASMAC irregularities",
-      "timestamp": "2026-08-14T14:28:09Z"
     }
   ],
   "escalated_list": [
@@ -142,6 +148,26 @@
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/orders-issues-for-shifting-chief-minister-vijays-office-to-namakkal-kavignar-maligai/article71273985.ece",
       "reasoning": "The core claim — Chief Secretary M. Sai Kumar issuing orders to relocate the CMO from Fort St. George to the 10th floor of Namakkal Kavignar Maaligai — is confirmed by three independent sources (The Hindu, India Today, New Indian Express). No manifesto promise maps to this, no primacy claims are mad"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-government-order-seeking-steps-to-prevent-students-from-protesting-withdrawn-after-row/article71363796.ece",
+      "reasoning": "The core facts are well-verified across two strong whitelisted sources (The Hindu and Times of India): the Department of Collegiate Education issued an order on August 17, 2026 directing college principals to prevent students from joining protests by Left parties and the CJP, and then withdrew it on"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/vijay-led-tamil-nadu-governments-first-100-days-reform-welfare-and-challenges/article71363540.ece",
+      "reasoning": "The article is a well-sourced, multi-outlet-corroborated retrospective review from The Hindu marking the TVK government's 100-day milestone (oath date May 10, 2026; article date August 19, 2026 — confirmed accurate). Core factual claims check out: 108 seats, ~35% vote share (Wikipedia gives 34.92%),"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/cm-health-insurance-coverage-increased-from-5-lakh-to-25-lakh-in-tamil-nadu/article71363805.ece",
+      "reasoning": "The core claims — CMCHIS coverage hike from ₹5 lakh to ₹25 lakh, 400-bed Perambur hospital at ₹300 crore, and Cancer Care Mission upgrade — are corroborated by at least four independent outlets (The Hindu, New Indian Express, New Kerala, MENAFN/PTI). However, there are material numerical discrepanci"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/maternity-leave-for-third-child-of-women-government-employees-raised-to-365-days/article71360294.ece",
+      "reasoning": "The core facts are well-verified across two whitelisted sources (The Hindu and New Indian Express): Minister D. Sarathkumar announced in the Assembly on August 18, 2026 that maternity leave for the third child of women government employees will be raised from 12 weeks to 365 days. However, the candi"
     }
   ],
   "skipped_list": [
@@ -289,9 +315,58 @@
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/vijay-apologises-for-tn-forest-ministers-remarks-in-assembly/article71356869.ece",
       "skip_reason": "This article covers an in-Assembly apology by CM Mr. Vijay for Forest Minister R.V. Ranjithkumar's remarks about the late M. Karunanidhi — specifically, referring to him by name without customary hono"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tvk-governments-first-100-days-new-style-of-functioning-aimed-at-driving-progress-in-tamil-nadu/article71364809.ece",
+      "skip_reason": "This is an analytical retrospective/opinion-style piece from The Hindu marking the TVK government's 100-day milestone. It does not report a discrete governance action (executive order, cabinet decisio"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/aiadmk-walks-out-of-assembly-protesting-speakers-refusal-to-take-up-calling-attention-motion/article71363870.ece",
+      "skip_reason": "This article documents an AIADMK opposition walkout from the Tamil Nadu Assembly — a procedural protest against the Speaker's refusal to admit a Calling Attention Motion. While the underlying humanita"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tvk-mla-renders-mgr-song-to-praise-cm-vijay/article71363976.ece",
+      "skip_reason": "The candidate article — a TVK MLA singing an MGR song in the Assembly to praise CM Mr. Vijay — is pure political symbolism with no governance action, executive order, or policy implication of its own."
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/have-proof-of-corruption-in-erstwhile-dmk-government-will-reveal-it-when-necessary-cm-vijay/article71363682.ece",
+      "skip_reason": "This article reports a political speech by CM Mr. Vijay in the Tamil Nadu Assembly in which he claims to hold evidence of corruption by the previous DMK government but explicitly declines to reveal it"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/vck-will-support-tvk-to-complete-full-term-thirumavalavan/article71361608.ece",
+      "skip_reason": "This article is a press conference statement by VCK leader Thirumavalavan reiterating coalition support for the TVK government — a political/factional development with no new governance action. VCK's "
     }
   ],
   "recent_commits": [
+    {
+      "sha": "e885333",
+      "prefix": "agent",
+      "title": "🟢 Milk procurement price raised ₹38 to ₹41 per litre; state incentive doubled",
+      "timestamp": "2026-08-19T14:24:56Z"
+    },
+    {
+      "sha": "bfd2e83",
+      "prefix": "agent",
+      "title": "📅 PWD Minister announces vertical building push, new infrastructure corporation,",
+      "timestamp": "2026-08-19T14:24:55Z"
+    },
+    {
+      "sha": "1c876ee",
+      "prefix": "agent",
+      "title": "🟢 TN announces SDAT Talent Research Wing, Olympic prize hikes, and ₹15 cr excell",
+      "timestamp": "2026-08-19T14:24:55Z"
+    },
+    {
+      "sha": "de83ae6",
+      "prefix": "agent",
+      "title": "🟢 CM Mr. Vijay announces ₹1 lakh/month constituency support package for all 234",
+      "timestamp": "2026-08-19T14:24:55Z"
+    },
     {
       "sha": "f80ba35",
       "prefix": "agent",
@@ -327,30 +402,6 @@
       "prefix": "agent",
       "title": "🟢 Tamil Nadu launches Presence-less Registration for housing plots and apartment",
       "timestamp": "2026-08-17T14:16:18Z"
-    },
-    {
-      "sha": "158c610",
-      "prefix": "agent",
-      "title": "🟨 Centre rejects Coimbatore Metro Rail; TN minister says DPR will be reworked an",
-      "timestamp": "2026-08-14T14:28:10Z"
-    },
-    {
-      "sha": "d13c02f",
-      "prefix": "agent",
-      "title": "🟨 CM Mr. Vijay writes to PM Modi urging constitutional freeze of Lok Sabha at 54",
-      "timestamp": "2026-08-14T14:28:10Z"
-    },
-    {
-      "sha": "59c4f20",
-      "prefix": "agent",
-      "title": "⚖️ Madras HC reserves orders on plea to quash DVAC FIR in TASMAC irregularities",
-      "timestamp": "2026-08-14T14:28:09Z"
-    },
-    {
-      "sha": "45b2006",
-      "prefix": "agent-undo",
-      "title": "remove entries added by 46943e8",
-      "timestamp": "2026-08-13T22:25:59Z"
     }
   ]
 }
