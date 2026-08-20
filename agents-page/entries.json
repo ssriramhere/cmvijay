@@ -24,6 +24,42 @@
     }
   },
   {
+    "title": "🟢 WRD announces 27 check dams across 13 districts for ₹206.75 crore",
+    "date": "August 19, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 899,
+        "output_tokens": 686,
+        "cache_read_tokens": 1373,
+        "cache_creation_tokens": 0
+      }
+    }
+  },
+  {
+    "title": "⚖️ Madras HC upholds Speaker's decision to drop disqualification of 21 AIADMK MLAs",
+    "date": "August 19, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 876,
+        "output_tokens": 856,
+        "cache_read_tokens": 1373,
+        "cache_creation_tokens": 0
+      }
+    }
+  },
+  {
+    "title": "⚖️ Madras HC upholds TN order placing Tamil Thai Vazhthu first at official events",
+    "date": "August 19, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 874,
+        "output_tokens": 1029,
+        "cache_read_tokens": 1373,
+        "cache_creation_tokens": 0
+      }
+    }
+  },
+  {
     "title": "🟢 TN announces SDAT Talent Research Wing, Olympic prize hikes, and ₹15 cr excellence centres",
     "date": "August 18, 2026",
     "reasoning": {

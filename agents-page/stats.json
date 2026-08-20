@@ -1,17 +1,35 @@
 {
   "period": "Rolling 30 days",
-  "as_of": "2026-08-19T19:54:58.852422+05:30",
-  "candidates_surfaced": 90,
-  "auto_verified": 25,
+  "as_of": "2026-08-20T19:52:06.219631+05:30",
+  "candidates_surfaced": 100,
+  "auto_verified": 28,
   "auto_verified_pct": 28,
-  "escalated": 20,
-  "escalated_pct": 22,
-  "autonomous_commits": 17,
+  "escalated": 21,
+  "escalated_pct": 21,
+  "autonomous_commits": 20,
   "operator_edited": 0,
-  "skipped": 44,
-  "cost_this_month_usd": 4.95,
-  "cost_per_published_entry_usd": 0.29,
+  "skipped": 50,
+  "cost_this_month_usd": 5.47,
+  "cost_per_published_entry_usd": 0.27,
   "autonomous_commits_list": [
+    {
+      "sha": "3acc985",
+      "prefix": "agent",
+      "title": "⚖️ Madras HC upholds TN order placing Tamil Thai Vazhthu first at official event",
+      "timestamp": "2026-08-20T14:22:03Z"
+    },
+    {
+      "sha": "1da11f2",
+      "prefix": "agent",
+      "title": "⚖️ Madras HC upholds Speaker's decision to drop disqualification of 21 AIADMK ML",
+      "timestamp": "2026-08-20T14:22:02Z"
+    },
+    {
+      "sha": "133248a",
+      "prefix": "agent",
+      "title": "🟢 WRD announces 27 check dams across 13 districts for ₹206.75 crore",
+      "timestamp": "2026-08-20T14:22:02Z"
+    },
     {
       "sha": "e885333",
       "prefix": "agent",
@@ -168,6 +186,11 @@
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/maternity-leave-for-third-child-of-women-government-employees-raised-to-365-days/article71360294.ece",
       "reasoning": "The core facts are well-verified across two whitelisted sources (The Hindu and New Indian Express): Minister D. Sarathkumar announced in the Assembly on August 18, 2026 that maternity leave for the third child of women government employees will be raised from 12 weeks to 365 days. However, the candi"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tn-govt-to-formulate-state-cooperative-policy-minister-gandhiraj/article71368856.ece",
+      "reasoning": "The Hindu confirms Minister V. Gandhiraj made an Assembly announcement on August 20, 2026 about formulating a State Cooperative Policy, with several concrete monetary allocations (₹7,015 crore Singa Pengal scheme, ₹5,000 crore rural loans, ₹15 crore PDS buildings, etc.). No existing site entry confl"
     }
   ],
   "skipped_list": [
@@ -340,9 +363,57 @@
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/vck-will-support-tvk-to-complete-full-term-thirumavalavan/article71361608.ece",
       "skip_reason": "This article is a press conference statement by VCK leader Thirumavalavan reiterating coalition support for the TVK government — a political/factional development with no new governance action. VCK's "
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/southern-zonal-council-meet-tamil-nadu-cm-vijay-seeks-fair-equitable-treatment-of-southern-states-from-centre/article71368332.ece",
+      "skip_reason": "The article documents CM Mr. Vijay's speech at the 31st Southern Zonal Council meeting — a well-confirmed event (corroborated by PTI, AIR News, ETV Bharat, AP7AM, and a prior The Hindu preview). Howev"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-assembly-ration-rice-used-as-cattle-fodder-remark-by-minister-sengottaiyan-triggers-furore/article71368574.ece",
+      "skip_reason": "This article covers a political verbal skirmish in the Tamil Nadu Assembly — Minister Sengottaiyan's remark about PDS rice being used as cattle fodder during the previous AIADMK regime, and the Opposi"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-cm-vijay-extends-greetings-on-world-photography-day/article71365324.ece",
+      "skip_reason": "This article covers CM Mr. Vijay posting greetings on X for World Photography Day and receiving a visit from the Tamil Nadu Press Photographers Cooperative Housing Society at the Secretariat. There is"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/inquiry-causing-delay-in-repatriation-of-tamil-nadu-fishermans-body-from-saudi-arabia-minister-aadhav-arjuna/article71368417.ece",
+      "skip_reason": "This article reports a ministerial statement in the Tamil Nadu Assembly about a pending consular matter — the repatriation of a fisherman's body from Saudi Arabia following an Iranian pirate attack on"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/southern-zonal-council-to-meet-near-mamallapuram-on-august-20/article71364759.ece",
+      "skip_reason": "The article is a pre-event notice for the 31st Southern Zonal Council meeting on August 20, 2026. All factual claims are verified — the date, venue, Amit Shah as chair, CM Mr. Vijay as vice-chair, sta"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/residents-welcome-closure-of-tasmac-outlet-near-nursing-college-on-arcot-road-in-vellore/article71365020.ece",
+      "skip_reason": "This article describes the closure of a single TASMAC outlet in Vellore's Kagithapattarai area near a nursing college on Arcot Road, framed as a community-welcome story following a prior The Hindu rep"
     }
   ],
   "recent_commits": [
+    {
+      "sha": "3acc985",
+      "prefix": "agent",
+      "title": "⚖️ Madras HC upholds TN order placing Tamil Thai Vazhthu first at official event",
+      "timestamp": "2026-08-20T14:22:03Z"
+    },
+    {
+      "sha": "1da11f2",
+      "prefix": "agent",
+      "title": "⚖️ Madras HC upholds Speaker's decision to drop disqualification of 21 AIADMK ML",
+      "timestamp": "2026-08-20T14:22:02Z"
+    },
+    {
+      "sha": "133248a",
+      "prefix": "agent",
+      "title": "🟢 WRD announces 27 check dams across 13 districts for ₹206.75 crore",
+      "timestamp": "2026-08-20T14:22:02Z"
+    },
     {
       "sha": "e885333",
       "prefix": "agent",
@@ -384,24 +455,6 @@
       "prefix": "agent",
       "title": "🟢 Health Minister announces elderly insurance scheme — 38 lakh seniors, ₹2,997 c",
       "timestamp": "2026-08-18T14:24:58Z"
-    },
-    {
-      "sha": "a2fd462",
-      "prefix": "agent",
-      "title": "🟢 Railway Board approves MRTS merger with Chennai Metro Rail after 15-year wait",
-      "timestamp": "2026-08-18T14:24:57Z"
-    },
-    {
-      "sha": "123b33f",
-      "prefix": "agent",
-      "title": "🟢 Tamil Nadu launches Presence-less Property Registration via STAR 3.0 platform",
-      "timestamp": "2026-08-17T14:16:18Z"
-    },
-    {
-      "sha": "af99ed9",
-      "prefix": "agent",
-      "title": "🟢 Tamil Nadu launches Presence-less Registration for housing plots and apartment",
-      "timestamp": "2026-08-17T14:16:18Z"
     }
   ]
 }
