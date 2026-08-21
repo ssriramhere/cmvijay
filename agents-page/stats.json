@@ -1,11 +1,11 @@
 {
   "period": "Rolling 30 days",
-  "as_of": "2026-08-20T19:52:06.219631+05:30",
-  "candidates_surfaced": 100,
+  "as_of": "2026-08-21T19:43:32.622327+05:30",
+  "candidates_surfaced": 109,
   "auto_verified": 28,
-  "auto_verified_pct": 28,
+  "auto_verified_pct": 26,
   "escalated": 21,
-  "escalated_pct": 21,
+  "escalated_pct": 19,
   "autonomous_commits": 20,
   "operator_edited": 0,
   "skipped": 50,
@@ -77,18 +77,6 @@
       "prefix": "agent",
       "title": "🟢 Railway Board approves MRTS merger with Chennai Metro Rail after 15-year wait",
       "timestamp": "2026-08-18T14:24:57Z"
-    },
-    {
-      "sha": "123b33f",
-      "prefix": "agent",
-      "title": "🟢 Tamil Nadu launches Presence-less Property Registration via STAR 3.0 platform",
-      "timestamp": "2026-08-17T14:16:18Z"
-    },
-    {
-      "sha": "af99ed9",
-      "prefix": "agent",
-      "title": "🟢 Tamil Nadu launches Presence-less Registration for housing plots and apartment",
-      "timestamp": "2026-08-17T14:16:18Z"
     }
   ],
   "escalated_list": [
