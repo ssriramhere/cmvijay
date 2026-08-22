@@ -1,9 +1,9 @@
 {
   "period": "Rolling 30 days",
-  "as_of": "2026-08-21T19:43:32.622327+05:30",
-  "candidates_surfaced": 109,
+  "as_of": "2026-08-22T19:35:33.995157+05:30",
+  "candidates_surfaced": 112,
   "auto_verified": 28,
-  "auto_verified_pct": 26,
+  "auto_verified_pct": 25,
   "escalated": 21,
   "escalated_pct": 19,
   "autonomous_commits": 20,
