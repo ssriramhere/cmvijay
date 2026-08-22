@@ -1,0 +1,14 @@
+{"ts": "2026-08-22T19:35:29.220940+05:30", "agent": "watcher", "type": "fetch", "outlet": "The Hindu — Tamil Nadu", "fetched": 60, "kept": 3}
+{"ts": "2026-08-22T19:35:29.864974+05:30", "agent": "watcher", "type": "fetch", "outlet": "ANI — National", "fetched": 0, "kept": 0}
+{"ts": "2026-08-22T19:35:30.035259+05:30", "agent": "watcher", "type": "fetch", "outlet": "ThePrint — India", "fetched": 20, "kept": 0}
+{"ts": "2026-08-22T19:35:30.482669+05:30", "agent": "watcher", "type": "fetch", "outlet": "The News Minute — Tamil Nadu", "fetched": 0, "kept": 0}
+{"ts": "2026-08-22T19:35:31.068245+05:30", "agent": "watcher", "type": "fetch", "outlet": "The Federal — Tamil Nadu", "fetched": 0, "kept": 0}
+{"ts": "2026-08-22T19:35:31.068800+05:30", "agent": "watcher", "type": "run_summary", "fetched": 70, "kept": 3, "dropped_seen": 2, "dropped_stale": 0, "dropped_irrelevant": 65, "dropped_not_whitelisted": 0}
+{"ts": "2026-08-22T19:35:32.276098+05:30", "agent": "verifier", "type": "start", "url": "https://www.thehindu.com/news/national/tamil-nadu/annamalai-urges-tamil-nadu-government-to-form-high-level-panel-to-re-survey-land-in-megamalai/article71376994.ece", "title": "Annamalai urges Tamil Nadu government to form high-level panel to re-survey land in Megamalai"}
+{"ts": "2026-08-22T19:35:32.288076+05:30", "agent": "verifier", "type": "error", "where": "call_with_tools", "error_type": "TypeError", "message": "Messages.create() got an unexpected keyword argument 'temperature'"}
+{"ts": "2026-08-22T19:35:32.288156+05:30", "agent": "verifier", "type": "start", "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-cm-vijay-extends-madras-day-greetings/article71376873.ece", "title": "Tamil Nadu CM Vijay extends Madras Day greetings"}
+{"ts": "2026-08-22T19:35:32.288203+05:30", "agent": "verifier", "type": "error", "where": "call_with_tools", "error_type": "TypeError", "message": "Messages.create() got an unexpected keyword argument 'temperature'"}
+{"ts": "2026-08-22T19:35:32.288248+05:30", "agent": "verifier", "type": "start", "url": "https://www.thehindu.com/news/national/tamil-nadu/aadhav-arjuna-clarifies-the-tamil-nadu-governments-stand-on-delimitation/article71373648.ece", "title": "Aadhav Arjuna clarifies the Tamil Nadu government’s stand on delimitation"}
+{"ts": "2026-08-22T19:35:32.288297+05:30", "agent": "verifier", "type": "error", "where": "call_with_tools", "error_type": "TypeError", "message": "Messages.create() got an unexpected keyword argument 'temperature'"}
+{"ts": "2026-08-22T19:35:32.288428+05:30", "agent": "verifier", "type": "run_summary", "surface_autonomous": 0, "surface_escalate": 0, "skip": 0, "error": 3}
+{"ts": "2026-08-22T19:35:32.288508+05:30", "agent": "orchestrator", "type": "summary", "candidates": 3, "verified": 3, "drafts": 0, "autonomous_commits": 0, "escalated": 0}
