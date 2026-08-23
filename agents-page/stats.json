@@ -1,7 +1,7 @@
 {
   "period": "Rolling 30 days",
-  "as_of": "2026-08-22T19:35:33.995157+05:30",
-  "candidates_surfaced": 112,
+  "as_of": "2026-08-23T19:36:34.619561+05:30",
+  "candidates_surfaced": 113,
   "auto_verified": 28,
   "auto_verified_pct": 25,
   "escalated": 21,
@@ -65,18 +65,6 @@
       "prefix": "agent",
       "title": "🟢 Revenue Minister announces three-tier certificate system, ₹688.63 cr tablet ro",
       "timestamp": "2026-08-18T14:24:58Z"
-    },
-    {
-      "sha": "6799e53",
-      "prefix": "agent",
-      "title": "🟢 Health Minister announces elderly insurance scheme — 38 lakh seniors, ₹2,997 c",
-      "timestamp": "2026-08-18T14:24:58Z"
-    },
-    {
-      "sha": "a2fd462",
-      "prefix": "agent",
-      "title": "🟢 Railway Board approves MRTS merger with Chennai Metro Rail after 15-year wait",
-      "timestamp": "2026-08-18T14:24:57Z"
     }
   ],
   "escalated_list": [
@@ -436,12 +424,6 @@
       "sha": "21178aa",
       "prefix": "agent",
       "title": "🟢 Revenue Minister announces three-tier certificate system, ₹688.63 cr tablet ro",
-      "timestamp": "2026-08-18T14:24:58Z"
-    },
-    {
-      "sha": "6799e53",
-      "prefix": "agent",
-      "title": "🟢 Health Minister announces elderly insurance scheme — 38 lakh seniors, ₹2,997 c",
       "timestamp": "2026-08-18T14:24:58Z"
     }
   ]
