@@ -1,0 +1,10 @@
+{"ts": "2026-08-23T19:36:31.238380+05:30", "agent": "watcher", "type": "fetch", "outlet": "The Hindu — Tamil Nadu", "fetched": 60, "kept": 1}
+{"ts": "2026-08-23T19:36:31.577436+05:30", "agent": "watcher", "type": "fetch", "outlet": "ANI — National", "fetched": 0, "kept": 0}
+{"ts": "2026-08-23T19:36:31.712372+05:30", "agent": "watcher", "type": "fetch", "outlet": "ThePrint — India", "fetched": 20, "kept": 0}
+{"ts": "2026-08-23T19:36:32.101982+05:30", "agent": "watcher", "type": "fetch", "outlet": "The News Minute — Tamil Nadu", "fetched": 0, "kept": 0}
+{"ts": "2026-08-23T19:36:32.621808+05:30", "agent": "watcher", "type": "fetch", "outlet": "The Federal — Tamil Nadu", "fetched": 0, "kept": 0}
+{"ts": "2026-08-23T19:36:32.622440+05:30", "agent": "watcher", "type": "run_summary", "fetched": 70, "kept": 1, "dropped_seen": 2, "dropped_stale": 18, "dropped_irrelevant": 49, "dropped_not_whitelisted": 0}
+{"ts": "2026-08-23T19:36:33.199927+05:30", "agent": "verifier", "type": "start", "url": "https://www.thehindu.com/news/national/tamil-nadu/tvk-mla-booked-in-trespass-assault-case-in-puducherry/article71378903.ece", "title": "TVK MLA booked in trespass, assault case in Puducherry"}
+{"ts": "2026-08-23T19:36:33.218135+05:30", "agent": "verifier", "type": "error", "where": "call_with_tools", "error_type": "TypeError", "message": "Messages.create() got an unexpected keyword argument 'temperature'"}
+{"ts": "2026-08-23T19:36:33.218365+05:30", "agent": "verifier", "type": "run_summary", "surface_autonomous": 0, "surface_escalate": 0, "skip": 0, "error": 1}
+{"ts": "2026-08-23T19:36:33.218567+05:30", "agent": "orchestrator", "type": "summary", "candidates": 1, "verified": 1, "drafts": 0, "autonomous_commits": 0, "escalated": 0}
