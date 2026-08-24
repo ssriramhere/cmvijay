@@ -1,11 +1,11 @@
 {
   "period": "Rolling 30 days",
-  "as_of": "2026-08-23T19:36:34.619561+05:30",
-  "candidates_surfaced": 113,
+  "as_of": "2026-08-24T19:46:49.606256+05:30",
+  "candidates_surfaced": 126,
   "auto_verified": 28,
-  "auto_verified_pct": 25,
+  "auto_verified_pct": 22,
   "escalated": 21,
-  "escalated_pct": 19,
+  "escalated_pct": 17,
   "autonomous_commits": 20,
   "operator_edited": 0,
   "skipped": 50,
@@ -53,18 +53,6 @@
       "prefix": "agent",
       "title": "🟢 CM Mr. Vijay announces ₹1 lakh/month constituency support package for all 234",
       "timestamp": "2026-08-19T14:24:55Z"
-    },
-    {
-      "sha": "f80ba35",
-      "prefix": "agent",
-      "title": "🟢 CM expands crop loan waiver to ₹75,000 ceiling — ₹6,220 crore total, 13.34 lak",
-      "timestamp": "2026-08-18T14:24:58Z"
-    },
-    {
-      "sha": "21178aa",
-      "prefix": "agent",
-      "title": "🟢 Revenue Minister announces three-tier certificate system, ₹688.63 cr tablet ro",
-      "timestamp": "2026-08-18T14:24:58Z"
     }
   ],
   "escalated_list": [
@@ -413,18 +401,6 @@
       "prefix": "agent",
       "title": "🟢 CM Mr. Vijay announces ₹1 lakh/month constituency support package for all 234",
       "timestamp": "2026-08-19T14:24:55Z"
-    },
-    {
-      "sha": "f80ba35",
-      "prefix": "agent",
-      "title": "🟢 CM expands crop loan waiver to ₹75,000 ceiling — ₹6,220 crore total, 13.34 lak",
-      "timestamp": "2026-08-18T14:24:58Z"
-    },
-    {
-      "sha": "21178aa",
-      "prefix": "agent",
-      "title": "🟢 Revenue Minister announces three-tier certificate system, ₹688.63 cr tablet ro",
-      "timestamp": "2026-08-18T14:24:58Z"
     }
   ]
 }
