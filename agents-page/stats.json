@@ -1,9 +1,9 @@
 {
   "period": "Rolling 30 days",
-  "as_of": "2026-08-25T19:47:35.737328+05:30",
-  "candidates_surfaced": 136,
+  "as_of": "2026-08-26T19:46:58.781673+05:30",
+  "candidates_surfaced": 139,
   "auto_verified": 28,
-  "auto_verified_pct": 21,
+  "auto_verified_pct": 20,
   "escalated": 21,
   "escalated_pct": 15,
   "autonomous_commits": 20,
@@ -40,18 +40,6 @@
       "sha": "bfd2e83",
       "prefix": "agent",
       "title": "📅 PWD Minister announces vertical building push, new infrastructure corporation,",
-      "timestamp": "2026-08-19T14:24:55Z"
-    },
-    {
-      "sha": "1c876ee",
-      "prefix": "agent",
-      "title": "🟢 TN announces SDAT Talent Research Wing, Olympic prize hikes, and ₹15 cr excell",
-      "timestamp": "2026-08-19T14:24:55Z"
-    },
-    {
-      "sha": "de83ae6",
-      "prefix": "agent",
-      "title": "🟢 CM Mr. Vijay announces ₹1 lakh/month constituency support package for all 234",
       "timestamp": "2026-08-19T14:24:55Z"
     }
   ],
@@ -388,18 +376,6 @@
       "sha": "bfd2e83",
       "prefix": "agent",
       "title": "📅 PWD Minister announces vertical building push, new infrastructure corporation,",
-      "timestamp": "2026-08-19T14:24:55Z"
-    },
-    {
-      "sha": "1c876ee",
-      "prefix": "agent",
-      "title": "🟢 TN announces SDAT Talent Research Wing, Olympic prize hikes, and ₹15 cr excell",
-      "timestamp": "2026-08-19T14:24:55Z"
-    },
-    {
-      "sha": "de83ae6",
-      "prefix": "agent",
-      "title": "🟢 CM Mr. Vijay announces ₹1 lakh/month constituency support package for all 234",
       "timestamp": "2026-08-19T14:24:55Z"
     }
   ]
