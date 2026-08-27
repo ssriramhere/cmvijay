@@ -1,11 +1,11 @@
 {
   "period": "Rolling 30 days",
-  "as_of": "2026-08-26T19:46:58.781673+05:30",
-  "candidates_surfaced": 139,
+  "as_of": "2026-08-27T23:16:55.157894+05:30",
+  "candidates_surfaced": 149,
   "auto_verified": 28,
-  "auto_verified_pct": 20,
+  "auto_verified_pct": 19,
   "escalated": 21,
-  "escalated_pct": 15,
+  "escalated_pct": 14,
   "autonomous_commits": 20,
   "operator_edited": 0,
   "skipped": 50,
@@ -29,18 +29,6 @@
       "prefix": "agent",
       "title": "🟢 WRD announces 27 check dams across 13 districts for ₹206.75 crore",
       "timestamp": "2026-08-20T14:22:02Z"
-    },
-    {
-      "sha": "e885333",
-      "prefix": "agent",
-      "title": "🟢 Milk procurement price raised ₹38 to ₹41 per litre; state incentive doubled",
-      "timestamp": "2026-08-19T14:24:56Z"
-    },
-    {
-      "sha": "bfd2e83",
-      "prefix": "agent",
-      "title": "📅 PWD Minister announces vertical building push, new infrastructure corporation,",
-      "timestamp": "2026-08-19T14:24:55Z"
     }
   ],
   "escalated_list": [
@@ -365,18 +353,6 @@
       "prefix": "agent",
       "title": "🟢 WRD announces 27 check dams across 13 districts for ₹206.75 crore",
       "timestamp": "2026-08-20T14:22:02Z"
-    },
-    {
-      "sha": "e885333",
-      "prefix": "agent",
-      "title": "🟢 Milk procurement price raised ₹38 to ₹41 per litre; state incentive doubled",
-      "timestamp": "2026-08-19T14:24:56Z"
-    },
-    {
-      "sha": "bfd2e83",
-      "prefix": "agent",
-      "title": "📅 PWD Minister announces vertical building push, new infrastructure corporation,",
-      "timestamp": "2026-08-19T14:24:55Z"
     }
   ]
 }
