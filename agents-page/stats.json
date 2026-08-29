@@ -1,9 +1,9 @@
 {
   "period": "Rolling 30 days",
-  "as_of": "2026-08-28T23:32:12.020596+05:30",
-  "candidates_surfaced": 160,
+  "as_of": "2026-08-29T19:38:29.475410+05:30",
+  "candidates_surfaced": 161,
   "auto_verified": 28,
-  "auto_verified_pct": 18,
+  "auto_verified_pct": 17,
   "escalated": 21,
   "escalated_pct": 13,
   "autonomous_commits": 20,
@@ -17,18 +17,6 @@
       "prefix": "agent",
       "title": "⚖️ Madras HC upholds TN order placing Tamil Thai Vazhthu first at official event",
       "timestamp": "2026-08-20T14:22:03Z"
-    },
-    {
-      "sha": "1da11f2",
-      "prefix": "agent",
-      "title": "⚖️ Madras HC upholds Speaker's decision to drop disqualification of 21 AIADMK ML",
-      "timestamp": "2026-08-20T14:22:02Z"
-    },
-    {
-      "sha": "133248a",
-      "prefix": "agent",
-      "title": "🟢 WRD announces 27 check dams across 13 districts for ₹206.75 crore",
-      "timestamp": "2026-08-20T14:22:02Z"
     }
   ],
   "escalated_list": [
@@ -341,18 +329,6 @@
       "prefix": "agent",
       "title": "⚖️ Madras HC upholds TN order placing Tamil Thai Vazhthu first at official event",
       "timestamp": "2026-08-20T14:22:03Z"
-    },
-    {
-      "sha": "1da11f2",
-      "prefix": "agent",
-      "title": "⚖️ Madras HC upholds Speaker's decision to drop disqualification of 21 AIADMK ML",
-      "timestamp": "2026-08-20T14:22:02Z"
-    },
-    {
-      "sha": "133248a",
-      "prefix": "agent",
-      "title": "🟢 WRD announces 27 check dams across 13 districts for ₹206.75 crore",
-      "timestamp": "2026-08-20T14:22:02Z"
     }
   ]
 }
