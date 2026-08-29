@@ -1,0 +1,10 @@
+{"ts": "2026-08-29T19:38:25.367045+05:30", "agent": "watcher", "type": "fetch", "outlet": "The Hindu — Tamil Nadu", "fetched": 60, "kept": 0}
+{"ts": "2026-08-29T19:38:25.652423+05:30", "agent": "watcher", "type": "fetch", "outlet": "ANI — National", "fetched": 0, "kept": 0}
+{"ts": "2026-08-29T19:38:26.206720+05:30", "agent": "watcher", "type": "fetch", "outlet": "ThePrint — India", "fetched": 20, "kept": 1}
+{"ts": "2026-08-29T19:38:26.590970+05:30", "agent": "watcher", "type": "fetch", "outlet": "The News Minute — Tamil Nadu", "fetched": 0, "kept": 0}
+{"ts": "2026-08-29T19:38:27.180904+05:30", "agent": "watcher", "type": "fetch", "outlet": "The Federal — Tamil Nadu", "fetched": 0, "kept": 0}
+{"ts": "2026-08-29T19:38:27.181589+05:30", "agent": "watcher", "type": "run_summary", "fetched": 70, "kept": 1, "dropped_seen": 11, "dropped_stale": 4, "dropped_irrelevant": 54, "dropped_not_whitelisted": 0}
+{"ts": "2026-08-29T19:38:27.875823+05:30", "agent": "verifier", "type": "start", "url": "https://theprint.in/india/andaman-admn-makes-all-necessary-arrangements-for-neet-pg-examination-to-be-held-on-aug-30/3028327/", "title": "Andaman admn makes all necessary arrangements for NEET-PG examination  to be held on Aug 30"}
+{"ts": "2026-08-29T19:38:27.896310+05:30", "agent": "verifier", "type": "error", "where": "call_with_tools", "error_type": "TypeError", "message": "Messages.create() got an unexpected keyword argument 'temperature'"}
+{"ts": "2026-08-29T19:38:27.896577+05:30", "agent": "verifier", "type": "run_summary", "surface_autonomous": 0, "surface_escalate": 0, "skip": 0, "error": 1}
+{"ts": "2026-08-29T19:38:27.896786+05:30", "agent": "orchestrator", "type": "summary", "candidates": 1, "verified": 1, "drafts": 0, "autonomous_commits": 0, "escalated": 0}
