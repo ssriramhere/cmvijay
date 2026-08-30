@@ -1,7 +1,7 @@
 {
   "period": "Rolling 30 days",
-  "as_of": "2026-08-29T19:38:29.475410+05:30",
-  "candidates_surfaced": 161,
+  "as_of": "2026-08-30T19:38:51.964579+05:30",
+  "candidates_surfaced": 166,
   "auto_verified": 28,
   "auto_verified_pct": 17,
   "escalated": 21,
@@ -11,14 +11,7 @@
   "skipped": 50,
   "cost_this_month_usd": 5.47,
   "cost_per_published_entry_usd": 0.27,
-  "autonomous_commits_list": [
-    {
-      "sha": "3acc985",
-      "prefix": "agent",
-      "title": "⚖️ Madras HC upholds TN order placing Tamil Thai Vazhthu first at official event",
-      "timestamp": "2026-08-20T14:22:03Z"
-    }
-  ],
+  "autonomous_commits_list": [],
   "escalated_list": [
     {
       "title": "",
@@ -323,12 +316,5 @@
       "skip_reason": "This article describes the closure of a single TASMAC outlet in Vellore's Kagithapattarai area near a nursing college on Arcot Road, framed as a community-welcome story following a prior The Hindu rep"
     }
   ],
-  "recent_commits": [
-    {
-      "sha": "3acc985",
-      "prefix": "agent",
-      "title": "⚖️ Madras HC upholds TN order placing Tamil Thai Vazhthu first at official event",
-      "timestamp": "2026-08-20T14:22:03Z"
-    }
-  ]
+  "recent_commits": []
 }
