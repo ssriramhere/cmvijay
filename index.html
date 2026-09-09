@@ -2202,8 +2202,15 @@ function IndependenceDayBanner() {
 // States: ok (<24h, no errors) · stale (>24h) · failed (all candidates errored)
 // Falls back to the plain clock if stats.json is unavailable.
 // ============================================================================
-function AgentCheckin({ now, lang }) {
+function AgentCheckin({ now, lang, t }) {
   const [stats, setStats] = useState(undefined); // undefined=loading, null=error
+
+  const Dot = ({ bg }) => (
+    <span className="relative w-2.5 h-2.5">
+      <span className={`absolute inset-0 rounded-full ${bg} animate-ping opacity-75`} />
+      <span className={`absolute inset-0 rounded-full ${bg}`} />
+    </span>
+  );
 
   useEffect(() => {
     fetch('/agents-page/stats.json', { cache: 'no-store' })
@@ -2230,9 +2237,14 @@ function AgentCheckin({ now, lang }) {
   // Loading or unavailable -> original clock
   if (!stats || !stats.as_of) {
     return (
-      <span className="font-mono-d text-[11px] uppercase tracking-[0.2em] text-stone-400">
-        {fmtIST(now)} IST
-      </span>
+      <>
+        <Dot bg="bg-red-500" />
+        <span className="font-mono-d text-[11px] uppercase tracking-[0.25em] text-red-500">{t.live}</span>
+        <span className="text-stone-600">·</span>
+        <span className="font-mono-d text-[11px] uppercase tracking-[0.2em] text-stone-400">
+          {fmtIST(now)} IST
+        </span>
+      </>
     );
   }
 
@@ -2244,12 +2256,12 @@ function AgentCheckin({ now, lang }) {
   const failed = cand !== null && cand > 0 && errs >= cand;
   const stale = ageHrs > 24;
 
-  let color = "text-stone-400", text;
+  let color = "text-green-400", dot = "bg-green-400", text;
   if (failed) {
-    color = "text-red-400";
+    color = "text-red-400"; dot = "bg-red-500";
     text = `last run failed (${errs}/${cand} errors) · ${fmtIST(asOf)} IST`;
   } else if (stale) {
-    color = "text-amber-400";
+    color = "text-amber-400"; dot = "bg-amber-400";
     text = `no agent check-in in last 24h · last ${fmtIST(asOf)} IST`;
   } else {
     text = `last check-in ${fmtIST(asOf)} IST`;
@@ -2258,6 +2270,7 @@ function AgentCheckin({ now, lang }) {
 
   return (
     <>
+      <Dot bg={dot} />
       <span className={`font-mono-d text-[11px] uppercase tracking-[0.2em] ${color}`}>{text}</span>
       {latestEntry && (
         <>
@@ -2307,6 +2320,7 @@ function AgentTicker() {
     'agent': 'text-green-400',
     'agent-approve': 'text-blue-400',
     'agent-undo': 'text-amber-400',
+    'operator': 'text-purple-400',
   })[prefix] || 'text-stone-500';
 
   const prefixLabel = (prefix) => ({
@@ -2498,15 +2512,7 @@ export default function CMVijayAI() {
         <div className="max-w-7xl mx-auto px-6 pt-16 pb-20 md:pt-24 md:pb-32 relative">
           {/* Live ticker */}
           <div className="flex items-center gap-3 mb-12 reveal" style={{ animationDelay: "0ms" }}>
-            <span className="relative w-2.5 h-2.5">
-              <span className="absolute inset-0 rounded-full bg-red-500 animate-ping opacity-75" />
-              <span className="absolute inset-0 rounded-full bg-red-500" />
-            </span>
-            <span className="font-mono-d text-[11px] uppercase tracking-[0.25em] text-red-500">
-              {t.live}
-            </span>
-            <span className="text-stone-600">·</span>
-            <AgentCheckin now={now} lang={lang} />
+            <AgentCheckin now={now} lang={lang} t={t} />
             {CURRENT_STATUS === "yes" && (
               <>
                 <span className="text-stone-600">·</span>

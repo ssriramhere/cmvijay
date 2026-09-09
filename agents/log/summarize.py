@@ -174,10 +174,9 @@ def _get_recent_agent_commits() -> list[dict]:
     import subprocess
     try:
         result = subprocess.run(
-            ["git", "log", "--author=cmvijay-agent",
-             "-E", "--grep=^agent(-approve|-undo)?:",
-             "-n", "20",
-             "--pretty=format:%h|%s|%aI"],
+            ["git", "log", "-n", "20",
+             "--pretty=format:%h|%an|%s|%aI",
+             "--", "index.html"],
             cwd=REPO_ROOT,
             capture_output=True, text=True, timeout=10, check=True,
             encoding="utf-8", errors="replace",
@@ -192,10 +191,14 @@ def _get_recent_agent_commits() -> list[dict]:
     for line in result.stdout.split("\n"):
         if not line.strip():
             continue
-        parts = line.split("|", 2)
-        if len(parts) < 3:
+        parts = line.split("|", 3)
+        if len(parts) < 4:
             continue
-        sha, subject, timestamp = parts
+        sha, author, subject, timestamp = parts
+        if author != "cmvijay-agent":
+            commits.append({"sha": sha, "prefix": "operator",
+                            "title": subject[:120], "timestamp": timestamp})
+            continue
         # Parse prefix from subject: "agent: ...", "agent-approve: ...", "agent-undo: ...", "log: ..."
         prefix = "other"
         title = subject
