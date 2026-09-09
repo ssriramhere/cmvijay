@@ -1,0 +1,75 @@
+name: cmvijay-backfill
+
+# Manual only. Runs hand-picked candidates through Verifier -> Drafter -> Committer.
+# Does NOT touch seen.json, the daily digest, or the stats JSON.
+
+on:
+  workflow_dispatch:
+    inputs:
+      urls_file:
+        description: 'Path to backfill list (JSON)'
+        required: true
+        default: 'agents/state/backfill_urls.json'
+      max_autonomous:
+        description: 'Max autonomous commits this run (rest are escalated to issues)'
+        required: true
+        default: '5'
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: cmvijay-agents        # same group as the daily run so they never overlap
+  cancel-in-progress: false
+
+jobs:
+  backfill:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install "anthropic>=1,<2" requests feedparser
+
+      - name: Run backfill
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          SERPER_API_KEY: ${{ secrets.SERPER_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          BACKFILL_MAX_AUTONOMOUS: ${{ github.event.inputs.max_autonomous }}
+        run: |
+          cd $GITHUB_WORKSPACE
+          python agents/state/backfill.py "${{ github.event.inputs.urls_file }}"
+
+      - name: Push any autonomous commits
+        run: |
+          if git log HEAD ^origin/master --oneline | grep .; then
+            echo "Backfill commits detected — pushing"
+            git push origin HEAD:master
+          else
+            echo "No backfill commits to push"
+          fi
+
+      - name: Commit agent logs
+        run: |
+          if [ -d agents/log ] && [ -n "$(ls -A agents/log 2>/dev/null)" ]; then
+            git config user.name "cmvijay-agent"
+            git config user.email "cmvijay-agent@users.noreply.github.com"
+            git add agents/log/
+            git diff --cached --quiet || git commit -m "log: backfill run $(date -u '+%Y-%m-%d %H:%M UTC')"
+            git push origin HEAD:master || true
+          fi
