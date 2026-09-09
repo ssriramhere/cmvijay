@@ -98,7 +98,7 @@ const STRINGS = {
     live: "LIVE",
     last_updated: "Last updated",
     days_since: "days since polling",
-    days_since_cm: "days since Vijay became CM",
+    days_since_cm: "since Vijay became CM",
     share_label: "Share status",
     math_title: "Coalition Math",
     math_sub: "The path to 118",
@@ -1285,10 +1285,10 @@ const SOURCES = [
 const MANIFESTO = [
   // ============= 01. WOMEN'S WELFARE =============
   { id: "g1_2500", category: "01 · Women's Welfare", text: "₹2,500/month direct transfer to women heads of households below 60 — guaranteed income floor reaching 1.5 crore families", status: "pending", sources: [10, 11, 12, 65, 66, 71] },
-  { id: "g1_bus", category: "01 · Women's Welfare", text: "Free travel for women on all government buses, no restrictions", status: "pending", sources: [10, 11] },
-  { id: "g1_lpg", category: "01 · Women's Welfare", text: "6 free LPG cylinders per year for every family", status: "pending", sources: [10, 11, 12] },
+  { id: "g1_bus", category: "01 · Women's Welfare", text: "Free travel for women on all government buses, no restrictions", status: "partial", sources: [10, 11, 145, 146, 147] },
+  { id: "g1_lpg", category: "01 · Women's Welfare", text: "6 free LPG cylinders per year for every family", status: "partial", sources: [10, 11, 12, 154, 155] },
   { id: "g1_marriage", category: "01 · Women's Welfare", text: "Singa Pengal Marriage Assistance: 1 sovereign (8g) gold + silk saree, families <₹5L income", status: "in_progress", sources: [10, 11, 12, 74] },
-  { id: "g1_newborn", category: "01 · Women's Welfare", text: "Thaai Maaman Gold Ring Scheme: gold ring + welcome kit for every newborn", status: "partial", sources: [10, 11, 13, 74, 77] },
+  { id: "g1_newborn", category: "01 · Women's Welfare", text: "Thaai Maaman Gold Ring Scheme: gold ring + welcome kit for every newborn", status: "partial", sources: [10, 11, 13, 74, 77, 156, 157, 158] },
   { id: "g1_shg", category: "01 · Women's Welfare", text: "Singa Pengal Empowerment Scheme: ₹5L interest-free SHG loans + ₹5L grant for SHGs transitioning to MSMEs", status: "pending", sources: [10, 12, 13] },
   { id: "g1_safety", category: "01 · Women's Welfare", text: "Dedicated women safety: fast-track courts, anonymous reporting channels, mandatory conviction-rate audits", status: "in_progress", sources: [10, 11, 14, 38, 58, 59, 60] },
   { id: "g1_dept", category: "01 · Women's Welfare", text: "Dedicated Department for Women, Children & Senior Citizens — under direct CM supervision", status: "pending", sources: [10, 14, 17] },
@@ -1341,11 +1341,11 @@ const MANIFESTO = [
   { id: "g6_msme15k", category: "06 · Electricity & MSME", text: "₹15,000 crore MSME Guarantee Fund — largest state commitment to small-business survival in TN history", status: "pending", sources: [10, 11, 12] },
   { id: "g6_credit", category: "06 · Electricity & MSME", text: "Credit guarantee funds + modernisation subsidies for small businesses", status: "pending", sources: [10, 14] },
   { id: "g6_business", category: "06 · Electricity & MSME", text: "Issue business licences within 21 days", status: "pending", sources: [10, 16] },
-  { id: "g6_weavers_finance", category: "06 · Electricity & MSME", text: "Weavers: direct financial assistance + raw material subsidies", status: "pending", sources: [10, 14] },
+  { id: "g6_weavers_finance", category: "06 · Electricity & MSME", text: "Weavers: direct financial assistance + raw material subsidies", status: "partial", sources: [10, 14, 150, 151] },
   { id: "g6_weavers_digital", category: "06 · Electricity & MSME", text: "Weavers: expanded market access through digital platforms", status: "pending", sources: [10, 14] },
 
   // ============= 07. ANTI-DRUG & SOCIAL HARMONY =============
-  { id: "g7_mission", category: "07 · Anti-Drug & Harmony", text: "Drug-Free Tamil Nadu Mission: inter-agency intelligence, asset-seizure fast-tracking, mandatory de-addiction infrastructure in every district", status: "in_progress", sources: [10, 11, 38] },
+  { id: "g7_mission", category: "07 · Anti-Drug & Harmony", text: "Drug-Free Tamil Nadu Mission: inter-agency intelligence, asset-seizure fast-tracking, mandatory de-addiction infrastructure in every district", status: "in_progress", sources: [10, 11, 38, 148, 149] },
   { id: "g7_zones", category: "07 · Anti-Drug & Harmony", text: "Anti-Drug Protection Zones around all schools and colleges", status: "partial", sources: [10, 11, 38, 61, 63] },
   { id: "g7_harmony", category: "07 · Anti-Drug & Harmony", text: "Social Harmony programme: community dialogue, inter-faith councils, legal enforcement against hate speech", status: "pending", sources: [10, 11] },
 
@@ -1369,7 +1369,7 @@ const MANIFESTO = [
   { id: "g9_sanitation", category: "09 · Future Ready", text: "₹10,000/month salary for sanitation workers", status: "pending", sources: [10, 12] },
   { id: "g9_super", category: "09 · Future Ready", text: "₹15 lakh on superannuation for govt employees", status: "pending", sources: [10, 12] },
   { id: "g9_ops", category: "09 · Future Ready", text: "Review restoring the Old Pension Scheme", status: "pending", sources: [10, 12] },
-  { id: "g9_police", category: "09 · Future Ready", text: "Police Welfare & Salary Hikes — for a motivated, professional force", status: "pending", sources: [10, 11, 14] },
+  { id: "g9_police", category: "09 · Future Ready", text: "Police Welfare & Salary Hikes — for a motivated, professional force", status: "in_progress", sources: [10, 11, 14, 152, 153] },
   { id: "g9_housing", category: "09 · Future Ready", text: "Housing & Welfare Schemes — home with dignity for every family", status: "pending", sources: [10, 11] },
 
   // ============= TAMIL IDENTITY (derived) =============
@@ -2198,6 +2198,80 @@ function IndependenceDayBanner() {
 }
 
 // ============================================================================
+// AgentCheckin — header status line driven by /agents-page/stats.json
+// States: ok (<24h, no errors) · stale (>24h) · failed (all candidates errored)
+// Falls back to the plain clock if stats.json is unavailable.
+// ============================================================================
+function AgentCheckin({ now, lang }) {
+  const [stats, setStats] = useState(undefined); // undefined=loading, null=error
+
+  useEffect(() => {
+    fetch('/agents-page/stats.json', { cache: 'no-store' })
+      .then(r => { if (!r.ok) throw new Error(); return r.json(); })
+      .then(setStats)
+      .catch(() => setStats(null));
+  }, []);
+
+  const fmtIST = (d) =>
+    d.toLocaleString(lang === "ta" ? "ta-IN" : "en-IN", {
+      timeZone: "Asia/Kolkata", day: "2-digit", month: "short",
+      hour: "2-digit", minute: "2-digit", hour12: false,
+    });
+
+  const latestEntry = useMemo(() => {
+    let best = null;
+    for (const ev of TIMELINE) {
+      const d = new Date((ev.date || "").split(" ·")[0]);
+      if (!isNaN(d) && (!best || d > best)) best = d;
+    }
+    return best;
+  }, []);
+
+  // Loading or unavailable -> original clock
+  if (!stats || !stats.as_of) {
+    return (
+      <span className="font-mono-d text-[11px] uppercase tracking-[0.2em] text-stone-400">
+        {fmtIST(now)} IST
+      </span>
+    );
+  }
+
+  const asOf = new Date(stats.as_of);
+  const ageHrs = (now - asOf) / 3600000;
+  const run = stats.last_run || {};
+  const cand = run.candidates ?? null;
+  const errs = run.errors ?? 0;
+  const failed = cand !== null && cand > 0 && errs >= cand;
+  const stale = ageHrs > 24;
+
+  let color = "text-stone-400", text;
+  if (failed) {
+    color = "text-red-400";
+    text = `last run failed (${errs}/${cand} errors) · ${fmtIST(asOf)} IST`;
+  } else if (stale) {
+    color = "text-amber-400";
+    text = `no agent check-in in last 24h · last ${fmtIST(asOf)} IST`;
+  } else {
+    text = `last check-in ${fmtIST(asOf)} IST`;
+    if (cand !== null) text += ` · ${cand} candidates · ${run.published ?? 0} published`;
+  }
+
+  return (
+    <>
+      <span className={`font-mono-d text-[11px] uppercase tracking-[0.2em] ${color}`}>{text}</span>
+      {latestEntry && (
+        <>
+          <span className="text-stone-600">·</span>
+          <span className="font-mono-d text-[11px] uppercase tracking-[0.2em] text-stone-400">
+            latest entry {latestEntry.toLocaleDateString("en-IN", { day: "2-digit", month: "short" })}
+          </span>
+        </>
+      )}
+    </>
+  );
+}
+
+// ============================================================================
 // AgentTicker — git log style strip of recent agent activity
 // Fetches /agents-page/stats.json and shows last few commits by cmvijay-agent
 // ============================================================================
@@ -2432,15 +2506,7 @@ export default function CMVijayAI() {
               {t.live}
             </span>
             <span className="text-stone-600">·</span>
-            <span className="font-mono-d text-[11px] uppercase tracking-[0.2em] text-stone-400">
-              {now.toLocaleString(lang === "ta" ? "ta-IN" : "en-IN", {
-                timeZone: "Asia/Kolkata",
-                hour: "2-digit",
-                minute: "2-digit",
-                day: "2-digit",
-                month: "short",
-              })} IST
-            </span>
+            <AgentCheckin now={now} lang={lang} />
             {CURRENT_STATUS === "yes" && (
               <>
                 <span className="text-stone-600">·</span>

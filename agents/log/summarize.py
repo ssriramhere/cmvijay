@@ -145,6 +145,25 @@ def build_stats(events: list[dict]) -> dict:
         "skipped_list": skipped_list,
         # For homepage git log ticker (all commit types by cmvijay-agent)
         "recent_commits": recent_commits[:10],
+        "last_run": _get_last_run(events),
+    }
+
+
+def _get_last_run(events: list[dict]) -> dict | None:
+    """Latest orchestrator summary + matching verifier run_summary -> header status."""
+    orch = [e for e in events if e.get("agent") == "orchestrator" and e.get("type") == "summary"]
+    if not orch:
+        return None
+    o = max(orch, key=lambda e: e.get("ts", ""))
+    ver = [e for e in events if e.get("agent") == "verifier" and e.get("type") == "run_summary"
+           and e.get("ts", "") <= o.get("ts", "")]
+    v = max(ver, key=lambda e: e.get("ts", "")) if ver else {}
+    return {
+        "ts": o.get("ts"),
+        "candidates": o.get("candidates", 0),
+        "published": o.get("autonomous_commits", 0),
+        "escalated": o.get("escalated", 0),
+        "errors": v.get("error", 0),
     }
 
 
