@@ -57,6 +57,9 @@ jobs:
         run: |
           if git log HEAD ^origin/master --oneline | grep .; then
             echo "Autonomous commits detected — pushing"
+            git config user.name "cmvijay-agent"
+            git config user.email "cmvijay-agent@users.noreply.github.com"
+            git pull --rebase origin master
             git push origin HEAD:master
           else
             echo "No autonomous commits to push"
