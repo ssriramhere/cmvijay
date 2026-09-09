@@ -1,16 +1,16 @@
 {
   "period": "Rolling 30 days",
-  "as_of": "2026-09-08T23:14:49.572243+05:30",
-  "candidates_surfaced": 237,
+  "as_of": "2026-09-09T09:23:54.596644+05:30",
+  "candidates_surfaced": 241,
   "auto_verified": 28,
   "auto_verified_pct": 12,
   "escalated": 21,
   "escalated_pct": 9,
   "autonomous_commits": 20,
   "operator_edited": 0,
-  "skipped": 50,
-  "cost_this_month_usd": 5.47,
-  "cost_per_published_entry_usd": 0.27,
+  "skipped": 54,
+  "cost_this_month_usd": 5.58,
+  "cost_per_published_entry_usd": 0.28,
   "autonomous_commits_list": [],
   "escalated_list": [
     {
@@ -314,6 +314,26 @@
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/residents-welcome-closure-of-tasmac-outlet-near-nursing-college-on-arcot-road-in-vellore/article71365020.ece",
       "skip_reason": "This article describes the closure of a single TASMAC outlet in Vellore's Kagithapattarai area near a nursing college on Arcot Road, framed as a community-welcome story following a prior The Hindu rep"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/villagers-oppose-opening-of-new-tasmac-outlet-in-tiruvannamalai/article71442666.ece",
+      "skip_reason": "This article reports a localised civic protest by villagers against the opening of a single TASMAC outlet in Karai village, Tiruvannamalai. While the article is factually coherent and well-sourced (Th"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-government-transfers-27-ias-officers-in-major-bureaucratic-reshuffle/article71443826.ece",
+      "skip_reason": "This is a routine bureaucratic reshuffle with no manifesto promise mapping and no direct policy implication surfaced in the candidate summary. The site state shows no prior entry to contradict or upda"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/when-karunanidhi-attempted-a-revamp-of-the-dmk-in-in-tamil-nadu-in-1999/article71444144.ece",
+      "skip_reason": "This article is a historical retrospective about Karunanidhi's 1999 DMK party revamp, pegged to M.K. Stalin's post-2026-election opposition party reorganization. The subject is entirely about DMK inte"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/beyond-fort-st-george-tamil-nadu-governments-quest-for-an-assembly-secretariat-site-is-more-than-a-century-old/article71441612.ece",
+      "skip_reason": "This article is a historical/archival feature piece by The Hindu tracing over a century of proposals to relocate Tamil Nadu's Assembly-Secretariat complex, from an 1896 proposal through various coloni"
     }
   ],
   "recent_commits": []
