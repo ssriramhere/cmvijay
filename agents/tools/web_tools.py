@@ -207,32 +207,92 @@ def read_site_state(topic_keywords: str) -> dict[str, Any]:
     return {"topic_keywords": topic_keywords, "matches": relevant}
 
 
-def read_manifesto_promise(query: str) -> dict[str, Any]:
-    """Look up a manifesto promise from known_claims.json by ID or keyword."""
+def _load_manifesto() -> list[dict[str, Any]]:
+    """Parse the MANIFESTO array out of index.html (the scorecard's source of truth)."""
+    import re
     from pathlib import Path
+    index_path = Path(__file__).resolve().parent.parent.parent / "index.html"
+    if not index_path.exists():
+        return []
+    html = index_path.read_text(encoding="utf-8")
+    i = html.find("const MANIFESTO = [")
+    if i < 0:
+        return []
+    j = html.find("\n];", i)
+    block = html[i:j]
+    pat = re.compile(
+        r'\{\s*id:\s*"([^"]+)",\s*category:\s*"([^"]+)",\s*text:\s*"([^"]+)",'
+        r'\s*status:\s*"([^"]+)",\s*sources:\s*\[([^\]]*)\]'
+    )
+    out = []
+    for m in pat.finditer(block):
+        out.append({
+            "id": m.group(1),
+            "category": m.group(2),
+            "text": m.group(3),
+            "status": m.group(4),
+            "sources": [int(x) for x in re.findall(r"\d+", m.group(5))],
+        })
+    return out
+
+
+def read_manifesto_promise(query: str) -> dict[str, Any]:
+    """Look up a manifesto promise by ID or keywords.
+
+    Searches the full MANIFESTO scorecard in index.html (all statuses, including
+    pending). known_claims.json reasoning is attached when available.
+    """
+    from pathlib import Path
+    promises = _load_manifesto()
+    if not promises:
+        return {"error": "could not parse MANIFESTO from index.html"}
+
+    # Supplementary reasoning from known_claims.json (partial / in_progress only)
+    extra: dict[str, dict] = {}
     state_path = Path(__file__).resolve().parent.parent / "state" / "known_claims.json"
-    if not state_path.exists():
-        return {"error": "known_claims.json not found"}
-    state = json.loads(state_path.read_text(encoding="utf-8"))
-    scorecard = state.get("scorecard_status_summary", {})
+    if state_path.exists():
+        try:
+            sc = json.loads(state_path.read_text(encoding="utf-8")).get("scorecard_status_summary", {})
+            for kind in ("partial_promises", "in_progress_promises"):
+                for p in sc.get(kind, []):
+                    if p.get("id"):
+                        extra[p["id"]] = p
+        except Exception:
+            pass
+
+    def enrich(p: dict) -> dict:
+        e = extra.get(p["id"])
+        if e:
+            reason = e.get("why_partial") or e.get("why_in_progress")
+            if reason:
+                return {**p, "known_claims_note": reason}
+        return p
 
     query_l = query.lower().strip()
-    # Try exact ID match first
-    for kind in ("partial_promises", "in_progress_promises"):
-        for p in scorecard.get(kind, []):
-            if p.get("id", "").lower() == query_l:
-                return {"query": query, "match": p, "match_type": kind}
 
-    # Keyword match against promise reasoning
-    matches = []
-    for kind in ("partial_promises", "in_progress_promises"):
-        for p in scorecard.get(kind, []):
-            reason = (p.get("why_partial") or p.get("why_in_progress") or "").lower()
-            if query_l in p.get("id", "").lower() or query_l in reason:
-                matches.append({**p, "match_kind": kind})
-    if matches:
-        return {"query": query, "matches": matches}
-    return {"query": query, "matches": [], "note": "No matching promise found in known_claims.json"}
+    # 1. Exact ID
+    for p in promises:
+        if p["id"].lower() == query_l:
+            return {"query": query, "match": enrich(p), "match_type": "id"}
+
+    # 2. Keyword scoring against id + category + text
+    stop = {"the", "for", "and", "all", "per", "every", "with", "from", "scheme", "free", "tamil", "nadu"}
+    tokens = [w for w in re.findall(r"[a-z0-9]+", query_l) if len(w) > 2 and w not in stop]
+    scored = []
+    for p in promises:
+        hay = f"{p['id']} {p['category']} {p['text']}".lower()
+        score = sum(1 for w in tokens if w in hay)
+        if score:
+            scored.append((score, p))
+    scored.sort(key=lambda x: -x[0])
+    if scored:
+        return {
+            "query": query,
+            "matches": [enrich(p) for _, p in scored[:5]],
+            "note": f"{len(promises)} promises searched; top matches by keyword overlap",
+        }
+    return {"query": query, "matches": [],
+            "note": f"No matching promise among {len(promises)} in MANIFESTO"}
 
 
 TOOL_IMPLS = {

@@ -175,6 +175,7 @@ def _get_recent_agent_commits() -> list[dict]:
     try:
         result = subprocess.run(
             ["git", "log", "--author=cmvijay-agent",
+             "-E", "--grep=^agent(-approve|-undo)?:",
              "-n", "20",
              "--pretty=format:%h|%s|%aI"],
             cwd=REPO_ROOT,
