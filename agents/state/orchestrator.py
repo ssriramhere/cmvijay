@@ -50,6 +50,10 @@ def run() -> None:
     if candidates:
         from verifier.verifier import run as verifier_run
         verified = verifier_run()
+        errored = [v for v in verified if v.get("error")]
+        if verified and len(errored) == len(verified):
+            print(f"FATAL: verifier failed on all {len(verified)} candidates: {errored[0]['error']}", file=sys.stderr)
+            sys.exit(1)
     else:
         verified = []
 

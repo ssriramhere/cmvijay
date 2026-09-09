@@ -72,7 +72,7 @@ def call(
     kwargs: dict[str, Any] = {
         "model": model,
         "max_tokens": max_tokens,
-        "temperature": temperature,
+        "extra_body": {"temperature": temperature},
         "messages": [{"role": "user", "content": user_prompt}],
     }
     if system_param is not None:
@@ -142,7 +142,7 @@ def call_with_tools(
         kwargs: dict[str, Any] = {
             "model": model,
             "max_tokens": max_tokens,
-            "temperature": temperature,
+            "extra_body": {"temperature": temperature},
             "tools": tools,
             "messages": messages,
         }
