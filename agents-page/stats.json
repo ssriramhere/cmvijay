@@ -1,17 +1,102 @@
 {
   "period": "Rolling 30 days",
-  "as_of": "2026-09-09T09:23:54.596644+05:30",
-  "candidates_surfaced": 241,
-  "auto_verified": 28,
-  "auto_verified_pct": 12,
-  "escalated": 21,
-  "escalated_pct": 9,
-  "autonomous_commits": 20,
+  "as_of": "2026-09-09T23:05:17.676990+05:30",
+  "candidates_surfaced": 244,
+  "auto_verified": 37,
+  "auto_verified_pct": 15,
+  "escalated": 26,
+  "escalated_pct": 11,
+  "autonomous_commits": 29,
   "operator_edited": 0,
-  "skipped": 54,
-  "cost_this_month_usd": 5.58,
-  "cost_per_published_entry_usd": 0.28,
-  "autonomous_commits_list": [],
+  "skipped": 55,
+  "cost_this_month_usd": 6.6,
+  "cost_per_published_entry_usd": 0.23,
+  "autonomous_commits_list": [
+    {
+      "sha": "e0e49ba",
+      "prefix": "agent",
+      "title": "🔵 TVK-led alliance formally named Secular Social Justice Victory Alliance",
+      "timestamp": "2026-09-09T17:35:13Z"
+    },
+    {
+      "sha": "00d4638",
+      "prefix": "agent",
+      "title": "🟢 Thaimaman Thanga Mothiram GO issued — ₹755.83 cr newborn gold ring scheme, ten",
+      "timestamp": "2026-09-09T06:34:37Z"
+    },
+    {
+      "sha": "c29bd6d",
+      "prefix": "agent",
+      "title": "🟢 Annapoorani Super Six Scheme announced — 3 LPG cylinders/year via DBT from Pon",
+      "timestamp": "2026-09-09T06:23:58Z"
+    },
+    {
+      "sha": "91e9082",
+      "prefix": "agent",
+      "title": "🟢 CM Mr. Vijay announces 29,108 new police posts over five years, 10,000 recruit",
+      "timestamp": "2026-09-09T05:39:04Z"
+    },
+    {
+      "sha": "881ae86",
+      "prefix": "agent",
+      "title": "🟢 Handloom weavers get 10% wage and DA hike; TN Knitwear Board to be established",
+      "timestamp": "2026-09-09T05:39:04Z"
+    },
+    {
+      "sha": "4fb84ad",
+      "prefix": "agent",
+      "title": "🟢 Social Welfare Minister announces ₹3.80 cr State drug abuse prevention plan in",
+      "timestamp": "2026-09-09T05:39:04Z"
+    },
+    {
+      "sha": "914e18c",
+      "prefix": "agent",
+      "title": "🟢 Vettri Payanam expanded to deluxe and mofussil buses — October 2 effective, ₹6",
+      "timestamp": "2026-09-09T05:39:03Z"
+    },
+    {
+      "sha": "ed558af",
+      "prefix": "agent",
+      "title": "🟢 CM announces 29,108 new police posts over five years; ₹212 cr modernisation al",
+      "timestamp": "2026-09-09T05:05:41Z"
+    },
+    {
+      "sha": "6efbaba",
+      "prefix": "agent",
+      "title": "🟢 Handloom weavers get 10% wage and DA hike; TN Knitwear Board and Silk Export C",
+      "timestamp": "2026-09-09T05:05:41Z"
+    },
+    {
+      "sha": "1768be6",
+      "prefix": "agent",
+      "title": "🟢 Tamil Nadu announces ₹3.80 cr drug abuse prevention plan targeting children an",
+      "timestamp": "2026-09-09T05:05:41Z"
+    },
+    {
+      "sha": "a68b935",
+      "prefix": "agent",
+      "title": "🟢 Vettri Payanam expanded — free bus travel for women extended to Express, Delux",
+      "timestamp": "2026-09-09T05:05:40Z"
+    },
+    {
+      "sha": "3acc985",
+      "prefix": "agent",
+      "title": "⚖️ Madras HC upholds TN order placing Tamil Thai Vazhthu first at official event",
+      "timestamp": "2026-08-20T14:22:03Z"
+    },
+    {
+      "sha": "1da11f2",
+      "prefix": "agent",
+      "title": "⚖️ Madras HC upholds Speaker's decision to drop disqualification of 21 AIADMK ML",
+      "timestamp": "2026-08-20T14:22:02Z"
+    },
+    {
+      "sha": "133248a",
+      "prefix": "agent",
+      "title": "🟢 WRD announces 27 check dams across 13 districts for ₹206.75 crore",
+      "timestamp": "2026-08-20T14:22:02Z"
+    }
+  ],
   "escalated_list": [
     {
       "title": "",
@@ -112,6 +197,21 @@
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/tn-govt-to-formulate-state-cooperative-policy-minister-gandhiraj/article71368856.ece",
       "reasoning": "The Hindu confirms Minister V. Gandhiraj made an Assembly announcement on August 20, 2026 about formulating a State Cooperative Policy, with several concrete monetary allocations (₹7,015 crore Singa Pengal scheme, ₹5,000 crore rural loans, ₹15 crore PDS buildings, etc.). No existing site entry confl"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-government-to-reimburse-money-for-three-lpg-cylinders-annually-from-pongal-2027-cm-vijay/article71383242.ece",
+      "reasoning": "The article is well-sourced (The Hindu + India Today corroboration) and the core facts are verified: CM Mr. Vijay announced the 'Annapoorani Super Six Scheme' on August 24, 2026, reimbursing 3 LPG cylinders/year via DBT from Pongal 2027 for ~1.30 crore families at ~₹4,000 crore/year. However, escala"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/explained-what-is-the-tamil-nadu-government-one-gram-gold-ring-scheme-of-thaimaman-thanga-mothiram/article71399218.ece",
+      "reasoning": "The article is well-sourced and corroborated by a second The Hindu article (Aug 22, 2026) confirming work orders, the ₹755.83 crore government order, and the September 15 launch date. No contradictions with existing site state and no duplicate entry exists. However, escalation is warranted for two r"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-cm-vijay-to-travel-to-london-on-first-official-overseas-visit-gold-ring-scheme-launch-postponed/article71445870.ece",
+      "reasoning": "The London visit is well-confirmed by two whitelisted sources (The Hindu and ANI) with consistent core facts — departure date Sept 10, arrival Sept 11, week-long stay, investment-attraction purpose, MoU signings, Tamil diaspora meeting, and motorsport circuit visit. However, there is a notable numer"
     }
   ],
   "skipped_list": [
@@ -334,7 +434,80 @@
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/beyond-fort-st-george-tamil-nadu-governments-quest-for-an-assembly-secretariat-site-is-more-than-a-century-old/article71441612.ece",
       "skip_reason": "This article is a historical/archival feature piece by The Hindu tracing over a century of proposals to relocate Tamil Nadu's Assembly-Secretariat complex, from an 1896 proposal through various coloni"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/dmk-to-stage-demonstrations-against-tamil-nadu-cm-vijays-remarks-on-stalin-in-assembly/article71446543.ece",
+      "skip_reason": "This article covers DMK's announcement of protest demonstrations against CM Mr. Vijay's Assembly remarks about M.K. Stalin — a classic instance of inter-party political sparring and factional manoeuvr"
     }
   ],
-  "recent_commits": []
+  "recent_commits": [
+    {
+      "sha": "e0e49ba",
+      "prefix": "agent",
+      "title": "🔵 TVK-led alliance formally named Secular Social Justice Victory Alliance",
+      "timestamp": "2026-09-09T17:35:13Z"
+    },
+    {
+      "sha": "3f89005",
+      "prefix": "operator",
+      "title": "Header dot and label follow agent state; ticker includes operator commits to index.html",
+      "timestamp": "2026-09-09T12:23:52+05:30"
+    },
+    {
+      "sha": "66bd04f",
+      "prefix": "operator",
+      "title": "Header: show real agent check-in state from stats.json; fix 'Day N days'; scorecard: 4 flips + sources from Aug 21–Sep 8",
+      "timestamp": "2026-09-09T12:15:12+05:30"
+    },
+    {
+      "sha": "00d4638",
+      "prefix": "agent",
+      "title": "🟢 Thaimaman Thanga Mothiram GO issued — ₹755.83 cr newborn gold ring scheme, ten",
+      "timestamp": "2026-09-09T06:34:37Z"
+    },
+    {
+      "sha": "c29bd6d",
+      "prefix": "agent",
+      "title": "🟢 Annapoorani Super Six Scheme announced — 3 LPG cylinders/year via DBT from Pon",
+      "timestamp": "2026-09-09T06:23:58Z"
+    },
+    {
+      "sha": "c8b9cab",
+      "prefix": "agent-undo",
+      "title": "remove entries added by ed558af",
+      "timestamp": "2026-09-09T06:05:43Z"
+    },
+    {
+      "sha": "d934d70",
+      "prefix": "agent-undo",
+      "title": "remove entries added by 6efbaba",
+      "timestamp": "2026-09-09T06:05:27Z"
+    },
+    {
+      "sha": "1fea99a",
+      "prefix": "agent-undo",
+      "title": "remove entries added by 1768be6",
+      "timestamp": "2026-09-09T06:05:12Z"
+    },
+    {
+      "sha": "0c65b8b",
+      "prefix": "agent-undo",
+      "title": "remove entries added by a68b935",
+      "timestamp": "2026-09-09T06:04:45Z"
+    },
+    {
+      "sha": "91e9082",
+      "prefix": "agent",
+      "title": "🟢 CM Mr. Vijay announces 29,108 new police posts over five years, 10,000 recruit",
+      "timestamp": "2026-09-09T05:39:04Z"
+    }
+  ],
+  "last_run": {
+    "ts": "2026-09-09T23:05:13.436871+05:30",
+    "candidates": 3,
+    "published": 1,
+    "escalated": 1,
+    "errors": 0
+  }
 }

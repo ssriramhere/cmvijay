@@ -1,5 +1,77 @@
 [
   {
+    "title": "🔵 TVK-led alliance formally named Secular Social Justice Victory Alliance",
+    "date": "September 9, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 808,
+        "output_tokens": 744,
+        "cache_read_tokens": 0,
+        "cache_creation_tokens": 1373
+      }
+    }
+  },
+  {
+    "title": "🟢 CM Mr. Vijay announces 29,108 new police posts over five years, 10,000 recruits this year",
+    "date": "September 3, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 977,
+        "output_tokens": 765,
+        "cache_read_tokens": 1373,
+        "cache_creation_tokens": 0
+      }
+    }
+  },
+  {
+    "title": "🟢 Handloom weavers get 10% wage and DA hike; TN Knitwear Board to be established",
+    "date": "September 1, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 929,
+        "output_tokens": 709,
+        "cache_read_tokens": 1373,
+        "cache_creation_tokens": 0
+      }
+    }
+  },
+  {
+    "title": "🟢 Social Welfare Minister announces ₹3.80 cr State drug abuse prevention plan in Assembly",
+    "date": "August 31, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 919,
+        "output_tokens": 748,
+        "cache_read_tokens": 1373,
+        "cache_creation_tokens": 0
+      }
+    }
+  },
+  {
+    "title": "🟢 Vettri Payanam expanded to deluxe and mofussil buses — October 2 effective, ₹6,000 cr annual cost",
+    "date": "August 24, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 831,
+        "output_tokens": 811,
+        "cache_read_tokens": 0,
+        "cache_creation_tokens": 1373
+      }
+    }
+  },
+  {
+    "title": "🟢 Annapoorani Super Six Scheme announced — 3 LPG cylinders/year via DBT from Pongal 2027",
+    "date": "August 24, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 1086,
+        "output_tokens": 927,
+        "cache_read_tokens": 1373,
+        "cache_creation_tokens": 0
+      }
+    }
+  },
+  {
     "title": "🟢 CM Mr. Vijay announces ₹1 lakh/month constituency support package for all 234 MLAs",
     "date": "August 19, 2026",
     "reasoning": {
@@ -227,6 +299,18 @@
     "title": "⚖️ TN government moves Supreme Court on Cauvery water release",
     "date": "August 3, 2026",
     "reasoning": null
+  },
+  {
+    "title": "🟢 Thaimaman Thanga Mothiram GO issued — ₹755.83 cr newborn gold ring scheme, tenders awarded",
+    "date": "June 23, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 931,
+        "output_tokens": 899,
+        "cache_read_tokens": 1373,
+        "cache_creation_tokens": 0
+      }
+    }
   },
   {
     "title": "📅 17th TN Assembly convenes for first session; Governor Arlekar addresses joint sitting — 'dawn of new era'",
