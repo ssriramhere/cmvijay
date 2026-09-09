@@ -61,7 +61,7 @@ jobs:
             echo "Backfill commits detected — pushing"
             git config user.name "cmvijay-agent"
             git config user.email "cmvijay-agent@users.noreply.github.com"
-            git pull --rebase origin master
+            git pull --rebase --autostash origin master
             git push origin HEAD:master
           else
             echo "No backfill commits to push"
