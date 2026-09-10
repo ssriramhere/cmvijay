@@ -1,11 +1,35 @@
 [
   {
+    "title": "🔵 TVK fields two ex-AIADMK MLAs in October 6 Madurantakam, Dharapuram bypolls",
+    "date": "September 10, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 1005,
+        "output_tokens": 899,
+        "cache_read_tokens": 1373,
+        "cache_creation_tokens": 0
+      }
+    }
+  },
+  {
     "title": "🔵 TVK-led alliance formally named Secular Social Justice Victory Alliance",
     "date": "September 9, 2026",
     "reasoning": {
       "drafter_usage": {
         "input_tokens": 808,
         "output_tokens": 744,
+        "cache_read_tokens": 0,
+        "cache_creation_tokens": 1373
+      }
+    }
+  },
+  {
+    "title": "🔵 ECI grants TVK State party status; 'Whistle' symbol reserved",
+    "date": "September 9, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 673,
+        "output_tokens": 683,
         "cache_read_tokens": 0,
         "cache_creation_tokens": 1373
       }

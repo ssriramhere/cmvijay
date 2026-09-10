@@ -1,17 +1,29 @@
 {
   "period": "Rolling 30 days",
-  "as_of": "2026-09-09T23:05:17.676990+05:30",
-  "candidates_surfaced": 244,
-  "auto_verified": 37,
+  "as_of": "2026-09-10T23:04:46.056734+05:30",
+  "candidates_surfaced": 255,
+  "auto_verified": 39,
   "auto_verified_pct": 15,
-  "escalated": 26,
+  "escalated": 27,
   "escalated_pct": 11,
-  "autonomous_commits": 29,
+  "autonomous_commits": 31,
   "operator_edited": 0,
-  "skipped": 55,
-  "cost_this_month_usd": 6.6,
+  "skipped": 63,
+  "cost_this_month_usd": 6.99,
   "cost_per_published_entry_usd": 0.23,
   "autonomous_commits_list": [
+    {
+      "sha": "74fc7b1",
+      "prefix": "agent",
+      "title": "🔵 TVK fields two ex-AIADMK MLAs in October 6 Madurantakam, Dharapuram bypolls",
+      "timestamp": "2026-09-10T17:34:41Z"
+    },
+    {
+      "sha": "9de7da7",
+      "prefix": "agent",
+      "title": "🔵 ECI grants TVK State party status; 'Whistle' symbol reserved",
+      "timestamp": "2026-09-10T17:34:41Z"
+    },
     {
       "sha": "e0e49ba",
       "prefix": "agent",
@@ -83,18 +95,6 @@
       "prefix": "agent",
       "title": "⚖️ Madras HC upholds TN order placing Tamil Thai Vazhthu first at official event",
       "timestamp": "2026-08-20T14:22:03Z"
-    },
-    {
-      "sha": "1da11f2",
-      "prefix": "agent",
-      "title": "⚖️ Madras HC upholds Speaker's decision to drop disqualification of 21 AIADMK ML",
-      "timestamp": "2026-08-20T14:22:02Z"
-    },
-    {
-      "sha": "133248a",
-      "prefix": "agent",
-      "title": "🟢 WRD announces 27 check dams across 13 districts for ₹206.75 crore",
-      "timestamp": "2026-08-20T14:22:02Z"
     }
   ],
   "escalated_list": [
@@ -212,6 +212,11 @@
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-cm-vijay-to-travel-to-london-on-first-official-overseas-visit-gold-ring-scheme-launch-postponed/article71445870.ece",
       "reasoning": "The London visit is well-confirmed by two whitelisted sources (The Hindu and ANI) with consistent core facts — departure date Sept 10, arrival Sept 11, week-long stay, investment-attraction purpose, MoU signings, Tamil diaspora meeting, and motorsport circuit visit. However, there is a notable numer"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/cities/Tiruchirapalli/281-crore-set-aside-for-safety-measures-ahead-of-northeast-monsoon-in-nagapattinam-minister/article71451543.ece",
+      "reasoning": "The article is a credible, well-detailed report from The Hindu about a legitimate governance action — a ministerial review meeting with a specific ₹281 crore allocation for northeast monsoon preparedness in Nagapattinam. However, the specific figure and meeting details are single-sourced (The Hindu "
     }
   ],
   "skipped_list": [
@@ -439,9 +444,61 @@
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/dmk-to-stage-demonstrations-against-tamil-nadu-cm-vijays-remarks-on-stalin-in-assembly/article71446543.ece",
       "skip_reason": "This article covers DMK's announcement of protest demonstrations against CM Mr. Vijay's Assembly remarks about M.K. Stalin — a classic instance of inter-party political sparring and factional manoeuvr"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/the-word-secular-in-tvk-led-alliances-name-is-a-lie-alleges-tamil-nadu-bjp-chief-nainar-nagenthran/article71450867.ece",
+      "skip_reason": "This article is a political opposition statement by Tamil Nadu BJP chief Nainar Nagenthran criticising the TVK-led alliance's use of the word 'secular' in its name. It contains no governance action, n"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/cities/Tiruchirapalli/tvk-government-immature-lacks-clarity-on-governance-alleges-dhinakaran/article71450775.ece",
+      "skip_reason": "This article is a press statement by opposition leader T.T.V. Dhinakaran (AMMK) criticising the TVK government as 'immature' and announcing electoral support for AIADMK in upcoming bypolls. It contain"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/cm-vijays-body-language-during-assembly-speech-was-not-dignified-thirumavalavan/article71447298.ece",
+      "skip_reason": "This article is purely political commentary and factional manoeuvring — VCK chief Thirumavalavan criticising CM Mr. Vijay's body language during an Assembly speech, alleging it 'body-shamed' oppositio"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/my-jaws-were-indeed-broken-in-jail-during-emergency-mk-stalin-responds-to-tamil-nadu-cm-vijay/article71450043.ece",
+      "skip_reason": "This article is a political/factional exchange between opposition leader MK Stalin and CM Mr. Vijay over a body-language gesture made during an Assembly speech on September 7, 2026. Stalin is respondi"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/dmk-chief-stalin-accuses-cm-vijay-of-using-reels-to-cover-administrative-failures/article71450098.ece",
+      "skip_reason": "This article reports a DMK opposition leader (M.K. Stalin) releasing a social media video criticising CM Mr. Vijay's governance record. It is squarely political speech and factional manoeuvring with n"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/a-g-plays-video-clips-of-tamil-nadu-assembly-proceedings-before-madras-high-court-in-case-against-mekedatu-amended-resolution/article71446603.ece",
+      "skip_reason": "This article reports on a procedural hearing step — the Advocate General playing video clips of Assembly proceedings before the Madras High Court — in an ongoing writ petition filed by AIADMK whip Agr"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/palaniswami-accuses-tvk-govt-of-being-negligent-towards-paddy-procurement/article71447633.ece",
+      "skip_reason": "This article reports an opposition press statement by AIADMK general secretary Edappadi K. Palaniswami criticising the TVK government — it is not a governance action by CM Mr. Vijay or the TVK adminis"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/i-admire-chief-minister-vijay-for-his-drive-against-corruption-in-tamil-nadu-says-keralam-home-minister/article71447061.ece",
+      "skip_reason": "The article is a speech by Kerala's Home Minister Ramesh Chennithala at VIT's Onam cultural festival in Vellore, praising CM Mr. Vijay's anti-corruption stance. This is a third-party political complim"
     }
   ],
   "recent_commits": [
+    {
+      "sha": "74fc7b1",
+      "prefix": "agent",
+      "title": "🔵 TVK fields two ex-AIADMK MLAs in October 6 Madurantakam, Dharapuram bypolls",
+      "timestamp": "2026-09-10T17:34:41Z"
+    },
+    {
+      "sha": "9de7da7",
+      "prefix": "agent",
+      "title": "🔵 ECI grants TVK State party status; 'Whistle' symbol reserved",
+      "timestamp": "2026-09-10T17:34:41Z"
+    },
     {
       "sha": "e0e49ba",
       "prefix": "agent",
@@ -489,24 +546,12 @@
       "prefix": "agent-undo",
       "title": "remove entries added by 1768be6",
       "timestamp": "2026-09-09T06:05:12Z"
-    },
-    {
-      "sha": "0c65b8b",
-      "prefix": "agent-undo",
-      "title": "remove entries added by a68b935",
-      "timestamp": "2026-09-09T06:04:45Z"
-    },
-    {
-      "sha": "91e9082",
-      "prefix": "agent",
-      "title": "🟢 CM Mr. Vijay announces 29,108 new police posts over five years, 10,000 recruit",
-      "timestamp": "2026-09-09T05:39:04Z"
     }
   ],
   "last_run": {
-    "ts": "2026-09-09T23:05:13.436871+05:30",
-    "candidates": 3,
-    "published": 1,
+    "ts": "2026-09-10T23:04:41.976164+05:30",
+    "candidates": 11,
+    "published": 2,
     "escalated": 1,
     "errors": 0
   }
