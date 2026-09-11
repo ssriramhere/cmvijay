@@ -1,11 +1,35 @@
 [
   {
+    "title": "⚖️ Madras HC declines interim stay on TN digital driving licence rollout",
+    "date": "September 11, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 801,
+        "output_tokens": 677,
+        "cache_read_tokens": 1373,
+        "cache_creation_tokens": 0
+      }
+    }
+  },
+  {
     "title": "🔵 TVK fields two ex-AIADMK MLAs in October 6 Madurantakam, Dharapuram bypolls",
     "date": "September 10, 2026",
     "reasoning": {
       "drafter_usage": {
         "input_tokens": 1005,
         "output_tokens": 899,
+        "cache_read_tokens": 1373,
+        "cache_creation_tokens": 0
+      }
+    }
+  },
+  {
+    "title": "🟢 CM Mr. Vijay departs for U.K. on first official overseas visit — MoUs, diaspora meetings planned",
+    "date": "September 10, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 991,
+        "output_tokens": 783,
         "cache_read_tokens": 1373,
         "cache_creation_tokens": 0
       }

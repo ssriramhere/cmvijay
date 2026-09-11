@@ -1,17 +1,29 @@
 {
   "period": "Rolling 30 days",
-  "as_of": "2026-09-10T23:04:46.056734+05:30",
-  "candidates_surfaced": 255,
-  "auto_verified": 39,
-  "auto_verified_pct": 15,
-  "escalated": 27,
+  "as_of": "2026-09-11T23:05:15.225338+05:30",
+  "candidates_surfaced": 262,
+  "auto_verified": 41,
+  "auto_verified_pct": 16,
+  "escalated": 28,
   "escalated_pct": 11,
-  "autonomous_commits": 31,
+  "autonomous_commits": 33,
   "operator_edited": 0,
-  "skipped": 63,
-  "cost_this_month_usd": 6.99,
-  "cost_per_published_entry_usd": 0.23,
+  "skipped": 67,
+  "cost_this_month_usd": 7.37,
+  "cost_per_published_entry_usd": 0.22,
   "autonomous_commits_list": [
+    {
+      "sha": "0bccbb6",
+      "prefix": "agent",
+      "title": "🟢 CM Mr. Vijay departs for U.K. on first official overseas visit — MoUs, diaspor",
+      "timestamp": "2026-09-11T17:35:10Z"
+    },
+    {
+      "sha": "869261e",
+      "prefix": "agent",
+      "title": "⚖️ Madras HC declines interim stay on TN digital driving licence rollout",
+      "timestamp": "2026-09-11T17:35:10Z"
+    },
     {
       "sha": "74fc7b1",
       "prefix": "agent",
@@ -83,18 +95,6 @@
       "prefix": "agent",
       "title": "🟢 Tamil Nadu announces ₹3.80 cr drug abuse prevention plan targeting children an",
       "timestamp": "2026-09-09T05:05:41Z"
-    },
-    {
-      "sha": "a68b935",
-      "prefix": "agent",
-      "title": "🟢 Vettri Payanam expanded — free bus travel for women extended to Express, Delux",
-      "timestamp": "2026-09-09T05:05:40Z"
-    },
-    {
-      "sha": "3acc985",
-      "prefix": "agent",
-      "title": "⚖️ Madras HC upholds TN order placing Tamil Thai Vazhthu first at official event",
-      "timestamp": "2026-08-20T14:22:03Z"
     }
   ],
   "escalated_list": [
@@ -217,6 +217,11 @@
       "title": "",
       "url": "https://www.thehindu.com/news/cities/Tiruchirapalli/281-crore-set-aside-for-safety-measures-ahead-of-northeast-monsoon-in-nagapattinam-minister/article71451543.ece",
       "reasoning": "The article is a credible, well-detailed report from The Hindu about a legitimate governance action — a ministerial review meeting with a specific ₹281 crore allocation for northeast monsoon preparedness in Nagapattinam. However, the specific figure and meeting details are single-sourced (The Hindu "
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/chennais-nulm-conservancy-workers-protest-and-way-ahead-explained/article71453360.ece",
+      "reasoning": "The article documents a real, multi-source-confirmed governance development: a 16-day NULM conservancy workers' strike in Chennai was paused after the TVK government agreed to ~8 of 10 immediate demands (welfare measures, case withdrawals, food allowance), with a second round of talks scheduled for "
     }
   ],
   "skipped_list": [
@@ -484,9 +489,41 @@
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/i-admire-chief-minister-vijay-for-his-drive-against-corruption-in-tamil-nadu-says-keralam-home-minister/article71447061.ece",
       "skip_reason": "The article is a speech by Kerala's Home Minister Ramesh Chennithala at VIT's Onam cultural festival in Vellore, praising CM Mr. Vijay's anti-corruption stance. This is a third-party political complim"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tn-congress-leaders-must-explain-stance-on-ed-says-mh-jawahirullah/article71457067.ece",
+      "skip_reason": "This article is a political reaction statement from MMK leader M.H. Jawahirullah calling on Tamil Nadu Congress leaders to clarify their stance on the ED — it contains no governance action, executive "
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/sci-tech/science/biotech-sector-steadily-growing-with-over-1100-startups-in-the-last-year-k-vijayraghavan/article71456157.ece",
+      "skip_reason": "This article is a report on a panel conversation at the VIT Chennai Biotech Conclave 2026 — a private industry/academic event organised by VIT Chennai and The Hindu, not a Tamil Nadu government govern"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/cpim-leader-shanmugam-urges-tamil-nadu-government-to-convene-all-party-meeting-on-new-secretariat-site-selection/article71455451.ece",
+      "skip_reason": "This article is a political party statement — CPI(M) State Secretary P. Shanmugam demanding an all-party meeting on the Secretariat site. It contains no governance action, executive order, or policy d"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/palaniswami-callstvk-governments-move-to-build-new-assembly-secretariat-complex-unnecessary/article71455541.ece",
+      "skip_reason": "This article is an opposition press statement by AIADMK's EPS reacting to the government's Secretariat complex plan — it contains no governance action, executive order, or policy effect of its own. Pe"
     }
   ],
   "recent_commits": [
+    {
+      "sha": "0bccbb6",
+      "prefix": "agent",
+      "title": "🟢 CM Mr. Vijay departs for U.K. on first official overseas visit — MoUs, diaspor",
+      "timestamp": "2026-09-11T17:35:10Z"
+    },
+    {
+      "sha": "869261e",
+      "prefix": "agent",
+      "title": "⚖️ Madras HC declines interim stay on TN digital driving licence rollout",
+      "timestamp": "2026-09-11T17:35:10Z"
+    },
     {
       "sha": "74fc7b1",
       "prefix": "agent",
@@ -534,23 +571,11 @@
       "prefix": "agent-undo",
       "title": "remove entries added by ed558af",
       "timestamp": "2026-09-09T06:05:43Z"
-    },
-    {
-      "sha": "d934d70",
-      "prefix": "agent-undo",
-      "title": "remove entries added by 6efbaba",
-      "timestamp": "2026-09-09T06:05:27Z"
-    },
-    {
-      "sha": "1fea99a",
-      "prefix": "agent-undo",
-      "title": "remove entries added by 1768be6",
-      "timestamp": "2026-09-09T06:05:12Z"
     }
   ],
   "last_run": {
-    "ts": "2026-09-10T23:04:41.976164+05:30",
-    "candidates": 11,
+    "ts": "2026-09-11T23:05:10.715142+05:30",
+    "candidates": 7,
     "published": 2,
     "escalated": 1,
     "errors": 0
