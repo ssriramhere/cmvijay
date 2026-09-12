@@ -1,16 +1,16 @@
 {
   "period": "Rolling 30 days",
-  "as_of": "2026-09-11T23:05:15.225338+05:30",
-  "candidates_surfaced": 262,
+  "as_of": "2026-09-12T22:17:17.759798+05:30",
+  "candidates_surfaced": 270,
   "auto_verified": 41,
-  "auto_verified_pct": 16,
+  "auto_verified_pct": 15,
   "escalated": 28,
-  "escalated_pct": 11,
+  "escalated_pct": 10,
   "autonomous_commits": 33,
   "operator_edited": 0,
-  "skipped": 67,
-  "cost_this_month_usd": 7.37,
-  "cost_per_published_entry_usd": 0.22,
+  "skipped": 75,
+  "cost_this_month_usd": 7.52,
+  "cost_per_published_entry_usd": 0.23,
   "autonomous_commits_list": [
     {
       "sha": "0bccbb6",
@@ -509,6 +509,46 @@
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/palaniswami-callstvk-governments-move-to-build-new-assembly-secretariat-complex-unnecessary/article71455541.ece",
       "skip_reason": "This article is an opposition press statement by AIADMK's EPS reacting to the government's Secretariat complex plan — it contains no governance action, executive order, or policy effect of its own. Pe"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/entertainment/movies/ajith-kumar-vijay-silverstone-meeting-le-mans-cup-rajavin-parvaiyile/article71456584.ece",
+      "skip_reason": "This article is entirely about CM Mr. Vijay in his capacity as a film actor — specifically his past on-screen pairing with Ajith Kumar in 'Rajavin Parvaiyile' and a personal meeting at the Silverstone"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/entertainment/movies/vijay-meets-ajith-kumar-silverstone-le-mans-car-race-thala-thalapathy-london/article71455432.ece",
+      "skip_reason": "This article is squarely in the 'cinema/personal news about the CM' category that the scope filter explicitly excludes. It covers a social meeting between CM Mr. Vijay and actor Ajith Kumar on the sid"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/entertainment/movies/ajith-kumar-vijay-reunion-silverstone-le-mans-cup-race-tamil-superstars-thala-thalapathy-reunion/article71460925.ece",
+      "skip_reason": "This article is squarely about a personal/celebrity event — two Tamil film actors meeting at a motorsport event in Silverstone. It contains zero governance action, no executive order, no cabinet decis"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-cm-vijay-to-flag-off-silverstone-motor-race-in-uk-actor-ajith-to-compete/article71459564.ece",
+      "skip_reason": "This article describes CM Mr. Vijay attending a private motor racing event at Silverstone, UK, to flag off a race in which actor Ajith is competing. There is no governance action, executive order, pol"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-chief-minister-vijays-trip-to-uk-was-cleared-by-ministry-of-external-affairs-says-official/article71459247.ece",
+      "skip_reason": "This article is a government spokesperson rebuttal defending CM Mr. Vijay's scheduling decision — specifically, that the MEA cleared his UK trip and issued no advice to stay back for Malaysian PM Anwa"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/cities/chennai/devotees-urge-vijay-to-take-steps-to-retrieve-properties-of-nungambakkam-temple/article71369809.ece",
+      "skip_reason": "This article reports a petition by a private religious federation urging CM Mr. Vijay to act on alleged temple land alienation — it is a citizen appeal, not a governance action. No executive order, ca"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/arlekar-vijay-pay-homage-to-subramania-bharathi-immanuel-sekaran-on-their-death-anniversary/article71455211.ece",
+      "skip_reason": "This article covers CM Mr. Vijay and Governor Arlekar posting tributes on X (Twitter) to freedom fighters Subramania Bharathi and Immanuel Sekaran on their death anniversaries. This is purely ceremoni"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/cities/Coimbatore/dmkunderestimatedvijay-dealt-with-him-liberally-afterkarurstampede-saysthirumavalavan/article71456505.ece",
+      "skip_reason": "This article is a speech by VCK president Thol. Thirumavalavan at a party functionary's wedding in Dharmapuri, containing political commentary and factional criticism directed at the DMK. It makes no "
     }
   ],
   "recent_commits": [
@@ -574,10 +614,10 @@
     }
   ],
   "last_run": {
-    "ts": "2026-09-11T23:05:10.715142+05:30",
-    "candidates": 7,
-    "published": 2,
-    "escalated": 1,
+    "ts": "2026-09-12T22:17:16.252672+05:30",
+    "candidates": 8,
+    "published": 0,
+    "escalated": 0,
     "errors": 0
   }
 }
