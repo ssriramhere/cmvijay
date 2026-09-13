@@ -1,16 +1,16 @@
 {
   "period": "Rolling 30 days",
-  "as_of": "2026-09-12T22:17:17.759798+05:30",
-  "candidates_surfaced": 270,
-  "auto_verified": 41,
-  "auto_verified_pct": 15,
-  "escalated": 28,
-  "escalated_pct": 10,
-  "autonomous_commits": 33,
+  "as_of": "2026-09-13T22:48:37.247006+05:30",
+  "candidates_surfaced": 237,
+  "auto_verified": 29,
+  "auto_verified_pct": 12,
+  "escalated": 22,
+  "escalated_pct": 9,
+  "autonomous_commits": 29,
   "operator_edited": 0,
-  "skipped": 75,
-  "cost_this_month_usd": 7.52,
-  "cost_per_published_entry_usd": 0.23,
+  "skipped": 61,
+  "cost_this_month_usd": 5.64,
+  "cost_per_published_entry_usd": 0.19,
   "autonomous_commits_list": [
     {
       "sha": "0bccbb6",
@@ -98,31 +98,6 @@
     }
   ],
   "escalated_list": [
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/pil-filed-in-madras-high-court-against-online-liquor-booking-facility-introduced-by-tasmac/article71337618.ece",
-      "reasoning": "The PIL filing is confirmed by The Hindu with specific named actors (K. Balu / PMK, Chief Justice Dharmadhikari, Justice Arul Murugan) and the underlying TASMAC online booking scheme is corroborated by multiple outlets (Moneycontrol, New Indian Express, ~Aug 5–7 2026). However, the PIL filing itself"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/tvk-governments-first-big-business-game-scores-97-deals-67452-crore/article71337395.ece",
-      "reasoning": "The Hindu article is a pre-event report (published Aug 12, conclave scheduled Aug 13) — the 97 MoUs and ₹67,452 crore figures are anticipated, not yet signed, and are attributed to an unnamed 'high level source.' Minister Keerthana is quoted but does not confirm the specific monetary figures. Cross-"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/vijay-govt-complains-to-supreme-court-of-keralas-obstructionist-attitude-to-strengthening-mullaperiyar-dam/article71335571.ece",
-      "reasoning": "The article is well-sourced across two whitelisted outlets (The Hindu and The Hindu BusinessLine, same correspondent Krishnadas Rajagopal) and the core facts are consistent and verifiable — TN filed a report before the Supreme Court on August 12, 2026 alleging Kerala's non-cooperation on Mullaperiya"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/cm-vijay-likely-to-move-resolution-in-assembly-seeking-freeze-on-lok-sabha-seats-at-543/article71333417.ece",
-      "reasoning": "The candidate article is a preview piece ('likely to move') that has been superseded by a confirmed adoption event. The Hindu itself published a follow-up article confirming the Tamil Nadu Assembly formally adopted the resolution on August 12, 2026 — making the candidate article stale. The more subs"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/revenue-augmentation-committee-members-call-on-cm-vijay/article71341075.ece",
-      "reasoning": "The article bundles two distinct governance events: (1) the Revenue Augmentation Committee's first meeting with CM Mr. Vijay — a process milestone with no policy output yet — and (2) a ₹2,500 crore Hinduja Group MoU signing that The Hindu article mentions only as a brief aside but is corroborated as"
-    },
     {
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/vijay-virtually-inaugurates-infrastructure-facilities-at-sipcot-complex-in-ranipet/article71341182.ece",
@@ -225,61 +200,6 @@
     }
   ],
   "skipped_list": [
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/cm-vijay-is-determined-not-to-take-a-lot-of-loans-finance-minister/article71337521.ece",
-      "skip_reason": "This article reports a Finance Minister's speech in the Assembly defending the government's fiscal stance — specifically that CM Mr. Vijay is 'determined not to take a lot of loans' and that public we"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/two-men-arrested-for-impersonating-tn-minister-aadhav-arjuna-faking-to-broker-cabinet-berth-for-vellore-mla/article71333803.ece",
-      "skip_reason": "This is a crime-beat story about two private citizens arrested for impersonation fraud. While it involves a sitting minister's identity (Aadhav Arjuna) and a TVK MLA (M.M. Vinoth Kannan), the Tamil Na"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/former-aiadmk-it-wing-secretary-singai-g-ramachandran-joins-tvk/article71332835.ece",
-      "skip_reason": "This article reports a political party membership event — a former AIADMK functionary joining TVK — with no governance action, executive order, policy launch, or cabinet decision attached. It falls cl"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/no-new-schemes-or-fiscal-consolidation-measures-in-the-budget-says-palaniswami/article71332288.ece",
-      "skip_reason": "This article reports AIADMK opposition leader Edappadi K. Palaniswami's speech during the Assembly budget debate — it is entirely opposition political criticism of the TVK government's Revised Budget "
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/cm-vijay-likely-to-move-resolution-in-assembly-seeking-freeze-on-lok-sabha-seats-at-543/article71333417.ece",
-      "skip_reason": "The candidate article is an anticipatory/preview piece ('likely to move') published on August 11, 2026. It has been superseded by a confirmed follow-up article from The Hindu (article71335625.ece, upd"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/in-tamil-nadu-change-of-regime-often-means-change-of-scheme-names/article71331192.ece",
-      "skip_reason": "This article is an analytical/opinion-style retrospective piece by The Hindu examining the historical pattern of Tamil Nadu governments renaming schemes across party lines — Congress, AIADMK, DMK, and"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-assembly-passes-resolution-urging-centre-to-withdraw-fcra-amendment-bill/article71331638.ece",
-      "skip_reason": "The Tamil Nadu Assembly passing a resolution urging the Centre to withdraw the FCRA Amendment Bill is a political/legislative act directed at the Union Government, not a state governance action by the"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/entertainment/movies/arun-vijay-muthaiya-team-up-for-irulan-first-look-motion-poster-out/article71340222.ece",
-      "skip_reason": "This article is pure entertainment/cinema news about actor Arun Vijay and director Muthaiya's film 'Irulan'. It has zero governance content — no executive order, cabinet decision, scheme launch, or po"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/pil-filed-in-madras-high-court-against-online-liquor-booking-facility-introduced-by-tasmac/article71337618.ece",
-      "skip_reason": "This article reports the *filing* of a PIL — a preliminary legal step with no court order, stay, or governance outcome attached. The substantive underlying government action (TASMAC's online liquor bo"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/protests-demanding-drinking-water-bjp-urges-tvk-led-govt-to-act-on-war-footing/article71340189.ece",
-      "skip_reason": "This article is an opposition BJP press statement urging the TVK government to act on drinking water supply — it contains no governance action, executive order, cabinet decision, scheme launch, or pol"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/seven-judge-bench-to-hear-if-legislative-privilege-overrides-free-speech/article71340392.ece",
-      "skip_reason": "This article covers a Supreme Court procedural order scheduling a seven-judge Constitution Bench hearing for October 6, 2026, on the question of legislative privilege vs. free speech. The case origina"
-    },
     {
       "title": "",
       "url": "https://www.thehindu.com/news/cities/Coimbatore/people-regret-voting-for-the-tvk-says-former-minister-p-thangamani/article71345175.ece",
@@ -549,6 +469,41 @@
       "title": "",
       "url": "https://www.thehindu.com/news/cities/Coimbatore/dmkunderestimatedvijay-dealt-with-him-liberally-afterkarurstampede-saysthirumavalavan/article71456505.ece",
       "skip_reason": "This article is a speech by VCK president Thol. Thirumavalavan at a party functionary's wedding in Dharmapuri, containing political commentary and factional criticism directed at the DMK. It makes no "
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-faces-lesser-power-shortage-than-other-states-minister-sengottaiyan/article71463155.ece",
+      "skip_reason": "This article is a ministerial press statement by Revenue Minister Sengottaiyan containing two substantive topics, both of which fail the surface threshold. First, his Parandur airport remarks are fact"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/udhayanidhi-stalin-accuses-tvk-led-tamil-nadu-government-of-failing-to-address-power-cuts-price-rise/article71463023.ece",
+      "skip_reason": "This article is entirely an opposition political speech — Udhayanidhi Stalin (DMK Leader of Opposition) making rhetorical accusations against CM Mr. Vijay at a party function. There is no governance a"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/cities/Madurai/tvk-government-struggling-to-meet-high-power-demand-due-to-lackadaisical-attitude-aiadmk-leader-rb-udhayakumar/article71462537.ece",
+      "skip_reason": "This article is entirely an opposition political statement — AIADMK leader R.B. Udhayakumar issuing a press release criticising the TVK government's handling of power demand. It contains no governance"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/dmk-mp-raja-regrets-remarks-against-tvk-minister-nirmal-kumar/article71462697.ece",
+      "skip_reason": "This article covers a political verbal spat between DMK MP A. Raja and TVK Minister C.T.R. Nirmal Kumar, stemming from a protest against CM Mr. Vijay. While the article is factually consistent across "
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/dmk-stages-state-wide-demonstrations-condemning-vijays-remarks-against-stalin/article71460596.ece",
+      "skip_reason": "This article covers DMK staging state-wide demonstrations against Mr. Vijay's remarks about Stalin in the Assembly, demanding expunction of those remarks from Assembly records. This is purely factiona"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tasmac-outlet-in-tiruvannamalai-burgled/article71460068.ece",
+      "skip_reason": "This article reports a routine criminal incident — a burglary at a TASMAC liquor outlet in Tiruvannamalai, with approximately ₹2 lakh worth of liquor stolen and CCTV equipment damaged. It has no gover"
+    },
+    {
+      "title": "",
+      "url": "https://theprint.in/india/left-parties-continue-to-stay-away-from-tvk-front-pick-solo-fight-route-for-tn-bypolls/3041662/",
+      "skip_reason": "This article reports a political/electoral development — Left parties (CPI, CPI(M)) announcing solo bypoll candidacies — with no direct governance action, executive order, cabinet decision, or policy "
     }
   ],
   "recent_commits": [
@@ -614,8 +569,8 @@
     }
   ],
   "last_run": {
-    "ts": "2026-09-12T22:17:16.252672+05:30",
-    "candidates": 8,
+    "ts": "2026-09-13T22:48:35.730397+05:30",
+    "candidates": 7,
     "published": 0,
     "escalated": 0,
     "errors": 0

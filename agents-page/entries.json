@@ -266,26 +266,12 @@
   {
     "title": "🟢 Vettri Tamil Nadu Investment Conclave closes with 97 MoUs, ₹67,452 crore committed",
     "date": "August 13, 2026",
-    "reasoning": {
-      "drafter_usage": {
-        "input_tokens": 959,
-        "output_tokens": 815,
-        "cache_read_tokens": 0,
-        "cache_creation_tokens": 1373
-      }
-    }
+    "reasoning": null
   },
   {
     "title": "⚖️ TN files Supreme Court report accusing Kerala of blocking Mullaperiyar dam works",
     "date": "August 12, 2026",
-    "reasoning": {
-      "drafter_usage": {
-        "input_tokens": 786,
-        "output_tokens": 793,
-        "cache_read_tokens": 1373,
-        "cache_creation_tokens": 0
-      }
-    }
+    "reasoning": null
   },
   {
     "title": "🟢 Railway Board approves MRTS merger with Chennai Metro Rail after 15-year wait",
@@ -302,26 +288,12 @@
   {
     "title": "📅 Tamil Nadu Assembly passes resolution urging freeze of Lok Sabha seats at 543",
     "date": "August 11, 2026",
-    "reasoning": {
-      "drafter_usage": {
-        "input_tokens": 1025,
-        "output_tokens": 835,
-        "cache_read_tokens": 1373,
-        "cache_creation_tokens": 0
-      }
-    }
+    "reasoning": null
   },
   {
     "title": "🟢 CM Mr. Vijay launches 'Drug and Tobacco-Free Campus' initiative at state-level pledge event",
     "date": "August 11, 2026",
-    "reasoning": {
-      "drafter_usage": {
-        "input_tokens": 826,
-        "output_tokens": 680,
-        "cache_read_tokens": 1373,
-        "cache_creation_tokens": 0
-      }
-    }
+    "reasoning": null
   },
   {
     "title": "⚖️ Supreme Court to hear TN's Cauvery petition on August 13",
