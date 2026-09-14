@@ -1,5 +1,17 @@
 [
   {
+    "title": "🟢 Tamil Nadu signs two London MoUs — ₹12,000 cr investment, 9,000 jobs committed",
+    "date": "September 14, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 1100,
+        "output_tokens": 961,
+        "cache_read_tokens": 0,
+        "cache_creation_tokens": 1373
+      }
+    }
+  },
+  {
     "title": "⚖️ Madras HC declines interim stay on TN digital driving licence rollout",
     "date": "September 11, 2026",
     "reasoning": {

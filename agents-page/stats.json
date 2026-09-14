@@ -1,17 +1,23 @@
 {
   "period": "Rolling 30 days",
-  "as_of": "2026-09-13T22:48:37.247006+05:30",
-  "candidates_surfaced": 237,
-  "auto_verified": 29,
+  "as_of": "2026-09-15T00:33:12.980008+05:30",
+  "candidates_surfaced": 228,
+  "auto_verified": 27,
   "auto_verified_pct": 12,
-  "escalated": 22,
+  "escalated": 20,
   "escalated_pct": 9,
-  "autonomous_commits": 29,
+  "autonomous_commits": 27,
   "operator_edited": 0,
-  "skipped": 61,
-  "cost_this_month_usd": 5.64,
+  "skipped": 56,
+  "cost_this_month_usd": 5.25,
   "cost_per_published_entry_usd": 0.19,
   "autonomous_commits_list": [
+    {
+      "sha": "5ad19f0",
+      "prefix": "agent",
+      "title": "🟢 Tamil Nadu signs two London MoUs — ₹12,000 cr investment, 9,000 jobs committed",
+      "timestamp": "2026-09-14T19:03:09Z"
+    },
     {
       "sha": "0bccbb6",
       "prefix": "agent",
@@ -89,25 +95,9 @@
       "prefix": "agent",
       "title": "🟢 Handloom weavers get 10% wage and DA hike; TN Knitwear Board and Silk Export C",
       "timestamp": "2026-09-09T05:05:41Z"
-    },
-    {
-      "sha": "1768be6",
-      "prefix": "agent",
-      "title": "🟢 Tamil Nadu announces ₹3.80 cr drug abuse prevention plan targeting children an",
-      "timestamp": "2026-09-09T05:05:41Z"
     }
   ],
   "escalated_list": [
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/vijay-virtually-inaugurates-infrastructure-facilities-at-sipcot-complex-in-ranipet/article71341182.ece",
-      "reasoning": "The Hindu article is credible and internally consistent — it names specific actors (CM Mr. Vijay, Ranipet Collector Priya Ravichandran, SIPCOT Project Officer P. Maheshwari), a precise monetary figure (₹95.05 crore total; ₹51.80 crore for two plug-and-play buildings), a specific location (Panapakkam"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/vande-mataram-and-tamil-thai-vazhthu-what-is-the-protocol-explained/article71349013.ece",
-      "reasoning": "The candidate article is an 'Explained' explainer piece published August 15, 2026, but it references two real, verifiable governance actions: (1) a unanimous Tamil Nadu Assembly resolution on August 10, 2026, and (2) a Government Order issued August 12, 2026, both mandating Tamil Thai Vazhthu be sun"
-    },
     {
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/tn-assembly-group-clash-not-drugs-behind-killing-of-coimbatore-student-amuthan-says-law-minister-r-nirmalkumar/article71355258.ece",
@@ -200,36 +190,6 @@
     }
   ],
   "skipped_list": [
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/cities/Coimbatore/people-regret-voting-for-the-tvk-says-former-minister-p-thangamani/article71345175.ece",
-      "skip_reason": "This article is a political opposition statement by former AIADMK Minister P. Thangamani at a protest rally in Salem, claiming 'people regret voting for TVK.' It contains no governance action, no exec"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-cm-vijay-to-present-police-medals-to-15-officers-personnel-on-independence-day/article71344449.ece",
-      "skip_reason": "This article describes a routine ceremonial event — CM Mr. Vijay presenting 15 police medals on Independence Day (Aug 15, 2026). The article is sourced from an official press release and the facts are"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/dmk-moving-from-covert-to-direct-alliance-with-bjp-alleges-minister-nirmalkumar/article71344299.ece",
-      "skip_reason": "This article reports a press conference statement by TVK Minister R. Nirmalkumar alleging that the DMK is forming a 'direct alliance' with the BJP, prompted by Kanimozhi's attendance at Lok Sabha Spea"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/we-want-people-of-tamil-nadu-to-develop-zero-tolerance-for-corruption-cm-vijay/article71348864.ece",
-      "skip_reason": "This article covers CM Mr. Vijay's Independence Day speech at Fort St. George — a symbolic address reiterating existing TVK anti-corruption messaging. While the event and quotes are well-corroborated "
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/scores-of-palaniswamis-supporters-join-stir-aiadmk-rebels-suffer-split/article71346386.ece",
-      "skip_reason": "This article is about AIADMK opposition party internal dynamics — a statewide protest called by EPS and a split within the rebel AIADMK faction. The TVK government is the passive target of criticism, "
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/tasmac-halts-sale-of-11-enrica-liquor-brands-in-tn-following-fssai-inspection/article71346570.ece",
-      "skip_reason": "This is a genuine regulatory action — TASMAC halting 11 Enrica liquor brands following an FSSAI inspection — corroborated by The Hindu and Times of India with consistent facts. However, it does not ma"
-    },
     {
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-cm-vijay-condoles-death-of-police-constable-on-i-day-announces-30-lakh-relief/article71352248.ece",
@@ -504,9 +464,20 @@
       "title": "",
       "url": "https://theprint.in/india/left-parties-continue-to-stay-away-from-tvk-front-pick-solo-fight-route-for-tn-bypolls/3041662/",
       "skip_reason": "This article reports a political/electoral development — Left parties (CPI, CPI(M)) announcing solo bypoll candidacies — with no direct governance action, executive order, cabinet decision, or policy "
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-cb-cid-nabs-rajasthan-scammer-who-circulatedal-generated-deep-fake-video-impersonating-cm-vijay/article71466303.ece",
+      "skip_reason": "While the CB-CID arrest of Shyabu Khan is a real, well-corroborated law enforcement action (confirmed by The Hindu and India Today with consistent facts — 28-year-old from Alwar, arrested Sep 12, case"
     }
   ],
   "recent_commits": [
+    {
+      "sha": "5ad19f0",
+      "prefix": "agent",
+      "title": "🟢 Tamil Nadu signs two London MoUs — ₹12,000 cr investment, 9,000 jobs committed",
+      "timestamp": "2026-09-14T19:03:09Z"
+    },
     {
       "sha": "0bccbb6",
       "prefix": "agent",
@@ -560,18 +531,12 @@
       "prefix": "agent",
       "title": "🟢 Annapoorani Super Six Scheme announced — 3 LPG cylinders/year via DBT from Pon",
       "timestamp": "2026-09-09T06:23:58Z"
-    },
-    {
-      "sha": "c8b9cab",
-      "prefix": "agent-undo",
-      "title": "remove entries added by ed558af",
-      "timestamp": "2026-09-09T06:05:43Z"
     }
   ],
   "last_run": {
-    "ts": "2026-09-13T22:48:35.730397+05:30",
-    "candidates": 7,
-    "published": 0,
+    "ts": "2026-09-15T00:33:09.893692+05:30",
+    "candidates": 2,
+    "published": 1,
     "escalated": 0,
     "errors": 0
   }
