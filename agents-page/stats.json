@@ -1,17 +1,29 @@
 {
   "period": "Rolling 30 days",
-  "as_of": "2026-09-15T00:33:12.980008+05:30",
-  "candidates_surfaced": 228,
-  "auto_verified": 27,
+  "as_of": "2026-09-15T23:29:48.788809+05:30",
+  "candidates_surfaced": 234,
+  "auto_verified": 29,
   "auto_verified_pct": 12,
   "escalated": 20,
   "escalated_pct": 9,
-  "autonomous_commits": 27,
+  "autonomous_commits": 29,
   "operator_edited": 0,
-  "skipped": 56,
-  "cost_this_month_usd": 5.25,
+  "skipped": 60,
+  "cost_this_month_usd": 5.54,
   "cost_per_published_entry_usd": 0.19,
   "autonomous_commits_list": [
+    {
+      "sha": "afec201",
+      "prefix": "agent",
+      "title": "🟢 UK investment drive yields ₹12,300 cr in MoUs, 9,400+ jobs for Tamil Nadu",
+      "timestamp": "2026-09-15T17:59:45Z"
+    },
+    {
+      "sha": "28118e9",
+      "prefix": "agent",
+      "title": "⚖️ Madras HC dismisses AIADMK petition against Minister Sengottaiyan's Gobichett",
+      "timestamp": "2026-09-15T17:59:45Z"
+    },
     {
       "sha": "5ad19f0",
       "prefix": "agent",
@@ -83,18 +95,6 @@
       "prefix": "agent",
       "title": "🟢 Vettri Payanam expanded to deluxe and mofussil buses — October 2 effective, ₹6",
       "timestamp": "2026-09-09T05:39:03Z"
-    },
-    {
-      "sha": "ed558af",
-      "prefix": "agent",
-      "title": "🟢 CM announces 29,108 new police posts over five years; ₹212 cr modernisation al",
-      "timestamp": "2026-09-09T05:05:41Z"
-    },
-    {
-      "sha": "6efbaba",
-      "prefix": "agent",
-      "title": "🟢 Handloom weavers get 10% wage and DA hike; TN Knitwear Board and Silk Export C",
-      "timestamp": "2026-09-09T05:05:41Z"
     }
   ],
   "escalated_list": [
@@ -469,9 +469,41 @@
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-cb-cid-nabs-rajasthan-scammer-who-circulatedal-generated-deep-fake-video-impersonating-cm-vijay/article71466303.ece",
       "skip_reason": "While the CB-CID arrest of Shyabu Khan is a real, well-corroborated law enforcement action (confirmed by The Hindu and India Today with consistent facts — 28-year-old from Alwar, arrested Sep 12, case"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/cities/chennai/fishermen-urge-tamil-nadu-government-to-drop-the-plan-to-build-the-secretariat-at-foreshore-estate/article71469322.ece",
+      "skip_reason": "This article covers a civic protest by fishermen panchayats against the Tamil Nadu government's plan to build a new Secretariat at Foreshore Estate. The underlying governance event — the Government Or"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/dmk-submits-breach-of-privilege-complaint-to-tamil-nadu-assembly-speaker-against-law-minister-nirmal-kumar/article71467620.ece",
+      "skip_reason": "This is a political/factional development — the opposition DMK filing a breach of privilege complaint against ruling TVK Law Minister Nirmal Kumar over Assembly speech conduct. While well-sourced acro"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/dmk-mp-a-raja-mlas-sekarbabu-and-vasantham-karthikeyan-booked-for-derogatory-remarks-against-tamil-nadu-cm-vijay/article71466966.ece",
+      "skip_reason": "This article reports police cases filed against DMK opposition politicians (MP A. Raja, MLAs Sekarbabu and Vasantham Karthikeyan) for remarks made against CM Mr. Vijay and Law Minister Nirmal Kumar du"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/vinayagar-idols-depicting-tamil-nadu-cm-vijay-bjp-leader-nainar-nagenthran-seeks-arrest-of-tvk-functionaries/article71467413.ece",
+      "skip_reason": "This article covers a BJP opposition leader (Nainar Nagenthran) demanding the arrest of TVK party functionaries over Vinayagar idols made in CM Mr. Vijay's likeness — a political-religious controversy"
     }
   ],
   "recent_commits": [
+    {
+      "sha": "afec201",
+      "prefix": "agent",
+      "title": "🟢 UK investment drive yields ₹12,300 cr in MoUs, 9,400+ jobs for Tamil Nadu",
+      "timestamp": "2026-09-15T17:59:45Z"
+    },
+    {
+      "sha": "28118e9",
+      "prefix": "agent",
+      "title": "⚖️ Madras HC dismisses AIADMK petition against Minister Sengottaiyan's Gobichett",
+      "timestamp": "2026-09-15T17:59:45Z"
+    },
     {
       "sha": "5ad19f0",
       "prefix": "agent",
@@ -519,24 +551,12 @@
       "prefix": "operator",
       "title": "Header: show real agent check-in state from stats.json; fix 'Day N days'; scorecard: 4 flips + sources from Aug 21–Sep 8",
       "timestamp": "2026-09-09T12:15:12+05:30"
-    },
-    {
-      "sha": "00d4638",
-      "prefix": "agent",
-      "title": "🟢 Thaimaman Thanga Mothiram GO issued — ₹755.83 cr newborn gold ring scheme, ten",
-      "timestamp": "2026-09-09T06:34:37Z"
-    },
-    {
-      "sha": "c29bd6d",
-      "prefix": "agent",
-      "title": "🟢 Annapoorani Super Six Scheme announced — 3 LPG cylinders/year via DBT from Pon",
-      "timestamp": "2026-09-09T06:23:58Z"
     }
   ],
   "last_run": {
-    "ts": "2026-09-15T00:33:09.893692+05:30",
-    "candidates": 2,
-    "published": 1,
+    "ts": "2026-09-15T23:29:45.646380+05:30",
+    "candidates": 6,
+    "published": 2,
     "escalated": 0,
     "errors": 0
   }

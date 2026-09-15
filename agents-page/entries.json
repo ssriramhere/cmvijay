@@ -1,5 +1,17 @@
 [
   {
+    "title": "⚖️ Madras HC dismisses AIADMK petition against Minister Sengottaiyan's Gobichettipalayam win",
+    "date": "September 15, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 823,
+        "output_tokens": 754,
+        "cache_read_tokens": 0,
+        "cache_creation_tokens": 1373
+      }
+    }
+  },
+  {
     "title": "🟢 Tamil Nadu signs two London MoUs — ₹12,000 cr investment, 9,000 jobs committed",
     "date": "September 14, 2026",
     "reasoning": {
@@ -8,6 +20,18 @@
         "output_tokens": 961,
         "cache_read_tokens": 0,
         "cache_creation_tokens": 1373
+      }
+    }
+  },
+  {
+    "title": "🟢 UK investment drive yields ₹12,300 cr in MoUs, 9,400+ jobs for Tamil Nadu",
+    "date": "September 14, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 1237,
+        "output_tokens": 1039,
+        "cache_read_tokens": 1373,
+        "cache_creation_tokens": 0
       }
     }
   },
