@@ -1,16 +1,16 @@
 {
   "period": "Rolling 30 days",
-  "as_of": "2026-09-15T23:29:48.788809+05:30",
-  "candidates_surfaced": 234,
+  "as_of": "2026-09-16T23:33:19.967000+05:30",
+  "candidates_surfaced": 236,
   "auto_verified": 29,
   "auto_verified_pct": 12,
-  "escalated": 20,
+  "escalated": 22,
   "escalated_pct": 9,
   "autonomous_commits": 29,
   "operator_edited": 0,
   "skipped": 60,
-  "cost_this_month_usd": 5.54,
-  "cost_per_published_entry_usd": 0.19,
+  "cost_this_month_usd": 5.85,
+  "cost_per_published_entry_usd": 0.2,
   "autonomous_commits_list": [
     {
       "sha": "afec201",
@@ -187,29 +187,19 @@
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/chennais-nulm-conservancy-workers-protest-and-way-ahead-explained/article71453360.ece",
       "reasoning": "The article documents a real, multi-source-confirmed governance development: a 16-day NULM conservancy workers' strike in Chennai was paused after the TVK government agreed to ~8 of 10 immediate demands (welfare measures, case withdrawals, food allowance), with a second round of talks scheduled for "
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-government-fixes-10000-interim-monthly-payout-for-retirees-under-taps-regime/article71471507.ece",
+      "reasoning": "The core factual claims are well-supported: The Hindu article (a whitelisted outlet) clearly states the ₹10,000 flat-rate interim monthly payout for TAPS retirees with 10–18 years of service, and a government GO snippet (fin_e_15120106_2026.pdf, dated ~5 days before publication) uses near-identical "
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/power-discom-is-still-heavily-reliant-on-tamil-nadu-governments-financial-support/article71469229.ece",
+      "reasoning": "The article is a legitimate, well-sourced analytical piece by The Hindu's T. Ramakrishnan, drawing on the CAG State Finances Audit Report tabled in the Tamil Nadu Legislative Assembly on September 8, 2026 — confirmed independently by PIB, The Federal (Sept 11, 2026), and YouTube coverage. The core c"
     }
   ],
   "skipped_list": [
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-cm-vijay-condoles-death-of-police-constable-on-i-day-announces-30-lakh-relief/article71352248.ece",
-      "skip_reason": "The event is factually well-verified across three independent outlets (The Hindu, DT Next, ETV Bharat) — A. Dharmaraj, 56, a Grade-I constable, collapsed during the Independence Day parade at Fort St."
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/gk-vasan-condemns-two-chennai-students-death-calls-for-crackdown-on-illegal-drugs/article71352015.ece",
-      "skip_reason": "This article is entirely an opposition political statement — TMC(M) leader G.K. Vasan condemning the Tiruvottiyur student deaths and calling on the TN government to act. There is no governance action,"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/cities/Coimbatore/creating-reels-is-100-day-achievement-of-tvk-led-government-says-palaniswami/article71349618.ece",
-      "skip_reason": "This article is entirely an opposition press statement by AIADMK general secretary Edappadi K. Palaniswami criticising the TVK government's 100-day record. It contains no governance action, executive "
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/tvk-leaders-condemn-nainar-nagenthrans-remarks-against-tn-chief-minister/article71349635.ece",
-      "skip_reason": "This article describes TVK ministers condemning BJP State president Nainar Nagenthran's personal jibe at CM Mr. Vijay made at a political gathering. There is no governance action, executive order, cab"
-    },
     {
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/bjp-flags-adverse-effects-of-power-cuts-on-households-and-industries-in-tn/article71355570.ece",
@@ -489,6 +479,26 @@
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/vinayagar-idols-depicting-tamil-nadu-cm-vijay-bjp-leader-nainar-nagenthran-seeks-arrest-of-tvk-functionaries/article71467413.ece",
       "skip_reason": "This article covers a BJP opposition leader (Nainar Nagenthran) demanding the arrest of TVK party functionaries over Vinayagar idols made in CM Mr. Vijay's likeness — a political-religious controversy"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/only-prime-ministers-office-can-grant-sanction-to-prosecute-ias-officers-centre-tells-madras-high-court/article71471713.ece",
+      "skip_reason": "This article reports a Madras High Court hearing update in a legacy AIADMK-era corruption case (S.P. Velumani tender irregularities). The key development — that the PMO is the sole competent authority"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/1978-tn-assembly-records-establish-mk-stalin-was-a-political-prisoner-under-misa-during-emergency/article71469731.ece",
+      "skip_reason": "This article is a historical/archival piece about 1978 Tamil Nadu Assembly records and the 1977 Justice Ismail Commission — it contains no governance action, executive order, scheme launch, or policy "
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/udhayanidhi-condemns-tvk-led-govt-over-attempt-to-paralyse-high-level-committee-on-union-state-relations/article71469408.ece",
+      "skip_reason": "This article is an opposition political statement — Leader of the Opposition Udhayanidhi Stalin criticising the TVK government via a post on X — with no corresponding governance action, executive orde"
+    },
+    {
+      "title": "",
+      "url": "https://theprint.in/india/tvk-appeals-tamils-in-london-to-refrain-from-trying-to-see-cm-vijay-citing-safety/3044028/",
+      "skip_reason": "The article's core subject — TVK's social media appeal to Tamil diaspora in London to not gather outside CM Mr. Vijay's hotel or along transit routes — is logistical/crowd-management communication fro"
     }
   ],
   "recent_commits": [
@@ -554,10 +564,10 @@
     }
   ],
   "last_run": {
-    "ts": "2026-09-15T23:29:45.646380+05:30",
+    "ts": "2026-09-16T23:33:18.250298+05:30",
     "candidates": 6,
-    "published": 2,
-    "escalated": 0,
+    "published": 0,
+    "escalated": 2,
     "errors": 0
   }
 }
