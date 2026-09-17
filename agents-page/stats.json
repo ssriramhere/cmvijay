@@ -1,17 +1,29 @@
 {
   "period": "Rolling 30 days",
-  "as_of": "2026-09-16T23:33:19.967000+05:30",
-  "candidates_surfaced": 236,
+  "as_of": "2026-09-17T23:29:39.019637+05:30",
+  "candidates_surfaced": 233,
   "auto_verified": 29,
   "auto_verified_pct": 12,
-  "escalated": 22,
+  "escalated": 20,
   "escalated_pct": 9,
   "autonomous_commits": 29,
   "operator_edited": 0,
-  "skipped": 60,
-  "cost_this_month_usd": 5.85,
+  "skipped": 59,
+  "cost_this_month_usd": 5.74,
   "cost_per_published_entry_usd": 0.2,
   "autonomous_commits_list": [
+    {
+      "sha": "d80f928",
+      "prefix": "agent",
+      "title": "🟢 Digital DL and RC issuance goes live statewide via Sarathi and Vahan portals",
+      "timestamp": "2026-09-17T17:59:35Z"
+    },
+    {
+      "sha": "a66d483",
+      "prefix": "agent",
+      "title": "🟢 CM Mr. Vijay returns from UK with ₹15,300 cr investment commitments, 10,000 jo",
+      "timestamp": "2026-09-17T17:59:35Z"
+    },
     {
       "sha": "afec201",
       "prefix": "agent",
@@ -83,31 +95,9 @@
       "prefix": "agent",
       "title": "🟢 Handloom weavers get 10% wage and DA hike; TN Knitwear Board to be established",
       "timestamp": "2026-09-09T05:39:04Z"
-    },
-    {
-      "sha": "4fb84ad",
-      "prefix": "agent",
-      "title": "🟢 Social Welfare Minister announces ₹3.80 cr State drug abuse prevention plan in",
-      "timestamp": "2026-09-09T05:39:04Z"
-    },
-    {
-      "sha": "914e18c",
-      "prefix": "agent",
-      "title": "🟢 Vettri Payanam expanded to deluxe and mofussil buses — October 2 effective, ₹6",
-      "timestamp": "2026-09-09T05:39:03Z"
     }
   ],
   "escalated_list": [
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/tn-assembly-group-clash-not-drugs-behind-killing-of-coimbatore-student-amuthan-says-law-minister-r-nirmalkumar/article71355258.ece",
-      "reasoning": "The article documents a real Assembly event (August 17, 2026) — Law Minister R. Nirmalkumar's statement attributing Amuthan's killing to a group clash, and a ministerial compensation offer of ₹6 lakh plus a government job to the victim's brother. Both The Hindu and NIE corroborate the core facts of "
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/rooftop-solar-gets-a-fresh-boost/article71354967.ece",
-      "reasoning": "The underlying governance action — a ₹22,000 state top-up incentive for rooftop solar announced during the Tamil Nadu Budget session, bringing total subsidy to ₹1 lakh with ₹50 crore earmarked — is well-corroborated across multiple outlets (NIE Aug 6, Hindu Business Line Aug 8, Deccan Chronicle Aug "
-    },
     {
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/tvk-government-will-implement-taps-assures-finance-minister/article71360963.ece",
@@ -200,31 +190,6 @@
     }
   ],
   "skipped_list": [
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/bjp-flags-adverse-effects-of-power-cuts-on-households-and-industries-in-tn/article71355570.ece",
-      "skip_reason": "This article is a BJP opposition press statement by Nainar Nagenthran criticising the TVK government's handling of power cuts — it contains no governance action (no executive order, cabinet decision, "
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/complaint-lodged-against-bjp-leader-nainar-nagenthran-for-defamatory-remarks-against-tamil-nadu-cm-vijays-mother/article71350181.ece",
-      "skip_reason": "This article covers a private advocate's complaint to the TN DGP about defamatory remarks made by a BJP opposition leader at a party office event. There is no governance action — no executive order, c"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/drug-culture-became-a-major-problem-during-dmk-regime-alleges-minister-aadhav-arjuna/article71355606.ece",
-      "skip_reason": "This article reports a political speech by PWD Minister Aadhav Arjuna in the Tamil Nadu Assembly blaming the previous DMK government for drug culture and rising POCSO cases. There is no governance act"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/tn-cm-vijay-condemns-killing-of-three-tamils-by-karnataka-forest-dept-personnel/article71353665.ece",
-      "skip_reason": "This article documents CM Mr. Vijay issuing a condemnation via an X post regarding an incident carried out by the Karnataka Forest Department — not the Tamil Nadu government. There is no TN executive "
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/annamalailevels-graft-charges-against-some-tamil-nadu-ministers-claims-to-have-audio-clip/article71353265.ece",
-      "skip_reason": "This article reports an opposition political allegation — K. Annamalai (We The Leaders founder, former BJP leader) claiming unnamed Tamil Nadu ministers demanded 2–4% kickbacks on tenders, supported o"
-    },
     {
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-assembly-speaker-expunges-remarks-against-karunanidhi-by-minister-nirmalkumar/article71359489.ece",
@@ -499,9 +464,41 @@
       "title": "",
       "url": "https://theprint.in/india/tvk-appeals-tamils-in-london-to-refrain-from-trying-to-see-cm-vijay-citing-safety/3044028/",
       "skip_reason": "The article's core subject — TVK's social media appeal to Tamil diaspora in London to not gather outside CM Mr. Vijay's hotel or along transit routes — is logistical/crowd-management communication fro"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/stalin-offers-to-meet-education-expenses-of-phd-scholar-if-vijay-govt-fails-to-release-funds/article71477623.ece",
+      "skip_reason": "This article reports an opposition political statement — DMK president M.K. Stalin offering to personally fund a PhD scholar if the Vijay government fails to disburse scholarship money. While the unde"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/cities/Madurai/why-construct-new-secretariat-complex-when-tn-is-facing-financial-crisis-palaniswami-asks-tvk-govt/article71476052.ece",
+      "skip_reason": "This article is an opposition political statement by AIADMK's Palaniswami criticising the TVK government's Secretariat plan — it contains no new executive order, cabinet decision, scheme launch, or co"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-minister-vanni-arasu-counters-premallatha-vijayakants-remarks-on-vck-tvk-alliance/article71475713.ece",
+      "skip_reason": "This article documents a political back-and-forth between TN Social Justice Minister Vanni Arasu and DMDK general secretary Premallatha Vijayakant over the motivations behind VCK joining the TVK allia"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/power-cuts-have-become-the-norm-in-state-anbumani-ramadoss/article71472855.ece",
+      "skip_reason": "This article is an opposition press statement by PMK president Anbumani Ramadoss criticising the Tamil Nadu government over power cuts. It contains no governance action — no executive order, cabinet d"
     }
   ],
   "recent_commits": [
+    {
+      "sha": "d80f928",
+      "prefix": "agent",
+      "title": "🟢 Digital DL and RC issuance goes live statewide via Sarathi and Vahan portals",
+      "timestamp": "2026-09-17T17:59:35Z"
+    },
+    {
+      "sha": "a66d483",
+      "prefix": "agent",
+      "title": "🟢 CM Mr. Vijay returns from UK with ₹15,300 cr investment commitments, 10,000 jo",
+      "timestamp": "2026-09-17T17:59:35Z"
+    },
     {
       "sha": "afec201",
       "prefix": "agent",
@@ -549,25 +546,13 @@
       "prefix": "agent",
       "title": "🔵 TVK-led alliance formally named Secular Social Justice Victory Alliance",
       "timestamp": "2026-09-09T17:35:13Z"
-    },
-    {
-      "sha": "3f89005",
-      "prefix": "operator",
-      "title": "Header dot and label follow agent state; ticker includes operator commits to index.html",
-      "timestamp": "2026-09-09T12:23:52+05:30"
-    },
-    {
-      "sha": "66bd04f",
-      "prefix": "operator",
-      "title": "Header: show real agent check-in state from stats.json; fix 'Day N days'; scorecard: 4 flips + sources from Aug 21–Sep 8",
-      "timestamp": "2026-09-09T12:15:12+05:30"
     }
   ],
   "last_run": {
-    "ts": "2026-09-16T23:33:18.250298+05:30",
+    "ts": "2026-09-17T23:29:35.904505+05:30",
     "candidates": 6,
-    "published": 0,
-    "escalated": 2,
+    "published": 2,
+    "escalated": 0,
     "errors": 0
   }
 }

@@ -1,5 +1,17 @@
 [
   {
+    "title": "🟢 CM Mr. Vijay returns from UK with ₹15,300 cr investment commitments, 10,000 jobs",
+    "date": "September 17, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 966,
+        "output_tokens": 802,
+        "cache_read_tokens": 0,
+        "cache_creation_tokens": 1373
+      }
+    }
+  },
+  {
     "title": "⚖️ Madras HC dismisses AIADMK petition against Minister Sengottaiyan's Gobichettipalayam win",
     "date": "September 15, 2026",
     "reasoning": {
@@ -8,6 +20,18 @@
         "output_tokens": 754,
         "cache_read_tokens": 0,
         "cache_creation_tokens": 1373
+      }
+    }
+  },
+  {
+    "title": "🟢 Digital DL and RC issuance goes live statewide via Sarathi and Vahan portals",
+    "date": "September 15, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 691,
+        "output_tokens": 645,
+        "cache_read_tokens": 1373,
+        "cache_creation_tokens": 0
       }
     }
   },
@@ -242,26 +266,12 @@
   {
     "title": "🟢 Tamil Nadu launches Presence-less Registration for housing plots and apartments",
     "date": "August 17, 2026",
-    "reasoning": {
-      "drafter_usage": {
-        "input_tokens": 810,
-        "output_tokens": 796,
-        "cache_read_tokens": 0,
-        "cache_creation_tokens": 1373
-      }
-    }
+    "reasoning": null
   },
   {
     "title": "🟢 Tamil Nadu launches Presence-less Property Registration via STAR 3.0 platform",
     "date": "August 17, 2026",
-    "reasoning": {
-      "drafter_usage": {
-        "input_tokens": 697,
-        "output_tokens": 668,
-        "cache_read_tokens": 1373,
-        "cache_creation_tokens": 0
-      }
-    }
+    "reasoning": null
   },
   {
     "title": "🟢 Health Minister announces elderly insurance scheme — 38 lakh seniors, ₹2,997 cr outlay",
