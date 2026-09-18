@@ -1,17 +1,23 @@
 {
   "period": "Rolling 30 days",
-  "as_of": "2026-09-17T23:29:39.019637+05:30",
-  "candidates_surfaced": 233,
-  "auto_verified": 29,
+  "as_of": "2026-09-18T23:02:28.768883+05:30",
+  "candidates_surfaced": 223,
+  "auto_verified": 26,
   "auto_verified_pct": 12,
-  "escalated": 20,
-  "escalated_pct": 9,
-  "autonomous_commits": 29,
+  "escalated": 16,
+  "escalated_pct": 7,
+  "autonomous_commits": 26,
   "operator_edited": 0,
-  "skipped": 59,
-  "cost_this_month_usd": 5.74,
+  "skipped": 56,
+  "cost_this_month_usd": 5.12,
   "cost_per_published_entry_usd": 0.2,
   "autonomous_commits_list": [
+    {
+      "sha": "820255d",
+      "prefix": "agent",
+      "title": "🟢 CM Mr. Vijay reviews Breakfast Scheme expansion — 15.3 lakh students, ₹217.63",
+      "timestamp": "2026-09-18T17:32:25Z"
+    },
     {
       "sha": "d80f928",
       "prefix": "agent",
@@ -89,45 +95,9 @@
       "prefix": "agent",
       "title": "🟢 CM Mr. Vijay announces 29,108 new police posts over five years, 10,000 recruit",
       "timestamp": "2026-09-09T05:39:04Z"
-    },
-    {
-      "sha": "881ae86",
-      "prefix": "agent",
-      "title": "🟢 Handloom weavers get 10% wage and DA hike; TN Knitwear Board to be established",
-      "timestamp": "2026-09-09T05:39:04Z"
     }
   ],
   "escalated_list": [
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/tvk-government-will-implement-taps-assures-finance-minister/article71360963.ece",
-      "reasoning": "The article is credible (The Hindu, named Finance Minister on record in Assembly) and contains a meaningful governance update — TAPS rules and operational guidelines are actively being framed, and the assurance is now unconditional, unlike the Aug 10 statement which was contingent on Centre approval"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-cm-vijay-shifting-office-to-accommodate-secretaries-visiting-dignitaries-minister-aadhav-arjuna/article71359685.ece",
-      "reasoning": "The underlying governance action — CM Mr. Vijay shifting his office from Fort St. George to the 10th floor of Namakkal Kavignar Maaligai — is real and corroborated by multiple sources (The Hindu, CNBC TV18, New Indian Express) dating back to late July 2026. However, this specific article's news hook"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-government-plans-to-offer-10-lakh-each-to-families-of-three-tamils-killed-in-karnatakaforest/article71359482.ece",
-      "reasoning": "The article is well-sourced across two whitelisted outlets (The Hindu and New Indian Express) and describes a clear governance action — Tamil Nadu Forest Minister R.V. Ranjithkumar announcing in the Legislative Assembly, per CM Mr. Vijay's direction, a proposal to offer ₹10 lakh each to families of "
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-government-to-formulate-peri-menopausal-care-policy/article71357108.ece",
-      "reasoning": "The Hindu and PTI/The Print independently confirm Health Minister K.G. Arunraj's August 17, 2026 Legislative Assembly announcement of a 'Peri-Menopausal Care Policy' — a genuine governance action with specific operational details (weekly PHC camps, referral pathways). However, The Hindu's phrase 'In"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-cm-vijay-inaugurates-2367-crore-worth-facilities-at-irukkankudi-temple-in-virudhunagar/article71359327.ece",
-      "reasoning": "The core facts — ₹23.67 crore temple facility inauguration and 80 TNPSC appointment orders for HR&CE staff — are well-corroborated by multiple independent outlets (The Hindu, The Federal, Trinity Mirror, IANS). No site-state duplication or contradiction exists, and no manifesto promise maps to this "
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/orders-issues-for-shifting-chief-minister-vijays-office-to-namakkal-kavignar-maligai/article71273985.ece",
-      "reasoning": "The core claim — Chief Secretary M. Sai Kumar issuing orders to relocate the CMO from Fort St. George to the 10th floor of Namakkal Kavignar Maaligai — is confirmed by three independent sources (The Hindu, India Today, New Indian Express). No manifesto promise maps to this, no primacy claims are mad"
-    },
     {
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-government-order-seeking-steps-to-prevent-students-from-protesting-withdrawn-after-row/article71363796.ece",
@@ -187,24 +157,19 @@
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/power-discom-is-still-heavily-reliant-on-tamil-nadu-governments-financial-support/article71469229.ece",
       "reasoning": "The article is a legitimate, well-sourced analytical piece by The Hindu's T. Ramakrishnan, drawing on the CAG State Finances Audit Report tabled in the Tamil Nadu Legislative Assembly on September 8, 2026 — confirmed independently by PIB, The Federal (Sept 11, 2026), and YouTube coverage. The core c"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/cities/chennai/tn-government-writes-to-pm-modi-seeking-to-change-the-operator-of-chennai-airport/article71481590.ece",
+      "reasoning": "The Hindu's article is credible and the core claim — CM Mr. Vijay writing to PM Modi in August 2026 to replace AAI as Chennai airport's operator — is confirmed by the fetched article text. No contradictions with existing site state were found, and no primacy claims are made. However, escalation is w"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/cm-vijay-to-launch-thaimaman-thanga-mothiram-thittam-in-madurai-district-on-september-28/article71480726.ece",
+      "reasoning": "The article is well-sourced — The Hindu's official bureau report is corroborated by PTI, NDTV, Times of India, India Today, and Ground News, all confirming a September 28 launch in Madurai. No primacy claims are made. The scheme maps clearly to manifesto promise g1_newborn (currently 'partial'), and"
     }
   ],
   "skipped_list": [
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-assembly-speaker-expunges-remarks-against-karunanidhi-by-minister-nirmalkumar/article71359489.ece",
-      "skip_reason": "This article reports a routine parliamentary procedural action — the Assembly Speaker expunging off-topic remarks by Law Minister Nirmalkumar during a calling-attention motion. While corroborated by t"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/i-leave-it-to-the-mlas-to-decide-whether-they-should-get-up-when-the-chief-minister-arrives-says-tamil-nadu-assembly-speaker/article71356655.ece",
-      "skip_reason": "This article covers a parliamentary decorum debate — whether MLAs are obligated to stand when CM Mr. Vijay enters the House. Speaker J.C.D. Prabhakar issued no binding ruling, no procedural change, an"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/vijay-apologises-for-tn-forest-ministers-remarks-in-assembly/article71356869.ece",
-      "skip_reason": "This article covers an in-Assembly apology by CM Mr. Vijay for Forest Minister R.V. Ranjithkumar's remarks about the late M. Karunanidhi — specifically, referring to him by name without customary hono"
-    },
     {
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/tvk-governments-first-100-days-new-style-of-functioning-aimed-at-driving-progress-in-tamil-nadu/article71364809.ece",
@@ -488,6 +453,12 @@
   ],
   "recent_commits": [
     {
+      "sha": "820255d",
+      "prefix": "agent",
+      "title": "🟢 CM Mr. Vijay reviews Breakfast Scheme expansion — 15.3 lakh students, ₹217.63",
+      "timestamp": "2026-09-18T17:32:25Z"
+    },
+    {
       "sha": "d80f928",
       "prefix": "agent",
       "title": "🟢 Digital DL and RC issuance goes live statewide via Sarathi and Vahan portals",
@@ -540,19 +511,13 @@
       "prefix": "agent",
       "title": "🔵 ECI grants TVK State party status; 'Whistle' symbol reserved",
       "timestamp": "2026-09-10T17:34:41Z"
-    },
-    {
-      "sha": "e0e49ba",
-      "prefix": "agent",
-      "title": "🔵 TVK-led alliance formally named Secular Social Justice Victory Alliance",
-      "timestamp": "2026-09-09T17:35:13Z"
     }
   ],
   "last_run": {
-    "ts": "2026-09-17T23:29:35.904505+05:30",
-    "candidates": 6,
-    "published": 2,
-    "escalated": 0,
+    "ts": "2026-09-18T23:02:25.689219+05:30",
+    "candidates": 3,
+    "published": 1,
+    "escalated": 2,
     "errors": 0
   }
 }

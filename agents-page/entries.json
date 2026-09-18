@@ -1,5 +1,17 @@
 [
   {
+    "title": "🟢 CM Mr. Vijay reviews Breakfast Scheme expansion — 15.3 lakh students, ₹217.63 cr allocated",
+    "date": "September 18, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 827,
+        "output_tokens": 811,
+        "cache_read_tokens": 1373,
+        "cache_creation_tokens": 0
+      }
+    }
+  },
+  {
     "title": "🟢 CM Mr. Vijay returns from UK with ₹15,300 cr investment commitments, 10,000 jobs",
     "date": "September 17, 2026",
     "reasoning": {
@@ -276,38 +288,17 @@
   {
     "title": "🟢 Health Minister announces elderly insurance scheme — 38 lakh seniors, ₹2,997 cr outlay",
     "date": "August 17, 2026",
-    "reasoning": {
-      "drafter_usage": {
-        "input_tokens": 978,
-        "output_tokens": 858,
-        "cache_read_tokens": 1373,
-        "cache_creation_tokens": 0
-      }
-    }
+    "reasoning": null
   },
   {
     "title": "🟢 Revenue Minister announces three-tier certificate system, ₹688.63 cr tablet rollout, ₹80 cr disaster warning network",
     "date": "August 17, 2026",
-    "reasoning": {
-      "drafter_usage": {
-        "input_tokens": 876,
-        "output_tokens": 574,
-        "cache_read_tokens": 1373,
-        "cache_creation_tokens": 0
-      }
-    }
+    "reasoning": null
   },
   {
     "title": "🟢 CM expands crop loan waiver to ₹75,000 ceiling — ₹6,220 crore total, 13.34 lakh farmers",
     "date": "August 17, 2026",
-    "reasoning": {
-      "drafter_usage": {
-        "input_tokens": 1040,
-        "output_tokens": 838,
-        "cache_read_tokens": 1373,
-        "cache_creation_tokens": 0
-      }
-    }
+    "reasoning": null
   },
   {
     "title": "🟢 Vettri Tamil Nadu Investment Conclave closes with 97 MoUs, ₹67,452 crore committed",
@@ -322,14 +313,7 @@
   {
     "title": "🟢 Railway Board approves MRTS merger with Chennai Metro Rail after 15-year wait",
     "date": "August 12, 2026",
-    "reasoning": {
-      "drafter_usage": {
-        "input_tokens": 856,
-        "output_tokens": 868,
-        "cache_read_tokens": 1373,
-        "cache_creation_tokens": 0
-      }
-    }
+    "reasoning": null
   },
   {
     "title": "📅 Tamil Nadu Assembly passes resolution urging freeze of Lok Sabha seats at 543",
