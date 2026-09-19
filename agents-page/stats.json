@@ -1,17 +1,23 @@
 {
   "period": "Rolling 30 days",
-  "as_of": "2026-09-18T23:02:28.768883+05:30",
-  "candidates_surfaced": 223,
-  "auto_verified": 26,
-  "auto_verified_pct": 12,
-  "escalated": 16,
-  "escalated_pct": 7,
-  "autonomous_commits": 26,
+  "as_of": "2026-09-19T22:31:59.736174+05:30",
+  "candidates_surfaced": 215,
+  "auto_verified": 23,
+  "auto_verified_pct": 11,
+  "escalated": 12,
+  "escalated_pct": 6,
+  "autonomous_commits": 23,
   "operator_edited": 0,
-  "skipped": 56,
-  "cost_this_month_usd": 5.12,
-  "cost_per_published_entry_usd": 0.2,
+  "skipped": 55,
+  "cost_this_month_usd": 4.35,
+  "cost_per_published_entry_usd": 0.19,
   "autonomous_commits_list": [
+    {
+      "sha": "307b724",
+      "prefix": "agent",
+      "title": "⚖️ Madras HC reserves orders on bid to reject Tirupattur TVK MLA's election peti",
+      "timestamp": "2026-09-19T17:01:56Z"
+    },
     {
       "sha": "820255d",
       "prefix": "agent",
@@ -89,35 +95,9 @@
       "prefix": "agent",
       "title": "🟢 Annapoorani Super Six Scheme announced — 3 LPG cylinders/year via DBT from Pon",
       "timestamp": "2026-09-09T06:23:58Z"
-    },
-    {
-      "sha": "91e9082",
-      "prefix": "agent",
-      "title": "🟢 CM Mr. Vijay announces 29,108 new police posts over five years, 10,000 recruit",
-      "timestamp": "2026-09-09T05:39:04Z"
     }
   ],
   "escalated_list": [
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-government-order-seeking-steps-to-prevent-students-from-protesting-withdrawn-after-row/article71363796.ece",
-      "reasoning": "The core facts are well-verified across two strong whitelisted sources (The Hindu and Times of India): the Department of Collegiate Education issued an order on August 17, 2026 directing college principals to prevent students from joining protests by Left parties and the CJP, and then withdrew it on"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/vijay-led-tamil-nadu-governments-first-100-days-reform-welfare-and-challenges/article71363540.ece",
-      "reasoning": "The article is a well-sourced, multi-outlet-corroborated retrospective review from The Hindu marking the TVK government's 100-day milestone (oath date May 10, 2026; article date August 19, 2026 — confirmed accurate). Core factual claims check out: 108 seats, ~35% vote share (Wikipedia gives 34.92%),"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/cm-health-insurance-coverage-increased-from-5-lakh-to-25-lakh-in-tamil-nadu/article71363805.ece",
-      "reasoning": "The core claims — CMCHIS coverage hike from ₹5 lakh to ₹25 lakh, 400-bed Perambur hospital at ₹300 crore, and Cancer Care Mission upgrade — are corroborated by at least four independent outlets (The Hindu, New Indian Express, New Kerala, MENAFN/PTI). However, there are material numerical discrepanci"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/maternity-leave-for-third-child-of-women-government-employees-raised-to-365-days/article71360294.ece",
-      "reasoning": "The core facts are well-verified across two whitelisted sources (The Hindu and New Indian Express): Minister D. Sarathkumar announced in the Assembly on August 18, 2026 that maternity leave for the third child of women government employees will be raised from 12 weeks to 365 days. However, the candi"
-    },
     {
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/tn-govt-to-formulate-state-cooperative-policy-minister-gandhiraj/article71368856.ece",
@@ -170,31 +150,6 @@
     }
   ],
   "skipped_list": [
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/tvk-governments-first-100-days-new-style-of-functioning-aimed-at-driving-progress-in-tamil-nadu/article71364809.ece",
-      "skip_reason": "This is an analytical retrospective/opinion-style piece from The Hindu marking the TVK government's 100-day milestone. It does not report a discrete governance action (executive order, cabinet decisio"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/aiadmk-walks-out-of-assembly-protesting-speakers-refusal-to-take-up-calling-attention-motion/article71363870.ece",
-      "skip_reason": "This article documents an AIADMK opposition walkout from the Tamil Nadu Assembly — a procedural protest against the Speaker's refusal to admit a Calling Attention Motion. While the underlying humanita"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/tvk-mla-renders-mgr-song-to-praise-cm-vijay/article71363976.ece",
-      "skip_reason": "The candidate article — a TVK MLA singing an MGR song in the Assembly to praise CM Mr. Vijay — is pure political symbolism with no governance action, executive order, or policy implication of its own."
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/have-proof-of-corruption-in-erstwhile-dmk-government-will-reveal-it-when-necessary-cm-vijay/article71363682.ece",
-      "skip_reason": "This article reports a political speech by CM Mr. Vijay in the Tamil Nadu Assembly in which he claims to hold evidence of corruption by the previous DMK government but explicitly declines to reveal it"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/vck-will-support-tvk-to-complete-full-term-thirumavalavan/article71361608.ece",
-      "skip_reason": "This article is a press conference statement by VCK leader Thirumavalavan reiterating coalition support for the TVK government — a political/factional development with no new governance action. VCK's "
-    },
     {
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/southern-zonal-council-meet-tamil-nadu-cm-vijay-seeks-fair-equitable-treatment-of-southern-states-from-centre/article71368332.ece",
@@ -449,9 +404,35 @@
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/power-cuts-have-become-the-norm-in-state-anbumani-ramadoss/article71472855.ece",
       "skip_reason": "This article is an opposition press statement by PMK president Anbumani Ramadoss criticising the Tamil Nadu government over power cuts. It contains no governance action — no executive order, cabinet d"
+    },
+    {
+      "title": "",
+      "url": "https://theprint.in/india/home-dept-examining-legal-opinion-on-eds-request-to-register-case-against-vijayan-chennithala/3047314/",
+      "skip_reason": "This article concerns Kerala state politics entirely — specifically Kerala's Home Minister Ramesh Chennithala, Kerala's Leader of Opposition Pinarayi Vijayan, and an Enforcement Directorate corruption"
+    },
+    {
+      "title": "",
+      "url": "https://theprint.in/india/dusu-polls-nsuis-vijay-meena-leads-presidential-race-by-494-votes-after-10th-round/3047268/",
+      "skip_reason": "This article concerns the Delhi University Students' Union (DUSU) election results — a student politics event in New Delhi. The 'Vijay' referenced is Vijay Meena, an NSUI student candidate, not CM Mr."
+    },
+    {
+      "title": "",
+      "url": "https://theprint.in/india/tn-bypolls-defection-row-takes-centre-stage-as-tn-cm-vijay-palaniswami-hit-campaign-trail/3047262/",
+      "skip_reason": "This article covers electoral campaigning and a political defection row ahead of the October 6 by-elections in Madurantakam and Dharapuram. While the facts are well-corroborated across PTI/ThePrint an"
+    },
+    {
+      "title": "",
+      "url": "https://theprint.in/india/dusu-polls-abvp-leading-presidential-post-in-seventh-round/3047229/",
+      "skip_reason": "This article is entirely outside the scope of cmvijay.ai. It covers DUSU (Delhi University Students' Union) election counting results in New Delhi — a national-level student union election with no con"
     }
   ],
   "recent_commits": [
+    {
+      "sha": "307b724",
+      "prefix": "agent",
+      "title": "⚖️ Madras HC reserves orders on bid to reject Tirupattur TVK MLA's election peti",
+      "timestamp": "2026-09-19T17:01:56Z"
+    },
     {
       "sha": "820255d",
       "prefix": "agent",
@@ -505,19 +486,13 @@
       "prefix": "agent",
       "title": "🔵 TVK fields two ex-AIADMK MLAs in October 6 Madurantakam, Dharapuram bypolls",
       "timestamp": "2026-09-10T17:34:41Z"
-    },
-    {
-      "sha": "9de7da7",
-      "prefix": "agent",
-      "title": "🔵 ECI grants TVK State party status; 'Whistle' symbol reserved",
-      "timestamp": "2026-09-10T17:34:41Z"
     }
   ],
   "last_run": {
-    "ts": "2026-09-18T23:02:25.689219+05:30",
-    "candidates": 3,
+    "ts": "2026-09-19T22:31:56.345550+05:30",
+    "candidates": 5,
     "published": 1,
-    "escalated": 2,
+    "escalated": 0,
     "errors": 0
   }
 }
