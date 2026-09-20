@@ -1,17 +1,23 @@
 {
   "period": "Rolling 30 days",
-  "as_of": "2026-09-19T22:31:59.736174+05:30",
-  "candidates_surfaced": 215,
-  "auto_verified": 23,
-  "auto_verified_pct": 11,
-  "escalated": 12,
-  "escalated_pct": 6,
-  "autonomous_commits": 23,
+  "as_of": "2026-09-20T22:50:16.381602+05:30",
+  "candidates_surfaced": 211,
+  "auto_verified": 21,
+  "auto_verified_pct": 10,
+  "escalated": 11,
+  "escalated_pct": 5,
+  "autonomous_commits": 21,
   "operator_edited": 0,
-  "skipped": 55,
-  "cost_this_month_usd": 4.35,
+  "skipped": 54,
+  "cost_this_month_usd": 4.03,
   "cost_per_published_entry_usd": 0.19,
   "autonomous_commits_list": [
+    {
+      "sha": "edaa274",
+      "prefix": "agent",
+      "title": "🟢 TASMAC retail staff to wear uniforms from November 15; ₹6,000 annual allowance",
+      "timestamp": "2026-09-20T17:20:13Z"
+    },
     {
       "sha": "307b724",
       "prefix": "agent",
@@ -100,11 +106,6 @@
   "escalated_list": [
     {
       "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/tn-govt-to-formulate-state-cooperative-policy-minister-gandhiraj/article71368856.ece",
-      "reasoning": "The Hindu confirms Minister V. Gandhiraj made an Assembly announcement on August 20, 2026 about formulating a State Cooperative Policy, with several concrete monetary allocations (₹7,015 crore Singa Pengal scheme, ₹5,000 crore rural loans, ₹15 crore PDS buildings, etc.). No existing site entry confl"
-    },
-    {
-      "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-government-to-reimburse-money-for-three-lpg-cylinders-annually-from-pongal-2027-cm-vijay/article71383242.ece",
       "reasoning": "The article is well-sourced (The Hindu + India Today corroboration) and the core facts are verified: CM Mr. Vijay announced the 'Annapoorani Super Six Scheme' on August 24, 2026, reimbursing 3 LPG cylinders/year via DBT from Pongal 2027 for ~1.30 crore families at ~₹4,000 crore/year. However, escala"
     },
@@ -150,36 +151,6 @@
     }
   ],
   "skipped_list": [
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/southern-zonal-council-meet-tamil-nadu-cm-vijay-seeks-fair-equitable-treatment-of-southern-states-from-centre/article71368332.ece",
-      "skip_reason": "The article documents CM Mr. Vijay's speech at the 31st Southern Zonal Council meeting — a well-confirmed event (corroborated by PTI, AIR News, ETV Bharat, AP7AM, and a prior The Hindu preview). Howev"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-assembly-ration-rice-used-as-cattle-fodder-remark-by-minister-sengottaiyan-triggers-furore/article71368574.ece",
-      "skip_reason": "This article covers a political verbal skirmish in the Tamil Nadu Assembly — Minister Sengottaiyan's remark about PDS rice being used as cattle fodder during the previous AIADMK regime, and the Opposi"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-cm-vijay-extends-greetings-on-world-photography-day/article71365324.ece",
-      "skip_reason": "This article covers CM Mr. Vijay posting greetings on X for World Photography Day and receiving a visit from the Tamil Nadu Press Photographers Cooperative Housing Society at the Secretariat. There is"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/inquiry-causing-delay-in-repatriation-of-tamil-nadu-fishermans-body-from-saudi-arabia-minister-aadhav-arjuna/article71368417.ece",
-      "skip_reason": "This article reports a ministerial statement in the Tamil Nadu Assembly about a pending consular matter — the repatriation of a fisherman's body from Saudi Arabia following an Iranian pirate attack on"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/southern-zonal-council-to-meet-near-mamallapuram-on-august-20/article71364759.ece",
-      "skip_reason": "The article is a pre-event notice for the 31st Southern Zonal Council meeting on August 20, 2026. All factual claims are verified — the date, venue, Amit Shah as chair, CM Mr. Vijay as vice-chair, sta"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/residents-welcome-closure-of-tasmac-outlet-near-nursing-college-on-arcot-road-in-vellore/article71365020.ece",
-      "skip_reason": "This article describes the closure of a single TASMAC outlet in Vellore's Kagithapattarai area near a nursing college on Arcot Road, framed as a community-welcome story following a prior The Hindu rep"
-    },
     {
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/villagers-oppose-opening-of-new-tasmac-outlet-in-tiruvannamalai/article71442666.ece",
@@ -424,9 +395,40 @@
       "title": "",
       "url": "https://theprint.in/india/dusu-polls-abvp-leading-presidential-post-in-seventh-round/3047229/",
       "skip_reason": "This article is entirely outside the scope of cmvijay.ai. It covers DUSU (Delhi University Students' Union) election counting results in New Delhi — a national-level student union election with no con"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tvk-regimes-experiment-of-having-two-advisers-to-vijay-alongside-chief-secretary-giving-mixed-vibes-to-tns-bureaucratic-circles/article71485220.ece",
+      "skip_reason": "This article is an analytical/opinion-style piece from The Hindu examining the bureaucratic 'mixed vibes' caused by the co-existence of two advisers (Vishnu Reddy and John Arokiasamy) alongside Chief "
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/cities/chennai/cpim-warns-tvk-govt-not-to-take-unilateral-decisions/article71487666.ece",
+      "skip_reason": "This article reports a CPI(M) political demonstration and a warning speech by party state secretary P. Shanmugam — an outside-support ally threatening to reconsider support if CM Mr. Vijay acts unilat"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/bypolls-are-being-conducted-in-tn-because-democracy-has-died-says-stalin/article71485563.ece",
+      "skip_reason": "This article is a speech by DMK president M.K. Stalin at a party event (Mupperum Vizha), criticising the ruling TVK government over bypolls and calling it a 'reels government'. It contains no governan"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/cities/Coimbatore/pwd-minister-tried-to-join-aiadmk-before-tvk-edappadi-k-palaniswami/article71485526.ece",
+      "skip_reason": "This article covers a political allegation by AIADMK general secretary Edappadi K. Palaniswami against PWD Minister Aadhav Arjuna, claiming the minister sought to join AIADMK before TVK. It is a class"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/seven-persons-suffer-from-diarrhea-after-consuming-food-at-community-event/article71484513.ece",
+      "skip_reason": "This article reports a localised public health incident — seven individuals experiencing diarrhea after a community event — with a district Collector and District Health Officer directing routine prec"
     }
   ],
   "recent_commits": [
+    {
+      "sha": "edaa274",
+      "prefix": "agent",
+      "title": "🟢 TASMAC retail staff to wear uniforms from November 15; ₹6,000 annual allowance",
+      "timestamp": "2026-09-20T17:20:13Z"
+    },
     {
       "sha": "307b724",
       "prefix": "agent",
@@ -480,17 +482,11 @@
       "prefix": "agent",
       "title": "⚖️ Madras HC declines interim stay on TN digital driving licence rollout",
       "timestamp": "2026-09-11T17:35:10Z"
-    },
-    {
-      "sha": "74fc7b1",
-      "prefix": "agent",
-      "title": "🔵 TVK fields two ex-AIADMK MLAs in October 6 Madurantakam, Dharapuram bypolls",
-      "timestamp": "2026-09-10T17:34:41Z"
     }
   ],
   "last_run": {
-    "ts": "2026-09-19T22:31:56.345550+05:30",
-    "candidates": 5,
+    "ts": "2026-09-20T22:50:13.630427+05:30",
+    "candidates": 6,
     "published": 1,
     "escalated": 0,
     "errors": 0
