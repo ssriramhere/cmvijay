@@ -1,5 +1,29 @@
 [
   {
+    "title": "⚖️ Supreme Court tells TN to find alternate site; SASTRA eviction on hold",
+    "date": "September 21, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 782,
+        "output_tokens": 676,
+        "cache_read_tokens": 1373,
+        "cache_creation_tokens": 0
+      }
+    }
+  },
+  {
+    "title": "🟢 CM chairs Secretariat review on Vettri Payanam expansion to five bus categories",
+    "date": "September 21, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 840,
+        "output_tokens": 887,
+        "cache_read_tokens": 1373,
+        "cache_creation_tokens": 0
+      }
+    }
+  },
+  {
     "title": "⚖️ Madras HC reserves orders on bid to reject Tirupattur TVK MLA's election petition",
     "date": "September 19, 2026",
     "reasoning": {

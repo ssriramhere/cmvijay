@@ -1,17 +1,29 @@
 {
   "period": "Rolling 30 days",
-  "as_of": "2026-09-20T22:50:16.381602+05:30",
-  "candidates_surfaced": 211,
-  "auto_verified": 21,
-  "auto_verified_pct": 10,
-  "escalated": 11,
-  "escalated_pct": 5,
-  "autonomous_commits": 21,
+  "as_of": "2026-09-22T00:38:01.814345+05:30",
+  "candidates_surfaced": 207,
+  "auto_verified": 23,
+  "auto_verified_pct": 11,
+  "escalated": 13,
+  "escalated_pct": 6,
+  "autonomous_commits": 23,
   "operator_edited": 0,
-  "skipped": 54,
-  "cost_this_month_usd": 4.03,
+  "skipped": 58,
+  "cost_this_month_usd": 4.37,
   "cost_per_published_entry_usd": 0.19,
   "autonomous_commits_list": [
+    {
+      "sha": "87f1ee4",
+      "prefix": "agent",
+      "title": "🟢 CM chairs Secretariat review on Vettri Payanam expansion to five bus categorie",
+      "timestamp": "2026-09-21T19:07:57Z"
+    },
+    {
+      "sha": "6c73164",
+      "prefix": "agent",
+      "title": "⚖️ Supreme Court tells TN to find alternate site; SASTRA eviction on hold",
+      "timestamp": "2026-09-21T19:07:57Z"
+    },
     {
       "sha": "edaa274",
       "prefix": "agent",
@@ -148,6 +160,16 @@
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/cm-vijay-to-launch-thaimaman-thanga-mothiram-thittam-in-madurai-district-on-september-28/article71480726.ece",
       "reasoning": "The article is well-sourced — The Hindu's official bureau report is corroborated by PTI, NDTV, Times of India, India Today, and Ground News, all confirming a September 28 launch in Madurai. No primacy claims are made. The scheme maps clearly to manifesto promise g1_newborn (currently 'partial'), and"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/cities/chennai/government-hospitals-running-low-on-live-saving-drugs-for-pre-term-babies/article71492267.ece",
+      "reasoning": "The Hindu reports a multi-month surfactant drug shortage at government SNCUs across at least 8 Tamil Nadu districts, sourced from 'official sources' and multiple anonymous doctors — but no named government spokesperson is on record. This is a single-source story (no second outlet corroborates as of "
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/why-has-the-tamil-nadu-private-universities-amendment-bill-2026-triggered-a-controversy-explained/article71490233.ece",
+      "reasoning": "The Tamil Nadu Private Universities (Amendment) Bill, 2026 is a genuine, significant legislative action — passed on September 8, 2026, and now sent to the President for assent — corroborated by both The Hindu and Economic Times Education. However, escalation is warranted for three reasons: (1) the a"
     }
   ],
   "skipped_list": [
@@ -420,9 +442,41 @@
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/seven-persons-suffer-from-diarrhea-after-consuming-food-at-community-event/article71484513.ece",
       "skip_reason": "This article reports a localised public health incident — seven individuals experiencing diarrhea after a community event — with a district Collector and District Health Officer directing routine prec"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-cm-vijay-reviews-northeast-monsoon-preparedness-dengue-prevention-measures/article71491281.ece",
+      "skip_reason": "This is a routine administrative review meeting — CM Mr. Vijay chaired a monsoon preparedness and dengue prevention briefing at the Secretariat on September 21, 2026. While the event is real and well-"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-bypolls-dmk-urges-election-commission-to-cancel-tvks-list-of-star-campaigners-from-other-parties/article71490583.ece",
+      "skip_reason": "This article covers an intra-alliance electoral dispute — DMK filing a complaint with the Election Commission about TVK's star campaigner list for the Madurantakam and Dharapuram bypolls, and TVK subs"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/stalin-warns-of-massive-protest-over-proposed-tamil-nadu-secretariat-complex-at-pattinapakkam/article71490486.ece",
+      "skip_reason": "This article covers M.K. Stalin (DMK opposition leader) issuing a political statement threatening protest against the TVK government's Pattinapakkam Secretariat proposal. The actor is the opposition, "
+    },
+    {
+      "title": "",
+      "url": "https://theprint.in/india/punjab-cong-leader-singla-takes-on-bjp-over-nasha-mukt-punjab-yatra/3048223/",
+      "skip_reason": "This article is entirely about Punjab state politics — specifically a Congress leader criticising the BJP's 'Nasha Mukt Punjab Yatra' anti-drug campaign. It has no connection to Tamil Nadu, CM Mr. Vij"
     }
   ],
   "recent_commits": [
+    {
+      "sha": "87f1ee4",
+      "prefix": "agent",
+      "title": "🟢 CM chairs Secretariat review on Vettri Payanam expansion to five bus categorie",
+      "timestamp": "2026-09-21T19:07:57Z"
+    },
+    {
+      "sha": "6c73164",
+      "prefix": "agent",
+      "title": "⚖️ Supreme Court tells TN to find alternate site; SASTRA eviction on hold",
+      "timestamp": "2026-09-21T19:07:57Z"
+    },
     {
       "sha": "edaa274",
       "prefix": "agent",
@@ -470,25 +524,13 @@
       "prefix": "agent",
       "title": "🟢 Tamil Nadu signs two London MoUs — ₹12,000 cr investment, 9,000 jobs committed",
       "timestamp": "2026-09-14T19:03:09Z"
-    },
-    {
-      "sha": "0bccbb6",
-      "prefix": "agent",
-      "title": "🟢 CM Mr. Vijay departs for U.K. on first official overseas visit — MoUs, diaspor",
-      "timestamp": "2026-09-11T17:35:10Z"
-    },
-    {
-      "sha": "869261e",
-      "prefix": "agent",
-      "title": "⚖️ Madras HC declines interim stay on TN digital driving licence rollout",
-      "timestamp": "2026-09-11T17:35:10Z"
     }
   ],
   "last_run": {
-    "ts": "2026-09-20T22:50:13.630427+05:30",
-    "candidates": 6,
-    "published": 1,
-    "escalated": 0,
+    "ts": "2026-09-22T00:37:58.168336+05:30",
+    "candidates": 8,
+    "published": 2,
+    "escalated": 2,
     "errors": 0
   }
 }
