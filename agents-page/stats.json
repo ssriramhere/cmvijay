@@ -1,17 +1,35 @@
 {
   "period": "Rolling 30 days",
-  "as_of": "2026-09-22T00:38:01.814345+05:30",
-  "candidates_surfaced": 207,
-  "auto_verified": 23,
-  "auto_verified_pct": 11,
-  "escalated": 13,
-  "escalated_pct": 6,
-  "autonomous_commits": 23,
+  "as_of": "2026-09-22T23:31:16.466744+05:30",
+  "candidates_surfaced": 214,
+  "auto_verified": 26,
+  "auto_verified_pct": 12,
+  "escalated": 14,
+  "escalated_pct": 7,
+  "autonomous_commits": 26,
   "operator_edited": 0,
-  "skipped": 58,
-  "cost_this_month_usd": 4.37,
-  "cost_per_published_entry_usd": 0.19,
+  "skipped": 61,
+  "cost_this_month_usd": 4.75,
+  "cost_per_published_entry_usd": 0.18,
   "autonomous_commits_list": [
+    {
+      "sha": "6251d0c",
+      "prefix": "agent",
+      "title": "🟢 CM chairs videoconference review of NE monsoon preparedness with 10 southern,",
+      "timestamp": "2026-09-22T18:01:12Z"
+    },
+    {
+      "sha": "60fa624",
+      "prefix": "agent",
+      "title": "✅ Perunthalaivar Kamarajar Breakfast Scheme expanded to Classes VI–VIII, 15.3 la",
+      "timestamp": "2026-09-22T18:01:12Z"
+    },
+    {
+      "sha": "8614454",
+      "prefix": "agent",
+      "title": "🟢 CM Mr. Vijay chairs review of Cooum river restoration DPR progress",
+      "timestamp": "2026-09-22T18:01:12Z"
+    },
     {
       "sha": "87f1ee4",
       "prefix": "agent",
@@ -101,18 +119,6 @@
       "prefix": "agent",
       "title": "🔵 TVK-led alliance formally named Secular Social Justice Victory Alliance",
       "timestamp": "2026-09-09T17:35:13Z"
-    },
-    {
-      "sha": "00d4638",
-      "prefix": "agent",
-      "title": "🟢 Thaimaman Thanga Mothiram GO issued — ₹755.83 cr newborn gold ring scheme, ten",
-      "timestamp": "2026-09-09T06:34:37Z"
-    },
-    {
-      "sha": "c29bd6d",
-      "prefix": "agent",
-      "title": "🟢 Annapoorani Super Six Scheme announced — 3 LPG cylinders/year via DBT from Pon",
-      "timestamp": "2026-09-09T06:23:58Z"
     }
   ],
   "escalated_list": [
@@ -170,6 +176,11 @@
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/why-has-the-tamil-nadu-private-universities-amendment-bill-2026-triggered-a-controversy-explained/article71490233.ece",
       "reasoning": "The Tamil Nadu Private Universities (Amendment) Bill, 2026 is a genuine, significant legislative action — passed on September 8, 2026, and now sent to the President for assent — corroborated by both The Hindu and Economic Times Education. However, escalation is warranted for three reasons: (1) the a"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-government-renames-cm-breakfast-scheme-after-kamaraj/article71253371.ece",
+      "reasoning": "The rename and expansion of the CM Breakfast Scheme is a well-sourced, substantive governance action confirmed by two The Hindu articles and multiple secondary sources. However, escalation is warranted for two reasons: (1) the Government Order was formally dated July 15, 2026 (Kamaraj's birth annive"
     }
   ],
   "skipped_list": [
@@ -462,9 +473,42 @@
       "title": "",
       "url": "https://theprint.in/india/punjab-cong-leader-singla-takes-on-bjp-over-nasha-mukt-punjab-yatra/3048223/",
       "skip_reason": "This article is entirely about Punjab state politics — specifically a Congress leader criticising the BJP's 'Nasha Mukt Punjab Yatra' anti-drug campaign. It has no connection to Tamil Nadu, CM Mr. Vij"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/i-cannot-be-held-responsible-for-all-social-media-posts-by-dmk-handles-functionaries-stalin-tells-madras-high-court/article71494219.ece",
+      "skip_reason": "This article is about M.K. Stalin — the former Chief Minister and current DMK opposition leader — filing a counter-affidavit in a Madras High Court defamation suit. Stalin is not the subject of cmvija"
+    },
+    {
+      "title": "",
+      "url": "https://theprint.in/india/cmrl-bribery-case-keralam-govt-orders-police-inquiry-into-ed-report-seeking-action-against-ex-cm-vijayan/3049608/",
+      "skip_reason": "This article is entirely about Kerala state politics — specifically a police inquiry ordered by the Kerala (UDF) government into an ED bribery report against former Kerala CM Pinarayi Vijayan, his dau"
+    },
+    {
+      "title": "",
+      "url": "https://theprint.in/india/lower-mettur-storage-endangers-samba-crop-says-pmk-demands-rs-25k-compensation-for-farmers/3049549/",
+      "skip_reason": "This article is entirely an opposition party (PMK) demand statement — PMK president Anbumani Ramadoss is urging the TN government to act, but no government action, executive order, cabinet decision, o"
     }
   ],
   "recent_commits": [
+    {
+      "sha": "6251d0c",
+      "prefix": "agent",
+      "title": "🟢 CM chairs videoconference review of NE monsoon preparedness with 10 southern,",
+      "timestamp": "2026-09-22T18:01:12Z"
+    },
+    {
+      "sha": "60fa624",
+      "prefix": "agent",
+      "title": "✅ Perunthalaivar Kamarajar Breakfast Scheme expanded to Classes VI–VIII, 15.3 la",
+      "timestamp": "2026-09-22T18:01:12Z"
+    },
+    {
+      "sha": "8614454",
+      "prefix": "agent",
+      "title": "🟢 CM Mr. Vijay chairs review of Cooum river restoration DPR progress",
+      "timestamp": "2026-09-22T18:01:12Z"
+    },
     {
       "sha": "87f1ee4",
       "prefix": "agent",
@@ -506,31 +550,13 @@
       "prefix": "agent",
       "title": "🟢 CM Mr. Vijay returns from UK with ₹15,300 cr investment commitments, 10,000 jo",
       "timestamp": "2026-09-17T17:59:35Z"
-    },
-    {
-      "sha": "afec201",
-      "prefix": "agent",
-      "title": "🟢 UK investment drive yields ₹12,300 cr in MoUs, 9,400+ jobs for Tamil Nadu",
-      "timestamp": "2026-09-15T17:59:45Z"
-    },
-    {
-      "sha": "28118e9",
-      "prefix": "agent",
-      "title": "⚖️ Madras HC dismisses AIADMK petition against Minister Sengottaiyan's Gobichett",
-      "timestamp": "2026-09-15T17:59:45Z"
-    },
-    {
-      "sha": "5ad19f0",
-      "prefix": "agent",
-      "title": "🟢 Tamil Nadu signs two London MoUs — ₹12,000 cr investment, 9,000 jobs committed",
-      "timestamp": "2026-09-14T19:03:09Z"
     }
   ],
   "last_run": {
-    "ts": "2026-09-22T00:37:58.168336+05:30",
-    "candidates": 8,
-    "published": 2,
-    "escalated": 2,
+    "ts": "2026-09-22T23:31:13.025037+05:30",
+    "candidates": 7,
+    "published": 3,
+    "escalated": 1,
     "errors": 0
   }
 }

@@ -1,5 +1,41 @@
 [
   {
+    "title": "🟢 CM Mr. Vijay chairs review of Cooum river restoration DPR progress",
+    "date": "September 22, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 705,
+        "output_tokens": 695,
+        "cache_read_tokens": 0,
+        "cache_creation_tokens": 1373
+      }
+    }
+  },
+  {
+    "title": "✅ Perunthalaivar Kamarajar Breakfast Scheme expanded to Classes VI–VIII, 15.3 lakh students added",
+    "date": "September 22, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 747,
+        "output_tokens": 582,
+        "cache_read_tokens": 1373,
+        "cache_creation_tokens": 0
+      }
+    }
+  },
+  {
+    "title": "🟢 CM chairs videoconference review of NE monsoon preparedness with 10 southern, hilly district Collectors",
+    "date": "September 22, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 715,
+        "output_tokens": 720,
+        "cache_read_tokens": 1373,
+        "cache_creation_tokens": 0
+      }
+    }
+  },
+  {
     "title": "⚖️ Supreme Court tells TN to find alternate site; SASTRA eviction on hold",
     "date": "September 21, 2026",
     "reasoning": {
