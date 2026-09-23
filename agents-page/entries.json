@@ -1,5 +1,17 @@
 [
   {
+    "title": "🟢 CM Mr. Vijay conducts surprise inspection at TNPDCL headquarters amid power cuts",
+    "date": "September 23, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 773,
+        "output_tokens": 718,
+        "cache_read_tokens": 0,
+        "cache_creation_tokens": 1373
+      }
+    }
+  },
+  {
     "title": "🟢 CM Mr. Vijay chairs review of Cooum river restoration DPR progress",
     "date": "September 22, 2026",
     "reasoning": {

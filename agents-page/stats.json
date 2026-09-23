@@ -1,17 +1,23 @@
 {
   "period": "Rolling 30 days",
-  "as_of": "2026-09-22T23:31:16.466744+05:30",
-  "candidates_surfaced": 214,
-  "auto_verified": 26,
+  "as_of": "2026-09-23T23:46:48.759863+05:30",
+  "candidates_surfaced": 216,
+  "auto_verified": 27,
   "auto_verified_pct": 12,
   "escalated": 14,
-  "escalated_pct": 7,
-  "autonomous_commits": 26,
+  "escalated_pct": 6,
+  "autonomous_commits": 27,
   "operator_edited": 0,
-  "skipped": 61,
-  "cost_this_month_usd": 4.75,
+  "skipped": 63,
+  "cost_this_month_usd": 4.85,
   "cost_per_published_entry_usd": 0.18,
   "autonomous_commits_list": [
+    {
+      "sha": "a6618cc",
+      "prefix": "agent",
+      "title": "🟢 CM Mr. Vijay conducts surprise inspection at TNPDCL headquarters amid power cu",
+      "timestamp": "2026-09-23T18:16:45Z"
+    },
     {
       "sha": "6251d0c",
       "prefix": "agent",
@@ -488,9 +494,25 @@
       "title": "",
       "url": "https://theprint.in/india/lower-mettur-storage-endangers-samba-crop-says-pmk-demands-rs-25k-compensation-for-farmers/3049549/",
       "skip_reason": "This article is entirely an opposition party (PMK) demand statement — PMK president Anbumani Ramadoss is urging the TN government to act, but no government action, executive order, cabinet decision, o"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/palaniswami-slams-tvk-led-regime-for-not-taking-steps-to-curb-spread-of-dengue/article71499869.ece",
+      "skip_reason": "This article is an opposition political statement — AIADMK leader Palaniswami and AMMK leader Dhinakaran criticising the TVK government for inaction on dengue and for CM Mr. Vijay's social media activ"
+    },
+    {
+      "title": "",
+      "url": "https://theprint.in/india/bjp-leaders-teenage-son-goes-missing-in-j-ks-kathua/3050442/",
+      "skip_reason": "This article concerns a BJP MLA's missing teenage son in Kathua, Jammu & Kashmir — a completely different jurisdiction from Tamil Nadu. The 'Vijay Kumar' named is a J&K BJP MLA, not CM Mr. Joseph Vija"
     }
   ],
   "recent_commits": [
+    {
+      "sha": "a6618cc",
+      "prefix": "agent",
+      "title": "🟢 CM Mr. Vijay conducts surprise inspection at TNPDCL headquarters amid power cu",
+      "timestamp": "2026-09-23T18:16:45Z"
+    },
     {
       "sha": "6251d0c",
       "prefix": "agent",
@@ -544,19 +566,13 @@
       "prefix": "agent",
       "title": "🟢 Digital DL and RC issuance goes live statewide via Sarathi and Vahan portals",
       "timestamp": "2026-09-17T17:59:35Z"
-    },
-    {
-      "sha": "a66d483",
-      "prefix": "agent",
-      "title": "🟢 CM Mr. Vijay returns from UK with ₹15,300 cr investment commitments, 10,000 jo",
-      "timestamp": "2026-09-17T17:59:35Z"
     }
   ],
   "last_run": {
-    "ts": "2026-09-22T23:31:13.025037+05:30",
-    "candidates": 7,
-    "published": 3,
-    "escalated": 1,
+    "ts": "2026-09-23T23:46:45.712658+05:30",
+    "candidates": 3,
+    "published": 1,
+    "escalated": 0,
     "errors": 0
   }
 }
