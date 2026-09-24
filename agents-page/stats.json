@@ -1,15 +1,15 @@
 {
   "period": "Rolling 30 days",
-  "as_of": "2026-09-23T23:46:48.759863+05:30",
-  "candidates_surfaced": 216,
+  "as_of": "2026-09-24T23:41:20.088360+05:30",
+  "candidates_surfaced": 204,
   "auto_verified": 27,
-  "auto_verified_pct": 12,
+  "auto_verified_pct": 13,
   "escalated": 14,
-  "escalated_pct": 6,
+  "escalated_pct": 7,
   "autonomous_commits": 27,
   "operator_edited": 0,
-  "skipped": 63,
-  "cost_this_month_usd": 4.85,
+  "skipped": 64,
+  "cost_this_month_usd": 4.88,
   "cost_per_published_entry_usd": 0.18,
   "autonomous_commits_list": [
     {
@@ -504,6 +504,11 @@
       "title": "",
       "url": "https://theprint.in/india/bjp-leaders-teenage-son-goes-missing-in-j-ks-kathua/3050442/",
       "skip_reason": "This article concerns a BJP MLA's missing teenage son in Kathua, Jammu & Kashmir — a completely different jurisdiction from Tamil Nadu. The 'Vijay Kumar' named is a J&K BJP MLA, not CM Mr. Joseph Vija"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/bjp-tn-chief-nainar-nagenthran-condemns-instances-of-contamination-of-breakfast-served-to-students/article71503507.ece",
+      "skip_reason": "This article is an opposition press statement — BJP Tamil Nadu president Nainar Nagenthran criticising the TVK government over alleged school breakfast contamination incidents. It contains no governan"
     }
   ],
   "recent_commits": [
@@ -569,9 +574,9 @@
     }
   ],
   "last_run": {
-    "ts": "2026-09-23T23:46:45.712658+05:30",
-    "candidates": 3,
-    "published": 1,
+    "ts": "2026-09-24T23:41:18.227417+05:30",
+    "candidates": 1,
+    "published": 0,
     "escalated": 0,
     "errors": 0
   }
