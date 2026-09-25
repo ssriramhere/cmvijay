@@ -1,16 +1,16 @@
 {
   "period": "Rolling 30 days",
-  "as_of": "2026-09-24T23:41:20.088360+05:30",
-  "candidates_surfaced": 204,
+  "as_of": "2026-09-25T23:47:01.546830+05:30",
+  "candidates_surfaced": 201,
   "auto_verified": 27,
   "auto_verified_pct": 13,
   "escalated": 14,
   "escalated_pct": 7,
   "autonomous_commits": 27,
   "operator_edited": 0,
-  "skipped": 64,
-  "cost_this_month_usd": 4.88,
-  "cost_per_published_entry_usd": 0.18,
+  "skipped": 71,
+  "cost_this_month_usd": 5.18,
+  "cost_per_published_entry_usd": 0.19,
   "autonomous_commits_list": [
     {
       "sha": "a6618cc",
@@ -509,6 +509,41 @@
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/bjp-tn-chief-nainar-nagenthran-condemns-instances-of-contamination-of-breakfast-served-to-students/article71503507.ece",
       "skip_reason": "This article is an opposition press statement — BJP Tamil Nadu president Nainar Nagenthran criticising the TVK government over alleged school breakfast contamination incidents. It contains no governan"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/stalin-hits-back-at-vijay-accuses-him-of-surrendering-to-bjp/article71509994.ece",
+      "skip_reason": "This article covers a political statement by DMK president M.K. Stalin on X, criticising CM Mr. Vijay's byelection candidate choices and accusing him of being soft on BJP. While the underlying facts ("
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/vijay-accuses-dmk-of-covering-up-pocso-act-case-against-veeramani-questions-aiadmks-silence/article71508920.ece",
+      "skip_reason": "This article documents a campaign speech by CM Mr. Vijay at a by-election rally in Madurantakam, in which he makes political accusations against the DMK and AIADMK regarding a POCSO case. While the un"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/veeramani-case-dmk-files-1-cr-defamation-suit-against-ministers-aadhav-arjuna-nirmal-kumar-before-madras-high-court/article71508329.ece",
+      "skip_reason": "This article covers an inter-party defamation suit filed by DMK against two TVK ministers over political accusations related to the Veeramani POCSO case. While the underlying POCSO case has governance"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/bjp-urges-eci-to-act-against-tvk-functionaries-for-involving-children-in-bypoll-campaign/article71507608.ece",
+      "skip_reason": "This article covers a BJP opposition party complaint to the ECI — a political statement by Nainar Nagenthran alleging TVK involved children in the Madurantakam bypoll campaign. It is not a governance "
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/videos/toxic-foam-floods-kelavarapalli-dam-farmers-demand-action/article71508054.ece",
+      "skip_reason": "This September 25, 2026 article is a video ground report that documents an ongoing, recurring civic grievance — toxic foam at Kelavarapalli Dam — but contains no new governance action, executive order"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/confident-that-vijay-will-accept-rahul-as-prime-ministerial-candidate-manickam-tagore/article71504912.ece",
+      "skip_reason": "This article is a political opinion/speculation piece by a Congress leader (Manickam Tagore) expressing personal confidence that CM Mr. Vijay will endorse Rahul Gandhi as the INDIA bloc's PM candidate"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/udhayanidhi-flays-tvk-led-government-over-alleged-sexual-assault-of-schoolgirl-near-vandalur/article71507469.ece",
+      "skip_reason": "This article documents an opposition political statement — Leader of Opposition Udhayanidhi Stalin's X post criticising the TVK government over an alleged schoolgirl assault near Vandalur. While the u"
     }
   ],
   "recent_commits": [
@@ -574,8 +609,8 @@
     }
   ],
   "last_run": {
-    "ts": "2026-09-24T23:41:18.227417+05:30",
-    "candidates": 1,
+    "ts": "2026-09-25T23:46:59.737558+05:30",
+    "candidates": 7,
     "published": 0,
     "escalated": 0,
     "errors": 0
