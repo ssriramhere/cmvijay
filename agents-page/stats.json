@@ -1,16 +1,16 @@
 {
   "period": "Rolling 30 days",
-  "as_of": "2026-09-25T23:47:01.546830+05:30",
-  "candidates_surfaced": 201,
+  "as_of": "2026-09-26T23:09:08.044150+05:30",
+  "candidates_surfaced": 204,
   "auto_verified": 27,
   "auto_verified_pct": 13,
   "escalated": 14,
   "escalated_pct": 7,
   "autonomous_commits": 27,
   "operator_edited": 0,
-  "skipped": 71,
-  "cost_this_month_usd": 5.18,
-  "cost_per_published_entry_usd": 0.19,
+  "skipped": 77,
+  "cost_this_month_usd": 5.37,
+  "cost_per_published_entry_usd": 0.2,
   "autonomous_commits_list": [
     {
       "sha": "a6618cc",
@@ -544,6 +544,36 @@
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/udhayanidhi-flays-tvk-led-government-over-alleged-sexual-assault-of-schoolgirl-near-vandalur/article71507469.ece",
       "skip_reason": "This article documents an opposition political statement — Leader of Opposition Udhayanidhi Stalin's X post criticising the TVK government over an alleged schoolgirl assault near Vandalur. While the u"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/dmk-says-police-arrested-gem-granites-veermani-because-of-court-direction/article71512659.ece",
+      "skip_reason": "This article is an opposition party press statement — DMK MP Constantine Ravindran making unverified allegations that the TVK government covered up the Gem Granites POCSO case four times, and filing a"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/elections/tamil-nadu-assembly/tamil-nadu-assembly-election-2026-interviews-with-political-leaders-a-compilation/article70782589.ece",
+      "skip_reason": "This is a meta-compilation article — an index page aggregating The Hindu's pre-election interviews with various Tamil Nadu political leaders (Stalin, EPS, Seeman, Piyush Goyal, etc.) ahead of the Apri"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/several-former-aiadmk-ministers-who-joined-tvk-get-party-posts/article71509303.ece",
+      "skip_reason": "This article covers an internal TVK party organisational appointment — CM Mr. Vijay acting in his capacity as TVK president, not as Chief Minister. Appointing former AIADMK ministers as deputy general"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/propriety-in-public-discourse-on-udhayanidhi-stalins-double-entendre-remarks/article71303942.ece",
+      "skip_reason": "This is a The Hindu editorial commentary on Udhayanidhi Stalin's (Leader of Opposition, DMK) double entendre remarks made at a Thanjavur protest meeting on August 3, 2026. The article involves no gove"
+    },
+    {
+      "title": "",
+      "url": "https://theprint.in/india/27-years-several-attempts-and-perseverance-how-up-man-landed-govt-teacher-job-at-59/3054024/",
+      "skip_reason": "This article is a human-interest story about a private individual, Vijay Kumar Sharma, from Baghpat, Uttar Pradesh, who secured a government teaching post after 27 years of attempts. It has no connect"
+    },
+    {
+      "title": "",
+      "url": "https://theprint.in/india/stalin-hits-out-at-cm-vijay-over-alleged-political-hypocrisy-administrative-failure/3054016/",
+      "skip_reason": "This article is entirely about opposition political rhetoric — DMK president M.K. Stalin's social media post criticising CM Mr. Vijay's campaign speech at Madurantakam ahead of the October 6 bypoll. T"
     }
   ],
   "recent_commits": [
@@ -609,8 +639,8 @@
     }
   ],
   "last_run": {
-    "ts": "2026-09-25T23:46:59.737558+05:30",
-    "candidates": 7,
+    "ts": "2026-09-26T23:09:06.487352+05:30",
+    "candidates": 6,
     "published": 0,
     "escalated": 0,
     "errors": 0
