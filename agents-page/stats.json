@@ -1,16 +1,16 @@
 {
   "period": "Rolling 30 days",
-  "as_of": "2026-09-26T23:09:08.044150+05:30",
-  "candidates_surfaced": 204,
+  "as_of": "2026-09-27T23:38:47.238562+05:30",
+  "candidates_surfaced": 203,
   "auto_verified": 27,
   "auto_verified_pct": 13,
-  "escalated": 14,
-  "escalated_pct": 7,
+  "escalated": 16,
+  "escalated_pct": 8,
   "autonomous_commits": 27,
   "operator_edited": 0,
-  "skipped": 77,
-  "cost_this_month_usd": 5.37,
-  "cost_per_published_entry_usd": 0.2,
+  "skipped": 84,
+  "cost_this_month_usd": 5.76,
+  "cost_per_published_entry_usd": 0.21,
   "autonomous_commits_list": [
     {
       "sha": "a6618cc",
@@ -187,6 +187,16 @@
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-government-renames-cm-breakfast-scheme-after-kamaraj/article71253371.ece",
       "reasoning": "The rename and expansion of the CM Breakfast Scheme is a well-sourced, substantive governance action confirmed by two The Hindu articles and multiple secondary sources. However, escalation is warranted for two reasons: (1) the Government Order was formally dated July 15, 2026 (Kamaraj's birth annive"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-government-exempts-public-law-and-order-department-from-rti-act/article71515196.ece",
+      "reasoning": "The core facts are well-verified: G.O. Ms. No. 57 (Human Resources Management (R) Department, dated September 21, 2026) exempted the Public (Law and Order) Department from the RTI Act under Section 24(4); it was publicly notified in the Government Gazette; and it was withdrawn on September 27, 2026 "
+    },
+    {
+      "title": "",
+      "url": "https://theprint.in/india/cm-vijay-to-launch-one-gram-gold-ring-scheme-for-newborns-in-tn/3054610/",
+      "reasoning": "The scheme launch is well-corroborated across four independent sources (India Today, News24, DynamiteNews, GovtSchemesIndia) and anchored to a real G.O. (Ms.) No.166 dated 23 June 2026. It maps directly to manifesto promise g1_newborn, which is currently 'partial'. The launch event would logically p"
     }
   ],
   "skipped_list": [
@@ -574,6 +584,41 @@
       "title": "",
       "url": "https://theprint.in/india/stalin-hits-out-at-cm-vijay-over-alleged-political-hypocrisy-administrative-failure/3054016/",
       "skip_reason": "This article is entirely about opposition political rhetoric — DMK president M.K. Stalin's social media post criticising CM Mr. Vijay's campaign speech at Madurantakam ahead of the October 6 bypoll. T"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/2024-lok-sabha-polls-dmdks-vijaya-prabhakaran-to-withdraw-election-petition-against-congress-mp-manickam-tagores-victory/article71515304.ece",
+      "skip_reason": "This article covers a DMDK petitioner withdrawing an election petition against a Congress MP — an inter-opposition-party legal dispute with no involvement of the TVK government or CM Mr. Vijay. The DM"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/karur-stampede-left-an-indelible-scar-says-vijay-on-first-anniversary/article71515129.ece",
+      "skip_reason": "The article covers CM Mr. Vijay's commemorative post on X marking the first anniversary of the Karur stampede — a statement of grief and remembrance, not a governance action. There is no executive ord"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/one-year-of-karur-stampede-at-tvk-rally-joseph-vijay-justice-for-victims-still-elusive/article71507633.ece",
+      "skip_reason": "This is a one-year anniversary retrospective piece about the September 27, 2025 Karur stampede at a TVK rally that killed 41 people. While the underlying tragedy is significant and the CBI investigati"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/karur-stampede-anatomy-of-the-tragedy-at-vijays-tvk-rally-in-tamil-nadu/article70103198.ece",
+      "skip_reason": "This article is a retrospective/anniversary re-surface of a September 27–28, 2025 event (the Karur TVK rally stampede), not a new governance action. The article was originally published on September 2"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/karur-stampede-tvk-central-town-secretary-arrested-produced-in-court/article70111873.ece",
+      "skip_reason": "This article is a re-surfaced/re-indexed version of a September 30, 2025 news story about the arrest and judicial remand of TVK functionaries following the Karur stampede of September 27, 2025. The '2"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/palaniswami-accuses-vijay-of-speaking-contrary-to-truth-on-gem-veeramanis-arrest/article71513475.ece",
+      "skip_reason": "This article is a political counter-accusation by AIADMK leader Edappadi K. Palaniswami against CM Mr. Vijay, made during a bypoll campaign trail in Madurantakam. It contains no governance action, exe"
+    },
+    {
+      "title": "",
+      "url": "https://theprint.in/india/allegations-misleading-not-based-on-facts-chennithala-hits-back-at-vijayan-over-lokayukta-meeting/3054637/",
+      "skip_reason": "This article is entirely about Kerala state politics — a dispute between Kerala Home Minister Ramesh Chennithala and Kerala Opposition Leader Pinarayi Vijayan regarding a Lokayukta meeting. It has no "
     }
   ],
   "recent_commits": [
@@ -639,10 +684,10 @@
     }
   ],
   "last_run": {
-    "ts": "2026-09-26T23:09:06.487352+05:30",
-    "candidates": 6,
+    "ts": "2026-09-27T23:38:45.705195+05:30",
+    "candidates": 9,
     "published": 0,
-    "escalated": 0,
+    "escalated": 2,
     "errors": 0
   }
 }
