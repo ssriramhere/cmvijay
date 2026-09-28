@@ -1,5 +1,17 @@
 [
   {
+    "title": "🟢 CM Mr. Vijay inaugurates renovated Gandhi Memorial Museum, Madurai — ₹10.25 cr PWD work",
+    "date": "September 28, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 835,
+        "output_tokens": 735,
+        "cache_read_tokens": 1373,
+        "cache_creation_tokens": 0
+      }
+    }
+  },
+  {
     "title": "🟢 CM Mr. Vijay conducts surprise inspection at TNPDCL headquarters amid power cuts",
     "date": "September 23, 2026",
     "reasoning": {

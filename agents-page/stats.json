@@ -1,17 +1,23 @@
 {
   "period": "Rolling 30 days",
-  "as_of": "2026-09-27T23:38:47.238562+05:30",
-  "candidates_surfaced": 203,
-  "auto_verified": 27,
-  "auto_verified_pct": 13,
-  "escalated": 16,
-  "escalated_pct": 8,
-  "autonomous_commits": 27,
+  "as_of": "2026-09-29T01:59:24.273388+05:30",
+  "candidates_surfaced": 198,
+  "auto_verified": 28,
+  "auto_verified_pct": 14,
+  "escalated": 21,
+  "escalated_pct": 11,
+  "autonomous_commits": 28,
   "operator_edited": 0,
-  "skipped": 84,
-  "cost_this_month_usd": 5.76,
-  "cost_per_published_entry_usd": 0.21,
+  "skipped": 85,
+  "cost_this_month_usd": 6.24,
+  "cost_per_published_entry_usd": 0.22,
   "autonomous_commits_list": [
+    {
+      "sha": "4c51633",
+      "prefix": "agent",
+      "title": "🟢 CM Mr. Vijay inaugurates renovated Gandhi Memorial Museum, Madurai — ₹10.25 cr",
+      "timestamp": "2026-09-28T20:29:20Z"
+    },
     {
       "sha": "a6618cc",
       "prefix": "agent",
@@ -197,6 +203,31 @@
       "title": "",
       "url": "https://theprint.in/india/cm-vijay-to-launch-one-gram-gold-ring-scheme-for-newborns-in-tn/3054610/",
       "reasoning": "The scheme launch is well-corroborated across four independent sources (India Today, News24, DynamiteNews, GovtSchemesIndia) and anchored to a real G.O. (Ms.) No.166 dated 23 June 2026. It maps directly to manifesto promise g1_newborn, which is currently 'partial'. The launch event would logically p"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/vijay-announces-30-lakh-for-asian-games-athlete/article71520738.ece",
+      "reasoning": "The core claim — CM Mr. Vijay announcing ₹30 lakh for Vithya Ramraj's Asian Games 2026 bronze in the 400m hurdles — is confirmed by two corroborating sources (Sportstar/The Hindu and The Daily Jagran). However, the source article contains a factual inaccuracy: it states Vithya broke P.T. Usha's reco"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tirupattur-tvk-mlas-win-by-a-single-vote-madras-high-court-rejects-election-petition-filed-against-his-victory/article71518312.ece",
+      "reasoning": "The core facts are robustly verified across four independent sources (The Hindu, LiveLaw, ETV Bharat, Free Press Journal): Justice G.K. Ilanthiraiyan of the Madras High Court did reject the election petition against TVK MLA R. Seenivasa Sethupathy on September 28, 2026, confirming his one-vote victo"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/thai-maman-gold-ring-scheme-what-is-it-how-to-avail/article71518499.ece",
+      "reasoning": "The scheme's physical launch on September 28, 2026 at Government Rajaji Hospital, Madurai is a genuine governance milestone that maps directly to manifesto promise g1_newborn (currently 'partial'). Two corroborating sources (The Hindu, Live Chennai) confirm the Sep 28 launch date and scheme mechanic"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-cm-vijay-launches-thaimaman-thanga-mothiram-thittam-at-madurai/article71518784.ece",
+      "reasoning": "The scheme launch is well-confirmed by two strong, independent sources (The Hindu and The News Minute) and maps clearly to manifesto promise g1_newborn. However, escalation is warranted for three reasons: (1) a proposed status flip from 'partial' to 'in_progress' is involved, and the site state prev"
+    },
+    {
+      "title": "",
+      "url": "https://theprint.in/india/tn-cm-vijay-to-launch-one-gram-gold-ring-scheme-for-newborns-today/3055270/",
+      "reasoning": "The scheme launch is well-confirmed by two independent textual sources (PTI via ThePrint; Outlook India/Facebook citing the same event) plus multiple social media corroborations, with consistent figures (₹755.83 crore, 22-carat 1g ring, June 22 eligibility date). No duplicate exists on the site. How"
     }
   ],
   "skipped_list": [
@@ -619,9 +650,20 @@
       "title": "",
       "url": "https://theprint.in/india/allegations-misleading-not-based-on-facts-chennithala-hits-back-at-vijayan-over-lokayukta-meeting/3054637/",
       "skip_reason": "This article is entirely about Kerala state politics — a dispute between Kerala Home Minister Ramesh Chennithala and Kerala Opposition Leader Pinarayi Vijayan regarding a Lokayukta meeting. It has no "
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/how-can-eci-render-case-against-byelections-to-five-tamil-nadu-constituencies-infructuous-wonders-cm-vijays-counsel/article71519575.ece",
+      "skip_reason": "This article reports a court hearing argument by CM Mr. Vijay's counsel in an ongoing PIL about bypoll scheduling — a legal/electoral process matter, not a governance action by the Tamil Nadu executiv"
     }
   ],
   "recent_commits": [
+    {
+      "sha": "4c51633",
+      "prefix": "agent",
+      "title": "🟢 CM Mr. Vijay inaugurates renovated Gandhi Memorial Museum, Madurai — ₹10.25 cr",
+      "timestamp": "2026-09-28T20:29:20Z"
+    },
     {
       "sha": "a6618cc",
       "prefix": "agent",
@@ -675,19 +717,13 @@
       "prefix": "agent",
       "title": "🟢 CM Mr. Vijay reviews Breakfast Scheme expansion — 15.3 lakh students, ₹217.63",
       "timestamp": "2026-09-18T17:32:25Z"
-    },
-    {
-      "sha": "d80f928",
-      "prefix": "agent",
-      "title": "🟢 Digital DL and RC issuance goes live statewide via Sarathi and Vahan portals",
-      "timestamp": "2026-09-17T17:59:35Z"
     }
   ],
   "last_run": {
-    "ts": "2026-09-27T23:38:45.705195+05:30",
-    "candidates": 9,
-    "published": 0,
-    "escalated": 2,
+    "ts": "2026-09-29T01:59:20.850342+05:30",
+    "candidates": 7,
+    "published": 1,
+    "escalated": 5,
     "errors": 0
   }
 }
