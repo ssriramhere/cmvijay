@@ -1,16 +1,16 @@
 {
   "period": "Rolling 30 days",
-  "as_of": "2026-09-29T01:59:24.273388+05:30",
-  "candidates_surfaced": 198,
+  "as_of": "2026-09-30T00:39:16.078428+05:30",
+  "candidates_surfaced": 199,
   "auto_verified": 28,
   "auto_verified_pct": 14,
   "escalated": 21,
   "escalated_pct": 11,
   "autonomous_commits": 28,
   "operator_edited": 0,
-  "skipped": 85,
-  "cost_this_month_usd": 6.24,
-  "cost_per_published_entry_usd": 0.22,
+  "skipped": 91,
+  "cost_this_month_usd": 6.45,
+  "cost_per_published_entry_usd": 0.23,
   "autonomous_commits_list": [
     {
       "sha": "4c51633",
@@ -655,6 +655,36 @@
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/how-can-eci-render-case-against-byelections-to-five-tamil-nadu-constituencies-infructuous-wonders-cm-vijays-counsel/article71519575.ece",
       "skip_reason": "This article reports a court hearing argument by CM Mr. Vijay's counsel in an ongoing PIL about bypoll scheduling — a legal/electoral process matter, not a governance action by the Tamil Nadu executiv"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/ministers-aadhav-arjuna-ctr-nirmal-kumar-urge-madras-high-court-to-dismiss-dmks-defamation-case/article71525136.ece",
+      "skip_reason": "This article covers a legal dispute between opposition party DMK and two TVK ministers over alleged defamatory statements — a political/factional court matter, not a governance action. The ministers a"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/vijay-announces-75-lakhfor-vithya-ramraj-for-winning-gold-medal-at-asian-games-2026/article71525504.ece",
+      "skip_reason": "While the ₹75 lakh cash prize announcement is factually confirmed by multiple credible sources (The Hindu, India Today, Sportstar), this is a routine CM felicitation via social media post following a "
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/people-will-decide-on-aiadmk-dmk-alliance-speculation-says-minister/article71524051.ece",
+      "skip_reason": "This article is entirely political commentary and party positioning — a TVK minister (Rajmohan) deflecting criticism about AIADMK-DMK alliance speculation and defending the party's bypoll campaign rhe"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/chief-minister-vijay-felicitates-coimbatore-policeman-who-held-onto-gutkha-smugglers-suv-for-over-40-km/article71523587.ece",
+      "skip_reason": "This is a CM felicitation of a police officer for a courageous individual act — a ceremonial/symbolic event with no governance action, executive order, policy launch, or cabinet decision attached. Whi"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/cities/Coimbatore/thirukkural-woven-in-cotton-karur-weaver-creates-133-page-fabric-book/article71522889.ece",
+      "skip_reason": "This is a human-interest / cultural story about a private citizen (weaver R. Prabhu) who has created a Thirukkural fabric book and wishes to gift it to CM Mr. Vijay. There is no governance action, exe"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/veeramani-pocso-case-dmk-moves-madras-high-court-to-ask-sit-to-summon-tamil-nadu-cm-vijay-ministers-aadhav-arjuna-and-nirmal-kumar/article71523106.ece",
+      "skip_reason": "This article reports a legal/political manoeuvre by the opposition DMK — filing a Madras High Court petition asking the SIT to summon CM Mr. Vijay and two TVK ministers for questioning about alleged e"
     }
   ],
   "recent_commits": [
@@ -720,10 +750,10 @@
     }
   ],
   "last_run": {
-    "ts": "2026-09-29T01:59:20.850342+05:30",
-    "candidates": 7,
-    "published": 1,
-    "escalated": 5,
+    "ts": "2026-09-30T00:39:14.601135+05:30",
+    "candidates": 6,
+    "published": 0,
+    "escalated": 0,
     "errors": 0
   }
 }
