@@ -1,16 +1,16 @@
 {
   "period": "Rolling 30 days",
-  "as_of": "2026-09-30T00:39:16.078428+05:30",
+  "as_of": "2026-10-01T00:25:18.273689+05:30",
   "candidates_surfaced": 199,
   "auto_verified": 28,
   "auto_verified_pct": 14,
-  "escalated": 21,
-  "escalated_pct": 11,
+  "escalated": 24,
+  "escalated_pct": 12,
   "autonomous_commits": 28,
   "operator_edited": 0,
-  "skipped": 91,
-  "cost_this_month_usd": 6.45,
-  "cost_per_published_entry_usd": 0.23,
+  "skipped": 98,
+  "cost_this_month_usd": 6.82,
+  "cost_per_published_entry_usd": 0.24,
   "autonomous_commits_list": [
     {
       "sha": "4c51633",
@@ -228,6 +228,21 @@
       "title": "",
       "url": "https://theprint.in/india/tn-cm-vijay-to-launch-one-gram-gold-ring-scheme-for-newborns-today/3055270/",
       "reasoning": "The scheme launch is well-confirmed by two independent textual sources (PTI via ThePrint; Outlook India/Facebook citing the same event) plus multiple social media corroborations, with consistent figures (₹755.83 crore, 22-carat 1g ring, June 22 eligibility date). No duplicate exists on the site. How"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/veeramani-pocso-act-case-let-sit-work-in-peace-says-madras-high-court-judge-while-hearing-dmks-plea/article71528238.ece",
+      "reasoning": "The article is well-sourced (The Hindu + LiveLaw corroboration) and factually verified: Justice V. Lakshminarayanan adjourned the DMK's petition by four weeks on 2026-09-30, with the SIT constituted around September 25. However, the article is politically sensitive — it directly names CM Mr. Vijay a"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/cities/chennai/hundreds-of-fishermen-protest-against-secretariat-proposal-at-foreshore-estate/article71525230.ece",
+      "reasoning": "The protest event and underlying G.O. (September 8, 2026) are well-corroborated across The Hindu, New Indian Express, and The News Minute. Minister Aadhav Arjuna's portfolio (Public Works) is confirmed, making his quoted statement contextually plausible. However, this is politically sensitive: the a"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tn-government-proposes-memorial-for-5-icons-on-university-union-grounds-at-chepet-in-chennai-sports-teachers-object/article71525294.ece",
+      "reasoning": "The Hindu (bylined, whitelisted) and two corroborating outlets confirm the core facts: a Chennai Collector letter dated September 17, 2026 sought University of Madras consent to build a memorial complex for five icons (Velu Nachiyar, Periyar, Ambedkar, Kamaraj, Anjalai Ammal) on University Union Gro"
     }
   ],
   "skipped_list": [
@@ -685,6 +700,41 @@
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/veeramani-pocso-case-dmk-moves-madras-high-court-to-ask-sit-to-summon-tamil-nadu-cm-vijay-ministers-aadhav-arjuna-and-nirmal-kumar/article71523106.ece",
       "skip_reason": "This article reports a legal/political manoeuvre by the opposition DMK — filing a Madras High Court petition asking the SIT to summon CM Mr. Vijay and two TVK ministers for questioning about alleged e"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/residents-oppose-new-location-of-tasmac-outlet-in-tiruvannamalai/article71528710.ece",
+      "skip_reason": "This article describes a hyper-local community protest in Arattavadi village, Tiruvannamalai, against the proposed relocation of a TASMAC outlet from a neighbouring village. There is no executive orde"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tasmac-outlet-in-vellore-burgled/article71528716.ece",
+      "skip_reason": "This article reports a routine criminal incident — a burglary at a TASMAC liquor outlet in Melpatti village, Vellore, involving stolen liquor bottles worth ₹1.5 lakh and damaged CCTV equipment. It is "
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/cm-vijay-positions-tvk-as-organic-successor-to-aiadmk-justifies-dharapuram-candidates-party-switchover/article71529345.ece",
+      "skip_reason": "This article covers a bypoll campaign speech in which CM Mr. Vijay extols the legacy of Jayalalithaa and MGR, positions TVK as AIADMK's ideological successor, and defends a candidate's party switchove"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/palaniswami-urges-cm-vijay-to-hold-all-party-meeting-on-mekedatu/article71524299.ece",
+      "skip_reason": "This article reports an opposition demand — AIADMK chief Palaniswami urging CM Mr. Vijay (via a social media post) to convene an all-party meeting on the Mekedatu dam issue. There is zero governance a"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/the-1981-assembly-byelection-that-triggered-turns-and-twists-in-tamil-nadu-politics/article71496870.ece",
+      "skip_reason": "This article is a historical retrospective about the 1981 Tirupattur Assembly by-election, written as political colour-piece journalism. While it briefly mentions an ongoing Madras High Court litigati"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/lessons-from-the-history-of-rebellions-in-aiadmk-and-dmk/article70083698.ece",
+      "skip_reason": "This article is a historical retrospective on internal rebellions within AIADMK and DMK — Tamil Nadu's two major opposition/legacy Dravidian parties. It contains no governance action, executive order,"
+    },
+    {
+      "title": "",
+      "url": "https://theprint.in/india/aiadmks-udhayakumar-slams-cm-vijay-over-dharapuram-bypoll-betrayal-governance-failures/3057654/",
+      "skip_reason": "This article is a political opposition attack statement by AIADMK leader R B Udhayakumar ahead of a campaign visit — it contains no governance action, executive order, cabinet decision, scheme launch,"
     }
   ],
   "recent_commits": [
@@ -750,10 +800,10 @@
     }
   ],
   "last_run": {
-    "ts": "2026-09-30T00:39:14.601135+05:30",
-    "candidates": 6,
+    "ts": "2026-10-01T00:25:16.470059+05:30",
+    "candidates": 10,
     "published": 0,
-    "escalated": 0,
+    "escalated": 3,
     "errors": 0
   }
 }
