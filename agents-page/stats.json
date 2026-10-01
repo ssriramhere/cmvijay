@@ -1,17 +1,23 @@
 {
   "period": "Rolling 30 days",
-  "as_of": "2026-10-01T00:25:18.273689+05:30",
-  "candidates_surfaced": 199,
-  "auto_verified": 28,
+  "as_of": "2026-10-02T00:51:42.306114+05:30",
+  "candidates_surfaced": 202,
+  "auto_verified": 29,
   "auto_verified_pct": 14,
-  "escalated": 24,
+  "escalated": 25,
   "escalated_pct": 12,
-  "autonomous_commits": 28,
+  "autonomous_commits": 29,
   "operator_edited": 0,
-  "skipped": 98,
-  "cost_this_month_usd": 6.82,
-  "cost_per_published_entry_usd": 0.24,
+  "skipped": 105,
+  "cost_this_month_usd": 7.23,
+  "cost_per_published_entry_usd": 0.25,
   "autonomous_commits_list": [
+    {
+      "sha": "9f19541",
+      "prefix": "agent",
+      "title": "⚖️ Madras HC directs TN government to frame elephant-in-temples SOP by October 3",
+      "timestamp": "2026-10-01T19:21:38Z"
+    },
     {
       "sha": "4c51633",
       "prefix": "agent",
@@ -125,12 +131,6 @@
       "prefix": "agent",
       "title": "🔵 ECI grants TVK State party status; 'Whistle' symbol reserved",
       "timestamp": "2026-09-10T17:34:41Z"
-    },
-    {
-      "sha": "e0e49ba",
-      "prefix": "agent",
-      "title": "🔵 TVK-led alliance formally named Secular Social Justice Victory Alliance",
-      "timestamp": "2026-09-09T17:35:13Z"
     }
   ],
   "escalated_list": [
@@ -243,6 +243,11 @@
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/tn-government-proposes-memorial-for-5-icons-on-university-union-grounds-at-chepet-in-chennai-sports-teachers-object/article71525294.ece",
       "reasoning": "The Hindu (bylined, whitelisted) and two corroborating outlets confirm the core facts: a Chennai Collector letter dated September 17, 2026 sought University of Madras consent to build a memorial complex for five icons (Velu Nachiyar, Periyar, Ambedkar, Kamaraj, Anjalai Ammal) on University Union Gro"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/asian-games-2026-tamil-nadu-cm-vijay-announces-75-lakhfor-vithya-ramraj-for-clinching-gold-medal/article71525504.ece",
+      "reasoning": "The core facts are well-verified: CM Mr. Vijay announced ₹75 lakh for Vithya Ramraj's gold medal in the women's 4x400m relay at Asian Games 2026 (Aichi-Nagoya) on September 29, 2026, confirmed by The Hindu's full article text. The 'third medal' claim is accurate — she won bronze (400m hurdles), silv"
     }
   ],
   "skipped_list": [
@@ -735,9 +740,50 @@
       "title": "",
       "url": "https://theprint.in/india/aiadmks-udhayakumar-slams-cm-vijay-over-dharapuram-bypoll-betrayal-governance-failures/3057654/",
       "skip_reason": "This article is a political opposition attack statement by AIADMK leader R B Udhayakumar ahead of a campaign visit — it contains no governance action, executive order, cabinet decision, scheme launch,"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/madras-high-court-closes-plea-to-register-fir-in-4-crore-cheating-complaint-against-c-vijayabaskar/article71532994.ece",
+      "skip_reason": "This article concerns a Madras High Court ruling closing a private petition related to a cheating complaint against C. Vijayabaskar — a former AIADMK minister who has since joined TVK. While Vijayabas"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/videos/shows/watch-two-seats-bigger-stakes-vijays-first-bypoll-test-focus-tamil-nadu/article71533701.ece",
+      "skip_reason": "This is a pre-election political analysis video from The Hindu covering the upcoming October 6 bypolls in Madurantakam and Dharapuram. While the factual claims are well-corroborated (AIADMK defectors "
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/palaniswami-urges-tvk-led-govt-to-protect-employment-of-workers-invaazhndhu-kattuvom-project/article71532027.ece",
+      "skip_reason": "This article is an opposition press statement — AIADMK's Palaniswami urging the TVK government to act — not a governance action by the TVK government itself. The cmvijay.ai tracker records what the go"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/cities/chennai/kasimedu-fishers-to-go-on-indefinite-strike-ask-govt-to-retrieve-captive-boats-in-andhra-pradesh/article71529897.ece",
+      "skip_reason": "This article reports a community grievance and a threatened indefinite strike by Kasimedu fishermen demanding the TN government retrieve 7 boats held in Andhra Pradesh since April 2026. There is no go"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-cm-vijay-urges-people-to-buy-khadi-village-products/article71531912.ece",
+      "skip_reason": "This article covers a Gandhi Jayanti statement by CM Mr. Vijay urging citizens to buy khadi and village products — a purely symbolic, ceremonial appeal issued ahead of October 2. There is no executive"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/madras-high-court-rejects-election-petition-filed-against-the-victory-of-dmk-former-minister-s-regupathy-from-thirumayam/article71529617.ece",
+      "skip_reason": "The article reports a Madras High Court ruling rejecting a TVK candidate's election petition against a DMK MLA's Thirumayam win. While factually well-corroborated across four independent sources (The "
+    },
+    {
+      "title": "",
+      "url": "https://theprint.in/india/exercise-caution-in-procuring-materials-for-prasadam-at-sabarimala-kerala-hc-to-tdb/3058708/",
+      "skip_reason": "This article concerns a Kerala High Court directive to the Travancore Devaswom Board (TDB) regarding prasadam quality standards at the Sabarimala temple in Kerala. It has no connection to Tamil Nadu g"
     }
   ],
   "recent_commits": [
+    {
+      "sha": "9f19541",
+      "prefix": "agent",
+      "title": "⚖️ Madras HC directs TN government to frame elephant-in-temples SOP by October 3",
+      "timestamp": "2026-10-01T19:21:38Z"
+    },
     {
       "sha": "4c51633",
       "prefix": "agent",
@@ -791,19 +837,13 @@
       "prefix": "agent",
       "title": "⚖️ Madras HC reserves orders on bid to reject Tirupattur TVK MLA's election peti",
       "timestamp": "2026-09-19T17:01:56Z"
-    },
-    {
-      "sha": "820255d",
-      "prefix": "agent",
-      "title": "🟢 CM Mr. Vijay reviews Breakfast Scheme expansion — 15.3 lakh students, ₹217.63",
-      "timestamp": "2026-09-18T17:32:25Z"
     }
   ],
   "last_run": {
-    "ts": "2026-10-01T00:25:16.470059+05:30",
-    "candidates": 10,
-    "published": 0,
-    "escalated": 3,
+    "ts": "2026-10-02T00:51:38.610660+05:30",
+    "candidates": 9,
+    "published": 1,
+    "escalated": 1,
     "errors": 0
   }
 }
