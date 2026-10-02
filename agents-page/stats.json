@@ -1,16 +1,16 @@
 {
   "period": "Rolling 30 days",
-  "as_of": "2026-10-02T00:51:42.306114+05:30",
-  "candidates_surfaced": 202,
+  "as_of": "2026-10-03T00:32:00.053306+05:30",
+  "candidates_surfaced": 197,
   "auto_verified": 29,
-  "auto_verified_pct": 14,
-  "escalated": 25,
-  "escalated_pct": 12,
+  "auto_verified_pct": 15,
+  "escalated": 28,
+  "escalated_pct": 14,
   "autonomous_commits": 29,
   "operator_edited": 0,
-  "skipped": 105,
-  "cost_this_month_usd": 7.23,
-  "cost_per_published_entry_usd": 0.25,
+  "skipped": 107,
+  "cost_this_month_usd": 7.5,
+  "cost_per_published_entry_usd": 0.26,
   "autonomous_commits_list": [
     {
       "sha": "9f19541",
@@ -248,6 +248,21 @@
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/asian-games-2026-tamil-nadu-cm-vijay-announces-75-lakhfor-vithya-ramraj-for-clinching-gold-medal/article71525504.ece",
       "reasoning": "The core facts are well-verified: CM Mr. Vijay announced ₹75 lakh for Vithya Ramraj's gold medal in the women's 4x400m relay at Asian Games 2026 (Aichi-Nagoya) on September 29, 2026, confirmed by The Hindu's full article text. The 'third medal' claim is accurate — she won bronze (400m hurdles), silv"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/what-is-the-vettri-payanam-thittam-launched-by-tamil-nadu-cm-vijay-explained/article71535917.ece",
+      "reasoning": "The article is well-sourced (The Hindu, corroborated by The South First and multiple search results) and describes a genuine, significant governance action — the October 2, 2026 launch of the Vettri Payanam Thittam by CM Mr. Vijay, expanding free bus travel for women. It maps directly to manifesto p"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/dmk-chief-stalin-slams-hindi-signboards-in-thoothukudi-officials-responsible-suspended-says-minister/article71536305.ece",
+      "reasoning": "The article documents a real executive action — suspension of two Highways Department officials (Assistant Engineer and Assistant Divisional Engineer) on 2026-10-01 and replacement of a Hindi signboard in Thoothukudi — confirmed by The Hindu primary source and corroborated by Hindustan Times and DTN"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-cm-vijay-launches-vettri-payanam-scheme-expanding-free-bus-travel-for-women/article71536299.ece",
+      "reasoning": "The scheme launch is well-verified across multiple sources (The Hindu primary fetch, govtschemes.in, multiple social/news corroborations) and maps cleanly to manifesto promise g1_bus. The event date, beneficiary count (84.32 lakh), bus categories, and launch venue (Koyambedu) are all consistent. How"
     }
   ],
   "skipped_list": [
@@ -775,6 +790,16 @@
       "title": "",
       "url": "https://theprint.in/india/exercise-caution-in-procuring-materials-for-prasadam-at-sabarimala-kerala-hc-to-tdb/3058708/",
       "skip_reason": "This article concerns a Kerala High Court directive to the Travancore Devaswom Board (TDB) regarding prasadam quality standards at the Sabarimala temple in Kerala. It has no connection to Tamil Nadu g"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/villagers-boycott-gram-sabha-meeting-demanding-relocation-of-tasmac-outlet/article71537048.ece",
+      "skip_reason": "This article reports a village-level civic protest in Periyakuppam, Tirupattur, where residents boycotted a gram sabha meeting to demand relocation of a local TASMAC outlet. There is no executive orde"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/vijay-holds-roadshow-in-madurantakam-ahead-of-the-october-6-byelection/article71537438.ece",
+      "skip_reason": "This article describes CM Mr. Vijay conducting a campaign roadshow for TVK candidate Maragatham Kumaravel ahead of the Madurantakam byelection on October 6, 2026. It is purely electoral/political camp"
     }
   ],
   "recent_commits": [
@@ -840,10 +865,10 @@
     }
   ],
   "last_run": {
-    "ts": "2026-10-02T00:51:38.610660+05:30",
-    "candidates": 9,
-    "published": 1,
-    "escalated": 1,
+    "ts": "2026-10-03T00:31:58.171607+05:30",
+    "candidates": 5,
+    "published": 0,
+    "escalated": 3,
     "errors": 0
   }
 }
