@@ -1,16 +1,16 @@
 {
   "period": "Rolling 30 days",
-  "as_of": "2026-10-03T00:32:00.053306+05:30",
-  "candidates_surfaced": 197,
+  "as_of": "2026-10-03T23:19:21.525447+05:30",
+  "candidates_surfaced": 206,
   "auto_verified": 29,
-  "auto_verified_pct": 15,
+  "auto_verified_pct": 14,
   "escalated": 28,
   "escalated_pct": 14,
   "autonomous_commits": 29,
   "operator_edited": 0,
-  "skipped": 107,
-  "cost_this_month_usd": 7.5,
-  "cost_per_published_entry_usd": 0.26,
+  "skipped": 116,
+  "cost_this_month_usd": 7.8,
+  "cost_per_published_entry_usd": 0.27,
   "autonomous_commits_list": [
     {
       "sha": "9f19541",
@@ -800,6 +800,51 @@
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/vijay-holds-roadshow-in-madurantakam-ahead-of-the-october-6-byelection/article71537438.ece",
       "skip_reason": "This article describes CM Mr. Vijay conducting a campaign roadshow for TVK candidate Maragatham Kumaravel ahead of the Madurantakam byelection on October 6, 2026. It is purely electoral/political camp"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tvk-formally-joins-india-bloc-set-to-join-demonstrations-against-bjp-and-ec/article71540550.ece",
+      "skip_reason": "This article covers a political alliance development — TVK's participation in an INDIA bloc meeting — rather than any governance action, executive order, cabinet decision, or policy launch by the Tami"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/a-corporate-mafia-government-has-been-ruling-the-state-alleges-stalin/article71541477.ece",
+      "skip_reason": "This article is a campaign speech by DMK president M.K. Stalin delivered at a Madurantakam by-election rally. Every claim in it — 'corporate mafia government', 'secret alliance with BJP', 'washing mac"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/palaniswami-slams-tvk-regime-for-claiming-to-be-corruption-free/article71541492.ece",
+      "skip_reason": "This article is a campaign speech by AIADMK opposition leader Edappadi K. Palaniswami at a bypoll rally in Madurantakam, directed at voters ahead of an October 6 by-election. It contains no governance"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/cities/chennai/chennais-northeast-monsoon-test-how-ready-is-the-city-to-tackle-flooding/article71539817.ece",
+      "skip_reason": "This is a long-form analytical/explainer piece by The Hindu asking whether the TVK government is prepared for the Northeast monsoon. It does not report a discrete governance action (executive order, c"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tvk-ministers-slam-dmk-chief-stalin-over-alleged-body-shaming-of-dharapuram-bypoll-candidate/article71539648.ece",
+      "skip_reason": "This article documents a partisan political dispute during the Dharapuram bypoll campaign — CM Mr. Vijay's condemnation of opposition leader Stalin's remarks and TVK's ECI complaint. While the facts a"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/cities/Coimbatore/tvk-to-file-complaint-with-eci-against-mk-stalins-remarks-against-its-candidate-in-dharapuram-minister/article71539792.ece",
+      "skip_reason": "This article covers TVK filing an ECI complaint against M.K. Stalin's campaign remarks in the Dharapuram by-election, and includes a speculative political allegation about DMK contesting 2029 election"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/minority-tvk-government-has-forced-byelection-for-cms-selfish-gain-dmk-president-stalin/article71538122.ece",
+      "skip_reason": "This article is a verbatim record of an opposition campaign speech by DMK president M.K. Stalin at a Dharapuram bypoll rally. It contains no governance action, executive order, cabinet decision, or po"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/cpim-urges-tamil-nadu-government-to-boycott-high-level-committee-on-demographic-changes/article71537726.ece",
+      "skip_reason": "This article reports a CPI(M) party statement urging the Tamil Nadu government to boycott a Union MHA committee — it is not a governance action by the Tamil Nadu government itself. No executive order,"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/a-fierce-battle-on-in-dharapuram-among-three-leading-contenders/article71538100.ece",
+      "skip_reason": "This article is pre-election campaign coverage with zero governance content. It describes party leaders conducting roadshows and CM Mr. Vijay planning a campaign visit to Dharapuram ahead of the Octob"
     }
   ],
   "recent_commits": [
@@ -865,10 +910,10 @@
     }
   ],
   "last_run": {
-    "ts": "2026-10-03T00:31:58.171607+05:30",
-    "candidates": 5,
+    "ts": "2026-10-03T23:19:20.217004+05:30",
+    "candidates": 9,
     "published": 0,
-    "escalated": 3,
+    "escalated": 0,
     "errors": 0
   }
 }
