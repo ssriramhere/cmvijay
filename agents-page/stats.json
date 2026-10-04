@@ -1,16 +1,16 @@
 {
   "period": "Rolling 30 days",
-  "as_of": "2026-10-03T23:19:21.525447+05:30",
-  "candidates_surfaced": 206,
+  "as_of": "2026-10-04T23:31:44.541775+05:30",
+  "candidates_surfaced": 200,
   "auto_verified": 29,
   "auto_verified_pct": 14,
   "escalated": 28,
   "escalated_pct": 14,
   "autonomous_commits": 29,
   "operator_edited": 0,
-  "skipped": 116,
-  "cost_this_month_usd": 7.8,
-  "cost_per_published_entry_usd": 0.27,
+  "skipped": 122,
+  "cost_this_month_usd": 8.03,
+  "cost_per_published_entry_usd": 0.28,
   "autonomous_commits_list": [
     {
       "sha": "9f19541",
@@ -845,6 +845,36 @@
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/a-fierce-battle-on-in-dharapuram-among-three-leading-contenders/article71538100.ece",
       "skip_reason": "This article is pre-election campaign coverage with zero governance content. It describes party leaders conducting roadshows and CM Mr. Vijay planning a campaign visit to Dharapuram ahead of the Octob"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/voters-will-teach-tvk-candidates-a-befitting-lesson-eps/article71543470.ece",
+      "skip_reason": "This article is a political statement by AIADMK general secretary Edappadi K. Palaniswami (EPS) predicting that voters will punish TVK candidates in the Dharapuram (SC) and Madurantakam (SC) by-electi"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/ruling-tvk-is-obsessed-with-purchasing-mlas-mk-stalin-tells-voters/article71543295.ece",
+      "skip_reason": "This article covers M.K. Stalin (DMK opposition leader) making campaign speeches accusing CM Mr. Vijay's TVK of 'purchasing' MLAs ahead of the Madurantakam and Dharapuram byelections. It is a pure opp"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/bjp-president-nagenthran-condemns-intimidation-of-journalist-by-tvk-cadres/article71543267.ece",
+      "skip_reason": "This article reports an opposition BJP leader's social media condemnation of alleged misbehaviour by TVK party cadres — not a government action, executive order, or policy development. The incident in"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/madurantakam-by-election-will-the-aiadmk-bastion-fall-to-tvks-growing-popularity/article71540871.ece",
+      "skip_reason": "This article is a pre-election ground report about the Madurantakam by-election — analysing voter sentiment, turncoat politics, and party rivalry ahead of the October 6, 2026 poll. It contains no gove"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/probe-into-tvk-mla-driving-government-bus-without-valid-licence-during-launch-of-scheme/article71540822.ece",
+      "skip_reason": "This article covers a TVK MLA (E. Thendral Kumar) driving a government bus without a valid heavy vehicle licence during the Vellore leg of the Vettri Payanam scheme launch, and the Transport Departmen"
+    },
+    {
+      "title": "",
+      "url": "https://theprint.in/india/stalin-questions-cm-vijays-silence-on-nation-wide-demand-for-cecs-resignation/3061291/",
+      "skip_reason": "This article is a political opposition speech by DMK president M K Stalin at an election rally, criticising CM Mr. Vijay's silence on the CEC controversy. It contains no governance action, executive o"
     }
   ],
   "recent_commits": [
@@ -910,8 +940,8 @@
     }
   ],
   "last_run": {
-    "ts": "2026-10-03T23:19:20.217004+05:30",
-    "candidates": 9,
+    "ts": "2026-10-04T23:31:43.025005+05:30",
+    "candidates": 6,
     "published": 0,
     "escalated": 0,
     "errors": 0
