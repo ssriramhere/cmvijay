@@ -1,17 +1,29 @@
 {
   "period": "Rolling 30 days",
-  "as_of": "2026-10-04T23:31:44.541775+05:30",
-  "candidates_surfaced": 200,
-  "auto_verified": 29,
-  "auto_verified_pct": 14,
+  "as_of": "2026-10-06T02:56:33.921866+05:30",
+  "candidates_surfaced": 199,
+  "auto_verified": 31,
+  "auto_verified_pct": 16,
   "escalated": 28,
   "escalated_pct": 14,
-  "autonomous_commits": 29,
+  "autonomous_commits": 31,
   "operator_edited": 0,
-  "skipped": 122,
-  "cost_this_month_usd": 8.03,
-  "cost_per_published_entry_usd": 0.28,
+  "skipped": 128,
+  "cost_this_month_usd": 8.36,
+  "cost_per_published_entry_usd": 0.27,
   "autonomous_commits_list": [
+    {
+      "sha": "ec29706",
+      "prefix": "agent",
+      "title": "🟢 Sports Minister Mr. Aadhav Arjuna announces 36-discipline focus, cricket in ho",
+      "timestamp": "2026-10-05T21:26:30Z"
+    },
+    {
+      "sha": "ffcf6ca",
+      "prefix": "agent",
+      "title": "🟨 CM Mr. Vijay writes to EAM Jaishankar seeking release of 20 detained TN fisher",
+      "timestamp": "2026-10-05T21:26:30Z"
+    },
     {
       "sha": "9f19541",
       "prefix": "agent",
@@ -119,18 +131,6 @@
       "prefix": "agent",
       "title": "⚖️ Madras HC declines interim stay on TN digital driving licence rollout",
       "timestamp": "2026-09-11T17:35:10Z"
-    },
-    {
-      "sha": "74fc7b1",
-      "prefix": "agent",
-      "title": "🔵 TVK fields two ex-AIADMK MLAs in October 6 Madurantakam, Dharapuram bypolls",
-      "timestamp": "2026-09-10T17:34:41Z"
-    },
-    {
-      "sha": "9de7da7",
-      "prefix": "agent",
-      "title": "🔵 ECI grants TVK State party status; 'Whistle' symbol reserved",
-      "timestamp": "2026-09-10T17:34:41Z"
     }
   ],
   "escalated_list": [
@@ -875,9 +875,51 @@
       "title": "",
       "url": "https://theprint.in/india/stalin-questions-cm-vijays-silence-on-nation-wide-demand-for-cecs-resignation/3061291/",
       "skip_reason": "This article is a political opposition speech by DMK president M K Stalin at an election rally, criticising CM Mr. Vijay's silence on the CEC controversy. It contains no governance action, executive o"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/madurantakam-dharapuram-go-to-polls-for-second-time-in-six-months/article71548619.ece",
+      "skip_reason": "This article covers the logistics of the Madurantakam and Dharapuram by-elections (Oct 6, 2026) — voter counts, polling station details, candidate lists, and a routine public holiday declaration. Whil"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/cities/Tiruchirapalli/tvk-mla-causes-flutter-upset-at-congress-mp-getting-to-light-the-lamp-ahead-of-him-at-community-baby-shower-ceremony-in-tiruchi/article71547156.ece",
+      "skip_reason": "This article describes a protocol dispute at a community baby shower ceremony — a TVK MLA objected to a Congress MP lighting a lamp ahead of him. There is no governance action, executive order, policy"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/dhinakaran-slams-tvk-led-govt-for-turning-a-blind-eye-to-inflation/article71547492.ece",
+      "skip_reason": "This article reports an opposition politician's (T.T.V. Dhinakaran, AMMK) social media post criticising the TVK-led government over inflation and paddy coverage. There is no governance action, executi"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/madras-high-court-permits-dmk-to-file-1-crore-defamation-suit-against-ministers-aadhav-arjuna-nirmal-kumar/article71546415.ece",
+      "skip_reason": "This article covers a civil defamation suit filed by the DMK (the opposition party, now out of power) against two TVK ministers — Aadhav Arjuna and C.T.R. Nirmal Kumar — over statements made about the"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/madras-high-court-begins-hearing-tamil-nadu-cm-vijays-plea-to-reject-election-petitions/article71546469.ece",
+      "skip_reason": "This article reports a Madras High Court procedural hearing on applications to reject election petitions challenging CM Mr. Vijay's own electoral victory in Perambur and Tiruchi East. While confirmed "
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/campaigning-for-byelection-ends-in-madurantakam-and-dharapuram/article71543705.ece",
+      "skip_reason": "This article covers the end of campaigning for the Madurantakam and Dharapuram byelections — a political/electoral event, not a governance action. All factual claims in the summary are verified as acc"
     }
   ],
   "recent_commits": [
+    {
+      "sha": "ec29706",
+      "prefix": "agent",
+      "title": "🟢 Sports Minister Mr. Aadhav Arjuna announces 36-discipline focus, cricket in ho",
+      "timestamp": "2026-10-05T21:26:30Z"
+    },
+    {
+      "sha": "ffcf6ca",
+      "prefix": "agent",
+      "title": "🟨 CM Mr. Vijay writes to EAM Jaishankar seeking release of 20 detained TN fisher",
+      "timestamp": "2026-10-05T21:26:30Z"
+    },
     {
       "sha": "9f19541",
       "prefix": "agent",
@@ -925,24 +967,12 @@
       "prefix": "agent",
       "title": "⚖️ Supreme Court tells TN to find alternate site; SASTRA eviction on hold",
       "timestamp": "2026-09-21T19:07:57Z"
-    },
-    {
-      "sha": "edaa274",
-      "prefix": "agent",
-      "title": "🟢 TASMAC retail staff to wear uniforms from November 15; ₹6,000 annual allowance",
-      "timestamp": "2026-09-20T17:20:13Z"
-    },
-    {
-      "sha": "307b724",
-      "prefix": "agent",
-      "title": "⚖️ Madras HC reserves orders on bid to reject Tirupattur TVK MLA's election peti",
-      "timestamp": "2026-09-19T17:01:56Z"
     }
   ],
   "last_run": {
-    "ts": "2026-10-04T23:31:43.025005+05:30",
-    "candidates": 6,
-    "published": 0,
+    "ts": "2026-10-06T02:56:30.754271+05:30",
+    "candidates": 8,
+    "published": 2,
     "escalated": 0,
     "errors": 0
   }

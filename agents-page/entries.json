@@ -1,5 +1,29 @@
 [
   {
+    "title": "🟨 CM Mr. Vijay writes to EAM Jaishankar seeking release of 20 detained TN fishermen",
+    "date": "October 5, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 636,
+        "output_tokens": 689,
+        "cache_read_tokens": 0,
+        "cache_creation_tokens": 1373
+      }
+    }
+  },
+  {
+    "title": "🟢 Sports Minister Mr. Aadhav Arjuna announces 36-discipline focus, cricket in hostels, 30,000 athlete capacity target",
+    "date": "October 5, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 941,
+        "output_tokens": 792,
+        "cache_read_tokens": 1373,
+        "cache_creation_tokens": 0
+      }
+    }
+  },
+  {
     "title": "⚖️ Madras HC directs TN government to frame elephant-in-temples SOP by October 30",
     "date": "October 1, 2026",
     "reasoning": {
