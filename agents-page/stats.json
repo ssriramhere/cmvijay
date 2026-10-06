@@ -1,16 +1,16 @@
 {
   "period": "Rolling 30 days",
-  "as_of": "2026-10-06T02:56:33.921866+05:30",
-  "candidates_surfaced": 199,
+  "as_of": "2026-10-07T00:53:27.888981+05:30",
+  "candidates_surfaced": 205,
   "auto_verified": 31,
-  "auto_verified_pct": 16,
-  "escalated": 28,
-  "escalated_pct": 14,
+  "auto_verified_pct": 15,
+  "escalated": 31,
+  "escalated_pct": 15,
   "autonomous_commits": 31,
   "operator_edited": 0,
-  "skipped": 128,
-  "cost_this_month_usd": 8.36,
-  "cost_per_published_entry_usd": 0.27,
+  "skipped": 132,
+  "cost_this_month_usd": 8.71,
+  "cost_per_published_entry_usd": 0.28,
   "autonomous_commits_list": [
     {
       "sha": "ec29706",
@@ -263,6 +263,21 @@
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-cm-vijay-launches-vettri-payanam-scheme-expanding-free-bus-travel-for-women/article71536299.ece",
       "reasoning": "The scheme launch is well-verified across multiple sources (The Hindu primary fetch, govtschemes.in, multiple social/news corroborations) and maps cleanly to manifesto promise g1_bus. The event date, beneficiary count (84.32 lakh), bus categories, and launch venue (Koyambedu) are all consistent. How"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/chief-minister-vijay-has-claimed-ownership-over-50-cents-of-poromboke-land-in-kodaikanal-alleges-election-petitioner-before-madras-hc/article71551690.ece",
+      "reasoning": "The article is corroborated by two whitelisted sources (The Hindu and Times of India) and covers a genuine, active Madras HC court proceeding before Justice V. Lakshminarayanan on Oct 6, 2026. However, the core claims are allegations made by a petitioner — not established facts — and CM Mr. Vijay's "
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tn-allocated-812-crore-for-annan-seer-scheme/article71548872.ece",
+      "reasoning": "The ₹812 crore GO is well-corroborated across three independent sources (The Hindu, DTNext, India Today) and maps cleanly to manifesto promise g1_marriage. However, the implemented income eligibility ceiling (₹2.5 lakh per the GO and confirmed by two additional sources) is materially more restrictiv"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/direct-dvac-to-register-fir-against-finance-minister-marie-wilson-insists-pil-plea-before-madras-high-court/article71550424.ece",
+      "reasoning": "The article is well-sourced (The Hindu + DT Next independently corroborate all key facts: petitioner name, Assembly date of Aug 24 2026, DVAC complaint date of Aug 27 2026, legal sections, bench composition). No duplicate exists in site state and no primacy claims are made. However, three escalation"
     }
   ],
   "skipped_list": [
@@ -905,6 +920,26 @@
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/campaigning-for-byelection-ends-in-madurantakam-and-dharapuram/article71543705.ece",
       "skip_reason": "This article covers the end of campaigning for the Madurantakam and Dharapuram byelections — a political/electoral event, not a governance action. All factual claims in the summary are verified as acc"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/dmk-seeks-eci-action-against-tvk-dharapuram-candidate-over-alleged-poll-expenditure-violation/article71551114.ece",
+      "skip_reason": "This article covers a DMK complaint to the ECI against a TVK bypoll candidate over alleged poll expenditure violations — a piece of inter-party electoral manoeuvring with no direct governance action, "
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/video-clip-of-dharapuram-tvk-candidate-saying-she-spent-31-crore-on-poll-submitted-to-eci/article71550276.ece",
+      "skip_reason": "This article reports a DMK complaint to the ECI about a viral video allegedly showing TVK's Dharapuram bypoll candidate P. Sathyabama claiming she spent ₹31 crore on an election. While corroborated by"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-government-transfers-three-ias-officers/article71550922.ece",
+      "skip_reason": "This is a routine IAS transfer order — three officers reassigned across ELCOT, Town Panchayats, and e-Governance. While well-sourced and factually accurate (corroborated by Indian Masterminds, Whisper"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tvk-government-backstabbed-nurses-alleges-mk-stalin/article71550093.ece",
+      "skip_reason": "While the underlying event — police arrest of protesting nurses on October 5, 2026 — is a real governance action confirmed by two whitelisted sources (The Hindu and India Today), this specific article"
     }
   ],
   "recent_commits": [
@@ -970,10 +1005,10 @@
     }
   ],
   "last_run": {
-    "ts": "2026-10-06T02:56:30.754271+05:30",
-    "candidates": 8,
-    "published": 2,
-    "escalated": 0,
+    "ts": "2026-10-07T00:53:26.105637+05:30",
+    "candidates": 7,
+    "published": 0,
+    "escalated": 3,
     "errors": 0
   }
 }
