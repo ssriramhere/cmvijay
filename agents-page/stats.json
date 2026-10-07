@@ -1,17 +1,23 @@
 {
   "period": "Rolling 30 days",
-  "as_of": "2026-10-07T00:53:27.888981+05:30",
-  "candidates_surfaced": 205,
-  "auto_verified": 31,
+  "as_of": "2026-10-08T01:19:00.207250+05:30",
+  "candidates_surfaced": 212,
+  "auto_verified": 32,
   "auto_verified_pct": 15,
-  "escalated": 31,
-  "escalated_pct": 15,
-  "autonomous_commits": 31,
+  "escalated": 34,
+  "escalated_pct": 16,
+  "autonomous_commits": 32,
   "operator_edited": 0,
-  "skipped": 132,
-  "cost_this_month_usd": 8.71,
+  "skipped": 135,
+  "cost_this_month_usd": 9.05,
   "cost_per_published_entry_usd": 0.28,
   "autonomous_commits_list": [
+    {
+      "sha": "7bd4b61",
+      "prefix": "agent",
+      "title": "🟢 CM Mr. Vijay inaugurates Aavin annexure laboratory at Madhavaram Dairy, Chenna",
+      "timestamp": "2026-10-07T19:48:52Z"
+    },
     {
       "sha": "ec29706",
       "prefix": "agent",
@@ -124,12 +130,6 @@
       "sha": "0bccbb6",
       "prefix": "agent",
       "title": "🟢 CM Mr. Vijay departs for U.K. on first official overseas visit — MoUs, diaspor",
-      "timestamp": "2026-09-11T17:35:10Z"
-    },
-    {
-      "sha": "869261e",
-      "prefix": "agent",
-      "title": "⚖️ Madras HC declines interim stay on TN digital driving licence rollout",
       "timestamp": "2026-09-11T17:35:10Z"
     }
   ],
@@ -278,6 +278,21 @@
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/direct-dvac-to-register-fir-against-finance-minister-marie-wilson-insists-pil-plea-before-madras-high-court/article71550424.ece",
       "reasoning": "The article is well-sourced (The Hindu + DT Next independently corroborate all key facts: petitioner name, Assembly date of Aug 24 2026, DVAC complaint date of Aug 27 2026, legal sections, bench composition). No duplicate exists in site state and no primacy claims are made. However, three escalation"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/entire-texture-of-cm-vijays-election-case-changed-says-madras-high-court-judge/article71556542.ece",
+      "reasoning": "This is a well-sourced, significant court proceeding confirmed by at least five independent outlets (The Hindu, LiveLaw, Hindustan Times, Times of India, DTNext). The facts — judge identity, date, constituency, asset figures, petitioner — are all corroborated. No existing site entry covers this case"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/cities/chennai/bess-policy-and-portal-to-be-launched-soon-says-energy-resources-minister-nirmal-kumar/article71554811.ece",
+      "reasoning": "The article contains two distinct governance-relevant claims: (1) a progress update on the Tamil Nadu Rooftop Solar Subsidy Scheme with specific application numbers (20,000 received, 1,500 cleared) that are new to the site and single-sourced to The Hindu; (2) a ministerial statement that a BESS poli"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/business/Economy/vettri-payanam-what-is-the-economic-mileage-of-a-free-ride/article71554318.ece",
+      "reasoning": "The underlying governance action — the Vettri Payanam scheme launch on October 2, 2026 — is real, well-corroborated across multiple outlets (Financial Express, India TV News, Instagram official posts), and maps to manifesto promise g1_bus (currently 'partial'). However, this specific article is a Th"
     }
   ],
   "skipped_list": [
@@ -940,9 +955,30 @@
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/tvk-government-backstabbed-nurses-alleges-mk-stalin/article71550093.ece",
       "skip_reason": "While the underlying event — police arrest of protesting nurses on October 5, 2026 — is a real governance action confirmed by two whitelisted sources (The Hindu and India Today), this specific article"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/villagers-block-key-stretch-demand-relocation-of-tasmac-outlet/article71555710.ece",
+      "skip_reason": "This article reports a localised civic protest in Vijilapuram village (Tirupattur district) where residents blocked a road demanding relocation of a single TASMAC outlet. Revenue officials gave a verb"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/health-minister-accuses-dmk-of-playing-cheap-politics/article71556740.ece",
+      "skip_reason": "This article is a political sparring exchange between the TVK Health Minister and the opposition DMK over medicine packet labelling — a factional/political dispute without a substantive governance act"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-cm-vijay-reviews-passing-out-parade-of-14th-batch-of-dsp-trainees/article71555591.ece",
+      "skip_reason": "This is a routine ceremonial passing-out parade — a standard institutional event at the Tamil Nadu Police Academy. CM Mr. Vijay attended as reviewing officer and chief guest, presenting medals and tro"
     }
   ],
   "recent_commits": [
+    {
+      "sha": "7bd4b61",
+      "prefix": "agent",
+      "title": "🟢 CM Mr. Vijay inaugurates Aavin annexure laboratory at Madhavaram Dairy, Chenna",
+      "timestamp": "2026-10-07T19:48:52Z"
+    },
     {
       "sha": "ec29706",
       "prefix": "agent",
@@ -996,19 +1032,13 @@
       "prefix": "agent",
       "title": "🟢 CM chairs Secretariat review on Vettri Payanam expansion to five bus categorie",
       "timestamp": "2026-09-21T19:07:57Z"
-    },
-    {
-      "sha": "6c73164",
-      "prefix": "agent",
-      "title": "⚖️ Supreme Court tells TN to find alternate site; SASTRA eviction on hold",
-      "timestamp": "2026-09-21T19:07:57Z"
     }
   ],
   "last_run": {
-    "ts": "2026-10-07T00:53:26.105637+05:30",
+    "ts": "2026-10-08T01:18:52.731534+05:30",
     "candidates": 7,
-    "published": 0,
-    "escalated": 3,
+    "published": 1,
+    "escalated": 2,
     "errors": 0
   }
 }

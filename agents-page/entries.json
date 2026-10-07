@@ -1,5 +1,17 @@
 [
   {
+    "title": "🟢 CM Mr. Vijay inaugurates Aavin annexure laboratory at Madhavaram Dairy, Chennai",
+    "date": "October 7, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 739,
+        "output_tokens": 773,
+        "cache_read_tokens": 1373,
+        "cache_creation_tokens": 0
+      }
+    }
+  },
+  {
     "title": "🟨 CM Mr. Vijay writes to EAM Jaishankar seeking release of 20 detained TN fishermen",
     "date": "October 5, 2026",
     "reasoning": {
