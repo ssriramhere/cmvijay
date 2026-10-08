@@ -1,17 +1,23 @@
 {
   "period": "Rolling 30 days",
-  "as_of": "2026-10-08T01:19:00.207250+05:30",
-  "candidates_surfaced": 212,
-  "auto_verified": 32,
-  "auto_verified_pct": 15,
-  "escalated": 34,
-  "escalated_pct": 16,
-  "autonomous_commits": 32,
+  "as_of": "2026-10-09T01:12:39.612132+05:30",
+  "candidates_surfaced": 194,
+  "auto_verified": 33,
+  "auto_verified_pct": 17,
+  "escalated": 35,
+  "escalated_pct": 18,
+  "autonomous_commits": 33,
   "operator_edited": 0,
-  "skipped": 135,
-  "cost_this_month_usd": 9.05,
+  "skipped": 138,
+  "cost_this_month_usd": 9.28,
   "cost_per_published_entry_usd": 0.28,
   "autonomous_commits_list": [
+    {
+      "sha": "20757f5",
+      "prefix": "agent",
+      "title": "🟢 Domicile clause relaxed for Thaimaaman Thanga Mothiram newborn gold-ring schem",
+      "timestamp": "2026-10-08T19:42:35Z"
+    },
     {
       "sha": "7bd4b61",
       "prefix": "agent",
@@ -125,12 +131,6 @@
       "prefix": "agent",
       "title": "🟢 Tamil Nadu signs two London MoUs — ₹12,000 cr investment, 9,000 jobs committed",
       "timestamp": "2026-09-14T19:03:09Z"
-    },
-    {
-      "sha": "0bccbb6",
-      "prefix": "agent",
-      "title": "🟢 CM Mr. Vijay departs for U.K. on first official overseas visit — MoUs, diaspor",
-      "timestamp": "2026-09-11T17:35:10Z"
     }
   ],
   "escalated_list": [
@@ -293,6 +293,11 @@
       "title": "",
       "url": "https://www.thehindu.com/business/Economy/vettri-payanam-what-is-the-economic-mileage-of-a-free-ride/article71554318.ece",
       "reasoning": "The underlying governance action — the Vettri Payanam scheme launch on October 2, 2026 — is real, well-corroborated across multiple outlets (Financial Express, India TV News, Instagram official posts), and maps to manifesto promise g1_bus (currently 'partial'). However, this specific article is a Th"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/election-petition-tamil-nadu-cm-vijay-produces-kodaikanal-land-sale-deed-before-madras-high-court/article71558877.ece",
+      "reasoning": "The article is well-sourced (The Hindu + Times of India corroboration) and factually consistent: CM Mr. Vijay produced a 1997 sale deed for 50 cents of land at Vilpatti village, Kodaikanal, before Justice V. Lakshminarayanan in an ongoing election petition filed by voter S. Dinesh challenging his Pe"
     }
   ],
   "skipped_list": [
@@ -970,9 +975,30 @@
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-cm-vijay-reviews-passing-out-parade-of-14th-batch-of-dsp-trainees/article71555591.ece",
       "skip_reason": "This is a routine ceremonial passing-out parade — a standard institutional event at the Tamil Nadu Police Academy. CM Mr. Vijay attended as reviewing officer and chief guest, presenting medals and tro"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/thirumavalavans-statements-on-sir-sends-mixed-signal-to-cadre-party-leaders/article71556622.ece",
+      "skip_reason": "This article covers VCK president Thirumavalavan's political statements at an opposition protest, questioning TVK's election victory via the SIR process. While the facts are well-sourced and confirmed"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/bjp-slams-tvk-led-govt-over-sexual-assault-on-five-year-old-in-gummidipoondi/article71558912.ece",
+      "skip_reason": "This article reports solely on a BJP State president's social media post criticising the TVK-led government over a crime incident. There is no governance action, executive order, policy launch, court "
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/andhra-pradesh/sharmila-invites-tn-chief-minister-vijay-to-daughters-wedding/article71555190.ece",
+      "skip_reason": "This article covers a purely personal/social event: APCC president Y.S. Sharmila visiting CM Mr. Vijay in Chennai to hand over a wedding invitation for her daughter's marriage. There is no governance "
     }
   ],
   "recent_commits": [
+    {
+      "sha": "20757f5",
+      "prefix": "agent",
+      "title": "🟢 Domicile clause relaxed for Thaimaaman Thanga Mothiram newborn gold-ring schem",
+      "timestamp": "2026-10-08T19:42:35Z"
+    },
     {
       "sha": "7bd4b61",
       "prefix": "agent",
@@ -1026,19 +1052,13 @@
       "prefix": "agent",
       "title": "🟢 CM Mr. Vijay chairs review of Cooum river restoration DPR progress",
       "timestamp": "2026-09-22T18:01:12Z"
-    },
-    {
-      "sha": "87f1ee4",
-      "prefix": "agent",
-      "title": "🟢 CM chairs Secretariat review on Vettri Payanam expansion to five bus categorie",
-      "timestamp": "2026-09-21T19:07:57Z"
     }
   ],
   "last_run": {
-    "ts": "2026-10-08T01:18:52.731534+05:30",
-    "candidates": 7,
+    "ts": "2026-10-09T01:12:36.446846+05:30",
+    "candidates": 5,
     "published": 1,
-    "escalated": 2,
+    "escalated": 1,
     "errors": 0
   }
 }

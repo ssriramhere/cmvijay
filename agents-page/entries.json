@@ -12,6 +12,18 @@
     }
   },
   {
+    "title": "🟢 Domicile clause relaxed for Thaimaaman Thanga Mothiram newborn gold-ring scheme",
+    "date": "October 7, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 662,
+        "output_tokens": 615,
+        "cache_read_tokens": 0,
+        "cache_creation_tokens": 1373
+      }
+    }
+  },
+  {
     "title": "🟨 CM Mr. Vijay writes to EAM Jaishankar seeking release of 20 detained TN fishermen",
     "date": "October 5, 2026",
     "reasoning": {
