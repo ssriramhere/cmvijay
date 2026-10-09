@@ -1,16 +1,16 @@
 {
   "period": "Rolling 30 days",
-  "as_of": "2026-10-09T01:12:39.612132+05:30",
-  "candidates_surfaced": 194,
-  "auto_verified": 33,
-  "auto_verified_pct": 17,
-  "escalated": 35,
-  "escalated_pct": 18,
-  "autonomous_commits": 33,
+  "as_of": "2026-10-10T00:50:24.353665+05:30",
+  "candidates_surfaced": 196,
+  "auto_verified": 24,
+  "auto_verified_pct": 12,
+  "escalated": 31,
+  "escalated_pct": 16,
+  "autonomous_commits": 24,
   "operator_edited": 0,
-  "skipped": 138,
-  "cost_this_month_usd": 9.28,
-  "cost_per_published_entry_usd": 0.28,
+  "skipped": 141,
+  "cost_this_month_usd": 8.55,
+  "cost_per_published_entry_usd": 0.36,
   "autonomous_commits_list": [
     {
       "sha": "20757f5",
@@ -134,21 +134,6 @@
     }
   ],
   "escalated_list": [
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-government-to-reimburse-money-for-three-lpg-cylinders-annually-from-pongal-2027-cm-vijay/article71383242.ece",
-      "reasoning": "The article is well-sourced (The Hindu + India Today corroboration) and the core facts are verified: CM Mr. Vijay announced the 'Annapoorani Super Six Scheme' on August 24, 2026, reimbursing 3 LPG cylinders/year via DBT from Pongal 2027 for ~1.30 crore families at ~₹4,000 crore/year. However, escala"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/explained-what-is-the-tamil-nadu-government-one-gram-gold-ring-scheme-of-thaimaman-thanga-mothiram/article71399218.ece",
-      "reasoning": "The article is well-sourced and corroborated by a second The Hindu article (Aug 22, 2026) confirming work orders, the ₹755.83 crore government order, and the September 15 launch date. No contradictions with existing site state and no duplicate entry exists. However, escalation is warranted for two r"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-cm-vijay-to-travel-to-london-on-first-official-overseas-visit-gold-ring-scheme-launch-postponed/article71445870.ece",
-      "reasoning": "The London visit is well-confirmed by two whitelisted sources (The Hindu and ANI) with consistent core facts — departure date Sept 10, arrival Sept 11, week-long stay, investment-attraction purpose, MoU signings, Tamil diaspora meeting, and motorsport circuit visit. However, there is a notable numer"
-    },
     {
       "title": "",
       "url": "https://www.thehindu.com/news/cities/Tiruchirapalli/281-crore-set-aside-for-safety-measures-ahead-of-northeast-monsoon-in-nagapattinam-minister/article71451543.ece",
@@ -298,34 +283,14 @@
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/election-petition-tamil-nadu-cm-vijay-produces-kodaikanal-land-sale-deed-before-madras-high-court/article71558877.ece",
       "reasoning": "The article is well-sourced (The Hindu + Times of India corroboration) and factually consistent: CM Mr. Vijay produced a 1997 sale deed for 50 cents of land at Vilpatti village, Kodaikanal, before Justice V. Lakshminarayanan in an ongoing election petition filed by voter S. Dinesh challenging his Pe"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-bypoll-results-tvk-madurantakam-dharapuram-constituencies/article71563406.ece",
+      "reasoning": "The core facts are well-verified across multiple whitelisted and reputable sources (The Hindu, The Print, India Today, ETV Bharat): TVK won both Madurantakam and Dharapuram bypolls on October 9, 2026, with confirmed vote margins. The background claim — that Maragatham Kumaravel and P. Sathyabama ori"
     }
   ],
   "skipped_list": [
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/villagers-oppose-opening-of-new-tasmac-outlet-in-tiruvannamalai/article71442666.ece",
-      "skip_reason": "This article reports a localised civic protest by villagers against the opening of a single TASMAC outlet in Karai village, Tiruvannamalai. While the article is factually coherent and well-sourced (Th"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-government-transfers-27-ias-officers-in-major-bureaucratic-reshuffle/article71443826.ece",
-      "skip_reason": "This is a routine bureaucratic reshuffle with no manifesto promise mapping and no direct policy implication surfaced in the candidate summary. The site state shows no prior entry to contradict or upda"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/when-karunanidhi-attempted-a-revamp-of-the-dmk-in-in-tamil-nadu-in-1999/article71444144.ece",
-      "skip_reason": "This article is a historical retrospective about Karunanidhi's 1999 DMK party revamp, pegged to M.K. Stalin's post-2026-election opposition party reorganization. The subject is entirely about DMK inte"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/beyond-fort-st-george-tamil-nadu-governments-quest-for-an-assembly-secretariat-site-is-more-than-a-century-old/article71441612.ece",
-      "skip_reason": "This article is a historical/archival feature piece by The Hindu tracing over a century of proposals to relocate Tamil Nadu's Assembly-Secretariat complex, from an 1896 proposal through various coloni"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/dmk-to-stage-demonstrations-against-tamil-nadu-cm-vijays-remarks-on-stalin-in-assembly/article71446543.ece",
-      "skip_reason": "This article covers DMK's announcement of protest demonstrations against CM Mr. Vijay's Assembly remarks about M.K. Stalin — a classic instance of inter-party political sparring and factional manoeuvr"
-    },
     {
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/the-word-secular-in-tvk-led-alliances-name-is-a-lie-alleges-tamil-nadu-bjp-chief-nainar-nagenthran/article71450867.ece",
@@ -990,6 +955,46 @@
       "title": "",
       "url": "https://www.thehindu.com/news/national/andhra-pradesh/sharmila-invites-tn-chief-minister-vijay-to-daughters-wedding/article71555190.ece",
       "skip_reason": "This article covers a purely personal/social event: APCC president Y.S. Sharmila visiting CM Mr. Vijay in Chennai to hand over a wedding invitation for her daughter's marriage. There is no governance "
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tvk-allies-hail-byelection-victory-says-its-an-endorsement-of-governments-performance/article71564417.ece",
+      "skip_reason": "This article is purely political reaction content — alliance leaders (Thirumavalavan, Manickam Tagore, Vaiko, IUML's Kader Mohideen, Higher Education Minister Viswanathan) congratulating TVK on byelec"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/dmk-retains-much-of-its-vote-bank-despite-going-it-alone-reinforces-position-as-the-principal-rival-of-tvk/article71565415.ece",
+      "skip_reason": "This article is a political analysis piece examining DMK's vote-share retention and its positioning as TVK's principal rival following the Madurantakam and Dharapuram by-elections. While the underlyin"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/byelection-bypoll-results-nandigram-rejinagar-madurantakam-dharapuram-thattanchavady-nagaon-live-updates-october-9-2026/article71562394.ece",
+      "skip_reason": "This article covers bypoll election results across multiple states, with TVK winning Dharapuram and Madurantakam in Tamil Nadu. All factual claims are well-corroborated across multiple outlets (The Hi"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/maragatham-kumaravel-romps-home-in-madurantakam-this-time-on-tvk-ticket/article71565076.ece",
+      "skip_reason": "This is a by-election result — a political development with no direct governance or policy action attached. It does not map to any manifesto promise in the tracker. While the facts are well-verified ("
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/no-surprises-in-byelection-results-in-tamil-nadu-and-puducherry-as-voters-favour-the-ruling-party-candidates/article71564070.ece",
+      "skip_reason": "This article reports by-election results — a political/electoral development with no direct governance action, executive order, scheme launch, or manifesto promise fulfilment. TVK winning Madurantakam"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/byelection-outcome-a-temporary-victory-for-politics-of-betrayal-says-stalin/article71564172.ece",
+      "skip_reason": "This article is a social media post reaction by DMK president M.K. Stalin criticising the TVK government's byelection win in Dharapuram and Madurantakam. It contains no governance action — no executiv"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-cm-vijay-hails-tvks-bypoll-wins-as-victory-for-people-political-decorum/article71564000.ece",
+      "skip_reason": "The article reports CM Mr. Vijay's post-victory statement on X praising TVK's bypoll wins in Madurantakam and Dharapuram as a victory for 'political decorum' and claiming the party won without voter i"
+    },
+    {
+      "title": "",
+      "url": "https://theprint.in/india/kerala-hc-orders-vigilance-to-register-fir-against-vijayan-in-cmrl-bribery-case/3066567/",
+      "skip_reason": "This article is entirely about former Kerala Chief Minister Pinarayi Vijayan (CPI-M) and a Kerala High Court order directing the Kerala Vigilance Bureau to register an FIR in the CMRL bribery case. It"
     }
   ],
   "recent_commits": [
@@ -1055,9 +1060,9 @@
     }
   ],
   "last_run": {
-    "ts": "2026-10-09T01:12:36.446846+05:30",
-    "candidates": 5,
-    "published": 1,
+    "ts": "2026-10-10T00:50:22.788408+05:30",
+    "candidates": 9,
+    "published": 0,
     "escalated": 1,
     "errors": 0
   }
