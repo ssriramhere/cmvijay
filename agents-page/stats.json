@@ -1,15 +1,15 @@
 {
   "period": "Rolling 30 days",
-  "as_of": "2026-10-10T00:50:24.353665+05:30",
-  "candidates_surfaced": 196,
+  "as_of": "2026-10-10T23:44:18.835389+05:30",
+  "candidates_surfaced": 198,
   "auto_verified": 24,
   "auto_verified_pct": 12,
   "escalated": 31,
   "escalated_pct": 16,
   "autonomous_commits": 24,
   "operator_edited": 0,
-  "skipped": 141,
-  "cost_this_month_usd": 8.55,
+  "skipped": 143,
+  "cost_this_month_usd": 8.63,
   "cost_per_published_entry_usd": 0.36,
   "autonomous_commits_list": [
     {
@@ -995,6 +995,16 @@
       "title": "",
       "url": "https://theprint.in/india/kerala-hc-orders-vigilance-to-register-fir-against-vijayan-in-cmrl-bribery-case/3066567/",
       "skip_reason": "This article is entirely about former Kerala Chief Minister Pinarayi Vijayan (CPI-M) and a Kerala High Court order directing the Kerala Vigilance Bureau to register an FIR in the CMRL bribery case. It"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/vasan-urges-tamil-nadu-government-to-secure-release-of-fishermens-boats-from-andhra-pradesh/article71331817.ece",
+      "skip_reason": "This article is a political statement by G.K. Vasan (Tamil Maanila Congress leader), urging the TVK government to act on AP-seized fishing boats and convene an all-party Cauvery meeting. No governance"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tvks-bypoll-wins-a-verdict-on-four-months-of-good-governance-minister-arunraj/article71567203.ece",
+      "skip_reason": "This article is a political statement by Health Minister K.G. Arunraj interpreting TVK's bypoll victories as a 'verdict on good governance' — a classic post-election spin piece. It contains no executi"
     }
   ],
   "recent_commits": [
@@ -1060,10 +1070,10 @@
     }
   ],
   "last_run": {
-    "ts": "2026-10-10T00:50:22.788408+05:30",
-    "candidates": 9,
+    "ts": "2026-10-10T23:44:17.214051+05:30",
+    "candidates": 2,
     "published": 0,
-    "escalated": 1,
+    "escalated": 0,
     "errors": 0
   }
 }
