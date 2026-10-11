@@ -1,5 +1,41 @@
 [
   {
+    "title": "🟢 Chennai Metro Phase II first stretch inaugurated — Poonamallee–Vadapalani, 14.64 km, 11 stations",
+    "date": "October 11, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 895,
+        "output_tokens": 934,
+        "cache_read_tokens": 0,
+        "cache_creation_tokens": 1373
+      }
+    }
+  },
+  {
+    "title": "🟢 Chennai Metro Phase II first stretch inaugurated — Poonamallee to Vadapalani, 14 km added",
+    "date": "October 11, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 863,
+        "output_tokens": 772,
+        "cache_read_tokens": 1373,
+        "cache_creation_tokens": 0
+      }
+    }
+  },
+  {
+    "title": "🟢 PM Modi and CM Mr. Vijay inaugurate Chennai Metro Phase 2 — Poonamallee–Vadapalani, 15 trains deployed",
+    "date": "October 11, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 828,
+        "output_tokens": 682,
+        "cache_read_tokens": 1373,
+        "cache_creation_tokens": 0
+      }
+    }
+  },
+  {
     "title": "🟢 CM Mr. Vijay inaugurates Aavin annexure laboratory at Madhavaram Dairy, Chennai",
     "date": "October 7, 2026",
     "reasoning": {
@@ -242,38 +278,17 @@
   {
     "title": "⚖️ Madras HC declines interim stay on TN digital driving licence rollout",
     "date": "September 11, 2026",
-    "reasoning": {
-      "drafter_usage": {
-        "input_tokens": 801,
-        "output_tokens": 677,
-        "cache_read_tokens": 1373,
-        "cache_creation_tokens": 0
-      }
-    }
+    "reasoning": null
   },
   {
     "title": "🔵 TVK fields two ex-AIADMK MLAs in October 6 Madurantakam, Dharapuram bypolls",
     "date": "September 10, 2026",
-    "reasoning": {
-      "drafter_usage": {
-        "input_tokens": 1005,
-        "output_tokens": 899,
-        "cache_read_tokens": 1373,
-        "cache_creation_tokens": 0
-      }
-    }
+    "reasoning": null
   },
   {
     "title": "🟢 CM Mr. Vijay departs for U.K. on first official overseas visit — MoUs, diaspora meetings planned",
     "date": "September 10, 2026",
-    "reasoning": {
-      "drafter_usage": {
-        "input_tokens": 991,
-        "output_tokens": 783,
-        "cache_read_tokens": 1373,
-        "cache_creation_tokens": 0
-      }
-    }
+    "reasoning": null
   },
   {
     "title": "🔵 TVK-led alliance formally named Secular Social Justice Victory Alliance",
@@ -283,14 +298,7 @@
   {
     "title": "🔵 ECI grants TVK State party status; 'Whistle' symbol reserved",
     "date": "September 9, 2026",
-    "reasoning": {
-      "drafter_usage": {
-        "input_tokens": 673,
-        "output_tokens": 683,
-        "cache_read_tokens": 0,
-        "cache_creation_tokens": 1373
-      }
-    }
+    "reasoning": null
   },
   {
     "title": "🟢 CM Mr. Vijay announces 29,108 new police posts over five years, 10,000 recruits this year",

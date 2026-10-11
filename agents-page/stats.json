@@ -1,17 +1,35 @@
 {
   "period": "Rolling 30 days",
-  "as_of": "2026-10-10T23:44:18.835389+05:30",
-  "candidates_surfaced": 198,
-  "auto_verified": 24,
+  "as_of": "2026-10-12T00:12:47.083486+05:30",
+  "candidates_surfaced": 190,
+  "auto_verified": 23,
   "auto_verified_pct": 12,
-  "escalated": 31,
+  "escalated": 30,
   "escalated_pct": 16,
-  "autonomous_commits": 24,
+  "autonomous_commits": 23,
   "operator_edited": 0,
-  "skipped": 143,
-  "cost_this_month_usd": 8.63,
+  "skipped": 137,
+  "cost_this_month_usd": 8.3,
   "cost_per_published_entry_usd": 0.36,
   "autonomous_commits_list": [
+    {
+      "sha": "08eb0d2",
+      "prefix": "agent",
+      "title": "🟢 PM Modi and CM Mr. Vijay inaugurate Chennai Metro Phase 2 — Poonamallee–Vadapa",
+      "timestamp": "2026-10-11T18:42:44Z"
+    },
+    {
+      "sha": "9ada80c",
+      "prefix": "agent",
+      "title": "🟢 Chennai Metro Phase II first stretch inaugurated — Poonamallee to Vadapalani,",
+      "timestamp": "2026-10-11T18:42:44Z"
+    },
+    {
+      "sha": "5274de4",
+      "prefix": "agent",
+      "title": "🟢 Chennai Metro Phase II first stretch inaugurated — Poonamallee–Vadapalani, 14.",
+      "timestamp": "2026-10-11T18:42:43Z"
+    },
     {
       "sha": "20757f5",
       "prefix": "agent",
@@ -113,37 +131,9 @@
       "prefix": "agent",
       "title": "🟢 CM Mr. Vijay returns from UK with ₹15,300 cr investment commitments, 10,000 jo",
       "timestamp": "2026-09-17T17:59:35Z"
-    },
-    {
-      "sha": "afec201",
-      "prefix": "agent",
-      "title": "🟢 UK investment drive yields ₹12,300 cr in MoUs, 9,400+ jobs for Tamil Nadu",
-      "timestamp": "2026-09-15T17:59:45Z"
-    },
-    {
-      "sha": "28118e9",
-      "prefix": "agent",
-      "title": "⚖️ Madras HC dismisses AIADMK petition against Minister Sengottaiyan's Gobichett",
-      "timestamp": "2026-09-15T17:59:45Z"
-    },
-    {
-      "sha": "5ad19f0",
-      "prefix": "agent",
-      "title": "🟢 Tamil Nadu signs two London MoUs — ₹12,000 cr investment, 9,000 jobs committed",
-      "timestamp": "2026-09-14T19:03:09Z"
     }
   ],
   "escalated_list": [
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/cities/Tiruchirapalli/281-crore-set-aside-for-safety-measures-ahead-of-northeast-monsoon-in-nagapattinam-minister/article71451543.ece",
-      "reasoning": "The article is a credible, well-detailed report from The Hindu about a legitimate governance action — a ministerial review meeting with a specific ₹281 crore allocation for northeast monsoon preparedness in Nagapattinam. However, the specific figure and meeting details are single-sourced (The Hindu "
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/chennais-nulm-conservancy-workers-protest-and-way-ahead-explained/article71453360.ece",
-      "reasoning": "The article documents a real, multi-source-confirmed governance development: a 16-day NULM conservancy workers' strike in Chennai was paused after the TVK government agreed to ~8 of 10 immediate demands (welfare measures, case withdrawals, food allowance), with a second round of talks scheduled for "
-    },
     {
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-government-fixes-10000-interim-monthly-payout-for-retirees-under-taps-regime/article71471507.ece",
@@ -288,69 +278,14 @@
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-bypoll-results-tvk-madurantakam-dharapuram-constituencies/article71563406.ece",
       "reasoning": "The core facts are well-verified across multiple whitelisted and reputable sources (The Hindu, The Print, India Today, ETV Bharat): TVK won both Madurantakam and Dharapuram bypolls on October 9, 2026, with confirmed vote margins. The background claim — that Maragatham Kumaravel and P. Sathyabama ori"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/cities/chennai/chennai-metro-phase-two-inauguration-poonamallee-vadapalani-narendra-modi-visit-schedule-cm-vijay-meeting-live-updates/article71570613.ece",
+      "reasoning": "The core event — PM Modi and CM Mr. Vijay co-inaugurating Chennai Metro Phase 2's Poonamallee–Vadapalani stretch on October 11, 2026 — is confirmed by The Hindu (primary source), Rediff, YouTube, and Instagram. However, the ₹13,000 crore figure in the headline refers to the total bundle of all devel"
     }
   ],
   "skipped_list": [
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/the-word-secular-in-tvk-led-alliances-name-is-a-lie-alleges-tamil-nadu-bjp-chief-nainar-nagenthran/article71450867.ece",
-      "skip_reason": "This article is a political opposition statement by Tamil Nadu BJP chief Nainar Nagenthran criticising the TVK-led alliance's use of the word 'secular' in its name. It contains no governance action, n"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/cities/Tiruchirapalli/tvk-government-immature-lacks-clarity-on-governance-alleges-dhinakaran/article71450775.ece",
-      "skip_reason": "This article is a press statement by opposition leader T.T.V. Dhinakaran (AMMK) criticising the TVK government as 'immature' and announcing electoral support for AIADMK in upcoming bypolls. It contain"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/cm-vijays-body-language-during-assembly-speech-was-not-dignified-thirumavalavan/article71447298.ece",
-      "skip_reason": "This article is purely political commentary and factional manoeuvring — VCK chief Thirumavalavan criticising CM Mr. Vijay's body language during an Assembly speech, alleging it 'body-shamed' oppositio"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/my-jaws-were-indeed-broken-in-jail-during-emergency-mk-stalin-responds-to-tamil-nadu-cm-vijay/article71450043.ece",
-      "skip_reason": "This article is a political/factional exchange between opposition leader MK Stalin and CM Mr. Vijay over a body-language gesture made during an Assembly speech on September 7, 2026. Stalin is respondi"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/dmk-chief-stalin-accuses-cm-vijay-of-using-reels-to-cover-administrative-failures/article71450098.ece",
-      "skip_reason": "This article reports a DMK opposition leader (M.K. Stalin) releasing a social media video criticising CM Mr. Vijay's governance record. It is squarely political speech and factional manoeuvring with n"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/a-g-plays-video-clips-of-tamil-nadu-assembly-proceedings-before-madras-high-court-in-case-against-mekedatu-amended-resolution/article71446603.ece",
-      "skip_reason": "This article reports on a procedural hearing step — the Advocate General playing video clips of Assembly proceedings before the Madras High Court — in an ongoing writ petition filed by AIADMK whip Agr"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/palaniswami-accuses-tvk-govt-of-being-negligent-towards-paddy-procurement/article71447633.ece",
-      "skip_reason": "This article reports an opposition press statement by AIADMK general secretary Edappadi K. Palaniswami criticising the TVK government — it is not a governance action by CM Mr. Vijay or the TVK adminis"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/i-admire-chief-minister-vijay-for-his-drive-against-corruption-in-tamil-nadu-says-keralam-home-minister/article71447061.ece",
-      "skip_reason": "The article is a speech by Kerala's Home Minister Ramesh Chennithala at VIT's Onam cultural festival in Vellore, praising CM Mr. Vijay's anti-corruption stance. This is a third-party political complim"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/tn-congress-leaders-must-explain-stance-on-ed-says-mh-jawahirullah/article71457067.ece",
-      "skip_reason": "This article is a political reaction statement from MMK leader M.H. Jawahirullah calling on Tamil Nadu Congress leaders to clarify their stance on the ED — it contains no governance action, executive "
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/sci-tech/science/biotech-sector-steadily-growing-with-over-1100-startups-in-the-last-year-k-vijayraghavan/article71456157.ece",
-      "skip_reason": "This article is a report on a panel conversation at the VIT Chennai Biotech Conclave 2026 — a private industry/academic event organised by VIT Chennai and The Hindu, not a Tamil Nadu government govern"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/cpim-leader-shanmugam-urges-tamil-nadu-government-to-convene-all-party-meeting-on-new-secretariat-site-selection/article71455451.ece",
-      "skip_reason": "This article is a political party statement — CPI(M) State Secretary P. Shanmugam demanding an all-party meeting on the Secretariat site. It contains no governance action, executive order, or policy d"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/palaniswami-callstvk-governments-move-to-build-new-assembly-secretariat-complex-unnecessary/article71455541.ece",
-      "skip_reason": "This article is an opposition press statement by AIADMK's EPS reacting to the government's Secretariat complex plan — it contains no governance action, executive order, or policy effect of its own. Pe"
-    },
     {
       "title": "",
       "url": "https://www.thehindu.com/entertainment/movies/ajith-kumar-vijay-silverstone-meeting-le-mans-cup-rajavin-parvaiyile/article71456584.ece",
@@ -1005,9 +940,57 @@
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/tvks-bypoll-wins-a-verdict-on-four-months-of-good-governance-minister-arunraj/article71567203.ece",
       "skip_reason": "This article is a political statement by Health Minister K.G. Arunraj interpreting TVK's bypoll victories as a 'verdict on good governance' — a classic post-election spin piece. It contains no executi"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/vijay-urges-prime-minister-modi-to-sanction-metro-rail-for-the-hosur-bommasamudra-sector/article71571740.ece",
+      "skip_reason": "This article documents CM Mr. Vijay making requests to PM Modi at the Chennai Metro Phase II inauguration — an event led by the Union government, not the TN state government. The core content is a spe"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tvk-cadre-blow-whistles-during-modis-speech-show-placards-hailing-vijay-as-next-pm/article71572425.ece",
+      "skip_reason": "This article describes TVK party cadre disrupting PM Modi's speech at IIT-Madras with whistles and 'Next PM' placards — pure political symbolism and factional behaviour with zero governance action or "
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/madras-high-court-directs-registry-not-to-number-dmks-1-crore-defamation-suit-against-tvk-ministers/article71571617.ece",
+      "skip_reason": "This is a court procedural development in an inter-party political dispute — DMK (opposition) suing TVK ministers for defamatory statements about the R. Veeramani/Gem Granites POCSO case. While it inv"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/vijay-extends-wishes-for-international-day-of-the-girl-child/article71570614.ece",
+      "skip_reason": "The article covers CM Mr. Vijay posting a social media message on X extending wishes for the International Day of the Girl Child. This is purely a symbolic/ceremonial gesture — a greeting post with no"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/two-seats-and-tamil-nadus-return-to-a-political-duopoly/article71569430.ece",
+      "skip_reason": "This is a political analysis/opinion piece examining whether Tamil Nadu is shifting to a bipolar TVK-DMK political landscape following the October 9, 2026 by-election results. While the underlying by-"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/rahul-gandhi-visits-chennai-for-voice-of-students-event-meets-cm-vijay/article71567994.ece",
+      "skip_reason": "This article covers a political visit by Congress leader Rahul Gandhi to Chennai for a student interaction event and a social meeting with CM Mr. Vijay. While the facts are well-corroborated across mu"
     }
   ],
   "recent_commits": [
+    {
+      "sha": "08eb0d2",
+      "prefix": "agent",
+      "title": "🟢 PM Modi and CM Mr. Vijay inaugurate Chennai Metro Phase 2 — Poonamallee–Vadapa",
+      "timestamp": "2026-10-11T18:42:44Z"
+    },
+    {
+      "sha": "9ada80c",
+      "prefix": "agent",
+      "title": "🟢 Chennai Metro Phase II first stretch inaugurated — Poonamallee to Vadapalani,",
+      "timestamp": "2026-10-11T18:42:44Z"
+    },
+    {
+      "sha": "5274de4",
+      "prefix": "agent",
+      "title": "🟢 Chennai Metro Phase II first stretch inaugurated — Poonamallee–Vadapalani, 14.",
+      "timestamp": "2026-10-11T18:42:43Z"
+    },
     {
       "sha": "20757f5",
       "prefix": "agent",
@@ -1049,31 +1032,13 @@
       "prefix": "agent",
       "title": "🟢 CM Mr. Vijay conducts surprise inspection at TNPDCL headquarters amid power cu",
       "timestamp": "2026-09-23T18:16:45Z"
-    },
-    {
-      "sha": "6251d0c",
-      "prefix": "agent",
-      "title": "🟢 CM chairs videoconference review of NE monsoon preparedness with 10 southern,",
-      "timestamp": "2026-09-22T18:01:12Z"
-    },
-    {
-      "sha": "60fa624",
-      "prefix": "agent",
-      "title": "✅ Perunthalaivar Kamarajar Breakfast Scheme expanded to Classes VI–VIII, 15.3 la",
-      "timestamp": "2026-09-22T18:01:12Z"
-    },
-    {
-      "sha": "8614454",
-      "prefix": "agent",
-      "title": "🟢 CM Mr. Vijay chairs review of Cooum river restoration DPR progress",
-      "timestamp": "2026-09-22T18:01:12Z"
     }
   ],
   "last_run": {
-    "ts": "2026-10-10T23:44:17.214051+05:30",
-    "candidates": 2,
-    "published": 0,
-    "escalated": 0,
+    "ts": "2026-10-12T00:12:44.243277+05:30",
+    "candidates": 10,
+    "published": 3,
+    "escalated": 1,
     "errors": 0
   }
 }
