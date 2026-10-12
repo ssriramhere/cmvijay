@@ -1,16 +1,16 @@
 {
   "period": "Rolling 30 days",
-  "as_of": "2026-10-12T00:12:47.083486+05:30",
+  "as_of": "2026-10-13T03:33:21.048113+05:30",
   "candidates_surfaced": 190,
   "auto_verified": 23,
   "auto_verified_pct": 12,
-  "escalated": 30,
-  "escalated_pct": 16,
+  "escalated": 32,
+  "escalated_pct": 17,
   "autonomous_commits": 23,
   "operator_edited": 0,
-  "skipped": 137,
-  "cost_this_month_usd": 8.3,
-  "cost_per_published_entry_usd": 0.36,
+  "skipped": 135,
+  "cost_this_month_usd": 8.53,
+  "cost_per_published_entry_usd": 0.37,
   "autonomous_commits_list": [
     {
       "sha": "08eb0d2",
@@ -283,49 +283,19 @@
       "title": "",
       "url": "https://www.thehindu.com/news/cities/chennai/chennai-metro-phase-two-inauguration-poonamallee-vadapalani-narendra-modi-visit-schedule-cm-vijay-meeting-live-updates/article71570613.ece",
       "reasoning": "The core event — PM Modi and CM Mr. Vijay co-inaugurating Chennai Metro Phase 2's Poonamallee–Vadapalani stretch on October 11, 2026 — is confirmed by The Hindu (primary source), Rediff, YouTube, and Instagram. However, the ₹13,000 crore figure in the headline refers to the total bundle of all devel"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/newly-elected-tvk-mlas-maragatham-kumaravel-and-p-sathyabama-take-oath/article71574063.ece",
+      "reasoning": "The oath-taking event is well-confirmed by three independent sources (The Hindu, PTI via ThePrint, Trinity Mirror/ANI), and the site state shows no prior entry on this event. However, the TVK assembly strength figure of 109 requires human scrutiny: TVK won 108 seats in April 2026, and adding 2 by-el"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/vijay-urges-prime-minister-modi-to-sanction-metro-rail-for-the-hosur-bommasandra-sector/article71571740.ece",
+      "reasoning": "The article is well-sourced (The Hindu, corroborated by DTNext/PTI and Economic Times) and describes a genuine governance action — CM Mr. Vijay formally requesting Central sanction for multiple metro rail projects during a PM Modi event at IIT Madras on October 11, 2026. No existing site entries con"
     }
   ],
   "skipped_list": [
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/entertainment/movies/ajith-kumar-vijay-silverstone-meeting-le-mans-cup-rajavin-parvaiyile/article71456584.ece",
-      "skip_reason": "This article is entirely about CM Mr. Vijay in his capacity as a film actor — specifically his past on-screen pairing with Ajith Kumar in 'Rajavin Parvaiyile' and a personal meeting at the Silverstone"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/entertainment/movies/vijay-meets-ajith-kumar-silverstone-le-mans-car-race-thala-thalapathy-london/article71455432.ece",
-      "skip_reason": "This article is squarely in the 'cinema/personal news about the CM' category that the scope filter explicitly excludes. It covers a social meeting between CM Mr. Vijay and actor Ajith Kumar on the sid"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/entertainment/movies/ajith-kumar-vijay-reunion-silverstone-le-mans-cup-race-tamil-superstars-thala-thalapathy-reunion/article71460925.ece",
-      "skip_reason": "This article is squarely about a personal/celebrity event — two Tamil film actors meeting at a motorsport event in Silverstone. It contains zero governance action, no executive order, no cabinet decis"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-cm-vijay-to-flag-off-silverstone-motor-race-in-uk-actor-ajith-to-compete/article71459564.ece",
-      "skip_reason": "This article describes CM Mr. Vijay attending a private motor racing event at Silverstone, UK, to flag off a race in which actor Ajith is competing. There is no governance action, executive order, pol"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-chief-minister-vijays-trip-to-uk-was-cleared-by-ministry-of-external-affairs-says-official/article71459247.ece",
-      "skip_reason": "This article is a government spokesperson rebuttal defending CM Mr. Vijay's scheduling decision — specifically, that the MEA cleared his UK trip and issued no advice to stay back for Malaysian PM Anwa"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/cities/chennai/devotees-urge-vijay-to-take-steps-to-retrieve-properties-of-nungambakkam-temple/article71369809.ece",
-      "skip_reason": "This article reports a petition by a private religious federation urging CM Mr. Vijay to act on alleged temple land alienation — it is a citizen appeal, not a governance action. No executive order, ca"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/arlekar-vijay-pay-homage-to-subramania-bharathi-immanuel-sekaran-on-their-death-anniversary/article71455211.ece",
-      "skip_reason": "This article covers CM Mr. Vijay and Governor Arlekar posting tributes on X (Twitter) to freedom fighters Subramania Bharathi and Immanuel Sekaran on their death anniversaries. This is purely ceremoni"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/cities/Coimbatore/dmkunderestimatedvijay-dealt-with-him-liberally-afterkarurstampede-saysthirumavalavan/article71456505.ece",
-      "skip_reason": "This article is a speech by VCK president Thol. Thirumavalavan at a party functionary's wedding in Dharmapuri, containing political commentary and factional criticism directed at the DMK. It makes no "
-    },
     {
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-faces-lesser-power-shortage-than-other-states-minister-sengottaiyan/article71463155.ece",
@@ -970,6 +940,36 @@
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/rahul-gandhi-visits-chennai-for-voice-of-students-event-meets-cm-vijay/article71567994.ece",
       "skip_reason": "This article covers a political visit by Congress leader Rahul Gandhi to Chennai for a student interaction event and a social meeting with CM Mr. Vijay. While the facts are well-corroborated across mu"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/vck-tries-to-pre-empt-tvks-potential-bid-to-rope-in-pmk/article71576206.ece",
+      "skip_reason": "This article is squarely about intra-coalition political manoeuvring — VCK threatening to quit the TVK alliance if PMK is inducted, and PMK rejecting the overture. There is no governance action, execu"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/vijay-to-meet-ap-cm-on-godavari-cauvery-linking-project/article71576502.ece",
+      "skip_reason": "The article is a pre-meeting announcement — CM Mr. Vijay is *scheduled* to visit Vijayawada on October 13 to meet AP CM Chandrababu Naidu. No governance action, agreement, MoU, or executive outcome ha"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/dmk-says-no-need-for-it-to-join-congress-led-protests-after-exit-from-india-bloc/article71576343.ece",
+      "skip_reason": "This article is entirely about inter-party factional manoeuvring between the DMK (now in opposition) and the Congress, with a secondary jab at CM Mr. Vijay's silence on the CEC controversy. There is n"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tvk-mla-ecr-saravanan-moves-madras-high-court-to-quash-fir-in-unauthorised-banners-case/article71574163.ece",
+      "skip_reason": "This article covers a purely procedural court step — a TVK MLA's application to dispense with a certified FIR copy, with the main quash petition not yet even numbered. The underlying FIR concerns the "
+    },
+    {
+      "title": "",
+      "url": "https://theprint.in/india/prez-murmu-to-visit-vijayawada-to-pray-at-kanaka-durga-temple-attend-saras-mela/3069260/",
+      "skip_reason": "This article is entirely about President Droupadi Murmu's visit to Vijayawada, Andhra Pradesh — a different state government altogether. It concerns a temple visit and a central government scheme even"
+    },
+    {
+      "title": "",
+      "url": "https://theprint.in/india/tn-bypolls-dmk-holds-on-to-core-independent-vote-bank/3069249/",
+      "skip_reason": "This PTI wire story is electoral analysis and political commentary about the DMK's vote-bank resilience following the October 6 by-polls. While the underlying facts (TVK winning both seats, DMK vote s"
     }
   ],
   "recent_commits": [
@@ -1035,10 +1035,10 @@
     }
   ],
   "last_run": {
-    "ts": "2026-10-12T00:12:44.243277+05:30",
-    "candidates": 10,
-    "published": 3,
-    "escalated": 1,
+    "ts": "2026-10-13T03:33:19.415003+05:30",
+    "candidates": 8,
+    "published": 0,
+    "escalated": 2,
     "errors": 0
   }
 }
