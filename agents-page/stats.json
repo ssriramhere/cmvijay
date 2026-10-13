@@ -1,17 +1,29 @@
 {
   "period": "Rolling 30 days",
-  "as_of": "2026-10-13T03:33:21.048113+05:30",
-  "candidates_surfaced": 190,
-  "auto_verified": 23,
-  "auto_verified_pct": 12,
+  "as_of": "2026-10-14T01:39:01.776597+05:30",
+  "candidates_surfaced": 191,
+  "auto_verified": 25,
+  "auto_verified_pct": 13,
   "escalated": 32,
   "escalated_pct": 17,
-  "autonomous_commits": 23,
+  "autonomous_commits": 25,
   "operator_edited": 0,
-  "skipped": 135,
-  "cost_this_month_usd": 8.53,
-  "cost_per_published_entry_usd": 0.37,
+  "skipped": 134,
+  "cost_this_month_usd": 8.54,
+  "cost_per_published_entry_usd": 0.34,
   "autonomous_commits_list": [
+    {
+      "sha": "170130f",
+      "prefix": "agent",
+      "title": "🟨 CM Mr. Vijay meets AP CM Mr. Naidu in Guntur; Krishna water release for Chenna",
+      "timestamp": "2026-10-13T20:08:58Z"
+    },
+    {
+      "sha": "b755830",
+      "prefix": "agent",
+      "title": "⚖️ Madras HC upholds Speaker's acceptance of six AIADMK-to-TVK MLA resignations",
+      "timestamp": "2026-10-13T20:08:58Z"
+    },
     {
       "sha": "08eb0d2",
       "prefix": "agent",
@@ -119,18 +131,6 @@
       "prefix": "agent",
       "title": "🟢 CM Mr. Vijay reviews Breakfast Scheme expansion — 15.3 lakh students, ₹217.63",
       "timestamp": "2026-09-18T17:32:25Z"
-    },
-    {
-      "sha": "d80f928",
-      "prefix": "agent",
-      "title": "🟢 Digital DL and RC issuance goes live statewide via Sarathi and Vahan portals",
-      "timestamp": "2026-09-17T17:59:35Z"
-    },
-    {
-      "sha": "a66d483",
-      "prefix": "agent",
-      "title": "🟢 CM Mr. Vijay returns from UK with ₹15,300 cr investment commitments, 10,000 jo",
-      "timestamp": "2026-09-17T17:59:35Z"
     }
   ],
   "escalated_list": [
@@ -296,41 +296,6 @@
     }
   ],
   "skipped_list": [
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-faces-lesser-power-shortage-than-other-states-minister-sengottaiyan/article71463155.ece",
-      "skip_reason": "This article is a ministerial press statement by Revenue Minister Sengottaiyan containing two substantive topics, both of which fail the surface threshold. First, his Parandur airport remarks are fact"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/udhayanidhi-stalin-accuses-tvk-led-tamil-nadu-government-of-failing-to-address-power-cuts-price-rise/article71463023.ece",
-      "skip_reason": "This article is entirely an opposition political speech — Udhayanidhi Stalin (DMK Leader of Opposition) making rhetorical accusations against CM Mr. Vijay at a party function. There is no governance a"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/cities/Madurai/tvk-government-struggling-to-meet-high-power-demand-due-to-lackadaisical-attitude-aiadmk-leader-rb-udhayakumar/article71462537.ece",
-      "skip_reason": "This article is entirely an opposition political statement — AIADMK leader R.B. Udhayakumar issuing a press release criticising the TVK government's handling of power demand. It contains no governance"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/dmk-mp-raja-regrets-remarks-against-tvk-minister-nirmal-kumar/article71462697.ece",
-      "skip_reason": "This article covers a political verbal spat between DMK MP A. Raja and TVK Minister C.T.R. Nirmal Kumar, stemming from a protest against CM Mr. Vijay. While the article is factually consistent across "
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/dmk-stages-state-wide-demonstrations-condemning-vijays-remarks-against-stalin/article71460596.ece",
-      "skip_reason": "This article covers DMK staging state-wide demonstrations against Mr. Vijay's remarks about Stalin in the Assembly, demanding expunction of those remarks from Assembly records. This is purely factiona"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/tasmac-outlet-in-tiruvannamalai-burgled/article71460068.ece",
-      "skip_reason": "This article reports a routine criminal incident — a burglary at a TASMAC liquor outlet in Tiruvannamalai, with approximately ₹2 lakh worth of liquor stolen and CCTV equipment damaged. It has no gover"
-    },
-    {
-      "title": "",
-      "url": "https://theprint.in/india/left-parties-continue-to-stay-away-from-tvk-front-pick-solo-fight-route-for-tn-bypolls/3041662/",
-      "skip_reason": "This article reports a political/electoral development — Left parties (CPI, CPI(M)) announcing solo bypoll candidacies — with no direct governance action, executive order, cabinet decision, or policy "
-    },
     {
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-cb-cid-nabs-rajasthan-scammer-who-circulatedal-generated-deep-fake-video-impersonating-cm-vijay/article71466303.ece",
@@ -970,9 +935,51 @@
       "title": "",
       "url": "https://theprint.in/india/tn-bypolls-dmk-holds-on-to-core-independent-vote-bank/3069249/",
       "skip_reason": "This PTI wire story is electoral analysis and political commentary about the DMK's vote-bank resilience following the October 6 by-polls. While the underlying facts (TVK winning both seats, DMK vote s"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-minister-sengottaiyan-claims-15-more-functionaries-may-quit-aiadmk/article71577952.ece",
+      "skip_reason": "This article is squarely in the 'factional manoeuvring without policy effect' category explicitly listed in the scope filter. Minister Sengottaiyan's claim that 15 AIADMK functionaries 'may quit' is a"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/edappadi-palaniswami-criticises-tvk-led-tamil-nadu-government-over-electricity-purchase-at-high-rate/article71578360.ece",
+      "skip_reason": "This article is an opposition political statement by AIADMK's Edappadi K. Palaniswami criticising the TVK government — it contains no confirmed governance action, executive order, or cabinet decision."
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-cm-vijay-pays-homage-to-tyagi-sankaralinganar-on-his-death-anniversary/article71577903.ece",
+      "skip_reason": "This article covers a social media post (on X) by CM Mr. Vijay paying tribute to historical figure Tyagi Sankaralinganar on his death anniversary. The full article text confirms there is no governance"
+    },
+    {
+      "title": "",
+      "url": "https://theprint.in/india/man-steals-minibus-in-indore-rams-into-vehicles-two-injured/3070452/",
+      "skip_reason": "This article is entirely unrelated to Tamil Nadu governance, CM Mr. Vijay (TVK), or any manifesto promise. It reports a criminal incident in Indore, Madhya Pradesh — a completely different state — inv"
+    },
+    {
+      "title": "",
+      "url": "https://theprint.in/india/kerala-hc-declines-interim-stay-of-order-to-register-fir-against-vijayan-in-cmrl-bribery-case/3070443/",
+      "skip_reason": "This article concerns a Kerala High Court ruling about former Kerala Chief Minister Pinarayi Vijayan and the CMRL-Exalogic bribery case — an entirely Kerala-jurisdiction matter with no connection to T"
+    },
+    {
+      "title": "",
+      "url": "https://theprint.in/india/days-before-ranabaali-release-rashmika-deverakonda-meet-cm-vijay-praise-incredible-journey/3070373/",
+      "skip_reason": "This article describes Bollywood/Tollywood actors Rashmika Mandanna and Vijay Deverakonda making a courtesy call on CM Mr. Vijay ahead of their film 'Ranabaali' release. The visit is explicitly a film"
     }
   ],
   "recent_commits": [
+    {
+      "sha": "170130f",
+      "prefix": "agent",
+      "title": "🟨 CM Mr. Vijay meets AP CM Mr. Naidu in Guntur; Krishna water release for Chenna",
+      "timestamp": "2026-10-13T20:08:58Z"
+    },
+    {
+      "sha": "b755830",
+      "prefix": "agent",
+      "title": "⚖️ Madras HC upholds Speaker's acceptance of six AIADMK-to-TVK MLA resignations",
+      "timestamp": "2026-10-13T20:08:58Z"
+    },
     {
       "sha": "08eb0d2",
       "prefix": "agent",
@@ -1020,25 +1027,13 @@
       "prefix": "agent",
       "title": "⚖️ Madras HC directs TN government to frame elephant-in-temples SOP by October 3",
       "timestamp": "2026-10-01T19:21:38Z"
-    },
-    {
-      "sha": "4c51633",
-      "prefix": "agent",
-      "title": "🟢 CM Mr. Vijay inaugurates renovated Gandhi Memorial Museum, Madurai — ₹10.25 cr",
-      "timestamp": "2026-09-28T20:29:20Z"
-    },
-    {
-      "sha": "a6618cc",
-      "prefix": "agent",
-      "title": "🟢 CM Mr. Vijay conducts surprise inspection at TNPDCL headquarters amid power cu",
-      "timestamp": "2026-09-23T18:16:45Z"
     }
   ],
   "last_run": {
-    "ts": "2026-10-13T03:33:19.415003+05:30",
+    "ts": "2026-10-14T01:38:58.073392+05:30",
     "candidates": 8,
-    "published": 0,
-    "escalated": 2,
+    "published": 2,
+    "escalated": 0,
     "errors": 0
   }
 }

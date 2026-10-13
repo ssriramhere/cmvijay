@@ -1,5 +1,29 @@
 [
   {
+    "title": "⚖️ Madras HC upholds Speaker's acceptance of six AIADMK-to-TVK MLA resignations",
+    "date": "October 13, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 982,
+        "output_tokens": 1037,
+        "cache_read_tokens": 0,
+        "cache_creation_tokens": 1373
+      }
+    }
+  },
+  {
+    "title": "🟨 CM Mr. Vijay meets AP CM Mr. Naidu in Guntur; Krishna water release for Chennai on agenda",
+    "date": "October 13, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 933,
+        "output_tokens": 851,
+        "cache_read_tokens": 1373,
+        "cache_creation_tokens": 0
+      }
+    }
+  },
+  {
     "title": "🟢 Chennai Metro Phase II first stretch inaugurated — Poonamallee–Vadapalani, 14.64 km, 11 stations",
     "date": "October 11, 2026",
     "reasoning": {
