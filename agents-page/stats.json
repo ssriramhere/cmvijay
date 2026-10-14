@@ -1,17 +1,23 @@
 {
   "period": "Rolling 30 days",
-  "as_of": "2026-10-14T01:39:01.776597+05:30",
-  "candidates_surfaced": 191,
-  "auto_verified": 25,
+  "as_of": "2026-10-14T23:51:06.472430+05:30",
+  "candidates_surfaced": 196,
+  "auto_verified": 26,
   "auto_verified_pct": 13,
   "escalated": 32,
-  "escalated_pct": 17,
-  "autonomous_commits": 25,
+  "escalated_pct": 16,
+  "autonomous_commits": 26,
   "operator_edited": 0,
-  "skipped": 134,
-  "cost_this_month_usd": 8.54,
+  "skipped": 138,
+  "cost_this_month_usd": 8.75,
   "cost_per_published_entry_usd": 0.34,
   "autonomous_commits_list": [
+    {
+      "sha": "b674c1c",
+      "prefix": "agent",
+      "title": "🟨 CM Mr. Vijay meets AP CM Naidu in Vijayawada — Krishna water request, no commi",
+      "timestamp": "2026-10-14T18:20:59Z"
+    },
     {
       "sha": "170130f",
       "prefix": "agent",
@@ -125,12 +131,6 @@
       "prefix": "agent",
       "title": "⚖️ Madras HC reserves orders on bid to reject Tirupattur TVK MLA's election peti",
       "timestamp": "2026-09-19T17:01:56Z"
-    },
-    {
-      "sha": "820255d",
-      "prefix": "agent",
-      "title": "🟢 CM Mr. Vijay reviews Breakfast Scheme expansion — 15.3 lakh students, ₹217.63",
-      "timestamp": "2026-09-18T17:32:25Z"
     }
   ],
   "escalated_list": [
@@ -965,9 +965,35 @@
       "title": "",
       "url": "https://theprint.in/india/days-before-ranabaali-release-rashmika-deverakonda-meet-cm-vijay-praise-incredible-journey/3070373/",
       "skip_reason": "This article describes Bollywood/Tollywood actors Rashmika Mandanna and Vijay Deverakonda making a courtesy call on CM Mr. Vijay ahead of their film 'Ranabaali' release. The visit is explicitly a film"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/palaniswami-alleges-mega-corruption-in-tvks-power-purchase/article71583052.ece",
+      "skip_reason": "This candidate is an opposition press conference by AIADMK leader Palaniswami alleging 'mega corruption' — it is political speech, not a governance action. The underlying TNPDCL power procurement at ₹"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/dhinakaran-questions-tamil-nadu-cm-vijays-silence-over-cauvery-water-dispute-with-karnataka/article71582969.ece",
+      "skip_reason": "This article reports a social media statement by AMMK founder T.T.V. Dhinakaran criticising CM Mr. Vijay's alleged 'silence' on the Cauvery water dispute with Karnataka. This is squarely opposition po"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/why-has-tamil-nadu-gone-for-expensive-power-purchase-agreements-explained/article71579306.ece",
+      "skip_reason": "This article is an 'Explained' piece — a journalistic analysis of why TNPDCL signed an expensive power purchase agreement at ₹30/unit. It reports a government clarification and opposition criticism, b"
+    },
+    {
+      "title": "",
+      "url": "https://theprint.in/india/missing-womans-body-found-4-days-after-fatal-fall-at-mylapore-mrts-station/3071113/",
+      "skip_reason": "This is a verified accident/crime report — the core facts (victim identity, date, unguarded infrastructure opening, body discovery) are corroborated by NDTV, Rediff, and Chennai Live. However, the art"
     }
   ],
   "recent_commits": [
+    {
+      "sha": "b674c1c",
+      "prefix": "agent",
+      "title": "🟨 CM Mr. Vijay meets AP CM Naidu in Vijayawada — Krishna water request, no commi",
+      "timestamp": "2026-10-14T18:20:59Z"
+    },
     {
       "sha": "170130f",
       "prefix": "agent",
@@ -1021,18 +1047,12 @@
       "prefix": "agent",
       "title": "🟨 CM Mr. Vijay writes to EAM Jaishankar seeking release of 20 detained TN fisher",
       "timestamp": "2026-10-05T21:26:30Z"
-    },
-    {
-      "sha": "9f19541",
-      "prefix": "agent",
-      "title": "⚖️ Madras HC directs TN government to frame elephant-in-temples SOP by October 3",
-      "timestamp": "2026-10-01T19:21:38Z"
     }
   ],
   "last_run": {
-    "ts": "2026-10-14T01:38:58.073392+05:30",
-    "candidates": 8,
-    "published": 2,
+    "ts": "2026-10-14T23:50:59.533808+05:30",
+    "candidates": 5,
+    "published": 1,
     "escalated": 0,
     "errors": 0
   }

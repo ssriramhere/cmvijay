@@ -24,6 +24,18 @@
     }
   },
   {
+    "title": "🟨 CM Mr. Vijay meets AP CM Naidu in Vijayawada — Krishna water request, no commitment secured",
+    "date": "October 13, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 931,
+        "output_tokens": 921,
+        "cache_read_tokens": 0,
+        "cache_creation_tokens": 1373
+      }
+    }
+  },
+  {
     "title": "🟢 Chennai Metro Phase II first stretch inaugurated — Poonamallee–Vadapalani, 14.64 km, 11 stations",
     "date": "October 11, 2026",
     "reasoning": {
