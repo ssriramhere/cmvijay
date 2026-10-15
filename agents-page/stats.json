@@ -1,17 +1,29 @@
 {
   "period": "Rolling 30 days",
-  "as_of": "2026-10-14T23:51:06.472430+05:30",
-  "candidates_surfaced": 196,
-  "auto_verified": 26,
-  "auto_verified_pct": 13,
-  "escalated": 32,
+  "as_of": "2026-10-15T23:36:23.382352+05:30",
+  "candidates_surfaced": 205,
+  "auto_verified": 28,
+  "auto_verified_pct": 14,
+  "escalated": 33,
   "escalated_pct": 16,
-  "autonomous_commits": 26,
+  "autonomous_commits": 28,
   "operator_edited": 0,
-  "skipped": 138,
-  "cost_this_month_usd": 8.75,
-  "cost_per_published_entry_usd": 0.34,
+  "skipped": 144,
+  "cost_this_month_usd": 9.17,
+  "cost_per_published_entry_usd": 0.33,
   "autonomous_commits_list": [
+    {
+      "sha": "5e8a85a",
+      "prefix": "agent",
+      "title": "🟨 CM Mr. Vijay writes to Jaishankar seeking release of 25 Thoothukudi fishermen",
+      "timestamp": "2026-10-15T18:06:19Z"
+    },
+    {
+      "sha": "74f7c31",
+      "prefix": "agent",
+      "title": "🟢 CM Mr. Vijay meets Singapore DPM; CapitaLand's ₹1,940 cr Chennai data centre u",
+      "timestamp": "2026-10-15T18:06:19Z"
+    },
     {
       "sha": "b674c1c",
       "prefix": "agent",
@@ -119,18 +131,6 @@
       "prefix": "agent",
       "title": "⚖️ Supreme Court tells TN to find alternate site; SASTRA eviction on hold",
       "timestamp": "2026-09-21T19:07:57Z"
-    },
-    {
-      "sha": "edaa274",
-      "prefix": "agent",
-      "title": "🟢 TASMAC retail staff to wear uniforms from November 15; ₹6,000 annual allowance",
-      "timestamp": "2026-09-20T17:20:13Z"
-    },
-    {
-      "sha": "307b724",
-      "prefix": "agent",
-      "title": "⚖️ Madras HC reserves orders on bid to reject Tirupattur TVK MLA's election peti",
-      "timestamp": "2026-09-19T17:01:56Z"
     }
   ],
   "escalated_list": [
@@ -293,6 +293,11 @@
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/vijay-urges-prime-minister-modi-to-sanction-metro-rail-for-the-hosur-bommasandra-sector/article71571740.ece",
       "reasoning": "The article is well-sourced (The Hindu, corroborated by DTNext/PTI and Economic Times) and describes a genuine governance action — CM Mr. Vijay formally requesting Central sanction for multiple metro rail projects during a PM Modi event at IIT Madras on October 11, 2026. No existing site entries con"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/vijay-launches-3108-cr-ring-main-pipeline-project-for-equitable-drinking-water-supply/article71584148.ece",
+      "reasoning": "The core facts are well-corroborated across multiple independent sources (The Hindu, NIE, WaterToday, YouTube, Instagram): ₹3,108.55 crore, foundation stone laid by CM Mr. Vijay at Sholinganallur, implemented by CMWSSB, targeting equitable water supply across GCC. No primacy claims are made. However"
     }
   ],
   "skipped_list": [
@@ -985,9 +990,51 @@
       "title": "",
       "url": "https://theprint.in/india/missing-womans-body-found-4-days-after-fatal-fall-at-mylapore-mrts-station/3071113/",
       "skip_reason": "This is a verified accident/crime report — the core facts (victim identity, date, unguarded infrastructure opening, body discovery) are corroborated by NDTV, Rediff, and Chennai Live. However, the art"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/mk-stalin-says-cm-vijay-must-visit-local-grocery-shops-to-understand-price-rise/article71587109.ece",
+      "skip_reason": "This article is a social media statement by M.K. Stalin (DMK president and opposition figure) criticising CM Mr. Vijay over rising prices. It contains no governance action, no executive order, no cabi"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/stalin-urges-tvk-government-to-file-appeal-in-supreme-court-over-bc-reservation-for-muslim-converts/article71587145.ece",
+      "skip_reason": "This article reports a political statement by M.K. Stalin (DMK president and opposition leader), urging the TVK government to file an SLP in the Supreme Court. No governance action has been taken by t"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-government-fully-prepared-to-face-northeast-monsoon-revenue-minister/article71587062.ece",
+      "skip_reason": "This is a routine ministerial press statement confirming monsoon preparedness status (98% complete), with no new executive order, scheme launch, cabinet decision, budget allocation, or trackable gover"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-governor-arlekar-cm-vijay-pay-tributes-to-apj-abdul-kalam-on-his-birth-anniversary/article71587110.ece",
+      "skip_reason": "This article describes a purely ceremonial tribute event — CM Mr. Vijay posted on X recalling Dr. Kalam's simplicity and scientific contributions on his birth anniversary (October 15). There is no exe"
+    },
+    {
+      "title": "",
+      "url": "https://theprint.in/india/mizoram-guv-calls-for-comprehensive-plan-to-strengthen-border-trade/3072840/",
+      "skip_reason": "This article has zero governance relevance to the Tamil Nadu government or CM Mr. Vijay (TVK). It concerns the Mizoram Governor — a Union-appointed constitutional official — calling for border trade m"
+    },
+    {
+      "title": "",
+      "url": "https://theprint.in/india/cmrl-case-bjp-welcomes-kerala-hc-order-rejecting-vijayans-plea-cpim-to-face-it-legally/3072829/",
+      "skip_reason": "This article is entirely about Kerala state politics — specifically a Kerala High Court ruling on pleas filed by former Kerala CM Pinarayi Vijayan (CPI-M) in the CMRL bribery case, and reactions from "
     }
   ],
   "recent_commits": [
+    {
+      "sha": "5e8a85a",
+      "prefix": "agent",
+      "title": "🟨 CM Mr. Vijay writes to Jaishankar seeking release of 25 Thoothukudi fishermen",
+      "timestamp": "2026-10-15T18:06:19Z"
+    },
+    {
+      "sha": "74f7c31",
+      "prefix": "agent",
+      "title": "🟢 CM Mr. Vijay meets Singapore DPM; CapitaLand's ₹1,940 cr Chennai data centre u",
+      "timestamp": "2026-10-15T18:06:19Z"
+    },
     {
       "sha": "b674c1c",
       "prefix": "agent",
@@ -1035,25 +1082,13 @@
       "prefix": "agent",
       "title": "🟢 CM Mr. Vijay inaugurates Aavin annexure laboratory at Madhavaram Dairy, Chenna",
       "timestamp": "2026-10-07T19:48:52Z"
-    },
-    {
-      "sha": "ec29706",
-      "prefix": "agent",
-      "title": "🟢 Sports Minister Mr. Aadhav Arjuna announces 36-discipline focus, cricket in ho",
-      "timestamp": "2026-10-05T21:26:30Z"
-    },
-    {
-      "sha": "ffcf6ca",
-      "prefix": "agent",
-      "title": "🟨 CM Mr. Vijay writes to EAM Jaishankar seeking release of 20 detained TN fisher",
-      "timestamp": "2026-10-05T21:26:30Z"
     }
   ],
   "last_run": {
-    "ts": "2026-10-14T23:50:59.533808+05:30",
-    "candidates": 5,
-    "published": 1,
-    "escalated": 0,
+    "ts": "2026-10-15T23:36:20.011408+05:30",
+    "candidates": 9,
+    "published": 2,
+    "escalated": 1,
     "errors": 0
   }
 }
