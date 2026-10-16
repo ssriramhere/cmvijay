@@ -1,5 +1,29 @@
 [
   {
+    "title": "🔵 Speaker sets two-month deadline on disqualification of four ex-AIADMK MLAs",
+    "date": "October 16, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 931,
+        "output_tokens": 888,
+        "cache_read_tokens": 0,
+        "cache_creation_tokens": 1373
+      }
+    }
+  },
+  {
+    "title": "🟢 CM Mr. Vijay inaugurates Periyar Arivulagam library and science centre, Coimbatore",
+    "date": "October 16, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 821,
+        "output_tokens": 557,
+        "cache_read_tokens": 1373,
+        "cache_creation_tokens": 0
+      }
+    }
+  },
+  {
     "title": "🟢 CM Mr. Vijay meets Singapore DPM; CapitaLand's ₹1,940 cr Chennai data centre unveiled",
     "date": "October 15, 2026",
     "reasoning": {
@@ -18,6 +42,18 @@
       "drafter_usage": {
         "input_tokens": 970,
         "output_tokens": 990,
+        "cache_read_tokens": 1373,
+        "cache_creation_tokens": 0
+      }
+    }
+  },
+  {
+    "title": "🟢 Tamil Nadu Semiconductor Ecosystem Scheme 2026 launched at state-level event",
+    "date": "October 15, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 955,
+        "output_tokens": 870,
         "cache_read_tokens": 1373,
         "cache_creation_tokens": 0
       }
@@ -290,14 +326,7 @@
   {
     "title": "⚖️ Madras HC dismisses AIADMK petition against Minister Sengottaiyan's Gobichettipalayam win",
     "date": "September 15, 2026",
-    "reasoning": {
-      "drafter_usage": {
-        "input_tokens": 823,
-        "output_tokens": 754,
-        "cache_read_tokens": 0,
-        "cache_creation_tokens": 1373
-      }
-    }
+    "reasoning": null
   },
   {
     "title": "🟢 Digital DL and RC issuance goes live statewide via Sarathi and Vahan portals",
@@ -314,26 +343,12 @@
   {
     "title": "🟢 Tamil Nadu signs two London MoUs — ₹12,000 cr investment, 9,000 jobs committed",
     "date": "September 14, 2026",
-    "reasoning": {
-      "drafter_usage": {
-        "input_tokens": 1100,
-        "output_tokens": 961,
-        "cache_read_tokens": 0,
-        "cache_creation_tokens": 1373
-      }
-    }
+    "reasoning": null
   },
   {
     "title": "🟢 UK investment drive yields ₹12,300 cr in MoUs, 9,400+ jobs for Tamil Nadu",
     "date": "September 14, 2026",
-    "reasoning": {
-      "drafter_usage": {
-        "input_tokens": 1237,
-        "output_tokens": 1039,
-        "cache_read_tokens": 1373,
-        "cache_creation_tokens": 0
-      }
-    }
+    "reasoning": null
   },
   {
     "title": "⚖️ Madras HC declines interim stay on TN digital driving licence rollout",

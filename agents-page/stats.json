@@ -1,17 +1,35 @@
 {
   "period": "Rolling 30 days",
-  "as_of": "2026-10-15T23:36:23.382352+05:30",
-  "candidates_surfaced": 205,
+  "as_of": "2026-10-16T23:22:11.177325+05:30",
+  "candidates_surfaced": 203,
   "auto_verified": 28,
   "auto_verified_pct": 14,
   "escalated": 33,
   "escalated_pct": 16,
   "autonomous_commits": 28,
   "operator_edited": 0,
-  "skipped": 144,
-  "cost_this_month_usd": 9.17,
-  "cost_per_published_entry_usd": 0.33,
+  "skipped": 142,
+  "cost_this_month_usd": 9.07,
+  "cost_per_published_entry_usd": 0.32,
   "autonomous_commits_list": [
+    {
+      "sha": "6194095",
+      "prefix": "agent",
+      "title": "🟢 Tamil Nadu Semiconductor Ecosystem Scheme 2026 launched at state-level event",
+      "timestamp": "2026-10-16T17:52:08Z"
+    },
+    {
+      "sha": "c1c8ec3",
+      "prefix": "agent",
+      "title": "🟢 CM Mr. Vijay inaugurates Periyar Arivulagam library and science centre, Coimba",
+      "timestamp": "2026-10-16T17:52:08Z"
+    },
+    {
+      "sha": "0b0a0e4",
+      "prefix": "agent",
+      "title": "🔵 Speaker sets two-month deadline on disqualification of four ex-AIADMK MLAs",
+      "timestamp": "2026-10-16T17:52:08Z"
+    },
     {
       "sha": "5e8a85a",
       "prefix": "agent",
@@ -113,24 +131,6 @@
       "prefix": "agent",
       "title": "✅ Perunthalaivar Kamarajar Breakfast Scheme expanded to Classes VI–VIII, 15.3 la",
       "timestamp": "2026-09-22T18:01:12Z"
-    },
-    {
-      "sha": "8614454",
-      "prefix": "agent",
-      "title": "🟢 CM Mr. Vijay chairs review of Cooum river restoration DPR progress",
-      "timestamp": "2026-09-22T18:01:12Z"
-    },
-    {
-      "sha": "87f1ee4",
-      "prefix": "agent",
-      "title": "🟢 CM chairs Secretariat review on Vettri Payanam expansion to five bus categorie",
-      "timestamp": "2026-09-21T19:07:57Z"
-    },
-    {
-      "sha": "6c73164",
-      "prefix": "agent",
-      "title": "⚖️ Supreme Court tells TN to find alternate site; SASTRA eviction on hold",
-      "timestamp": "2026-09-21T19:07:57Z"
     }
   ],
   "escalated_list": [
@@ -301,31 +301,6 @@
     }
   ],
   "skipped_list": [
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-cb-cid-nabs-rajasthan-scammer-who-circulatedal-generated-deep-fake-video-impersonating-cm-vijay/article71466303.ece",
-      "skip_reason": "While the CB-CID arrest of Shyabu Khan is a real, well-corroborated law enforcement action (confirmed by The Hindu and India Today with consistent facts — 28-year-old from Alwar, arrested Sep 12, case"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/cities/chennai/fishermen-urge-tamil-nadu-government-to-drop-the-plan-to-build-the-secretariat-at-foreshore-estate/article71469322.ece",
-      "skip_reason": "This article covers a civic protest by fishermen panchayats against the Tamil Nadu government's plan to build a new Secretariat at Foreshore Estate. The underlying governance event — the Government Or"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/dmk-submits-breach-of-privilege-complaint-to-tamil-nadu-assembly-speaker-against-law-minister-nirmal-kumar/article71467620.ece",
-      "skip_reason": "This is a political/factional development — the opposition DMK filing a breach of privilege complaint against ruling TVK Law Minister Nirmal Kumar over Assembly speech conduct. While well-sourced acro"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/dmk-mp-a-raja-mlas-sekarbabu-and-vasantham-karthikeyan-booked-for-derogatory-remarks-against-tamil-nadu-cm-vijay/article71466966.ece",
-      "skip_reason": "This article reports police cases filed against DMK opposition politicians (MP A. Raja, MLAs Sekarbabu and Vasantham Karthikeyan) for remarks made against CM Mr. Vijay and Law Minister Nirmal Kumar du"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/vinayagar-idols-depicting-tamil-nadu-cm-vijay-bjp-leader-nainar-nagenthran-seeks-arrest-of-tvk-functionaries/article71467413.ece",
-      "skip_reason": "This article covers a BJP opposition leader (Nainar Nagenthran) demanding the arrest of TVK party functionaries over Vinayagar idols made in CM Mr. Vijay's likeness — a political-religious controversy"
-    },
     {
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/only-prime-ministers-office-can-grant-sanction-to-prosecute-ias-officers-centre-tells-madras-high-court/article71471713.ece",
@@ -1020,9 +995,42 @@
       "title": "",
       "url": "https://theprint.in/india/cmrl-case-bjp-welcomes-kerala-hc-order-rejecting-vijayans-plea-cpim-to-face-it-legally/3072829/",
       "skip_reason": "This article is entirely about Kerala state politics — specifically a Kerala High Court ruling on pleas filed by former Kerala CM Pinarayi Vijayan (CPI-M) in the CMRL bribery case, and reactions from "
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/cities/Tiruchirapalli/minister-attributes-rise-in-milk-procurement-to-revision-in-price/article71588145.ece",
+      "skip_reason": "The article covers a ministerial field visit to Tiruchi on Oct 15, 2026, where Minister Vijayalakshmi launched Aavin product variants and attributed rising milk procurement to a price hike. The substa"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/nation-parliament-must-debate-political-appeals-to-children-during-elections-madras-high-court/article71591152.ece",
+      "skip_reason": "This article reports a Madras High Court observation made while rejecting a DMK election petition (K Sivakumar v R Rajendran, Salem North constituency). The court's remarks about children in TVK campa"
+    },
+    {
+      "title": "",
+      "url": "https://theprint.in/india/andhra-cm-naidu-prays-to-goddess-kanaka-durga-for-rains-poverty-free-state/3074007/",
+      "skip_reason": "This article is about Andhra Pradesh Chief Minister N. Chandrababu Naidu offering prayers at a temple in Vijayawada — a different state, a different Chief Minister, and a different government entirely"
     }
   ],
   "recent_commits": [
+    {
+      "sha": "6194095",
+      "prefix": "agent",
+      "title": "🟢 Tamil Nadu Semiconductor Ecosystem Scheme 2026 launched at state-level event",
+      "timestamp": "2026-10-16T17:52:08Z"
+    },
+    {
+      "sha": "c1c8ec3",
+      "prefix": "agent",
+      "title": "🟢 CM Mr. Vijay inaugurates Periyar Arivulagam library and science centre, Coimba",
+      "timestamp": "2026-10-16T17:52:08Z"
+    },
+    {
+      "sha": "0b0a0e4",
+      "prefix": "agent",
+      "title": "🔵 Speaker sets two-month deadline on disqualification of four ex-AIADMK MLAs",
+      "timestamp": "2026-10-16T17:52:08Z"
+    },
     {
       "sha": "5e8a85a",
       "prefix": "agent",
@@ -1064,31 +1072,13 @@
       "prefix": "agent",
       "title": "🟢 Chennai Metro Phase II first stretch inaugurated — Poonamallee to Vadapalani,",
       "timestamp": "2026-10-11T18:42:44Z"
-    },
-    {
-      "sha": "5274de4",
-      "prefix": "agent",
-      "title": "🟢 Chennai Metro Phase II first stretch inaugurated — Poonamallee–Vadapalani, 14.",
-      "timestamp": "2026-10-11T18:42:43Z"
-    },
-    {
-      "sha": "20757f5",
-      "prefix": "agent",
-      "title": "🟢 Domicile clause relaxed for Thaimaaman Thanga Mothiram newborn gold-ring schem",
-      "timestamp": "2026-10-08T19:42:35Z"
-    },
-    {
-      "sha": "7bd4b61",
-      "prefix": "agent",
-      "title": "🟢 CM Mr. Vijay inaugurates Aavin annexure laboratory at Madhavaram Dairy, Chenna",
-      "timestamp": "2026-10-07T19:48:52Z"
     }
   ],
   "last_run": {
-    "ts": "2026-10-15T23:36:20.011408+05:30",
-    "candidates": 9,
-    "published": 2,
-    "escalated": 1,
+    "ts": "2026-10-16T23:22:08.178915+05:30",
+    "candidates": 6,
+    "published": 3,
+    "escalated": 0,
     "errors": 0
   }
 }
