@@ -1,16 +1,16 @@
 {
   "period": "Rolling 30 days",
-  "as_of": "2026-10-16T23:22:11.177325+05:30",
-  "candidates_surfaced": 203,
+  "as_of": "2026-10-17T22:20:51.672714+05:30",
+  "candidates_surfaced": 199,
   "auto_verified": 28,
   "auto_verified_pct": 14,
-  "escalated": 33,
+  "escalated": 31,
   "escalated_pct": 16,
   "autonomous_commits": 28,
   "operator_edited": 0,
-  "skipped": 142,
-  "cost_this_month_usd": 9.07,
-  "cost_per_published_entry_usd": 0.32,
+  "skipped": 140,
+  "cost_this_month_usd": 8.72,
+  "cost_per_published_entry_usd": 0.31,
   "autonomous_commits_list": [
     {
       "sha": "6194095",
@@ -134,16 +134,6 @@
     }
   ],
   "escalated_list": [
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-government-fixes-10000-interim-monthly-payout-for-retirees-under-taps-regime/article71471507.ece",
-      "reasoning": "The core factual claims are well-supported: The Hindu article (a whitelisted outlet) clearly states the ₹10,000 flat-rate interim monthly payout for TAPS retirees with 10–18 years of service, and a government GO snippet (fin_e_15120106_2026.pdf, dated ~5 days before publication) uses near-identical "
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/power-discom-is-still-heavily-reliant-on-tamil-nadu-governments-financial-support/article71469229.ece",
-      "reasoning": "The article is a legitimate, well-sourced analytical piece by The Hindu's T. Ramakrishnan, drawing on the CAG State Finances Audit Report tabled in the Tamil Nadu Legislative Assembly on September 8, 2026 — confirmed independently by PIB, The Federal (Sept 11, 2026), and YouTube coverage. The core c"
-    },
     {
       "title": "",
       "url": "https://www.thehindu.com/news/cities/chennai/tn-government-writes-to-pm-modi-seeking-to-change-the-operator-of-chennai-airport/article71481590.ece",
@@ -301,26 +291,6 @@
     }
   ],
   "skipped_list": [
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/only-prime-ministers-office-can-grant-sanction-to-prosecute-ias-officers-centre-tells-madras-high-court/article71471713.ece",
-      "skip_reason": "This article reports a Madras High Court hearing update in a legacy AIADMK-era corruption case (S.P. Velumani tender irregularities). The key development — that the PMO is the sole competent authority"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/1978-tn-assembly-records-establish-mk-stalin-was-a-political-prisoner-under-misa-during-emergency/article71469731.ece",
-      "skip_reason": "This article is a historical/archival piece about 1978 Tamil Nadu Assembly records and the 1977 Justice Ismail Commission — it contains no governance action, executive order, scheme launch, or policy "
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/udhayanidhi-condemns-tvk-led-govt-over-attempt-to-paralyse-high-level-committee-on-union-state-relations/article71469408.ece",
-      "skip_reason": "This article is an opposition political statement — Leader of the Opposition Udhayanidhi Stalin criticising the TVK government via a post on X — with no corresponding governance action, executive orde"
-    },
-    {
-      "title": "",
-      "url": "https://theprint.in/india/tvk-appeals-tamils-in-london-to-refrain-from-trying-to-see-cm-vijay-citing-safety/3044028/",
-      "skip_reason": "The article's core subject — TVK's social media appeal to Tamil diaspora in London to not gather outside CM Mr. Vijay's hotel or along transit routes — is logistical/crowd-management communication fro"
-    },
     {
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/stalin-offers-to-meet-education-expenses-of-phd-scholar-if-vijay-govt-fails-to-release-funds/article71477623.ece",
@@ -1010,6 +980,16 @@
       "title": "",
       "url": "https://theprint.in/india/andhra-cm-naidu-prays-to-goddess-kanaka-durga-for-rains-poverty-free-state/3074007/",
       "skip_reason": "This article is about Andhra Pradesh Chief Minister N. Chandrababu Naidu offering prayers at a temple in Vijayawada — a different state, a different Chief Minister, and a different government entirely"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-governor-arlekar-cm-vijay-express-condolences-over-passing-of-composer-deva/article71595806.ece",
+      "skip_reason": "This article covers CM Mr. Vijay expressing condolences and announcing state honours for the funeral of music director Deva — a cultural/ceremonial event with no governance policy action, executive or"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tvk-has-become-a-breaking-bad-party-alleges-mk-stalin/article71595541.ece",
+      "skip_reason": "This article reports an opposition leader (DMK's M.K. Stalin) making a social media political attack on the ruling TVK party following the DRI arrest of a TVK functionary for drug trafficking. While t"
     }
   ],
   "recent_commits": [
@@ -1075,9 +1055,9 @@
     }
   ],
   "last_run": {
-    "ts": "2026-10-16T23:22:08.178915+05:30",
-    "candidates": 6,
-    "published": 3,
+    "ts": "2026-10-17T22:20:50.121911+05:30",
+    "candidates": 2,
+    "published": 0,
     "escalated": 0,
     "errors": 0
   }
