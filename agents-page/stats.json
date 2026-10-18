@@ -1,17 +1,23 @@
 {
   "period": "Rolling 30 days",
-  "as_of": "2026-10-17T22:20:51.672714+05:30",
-  "candidates_surfaced": 199,
-  "auto_verified": 28,
+  "as_of": "2026-10-18T22:35:43.482710+05:30",
+  "candidates_surfaced": 196,
+  "auto_verified": 27,
   "auto_verified_pct": 14,
   "escalated": 31,
   "escalated_pct": 16,
-  "autonomous_commits": 28,
+  "autonomous_commits": 27,
   "operator_edited": 0,
-  "skipped": 140,
-  "cost_this_month_usd": 8.72,
+  "skipped": 138,
+  "cost_this_month_usd": 8.49,
   "cost_per_published_entry_usd": 0.31,
   "autonomous_commits_list": [
+    {
+      "sha": "0405690",
+      "prefix": "agent",
+      "title": "🟢 TN fixes powerloom weaving wages for Pongal 2027 dhoti and saree scheme",
+      "timestamp": "2026-10-18T17:05:34Z"
+    },
     {
       "sha": "6194095",
       "prefix": "agent",
@@ -124,12 +130,6 @@
       "sha": "6251d0c",
       "prefix": "agent",
       "title": "🟢 CM chairs videoconference review of NE monsoon preparedness with 10 southern,",
-      "timestamp": "2026-09-22T18:01:12Z"
-    },
-    {
-      "sha": "60fa624",
-      "prefix": "agent",
-      "title": "✅ Perunthalaivar Kamarajar Breakfast Scheme expanded to Classes VI–VIII, 15.3 la",
       "timestamp": "2026-09-22T18:01:12Z"
     }
   ],
@@ -291,26 +291,6 @@
     }
   ],
   "skipped_list": [
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/stalin-offers-to-meet-education-expenses-of-phd-scholar-if-vijay-govt-fails-to-release-funds/article71477623.ece",
-      "skip_reason": "This article reports an opposition political statement — DMK president M.K. Stalin offering to personally fund a PhD scholar if the Vijay government fails to disburse scholarship money. While the unde"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/cities/Madurai/why-construct-new-secretariat-complex-when-tn-is-facing-financial-crisis-palaniswami-asks-tvk-govt/article71476052.ece",
-      "skip_reason": "This article is an opposition political statement by AIADMK's Palaniswami criticising the TVK government's Secretariat plan — it contains no new executive order, cabinet decision, scheme launch, or co"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-minister-vanni-arasu-counters-premallatha-vijayakants-remarks-on-vck-tvk-alliance/article71475713.ece",
-      "skip_reason": "This article documents a political back-and-forth between TN Social Justice Minister Vanni Arasu and DMDK general secretary Premallatha Vijayakant over the motivations behind VCK joining the TVK allia"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/power-cuts-have-become-the-norm-in-state-anbumani-ramadoss/article71472855.ece",
-      "skip_reason": "This article is an opposition press statement by PMK president Anbumani Ramadoss criticising the Tamil Nadu government over power cuts. It contains no governance action — no executive order, cabinet d"
-    },
     {
       "title": "",
       "url": "https://theprint.in/india/home-dept-examining-legal-opinion-on-eds-request-to-register-case-against-vijayan-chennithala/3047314/",
@@ -990,9 +970,25 @@
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/tvk-has-become-a-breaking-bad-party-alleges-mk-stalin/article71595541.ece",
       "skip_reason": "This article reports an opposition leader (DMK's M.K. Stalin) making a social media political attack on the ruling TVK party following the DRI arrest of a TVK functionary for drug trafficking. While t"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/dhinakaran-criticises-tvk-led-government-over-monsoon-preparedness/article71599527.ece",
+      "skip_reason": "This article is a pure opposition criticism piece by AMMK founder T.T.V. Dhinakaran regarding Chennai waterlogging after heavy rain on October 17–18, 2026. It contains no governance action — no execut"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/cities/chennai/when-chief-minister-c-joseph-vijay-made-it-to-the-navarathri-golu/article71596765.ece",
+      "skip_reason": "This article is a piece of cultural/human-interest journalism about CM Mr. Vijay's likeness appearing as a Navarathri Golu doll in private homes, alongside historical figures like Gandhi and Ambedkar."
     }
   ],
   "recent_commits": [
+    {
+      "sha": "0405690",
+      "prefix": "agent",
+      "title": "🟢 TN fixes powerloom weaving wages for Pongal 2027 dhoti and saree scheme",
+      "timestamp": "2026-10-18T17:05:34Z"
+    },
     {
       "sha": "6194095",
       "prefix": "agent",
@@ -1046,18 +1042,12 @@
       "prefix": "agent",
       "title": "🟢 PM Modi and CM Mr. Vijay inaugurate Chennai Metro Phase 2 — Poonamallee–Vadapa",
       "timestamp": "2026-10-11T18:42:44Z"
-    },
-    {
-      "sha": "9ada80c",
-      "prefix": "agent",
-      "title": "🟢 Chennai Metro Phase II first stretch inaugurated — Poonamallee to Vadapalani,",
-      "timestamp": "2026-10-11T18:42:44Z"
     }
   ],
   "last_run": {
-    "ts": "2026-10-17T22:20:50.121911+05:30",
-    "candidates": 2,
-    "published": 0,
+    "ts": "2026-10-18T22:35:34.992358+05:30",
+    "candidates": 3,
+    "published": 1,
     "escalated": 0,
     "errors": 0
   }
