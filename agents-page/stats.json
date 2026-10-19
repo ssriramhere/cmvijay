@@ -1,17 +1,23 @@
 {
   "period": "Rolling 30 days",
-  "as_of": "2026-10-18T22:35:43.482710+05:30",
-  "candidates_surfaced": 196,
-  "auto_verified": 27,
+  "as_of": "2026-10-20T01:11:18.540224+05:30",
+  "candidates_surfaced": 192,
+  "auto_verified": 26,
   "auto_verified_pct": 14,
-  "escalated": 31,
-  "escalated_pct": 16,
-  "autonomous_commits": 27,
+  "escalated": 29,
+  "escalated_pct": 15,
+  "autonomous_commits": 26,
   "operator_edited": 0,
-  "skipped": 138,
-  "cost_this_month_usd": 8.49,
-  "cost_per_published_entry_usd": 0.31,
+  "skipped": 137,
+  "cost_this_month_usd": 8.3,
+  "cost_per_published_entry_usd": 0.32,
   "autonomous_commits_list": [
+    {
+      "sha": "1f11845",
+      "prefix": "agent",
+      "title": "⚖️ SC upholds patta cancellation over Tiruvallur water body; TN ordered to rehou",
+      "timestamp": "2026-10-19T19:41:15Z"
+    },
     {
       "sha": "0405690",
       "prefix": "agent",
@@ -125,25 +131,9 @@
       "prefix": "agent",
       "title": "🟢 CM Mr. Vijay conducts surprise inspection at TNPDCL headquarters amid power cu",
       "timestamp": "2026-09-23T18:16:45Z"
-    },
-    {
-      "sha": "6251d0c",
-      "prefix": "agent",
-      "title": "🟢 CM chairs videoconference review of NE monsoon preparedness with 10 southern,",
-      "timestamp": "2026-09-22T18:01:12Z"
     }
   ],
   "escalated_list": [
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/cities/chennai/tn-government-writes-to-pm-modi-seeking-to-change-the-operator-of-chennai-airport/article71481590.ece",
-      "reasoning": "The Hindu's article is credible and the core claim — CM Mr. Vijay writing to PM Modi in August 2026 to replace AAI as Chennai airport's operator — is confirmed by the fetched article text. No contradictions with existing site state were found, and no primacy claims are made. However, escalation is w"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/cm-vijay-to-launch-thaimaman-thanga-mothiram-thittam-in-madurai-district-on-september-28/article71480726.ece",
-      "reasoning": "The article is well-sourced — The Hindu's official bureau report is corroborated by PTI, NDTV, Times of India, India Today, and Ground News, all confirming a September 28 launch in Madurai. No primacy claims are made. The scheme maps clearly to manifesto promise g1_newborn (currently 'partial'), and"
-    },
     {
       "title": "",
       "url": "https://www.thehindu.com/news/cities/chennai/government-hospitals-running-low-on-live-saving-drugs-for-pre-term-babies/article71492267.ece",
@@ -291,26 +281,6 @@
     }
   ],
   "skipped_list": [
-    {
-      "title": "",
-      "url": "https://theprint.in/india/home-dept-examining-legal-opinion-on-eds-request-to-register-case-against-vijayan-chennithala/3047314/",
-      "skip_reason": "This article concerns Kerala state politics entirely — specifically Kerala's Home Minister Ramesh Chennithala, Kerala's Leader of Opposition Pinarayi Vijayan, and an Enforcement Directorate corruption"
-    },
-    {
-      "title": "",
-      "url": "https://theprint.in/india/dusu-polls-nsuis-vijay-meena-leads-presidential-race-by-494-votes-after-10th-round/3047268/",
-      "skip_reason": "This article concerns the Delhi University Students' Union (DUSU) election results — a student politics event in New Delhi. The 'Vijay' referenced is Vijay Meena, an NSUI student candidate, not CM Mr."
-    },
-    {
-      "title": "",
-      "url": "https://theprint.in/india/tn-bypolls-defection-row-takes-centre-stage-as-tn-cm-vijay-palaniswami-hit-campaign-trail/3047262/",
-      "skip_reason": "This article covers electoral campaigning and a political defection row ahead of the October 6 by-elections in Madurantakam and Dharapuram. While the facts are well-corroborated across PTI/ThePrint an"
-    },
-    {
-      "title": "",
-      "url": "https://theprint.in/india/dusu-polls-abvp-leading-presidential-post-in-seventh-round/3047229/",
-      "skip_reason": "This article is entirely outside the scope of cmvijay.ai. It covers DUSU (Delhi University Students' Union) election counting results in New Delhi — a national-level student union election with no con"
-    },
     {
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/tvk-regimes-experiment-of-having-two-advisers-to-vijay-alongside-chief-secretary-giving-mixed-vibes-to-tns-bureaucratic-circles/article71485220.ece",
@@ -980,9 +950,30 @@
       "title": "",
       "url": "https://www.thehindu.com/news/cities/chennai/when-chief-minister-c-joseph-vijay-made-it-to-the-navarathri-golu/article71596765.ece",
       "skip_reason": "This article is a piece of cultural/human-interest journalism about CM Mr. Vijay's likeness appearing as a Navarathri Golu doll in private homes, alongside historical figures like Gandhi and Ambedkar."
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/cm-vijays-negligence-is-costing-lives-alleges-mk-stalin/article71602334.ece",
+      "skip_reason": "This article is an opposition political statement by DMK president M.K. Stalin criticising CM Mr. Vijay's governance of the police department. While the underlying incidents it references are real and"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/nagenthran-criticises-tvk-led-government-over-lack-of-monsoon-preparedness/article71599923.ece",
+      "skip_reason": "This article is a political opposition statement by BJP Tamil Nadu State President Nainar Nagenthran criticising the TVK government's monsoon preparedness. It contains no governance action, executive "
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/over-50-lakh-devotees-expected-to-attend-karthigai-deepam-festival-in-tiruvannamalai-minister-aadhav-arjuna/article71596673.ece",
+      "skip_reason": "This article covers a pre-festival administrative review meeting by two ministers inspecting crowd management, CCTV, and traffic logistics for the Karthigai Deepam festival in Tiruvannamalai. While it"
     }
   ],
   "recent_commits": [
+    {
+      "sha": "1f11845",
+      "prefix": "agent",
+      "title": "⚖️ SC upholds patta cancellation over Tiruvallur water body; TN ordered to rehou",
+      "timestamp": "2026-10-19T19:41:15Z"
+    },
     {
       "sha": "0405690",
       "prefix": "agent",
@@ -1036,17 +1027,11 @@
       "prefix": "agent",
       "title": "⚖️ Madras HC upholds Speaker's acceptance of six AIADMK-to-TVK MLA resignations",
       "timestamp": "2026-10-13T20:08:58Z"
-    },
-    {
-      "sha": "08eb0d2",
-      "prefix": "agent",
-      "title": "🟢 PM Modi and CM Mr. Vijay inaugurate Chennai Metro Phase 2 — Poonamallee–Vadapa",
-      "timestamp": "2026-10-11T18:42:44Z"
     }
   ],
   "last_run": {
-    "ts": "2026-10-18T22:35:34.992358+05:30",
-    "candidates": 3,
+    "ts": "2026-10-20T01:11:15.429466+05:30",
+    "candidates": 4,
     "published": 1,
     "escalated": 0,
     "errors": 0

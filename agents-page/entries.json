@@ -24,6 +24,18 @@
     }
   },
   {
+    "title": "⚖️ SC upholds patta cancellation over Tiruvallur water body; TN ordered to rehouse 20 flat owners",
+    "date": "October 16, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 877,
+        "output_tokens": 1062,
+        "cache_read_tokens": 0,
+        "cache_creation_tokens": 1373
+      }
+    }
+  },
+  {
     "title": "🟢 CM Mr. Vijay meets Singapore DPM; CapitaLand's ₹1,940 cr Chennai data centre unveiled",
     "date": "October 15, 2026",
     "reasoning": {
@@ -290,14 +302,7 @@
   {
     "title": "⚖️ Madras HC reserves orders on bid to reject Tirupattur TVK MLA's election petition",
     "date": "September 19, 2026",
-    "reasoning": {
-      "drafter_usage": {
-        "input_tokens": 878,
-        "output_tokens": 897,
-        "cache_read_tokens": 0,
-        "cache_creation_tokens": 1373
-      }
-    }
+    "reasoning": null
   },
   {
     "title": "🟢 TASMAC retail staff to wear uniforms from November 15; ₹6,000 annual allowance sanctioned",
@@ -314,14 +319,7 @@
   {
     "title": "🟢 CM Mr. Vijay reviews Breakfast Scheme expansion — 15.3 lakh students, ₹217.63 cr allocated",
     "date": "September 18, 2026",
-    "reasoning": {
-      "drafter_usage": {
-        "input_tokens": 827,
-        "output_tokens": 811,
-        "cache_read_tokens": 1373,
-        "cache_creation_tokens": 0
-      }
-    }
+    "reasoning": null
   },
   {
     "title": "🟢 CM Mr. Vijay returns from UK with ₹15,300 cr investment commitments, 10,000 jobs",
