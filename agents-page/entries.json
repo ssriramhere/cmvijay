@@ -1,5 +1,17 @@
 [
   {
+    "title": "🟢 CM Mr. Vijay announces ₹30 lakh each for two TN para table tennis bronze medallists",
+    "date": "October 20, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 893,
+        "output_tokens": 764,
+        "cache_read_tokens": 0,
+        "cache_creation_tokens": 1373
+      }
+    }
+  },
+  {
     "title": "🔵 Speaker sets two-month deadline on disqualification of four ex-AIADMK MLAs",
     "date": "October 16, 2026",
     "reasoning": {

@@ -1,17 +1,23 @@
 {
   "period": "Rolling 30 days",
-  "as_of": "2026-10-20T01:11:18.540224+05:30",
-  "candidates_surfaced": 192,
-  "auto_verified": 26,
+  "as_of": "2026-10-20T23:55:50.062759+05:30",
+  "candidates_surfaced": 199,
+  "auto_verified": 27,
   "auto_verified_pct": 14,
-  "escalated": 29,
+  "escalated": 30,
   "escalated_pct": 15,
-  "autonomous_commits": 26,
+  "autonomous_commits": 27,
   "operator_edited": 0,
-  "skipped": 137,
-  "cost_this_month_usd": 8.3,
+  "skipped": 142,
+  "cost_this_month_usd": 8.71,
   "cost_per_published_entry_usd": 0.32,
   "autonomous_commits_list": [
+    {
+      "sha": "f79ed7d",
+      "prefix": "agent",
+      "title": "🟢 CM Mr. Vijay announces ₹30 lakh each for two TN para table tennis bronze medal",
+      "timestamp": "2026-10-20T18:25:45Z"
+    },
     {
       "sha": "1f11845",
       "prefix": "agent",
@@ -125,12 +131,6 @@
       "prefix": "agent",
       "title": "🟢 CM Mr. Vijay inaugurates renovated Gandhi Memorial Museum, Madurai — ₹10.25 cr",
       "timestamp": "2026-09-28T20:29:20Z"
-    },
-    {
-      "sha": "a6618cc",
-      "prefix": "agent",
-      "title": "🟢 CM Mr. Vijay conducts surprise inspection at TNPDCL headquarters amid power cu",
-      "timestamp": "2026-09-23T18:16:45Z"
     }
   ],
   "escalated_list": [
@@ -278,6 +278,11 @@
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/vijay-launches-3108-cr-ring-main-pipeline-project-for-equitable-drinking-water-supply/article71584148.ece",
       "reasoning": "The core facts are well-corroborated across multiple independent sources (The Hindu, NIE, WaterToday, YouTube, Instagram): ₹3,108.55 crore, foundation stone laid by CM Mr. Vijay at Sholinganallur, implemented by CMWSSB, targeting equitable water supply across GCC. No primacy claims are made. However"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-government-orders-additional-25-days-of-guaranteed-employment-for-vulnerable-rural-households/article71603349.ece",
+      "reasoning": "The article is well-sourced and verified across four outlets (The Hindu, DTNext, Deccan Chronicle, Hindustan Samachar), with the ₹100 crore GO, the 150-day extension for vulnerable households, and the August 5 Budget announcement all corroborated. The VB-G RAM G 125-day baseline is confirmed by offi"
     }
   ],
   "skipped_list": [
@@ -965,9 +970,40 @@
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/over-50-lakh-devotees-expected-to-attend-karthigai-deepam-festival-in-tiruvannamalai-minister-aadhav-arjuna/article71596673.ece",
       "skip_reason": "This article covers a pre-festival administrative review meeting by two ministers inspecting crowd management, CCTV, and traffic logistics for the Karthigai Deepam festival in Tiruvannamalai. While it"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/naam-tamilar-katchi-dharapuram-bypoll-candidate-karthika-arrested/article71603935.ece",
+      "skip_reason": "This article covers the post-election arrest of NTK's Dharapuram bypoll candidate Karthika by Tamil Nadu police, in connection with a road blockade during CM Mr. Vijay's campaign roadshow on October 4"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/palaniswami-questions-vijays-silence-over-arrest-of-tvk-functionary-in-narcotics-seizure/article71604647.ece",
+      "skip_reason": "This article covers AIADMK general secretary Palaniswami's political statement criticising CM Mr. Vijay's alleged silence over a TVK functionary's arrest in a narcotics case. While the underlying drug"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/nainar-nagenthran-criticises-tvk-led-government-over-death-of-undertrial-in-tirunelveli/article71604597.ece",
+      "skip_reason": "This article is an opposition press statement by BJP State president Nainar Nagenthran criticising the TVK government over an undertrial's death — it contains no governance action, executive order, ca"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/hrce-executive-officer-was-rightly-dismissed-from-service-for-failing-to-protect-temple-land-madras-high-court/article71603321.ece",
+      "skip_reason": "This Madras High Court ruling upholds the dismissal of an HR&CE Executive Officer for a dereliction of duty that occurred in 2012 — well before the TVK government. The court's direction to the HR&CE C"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/cities/chennai/dmk-woman-councillor-booked-in-chennai-for-defamatory-remarks-against-tamil-nadu-cm-vijay/article71603395.ece",
+      "skip_reason": "This article describes a police FIR filed by a TVK party functionary against a DMK councillor for allegedly making derogatory remarks about CM Mr. Vijay at a party event. While it is factually well-co"
     }
   ],
   "recent_commits": [
+    {
+      "sha": "f79ed7d",
+      "prefix": "agent",
+      "title": "🟢 CM Mr. Vijay announces ₹30 lakh each for two TN para table tennis bronze medal",
+      "timestamp": "2026-10-20T18:25:45Z"
+    },
     {
       "sha": "1f11845",
       "prefix": "agent",
@@ -1021,19 +1057,13 @@
       "prefix": "agent",
       "title": "🟨 CM Mr. Vijay meets AP CM Mr. Naidu in Guntur; Krishna water release for Chenna",
       "timestamp": "2026-10-13T20:08:58Z"
-    },
-    {
-      "sha": "b755830",
-      "prefix": "agent",
-      "title": "⚖️ Madras HC upholds Speaker's acceptance of six AIADMK-to-TVK MLA resignations",
-      "timestamp": "2026-10-13T20:08:58Z"
     }
   ],
   "last_run": {
-    "ts": "2026-10-20T01:11:15.429466+05:30",
-    "candidates": 4,
+    "ts": "2026-10-20T23:55:46.057465+05:30",
+    "candidates": 7,
     "published": 1,
-    "escalated": 0,
+    "escalated": 1,
     "errors": 0
   }
 }
