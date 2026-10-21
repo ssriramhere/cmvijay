@@ -1,5 +1,17 @@
 [
   {
+    "title": "🟢 Government sanctions ₹71.01 crore to raise contingency funds at all police stations",
+    "date": "October 21, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 701,
+        "output_tokens": 609,
+        "cache_read_tokens": 1373,
+        "cache_creation_tokens": 0
+      }
+    }
+  },
+  {
     "title": "🟢 CM Mr. Vijay announces ₹30 lakh each for two TN para table tennis bronze medallists",
     "date": "October 20, 2026",
     "reasoning": {
@@ -42,6 +54,18 @@
       "drafter_usage": {
         "input_tokens": 877,
         "output_tokens": 1062,
+        "cache_read_tokens": 0,
+        "cache_creation_tokens": 1373
+      }
+    }
+  },
+  {
+    "title": "🟢 G.O.(Ms) No. 184 mandates repair of rainwater harvesting structures statewide",
+    "date": "October 16, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 715,
+        "output_tokens": 650,
         "cache_read_tokens": 0,
         "cache_creation_tokens": 1373
       }
@@ -319,14 +343,7 @@
   {
     "title": "🟢 TASMAC retail staff to wear uniforms from November 15; ₹6,000 annual allowance sanctioned",
     "date": "September 19, 2026",
-    "reasoning": {
-      "drafter_usage": {
-        "input_tokens": 796,
-        "output_tokens": 685,
-        "cache_read_tokens": 0,
-        "cache_creation_tokens": 1373
-      }
-    }
+    "reasoning": null
   },
   {
     "title": "🟢 CM Mr. Vijay reviews Breakfast Scheme expansion — 15.3 lakh students, ₹217.63 cr allocated",
