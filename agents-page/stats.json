@@ -1,17 +1,29 @@
 {
   "period": "Rolling 30 days",
-  "as_of": "2026-10-21T23:55:58.715079+05:30",
-  "candidates_surfaced": 201,
-  "auto_verified": 28,
+  "as_of": "2026-10-22T23:51:26.434948+05:30",
+  "candidates_surfaced": 208,
+  "auto_verified": 30,
   "auto_verified_pct": 14,
   "escalated": 30,
-  "escalated_pct": 15,
-  "autonomous_commits": 28,
+  "escalated_pct": 14,
+  "autonomous_commits": 30,
   "operator_edited": 0,
-  "skipped": 143,
-  "cost_this_month_usd": 8.76,
-  "cost_per_published_entry_usd": 0.31,
+  "skipped": 148,
+  "cost_this_month_usd": 9.07,
+  "cost_per_published_entry_usd": 0.3,
   "autonomous_commits_list": [
+    {
+      "sha": "f1260e7",
+      "prefix": "agent",
+      "title": "📅 TN extends Special Officers' tenure in rural local bodies until April 2027",
+      "timestamp": "2026-10-22T18:21:21Z"
+    },
+    {
+      "sha": "0ffa5d9",
+      "prefix": "agent",
+      "title": "🟢 CM Mr. Vijay inspects State Emergency Operations Centre ahead of Northeast mon",
+      "timestamp": "2026-10-22T18:21:21Z"
+    },
     {
       "sha": "10baefd",
       "prefix": "agent",
@@ -119,18 +131,6 @@
       "prefix": "agent",
       "title": "🟢 CM Mr. Vijay inaugurates Aavin annexure laboratory at Madhavaram Dairy, Chenna",
       "timestamp": "2026-10-07T19:48:52Z"
-    },
-    {
-      "sha": "ec29706",
-      "prefix": "agent",
-      "title": "🟢 Sports Minister Mr. Aadhav Arjuna announces 36-discipline focus, cricket in ho",
-      "timestamp": "2026-10-05T21:26:30Z"
-    },
-    {
-      "sha": "ffcf6ca",
-      "prefix": "agent",
-      "title": "🟨 CM Mr. Vijay writes to EAM Jaishankar seeking release of 20 detained TN fisher",
-      "timestamp": "2026-10-05T21:26:30Z"
     }
   ],
   "escalated_list": [
@@ -1000,9 +1000,46 @@
       "title": "",
       "url": "https://theprint.in/india/vijaya-dashami-symbolises-new-beginnings-says-assam-cm/3077539/",
       "skip_reason": "This article is entirely about Assam CM Himanta Biswa Sarma's social media post on Vijaya Dashami — a different state, a different chief minister, and a purely symbolic/cultural statement with no gove"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/coimbatore-student-ends-life-family-alleges-harassment-by-teacher-classmates-over-caste-beef-consumption/article71610784.ece",
+      "skip_reason": "This is a verified, well-sourced crime/atrocity incident — a Dalit student's death by suicide following caste-based harassment, with an FIR filed by Peelamedu police against a teacher, principal, and "
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/cities/chennai/social-media-influencer-jason-samuel-arrested-in-connection-with-death-of-youtuber-harish/article71611632.ece",
+      "skip_reason": "The article describes a routine police arrest (abetment to suicide) of a private individual — social media influencer Jason Samuel Vijaykumar — following the death of YouTuber V. Harish. While the fac"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tn-cm-vijay-hands-over-order-for-supply-of-45-kg-of-sandalwood-to-nagore-dargah-for-kandoori-festival/article71610778.ece",
+      "skip_reason": "This is a routine annual ceremonial act — the Tamil Nadu government has issued a free sandalwood supply order to Nagore Dargah for the Kandoori festival every year for at least a decade, confirmed by "
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-government-releases-list-of-public-holidays-for-2027/article71611311.ece",
+      "skip_reason": "The release of an annual public holiday list is a routine administrative notification issued by every state government every year, with no connection to any TVK manifesto promise and no governance acc"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/vijay-congratulates-kasthuri-rajamani-for-clinching-silver-medal-in-5th-asian-para-games/article71606546.ece",
+      "skip_reason": "This article covers CM Mr. Vijay congratulating two athletes (Kasthuri Rajamani and Sivarajan Solaimalai) on their silver medals at the 5th Asian Para Games via posts on X, with informal announcements"
     }
   ],
   "recent_commits": [
+    {
+      "sha": "f1260e7",
+      "prefix": "agent",
+      "title": "📅 TN extends Special Officers' tenure in rural local bodies until April 2027",
+      "timestamp": "2026-10-22T18:21:21Z"
+    },
+    {
+      "sha": "0ffa5d9",
+      "prefix": "agent",
+      "title": "🟢 CM Mr. Vijay inspects State Emergency Operations Centre ahead of Northeast mon",
+      "timestamp": "2026-10-22T18:21:21Z"
+    },
     {
       "sha": "10baefd",
       "prefix": "agent",
@@ -1050,23 +1087,11 @@
       "prefix": "agent",
       "title": "🔵 Speaker sets two-month deadline on disqualification of four ex-AIADMK MLAs",
       "timestamp": "2026-10-16T17:52:08Z"
-    },
-    {
-      "sha": "5e8a85a",
-      "prefix": "agent",
-      "title": "🟨 CM Mr. Vijay writes to Jaishankar seeking release of 25 Thoothukudi fishermen",
-      "timestamp": "2026-10-15T18:06:19Z"
-    },
-    {
-      "sha": "74f7c31",
-      "prefix": "agent",
-      "title": "🟢 CM Mr. Vijay meets Singapore DPM; CapitaLand's ₹1,940 cr Chennai data centre u",
-      "timestamp": "2026-10-15T18:06:19Z"
     }
   ],
   "last_run": {
-    "ts": "2026-10-21T23:55:54.660561+05:30",
-    "candidates": 8,
+    "ts": "2026-10-22T23:51:21.775107+05:30",
+    "candidates": 7,
     "published": 2,
     "escalated": 0,
     "errors": 0
