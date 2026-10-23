@@ -1,17 +1,29 @@
 {
   "period": "Rolling 30 days",
-  "as_of": "2026-10-22T23:51:26.434948+05:30",
-  "candidates_surfaced": 208,
-  "auto_verified": 30,
+  "as_of": "2026-10-23T23:39:42.134808+05:30",
+  "candidates_surfaced": 200,
+  "auto_verified": 27,
   "auto_verified_pct": 14,
-  "escalated": 30,
+  "escalated": 28,
   "escalated_pct": 14,
-  "autonomous_commits": 30,
+  "autonomous_commits": 27,
   "operator_edited": 0,
-  "skipped": 148,
-  "cost_this_month_usd": 9.07,
-  "cost_per_published_entry_usd": 0.3,
+  "skipped": 145,
+  "cost_this_month_usd": 8.65,
+  "cost_per_published_entry_usd": 0.32,
   "autonomous_commits_list": [
+    {
+      "sha": "9b3e050",
+      "prefix": "agent",
+      "title": "🟢 CM Mr. Vijay distributes appointment orders to 69 TNPSC-selected Agriculture D",
+      "timestamp": "2026-10-23T18:09:39Z"
+    },
+    {
+      "sha": "32e6d21",
+      "prefix": "agent",
+      "title": "🟢 TN gazette fixes car purchase ceiling: ₹26 lakh for ministers, ₹15 lakh for ML",
+      "timestamp": "2026-10-23T18:09:38Z"
+    },
     {
       "sha": "f1260e7",
       "prefix": "agent",
@@ -119,36 +131,9 @@
       "prefix": "agent",
       "title": "🟢 Chennai Metro Phase II first stretch inaugurated — Poonamallee–Vadapalani, 14.",
       "timestamp": "2026-10-11T18:42:43Z"
-    },
-    {
-      "sha": "20757f5",
-      "prefix": "agent",
-      "title": "🟢 Domicile clause relaxed for Thaimaaman Thanga Mothiram newborn gold-ring schem",
-      "timestamp": "2026-10-08T19:42:35Z"
-    },
-    {
-      "sha": "7bd4b61",
-      "prefix": "agent",
-      "title": "🟢 CM Mr. Vijay inaugurates Aavin annexure laboratory at Madhavaram Dairy, Chenna",
-      "timestamp": "2026-10-07T19:48:52Z"
     }
   ],
   "escalated_list": [
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/cities/chennai/government-hospitals-running-low-on-live-saving-drugs-for-pre-term-babies/article71492267.ece",
-      "reasoning": "The Hindu reports a multi-month surfactant drug shortage at government SNCUs across at least 8 Tamil Nadu districts, sourced from 'official sources' and multiple anonymous doctors — but no named government spokesperson is on record. This is a single-source story (no second outlet corroborates as of "
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/why-has-the-tamil-nadu-private-universities-amendment-bill-2026-triggered-a-controversy-explained/article71490233.ece",
-      "reasoning": "The Tamil Nadu Private Universities (Amendment) Bill, 2026 is a genuine, significant legislative action — passed on September 8, 2026, and now sent to the President for assent — corroborated by both The Hindu and Economic Times Education. However, escalation is warranted for three reasons: (1) the a"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-government-renames-cm-breakfast-scheme-after-kamaraj/article71253371.ece",
-      "reasoning": "The rename and expansion of the CM Breakfast Scheme is a well-sourced, substantive governance action confirmed by two The Hindu articles and multiple secondary sources. However, escalation is warranted for two reasons: (1) the Government Order was formally dated July 15, 2026 (Kamaraj's birth annive"
-    },
     {
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-government-exempts-public-law-and-order-department-from-rti-act/article71515196.ece",
@@ -283,44 +268,14 @@
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-government-orders-additional-25-days-of-guaranteed-employment-for-vulnerable-rural-households/article71603349.ece",
       "reasoning": "The article is well-sourced and verified across four outlets (The Hindu, DTNext, Deccan Chronicle, Hindustan Samachar), with the ₹100 crore GO, the 150-day extension for vulnerable households, and the August 5 Budget announcement all corroborated. The VB-G RAM G 125-day baseline is confirmed by offi"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/use-of-chief-minister-c-joseph-vijays-deep-fake-videos-to-collect-money-rajasthan-youth-moves-madras-high-court-seeking-bail/article71611607.ece",
+      "reasoning": "The candidate article (The Hindu, published 10:14 AM IST on Oct 23) only reports that the bail plea was listed for hearing — it does not capture the final outcome. LiveLaw and New Indian Express, published the same afternoon, confirm that Justice N. Ramesh actually granted conditional bail to Shyabu"
     }
   ],
   "skipped_list": [
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-cm-vijay-reviews-northeast-monsoon-preparedness-dengue-prevention-measures/article71491281.ece",
-      "skip_reason": "This is a routine administrative review meeting — CM Mr. Vijay chaired a monsoon preparedness and dengue prevention briefing at the Secretariat on September 21, 2026. While the event is real and well-"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-bypolls-dmk-urges-election-commission-to-cancel-tvks-list-of-star-campaigners-from-other-parties/article71490583.ece",
-      "skip_reason": "This article covers an intra-alliance electoral dispute — DMK filing a complaint with the Election Commission about TVK's star campaigner list for the Madurantakam and Dharapuram bypolls, and TVK subs"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/stalin-warns-of-massive-protest-over-proposed-tamil-nadu-secretariat-complex-at-pattinapakkam/article71490486.ece",
-      "skip_reason": "This article covers M.K. Stalin (DMK opposition leader) issuing a political statement threatening protest against the TVK government's Pattinapakkam Secretariat proposal. The actor is the opposition, "
-    },
-    {
-      "title": "",
-      "url": "https://theprint.in/india/punjab-cong-leader-singla-takes-on-bjp-over-nasha-mukt-punjab-yatra/3048223/",
-      "skip_reason": "This article is entirely about Punjab state politics — specifically a Congress leader criticising the BJP's 'Nasha Mukt Punjab Yatra' anti-drug campaign. It has no connection to Tamil Nadu, CM Mr. Vij"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/i-cannot-be-held-responsible-for-all-social-media-posts-by-dmk-handles-functionaries-stalin-tells-madras-high-court/article71494219.ece",
-      "skip_reason": "This article is about M.K. Stalin — the former Chief Minister and current DMK opposition leader — filing a counter-affidavit in a Madras High Court defamation suit. Stalin is not the subject of cmvija"
-    },
-    {
-      "title": "",
-      "url": "https://theprint.in/india/cmrl-bribery-case-keralam-govt-orders-police-inquiry-into-ed-report-seeking-action-against-ex-cm-vijayan/3049608/",
-      "skip_reason": "This article is entirely about Kerala state politics — specifically a police inquiry ordered by the Kerala (UDF) government into an ED bribery report against former Kerala CM Pinarayi Vijayan, his dau"
-    },
-    {
-      "title": "",
-      "url": "https://theprint.in/india/lower-mettur-storage-endangers-samba-crop-says-pmk-demands-rs-25k-compensation-for-farmers/3049549/",
-      "skip_reason": "This article is entirely an opposition party (PMK) demand statement — PMK president Anbumani Ramadoss is urging the TN government to act, but no government action, executive order, cabinet decision, o"
-    },
     {
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/palaniswami-slams-tvk-led-regime-for-not-taking-steps-to-curb-spread-of-dengue/article71499869.ece",
@@ -1025,9 +980,41 @@
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/vijay-congratulates-kasthuri-rajamani-for-clinching-silver-medal-in-5th-asian-para-games/article71606546.ece",
       "skip_reason": "This article covers CM Mr. Vijay congratulating two athletes (Kasthuri Rajamani and Sivarajan Solaimalai) on their silver medals at the 5th Asian Para Games via posts on X, with informal announcements"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/vijay-congratulates-tn-medallists-of-5th-asian-para-games/article71615836.ece",
+      "skip_reason": "This article documents CM Mr. Vijay congratulating TN para-athletes via a post on X and announcing cash incentives. While the monetary amounts (₹75L, ₹50L, ₹50L, ₹30L) give it a minor governance dimen"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tvk-dmk-walk-out-of-chief-electoral-officers-meeting-on-special-summary-revision-in-tamil-nadu/article71615243.ece",
+      "skip_reason": "This article covers a walkout by TVK and DMK representatives from an Election Commission of India-convened all-party meeting on the Special Summary Revision of electoral rolls. While well-sourced acro"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/cities/chennai/chennai-northeast-monsoon-rains-tn-cm-vijay-directs-officials-to-maintain-continuous-vigil/article71600485.ece",
+      "skip_reason": "This article documents a routine administrative review — CM Mr. Vijay visiting the ICCC at Ripon Buildings on October 18, 2026 to monitor Northeast monsoon preparedness and waterlogging at 35 location"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/two-girls-from-pudukottai-sexually-assaulted-at-velankanni-lodge-two-men-arrested/article71614642.ece",
+      "skip_reason": "This article reports a criminal incident — the sexual assault of two minors in Velankanni — not a governance action. The Singappen Task Force's role was incidental (shopkeepers alerted them; they cond"
     }
   ],
   "recent_commits": [
+    {
+      "sha": "9b3e050",
+      "prefix": "agent",
+      "title": "🟢 CM Mr. Vijay distributes appointment orders to 69 TNPSC-selected Agriculture D",
+      "timestamp": "2026-10-23T18:09:39Z"
+    },
+    {
+      "sha": "32e6d21",
+      "prefix": "agent",
+      "title": "🟢 TN gazette fixes car purchase ceiling: ₹26 lakh for ministers, ₹15 lakh for ML",
+      "timestamp": "2026-10-23T18:09:38Z"
+    },
     {
       "sha": "f1260e7",
       "prefix": "agent",
@@ -1075,25 +1062,13 @@
       "prefix": "agent",
       "title": "🟢 Tamil Nadu Semiconductor Ecosystem Scheme 2026 launched at state-level event",
       "timestamp": "2026-10-16T17:52:08Z"
-    },
-    {
-      "sha": "c1c8ec3",
-      "prefix": "agent",
-      "title": "🟢 CM Mr. Vijay inaugurates Periyar Arivulagam library and science centre, Coimba",
-      "timestamp": "2026-10-16T17:52:08Z"
-    },
-    {
-      "sha": "0b0a0e4",
-      "prefix": "agent",
-      "title": "🔵 Speaker sets two-month deadline on disqualification of four ex-AIADMK MLAs",
-      "timestamp": "2026-10-16T17:52:08Z"
     }
   ],
   "last_run": {
-    "ts": "2026-10-22T23:51:21.775107+05:30",
+    "ts": "2026-10-23T23:39:39.008927+05:30",
     "candidates": 7,
     "published": 2,
-    "escalated": 0,
+    "escalated": 1,
     "errors": 0
   }
 }

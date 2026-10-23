@@ -1,5 +1,17 @@
 [
   {
+    "title": "🟢 CM Mr. Vijay distributes appointment orders to 69 TNPSC-selected Agriculture Department candidates",
+    "date": "October 23, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 802,
+        "output_tokens": 743,
+        "cache_read_tokens": 1373,
+        "cache_creation_tokens": 0
+      }
+    }
+  },
+  {
     "title": "🟢 CM Mr. Vijay inspects State Emergency Operations Centre ahead of Northeast monsoon",
     "date": "October 22, 2026",
     "reasoning": {
@@ -276,6 +288,18 @@
     }
   },
   {
+    "title": "🟢 TN gazette fixes car purchase ceiling: ₹26 lakh for ministers, ₹15 lakh for MLAs",
+    "date": "October 1, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 920,
+        "output_tokens": 804,
+        "cache_read_tokens": 0,
+        "cache_creation_tokens": 1373
+      }
+    }
+  },
+  {
     "title": "🟢 CM Mr. Vijay inaugurates renovated Gandhi Memorial Museum, Madurai — ₹10.25 cr PWD work",
     "date": "September 28, 2026",
     "reasoning": {
@@ -302,62 +326,27 @@
   {
     "title": "🟢 CM Mr. Vijay chairs review of Cooum river restoration DPR progress",
     "date": "September 22, 2026",
-    "reasoning": {
-      "drafter_usage": {
-        "input_tokens": 705,
-        "output_tokens": 695,
-        "cache_read_tokens": 0,
-        "cache_creation_tokens": 1373
-      }
-    }
+    "reasoning": null
   },
   {
     "title": "✅ Perunthalaivar Kamarajar Breakfast Scheme expanded to Classes VI–VIII, 15.3 lakh students added",
     "date": "September 22, 2026",
-    "reasoning": {
-      "drafter_usage": {
-        "input_tokens": 747,
-        "output_tokens": 582,
-        "cache_read_tokens": 1373,
-        "cache_creation_tokens": 0
-      }
-    }
+    "reasoning": null
   },
   {
     "title": "🟢 CM chairs videoconference review of NE monsoon preparedness with 10 southern, hilly district Collectors",
     "date": "September 22, 2026",
-    "reasoning": {
-      "drafter_usage": {
-        "input_tokens": 715,
-        "output_tokens": 720,
-        "cache_read_tokens": 1373,
-        "cache_creation_tokens": 0
-      }
-    }
+    "reasoning": null
   },
   {
     "title": "⚖️ Supreme Court tells TN to find alternate site; SASTRA eviction on hold",
     "date": "September 21, 2026",
-    "reasoning": {
-      "drafter_usage": {
-        "input_tokens": 782,
-        "output_tokens": 676,
-        "cache_read_tokens": 1373,
-        "cache_creation_tokens": 0
-      }
-    }
+    "reasoning": null
   },
   {
     "title": "🟢 CM chairs Secretariat review on Vettri Payanam expansion to five bus categories",
     "date": "September 21, 2026",
-    "reasoning": {
-      "drafter_usage": {
-        "input_tokens": 840,
-        "output_tokens": 887,
-        "cache_read_tokens": 1373,
-        "cache_creation_tokens": 0
-      }
-    }
+    "reasoning": null
   },
   {
     "title": "⚖️ Madras HC reserves orders on bid to reject Tirupattur TVK MLA's election petition",
