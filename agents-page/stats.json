@@ -1,16 +1,16 @@
 {
   "period": "Rolling 30 days",
-  "as_of": "2026-10-23T23:39:42.134808+05:30",
-  "candidates_surfaced": 200,
-  "auto_verified": 27,
-  "auto_verified_pct": 14,
+  "as_of": "2026-10-24T22:41:37.456124+05:30",
+  "candidates_surfaced": 197,
+  "auto_verified": 26,
+  "auto_verified_pct": 13,
   "escalated": 28,
   "escalated_pct": 14,
-  "autonomous_commits": 27,
+  "autonomous_commits": 26,
   "operator_edited": 0,
-  "skipped": 145,
-  "cost_this_month_usd": 8.65,
-  "cost_per_published_entry_usd": 0.32,
+  "skipped": 143,
+  "cost_this_month_usd": 8.55,
+  "cost_per_published_entry_usd": 0.33,
   "autonomous_commits_list": [
     {
       "sha": "9b3e050",
@@ -276,16 +276,6 @@
     }
   ],
   "skipped_list": [
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/palaniswami-slams-tvk-led-regime-for-not-taking-steps-to-curb-spread-of-dengue/article71499869.ece",
-      "skip_reason": "This article is an opposition political statement — AIADMK leader Palaniswami and AMMK leader Dhinakaran criticising the TVK government for inaction on dengue and for CM Mr. Vijay's social media activ"
-    },
-    {
-      "title": "",
-      "url": "https://theprint.in/india/bjp-leaders-teenage-son-goes-missing-in-j-ks-kathua/3050442/",
-      "skip_reason": "This article concerns a BJP MLA's missing teenage son in Kathua, Jammu & Kashmir — a completely different jurisdiction from Tamil Nadu. The 'Vijay Kumar' named is a J&K BJP MLA, not CM Mr. Joseph Vija"
-    },
     {
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/bjp-tn-chief-nainar-nagenthran-condemns-instances-of-contamination-of-breakfast-served-to-students/article71503507.ece",
@@ -1065,10 +1055,10 @@
     }
   ],
   "last_run": {
-    "ts": "2026-10-23T23:39:39.008927+05:30",
-    "candidates": 7,
-    "published": 2,
-    "escalated": 1,
+    "ts": "2026-10-24T22:41:36.069004+05:30",
+    "candidates": 0,
+    "published": 0,
+    "escalated": 0,
     "errors": 0
   }
 }
