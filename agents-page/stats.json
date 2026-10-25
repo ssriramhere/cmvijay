@@ -1,15 +1,15 @@
 {
   "period": "Rolling 30 days",
-  "as_of": "2026-10-24T22:41:37.456124+05:30",
-  "candidates_surfaced": 197,
+  "as_of": "2026-10-25T22:55:18.718848+05:30",
+  "candidates_surfaced": 199,
   "auto_verified": 26,
   "auto_verified_pct": 13,
   "escalated": 28,
   "escalated_pct": 14,
   "autonomous_commits": 26,
   "operator_edited": 0,
-  "skipped": 143,
-  "cost_this_month_usd": 8.55,
+  "skipped": 145,
+  "cost_this_month_usd": 8.6,
   "cost_per_published_entry_usd": 0.33,
   "autonomous_commits_list": [
     {
@@ -276,11 +276,6 @@
     }
   ],
   "skipped_list": [
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/bjp-tn-chief-nainar-nagenthran-condemns-instances-of-contamination-of-breakfast-served-to-students/article71503507.ece",
-      "skip_reason": "This article is an opposition press statement — BJP Tamil Nadu president Nainar Nagenthran criticising the TVK government over alleged school breakfast contamination incidents. It contains no governan"
-    },
     {
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/stalin-hits-back-at-vijay-accuses-him-of-surrendering-to-bjp/article71509994.ece",
@@ -990,6 +985,21 @@
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/two-girls-from-pudukottai-sexually-assaulted-at-velankanni-lodge-two-men-arrested/article71614642.ece",
       "skip_reason": "This article reports a criminal incident — the sexual assault of two minors in Velankanni — not a governance action. The Singappen Task Force's role was incidental (shopkeepers alerted them; they cond"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-cm-vijay-condoles-death-of-chef-damu/article71622743.ece",
+      "skip_reason": "This article covers CM Mr. Vijay's condolence message on the death of Chef Damu — a social/ceremonial gesture with no governance action, executive order, policy implication, or manifesto relevance. Th"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/stalin-calls-on-dmk-cadres-to-prepare-to-oust-tvk-led-government-soon-in-tamil-nadu/article71622737.ece",
+      "skip_reason": "This article reports a speech by DMK president M.K. Stalin at a marriage function in Chennai, calling on party cadres to 'oust' the TVK-led government and predicting it will not last six months. This "
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/we-only-tried-to-make-thirumavalavan-the-chief-minister-says-dhinakaran/article71620472.ece",
+      "skip_reason": "This article is a retrospective political statement by AMMK general secretary T.T.V. Dhinakaran about opposition manoeuvring during government formation — specifically, an alleged effort to install VC"
     }
   ],
   "recent_commits": [
@@ -1055,8 +1065,8 @@
     }
   ],
   "last_run": {
-    "ts": "2026-10-24T22:41:36.069004+05:30",
-    "candidates": 0,
+    "ts": "2026-10-25T22:55:17.298319+05:30",
+    "candidates": 3,
     "published": 0,
     "escalated": 0,
     "errors": 0
