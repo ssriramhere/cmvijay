@@ -1,17 +1,23 @@
 {
   "period": "Rolling 30 days",
-  "as_of": "2026-10-25T22:55:18.718848+05:30",
-  "candidates_surfaced": 199,
-  "auto_verified": 26,
-  "auto_verified_pct": 13,
+  "as_of": "2026-10-27T01:15:06.964115+05:30",
+  "candidates_surfaced": 187,
+  "auto_verified": 27,
+  "auto_verified_pct": 14,
   "escalated": 28,
-  "escalated_pct": 14,
-  "autonomous_commits": 26,
+  "escalated_pct": 15,
+  "autonomous_commits": 27,
   "operator_edited": 0,
-  "skipped": 145,
-  "cost_this_month_usd": 8.6,
-  "cost_per_published_entry_usd": 0.33,
+  "skipped": 132,
+  "cost_this_month_usd": 8.17,
+  "cost_per_published_entry_usd": 0.3,
   "autonomous_commits_list": [
+    {
+      "sha": "832b55c",
+      "prefix": "agent",
+      "title": "🟢 Tamil Nadu cuts ATF VAT from 29% to 16% at Chennai airport, seeks airline expa",
+      "timestamp": "2026-10-26T19:45:02Z"
+    },
     {
       "sha": "9b3e050",
       "prefix": "agent",
@@ -125,12 +131,6 @@
       "prefix": "agent",
       "title": "🟢 Chennai Metro Phase II first stretch inaugurated — Poonamallee to Vadapalani,",
       "timestamp": "2026-10-11T18:42:44Z"
-    },
-    {
-      "sha": "5274de4",
-      "prefix": "agent",
-      "title": "🟢 Chennai Metro Phase II first stretch inaugurated — Poonamallee–Vadapalani, 14.",
-      "timestamp": "2026-10-11T18:42:43Z"
     }
   ],
   "escalated_list": [
@@ -276,71 +276,6 @@
     }
   ],
   "skipped_list": [
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/stalin-hits-back-at-vijay-accuses-him-of-surrendering-to-bjp/article71509994.ece",
-      "skip_reason": "This article covers a political statement by DMK president M.K. Stalin on X, criticising CM Mr. Vijay's byelection candidate choices and accusing him of being soft on BJP. While the underlying facts ("
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/vijay-accuses-dmk-of-covering-up-pocso-act-case-against-veeramani-questions-aiadmks-silence/article71508920.ece",
-      "skip_reason": "This article documents a campaign speech by CM Mr. Vijay at a by-election rally in Madurantakam, in which he makes political accusations against the DMK and AIADMK regarding a POCSO case. While the un"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/veeramani-case-dmk-files-1-cr-defamation-suit-against-ministers-aadhav-arjuna-nirmal-kumar-before-madras-high-court/article71508329.ece",
-      "skip_reason": "This article covers an inter-party defamation suit filed by DMK against two TVK ministers over political accusations related to the Veeramani POCSO case. While the underlying POCSO case has governance"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/bjp-urges-eci-to-act-against-tvk-functionaries-for-involving-children-in-bypoll-campaign/article71507608.ece",
-      "skip_reason": "This article covers a BJP opposition party complaint to the ECI — a political statement by Nainar Nagenthran alleging TVK involved children in the Madurantakam bypoll campaign. It is not a governance "
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/videos/toxic-foam-floods-kelavarapalli-dam-farmers-demand-action/article71508054.ece",
-      "skip_reason": "This September 25, 2026 article is a video ground report that documents an ongoing, recurring civic grievance — toxic foam at Kelavarapalli Dam — but contains no new governance action, executive order"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/confident-that-vijay-will-accept-rahul-as-prime-ministerial-candidate-manickam-tagore/article71504912.ece",
-      "skip_reason": "This article is a political opinion/speculation piece by a Congress leader (Manickam Tagore) expressing personal confidence that CM Mr. Vijay will endorse Rahul Gandhi as the INDIA bloc's PM candidate"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/udhayanidhi-flays-tvk-led-government-over-alleged-sexual-assault-of-schoolgirl-near-vandalur/article71507469.ece",
-      "skip_reason": "This article documents an opposition political statement — Leader of Opposition Udhayanidhi Stalin's X post criticising the TVK government over an alleged schoolgirl assault near Vandalur. While the u"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/dmk-says-police-arrested-gem-granites-veermani-because-of-court-direction/article71512659.ece",
-      "skip_reason": "This article is an opposition party press statement — DMK MP Constantine Ravindran making unverified allegations that the TVK government covered up the Gem Granites POCSO case four times, and filing a"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/elections/tamil-nadu-assembly/tamil-nadu-assembly-election-2026-interviews-with-political-leaders-a-compilation/article70782589.ece",
-      "skip_reason": "This is a meta-compilation article — an index page aggregating The Hindu's pre-election interviews with various Tamil Nadu political leaders (Stalin, EPS, Seeman, Piyush Goyal, etc.) ahead of the Apri"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/several-former-aiadmk-ministers-who-joined-tvk-get-party-posts/article71509303.ece",
-      "skip_reason": "This article covers an internal TVK party organisational appointment — CM Mr. Vijay acting in his capacity as TVK president, not as Chief Minister. Appointing former AIADMK ministers as deputy general"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/propriety-in-public-discourse-on-udhayanidhi-stalins-double-entendre-remarks/article71303942.ece",
-      "skip_reason": "This is a The Hindu editorial commentary on Udhayanidhi Stalin's (Leader of Opposition, DMK) double entendre remarks made at a Thanjavur protest meeting on August 3, 2026. The article involves no gove"
-    },
-    {
-      "title": "",
-      "url": "https://theprint.in/india/27-years-several-attempts-and-perseverance-how-up-man-landed-govt-teacher-job-at-59/3054024/",
-      "skip_reason": "This article is a human-interest story about a private individual, Vijay Kumar Sharma, from Baghpat, Uttar Pradesh, who secured a government teaching post after 27 years of attempts. It has no connect"
-    },
-    {
-      "title": "",
-      "url": "https://theprint.in/india/stalin-hits-out-at-cm-vijay-over-alleged-political-hypocrisy-administrative-failure/3054016/",
-      "skip_reason": "This article is entirely about opposition political rhetoric — DMK president M.K. Stalin's social media post criticising CM Mr. Vijay's campaign speech at Madurantakam ahead of the October 6 bypoll. T"
-    },
     {
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/2024-lok-sabha-polls-dmdks-vijaya-prabhakaran-to-withdraw-election-petition-against-congress-mp-manickam-tagores-victory/article71515304.ece",
@@ -1004,6 +939,12 @@
   ],
   "recent_commits": [
     {
+      "sha": "832b55c",
+      "prefix": "agent",
+      "title": "🟢 Tamil Nadu cuts ATF VAT from 29% to 16% at Chennai airport, seeks airline expa",
+      "timestamp": "2026-10-26T19:45:02Z"
+    },
+    {
       "sha": "9b3e050",
       "prefix": "agent",
       "title": "🟢 CM Mr. Vijay distributes appointment orders to 69 TNPSC-selected Agriculture D",
@@ -1056,18 +997,12 @@
       "prefix": "agent",
       "title": "🟢 TN fixes powerloom weaving wages for Pongal 2027 dhoti and saree scheme",
       "timestamp": "2026-10-18T17:05:34Z"
-    },
-    {
-      "sha": "6194095",
-      "prefix": "agent",
-      "title": "🟢 Tamil Nadu Semiconductor Ecosystem Scheme 2026 launched at state-level event",
-      "timestamp": "2026-10-16T17:52:08Z"
     }
   ],
   "last_run": {
-    "ts": "2026-10-25T22:55:17.298319+05:30",
-    "candidates": 3,
-    "published": 0,
+    "ts": "2026-10-27T01:15:02.581142+05:30",
+    "candidates": 1,
+    "published": 1,
     "escalated": 0,
     "errors": 0
   }

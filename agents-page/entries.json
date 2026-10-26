@@ -12,6 +12,18 @@
     }
   },
   {
+    "title": "🟢 Tamil Nadu cuts ATF VAT from 29% to 16% at Chennai airport, seeks airline expansion",
+    "date": "October 23, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 711,
+        "output_tokens": 644,
+        "cache_read_tokens": 0,
+        "cache_creation_tokens": 1373
+      }
+    }
+  },
+  {
     "title": "🟢 CM Mr. Vijay inspects State Emergency Operations Centre ahead of Northeast monsoon",
     "date": "October 22, 2026",
     "reasoning": {
