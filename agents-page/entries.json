@@ -1,5 +1,41 @@
 [
   {
+    "title": "🟢 CM Mr. Vijay orders Deepavali bonus and ex gratia for 2.60 lakh PSU workers — ₹367.20 cr outlay",
+    "date": "October 27, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 1056,
+        "output_tokens": 732,
+        "cache_read_tokens": 0,
+        "cache_creation_tokens": 1373
+      }
+    }
+  },
+  {
+    "title": "🟢 TN extends inter-state rough stone transport ban by three months; Puducherry exempted",
+    "date": "October 27, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 779,
+        "output_tokens": 712,
+        "cache_read_tokens": 1373,
+        "cache_creation_tokens": 0
+      }
+    }
+  },
+  {
+    "title": "🟢 CM Mr. Vijay felicitates 12 WorldSkills 2026 competitors from Tamil Nadu with ₹49L in cash incentives",
+    "date": "October 27, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 1098,
+        "output_tokens": 776,
+        "cache_read_tokens": 1373,
+        "cache_creation_tokens": 0
+      }
+    }
+  },
+  {
     "title": "🟢 CM Mr. Vijay distributes appointment orders to 69 TNPSC-selected Agriculture Department candidates",
     "date": "October 23, 2026",
     "reasoning": {

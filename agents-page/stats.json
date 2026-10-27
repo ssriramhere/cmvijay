@@ -1,17 +1,35 @@
 {
   "period": "Rolling 30 days",
-  "as_of": "2026-10-27T01:15:06.964115+05:30",
-  "candidates_surfaced": 187,
-  "auto_verified": 27,
-  "auto_verified_pct": 14,
-  "escalated": 28,
-  "escalated_pct": 15,
-  "autonomous_commits": 27,
+  "as_of": "2026-10-28T00:45:43.311790+05:30",
+  "candidates_surfaced": 182,
+  "auto_verified": 30,
+  "auto_verified_pct": 16,
+  "escalated": 26,
+  "escalated_pct": 14,
+  "autonomous_commits": 30,
   "operator_edited": 0,
-  "skipped": 132,
-  "cost_this_month_usd": 8.17,
-  "cost_per_published_entry_usd": 0.3,
+  "skipped": 126,
+  "cost_this_month_usd": 7.98,
+  "cost_per_published_entry_usd": 0.27,
   "autonomous_commits_list": [
+    {
+      "sha": "f406623",
+      "prefix": "agent",
+      "title": "🟢 CM Mr. Vijay felicitates 12 WorldSkills 2026 competitors from Tamil Nadu with",
+      "timestamp": "2026-10-27T19:15:39Z"
+    },
+    {
+      "sha": "9d21999",
+      "prefix": "agent",
+      "title": "🟢 TN extends inter-state rough stone transport ban by three months; Puducherry e",
+      "timestamp": "2026-10-27T19:15:39Z"
+    },
+    {
+      "sha": "5f7c660",
+      "prefix": "agent",
+      "title": "🟢 CM Mr. Vijay orders Deepavali bonus and ex gratia for 2.60 lakh PSU workers —",
+      "timestamp": "2026-10-27T19:15:39Z"
+    },
     {
       "sha": "832b55c",
       "prefix": "agent",
@@ -113,37 +131,9 @@
       "prefix": "agent",
       "title": "🟨 CM Mr. Vijay meets AP CM Mr. Naidu in Guntur; Krishna water release for Chenna",
       "timestamp": "2026-10-13T20:08:58Z"
-    },
-    {
-      "sha": "b755830",
-      "prefix": "agent",
-      "title": "⚖️ Madras HC upholds Speaker's acceptance of six AIADMK-to-TVK MLA resignations",
-      "timestamp": "2026-10-13T20:08:58Z"
-    },
-    {
-      "sha": "08eb0d2",
-      "prefix": "agent",
-      "title": "🟢 PM Modi and CM Mr. Vijay inaugurate Chennai Metro Phase 2 — Poonamallee–Vadapa",
-      "timestamp": "2026-10-11T18:42:44Z"
-    },
-    {
-      "sha": "9ada80c",
-      "prefix": "agent",
-      "title": "🟢 Chennai Metro Phase II first stretch inaugurated — Poonamallee to Vadapalani,",
-      "timestamp": "2026-10-11T18:42:44Z"
     }
   ],
   "escalated_list": [
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-government-exempts-public-law-and-order-department-from-rti-act/article71515196.ece",
-      "reasoning": "The core facts are well-verified: G.O. Ms. No. 57 (Human Resources Management (R) Department, dated September 21, 2026) exempted the Public (Law and Order) Department from the RTI Act under Section 24(4); it was publicly notified in the Government Gazette; and it was withdrawn on September 27, 2026 "
-    },
-    {
-      "title": "",
-      "url": "https://theprint.in/india/cm-vijay-to-launch-one-gram-gold-ring-scheme-for-newborns-in-tn/3054610/",
-      "reasoning": "The scheme launch is well-corroborated across four independent sources (India Today, News24, DynamiteNews, GovtSchemesIndia) and anchored to a real G.O. (Ms.) No.166 dated 23 June 2026. It maps directly to manifesto promise g1_newborn, which is currently 'partial'. The launch event would logically p"
-    },
     {
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/vijay-announces-30-lakh-for-asian-games-athlete/article71520738.ece",
@@ -276,41 +266,6 @@
     }
   ],
   "skipped_list": [
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/2024-lok-sabha-polls-dmdks-vijaya-prabhakaran-to-withdraw-election-petition-against-congress-mp-manickam-tagores-victory/article71515304.ece",
-      "skip_reason": "This article covers a DMDK petitioner withdrawing an election petition against a Congress MP — an inter-opposition-party legal dispute with no involvement of the TVK government or CM Mr. Vijay. The DM"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/karur-stampede-left-an-indelible-scar-says-vijay-on-first-anniversary/article71515129.ece",
-      "skip_reason": "The article covers CM Mr. Vijay's commemorative post on X marking the first anniversary of the Karur stampede — a statement of grief and remembrance, not a governance action. There is no executive ord"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/one-year-of-karur-stampede-at-tvk-rally-joseph-vijay-justice-for-victims-still-elusive/article71507633.ece",
-      "skip_reason": "This is a one-year anniversary retrospective piece about the September 27, 2025 Karur stampede at a TVK rally that killed 41 people. While the underlying tragedy is significant and the CBI investigati"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/karur-stampede-anatomy-of-the-tragedy-at-vijays-tvk-rally-in-tamil-nadu/article70103198.ece",
-      "skip_reason": "This article is a retrospective/anniversary re-surface of a September 27–28, 2025 event (the Karur TVK rally stampede), not a new governance action. The article was originally published on September 2"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/karur-stampede-tvk-central-town-secretary-arrested-produced-in-court/article70111873.ece",
-      "skip_reason": "This article is a re-surfaced/re-indexed version of a September 30, 2025 news story about the arrest and judicial remand of TVK functionaries following the Karur stampede of September 27, 2025. The '2"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/palaniswami-accuses-vijay-of-speaking-contrary-to-truth-on-gem-veeramanis-arrest/article71513475.ece",
-      "skip_reason": "This article is a political counter-accusation by AIADMK leader Edappadi K. Palaniswami against CM Mr. Vijay, made during a bypoll campaign trail in Madurantakam. It contains no governance action, exe"
-    },
-    {
-      "title": "",
-      "url": "https://theprint.in/india/allegations-misleading-not-based-on-facts-chennithala-hits-back-at-vijayan-over-lokayukta-meeting/3054637/",
-      "skip_reason": "This article is entirely about Kerala state politics — a dispute between Kerala Home Minister Ramesh Chennithala and Kerala Opposition Leader Pinarayi Vijayan regarding a Lokayukta meeting. It has no "
-    },
     {
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/how-can-eci-render-case-against-byelections-to-five-tamil-nadu-constituencies-infructuous-wonders-cm-vijays-counsel/article71519575.ece",
@@ -935,9 +890,32 @@
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/we-only-tried-to-make-thirumavalavan-the-chief-minister-says-dhinakaran/article71620472.ece",
       "skip_reason": "This article is a retrospective political statement by AMMK general secretary T.T.V. Dhinakaran about opposition manoeuvring during government formation — specifically, an alleged effort to install VC"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/cm-vijay-to-chair-tn-cabinet-meeting-on-october-29/article71631327.ece",
+      "skip_reason": "This article is a pre-event announcement of a cabinet meeting scheduled for October 29, 2026 — published two days before the meeting occurs. No governance decisions have been taken yet; the agenda ite"
     }
   ],
   "recent_commits": [
+    {
+      "sha": "f406623",
+      "prefix": "agent",
+      "title": "🟢 CM Mr. Vijay felicitates 12 WorldSkills 2026 competitors from Tamil Nadu with",
+      "timestamp": "2026-10-27T19:15:39Z"
+    },
+    {
+      "sha": "9d21999",
+      "prefix": "agent",
+      "title": "🟢 TN extends inter-state rough stone transport ban by three months; Puducherry e",
+      "timestamp": "2026-10-27T19:15:39Z"
+    },
+    {
+      "sha": "5f7c660",
+      "prefix": "agent",
+      "title": "🟢 CM Mr. Vijay orders Deepavali bonus and ex gratia for 2.60 lakh PSU workers —",
+      "timestamp": "2026-10-27T19:15:39Z"
+    },
     {
       "sha": "832b55c",
       "prefix": "agent",
@@ -979,30 +957,12 @@
       "prefix": "agent",
       "title": "🟢 G.O.(Ms) No. 184 mandates repair of rainwater harvesting structures statewide",
       "timestamp": "2026-10-21T18:25:54Z"
-    },
-    {
-      "sha": "f79ed7d",
-      "prefix": "agent",
-      "title": "🟢 CM Mr. Vijay announces ₹30 lakh each for two TN para table tennis bronze medal",
-      "timestamp": "2026-10-20T18:25:45Z"
-    },
-    {
-      "sha": "1f11845",
-      "prefix": "agent",
-      "title": "⚖️ SC upholds patta cancellation over Tiruvallur water body; TN ordered to rehou",
-      "timestamp": "2026-10-19T19:41:15Z"
-    },
-    {
-      "sha": "0405690",
-      "prefix": "agent",
-      "title": "🟢 TN fixes powerloom weaving wages for Pongal 2027 dhoti and saree scheme",
-      "timestamp": "2026-10-18T17:05:34Z"
     }
   ],
   "last_run": {
-    "ts": "2026-10-27T01:15:02.581142+05:30",
-    "candidates": 1,
-    "published": 1,
+    "ts": "2026-10-28T00:45:39.434097+05:30",
+    "candidates": 4,
+    "published": 3,
     "escalated": 0,
     "errors": 0
   }
