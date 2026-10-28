@@ -1,17 +1,23 @@
 {
   "period": "Rolling 30 days",
-  "as_of": "2026-10-28T00:45:43.311790+05:30",
-  "candidates_surfaced": 182,
-  "auto_verified": 30,
+  "as_of": "2026-10-29T00:54:01.761844+05:30",
+  "candidates_surfaced": 188,
+  "auto_verified": 31,
   "auto_verified_pct": 16,
-  "escalated": 26,
-  "escalated_pct": 14,
-  "autonomous_commits": 30,
+  "escalated": 28,
+  "escalated_pct": 15,
+  "autonomous_commits": 31,
   "operator_edited": 0,
-  "skipped": 126,
-  "cost_this_month_usd": 7.98,
+  "skipped": 129,
+  "cost_this_month_usd": 8.29,
   "cost_per_published_entry_usd": 0.27,
   "autonomous_commits_list": [
+    {
+      "sha": "708ed5b",
+      "prefix": "agent",
+      "title": "🟢 Tamil Nadu revises auto-rickshaw fares — ₹50 minimum, first change in 13 years",
+      "timestamp": "2026-10-28T19:23:57Z"
+    },
     {
       "sha": "f406623",
       "prefix": "agent",
@@ -125,12 +131,6 @@
       "prefix": "agent",
       "title": "🟨 CM Mr. Vijay meets AP CM Naidu in Vijayawada — Krishna water request, no commi",
       "timestamp": "2026-10-14T18:20:59Z"
-    },
-    {
-      "sha": "170130f",
-      "prefix": "agent",
-      "title": "🟨 CM Mr. Vijay meets AP CM Mr. Naidu in Guntur; Krishna water release for Chenna",
-      "timestamp": "2026-10-13T20:08:58Z"
     }
   ],
   "escalated_list": [
@@ -263,6 +263,16 @@
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/use-of-chief-minister-c-joseph-vijays-deep-fake-videos-to-collect-money-rajasthan-youth-moves-madras-high-court-seeking-bail/article71611607.ece",
       "reasoning": "The candidate article (The Hindu, published 10:14 AM IST on Oct 23) only reports that the bail plea was listed for hearing — it does not capture the final outcome. LiveLaw and New Indian Express, published the same afternoon, confirm that Justice N. Ramesh actually granted conditional bail to Shyabu"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/dmk-councillor-arrested-over-controversial-remark-on-karur-stampede/article71635787.ece",
+      "reasoning": "The arrest of DMK councillor Teeta Saravanan is confirmed by three independent outlets (The Hindu, Times of India, Deccan Chronicle) and the underlying Karur stampede context is well-documented. However, this is primarily a political/factional development — a DMK member making a threatening remark a"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tn-government-plans-investment-conversion-conclave-in-nov-minister-to-visit-germany-to-attract-investment/article71636325.ece",
+      "reasoning": "The Hindu article (bylined, full text verified) reports two forward-looking governance actions: a planned TVK investment conversion conclave in November 2026 and Minister Keerthana's Germany visit in the first week of November. Both are attributed to unnamed 'sources' rather than a named government "
     }
   ],
   "skipped_list": [
@@ -895,9 +905,30 @@
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/cm-vijay-to-chair-tn-cabinet-meeting-on-october-29/article71631327.ece",
       "skip_reason": "This article is a pre-event announcement of a cabinet meeting scheduled for October 29, 2026 — published two days before the meeting occurs. No governance decisions have been taken yet; the agenda ite"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/mids-professor-alleges-police-harassment-over-fake-instagram-account/article71637364.ece",
+      "skip_reason": "This article reports a complaint filed by Prof. Kalaiyarasan alleging police harassment — a serious civil liberties concern, but not a trackable governance action by the CM Vijay administration. There"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/theni-jailbreak-palaniswami-dhinakaran-criticise-tvk-led-tamil-nadu-government/article71633060.ece",
+      "skip_reason": "This article covers opposition politicians (DMK's M.K. Stalin, AIADMK's Edappadi Palaniswami, AMMK's T.T.V. Dhinakaran) criticising the TVK government over the Theni sub-jail escape of 17 prisoners on"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/palaniswami-dhinakaran-urge-tamil-nadu-government-to-roll-back-hike-in-prices-of-dairy-by-products/article71633013.ece",
+      "skip_reason": "The candidate article is entirely about opposition political statements — AIADMK's Palaniswami and AMMK's Dhinakaran calling for a rollback of the Aavin dairy price hike. While the underlying governan"
     }
   ],
   "recent_commits": [
+    {
+      "sha": "708ed5b",
+      "prefix": "agent",
+      "title": "🟢 Tamil Nadu revises auto-rickshaw fares — ₹50 minimum, first change in 13 years",
+      "timestamp": "2026-10-28T19:23:57Z"
+    },
     {
       "sha": "f406623",
       "prefix": "agent",
@@ -951,19 +982,13 @@
       "prefix": "agent",
       "title": "🟢 Government sanctions ₹71.01 crore to raise contingency funds at all police sta",
       "timestamp": "2026-10-21T18:25:54Z"
-    },
-    {
-      "sha": "cb31e4c",
-      "prefix": "agent",
-      "title": "🟢 G.O.(Ms) No. 184 mandates repair of rainwater harvesting structures statewide",
-      "timestamp": "2026-10-21T18:25:54Z"
     }
   ],
   "last_run": {
-    "ts": "2026-10-28T00:45:39.434097+05:30",
-    "candidates": 4,
-    "published": 3,
-    "escalated": 0,
+    "ts": "2026-10-29T00:53:57.712390+05:30",
+    "candidates": 6,
+    "published": 1,
+    "escalated": 2,
     "errors": 0
   }
 }

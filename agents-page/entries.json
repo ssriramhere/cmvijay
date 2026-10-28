@@ -36,6 +36,18 @@
     }
   },
   {
+    "title": "🟢 Tamil Nadu revises auto-rickshaw fares — ₹50 minimum, first change in 13 years",
+    "date": "October 27, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 821,
+        "output_tokens": 641,
+        "cache_read_tokens": 1373,
+        "cache_creation_tokens": 0
+      }
+    }
+  },
+  {
     "title": "🟢 CM Mr. Vijay distributes appointment orders to 69 TNPSC-selected Agriculture Department candidates",
     "date": "October 23, 2026",
     "reasoning": {
