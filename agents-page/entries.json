@@ -1,5 +1,41 @@
 [
   {
+    "title": "🟢 CM Mr. Vijay distributes ₹21.34 cr to 1,06,704 CM Trophy winners; launches water sports academy and new scheme",
+    "date": "October 29, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 959,
+        "output_tokens": 590,
+        "cache_read_tokens": 0,
+        "cache_creation_tokens": 1373
+      }
+    }
+  },
+  {
+    "title": "🟢 Cabinet approves Social Justice Survey Commission — retired judge to head panel",
+    "date": "October 29, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 825,
+        "output_tokens": 825,
+        "cache_read_tokens": 1373,
+        "cache_creation_tokens": 0
+      }
+    }
+  },
+  {
+    "title": "🟢 CM Mr. Vijay inaugurates electrical labs at 30 ITIs; MoU signed for 40 more",
+    "date": "October 28, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 967,
+        "output_tokens": 906,
+        "cache_read_tokens": 1373,
+        "cache_creation_tokens": 0
+      }
+    }
+  },
+  {
     "title": "🟢 CM Mr. Vijay orders Deepavali bonus and ex gratia for 2.60 lakh PSU workers — ₹367.20 cr outlay",
     "date": "October 27, 2026",
     "reasoning": {
@@ -362,14 +398,7 @@
   {
     "title": "🟢 CM Mr. Vijay inaugurates renovated Gandhi Memorial Museum, Madurai — ₹10.25 cr PWD work",
     "date": "September 28, 2026",
-    "reasoning": {
-      "drafter_usage": {
-        "input_tokens": 835,
-        "output_tokens": 735,
-        "cache_read_tokens": 1373,
-        "cache_creation_tokens": 0
-      }
-    }
+    "reasoning": null
   },
   {
     "title": "🟢 CM Mr. Vijay conducts surprise inspection at TNPDCL headquarters amid power cuts",

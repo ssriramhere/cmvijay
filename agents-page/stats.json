@@ -1,17 +1,35 @@
 {
   "period": "Rolling 30 days",
-  "as_of": "2026-10-29T00:54:01.761844+05:30",
-  "candidates_surfaced": 188,
-  "auto_verified": 31,
-  "auto_verified_pct": 16,
-  "escalated": 28,
-  "escalated_pct": 15,
-  "autonomous_commits": 31,
+  "as_of": "2026-10-30T01:01:27.092840+05:30",
+  "candidates_surfaced": 189,
+  "auto_verified": 33,
+  "auto_verified_pct": 17,
+  "escalated": 25,
+  "escalated_pct": 13,
+  "autonomous_commits": 33,
   "operator_edited": 0,
-  "skipped": 129,
-  "cost_this_month_usd": 8.29,
-  "cost_per_published_entry_usd": 0.27,
+  "skipped": 131,
+  "cost_this_month_usd": 8.28,
+  "cost_per_published_entry_usd": 0.25,
   "autonomous_commits_list": [
+    {
+      "sha": "26388c1",
+      "prefix": "agent",
+      "title": "🟢 CM Mr. Vijay inaugurates electrical labs at 30 ITIs; MoU signed for 40 more",
+      "timestamp": "2026-10-29T19:31:23Z"
+    },
+    {
+      "sha": "af7bf70",
+      "prefix": "agent",
+      "title": "🟢 Cabinet approves Social Justice Survey Commission — retired judge to head pane",
+      "timestamp": "2026-10-29T19:31:23Z"
+    },
+    {
+      "sha": "0f508f8",
+      "prefix": "agent",
+      "title": "🟢 CM Mr. Vijay distributes ₹21.34 cr to 1,06,704 CM Trophy winners; launches wat",
+      "timestamp": "2026-10-29T19:31:22Z"
+    },
     {
       "sha": "708ed5b",
       "prefix": "agent",
@@ -113,52 +131,9 @@
       "prefix": "agent",
       "title": "🔵 Speaker sets two-month deadline on disqualification of four ex-AIADMK MLAs",
       "timestamp": "2026-10-16T17:52:08Z"
-    },
-    {
-      "sha": "5e8a85a",
-      "prefix": "agent",
-      "title": "🟨 CM Mr. Vijay writes to Jaishankar seeking release of 25 Thoothukudi fishermen",
-      "timestamp": "2026-10-15T18:06:19Z"
-    },
-    {
-      "sha": "74f7c31",
-      "prefix": "agent",
-      "title": "🟢 CM Mr. Vijay meets Singapore DPM; CapitaLand's ₹1,940 cr Chennai data centre u",
-      "timestamp": "2026-10-15T18:06:19Z"
-    },
-    {
-      "sha": "b674c1c",
-      "prefix": "agent",
-      "title": "🟨 CM Mr. Vijay meets AP CM Naidu in Vijayawada — Krishna water request, no commi",
-      "timestamp": "2026-10-14T18:20:59Z"
     }
   ],
   "escalated_list": [
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/vijay-announces-30-lakh-for-asian-games-athlete/article71520738.ece",
-      "reasoning": "The core claim — CM Mr. Vijay announcing ₹30 lakh for Vithya Ramraj's Asian Games 2026 bronze in the 400m hurdles — is confirmed by two corroborating sources (Sportstar/The Hindu and The Daily Jagran). However, the source article contains a factual inaccuracy: it states Vithya broke P.T. Usha's reco"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/tirupattur-tvk-mlas-win-by-a-single-vote-madras-high-court-rejects-election-petition-filed-against-his-victory/article71518312.ece",
-      "reasoning": "The core facts are robustly verified across four independent sources (The Hindu, LiveLaw, ETV Bharat, Free Press Journal): Justice G.K. Ilanthiraiyan of the Madras High Court did reject the election petition against TVK MLA R. Seenivasa Sethupathy on September 28, 2026, confirming his one-vote victo"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/thai-maman-gold-ring-scheme-what-is-it-how-to-avail/article71518499.ece",
-      "reasoning": "The scheme's physical launch on September 28, 2026 at Government Rajaji Hospital, Madurai is a genuine governance milestone that maps directly to manifesto promise g1_newborn (currently 'partial'). Two corroborating sources (The Hindu, Live Chennai) confirm the Sep 28 launch date and scheme mechanic"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-cm-vijay-launches-thaimaman-thanga-mothiram-thittam-at-madurai/article71518784.ece",
-      "reasoning": "The scheme launch is well-confirmed by two strong, independent sources (The Hindu and The News Minute) and maps clearly to manifesto promise g1_newborn. However, escalation is warranted for three reasons: (1) a proposed status flip from 'partial' to 'in_progress' is involved, and the site state prev"
-    },
-    {
-      "title": "",
-      "url": "https://theprint.in/india/tn-cm-vijay-to-launch-one-gram-gold-ring-scheme-for-newborns-today/3055270/",
-      "reasoning": "The scheme launch is well-confirmed by two independent textual sources (PTI via ThePrint; Outlook India/Facebook citing the same event) plus multiple social media corroborations, with consistent figures (₹755.83 crore, 22-carat 1g ring, June 22 eligibility date). No duplicate exists on the site. How"
-    },
     {
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/veeramani-pocso-act-case-let-sit-work-in-peace-says-madras-high-court-judge-while-hearing-dmks-plea/article71528238.ece",
@@ -273,14 +248,19 @@
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/tn-government-plans-investment-conversion-conclave-in-nov-minister-to-visit-germany-to-attract-investment/article71636325.ece",
       "reasoning": "The Hindu article (bylined, full text verified) reports two forward-looking governance actions: a planned TVK investment conversion conclave in November 2026 and Minister Keerthana's Germany visit in the first week of November. Both are attributed to unnamed 'sources' rather than a named government "
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/stalin-demands-apology-from-tamil-nadu-cm-vijay-for-detention-of-mids-professor/article71639187.ece",
+      "reasoning": "The detention of MIDS Professor A. Kalaiyarasan on October 28, 2026 is a real, multi-source confirmed event with genuine governance implications (police conduct, civil liberties). However, the candidate article is primarily an opposition demand (M.K. Stalin) plus a TVK denial — a politically contest"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-cabinet-decides-to-form-commission-headed-by-retd-hc-judge-to-conduct-social-justice-survey/article71639709.ece",
+      "reasoning": "The core cabinet decision is strongly verified across five independent outlets (The Hindu, Times of India, The Print, ETV Bharat, Tribune India), with consistent facts on date, actors, and timeline. No primacy claims, no contradictions with existing site state, and no duplicate entry exists. Escalat"
     }
   ],
   "skipped_list": [
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/how-can-eci-render-case-against-byelections-to-five-tamil-nadu-constituencies-infructuous-wonders-cm-vijays-counsel/article71519575.ece",
-      "skip_reason": "This article reports a court hearing argument by CM Mr. Vijay's counsel in an ongoing PIL about bypoll scheduling — a legal/electoral process matter, not a governance action by the Tamil Nadu executiv"
-    },
     {
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/ministers-aadhav-arjuna-ctr-nirmal-kumar-urge-madras-high-court-to-dismiss-dmks-defamation-case/article71525136.ece",
@@ -920,9 +900,42 @@
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/palaniswami-dhinakaran-urge-tamil-nadu-government-to-roll-back-hike-in-prices-of-dairy-by-products/article71633013.ece",
       "skip_reason": "The candidate article is entirely about opposition political statements — AIADMK's Palaniswami and AMMK's Dhinakaran calling for a rollback of the Aavin dairy price hike. While the underlying governan"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/cities/chennai/chennai-corporation-council-mayor-says-she-was-not-informed-of-timing-of-cm-vijays-northeast-monsoon-inspection/article71639545.ece",
+      "skip_reason": "This article is fundamentally about an intra-governmental protocol dispute and social media controversy — specifically, whether the Chennai Mayor was deliberately absent from CM Mr. Vijay's monsoon in"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/ntks-saattai-duraimurugan-moves-madras-high-court-seeking-anticipatory-bail/article71637572.ece",
+      "skip_reason": "This article covers an NTK opposition figure (Saattai Duraimurugan) filing an anticipatory bail petition at Madras High Court over an FIR related to a YouTube video criticising CM Mr. Vijay. While it "
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/corporation-councillor-willing-to-express-regret-for-abusing-and-body-shaming-chief-minister-c-joseph-vijay-her-counsel-tells-madras-high-court/article71637016.ece",
+      "skip_reason": "This article covers a Madras High Court anticipatory bail hearing for a DMK councillor who body-shamed CM Mr. Vijay in a speech at a party event. While it involves a court proceeding and an FIR, the u"
     }
   ],
   "recent_commits": [
+    {
+      "sha": "26388c1",
+      "prefix": "agent",
+      "title": "🟢 CM Mr. Vijay inaugurates electrical labs at 30 ITIs; MoU signed for 40 more",
+      "timestamp": "2026-10-29T19:31:23Z"
+    },
+    {
+      "sha": "af7bf70",
+      "prefix": "agent",
+      "title": "🟢 Cabinet approves Social Justice Survey Commission — retired judge to head pane",
+      "timestamp": "2026-10-29T19:31:23Z"
+    },
+    {
+      "sha": "0f508f8",
+      "prefix": "agent",
+      "title": "🟢 CM Mr. Vijay distributes ₹21.34 cr to 1,06,704 CM Trophy winners; launches wat",
+      "timestamp": "2026-10-29T19:31:22Z"
+    },
     {
       "sha": "708ed5b",
       "prefix": "agent",
@@ -964,30 +977,12 @@
       "prefix": "agent",
       "title": "🟢 TN gazette fixes car purchase ceiling: ₹26 lakh for ministers, ₹15 lakh for ML",
       "timestamp": "2026-10-23T18:09:38Z"
-    },
-    {
-      "sha": "f1260e7",
-      "prefix": "agent",
-      "title": "📅 TN extends Special Officers' tenure in rural local bodies until April 2027",
-      "timestamp": "2026-10-22T18:21:21Z"
-    },
-    {
-      "sha": "0ffa5d9",
-      "prefix": "agent",
-      "title": "🟢 CM Mr. Vijay inspects State Emergency Operations Centre ahead of Northeast mon",
-      "timestamp": "2026-10-22T18:21:21Z"
-    },
-    {
-      "sha": "10baefd",
-      "prefix": "agent",
-      "title": "🟢 Government sanctions ₹71.01 crore to raise contingency funds at all police sta",
-      "timestamp": "2026-10-21T18:25:54Z"
     }
   ],
   "last_run": {
-    "ts": "2026-10-29T00:53:57.712390+05:30",
-    "candidates": 6,
-    "published": 1,
+    "ts": "2026-10-30T01:01:23.650659+05:30",
+    "candidates": 8,
+    "published": 3,
     "escalated": 2,
     "errors": 0
   }
