@@ -1,5 +1,29 @@
 [
   {
+    "title": "🟢 TASMAC adds ₹10 environment cess to all liquor MRPs; ₹10 refund on bottle return",
+    "date": "November 1, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 903,
+        "output_tokens": 725,
+        "cache_read_tokens": 0,
+        "cache_creation_tokens": 1373
+      }
+    }
+  },
+  {
+    "title": "🟢 Tamil Nadu sanctions 680 road projects under CMIUDM; Gateway of Chennai work to begin",
+    "date": "October 30, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 1050,
+        "output_tokens": 938,
+        "cache_read_tokens": 1373,
+        "cache_creation_tokens": 0
+      }
+    }
+  },
+  {
     "title": "🟢 CM Mr. Vijay distributes ₹21.34 cr to 1,06,704 CM Trophy winners; launches water sports academy and new scheme",
     "date": "October 29, 2026",
     "reasoning": {
@@ -30,6 +54,18 @@
       "drafter_usage": {
         "input_tokens": 967,
         "output_tokens": 906,
+        "cache_read_tokens": 1373,
+        "cache_creation_tokens": 0
+      }
+    }
+  },
+  {
+    "title": "🟢 Govt. sanctions five Model Registration Hubs — ₹7.84 cr, jurisdiction-free property and marriage registration",
+    "date": "October 28, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 771,
+        "output_tokens": 654,
         "cache_read_tokens": 1373,
         "cache_creation_tokens": 0
       }

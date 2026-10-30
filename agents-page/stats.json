@@ -1,17 +1,35 @@
 {
   "period": "Rolling 30 days",
-  "as_of": "2026-10-30T01:01:27.092840+05:30",
-  "candidates_surfaced": 189,
-  "auto_verified": 33,
-  "auto_verified_pct": 17,
-  "escalated": 25,
-  "escalated_pct": 13,
-  "autonomous_commits": 33,
+  "as_of": "2026-10-31T00:35:54.866655+05:30",
+  "candidates_surfaced": 191,
+  "auto_verified": 36,
+  "auto_verified_pct": 19,
+  "escalated": 26,
+  "escalated_pct": 14,
+  "autonomous_commits": 36,
   "operator_edited": 0,
-  "skipped": 131,
-  "cost_this_month_usd": 8.28,
-  "cost_per_published_entry_usd": 0.25,
+  "skipped": 129,
+  "cost_this_month_usd": 8.67,
+  "cost_per_published_entry_usd": 0.24,
   "autonomous_commits_list": [
+    {
+      "sha": "9d70a99",
+      "prefix": "agent",
+      "title": "🟢 Govt. sanctions five Model Registration Hubs — ₹7.84 cr, jurisdiction-free pro",
+      "timestamp": "2026-10-30T19:05:45Z"
+    },
+    {
+      "sha": "3676728",
+      "prefix": "agent",
+      "title": "🟢 Tamil Nadu sanctions 680 road projects under CMIUDM; Gateway of Chennai work t",
+      "timestamp": "2026-10-30T19:05:45Z"
+    },
+    {
+      "sha": "9dbbb5c",
+      "prefix": "agent",
+      "title": "🟢 TASMAC adds ₹10 environment cess to all liquor MRPs; ₹10 refund on bottle retu",
+      "timestamp": "2026-10-30T19:05:45Z"
+    },
     {
       "sha": "26388c1",
       "prefix": "agent",
@@ -113,24 +131,6 @@
       "prefix": "agent",
       "title": "🟢 TN fixes powerloom weaving wages for Pongal 2027 dhoti and saree scheme",
       "timestamp": "2026-10-18T17:05:34Z"
-    },
-    {
-      "sha": "6194095",
-      "prefix": "agent",
-      "title": "🟢 Tamil Nadu Semiconductor Ecosystem Scheme 2026 launched at state-level event",
-      "timestamp": "2026-10-16T17:52:08Z"
-    },
-    {
-      "sha": "c1c8ec3",
-      "prefix": "agent",
-      "title": "🟢 CM Mr. Vijay inaugurates Periyar Arivulagam library and science centre, Coimba",
-      "timestamp": "2026-10-16T17:52:08Z"
-    },
-    {
-      "sha": "0b0a0e4",
-      "prefix": "agent",
-      "title": "🔵 Speaker sets two-month deadline on disqualification of four ex-AIADMK MLAs",
-      "timestamp": "2026-10-16T17:52:08Z"
     }
   ],
   "escalated_list": [
@@ -258,39 +258,14 @@
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-cabinet-decides-to-form-commission-headed-by-retd-hc-judge-to-conduct-social-justice-survey/article71639709.ece",
       "reasoning": "The core cabinet decision is strongly verified across five independent outlets (The Hindu, Times of India, The Print, ETV Bharat, Tribune India), with consistent facts on date, actors, and timeline. No primacy claims, no contradictions with existing site state, and no duplicate entry exists. Escalat"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/constitutional-values-rule-of-law-should-be-upheld-mids-academic-kalaiyarasan-after-meeting-cm-vijay/article71641619.ece",
+      "reasoning": "The article is well-corroborated across three outlets (The Hindu, NDTV, New Indian Express) and the core facts are consistent: MIDS professor Dr. Kalaiyarasan was wrongfully detained by Tambaram City Police on October 28, 2026, met CM Mr. Vijay at the Secretariat on October 29, and reported the CM e"
     }
   ],
   "skipped_list": [
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/ministers-aadhav-arjuna-ctr-nirmal-kumar-urge-madras-high-court-to-dismiss-dmks-defamation-case/article71525136.ece",
-      "skip_reason": "This article covers a legal dispute between opposition party DMK and two TVK ministers over alleged defamatory statements — a political/factional court matter, not a governance action. The ministers a"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/vijay-announces-75-lakhfor-vithya-ramraj-for-winning-gold-medal-at-asian-games-2026/article71525504.ece",
-      "skip_reason": "While the ₹75 lakh cash prize announcement is factually confirmed by multiple credible sources (The Hindu, India Today, Sportstar), this is a routine CM felicitation via social media post following a "
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/people-will-decide-on-aiadmk-dmk-alliance-speculation-says-minister/article71524051.ece",
-      "skip_reason": "This article is entirely political commentary and party positioning — a TVK minister (Rajmohan) deflecting criticism about AIADMK-DMK alliance speculation and defending the party's bypoll campaign rhe"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/chief-minister-vijay-felicitates-coimbatore-policeman-who-held-onto-gutkha-smugglers-suv-for-over-40-km/article71523587.ece",
-      "skip_reason": "This is a CM felicitation of a police officer for a courageous individual act — a ceremonial/symbolic event with no governance action, executive order, policy launch, or cabinet decision attached. Whi"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/cities/Coimbatore/thirukkural-woven-in-cotton-karur-weaver-creates-133-page-fabric-book/article71522889.ece",
-      "skip_reason": "This is a human-interest / cultural story about a private citizen (weaver R. Prabhu) who has created a Thirukkural fabric book and wishes to gift it to CM Mr. Vijay. There is no governance action, exe"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/veeramani-pocso-case-dmk-moves-madras-high-court-to-ask-sit-to-summon-tamil-nadu-cm-vijay-ministers-aadhav-arjuna-and-nirmal-kumar/article71523106.ece",
-      "skip_reason": "This article reports a legal/political manoeuvre by the opposition DMK — filing a Madras High Court petition asking the SIT to summon CM Mr. Vijay and two TVK ministers for questioning about alleged e"
-    },
     {
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/residents-oppose-new-location-of-tasmac-outlet-in-tiruvannamalai/article71528710.ece",
@@ -915,9 +890,47 @@
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/corporation-councillor-willing-to-express-regret-for-abusing-and-body-shaming-chief-minister-c-joseph-vijay-her-counsel-tells-madras-high-court/article71637016.ece",
       "skip_reason": "This article covers a Madras High Court anticipatory bail hearing for a DMK councillor who body-shamed CM Mr. Vijay in a speech at a party event. While it involves a court proceeding and an FIR, the u"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/cities/Madurai/tvk-has-forgotten-its-promises-edappadi-palaniswami/article71641358.ece",
+      "skip_reason": "This article is an opposition press statement by AIADMK General Secretary Edappadi K. Palaniswami containing political rhetoric ('chaos in every department,' 'forgotten promises') with no governance a"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-governor-arlekar-cm-vijay-pay-tribute-to-freedom-fighter-pasumpon-muthuramalinga-thevar/article71643802.ece",
+      "skip_reason": "This article covers an annual ceremonial tribute — Thevar Jayanthi (October 30, Pasumpon Muthuramalinga Thevar's birth anniversary, observed every year) — where CM Mr. Vijay and Governor Arlekar poste"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/stalin-slams-vijay-govt-over-law-and-order-rising-prices-says-dmk-to-hold-protest-on-october-31/article71643692.ece",
+      "skip_reason": "This article reports an opposition political statement — DMK president M.K. Stalin criticising the TVK government and announcing a Women's Wing protest on October 31. There is no governance action (no"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/opinion/op-ed/tamil-nadu-assembly-the-changing-address-of-power/article71640386.ece",
+      "skip_reason": "The candidate is a The Hindu opinion/op-ed piece (B. Kolappan, Oct 30 2026) providing historical context on Tamil Nadu's Secretariat search — not a report of a new governance action. The underlying ev"
     }
   ],
   "recent_commits": [
+    {
+      "sha": "9d70a99",
+      "prefix": "agent",
+      "title": "🟢 Govt. sanctions five Model Registration Hubs — ₹7.84 cr, jurisdiction-free pro",
+      "timestamp": "2026-10-30T19:05:45Z"
+    },
+    {
+      "sha": "3676728",
+      "prefix": "agent",
+      "title": "🟢 Tamil Nadu sanctions 680 road projects under CMIUDM; Gateway of Chennai work t",
+      "timestamp": "2026-10-30T19:05:45Z"
+    },
+    {
+      "sha": "9dbbb5c",
+      "prefix": "agent",
+      "title": "🟢 TASMAC adds ₹10 environment cess to all liquor MRPs; ₹10 refund on bottle retu",
+      "timestamp": "2026-10-30T19:05:45Z"
+    },
     {
       "sha": "26388c1",
       "prefix": "agent",
@@ -959,31 +972,13 @@
       "prefix": "agent",
       "title": "🟢 CM Mr. Vijay orders Deepavali bonus and ex gratia for 2.60 lakh PSU workers —",
       "timestamp": "2026-10-27T19:15:39Z"
-    },
-    {
-      "sha": "832b55c",
-      "prefix": "agent",
-      "title": "🟢 Tamil Nadu cuts ATF VAT from 29% to 16% at Chennai airport, seeks airline expa",
-      "timestamp": "2026-10-26T19:45:02Z"
-    },
-    {
-      "sha": "9b3e050",
-      "prefix": "agent",
-      "title": "🟢 CM Mr. Vijay distributes appointment orders to 69 TNPSC-selected Agriculture D",
-      "timestamp": "2026-10-23T18:09:39Z"
-    },
-    {
-      "sha": "32e6d21",
-      "prefix": "agent",
-      "title": "🟢 TN gazette fixes car purchase ceiling: ₹26 lakh for ministers, ₹15 lakh for ML",
-      "timestamp": "2026-10-23T18:09:38Z"
     }
   ],
   "last_run": {
-    "ts": "2026-10-30T01:01:23.650659+05:30",
+    "ts": "2026-10-31T00:35:46.101332+05:30",
     "candidates": 8,
     "published": 3,
-    "escalated": 2,
+    "escalated": 1,
     "errors": 0
   }
 }
