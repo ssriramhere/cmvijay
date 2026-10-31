@@ -12,6 +12,18 @@
     }
   },
   {
+    "title": "🟢 Tamil Nadu DA raised 60% to 63% — 16 lakh employees and pensioners benefit",
+    "date": "October 31, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 854,
+        "output_tokens": 825,
+        "cache_read_tokens": 1373,
+        "cache_creation_tokens": 0
+      }
+    }
+  },
+  {
     "title": "🟢 Tamil Nadu sanctions 680 road projects under CMIUDM; Gateway of Chennai work to begin",
     "date": "October 30, 2026",
     "reasoning": {
@@ -44,6 +56,18 @@
         "output_tokens": 825,
         "cache_read_tokens": 1373,
         "cache_creation_tokens": 0
+      }
+    }
+  },
+  {
+    "title": "🟢 Cabinet approves Social Justice Survey Commission — retired judge to lead, report by March 2027",
+    "date": "October 29, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 726,
+        "output_tokens": 758,
+        "cache_read_tokens": 0,
+        "cache_creation_tokens": 1373
       }
     }
   },

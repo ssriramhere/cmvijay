@@ -1,17 +1,29 @@
 {
   "period": "Rolling 30 days",
-  "as_of": "2026-10-31T00:35:54.866655+05:30",
-  "candidates_surfaced": 191,
-  "auto_verified": 36,
+  "as_of": "2026-10-31T23:43:50.384209+05:30",
+  "candidates_surfaced": 197,
+  "auto_verified": 38,
   "auto_verified_pct": 19,
-  "escalated": 26,
+  "escalated": 27,
   "escalated_pct": 14,
-  "autonomous_commits": 36,
+  "autonomous_commits": 38,
   "operator_edited": 0,
-  "skipped": 129,
-  "cost_this_month_usd": 8.67,
+  "skipped": 132,
+  "cost_this_month_usd": 8.95,
   "cost_per_published_entry_usd": 0.24,
   "autonomous_commits_list": [
+    {
+      "sha": "10eddc6",
+      "prefix": "agent",
+      "title": "🟢 Tamil Nadu DA raised 60% to 63% — 16 lakh employees and pensioners benefit",
+      "timestamp": "2026-10-31T18:13:46Z"
+    },
+    {
+      "sha": "1a9e9b0",
+      "prefix": "agent",
+      "title": "🟢 Cabinet approves Social Justice Survey Commission — retired judge to lead, rep",
+      "timestamp": "2026-10-31T18:13:46Z"
+    },
     {
       "sha": "9d70a99",
       "prefix": "agent",
@@ -119,18 +131,6 @@
       "prefix": "agent",
       "title": "🟢 CM Mr. Vijay announces ₹30 lakh each for two TN para table tennis bronze medal",
       "timestamp": "2026-10-20T18:25:45Z"
-    },
-    {
-      "sha": "1f11845",
-      "prefix": "agent",
-      "title": "⚖️ SC upholds patta cancellation over Tiruvallur water body; TN ordered to rehou",
-      "timestamp": "2026-10-19T19:41:15Z"
-    },
-    {
-      "sha": "0405690",
-      "prefix": "agent",
-      "title": "🟢 TN fixes powerloom weaving wages for Pongal 2027 dhoti and saree scheme",
-      "timestamp": "2026-10-18T17:05:34Z"
     }
   ],
   "escalated_list": [
@@ -263,6 +263,11 @@
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/constitutional-values-rule-of-law-should-be-upheld-mids-academic-kalaiyarasan-after-meeting-cm-vijay/article71641619.ece",
       "reasoning": "The article is well-corroborated across three outlets (The Hindu, NDTV, New Indian Express) and the core facts are consistent: MIDS professor Dr. Kalaiyarasan was wrongfully detained by Tambaram City Police on October 28, 2026, met CM Mr. Vijay at the Secretariat on October 29, and reported the CM e"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/theni-jailbreak-tamil-nadu-cm-vijay-orders-suspension-of-superintendent-in-charge-over-security-lapse/article71648506.ece",
+      "reasoning": "The core event — CM Mr. Vijay ordering suspension and transfers following the Theni jailbreak of October 26, 2026 — is confirmed across The Hindu, Deccan Herald, and Rediff (PTI wire). However, there is a material name discrepancy between sources: The Hindu names the suspended officer as 'N. Nageswa"
     }
   ],
   "skipped_list": [
@@ -910,9 +915,36 @@
       "title": "",
       "url": "https://www.thehindu.com/opinion/op-ed/tamil-nadu-assembly-the-changing-address-of-power/article71640386.ece",
       "skip_reason": "The candidate is a The Hindu opinion/op-ed piece (B. Kolappan, Oct 30 2026) providing historical context on Tamil Nadu's Secretariat search — not a report of a new governance action. The underlying ev"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/palaniswami-slams-tvk-led-government-over-convicts-escape-in-coimbatore/article71648552.ece",
+      "skip_reason": "The candidate article is an opposition party reaction piece — AIADMK general secretary Palaniswami criticising the TVK government via a social media post over a convict's escape. While the underlying "
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/dmk-women-cadre-protest-across-tamil-nadu-over-price-rise-law-and-order/article71648544.ece",
+      "skip_reason": "This article covers an opposition (DMK) political protest and party statements by MP Kanimozhi — there is no governance action, executive order, cabinet decision, scheme launch, or court ruling attach"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/stalin-urges-cm-vijay-to-heed-womens-protest-over-rising-prices-deteriorating-law-and-order/article71648766.ece",
+      "skip_reason": "This article is a social media statement by DMK president M.K. Stalin — the leader of the opposition — criticising CM Mr. Vijay's government over rising prices and law and order. It contains zero gove"
     }
   ],
   "recent_commits": [
+    {
+      "sha": "10eddc6",
+      "prefix": "agent",
+      "title": "🟢 Tamil Nadu DA raised 60% to 63% — 16 lakh employees and pensioners benefit",
+      "timestamp": "2026-10-31T18:13:46Z"
+    },
+    {
+      "sha": "1a9e9b0",
+      "prefix": "agent",
+      "title": "🟢 Cabinet approves Social Justice Survey Commission — retired judge to lead, rep",
+      "timestamp": "2026-10-31T18:13:46Z"
+    },
     {
       "sha": "9d70a99",
       "prefix": "agent",
@@ -960,24 +992,12 @@
       "prefix": "agent",
       "title": "🟢 CM Mr. Vijay felicitates 12 WorldSkills 2026 competitors from Tamil Nadu with",
       "timestamp": "2026-10-27T19:15:39Z"
-    },
-    {
-      "sha": "9d21999",
-      "prefix": "agent",
-      "title": "🟢 TN extends inter-state rough stone transport ban by three months; Puducherry e",
-      "timestamp": "2026-10-27T19:15:39Z"
-    },
-    {
-      "sha": "5f7c660",
-      "prefix": "agent",
-      "title": "🟢 CM Mr. Vijay orders Deepavali bonus and ex gratia for 2.60 lakh PSU workers —",
-      "timestamp": "2026-10-27T19:15:39Z"
     }
   ],
   "last_run": {
-    "ts": "2026-10-31T00:35:46.101332+05:30",
-    "candidates": 8,
-    "published": 3,
+    "ts": "2026-10-31T23:43:47.258110+05:30",
+    "candidates": 6,
+    "published": 2,
     "escalated": 1,
     "errors": 0
   }
