@@ -1,16 +1,16 @@
 {
   "period": "Rolling 30 days",
-  "as_of": "2026-10-31T23:43:50.384209+05:30",
-  "candidates_surfaced": 197,
-  "auto_verified": 38,
-  "auto_verified_pct": 19,
-  "escalated": 27,
-  "escalated_pct": 14,
-  "autonomous_commits": 38,
+  "as_of": "2026-11-02T00:17:12.856415+05:30",
+  "candidates_surfaced": 183,
+  "auto_verified": 37,
+  "auto_verified_pct": 20,
+  "escalated": 23,
+  "escalated_pct": 13,
+  "autonomous_commits": 37,
   "operator_edited": 0,
-  "skipped": 132,
-  "cost_this_month_usd": 8.95,
-  "cost_per_published_entry_usd": 0.24,
+  "skipped": 123,
+  "cost_this_month_usd": 8.4,
+  "cost_per_published_entry_usd": 0.23,
   "autonomous_commits_list": [
     {
       "sha": "10eddc6",
@@ -136,26 +136,6 @@
   "escalated_list": [
     {
       "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/veeramani-pocso-act-case-let-sit-work-in-peace-says-madras-high-court-judge-while-hearing-dmks-plea/article71528238.ece",
-      "reasoning": "The article is well-sourced (The Hindu + LiveLaw corroboration) and factually verified: Justice V. Lakshminarayanan adjourned the DMK's petition by four weeks on 2026-09-30, with the SIT constituted around September 25. However, the article is politically sensitive — it directly names CM Mr. Vijay a"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/cities/chennai/hundreds-of-fishermen-protest-against-secretariat-proposal-at-foreshore-estate/article71525230.ece",
-      "reasoning": "The protest event and underlying G.O. (September 8, 2026) are well-corroborated across The Hindu, New Indian Express, and The News Minute. Minister Aadhav Arjuna's portfolio (Public Works) is confirmed, making his quoted statement contextually plausible. However, this is politically sensitive: the a"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/tn-government-proposes-memorial-for-5-icons-on-university-union-grounds-at-chepet-in-chennai-sports-teachers-object/article71525294.ece",
-      "reasoning": "The Hindu (bylined, whitelisted) and two corroborating outlets confirm the core facts: a Chennai Collector letter dated September 17, 2026 sought University of Madras consent to build a memorial complex for five icons (Velu Nachiyar, Periyar, Ambedkar, Kamaraj, Anjalai Ammal) on University Union Gro"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/asian-games-2026-tamil-nadu-cm-vijay-announces-75-lakhfor-vithya-ramraj-for-clinching-gold-medal/article71525504.ece",
-      "reasoning": "The core facts are well-verified: CM Mr. Vijay announced ₹75 lakh for Vithya Ramraj's gold medal in the women's 4x400m relay at Asian Games 2026 (Aichi-Nagoya) on September 29, 2026, confirmed by The Hindu's full article text. The 'third medal' claim is accurate — she won bronze (400m hurdles), silv"
-    },
-    {
-      "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/what-is-the-vettri-payanam-thittam-launched-by-tamil-nadu-cm-vijay-explained/article71535917.ece",
       "reasoning": "The article is well-sourced (The Hindu, corroborated by The South First and multiple search results) and describes a genuine, significant governance action — the October 2, 2026 launch of the Vettri Payanam Thittam by CM Mr. Vijay, expanding free bus travel for women. It maps directly to manifesto p"
     },
@@ -271,76 +251,6 @@
     }
   ],
   "skipped_list": [
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/residents-oppose-new-location-of-tasmac-outlet-in-tiruvannamalai/article71528710.ece",
-      "skip_reason": "This article describes a hyper-local community protest in Arattavadi village, Tiruvannamalai, against the proposed relocation of a TASMAC outlet from a neighbouring village. There is no executive orde"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/tasmac-outlet-in-vellore-burgled/article71528716.ece",
-      "skip_reason": "This article reports a routine criminal incident — a burglary at a TASMAC liquor outlet in Melpatti village, Vellore, involving stolen liquor bottles worth ₹1.5 lakh and damaged CCTV equipment. It is "
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/cm-vijay-positions-tvk-as-organic-successor-to-aiadmk-justifies-dharapuram-candidates-party-switchover/article71529345.ece",
-      "skip_reason": "This article covers a bypoll campaign speech in which CM Mr. Vijay extols the legacy of Jayalalithaa and MGR, positions TVK as AIADMK's ideological successor, and defends a candidate's party switchove"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/palaniswami-urges-cm-vijay-to-hold-all-party-meeting-on-mekedatu/article71524299.ece",
-      "skip_reason": "This article reports an opposition demand — AIADMK chief Palaniswami urging CM Mr. Vijay (via a social media post) to convene an all-party meeting on the Mekedatu dam issue. There is zero governance a"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/the-1981-assembly-byelection-that-triggered-turns-and-twists-in-tamil-nadu-politics/article71496870.ece",
-      "skip_reason": "This article is a historical retrospective about the 1981 Tirupattur Assembly by-election, written as political colour-piece journalism. While it briefly mentions an ongoing Madras High Court litigati"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/lessons-from-the-history-of-rebellions-in-aiadmk-and-dmk/article70083698.ece",
-      "skip_reason": "This article is a historical retrospective on internal rebellions within AIADMK and DMK — Tamil Nadu's two major opposition/legacy Dravidian parties. It contains no governance action, executive order,"
-    },
-    {
-      "title": "",
-      "url": "https://theprint.in/india/aiadmks-udhayakumar-slams-cm-vijay-over-dharapuram-bypoll-betrayal-governance-failures/3057654/",
-      "skip_reason": "This article is a political opposition attack statement by AIADMK leader R B Udhayakumar ahead of a campaign visit — it contains no governance action, executive order, cabinet decision, scheme launch,"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/madras-high-court-closes-plea-to-register-fir-in-4-crore-cheating-complaint-against-c-vijayabaskar/article71532994.ece",
-      "skip_reason": "This article concerns a Madras High Court ruling closing a private petition related to a cheating complaint against C. Vijayabaskar — a former AIADMK minister who has since joined TVK. While Vijayabas"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/videos/shows/watch-two-seats-bigger-stakes-vijays-first-bypoll-test-focus-tamil-nadu/article71533701.ece",
-      "skip_reason": "This is a pre-election political analysis video from The Hindu covering the upcoming October 6 bypolls in Madurantakam and Dharapuram. While the factual claims are well-corroborated (AIADMK defectors "
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/palaniswami-urges-tvk-led-govt-to-protect-employment-of-workers-invaazhndhu-kattuvom-project/article71532027.ece",
-      "skip_reason": "This article is an opposition press statement — AIADMK's Palaniswami urging the TVK government to act — not a governance action by the TVK government itself. The cmvijay.ai tracker records what the go"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/cities/chennai/kasimedu-fishers-to-go-on-indefinite-strike-ask-govt-to-retrieve-captive-boats-in-andhra-pradesh/article71529897.ece",
-      "skip_reason": "This article reports a community grievance and a threatened indefinite strike by Kasimedu fishermen demanding the TN government retrieve 7 boats held in Andhra Pradesh since April 2026. There is no go"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-cm-vijay-urges-people-to-buy-khadi-village-products/article71531912.ece",
-      "skip_reason": "This article covers a Gandhi Jayanti statement by CM Mr. Vijay urging citizens to buy khadi and village products — a purely symbolic, ceremonial appeal issued ahead of October 2. There is no executive"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/madras-high-court-rejects-election-petition-filed-against-the-victory-of-dmk-former-minister-s-regupathy-from-thirumayam/article71529617.ece",
-      "skip_reason": "The article reports a Madras High Court ruling rejecting a TVK candidate's election petition against a DMK MLA's Thirumayam win. While factually well-corroborated across four independent sources (The "
-    },
-    {
-      "title": "",
-      "url": "https://theprint.in/india/exercise-caution-in-procuring-materials-for-prasadam-at-sabarimala-kerala-hc-to-tdb/3058708/",
-      "skip_reason": "This article concerns a Kerala High Court directive to the Travancore Devaswom Board (TDB) regarding prasadam quality standards at the Sabarimala temple in Kerala. It has no connection to Tamil Nadu g"
-    },
     {
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/villagers-boycott-gram-sabha-meeting-demanding-relocation-of-tasmac-outlet/article71537048.ece",
@@ -930,6 +840,31 @@
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/stalin-urges-cm-vijay-to-heed-womens-protest-over-rising-prices-deteriorating-law-and-order/article71648766.ece",
       "skip_reason": "This article is a social media statement by DMK president M.K. Stalin — the leader of the opposition — criticising CM Mr. Vijay's government over rising prices and law and order. It contains zero gove"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/aadhav-arjuna-calls-for-a-separate-flag-for-tamil-nadu/article71654104.ece",
+      "skip_reason": "This article reports a speech by Minister Aadhav Arjuna at a public event calling for a separate Tamil Nadu state flag — a political advocacy statement, not a governance action. No executive order, ca"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/bjp-leader-questions-vijays-silence-over-mekedatu-dam-issue/article71652851.ece",
+      "skip_reason": "This article is a BJP opposition press statement criticising CM Mr. Vijay for alleged 'silence' on the Mekedatu dam issue. However, the core factual premise of the article — that Mr. Vijay has been si"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tasmac-outlet-near-vaniyambadi-closed-after-prolonged-struggle/article71652707.ece",
+      "skip_reason": "This article reports the relocation of a single TASMAC outlet in Vijayapuram village (Tirupattur district) following a 14-year resident struggle. It is a hyper-local administrative action with no name"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-day-vijay-government-celebrates-november-1-dmk-says-july-18-is-the-right-date/article71653101.ece",
+      "skip_reason": "This article covers the Tamil Nadu Day celebration on November 1, 2026 — a symbolic/cultural event with CM Mr. Vijay's social media greetings and government-organised folk events. It does not report a"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/administrative-incompetence-characterises-tvks-reign-in-the-state-says-palaniswami/article71650235.ece",
+      "skip_reason": "This article reports an opposition speech by AIADMK general secretary Edappadi K. Palaniswami at a party rally in Maraimalai Nagar on October 31, 2026. The content is entirely political rhetoric — cri"
     }
   ],
   "recent_commits": [
@@ -995,10 +930,10 @@
     }
   ],
   "last_run": {
-    "ts": "2026-10-31T23:43:47.258110+05:30",
-    "candidates": 6,
-    "published": 2,
-    "escalated": 1,
+    "ts": "2026-11-02T00:17:11.364088+05:30",
+    "candidates": 5,
+    "published": 0,
+    "escalated": 0,
     "errors": 0
   }
 }
