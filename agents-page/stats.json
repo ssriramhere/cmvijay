@@ -1,17 +1,35 @@
 {
   "period": "Rolling 30 days",
-  "as_of": "2026-11-02T00:17:12.856415+05:30",
-  "candidates_surfaced": 183,
-  "auto_verified": 37,
-  "auto_verified_pct": 20,
-  "escalated": 23,
-  "escalated_pct": 13,
-  "autonomous_commits": 37,
+  "as_of": "2026-11-03T04:11:55.282432+05:30",
+  "candidates_surfaced": 180,
+  "auto_verified": 40,
+  "auto_verified_pct": 22,
+  "escalated": 21,
+  "escalated_pct": 12,
+  "autonomous_commits": 40,
   "operator_edited": 0,
-  "skipped": 123,
-  "cost_this_month_usd": 8.4,
-  "cost_per_published_entry_usd": 0.23,
+  "skipped": 119,
+  "cost_this_month_usd": 8.31,
+  "cost_per_published_entry_usd": 0.21,
   "autonomous_commits_list": [
+    {
+      "sha": "f9cb8cf",
+      "prefix": "agent",
+      "title": "🟢 Tamil Nadu reconstitutes State Board for Wildlife under Section 6(1), WPA 1972",
+      "timestamp": "2026-11-02T22:41:52Z"
+    },
+    {
+      "sha": "a2c4e3b",
+      "prefix": "agent",
+      "title": "🟢 CM Mr. Vijay inaugurates ₹23.25 cr Pudukottai bus stand; distributes ₹62.73 cr",
+      "timestamp": "2026-11-02T22:41:52Z"
+    },
+    {
+      "sha": "6030020",
+      "prefix": "agent",
+      "title": "🟢 CM constitutes high-level committee to review prison security after Theni jail",
+      "timestamp": "2026-11-02T22:41:51Z"
+    },
     {
       "sha": "10eddc6",
       "prefix": "agent",
@@ -113,42 +131,9 @@
       "prefix": "agent",
       "title": "🟢 CM Mr. Vijay inspects State Emergency Operations Centre ahead of Northeast mon",
       "timestamp": "2026-10-22T18:21:21Z"
-    },
-    {
-      "sha": "10baefd",
-      "prefix": "agent",
-      "title": "🟢 Government sanctions ₹71.01 crore to raise contingency funds at all police sta",
-      "timestamp": "2026-10-21T18:25:54Z"
-    },
-    {
-      "sha": "cb31e4c",
-      "prefix": "agent",
-      "title": "🟢 G.O.(Ms) No. 184 mandates repair of rainwater harvesting structures statewide",
-      "timestamp": "2026-10-21T18:25:54Z"
-    },
-    {
-      "sha": "f79ed7d",
-      "prefix": "agent",
-      "title": "🟢 CM Mr. Vijay announces ₹30 lakh each for two TN para table tennis bronze medal",
-      "timestamp": "2026-10-20T18:25:45Z"
     }
   ],
   "escalated_list": [
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/what-is-the-vettri-payanam-thittam-launched-by-tamil-nadu-cm-vijay-explained/article71535917.ece",
-      "reasoning": "The article is well-sourced (The Hindu, corroborated by The South First and multiple search results) and describes a genuine, significant governance action — the October 2, 2026 launch of the Vettri Payanam Thittam by CM Mr. Vijay, expanding free bus travel for women. It maps directly to manifesto p"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/dmk-chief-stalin-slams-hindi-signboards-in-thoothukudi-officials-responsible-suspended-says-minister/article71536305.ece",
-      "reasoning": "The article documents a real executive action — suspension of two Highways Department officials (Assistant Engineer and Assistant Divisional Engineer) on 2026-10-01 and replacement of a Hindi signboard in Thoothukudi — confirmed by The Hindu primary source and corroborated by Hindustan Times and DTN"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-cm-vijay-launches-vettri-payanam-scheme-expanding-free-bus-travel-for-women/article71536299.ece",
-      "reasoning": "The scheme launch is well-verified across multiple sources (The Hindu primary fetch, govtschemes.in, multiple social/news corroborations) and maps cleanly to manifesto promise g1_bus. The event date, beneficiary count (84.32 lakh), bus categories, and launch venue (Koyambedu) are all consistent. How"
-    },
     {
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/chief-minister-vijay-has-claimed-ownership-over-50-cents-of-poromboke-land-in-kodaikanal-alleges-election-petitioner-before-madras-hc/article71551690.ece",
@@ -248,64 +233,14 @@
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/theni-jailbreak-tamil-nadu-cm-vijay-orders-suspension-of-superintendent-in-charge-over-security-lapse/article71648506.ece",
       "reasoning": "The core event — CM Mr. Vijay ordering suspension and transfers following the Theni jailbreak of October 26, 2026 — is confirmed across The Hindu, Deccan Herald, and Rediff (PTI wire). However, there is a material name discrepancy between sources: The Hindu names the suspended officer as 'N. Nageswa"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tmjk-leader-alleges-confinement-in-room-at-collectorate-during-cms-visit-to-pudukottai/article71656954.ece",
+      "reasoning": "The CM's Pudukottai visit on November 2, 2026 is well-corroborated across multiple outlets (The Hindu, The Print, Times Now). K.M. Shariff's identity as a TVK-affiliated candidate from Pudukottai is confirmed via MyNeta. However, the core confinement allegation is single-source — only The Hindu has "
     }
   ],
   "skipped_list": [
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/villagers-boycott-gram-sabha-meeting-demanding-relocation-of-tasmac-outlet/article71537048.ece",
-      "skip_reason": "This article reports a village-level civic protest in Periyakuppam, Tirupattur, where residents boycotted a gram sabha meeting to demand relocation of a local TASMAC outlet. There is no executive orde"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/vijay-holds-roadshow-in-madurantakam-ahead-of-the-october-6-byelection/article71537438.ece",
-      "skip_reason": "This article describes CM Mr. Vijay conducting a campaign roadshow for TVK candidate Maragatham Kumaravel ahead of the Madurantakam byelection on October 6, 2026. It is purely electoral/political camp"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/tvk-formally-joins-india-bloc-set-to-join-demonstrations-against-bjp-and-ec/article71540550.ece",
-      "skip_reason": "This article covers a political alliance development — TVK's participation in an INDIA bloc meeting — rather than any governance action, executive order, cabinet decision, or policy launch by the Tami"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/a-corporate-mafia-government-has-been-ruling-the-state-alleges-stalin/article71541477.ece",
-      "skip_reason": "This article is a campaign speech by DMK president M.K. Stalin delivered at a Madurantakam by-election rally. Every claim in it — 'corporate mafia government', 'secret alliance with BJP', 'washing mac"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/palaniswami-slams-tvk-regime-for-claiming-to-be-corruption-free/article71541492.ece",
-      "skip_reason": "This article is a campaign speech by AIADMK opposition leader Edappadi K. Palaniswami at a bypoll rally in Madurantakam, directed at voters ahead of an October 6 by-election. It contains no governance"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/cities/chennai/chennais-northeast-monsoon-test-how-ready-is-the-city-to-tackle-flooding/article71539817.ece",
-      "skip_reason": "This is a long-form analytical/explainer piece by The Hindu asking whether the TVK government is prepared for the Northeast monsoon. It does not report a discrete governance action (executive order, c"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/tvk-ministers-slam-dmk-chief-stalin-over-alleged-body-shaming-of-dharapuram-bypoll-candidate/article71539648.ece",
-      "skip_reason": "This article documents a partisan political dispute during the Dharapuram bypoll campaign — CM Mr. Vijay's condemnation of opposition leader Stalin's remarks and TVK's ECI complaint. While the facts a"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/cities/Coimbatore/tvk-to-file-complaint-with-eci-against-mk-stalins-remarks-against-its-candidate-in-dharapuram-minister/article71539792.ece",
-      "skip_reason": "This article covers TVK filing an ECI complaint against M.K. Stalin's campaign remarks in the Dharapuram by-election, and includes a speculative political allegation about DMK contesting 2029 election"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/minority-tvk-government-has-forced-byelection-for-cms-selfish-gain-dmk-president-stalin/article71538122.ece",
-      "skip_reason": "This article is a verbatim record of an opposition campaign speech by DMK president M.K. Stalin at a Dharapuram bypoll rally. It contains no governance action, executive order, cabinet decision, or po"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/cpim-urges-tamil-nadu-government-to-boycott-high-level-committee-on-demographic-changes/article71537726.ece",
-      "skip_reason": "This article reports a CPI(M) party statement urging the Tamil Nadu government to boycott a Union MHA committee — it is not a governance action by the Tamil Nadu government itself. No executive order,"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/a-fierce-battle-on-in-dharapuram-among-three-leading-contenders/article71538100.ece",
-      "skip_reason": "This article is pre-election campaign coverage with zero governance content. It describes party leaders conducting roadshows and CM Mr. Vijay planning a campaign visit to Dharapuram ahead of the Octob"
-    },
     {
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/voters-will-teach-tvk-candidates-a-befitting-lesson-eps/article71543470.ece",
@@ -865,9 +800,62 @@
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/administrative-incompetence-characterises-tvks-reign-in-the-state-says-palaniswami/article71650235.ece",
       "skip_reason": "This article reports an opposition speech by AIADMK general secretary Edappadi K. Palaniswami at a party rally in Maraimalai Nagar on October 31, 2026. The content is entirely political rhetoric — cri"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/murasu-cyclone-live-updates-on-november-2-2026-tamil-nadu-telangana-andhra-pradesh-odisha/article71654226.ece",
+      "skip_reason": "The candidate article is a multi-state live-blog covering Cyclone Murasu's landfall in Andhra Pradesh, with CM Naidu (not CM Mr. Vijay) as the primary actor. The article's headline and summary are squ"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/police-must-serve-the-state-which-endures-and-not-the-party-in-government-which-changes-madras-high-court/article71657148.ece",
+      "skip_reason": "This is a Madras High Court ruling on an anticipatory bail application for a DMK councillor who abused CM Mr. Vijay — it is primarily a judicial observation about police conduct and free speech, not a"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/citing-gst-revenue-decline-stalin-says-tamil-nadu-is-doomed-under-tvk-government/article71656436.ece",
+      "skip_reason": "This article reports an opposition social media statement by DMK president M.K. Stalin criticising the TVK government — it is political factional commentary, not a governance action. The underlying fa"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/cyclone-murasu-full-list-of-flights-cancelled-and-affected/article71655519.ece",
+      "skip_reason": "This article reports flight cancellations at Chennai, Visakhapatnam, and Vijayawada airports due to Cyclone Murasu — a natural disaster logistics story. While the cyclone and cancellations are factual"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/sc-issues-notice-to-tn-on-bail-plea-of-accused-in-palani-math-land-fraud-case/article71655771.ece",
+      "skip_reason": "This article reports a Supreme Court procedural step — issuing notice to the Tamil Nadu government on an accused's bail plea in the Palani math land fraud case. While the case involves CB-CID (a state"
+    },
+    {
+      "title": "",
+      "url": "https://theprint.in/india/jolt-to-aap-as-3-rebel-leaders-join-bjp-ahead-of-2027-punjab-polls/3088022/",
+      "skip_reason": "This article covers AAP leaders defecting to BJP ahead of the 2027 Punjab state elections — a national/Punjab political development with zero connection to Tamil Nadu governance or CM Mr. Vijay (TVK)."
+    },
+    {
+      "title": "",
+      "url": "https://theprint.in/india/suspended-aap-mla-kunwar-vijay-pratap-resigns-as-member-of-punjab-assembly/3087947/",
+      "skip_reason": "This article concerns the resignation of a Punjab Vidhan Sabha MLA (Kunwar Vijay Pratap Singh, AAP) from the Punjab state legislature — a completely different state and a completely different politica"
     }
   ],
   "recent_commits": [
+    {
+      "sha": "f9cb8cf",
+      "prefix": "agent",
+      "title": "🟢 Tamil Nadu reconstitutes State Board for Wildlife under Section 6(1), WPA 1972",
+      "timestamp": "2026-11-02T22:41:52Z"
+    },
+    {
+      "sha": "a2c4e3b",
+      "prefix": "agent",
+      "title": "🟢 CM Mr. Vijay inaugurates ₹23.25 cr Pudukottai bus stand; distributes ₹62.73 cr",
+      "timestamp": "2026-11-02T22:41:52Z"
+    },
+    {
+      "sha": "6030020",
+      "prefix": "agent",
+      "title": "🟢 CM constitutes high-level committee to review prison security after Theni jail",
+      "timestamp": "2026-11-02T22:41:51Z"
+    },
     {
       "sha": "10eddc6",
       "prefix": "agent",
@@ -909,31 +897,13 @@
       "prefix": "agent",
       "title": "🟢 Cabinet approves Social Justice Survey Commission — retired judge to head pane",
       "timestamp": "2026-10-29T19:31:23Z"
-    },
-    {
-      "sha": "0f508f8",
-      "prefix": "agent",
-      "title": "🟢 CM Mr. Vijay distributes ₹21.34 cr to 1,06,704 CM Trophy winners; launches wat",
-      "timestamp": "2026-10-29T19:31:22Z"
-    },
-    {
-      "sha": "708ed5b",
-      "prefix": "agent",
-      "title": "🟢 Tamil Nadu revises auto-rickshaw fares — ₹50 minimum, first change in 13 years",
-      "timestamp": "2026-10-28T19:23:57Z"
-    },
-    {
-      "sha": "f406623",
-      "prefix": "agent",
-      "title": "🟢 CM Mr. Vijay felicitates 12 WorldSkills 2026 competitors from Tamil Nadu with",
-      "timestamp": "2026-10-27T19:15:39Z"
     }
   ],
   "last_run": {
-    "ts": "2026-11-02T00:17:11.364088+05:30",
-    "candidates": 5,
-    "published": 0,
-    "escalated": 0,
+    "ts": "2026-11-03T04:11:52.082342+05:30",
+    "candidates": 11,
+    "published": 3,
+    "escalated": 1,
     "errors": 0
   }
 }

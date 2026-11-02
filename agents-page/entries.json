@@ -1,5 +1,29 @@
 [
   {
+    "title": "🟢 CM constitutes high-level committee to review prison security after Theni jailbreak",
+    "date": "November 2, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 826,
+        "output_tokens": 669,
+        "cache_read_tokens": 0,
+        "cache_creation_tokens": 1373
+      }
+    }
+  },
+  {
+    "title": "🟢 CM Mr. Vijay inaugurates ₹23.25 cr Pudukottai bus stand; distributes ₹62.73 cr welfare assistance",
+    "date": "November 2, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 846,
+        "output_tokens": 660,
+        "cache_read_tokens": 1373,
+        "cache_creation_tokens": 0
+      }
+    }
+  },
+  {
     "title": "🟢 TASMAC adds ₹10 environment cess to all liquor MRPs; ₹10 refund on bottle return",
     "date": "November 1, 2026",
     "reasoning": {
@@ -90,6 +114,18 @@
       "drafter_usage": {
         "input_tokens": 771,
         "output_tokens": 654,
+        "cache_read_tokens": 1373,
+        "cache_creation_tokens": 0
+      }
+    }
+  },
+  {
+    "title": "🟢 Tamil Nadu reconstitutes State Board for Wildlife under Section 6(1), WPA 1972",
+    "date": "October 28, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 924,
+        "output_tokens": 813,
         "cache_read_tokens": 1373,
         "cache_creation_tokens": 0
       }
