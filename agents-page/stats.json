@@ -1,17 +1,35 @@
 {
   "period": "Rolling 30 days",
-  "as_of": "2026-11-03T04:11:55.282432+05:30",
-  "candidates_surfaced": 180,
-  "auto_verified": 40,
-  "auto_verified_pct": 22,
-  "escalated": 21,
+  "as_of": "2026-11-04T02:03:26.479345+05:30",
+  "candidates_surfaced": 186,
+  "auto_verified": 43,
+  "auto_verified_pct": 23,
+  "escalated": 23,
   "escalated_pct": 12,
-  "autonomous_commits": 40,
+  "autonomous_commits": 43,
   "operator_edited": 0,
-  "skipped": 119,
-  "cost_this_month_usd": 8.31,
-  "cost_per_published_entry_usd": 0.21,
+  "skipped": 120,
+  "cost_this_month_usd": 8.62,
+  "cost_per_published_entry_usd": 0.2,
   "autonomous_commits_list": [
+    {
+      "sha": "7712300",
+      "prefix": "agent",
+      "title": "🟢 TASMAC to install Reverse Vending Machines at all 4,048 outlets; ₹10/bottle re",
+      "timestamp": "2026-11-03T20:32:57Z"
+    },
+    {
+      "sha": "6f44407",
+      "prefix": "agent",
+      "title": "🟢 CM Mr. Vijay links 9,000 Erode SHGs to ₹1,110 cr bank credit under state-wide",
+      "timestamp": "2026-11-03T20:32:56Z"
+    },
+    {
+      "sha": "6326dbe",
+      "prefix": "agent",
+      "title": "🟢 Tamil Nadu releases three-year BESS Policy — 2,500 MW/10,000 MWh procurement t",
+      "timestamp": "2026-11-03T20:32:56Z"
+    },
     {
       "sha": "f9cb8cf",
       "prefix": "agent",
@@ -113,24 +131,6 @@
       "prefix": "agent",
       "title": "🟢 CM Mr. Vijay distributes appointment orders to 69 TNPSC-selected Agriculture D",
       "timestamp": "2026-10-23T18:09:39Z"
-    },
-    {
-      "sha": "32e6d21",
-      "prefix": "agent",
-      "title": "🟢 TN gazette fixes car purchase ceiling: ₹26 lakh for ministers, ₹15 lakh for ML",
-      "timestamp": "2026-10-23T18:09:38Z"
-    },
-    {
-      "sha": "f1260e7",
-      "prefix": "agent",
-      "title": "📅 TN extends Special Officers' tenure in rural local bodies until April 2027",
-      "timestamp": "2026-10-22T18:21:21Z"
-    },
-    {
-      "sha": "0ffa5d9",
-      "prefix": "agent",
-      "title": "🟢 CM Mr. Vijay inspects State Emergency Operations Centre ahead of Northeast mon",
-      "timestamp": "2026-10-22T18:21:21Z"
     }
   ],
   "escalated_list": [
@@ -238,39 +238,19 @@
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/tmjk-leader-alleges-confinement-in-room-at-collectorate-during-cms-visit-to-pudukottai/article71656954.ece",
       "reasoning": "The CM's Pudukottai visit on November 2, 2026 is well-corroborated across multiple outlets (The Hindu, The Print, Times Now). K.M. Shariff's identity as a TVK-affiliated candidate from Pudukottai is confirmed via MyNeta. However, the core confinement allegation is single-source — only The Hindu has "
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tn-govt-permits-six-shows-a-day-for-new-tamil-films-for-a-week-from-release-date/article71660886.ece",
+      "reasoning": "The article describes a genuine executive regulatory action — an amendment to the Tamil Nadu Cinemas (Regulation) Rules, 1957 — directing theatres to screen up to six shows per day for newly released Tamil films for one week from release, up from the prior five-show limit established in May 2026. Th"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/queues-and-chaos-at-tasmac-outlets-as-10-price-hike-bottle-buyback-scheme-trigger-confusion/article71657895.ece",
+      "reasoning": "The core facts are well-verified across multiple whitelisted sources (The Hindu, New Indian Express, NDTV, The Federal): TASMAC added a ₹10 environment cess to all liquor MRPs from November 1, 2026, announced by Prohibition & Excise Minister K. Vignesh. The implementation chaos (shop closures on Nov"
     }
   ],
   "skipped_list": [
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/voters-will-teach-tvk-candidates-a-befitting-lesson-eps/article71543470.ece",
-      "skip_reason": "This article is a political statement by AIADMK general secretary Edappadi K. Palaniswami (EPS) predicting that voters will punish TVK candidates in the Dharapuram (SC) and Madurantakam (SC) by-electi"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/ruling-tvk-is-obsessed-with-purchasing-mlas-mk-stalin-tells-voters/article71543295.ece",
-      "skip_reason": "This article covers M.K. Stalin (DMK opposition leader) making campaign speeches accusing CM Mr. Vijay's TVK of 'purchasing' MLAs ahead of the Madurantakam and Dharapuram byelections. It is a pure opp"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/bjp-president-nagenthran-condemns-intimidation-of-journalist-by-tvk-cadres/article71543267.ece",
-      "skip_reason": "This article reports an opposition BJP leader's social media condemnation of alleged misbehaviour by TVK party cadres — not a government action, executive order, or policy development. The incident in"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/madurantakam-by-election-will-the-aiadmk-bastion-fall-to-tvks-growing-popularity/article71540871.ece",
-      "skip_reason": "This article is a pre-election ground report about the Madurantakam by-election — analysing voter sentiment, turncoat politics, and party rivalry ahead of the October 6, 2026 poll. It contains no gove"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/probe-into-tvk-mla-driving-government-bus-without-valid-licence-during-launch-of-scheme/article71540822.ece",
-      "skip_reason": "This article covers a TVK MLA (E. Thendral Kumar) driving a government bus without a valid heavy vehicle licence during the Vellore leg of the Vettri Payanam scheme launch, and the Transport Departmen"
-    },
-    {
-      "title": "",
-      "url": "https://theprint.in/india/stalin-questions-cm-vijays-silence-on-nation-wide-demand-for-cecs-resignation/3061291/",
-      "skip_reason": "This article is a political opposition speech by DMK president M K Stalin at an election rally, criticising CM Mr. Vijay's silence on the CEC controversy. It contains no governance action, executive o"
-    },
     {
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/madurantakam-dharapuram-go-to-polls-for-second-time-in-six-months/article71548619.ece",
@@ -835,9 +815,62 @@
       "title": "",
       "url": "https://theprint.in/india/suspended-aap-mla-kunwar-vijay-pratap-resigns-as-member-of-punjab-assembly/3087947/",
       "skip_reason": "This article concerns the resignation of a Punjab Vidhan Sabha MLA (Kunwar Vijay Pratap Singh, AAP) from the Punjab state legislature — a completely different state and a completely different politica"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/palaniswami-criticises-tvk-regime-for-being-lethargic-in-handling-onion-procurement/article71662128.ece",
+      "skip_reason": "This article is an opposition political statement — AIADMK general secretary Edappadi K. Palaniswami criticising the TVK government via a social media post. It contains no governance action, no execut"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tasmac-staff-struggle-with-bottle-buyback-scheme-despite-returning-to-work/article71662377.ece",
+      "skip_reason": "This article is an operational/implementation-difficulty report — TASMAC salesmen complaining about POS glitches, QR-code stickering burdens, and the mechanics of the bottle return queue. While the un"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/three-including-drivers-injured-after-omnibus-hits-lorry-on-chennai-bengaluru-highway-in-vellore/article71659619.ece",
+      "skip_reason": "This article reports a routine road traffic accident on NH 48 near Vellore in which an omnibus collided with a lorry carrying empty TASMAC bottles, injuring three people. There is no governance action"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/pushpavanam-kuppusamy-appointed-chairman-of-tamil-nadu-eyal-isai-nataka-mandram-calls-on-cm-vijay/article71550988.ece",
+      "skip_reason": "This article describes a courtesy call by Pushpavanam Kuppusamy on CM Mr. Vijay on October 6, 2026 — nearly a month before the article's publication date of November 3, 2026. The appointment itself is"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/bjp-questions-minister-rajmohan-claim-of-bribery-for-tamil-nadu-eyal-isai-nataka-mandram-chairman-post/article71660171.ece",
+      "skip_reason": "This article is a BJP opposition press statement questioning why Minister Rajmohan did not file a formal complaint after disclosing a ₹5 crore bribe offer. It contains no governance action — no execut"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/madras-high-court-permits-dmdk-leader-vijaya-prabhakaran-to-withdraw-election-petition-against-manickam-tagore/article71660240.ece",
+      "skip_reason": "This court ruling concerns a DMDK opposition leader withdrawing a 2024 Lok Sabha election petition against a Congress MP (Manickam Tagore, Virudhunagar). CM Mr. Vijay's TVK government and the Tamil Na"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/cities/Coimbatore/tasmac-workers-shut-shops-in-namakkal-salem/article71656053.ece",
+      "skip_reason": "This article reports a localised labour action — TASMAC workers shutting outlets in Namakkal and Salem on 2026-11-02 to protest a new Environmental and Social Welfare Cess — along with two customer-on"
     }
   ],
   "recent_commits": [
+    {
+      "sha": "7712300",
+      "prefix": "agent",
+      "title": "🟢 TASMAC to install Reverse Vending Machines at all 4,048 outlets; ₹10/bottle re",
+      "timestamp": "2026-11-03T20:32:57Z"
+    },
+    {
+      "sha": "6f44407",
+      "prefix": "agent",
+      "title": "🟢 CM Mr. Vijay links 9,000 Erode SHGs to ₹1,110 cr bank credit under state-wide",
+      "timestamp": "2026-11-03T20:32:56Z"
+    },
+    {
+      "sha": "6326dbe",
+      "prefix": "agent",
+      "title": "🟢 Tamil Nadu releases three-year BESS Policy — 2,500 MW/10,000 MWh procurement t",
+      "timestamp": "2026-11-03T20:32:56Z"
+    },
     {
       "sha": "f9cb8cf",
       "prefix": "agent",
@@ -879,31 +912,13 @@
       "prefix": "agent",
       "title": "🟢 Tamil Nadu sanctions 680 road projects under CMIUDM; Gateway of Chennai work t",
       "timestamp": "2026-10-30T19:05:45Z"
-    },
-    {
-      "sha": "9dbbb5c",
-      "prefix": "agent",
-      "title": "🟢 TASMAC adds ₹10 environment cess to all liquor MRPs; ₹10 refund on bottle retu",
-      "timestamp": "2026-10-30T19:05:45Z"
-    },
-    {
-      "sha": "26388c1",
-      "prefix": "agent",
-      "title": "🟢 CM Mr. Vijay inaugurates electrical labs at 30 ITIs; MoU signed for 40 more",
-      "timestamp": "2026-10-29T19:31:23Z"
-    },
-    {
-      "sha": "af7bf70",
-      "prefix": "agent",
-      "title": "🟢 Cabinet approves Social Justice Survey Commission — retired judge to head pane",
-      "timestamp": "2026-10-29T19:31:23Z"
     }
   ],
   "last_run": {
-    "ts": "2026-11-03T04:11:52.082342+05:30",
-    "candidates": 11,
+    "ts": "2026-11-04T02:02:57.389270+05:30",
+    "candidates": 12,
     "published": 3,
-    "escalated": 1,
+    "escalated": 2,
     "errors": 0
   }
 }
