@@ -1,17 +1,29 @@
 {
   "period": "Rolling 30 days",
-  "as_of": "2026-11-04T02:03:26.479345+05:30",
-  "candidates_surfaced": 186,
-  "auto_verified": 43,
+  "as_of": "2026-11-05T02:15:40.058492+05:30",
+  "candidates_surfaced": 193,
+  "auto_verified": 45,
   "auto_verified_pct": 23,
-  "escalated": 23,
-  "escalated_pct": 12,
-  "autonomous_commits": 43,
+  "escalated": 26,
+  "escalated_pct": 13,
+  "autonomous_commits": 45,
   "operator_edited": 0,
-  "skipped": 120,
-  "cost_this_month_usd": 8.62,
+  "skipped": 122,
+  "cost_this_month_usd": 9.02,
   "cost_per_published_entry_usd": 0.2,
   "autonomous_commits_list": [
+    {
+      "sha": "3b4b0ff",
+      "prefix": "agent",
+      "title": "🟢 TASMAC bottle buyback scheme takes effect — ₹10 cess, worker strike, ~245 supe",
+      "timestamp": "2026-11-04T20:45:36Z"
+    },
+    {
+      "sha": "e8a5a0b",
+      "prefix": "agent",
+      "title": "🟨 CM Mr. Vijay urges Centre's task force to scrap NEET, back Class XII admission",
+      "timestamp": "2026-11-04T20:45:36Z"
+    },
     {
       "sha": "7712300",
       "prefix": "agent",
@@ -119,18 +131,6 @@
       "prefix": "agent",
       "title": "🟢 CM Mr. Vijay orders Deepavali bonus and ex gratia for 2.60 lakh PSU workers —",
       "timestamp": "2026-10-27T19:15:39Z"
-    },
-    {
-      "sha": "832b55c",
-      "prefix": "agent",
-      "title": "🟢 Tamil Nadu cuts ATF VAT from 29% to 16% at Chennai airport, seeks airline expa",
-      "timestamp": "2026-10-26T19:45:02Z"
-    },
-    {
-      "sha": "9b3e050",
-      "prefix": "agent",
-      "title": "🟢 CM Mr. Vijay distributes appointment orders to 69 TNPSC-selected Agriculture D",
-      "timestamp": "2026-10-23T18:09:39Z"
     }
   ],
   "escalated_list": [
@@ -248,6 +248,21 @@
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/queues-and-chaos-at-tasmac-outlets-as-10-price-hike-bottle-buyback-scheme-trigger-confusion/article71657895.ece",
       "reasoning": "The core facts are well-verified across multiple whitelisted sources (The Hindu, New Indian Express, NDTV, The Federal): TASMAC added a ₹10 environment cess to all liquor MRPs from November 1, 2026, announced by Prohibition & Excise Minister K. Vignesh. The implementation chaos (shop closures on Nov"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/cm-vijay-virtually-inaugurates-completed-projects-across-tamil-nadu/article71665117.ece",
+      "reasoning": "The article is well-sourced and corroborated by at least two independent outlets (The Hindu and DTNext), with all key figures — ₹1,003.97 crore for 643 TNHB tenements, ₹17.56 crore for 125 Karur units, ₹709.5/tonne sugarcane incentive disbursement of ₹603.33 crore to ~85,000 farmers, and two TANSIDC"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/why-are-tasmac-staff-opposing-the-liquor-bottle-buyback-scheme-in-tamil-nadu-explained/article71663992.ece",
+      "reasoning": "The core facts are well-corroborated across two credible outlets (The Hindu and New Indian Express), with a named minister (K. Vignesh) on record. The scheme launch itself (₹10 environment cess embedded in MRP from November 1, 2026, with ₹10 refund on bottle return) is a genuine governance action. H"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-cm-vijay-urges-pm-modi-to-take-steps-to-set-up-supreme-court-bench-in-chennai/article71664956.ece",
+      "reasoning": "The event is well-corroborated across five independent outlets (The Hindu, NIE, The Print, NDTV, ANI) and all key facts — the letter, the 1980 origin of the demand, the 2007 Full Court resolution, Article 130 citation — are consistent across sources. However, the action is a formal letter of advocac"
     }
   ],
   "skipped_list": [
@@ -850,9 +865,31 @@
       "title": "",
       "url": "https://www.thehindu.com/news/cities/Coimbatore/tasmac-workers-shut-shops-in-namakkal-salem/article71656053.ece",
       "skip_reason": "This article reports a localised labour action — TASMAC workers shutting outlets in Namakkal and Salem on 2026-11-02 to protest a new Environmental and Social Welfare Cess — along with two customer-on"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/stalin-dubs-tvk-government-a-circus-controlled-by-corporate-interests/article71666669.ece",
+      "skip_reason": "This article reports a speech by DMK president M.K. Stalin at a Dravidar Kazhagam felicitation ceremony in Coimbatore, in which he criticises the TVK government using rhetorical language ('circus', 'c"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-cm-vijay-felicitates-toppers-of-classes-10-12/article71665357.ece",
+      "skip_reason": "This is a TVK party felicitation event, not a government executive action. Mr. Vijay himself explicitly stated he attended 'not in his capacity as the Chief Minister but as their elder brother.' The e"
     }
   ],
   "recent_commits": [
+    {
+      "sha": "3b4b0ff",
+      "prefix": "agent",
+      "title": "🟢 TASMAC bottle buyback scheme takes effect — ₹10 cess, worker strike, ~245 supe",
+      "timestamp": "2026-11-04T20:45:36Z"
+    },
+    {
+      "sha": "e8a5a0b",
+      "prefix": "agent",
+      "title": "🟨 CM Mr. Vijay urges Centre's task force to scrap NEET, back Class XII admission",
+      "timestamp": "2026-11-04T20:45:36Z"
+    },
     {
       "sha": "7712300",
       "prefix": "agent",
@@ -900,25 +937,13 @@
       "prefix": "agent",
       "title": "🟢 Cabinet approves Social Justice Survey Commission — retired judge to lead, rep",
       "timestamp": "2026-10-31T18:13:46Z"
-    },
-    {
-      "sha": "9d70a99",
-      "prefix": "agent",
-      "title": "🟢 Govt. sanctions five Model Registration Hubs — ₹7.84 cr, jurisdiction-free pro",
-      "timestamp": "2026-10-30T19:05:45Z"
-    },
-    {
-      "sha": "3676728",
-      "prefix": "agent",
-      "title": "🟢 Tamil Nadu sanctions 680 road projects under CMIUDM; Gateway of Chennai work t",
-      "timestamp": "2026-10-30T19:05:45Z"
     }
   ],
   "last_run": {
-    "ts": "2026-11-04T02:02:57.389270+05:30",
-    "candidates": 12,
-    "published": 3,
-    "escalated": 2,
+    "ts": "2026-11-05T02:15:36.555102+05:30",
+    "candidates": 7,
+    "published": 2,
+    "escalated": 3,
     "errors": 0
   }
 }

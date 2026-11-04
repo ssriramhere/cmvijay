@@ -1,5 +1,17 @@
 [
   {
+    "title": "🟨 CM Mr. Vijay urges Centre's task force to scrap NEET, back Class XII admissions",
+    "date": "November 4, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 726,
+        "output_tokens": 681,
+        "cache_read_tokens": 1373,
+        "cache_creation_tokens": 0
+      }
+    }
+  },
+  {
     "title": "🟢 Tamil Nadu releases three-year BESS Policy — 2,500 MW/10,000 MWh procurement target set",
     "date": "November 3, 2026",
     "reasoning": {
@@ -68,6 +80,18 @@
         "output_tokens": 725,
         "cache_read_tokens": 0,
         "cache_creation_tokens": 1373
+      }
+    }
+  },
+  {
+    "title": "🟢 TASMAC bottle buyback scheme takes effect — ₹10 cess, worker strike, ~245 supervisors suspended",
+    "date": "November 1, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 799,
+        "output_tokens": 709,
+        "cache_read_tokens": 1373,
+        "cache_creation_tokens": 0
       }
     }
   },
