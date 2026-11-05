@@ -1,17 +1,23 @@
 {
   "period": "Rolling 30 days",
-  "as_of": "2026-11-05T02:15:40.058492+05:30",
-  "candidates_surfaced": 193,
-  "auto_verified": 45,
+  "as_of": "2026-11-06T02:30:14.407297+05:30",
+  "candidates_surfaced": 192,
+  "auto_verified": 44,
   "auto_verified_pct": 23,
-  "escalated": 26,
-  "escalated_pct": 13,
-  "autonomous_commits": 45,
+  "escalated": 27,
+  "escalated_pct": 14,
+  "autonomous_commits": 44,
   "operator_edited": 0,
-  "skipped": 122,
+  "skipped": 121,
   "cost_this_month_usd": 9.02,
   "cost_per_published_entry_usd": 0.2,
   "autonomous_commits_list": [
+    {
+      "sha": "7b9ed06",
+      "prefix": "agent",
+      "title": "🟢 CM Mr. Vijay begins using renovated 'Pamani Illam' bungalow as camp office",
+      "timestamp": "2026-11-05T21:00:10Z"
+    },
     {
       "sha": "3b4b0ff",
       "prefix": "agent",
@@ -124,12 +130,6 @@
       "sha": "9d21999",
       "prefix": "agent",
       "title": "🟢 TN extends inter-state rough stone transport ban by three months; Puducherry e",
-      "timestamp": "2026-10-27T19:15:39Z"
-    },
-    {
-      "sha": "5f7c660",
-      "prefix": "agent",
-      "title": "🟢 CM Mr. Vijay orders Deepavali bonus and ex gratia for 2.60 lakh PSU workers —",
       "timestamp": "2026-10-27T19:15:39Z"
     }
   ],
@@ -263,39 +263,14 @@
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-cm-vijay-urges-pm-modi-to-take-steps-to-set-up-supreme-court-bench-in-chennai/article71664956.ece",
       "reasoning": "The event is well-corroborated across five independent outlets (The Hindu, NIE, The Print, NDTV, ANI) and all key facts — the letter, the 1980 origin of the demand, the 2007 Full Court resolution, Article 130 citation — are consistent across sources. However, the action is a formal letter of advocac"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/death-of-chennai-fishermen-cm-vijay-announces-compensation/article71670922.ece",
+      "reasoning": "The core facts — CM Mr. Vijay announcing ₹7 lakh solatium per family for Chennai fishermen who died after their boat suffered engine failure during Cyclone Murasu, with bodies washing ashore on the AP coast — are corroborated by at least three independent outlets (The Hindu, Mid-Day via PTI, Siasat)"
     }
   ],
   "skipped_list": [
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/madurantakam-dharapuram-go-to-polls-for-second-time-in-six-months/article71548619.ece",
-      "skip_reason": "This article covers the logistics of the Madurantakam and Dharapuram by-elections (Oct 6, 2026) — voter counts, polling station details, candidate lists, and a routine public holiday declaration. Whil"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/cities/Tiruchirapalli/tvk-mla-causes-flutter-upset-at-congress-mp-getting-to-light-the-lamp-ahead-of-him-at-community-baby-shower-ceremony-in-tiruchi/article71547156.ece",
-      "skip_reason": "This article describes a protocol dispute at a community baby shower ceremony — a TVK MLA objected to a Congress MP lighting a lamp ahead of him. There is no governance action, executive order, policy"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/dhinakaran-slams-tvk-led-govt-for-turning-a-blind-eye-to-inflation/article71547492.ece",
-      "skip_reason": "This article reports an opposition politician's (T.T.V. Dhinakaran, AMMK) social media post criticising the TVK-led government over inflation and paddy coverage. There is no governance action, executi"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/madras-high-court-permits-dmk-to-file-1-crore-defamation-suit-against-ministers-aadhav-arjuna-nirmal-kumar/article71546415.ece",
-      "skip_reason": "This article covers a civil defamation suit filed by the DMK (the opposition party, now out of power) against two TVK ministers — Aadhav Arjuna and C.T.R. Nirmal Kumar — over statements made about the"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/madras-high-court-begins-hearing-tamil-nadu-cm-vijays-plea-to-reject-election-petitions/article71546469.ece",
-      "skip_reason": "This article reports a Madras High Court procedural hearing on applications to reject election petitions challenging CM Mr. Vijay's own electoral victory in Perambur and Tiruchi East. While confirmed "
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/campaigning-for-byelection-ends-in-madurantakam-and-dharapuram/article71543705.ece",
-      "skip_reason": "This article covers the end of campaigning for the Madurantakam and Dharapuram byelections — a political/electoral event, not a governance action. All factual claims in the summary are verified as acc"
-    },
     {
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/dmk-seeks-eci-action-against-tvk-dharapuram-candidate-over-alleged-poll-expenditure-violation/article71551114.ece",
@@ -875,9 +850,40 @@
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-cm-vijay-felicitates-toppers-of-classes-10-12/article71665357.ece",
       "skip_reason": "This is a TVK party felicitation event, not a government executive action. Mr. Vijay himself explicitly stated he attended 'not in his capacity as the Chief Minister but as their elder brother.' The e"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/opposition-trying-to-destabilise-tvk-led-government-says-manickam-tagore/article71670045.ece",
+      "skip_reason": "This article is a political statement by TNCC president Manickam Tagore alleging that opposition parties (DMK, AIADMK, BJP) are attempting to poach TVK MLAs and destabilise the government. It contains"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/dhotis-sarees-procured-from-cooperative-societies-in-tn-for-pongal-says-textiles-minister/article71670150.ece",
+      "skip_reason": "This article is a ministerial press statement by Textiles Minister M. Vijay Balaji reaffirming existing procurement policy — that Pongal dhotis/sarees will be sourced from TN cooperative societies, no"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/cities/chennai/anbumani-alleges-massive-scam-in-pallikaranai-marshland-projects/article71670663.ece",
+      "skip_reason": "This article records an opposition press statement by PMK president Dr. Anbumani Ramadoss alleging a 'massive scam' and urging CM Mr. Vijay to intervene. There is no governance action, executive order"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/cities/chennai/fisherfolk-seek-transparency-over-proposed-tamil-nadu-secretariat-complex-at-pattinapakkam/article71669629.ece",
+      "skip_reason": "This article reports a civil society petition — the Mylai Area All Fishing Village Panchayat Sabha submitting a letter to CM Mr. Vijay requesting withdrawal of G.O. No. 564 and land reallocation for f"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/nainar-nagenthran-rejects-tn-ministers-charge-of-aiadmk-bjp-conspiracy-to-bring-down-tvk-government/article71669007.ece",
+      "skip_reason": "This article is pure political counter-messaging: BJP State president Nainar Nagenthran rejects a minister's allegation of an AIADMK-BJP conspiracy via a social media post. There is no governance acti"
     }
   ],
   "recent_commits": [
+    {
+      "sha": "7b9ed06",
+      "prefix": "agent",
+      "title": "🟢 CM Mr. Vijay begins using renovated 'Pamani Illam' bungalow as camp office",
+      "timestamp": "2026-11-05T21:00:10Z"
+    },
     {
       "sha": "3b4b0ff",
       "prefix": "agent",
@@ -931,19 +937,13 @@
       "prefix": "agent",
       "title": "🟢 Tamil Nadu DA raised 60% to 63% — 16 lakh employees and pensioners benefit",
       "timestamp": "2026-10-31T18:13:46Z"
-    },
-    {
-      "sha": "1a9e9b0",
-      "prefix": "agent",
-      "title": "🟢 Cabinet approves Social Justice Survey Commission — retired judge to lead, rep",
-      "timestamp": "2026-10-31T18:13:46Z"
     }
   ],
   "last_run": {
-    "ts": "2026-11-05T02:15:36.555102+05:30",
+    "ts": "2026-11-06T02:30:10.967875+05:30",
     "candidates": 7,
-    "published": 2,
-    "escalated": 3,
+    "published": 1,
+    "escalated": 1,
     "errors": 0
   }
 }
