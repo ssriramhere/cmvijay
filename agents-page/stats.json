@@ -1,16 +1,16 @@
 {
   "period": "Rolling 30 days",
-  "as_of": "2026-11-06T02:30:14.407297+05:30",
-  "candidates_surfaced": 192,
+  "as_of": "2026-11-07T01:51:02.067558+05:30",
+  "candidates_surfaced": 193,
   "auto_verified": 44,
   "auto_verified_pct": 23,
-  "escalated": 27,
-  "escalated_pct": 14,
+  "escalated": 28,
+  "escalated_pct": 15,
   "autonomous_commits": 44,
   "operator_edited": 0,
   "skipped": 121,
-  "cost_this_month_usd": 9.02,
-  "cost_per_published_entry_usd": 0.2,
+  "cost_this_month_usd": 9.19,
+  "cost_per_published_entry_usd": 0.21,
   "autonomous_commits_list": [
     {
       "sha": "7b9ed06",
@@ -136,21 +136,6 @@
   "escalated_list": [
     {
       "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/chief-minister-vijay-has-claimed-ownership-over-50-cents-of-poromboke-land-in-kodaikanal-alleges-election-petitioner-before-madras-hc/article71551690.ece",
-      "reasoning": "The article is corroborated by two whitelisted sources (The Hindu and Times of India) and covers a genuine, active Madras HC court proceeding before Justice V. Lakshminarayanan on Oct 6, 2026. However, the core claims are allegations made by a petitioner — not established facts — and CM Mr. Vijay's "
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/tn-allocated-812-crore-for-annan-seer-scheme/article71548872.ece",
-      "reasoning": "The ₹812 crore GO is well-corroborated across three independent sources (The Hindu, DTNext, India Today) and maps cleanly to manifesto promise g1_marriage. However, the implemented income eligibility ceiling (₹2.5 lakh per the GO and confirmed by two additional sources) is materially more restrictiv"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/direct-dvac-to-register-fir-against-finance-minister-marie-wilson-insists-pil-plea-before-madras-high-court/article71550424.ece",
-      "reasoning": "The article is well-sourced (The Hindu + DT Next independently corroborate all key facts: petitioner name, Assembly date of Aug 24 2026, DVAC complaint date of Aug 27 2026, legal sections, bench composition). No duplicate exists in site state and no primacy claims are made. However, three escalation"
-    },
-    {
-      "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/entire-texture-of-cm-vijays-election-case-changed-says-madras-high-court-judge/article71556542.ece",
       "reasoning": "This is a well-sourced, significant court proceeding confirmed by at least five independent outlets (The Hindu, LiveLaw, Hindustan Times, Times of India, DTNext). The facts — judge identity, date, constituency, asset figures, petitioner — are all corroborated. No existing site entry covers this case"
     },
@@ -268,29 +253,29 @@
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/death-of-chennai-fishermen-cm-vijay-announces-compensation/article71670922.ece",
       "reasoning": "The core facts — CM Mr. Vijay announcing ₹7 lakh solatium per family for Chennai fishermen who died after their boat suffered engine failure during Cyclone Murasu, with bodies washing ashore on the AP coast — are corroborated by at least three independent outlets (The Hindu, Mid-Day via PTI, Siasat)"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tvk-mlas-horse-trading-claim-former-madurai-deputy-mayor-pm-mannan-arrested-released-on-bail/article71673191.ece",
+      "reasoning": "The core facts are well-corroborated across three independent outlets (The Hindu, Times of India, The Print, Rediff): AIADMK functionary P.M. Mannan was arrested by Madurai CCB on 2026-11-06 on a complaint by TVK MLA V.M.S. Mustafa alleging a ₹30 crore bribe offer to vote against the TVK government "
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/isro-chairman-narayanan-meets-tamil-nadu-cm-vijay/article71673774.ece",
+      "reasoning": "The meeting between ISRO Chairman V. Narayanan and CM Mr. Vijay is well-corroborated across three independent outlets (The Hindu, PTI via ThePrint, Deccan Herald), and the substantive governance context — ISRO's preparations to begin rocket launches from the Kulasekarapattinam spaceport in 2027 — is"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/three-men-arrested-for-bid-to-bribe-tvk-mla-for-vote-during-no-confidence-motion-against-tn-assembly-speaker/article71169921.ece",
+      "reasoning": "The article covers a politically significant criminal case — an alleged ₹35 crore bribe offer to TVK MLA N. Elaiyaraja to vote against the Assembly Speaker, with DMK MLA V. Senthilbalaji and his brother V. Ashok Kumar named as alleged conspirators. Core facts (three arrests, complaint date of June 2"
+    },
+    {
+      "title": "",
+      "url": "https://theprint.in/india/horse-trading-bid-to-topple-tvk-govt-former-madurai-deputy-mayor-arrested/3092252/",
+      "reasoning": "The arrest of AIADMK functionary P.M. Mannan is confirmed by four independent sources (ThePrint/PTI, The Hindu, Times of India, NDTV) and constitutes a genuine political-legal development with governance implications for the TVK government's stability. However, escalation is warranted for three reas"
     }
   ],
   "skipped_list": [
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/dmk-seeks-eci-action-against-tvk-dharapuram-candidate-over-alleged-poll-expenditure-violation/article71551114.ece",
-      "skip_reason": "This article covers a DMK complaint to the ECI against a TVK bypoll candidate over alleged poll expenditure violations — a piece of inter-party electoral manoeuvring with no direct governance action, "
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/video-clip-of-dharapuram-tvk-candidate-saying-she-spent-31-crore-on-poll-submitted-to-eci/article71550276.ece",
-      "skip_reason": "This article reports a DMK complaint to the ECI about a viral video allegedly showing TVK's Dharapuram bypoll candidate P. Sathyabama claiming she spent ₹31 crore on an election. While corroborated by"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-government-transfers-three-ias-officers/article71550922.ece",
-      "skip_reason": "This is a routine IAS transfer order — three officers reassigned across ELCOT, Town Panchayats, and e-Governance. While well-sourced and factually accurate (corroborated by Indian Masterminds, Whisper"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/tvk-government-backstabbed-nurses-alleges-mk-stalin/article71550093.ece",
-      "skip_reason": "While the underlying event — police arrest of protesting nurses on October 5, 2026 — is a real governance action confirmed by two whitelisted sources (The Hindu and India Today), this specific article"
-    },
     {
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/villagers-block-key-stretch-demand-relocation-of-tasmac-outlet/article71555710.ece",
@@ -875,6 +860,26 @@
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/nainar-nagenthran-rejects-tn-ministers-charge-of-aiadmk-bjp-conspiracy-to-bring-down-tvk-government/article71669007.ece",
       "skip_reason": "This article is pure political counter-messaging: BJP State president Nainar Nagenthran rejects a minister's allegation of an AIADMK-BJP conspiracy via a social media post. There is no governance acti"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/dmk-demands-independent-probe-into-book-procurement-for-periyar-arivulagam/article71675492.ece",
+      "skip_reason": "This article is primarily political blame-exchange between CM Mr. Vijay's TVK government and the opposition DMK over book procurement irregularities at Periyar Arivulagam. While a government probe has"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/former-tamil-nadu-assembly-speaker-ph-pandians-son-joins-bjp/article71673365.ece",
+      "skip_reason": "This article reports Advocate P.H. Vinodh Pandian — a private citizen and son of the late former Speaker — joining the BJP. While the facts are verifiable (P.H. Pandian's Speakership 1985–1989 and AIA"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/periyar-arivulagam-books-row-people-of-tamil-nadu-will-never-forgive-dmk-for-corruption-says-cm-vijay/article71673646.ece",
+      "skip_reason": "This candidate is a social media post by CM Mr. Vijay criticising the DMK over alleged book procurement irregularities at Periyar Arivulagam — it is political rhetoric, not a governance action. No exe"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/cyclone-murasu-search-for-five-missing-fishermen-intensified-says-tamil-nadu-government/article71673361.ece",
+      "skip_reason": "This article covers an active disaster-response operation (Cyclone Murasu, missing fishermen) that is a real and tragic event, well-corroborated across The Hindu, Rediff, and social media sources. How"
     }
   ],
   "recent_commits": [
@@ -940,10 +945,10 @@
     }
   ],
   "last_run": {
-    "ts": "2026-11-06T02:30:10.967875+05:30",
-    "candidates": 7,
-    "published": 1,
-    "escalated": 1,
+    "ts": "2026-11-07T01:50:59.915096+05:30",
+    "candidates": 8,
+    "published": 0,
+    "escalated": 4,
     "errors": 0
   }
 }
