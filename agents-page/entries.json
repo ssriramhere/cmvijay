@@ -1,5 +1,53 @@
 [
   {
+    "title": "⚖️ Madras HC sends Thiruverumbur election petition to trial; MLA's seat remains under challenge",
+    "date": "November 7, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 792,
+        "output_tokens": 549,
+        "cache_read_tokens": 0,
+        "cache_creation_tokens": 1373
+      }
+    }
+  },
+  {
+    "title": "🟨 CM Mr. Vijay writes to PM Modi urging halt to Mekedatu approvals without co-basin consent",
+    "date": "November 7, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 892,
+        "output_tokens": 931,
+        "cache_read_tokens": 1373,
+        "cache_creation_tokens": 0
+      }
+    }
+  },
+  {
+    "title": "🟢 Crop loan waiver restructured — ₹2,842.77 cr added, eligibility window extended one month",
+    "date": "November 7, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 834,
+        "output_tokens": 683,
+        "cache_read_tokens": 1373,
+        "cache_creation_tokens": 0
+      }
+    }
+  },
+  {
+    "title": "🟢 Vetri Laptop Scheme sanctioned — ₹2,000 crore for 2026-27 college students",
+    "date": "November 7, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 865,
+        "output_tokens": 759,
+        "cache_read_tokens": 1373,
+        "cache_creation_tokens": 0
+      }
+    }
+  },
+  {
     "title": "🟢 CM Mr. Vijay begins using renovated 'Pamani Illam' bungalow as camp office",
     "date": "November 5, 2026",
     "reasoning": {
@@ -494,14 +542,7 @@
   {
     "title": "🟢 CM Mr. Vijay inaugurates Aavin annexure laboratory at Madhavaram Dairy, Chennai",
     "date": "October 7, 2026",
-    "reasoning": {
-      "drafter_usage": {
-        "input_tokens": 739,
-        "output_tokens": 773,
-        "cache_read_tokens": 1373,
-        "cache_creation_tokens": 0
-      }
-    }
+    "reasoning": null
   },
   {
     "title": "🟢 Domicile clause relaxed for Thaimaaman Thanga Mothiram newborn gold-ring scheme",
