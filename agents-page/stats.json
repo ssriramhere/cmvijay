@@ -1,15 +1,15 @@
 {
   "period": "Rolling 30 days",
-  "as_of": "2026-11-08T00:01:14.501424+05:30",
-  "candidates_surfaced": 190,
-  "auto_verified": 47,
+  "as_of": "2026-11-09T00:08:43.163623+05:30",
+  "candidates_surfaced": 185,
+  "auto_verified": 46,
   "auto_verified_pct": 25,
-  "escalated": 25,
+  "escalated": 24,
   "escalated_pct": 13,
-  "autonomous_commits": 47,
+  "autonomous_commits": 46,
   "operator_edited": 0,
-  "skipped": 118,
-  "cost_this_month_usd": 9.1,
+  "skipped": 115,
+  "cost_this_month_usd": 8.87,
   "cost_per_published_entry_usd": 0.19,
   "autonomous_commits_list": [
     {
@@ -136,11 +136,6 @@
   "escalated_list": [
     {
       "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/election-petition-tamil-nadu-cm-vijay-produces-kodaikanal-land-sale-deed-before-madras-high-court/article71558877.ece",
-      "reasoning": "The article is well-sourced (The Hindu + Times of India corroboration) and factually consistent: CM Mr. Vijay produced a 1997 sale deed for 50 cents of land at Vilpatti village, Kodaikanal, before Justice V. Lakshminarayanan in an ongoing election petition filed by voter S. Dinesh challenging his Pe"
-    },
-    {
-      "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-bypoll-results-tvk-madurantakam-dharapuram-constituencies/article71563406.ece",
       "reasoning": "The core facts are well-verified across multiple whitelisted and reputable sources (The Hindu, The Print, India Today, ETV Bharat): TVK won both Madurantakam and Dharapuram bypolls on October 9, 2026, with confirmed vote margins. The background claim — that Maragatham Kumaravel and P. Sathyabama ori"
     },
@@ -261,21 +256,6 @@
     }
   ],
   "skipped_list": [
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/thirumavalavans-statements-on-sir-sends-mixed-signal-to-cadre-party-leaders/article71556622.ece",
-      "skip_reason": "This article covers VCK president Thirumavalavan's political statements at an opposition protest, questioning TVK's election victory via the SIR process. While the facts are well-sourced and confirmed"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/bjp-slams-tvk-led-govt-over-sexual-assault-on-five-year-old-in-gummidipoondi/article71558912.ece",
-      "skip_reason": "This article reports solely on a BJP State president's social media post criticising the TVK-led government over a crime incident. There is no governance action, executive order, policy launch, court "
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/andhra-pradesh/sharmila-invites-tn-chief-minister-vijay-to-daughters-wedding/article71555190.ece",
-      "skip_reason": "This article covers a purely personal/social event: APCC president Y.S. Sharmila visiting CM Mr. Vijay in Chennai to hand over a wedding invitation for her daughter's marriage. There is no governance "
-    },
     {
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/tvk-allies-hail-byelection-victory-says-its-an-endorsement-of-governments-performance/article71564417.ece",
@@ -915,9 +895,9 @@
     }
   ],
   "last_run": {
-    "ts": "2026-11-08T00:01:11.648966+05:30",
-    "candidates": 4,
-    "published": 4,
+    "ts": "2026-11-09T00:08:41.840683+05:30",
+    "candidates": 0,
+    "published": 0,
     "escalated": 0,
     "errors": 0
   }
