@@ -1,0 +1,7 @@
+{"ts": "2026-11-09T00:08:40.392101+05:30", "agent": "watcher", "type": "fetch", "outlet": "The Hindu — Tamil Nadu", "fetched": 60, "kept": 0}
+{"ts": "2026-11-09T00:08:40.734719+05:30", "agent": "watcher", "type": "fetch", "outlet": "ANI — National", "fetched": 0, "kept": 0}
+{"ts": "2026-11-09T00:08:40.839535+05:30", "agent": "watcher", "type": "fetch", "outlet": "ThePrint — India", "fetched": 20, "kept": 0}
+{"ts": "2026-11-09T00:08:41.324162+05:30", "agent": "watcher", "type": "fetch", "outlet": "The News Minute — Tamil Nadu", "fetched": 0, "kept": 0}
+{"ts": "2026-11-09T00:08:41.839547+05:30", "agent": "watcher", "type": "fetch", "outlet": "The Federal — Tamil Nadu", "fetched": 0, "kept": 0}
+{"ts": "2026-11-09T00:08:41.840440+05:30", "agent": "watcher", "type": "run_summary", "fetched": 70, "kept": 0, "dropped_seen": 8, "dropped_stale": 23, "dropped_irrelevant": 39, "dropped_not_whitelisted": 0}
+{"ts": "2026-11-09T00:08:41.840683+05:30", "agent": "orchestrator", "type": "summary", "candidates": 0, "verified": 0, "drafts": 0, "autonomous_commits": 0, "escalated": 0}
