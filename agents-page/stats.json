@@ -1,17 +1,23 @@
 {
   "period": "Rolling 30 days",
-  "as_of": "2026-11-09T00:08:43.163623+05:30",
-  "candidates_surfaced": 185,
-  "auto_verified": 46,
-  "auto_verified_pct": 25,
+  "as_of": "2026-11-10T04:50:05.085211+05:30",
+  "candidates_surfaced": 180,
+  "auto_verified": 47,
+  "auto_verified_pct": 26,
   "escalated": 24,
   "escalated_pct": 13,
-  "autonomous_commits": 46,
+  "autonomous_commits": 47,
   "operator_edited": 0,
-  "skipped": 115,
-  "cost_this_month_usd": 8.87,
-  "cost_per_published_entry_usd": 0.19,
+  "skipped": 109,
+  "cost_this_month_usd": 8.66,
+  "cost_per_published_entry_usd": 0.18,
   "autonomous_commits_list": [
+    {
+      "sha": "317db09",
+      "prefix": "agent",
+      "title": "🟢 G.O. issued — ₹1 crore compensation for families of police personnel killed on",
+      "timestamp": "2026-11-09T23:20:01Z"
+    },
     {
       "sha": "92768bb",
       "prefix": "agent",
@@ -125,20 +131,9 @@
       "prefix": "agent",
       "title": "🟢 CM Mr. Vijay inaugurates electrical labs at 30 ITIs; MoU signed for 40 more",
       "timestamp": "2026-10-29T19:31:23Z"
-    },
-    {
-      "sha": "af7bf70",
-      "prefix": "agent",
-      "title": "🟢 Cabinet approves Social Justice Survey Commission — retired judge to head pane",
-      "timestamp": "2026-10-29T19:31:23Z"
     }
   ],
   "escalated_list": [
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-bypoll-results-tvk-madurantakam-dharapuram-constituencies/article71563406.ece",
-      "reasoning": "The core facts are well-verified across multiple whitelisted and reputable sources (The Hindu, The Print, India Today, ETV Bharat): TVK won both Madurantakam and Dharapuram bypolls on October 9, 2026, with confirmed vote margins. The background claim — that Maragatham Kumaravel and P. Sathyabama ori"
-    },
     {
       "title": "",
       "url": "https://www.thehindu.com/news/cities/chennai/chennai-metro-phase-two-inauguration-poonamallee-vadapalani-narendra-modi-visit-schedule-cm-vijay-meeting-live-updates/article71570613.ece",
@@ -253,59 +248,14 @@
       "title": "",
       "url": "https://theprint.in/india/horse-trading-bid-to-topple-tvk-govt-former-madurai-deputy-mayor-arrested/3092252/",
       "reasoning": "The arrest of AIADMK functionary P.M. Mannan is confirmed by four independent sources (ThePrint/PTI, The Hindu, Times of India, NDTV) and constitutes a genuine political-legal development with governance implications for the TVK government's stability. However, escalation is warranted for three reas"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tasmac-liquor-price-hike-association-of-recreation-clubs-star-hotels-challenges-empty-bottle-buyback-scheme-in-tamil-nadu/article71681587.ece",
+      "reasoning": "The core facts are well-verified across multiple whitelisted sources: the ₹10 environmental and social welfare cess folded into TASMAC MRP from November 1, 2026 is confirmed by The Hindu and New Indian Express (Oct 31, 2026), and the Madras High Court writ petition by the FL2/FL3 Hotel Association i"
     }
   ],
   "skipped_list": [
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/tvk-allies-hail-byelection-victory-says-its-an-endorsement-of-governments-performance/article71564417.ece",
-      "skip_reason": "This article is purely political reaction content — alliance leaders (Thirumavalavan, Manickam Tagore, Vaiko, IUML's Kader Mohideen, Higher Education Minister Viswanathan) congratulating TVK on byelec"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/dmk-retains-much-of-its-vote-bank-despite-going-it-alone-reinforces-position-as-the-principal-rival-of-tvk/article71565415.ece",
-      "skip_reason": "This article is a political analysis piece examining DMK's vote-share retention and its positioning as TVK's principal rival following the Madurantakam and Dharapuram by-elections. While the underlyin"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/byelection-bypoll-results-nandigram-rejinagar-madurantakam-dharapuram-thattanchavady-nagaon-live-updates-october-9-2026/article71562394.ece",
-      "skip_reason": "This article covers bypoll election results across multiple states, with TVK winning Dharapuram and Madurantakam in Tamil Nadu. All factual claims are well-corroborated across multiple outlets (The Hi"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/maragatham-kumaravel-romps-home-in-madurantakam-this-time-on-tvk-ticket/article71565076.ece",
-      "skip_reason": "This is a by-election result — a political development with no direct governance or policy action attached. It does not map to any manifesto promise in the tracker. While the facts are well-verified ("
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/no-surprises-in-byelection-results-in-tamil-nadu-and-puducherry-as-voters-favour-the-ruling-party-candidates/article71564070.ece",
-      "skip_reason": "This article reports by-election results — a political/electoral development with no direct governance action, executive order, scheme launch, or manifesto promise fulfilment. TVK winning Madurantakam"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/byelection-outcome-a-temporary-victory-for-politics-of-betrayal-says-stalin/article71564172.ece",
-      "skip_reason": "This article is a social media post reaction by DMK president M.K. Stalin criticising the TVK government's byelection win in Dharapuram and Madurantakam. It contains no governance action — no executiv"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-cm-vijay-hails-tvks-bypoll-wins-as-victory-for-people-political-decorum/article71564000.ece",
-      "skip_reason": "The article reports CM Mr. Vijay's post-victory statement on X praising TVK's bypoll wins in Madurantakam and Dharapuram as a victory for 'political decorum' and claiming the party won without voter i"
-    },
-    {
-      "title": "",
-      "url": "https://theprint.in/india/kerala-hc-orders-vigilance-to-register-fir-against-vijayan-in-cmrl-bribery-case/3066567/",
-      "skip_reason": "This article is entirely about former Kerala Chief Minister Pinarayi Vijayan (CPI-M) and a Kerala High Court order directing the Kerala Vigilance Bureau to register an FIR in the CMRL bribery case. It"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/vasan-urges-tamil-nadu-government-to-secure-release-of-fishermens-boats-from-andhra-pradesh/article71331817.ece",
-      "skip_reason": "This article is a political statement by G.K. Vasan (Tamil Maanila Congress leader), urging the TVK government to act on AP-seized fishing boats and convene an all-party Cauvery meeting. No governance"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/tvks-bypoll-wins-a-verdict-on-four-months-of-good-governance-minister-arunraj/article71567203.ece",
-      "skip_reason": "This article is a political statement by Health Minister K.G. Arunraj interpreting TVK's bypoll victories as a 'verdict on good governance' — a classic post-election spin piece. It contains no executi"
-    },
     {
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/vijay-urges-prime-minister-modi-to-sanction-metro-rail-for-the-hosur-bommasamudra-sector/article71571740.ece",
@@ -830,9 +780,35 @@
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/cyclone-murasu-search-for-five-missing-fishermen-intensified-says-tamil-nadu-government/article71673361.ece",
       "skip_reason": "This article covers an active disaster-response operation (Cyclone Murasu, missing fishermen) that is a real and tragic event, well-corroborated across The Hindu, Rediff, and social media sources. How"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/six-months-into-its-rule-tvk-led-government-enjoys-public-goodwill-despite-concerns-about-it-being-directionless/article71683549.ece",
+      "skip_reason": "This is a retrospective journalistic analysis piece marking the TVK government's six-month anniversary, authored by T. Ramakrishnan of The Hindu. It contains no new governance action, executive order,"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tasmacs-deepavali-sales-touch-441-crore-amid-pos-machine-glitches/article71683625.ece",
+      "skip_reason": "This article reports TASMAC's Deepavali 2026 liquor sales figures (₹441.38 crore over two days) and notes POS machine glitches. While the figures are well-corroborated across multiple outlets (The Hin"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/aiadmk-ammk-leaders-lash-out-at-cm-vijay-over-deepavali-day-murders-across-tamil-nadu/article71682025.ece",
+      "skip_reason": "This article is entirely about opposition political statements — AIADMK's Edappadi K. Palaniswami and AMMK's T.T.V. Dhinakaran criticising CM Mr. Vijay on social media over Deepavali-day law and order"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/how-actor-vijay-won-a-case-challenging-land-allotted-to-him-by-tamil-nadu-housing-board/article71681787.ece",
+      "skip_reason": "This article concerns a personal legal matter involving CM Mr. Vijay's pre-political land allotment (2008) and a court challenge filed in 2009 — well before his governance role. The Madras High Court "
     }
   ],
   "recent_commits": [
+    {
+      "sha": "317db09",
+      "prefix": "agent",
+      "title": "🟢 G.O. issued — ₹1 crore compensation for families of police personnel killed on",
+      "timestamp": "2026-11-09T23:20:01Z"
+    },
     {
       "sha": "92768bb",
       "prefix": "agent",
@@ -886,19 +862,13 @@
       "prefix": "agent",
       "title": "🟢 CM Mr. Vijay links 9,000 Erode SHGs to ₹1,110 cr bank credit under state-wide",
       "timestamp": "2026-11-03T20:32:56Z"
-    },
-    {
-      "sha": "6326dbe",
-      "prefix": "agent",
-      "title": "🟢 Tamil Nadu releases three-year BESS Policy — 2,500 MW/10,000 MWh procurement t",
-      "timestamp": "2026-11-03T20:32:56Z"
     }
   ],
   "last_run": {
-    "ts": "2026-11-09T00:08:41.840683+05:30",
-    "candidates": 0,
-    "published": 0,
-    "escalated": 0,
+    "ts": "2026-11-10T04:50:01.723096+05:30",
+    "candidates": 6,
+    "published": 1,
+    "escalated": 1,
     "errors": 0
   }
 }

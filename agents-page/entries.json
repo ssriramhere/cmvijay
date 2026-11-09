@@ -1,5 +1,17 @@
 [
   {
+    "title": "🟢 G.O. issued — ₹1 crore compensation for families of police personnel killed on duty",
+    "date": "November 9, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 806,
+        "output_tokens": 636,
+        "cache_read_tokens": 0,
+        "cache_creation_tokens": 1373
+      }
+    }
+  },
+  {
     "title": "⚖️ Madras HC sends Thiruverumbur election petition to trial; MLA's seat remains under challenge",
     "date": "November 7, 2026",
     "reasoning": {
