@@ -1,17 +1,41 @@
 {
   "period": "Rolling 30 days",
-  "as_of": "2026-11-10T04:50:05.085211+05:30",
-  "candidates_surfaced": 180,
-  "auto_verified": 47,
-  "auto_verified_pct": 26,
+  "as_of": "2026-11-11T02:17:41.370145+05:30",
+  "candidates_surfaced": 189,
+  "auto_verified": 51,
+  "auto_verified_pct": 27,
   "escalated": 24,
   "escalated_pct": 13,
-  "autonomous_commits": 47,
+  "autonomous_commits": 51,
   "operator_edited": 0,
-  "skipped": 109,
-  "cost_this_month_usd": 8.66,
+  "skipped": 114,
+  "cost_this_month_usd": 9.09,
   "cost_per_published_entry_usd": 0.18,
   "autonomous_commits_list": [
+    {
+      "sha": "ffd3547",
+      "prefix": "agent",
+      "title": "🔵 Speaker opens fresh disqualification inquiry into four ex-AIADMK MLAs who join",
+      "timestamp": "2026-11-10T20:47:38Z"
+    },
+    {
+      "sha": "236a1a9",
+      "prefix": "agent",
+      "title": "🟢 CM Mr. Vijay launches 'Eri' portal for online NOC applications on waterbody re",
+      "timestamp": "2026-11-10T20:47:38Z"
+    },
+    {
+      "sha": "bca80a4",
+      "prefix": "agent",
+      "title": "🟢 School Education Minister announces procurement committee, DVAC inquiry into l",
+      "timestamp": "2026-11-10T20:47:38Z"
+    },
+    {
+      "sha": "9a0114d",
+      "prefix": "agent",
+      "title": "🟢 TASMAC enforces three-year transfer norm across all 38 districts, effective No",
+      "timestamp": "2026-11-10T20:47:37Z"
+    },
     {
       "sha": "317db09",
       "prefix": "agent",
@@ -107,30 +131,6 @@
       "prefix": "agent",
       "title": "🟢 Cabinet approves Social Justice Survey Commission — retired judge to lead, rep",
       "timestamp": "2026-10-31T18:13:46Z"
-    },
-    {
-      "sha": "9d70a99",
-      "prefix": "agent",
-      "title": "🟢 Govt. sanctions five Model Registration Hubs — ₹7.84 cr, jurisdiction-free pro",
-      "timestamp": "2026-10-30T19:05:45Z"
-    },
-    {
-      "sha": "3676728",
-      "prefix": "agent",
-      "title": "🟢 Tamil Nadu sanctions 680 road projects under CMIUDM; Gateway of Chennai work t",
-      "timestamp": "2026-10-30T19:05:45Z"
-    },
-    {
-      "sha": "9dbbb5c",
-      "prefix": "agent",
-      "title": "🟢 TASMAC adds ₹10 environment cess to all liquor MRPs; ₹10 refund on bottle retu",
-      "timestamp": "2026-10-30T19:05:45Z"
-    },
-    {
-      "sha": "26388c1",
-      "prefix": "agent",
-      "title": "🟢 CM Mr. Vijay inaugurates electrical labs at 30 ITIs; MoU signed for 40 more",
-      "timestamp": "2026-10-29T19:31:23Z"
     }
   ],
   "escalated_list": [
@@ -800,9 +800,58 @@
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/how-actor-vijay-won-a-case-challenging-land-allotted-to-him-by-tamil-nadu-housing-board/article71681787.ece",
       "skip_reason": "This article concerns a personal legal matter involving CM Mr. Vijay's pre-political land allotment (2008) and a court challenge filed in 2009 — well before his governance role. The Madras High Court "
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/palaniswami-dhinakaran-demand-probe-into-tvk-kallakurichi-mlas-alleged-harassment-of-collector/article71685627.ece",
+      "skip_reason": "This article reports opposition leaders (Palaniswami and Dhinakaran) making social media demands for a probe into a TVK MLA's alleged misconduct — a political reaction, not a governance action. No exe"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-bjp-chief-nainar-nagenthran-demands-cm-vijays-resignation-over-law-and-order/article71685529.ece",
+      "skip_reason": "This article reports a BJP opposition leader (Nainar Nagenthran) demanding CM Mr. Vijay's resignation via a social media post — a classic political/factional statement with no governance action, execu"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/dmk-mp-jagathrakshakan-son-sundeep-anand-of-tvk-move-madras-high-court-over-16112-crore-fema-case/article71685047.ece",
+      "skip_reason": "This article covers a legal challenge filed by DMK MP Jagathrakshakan, his son (a TVK member), and daughter against ED property seizures under FEMA. While the TVK connection (Sundeep Anand) is politic"
+    },
+    {
+      "title": "",
+      "url": "https://theprint.in/india/private-bus-gutted-in-fire-after-rear-tyre-bursts-in-andhra-35-escape-unhurt/3094860/",
+      "skip_reason": "The article reports a private bus fire in Prakasam district, Andhra Pradesh — a different state entirely. It has no connection to the Tamil Nadu government, CM Mr. Vijay, or TVK governance. It is a ro"
+    },
+    {
+      "title": "",
+      "url": "https://theprint.in/india/ktaka-govt-spent-rs-473-crore-on-ads-in-3-years-neglecting-development-vijayendra/3094856/",
+      "skip_reason": "This article is entirely about Karnataka state politics — specifically, BJP Karnataka President B Y Vijayendra criticizing the Karnataka Congress government's advertisement expenditure. It has no conn"
     }
   ],
   "recent_commits": [
+    {
+      "sha": "ffd3547",
+      "prefix": "agent",
+      "title": "🔵 Speaker opens fresh disqualification inquiry into four ex-AIADMK MLAs who join",
+      "timestamp": "2026-11-10T20:47:38Z"
+    },
+    {
+      "sha": "236a1a9",
+      "prefix": "agent",
+      "title": "🟢 CM Mr. Vijay launches 'Eri' portal for online NOC applications on waterbody re",
+      "timestamp": "2026-11-10T20:47:38Z"
+    },
+    {
+      "sha": "bca80a4",
+      "prefix": "agent",
+      "title": "🟢 School Education Minister announces procurement committee, DVAC inquiry into l",
+      "timestamp": "2026-11-10T20:47:38Z"
+    },
+    {
+      "sha": "9a0114d",
+      "prefix": "agent",
+      "title": "🟢 TASMAC enforces three-year transfer norm across all 38 districts, effective No",
+      "timestamp": "2026-11-10T20:47:37Z"
+    },
     {
       "sha": "317db09",
       "prefix": "agent",
@@ -838,37 +887,13 @@
       "prefix": "agent",
       "title": "🟢 CM Mr. Vijay begins using renovated 'Pamani Illam' bungalow as camp office",
       "timestamp": "2026-11-05T21:00:10Z"
-    },
-    {
-      "sha": "3b4b0ff",
-      "prefix": "agent",
-      "title": "🟢 TASMAC bottle buyback scheme takes effect — ₹10 cess, worker strike, ~245 supe",
-      "timestamp": "2026-11-04T20:45:36Z"
-    },
-    {
-      "sha": "e8a5a0b",
-      "prefix": "agent",
-      "title": "🟨 CM Mr. Vijay urges Centre's task force to scrap NEET, back Class XII admission",
-      "timestamp": "2026-11-04T20:45:36Z"
-    },
-    {
-      "sha": "7712300",
-      "prefix": "agent",
-      "title": "🟢 TASMAC to install Reverse Vending Machines at all 4,048 outlets; ₹10/bottle re",
-      "timestamp": "2026-11-03T20:32:57Z"
-    },
-    {
-      "sha": "6f44407",
-      "prefix": "agent",
-      "title": "🟢 CM Mr. Vijay links 9,000 Erode SHGs to ₹1,110 cr bank credit under state-wide",
-      "timestamp": "2026-11-03T20:32:56Z"
     }
   ],
   "last_run": {
-    "ts": "2026-11-10T04:50:01.723096+05:30",
-    "candidates": 6,
-    "published": 1,
-    "escalated": 1,
+    "ts": "2026-11-11T02:17:38.193625+05:30",
+    "candidates": 9,
+    "published": 4,
+    "escalated": 0,
     "errors": 0
   }
 }

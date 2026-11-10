@@ -1,5 +1,41 @@
 [
   {
+    "title": "🟢 School Education Minister announces procurement committee, DVAC inquiry into library book scam",
+    "date": "November 10, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 722,
+        "output_tokens": 657,
+        "cache_read_tokens": 1373,
+        "cache_creation_tokens": 0
+      }
+    }
+  },
+  {
+    "title": "🟢 CM Mr. Vijay launches 'Eri' portal for online NOC applications on waterbody restoration",
+    "date": "November 10, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 696,
+        "output_tokens": 685,
+        "cache_read_tokens": 1373,
+        "cache_creation_tokens": 0
+      }
+    }
+  },
+  {
+    "title": "🔵 Speaker opens fresh disqualification inquiry into four ex-AIADMK MLAs who joined TVK",
+    "date": "November 10, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 1060,
+        "output_tokens": 1087,
+        "cache_read_tokens": 1373,
+        "cache_creation_tokens": 0
+      }
+    }
+  },
+  {
     "title": "🟢 G.O. issued — ₹1 crore compensation for families of police personnel killed on duty",
     "date": "November 9, 2026",
     "reasoning": {
@@ -164,6 +200,18 @@
         "output_tokens": 709,
         "cache_read_tokens": 1373,
         "cache_creation_tokens": 0
+      }
+    }
+  },
+  {
+    "title": "🟢 TASMAC enforces three-year transfer norm across all 38 districts, effective November 1",
+    "date": "November 1, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 800,
+        "output_tokens": 665,
+        "cache_read_tokens": 0,
+        "cache_creation_tokens": 1373
       }
     }
   },
