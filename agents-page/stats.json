@@ -1,17 +1,47 @@
 {
   "period": "Rolling 30 days",
-  "as_of": "2026-11-11T02:17:41.370145+05:30",
+  "as_of": "2026-11-12T02:39:20.863270+05:30",
   "candidates_surfaced": 189,
-  "auto_verified": 51,
-  "auto_verified_pct": 27,
-  "escalated": 24,
-  "escalated_pct": 13,
-  "autonomous_commits": 51,
+  "auto_verified": 53,
+  "auto_verified_pct": 28,
+  "escalated": 23,
+  "escalated_pct": 12,
+  "autonomous_commits": 53,
   "operator_edited": 0,
-  "skipped": 114,
-  "cost_this_month_usd": 9.09,
-  "cost_per_published_entry_usd": 0.18,
+  "skipped": 113,
+  "cost_this_month_usd": 9.08,
+  "cost_per_published_entry_usd": 0.17,
   "autonomous_commits_list": [
+    {
+      "sha": "00bf127",
+      "prefix": "agent",
+      "title": "🟢 Justice M.V. Muralidharan appointed chairperson of TN SC/ST Commission",
+      "timestamp": "2026-11-11T21:09:17Z"
+    },
+    {
+      "sha": "2b716b7",
+      "prefix": "agent",
+      "title": "🟢 CM virtually inaugurates Raptee.HV experience centre; TIDCO commits ₹25 cr equ",
+      "timestamp": "2026-11-11T21:09:17Z"
+    },
+    {
+      "sha": "c241595",
+      "prefix": "agent",
+      "title": "🟢 TASMAC mandates 3-year tenure cap for shop staff; A/B/C classification sets mi",
+      "timestamp": "2026-11-11T21:09:17Z"
+    },
+    {
+      "sha": "2e8f0eb",
+      "prefix": "agent",
+      "title": "🟢 Minister Rajmohan announces procurement committee after library book scam surf",
+      "timestamp": "2026-11-11T21:09:16Z"
+    },
+    {
+      "sha": "7936736",
+      "prefix": "agent",
+      "title": "🟢 Korean auto firms Hwashin and Seoyon commit ₹1,370 cr to Tamil Nadu amid AP-sh",
+      "timestamp": "2026-11-11T21:09:16Z"
+    },
     {
       "sha": "ffd3547",
       "prefix": "agent",
@@ -101,44 +131,9 @@
       "prefix": "agent",
       "title": "🟢 Tamil Nadu releases three-year BESS Policy — 2,500 MW/10,000 MWh procurement t",
       "timestamp": "2026-11-03T20:32:56Z"
-    },
-    {
-      "sha": "f9cb8cf",
-      "prefix": "agent",
-      "title": "🟢 Tamil Nadu reconstitutes State Board for Wildlife under Section 6(1), WPA 1972",
-      "timestamp": "2026-11-02T22:41:52Z"
-    },
-    {
-      "sha": "a2c4e3b",
-      "prefix": "agent",
-      "title": "🟢 CM Mr. Vijay inaugurates ₹23.25 cr Pudukottai bus stand; distributes ₹62.73 cr",
-      "timestamp": "2026-11-02T22:41:52Z"
-    },
-    {
-      "sha": "6030020",
-      "prefix": "agent",
-      "title": "🟢 CM constitutes high-level committee to review prison security after Theni jail",
-      "timestamp": "2026-11-02T22:41:51Z"
-    },
-    {
-      "sha": "10eddc6",
-      "prefix": "agent",
-      "title": "🟢 Tamil Nadu DA raised 60% to 63% — 16 lakh employees and pensioners benefit",
-      "timestamp": "2026-10-31T18:13:46Z"
-    },
-    {
-      "sha": "1a9e9b0",
-      "prefix": "agent",
-      "title": "🟢 Cabinet approves Social Justice Survey Commission — retired judge to lead, rep",
-      "timestamp": "2026-10-31T18:13:46Z"
     }
   ],
   "escalated_list": [
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/cities/chennai/chennai-metro-phase-two-inauguration-poonamallee-vadapalani-narendra-modi-visit-schedule-cm-vijay-meeting-live-updates/article71570613.ece",
-      "reasoning": "The core event — PM Modi and CM Mr. Vijay co-inaugurating Chennai Metro Phase 2's Poonamallee–Vadapalani stretch on October 11, 2026 — is confirmed by The Hindu (primary source), Rediff, YouTube, and Instagram. However, the ₹13,000 crore figure in the headline refers to the total bundle of all devel"
-    },
     {
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/newly-elected-tvk-mlas-maragatham-kumaravel-and-p-sathyabama-take-oath/article71574063.ece",
@@ -256,36 +251,6 @@
     }
   ],
   "skipped_list": [
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/vijay-urges-prime-minister-modi-to-sanction-metro-rail-for-the-hosur-bommasamudra-sector/article71571740.ece",
-      "skip_reason": "This article documents CM Mr. Vijay making requests to PM Modi at the Chennai Metro Phase II inauguration — an event led by the Union government, not the TN state government. The core content is a spe"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/tvk-cadre-blow-whistles-during-modis-speech-show-placards-hailing-vijay-as-next-pm/article71572425.ece",
-      "skip_reason": "This article describes TVK party cadre disrupting PM Modi's speech at IIT-Madras with whistles and 'Next PM' placards — pure political symbolism and factional behaviour with zero governance action or "
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/madras-high-court-directs-registry-not-to-number-dmks-1-crore-defamation-suit-against-tvk-ministers/article71571617.ece",
-      "skip_reason": "This is a court procedural development in an inter-party political dispute — DMK (opposition) suing TVK ministers for defamatory statements about the R. Veeramani/Gem Granites POCSO case. While it inv"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/vijay-extends-wishes-for-international-day-of-the-girl-child/article71570614.ece",
-      "skip_reason": "The article covers CM Mr. Vijay posting a social media message on X extending wishes for the International Day of the Girl Child. This is purely a symbolic/ceremonial gesture — a greeting post with no"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/two-seats-and-tamil-nadus-return-to-a-political-duopoly/article71569430.ece",
-      "skip_reason": "This is a political analysis/opinion piece examining whether Tamil Nadu is shifting to a bipolar TVK-DMK political landscape following the October 9, 2026 by-election results. While the underlying by-"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/rahul-gandhi-visits-chennai-for-voice-of-students-event-meets-cm-vijay/article71567994.ece",
-      "skip_reason": "This article covers a political visit by Congress leader Rahul Gandhi to Chennai for a student interaction event and a social meeting with CM Mr. Vijay. While the facts are well-corroborated across mu"
-    },
     {
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/vck-tries-to-pre-empt-tvks-potential-bid-to-rope-in-pmk/article71576206.ece",
@@ -825,9 +790,64 @@
       "title": "",
       "url": "https://theprint.in/india/ktaka-govt-spent-rs-473-crore-on-ads-in-3-years-neglecting-development-vijayendra/3094856/",
       "skip_reason": "This article is entirely about Karnataka state politics — specifically, BJP Karnataka President B Y Vijayendra criticizing the Karnataka Congress government's advertisement expenditure. It has no conn"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/cm-vijay-urges-tvk-mlas-to-stay-united-prioritise-public-grievances-avoid-controversies/article71690581.ece",
+      "skip_reason": "This article describes an internal TVK party meeting where CM Mr. Vijay verbally urged MLAs to maintain discipline and avoid controversies. While well-sourced and politically notable, it produces no c"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/when-jayalalithaa-sacked-ministers-even-before-they-moved-into-their-official-bungalows/article71686003.ece",
+      "skip_reason": "This article is a historical retrospective and political commentary piece comparing Jayalalithaa's ministerial management style with CM Mr. Vijay's, prompted by speculation about a cabinet reshuffle a"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/gang-robs-bank-agent-of-150-crore-collected-from-tasmac-outlets-in-kancheepuram/article71688496.ece",
+      "skip_reason": "This article reports a criminal robbery incident — a gang stealing ₹1.5 crore from a bank agent collecting TASMAC cash in Kancheepuram. While the facts are corroborated (The Hindu article, Facebook/In"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/aiadmk-leader-edappadi-palaniswami-takes-exception-to-karnataka-cm-shivakumars-remarks-on-mekedatu/article71687087.ece",
+      "skip_reason": "This article is squarely about opposition political rhetoric — AIADMK leader EPS criticising Karnataka CM Shivakumar and, in passing, criticising CM Mr. Vijay for 'maintaining silence.' There is no go"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tvk-faces-criticism-from-its-allies/article71687050.ece",
+      "skip_reason": "This article is a report of intra-coalition political criticism — Congress MPs publicly criticising the TVK-led government over law and order and demanding a coordination committee. While the underlyi"
     }
   ],
   "recent_commits": [
+    {
+      "sha": "00bf127",
+      "prefix": "agent",
+      "title": "🟢 Justice M.V. Muralidharan appointed chairperson of TN SC/ST Commission",
+      "timestamp": "2026-11-11T21:09:17Z"
+    },
+    {
+      "sha": "2b716b7",
+      "prefix": "agent",
+      "title": "🟢 CM virtually inaugurates Raptee.HV experience centre; TIDCO commits ₹25 cr equ",
+      "timestamp": "2026-11-11T21:09:17Z"
+    },
+    {
+      "sha": "c241595",
+      "prefix": "agent",
+      "title": "🟢 TASMAC mandates 3-year tenure cap for shop staff; A/B/C classification sets mi",
+      "timestamp": "2026-11-11T21:09:17Z"
+    },
+    {
+      "sha": "2e8f0eb",
+      "prefix": "agent",
+      "title": "🟢 Minister Rajmohan announces procurement committee after library book scam surf",
+      "timestamp": "2026-11-11T21:09:16Z"
+    },
+    {
+      "sha": "7936736",
+      "prefix": "agent",
+      "title": "🟢 Korean auto firms Hwashin and Seoyon commit ₹1,370 cr to Tamil Nadu amid AP-sh",
+      "timestamp": "2026-11-11T21:09:16Z"
+    },
     {
       "sha": "ffd3547",
       "prefix": "agent",
@@ -857,42 +877,12 @@
       "prefix": "agent",
       "title": "🟢 G.O. issued — ₹1 crore compensation for families of police personnel killed on",
       "timestamp": "2026-11-09T23:20:01Z"
-    },
-    {
-      "sha": "92768bb",
-      "prefix": "agent",
-      "title": "🟢 Vetri Laptop Scheme sanctioned — ₹2,000 crore for 2026-27 college students",
-      "timestamp": "2026-11-07T18:31:11Z"
-    },
-    {
-      "sha": "2cbc54f",
-      "prefix": "agent",
-      "title": "🟢 Crop loan waiver restructured — ₹2,842.77 cr added, eligibility window extende",
-      "timestamp": "2026-11-07T18:31:11Z"
-    },
-    {
-      "sha": "7e97679",
-      "prefix": "agent",
-      "title": "🟨 CM Mr. Vijay writes to PM Modi urging halt to Mekedatu approvals without co-ba",
-      "timestamp": "2026-11-07T18:31:11Z"
-    },
-    {
-      "sha": "5c3af3c",
-      "prefix": "agent",
-      "title": "⚖️ Madras HC sends Thiruverumbur election petition to trial; MLA's seat remains",
-      "timestamp": "2026-11-07T18:31:11Z"
-    },
-    {
-      "sha": "7b9ed06",
-      "prefix": "agent",
-      "title": "🟢 CM Mr. Vijay begins using renovated 'Pamani Illam' bungalow as camp office",
-      "timestamp": "2026-11-05T21:00:10Z"
     }
   ],
   "last_run": {
-    "ts": "2026-11-11T02:17:38.193625+05:30",
-    "candidates": 9,
-    "published": 4,
+    "ts": "2026-11-12T02:39:17.137310+05:30",
+    "candidates": 10,
+    "published": 5,
     "escalated": 0,
     "errors": 0
   }

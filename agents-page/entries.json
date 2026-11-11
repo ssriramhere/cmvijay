@@ -1,5 +1,29 @@
 [
   {
+    "title": "🟢 Korean auto firms Hwashin and Seoyon commit ₹1,370 cr to Tamil Nadu amid AP-shift reports",
+    "date": "November 11, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 1034,
+        "output_tokens": 934,
+        "cache_read_tokens": 0,
+        "cache_creation_tokens": 1373
+      }
+    }
+  },
+  {
+    "title": "🟢 CM virtually inaugurates Raptee.HV experience centre; TIDCO commits ₹25 cr equity stake",
+    "date": "November 11, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 843,
+        "output_tokens": 826,
+        "cache_read_tokens": 1373,
+        "cache_creation_tokens": 0
+      }
+    }
+  },
+  {
     "title": "🟢 School Education Minister announces procurement committee, DVAC inquiry into library book scam",
     "date": "November 10, 2026",
     "reasoning": {
@@ -30,6 +54,30 @@
       "drafter_usage": {
         "input_tokens": 1060,
         "output_tokens": 1087,
+        "cache_read_tokens": 1373,
+        "cache_creation_tokens": 0
+      }
+    }
+  },
+  {
+    "title": "🟢 Minister Rajmohan announces procurement committee after library book scam surfaces",
+    "date": "November 10, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 879,
+        "output_tokens": 1181,
+        "cache_read_tokens": 1373,
+        "cache_creation_tokens": 0
+      }
+    }
+  },
+  {
+    "title": "🟢 Justice M.V. Muralidharan appointed chairperson of TN SC/ST Commission",
+    "date": "November 10, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 859,
+        "output_tokens": 780,
         "cache_read_tokens": 1373,
         "cache_creation_tokens": 0
       }
@@ -212,6 +260,18 @@
         "output_tokens": 665,
         "cache_read_tokens": 0,
         "cache_creation_tokens": 1373
+      }
+    }
+  },
+  {
+    "title": "🟢 TASMAC mandates 3-year tenure cap for shop staff; A/B/C classification sets minimum headcounts",
+    "date": "November 1, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 811,
+        "output_tokens": 647,
+        "cache_read_tokens": 1373,
+        "cache_creation_tokens": 0
       }
     }
   },
@@ -566,38 +626,17 @@
   {
     "title": "🟢 Chennai Metro Phase II first stretch inaugurated — Poonamallee–Vadapalani, 14.64 km, 11 stations",
     "date": "October 11, 2026",
-    "reasoning": {
-      "drafter_usage": {
-        "input_tokens": 895,
-        "output_tokens": 934,
-        "cache_read_tokens": 0,
-        "cache_creation_tokens": 1373
-      }
-    }
+    "reasoning": null
   },
   {
     "title": "🟢 Chennai Metro Phase II first stretch inaugurated — Poonamallee to Vadapalani, 14 km added",
     "date": "October 11, 2026",
-    "reasoning": {
-      "drafter_usage": {
-        "input_tokens": 863,
-        "output_tokens": 772,
-        "cache_read_tokens": 1373,
-        "cache_creation_tokens": 0
-      }
-    }
+    "reasoning": null
   },
   {
     "title": "🟢 PM Modi and CM Mr. Vijay inaugurate Chennai Metro Phase 2 — Poonamallee–Vadapalani, 15 trains deployed",
     "date": "October 11, 2026",
-    "reasoning": {
-      "drafter_usage": {
-        "input_tokens": 828,
-        "output_tokens": 682,
-        "cache_read_tokens": 1373,
-        "cache_creation_tokens": 0
-      }
-    }
+    "reasoning": null
   },
   {
     "title": "🟢 CM Mr. Vijay inaugurates Aavin annexure laboratory at Madhavaram Dairy, Chennai",
