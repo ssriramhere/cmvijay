@@ -1,5 +1,29 @@
 [
   {
+    "title": "⚖️ PMO sanctions prosecution of two IAS officers in ₹98.25-cr tender case",
+    "date": "November 12, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 1000,
+        "output_tokens": 858,
+        "cache_read_tokens": 0,
+        "cache_creation_tokens": 1373
+      }
+    }
+  },
+  {
+    "title": "🟢 CM orders ₹5.25 cr additional relief for 2018 Thoothukudi anti-Sterlite victims",
+    "date": "November 12, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 982,
+        "output_tokens": 880,
+        "cache_read_tokens": 1373,
+        "cache_creation_tokens": 0
+      }
+    }
+  },
+  {
     "title": "🟢 Korean auto firms Hwashin and Seoyon commit ₹1,370 cr to Tamil Nadu amid AP-shift reports",
     "date": "November 11, 2026",
     "reasoning": {
