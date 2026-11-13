@@ -1,5 +1,29 @@
 [
   {
+    "title": "🟢 TN imposes stock limits on paddy, rice, and pulses; clearance deadline November 16",
+    "date": "November 13, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 748,
+        "output_tokens": 709,
+        "cache_read_tokens": 0,
+        "cache_creation_tokens": 1373
+      }
+    }
+  },
+  {
+    "title": "🟢 CM chairs NE monsoon fishermen safety review; Coast Guard and Navy on standby",
+    "date": "November 13, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 840,
+        "output_tokens": 896,
+        "cache_read_tokens": 1373,
+        "cache_creation_tokens": 0
+      }
+    }
+  },
+  {
     "title": "⚖️ PMO sanctions prosecution of two IAS officers in ₹98.25-cr tender case",
     "date": "November 12, 2026",
     "reasoning": {
@@ -18,6 +42,18 @@
       "drafter_usage": {
         "input_tokens": 982,
         "output_tokens": 880,
+        "cache_read_tokens": 1373,
+        "cache_creation_tokens": 0
+      }
+    }
+  },
+  {
+    "title": "🟢 G.O. raises guest lecturer honoraria by ₹5,000 across Tamil Nadu government colleges",
+    "date": "November 12, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 1026,
+        "output_tokens": 687,
         "cache_read_tokens": 1373,
         "cache_creation_tokens": 0
       }
@@ -614,38 +650,17 @@
   {
     "title": "⚖️ Madras HC upholds Speaker's acceptance of six AIADMK-to-TVK MLA resignations",
     "date": "October 13, 2026",
-    "reasoning": {
-      "drafter_usage": {
-        "input_tokens": 982,
-        "output_tokens": 1037,
-        "cache_read_tokens": 0,
-        "cache_creation_tokens": 1373
-      }
-    }
+    "reasoning": null
   },
   {
     "title": "🟨 CM Mr. Vijay meets AP CM Mr. Naidu in Guntur; Krishna water release for Chennai on agenda",
     "date": "October 13, 2026",
-    "reasoning": {
-      "drafter_usage": {
-        "input_tokens": 933,
-        "output_tokens": 851,
-        "cache_read_tokens": 1373,
-        "cache_creation_tokens": 0
-      }
-    }
+    "reasoning": null
   },
   {
     "title": "🟨 CM Mr. Vijay meets AP CM Naidu in Vijayawada — Krishna water request, no commitment secured",
     "date": "October 13, 2026",
-    "reasoning": {
-      "drafter_usage": {
-        "input_tokens": 931,
-        "output_tokens": 921,
-        "cache_read_tokens": 0,
-        "cache_creation_tokens": 1373
-      }
-    }
+    "reasoning": null
   },
   {
     "title": "🟢 Chennai Metro Phase II first stretch inaugurated — Poonamallee–Vadapalani, 14.64 km, 11 stations",

@@ -1,17 +1,35 @@
 {
   "period": "Rolling 30 days",
-  "as_of": "2026-11-13T02:57:12.523559+05:30",
+  "as_of": "2026-11-14T02:23:15.425628+05:30",
   "candidates_surfaced": 196,
   "auto_verified": 55,
   "auto_verified_pct": 28,
-  "escalated": 23,
-  "escalated_pct": 12,
+  "escalated": 25,
+  "escalated_pct": 13,
   "autonomous_commits": 55,
   "operator_edited": 0,
-  "skipped": 118,
-  "cost_this_month_usd": 9.43,
+  "skipped": 116,
+  "cost_this_month_usd": 9.5,
   "cost_per_published_entry_usd": 0.17,
   "autonomous_commits_list": [
+    {
+      "sha": "c008e8a",
+      "prefix": "agent",
+      "title": "🟢 G.O. raises guest lecturer honoraria by ₹5,000 across Tamil Nadu government co",
+      "timestamp": "2026-11-13T20:53:12Z"
+    },
+    {
+      "sha": "d8ce67f",
+      "prefix": "agent",
+      "title": "🟢 CM chairs NE monsoon fishermen safety review; Coast Guard and Navy on standby",
+      "timestamp": "2026-11-13T20:53:11Z"
+    },
+    {
+      "sha": "9841d0a",
+      "prefix": "agent",
+      "title": "🟢 TN imposes stock limits on paddy, rice, and pulses; clearance deadline Novembe",
+      "timestamp": "2026-11-13T20:53:11Z"
+    },
     {
       "sha": "828c17d",
       "prefix": "agent",
@@ -113,24 +131,6 @@
       "prefix": "agent",
       "title": "🟢 CM Mr. Vijay begins using renovated 'Pamani Illam' bungalow as camp office",
       "timestamp": "2026-11-05T21:00:10Z"
-    },
-    {
-      "sha": "3b4b0ff",
-      "prefix": "agent",
-      "title": "🟢 TASMAC bottle buyback scheme takes effect — ₹10 cess, worker strike, ~245 supe",
-      "timestamp": "2026-11-04T20:45:36Z"
-    },
-    {
-      "sha": "e8a5a0b",
-      "prefix": "agent",
-      "title": "🟨 CM Mr. Vijay urges Centre's task force to scrap NEET, back Class XII admission",
-      "timestamp": "2026-11-04T20:45:36Z"
-    },
-    {
-      "sha": "7712300",
-      "prefix": "agent",
-      "title": "🟢 TASMAC to install Reverse Vending Machines at all 4,048 outlets; ₹10/bottle re",
-      "timestamp": "2026-11-03T20:32:57Z"
     }
   ],
   "escalated_list": [
@@ -248,59 +248,19 @@
       "title": "",
       "url": "https://theprint.in/india/over-61-84-lakh-tn-school-students-to-receive-cakes-on-childrens-day/3096676/",
       "reasoning": "Core facts (₹9.27 crore, 61.84 lakh students, TNCSC procurement, 45g cake, 12-district two-packet plan) are corroborated by at least four independent outlets (ThePrint/PTI, Tribune India, Times of India, New Indian Express). No contradictions with existing site state. However, the article's 'first o"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tn-cm-vijay-launches-distribution-of-cakes-greeting-cards-sweet-pongal-to-school-students-for-childrens-day/article71697560.ece",
+      "reasoning": "The article is a genuine, well-sourced governance action by CM Mr. Vijay on 2026-11-13 — a statewide Children's Day distribution of cakes (₹9.27 crore, 61.84 lakh beneficiaries), greeting cards, and sweet pongal to government school students and anganwadi children. The Hindu article is detailed and "
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/kallakurichi-tvk-mla-collector-row-tamil-nadu-minister-vanni-arasu-says-vck-will-stand-by-victims/article71697242.ece",
+      "reasoning": "The article is factually well-corroborated across three whitelisted sources (The Hindu, New Indian Express, The News Minute) and involves a genuine governance-accountability story: a VCK coalition minister publicly defending a District Collector against alleged harassment by a TVK MLA, signalling in"
     }
   ],
   "skipped_list": [
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-minister-sengottaiyan-claims-15-more-functionaries-may-quit-aiadmk/article71577952.ece",
-      "skip_reason": "This article is squarely in the 'factional manoeuvring without policy effect' category explicitly listed in the scope filter. Minister Sengottaiyan's claim that 15 AIADMK functionaries 'may quit' is a"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/edappadi-palaniswami-criticises-tvk-led-tamil-nadu-government-over-electricity-purchase-at-high-rate/article71578360.ece",
-      "skip_reason": "This article is an opposition political statement by AIADMK's Edappadi K. Palaniswami criticising the TVK government — it contains no confirmed governance action, executive order, or cabinet decision."
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-cm-vijay-pays-homage-to-tyagi-sankaralinganar-on-his-death-anniversary/article71577903.ece",
-      "skip_reason": "This article covers a social media post (on X) by CM Mr. Vijay paying tribute to historical figure Tyagi Sankaralinganar on his death anniversary. The full article text confirms there is no governance"
-    },
-    {
-      "title": "",
-      "url": "https://theprint.in/india/man-steals-minibus-in-indore-rams-into-vehicles-two-injured/3070452/",
-      "skip_reason": "This article is entirely unrelated to Tamil Nadu governance, CM Mr. Vijay (TVK), or any manifesto promise. It reports a criminal incident in Indore, Madhya Pradesh — a completely different state — inv"
-    },
-    {
-      "title": "",
-      "url": "https://theprint.in/india/kerala-hc-declines-interim-stay-of-order-to-register-fir-against-vijayan-in-cmrl-bribery-case/3070443/",
-      "skip_reason": "This article concerns a Kerala High Court ruling about former Kerala Chief Minister Pinarayi Vijayan and the CMRL-Exalogic bribery case — an entirely Kerala-jurisdiction matter with no connection to T"
-    },
-    {
-      "title": "",
-      "url": "https://theprint.in/india/days-before-ranabaali-release-rashmika-deverakonda-meet-cm-vijay-praise-incredible-journey/3070373/",
-      "skip_reason": "This article describes Bollywood/Tollywood actors Rashmika Mandanna and Vijay Deverakonda making a courtesy call on CM Mr. Vijay ahead of their film 'Ranabaali' release. The visit is explicitly a film"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/palaniswami-alleges-mega-corruption-in-tvks-power-purchase/article71583052.ece",
-      "skip_reason": "This candidate is an opposition press conference by AIADMK leader Palaniswami alleging 'mega corruption' — it is political speech, not a governance action. The underlying TNPDCL power procurement at ₹"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/dhinakaran-questions-tamil-nadu-cm-vijays-silence-over-cauvery-water-dispute-with-karnataka/article71582969.ece",
-      "skip_reason": "This article reports a social media statement by AMMK founder T.T.V. Dhinakaran criticising CM Mr. Vijay's alleged 'silence' on the Cauvery water dispute with Karnataka. This is squarely opposition po"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/why-has-tamil-nadu-gone-for-expensive-power-purchase-agreements-explained/article71579306.ece",
-      "skip_reason": "This article is an 'Explained' piece — a journalistic analysis of why TNPDCL signed an expensive power purchase agreement at ₹30/unit. It reports a government clarification and opposition criticism, b"
-    },
-    {
-      "title": "",
-      "url": "https://theprint.in/india/missing-womans-body-found-4-days-after-fatal-fall-at-mylapore-mrts-station/3071113/",
-      "skip_reason": "This is a verified accident/crime report — the core facts (victim identity, date, unguarded infrastructure opening, body discovery) are corroborated by NDTV, Rediff, and Chennai Live. However, the art"
-    },
     {
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/mk-stalin-says-cm-vijay-must-visit-local-grocery-shops-to-understand-price-rise/article71587109.ece",
@@ -840,9 +800,67 @@
       "title": "",
       "url": "https://theprint.in/india/aiadmk-seeks-legal-action-against-tvk-legislator-over-alleged-obscene-messages-to-collector/3096675/",
       "skip_reason": "This article is fundamentally about an opposition party (AIADMK) filing a complaint against a ruling-party MLA over alleged personal misconduct — it is factional/political noise without a direct gover"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/palaniswami-continues-tirade-against-tvk-regime-on-investment-law-and-order-crime/article71697832.ece",
+      "skip_reason": "This article is entirely an opposition statement — AIADMK general secretary Edappadi K. Palaniswami issuing press releases criticising the TVK government on investment clearances, law and order, crime"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tvk-karamadai-union-secretary-booked-on-sexual-harassment-charge/article71698486.ece",
+      "skip_reason": "This article covers the police booking of a TVK local-level party functionary (Karamadai union secretary Karupusamy) for sexual harassment and caste-based harassment of a woman party member. While fac"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/minister-nirmal-kumar-denies-allegations-against-tvks-kallakurichi-mla-arul-vignesh/article71694332.ece",
+      "skip_reason": "This article is squarely within the 'factional manoeuvring without policy effect' category defined in the scope filter. It covers Minister Nirmal Kumar defending a TVK MLA (Arul Vignesh) against alleg"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-cm-vijay-must-be-wary-of-untrustworthy-ally-congress-bjp-leader-ram-madhav/article71697147.ece",
+      "skip_reason": "This article is a BJP leader (Ram Madhav) delivering political rhetoric at a press conference, warning CM Mr. Vijay about his Congress ally. There is no governance action, executive order, cabinet dec"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tvk-faces-criticism-from-its-ally-over-law-and-order-in-tamil-nadu-allegations-against-kallakurichi-mla/article71687050.ece",
+      "skip_reason": "This article documents political criticism from Congress MPs (an ally party) directed at the TVK government over law and order and an MLA-Collector controversy. No governance action — executive order,"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/cities/Coimbatore/aiadmk-slipped-to-third-place-because-of-its-kumbhakarna-sleep-says-minister-sengottaiyan/article71697187.ece",
+      "skip_reason": "This article is a political exchange between a TVK minister (Sengottaiyan) and AIADMK opposition leader Palaniswami, consisting entirely of rhetorical point-scoring — a 'Kumbhakarna sleep' retort with"
+    },
+    {
+      "title": "",
+      "url": "https://theprint.in/india/vijayan-visits-agitating-sanskrit-varsity-students-expresses-solidarity/3097716/",
+      "skip_reason": "This article is entirely about Pinarayi Vijayan — the CPI(M) veteran and former Chief Minister of Kerala — visiting protesting students at Sree Sankaracharya University of Sanskrit in Kalady, Kerala. "
+    },
+    {
+      "title": "",
+      "url": "https://theprint.in/india/palaniswami-slams-tn-cm-over-silence-on-mlas-conduct-rising-crimes/3097710/",
+      "skip_reason": "This article is an opposition political statement by AIADMK general secretary Edappadi K. Palaniswami criticising CM Mr. Vijay over law-and-order conditions and MLA conduct. It contains no governance "
     }
   ],
   "recent_commits": [
+    {
+      "sha": "c008e8a",
+      "prefix": "agent",
+      "title": "🟢 G.O. raises guest lecturer honoraria by ₹5,000 across Tamil Nadu government co",
+      "timestamp": "2026-11-13T20:53:12Z"
+    },
+    {
+      "sha": "d8ce67f",
+      "prefix": "agent",
+      "title": "🟢 CM chairs NE monsoon fishermen safety review; Coast Guard and Navy on standby",
+      "timestamp": "2026-11-13T20:53:11Z"
+    },
+    {
+      "sha": "9841d0a",
+      "prefix": "agent",
+      "title": "🟢 TN imposes stock limits on paddy, rice, and pulses; clearance deadline Novembe",
+      "timestamp": "2026-11-13T20:53:11Z"
+    },
     {
       "sha": "828c17d",
       "prefix": "agent",
@@ -884,30 +902,12 @@
       "prefix": "agent",
       "title": "🟢 Korean auto firms Hwashin and Seoyon commit ₹1,370 cr to Tamil Nadu amid AP-sh",
       "timestamp": "2026-11-11T21:09:16Z"
-    },
-    {
-      "sha": "ffd3547",
-      "prefix": "agent",
-      "title": "🔵 Speaker opens fresh disqualification inquiry into four ex-AIADMK MLAs who join",
-      "timestamp": "2026-11-10T20:47:38Z"
-    },
-    {
-      "sha": "236a1a9",
-      "prefix": "agent",
-      "title": "🟢 CM Mr. Vijay launches 'Eri' portal for online NOC applications on waterbody re",
-      "timestamp": "2026-11-10T20:47:38Z"
-    },
-    {
-      "sha": "bca80a4",
-      "prefix": "agent",
-      "title": "🟢 School Education Minister announces procurement committee, DVAC inquiry into l",
-      "timestamp": "2026-11-10T20:47:38Z"
     }
   ],
   "last_run": {
-    "ts": "2026-11-13T02:57:09.559140+05:30",
-    "candidates": 15,
-    "published": 2,
+    "ts": "2026-11-14T02:23:12.304931+05:30",
+    "candidates": 13,
+    "published": 3,
     "escalated": 2,
     "errors": 0
   }
