@@ -602,26 +602,12 @@
   {
     "title": "🟢 CM Mr. Vijay meets Singapore DPM; CapitaLand's ₹1,940 cr Chennai data centre unveiled",
     "date": "October 15, 2026",
-    "reasoning": {
-      "drafter_usage": {
-        "input_tokens": 1147,
-        "output_tokens": 944,
-        "cache_read_tokens": 0,
-        "cache_creation_tokens": 1373
-      }
-    }
+    "reasoning": null
   },
   {
     "title": "🟨 CM Mr. Vijay writes to Jaishankar seeking release of 25 Thoothukudi fishermen held by Maldives",
     "date": "October 15, 2026",
-    "reasoning": {
-      "drafter_usage": {
-        "input_tokens": 970,
-        "output_tokens": 990,
-        "cache_read_tokens": 1373,
-        "cache_creation_tokens": 0
-      }
-    }
+    "reasoning": null
   },
   {
     "title": "🟢 Tamil Nadu Semiconductor Ecosystem Scheme 2026 launched at state-level event",

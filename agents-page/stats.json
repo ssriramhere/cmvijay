@@ -1,15 +1,15 @@
 {
   "period": "Rolling 30 days",
-  "as_of": "2026-11-14T02:23:15.425628+05:30",
-  "candidates_surfaced": 196,
-  "auto_verified": 55,
+  "as_of": "2026-11-15T00:28:35.289679+05:30",
+  "candidates_surfaced": 190,
+  "auto_verified": 53,
   "auto_verified_pct": 28,
-  "escalated": 25,
+  "escalated": 24,
   "escalated_pct": 13,
-  "autonomous_commits": 55,
+  "autonomous_commits": 53,
   "operator_edited": 0,
-  "skipped": 116,
-  "cost_this_month_usd": 9.5,
+  "skipped": 113,
+  "cost_this_month_usd": 9.25,
   "cost_per_published_entry_usd": 0.17,
   "autonomous_commits_list": [
     {
@@ -136,11 +136,6 @@
   "escalated_list": [
     {
       "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/vijay-launches-3108-cr-ring-main-pipeline-project-for-equitable-drinking-water-supply/article71584148.ece",
-      "reasoning": "The core facts are well-corroborated across multiple independent sources (The Hindu, NIE, WaterToday, YouTube, Instagram): ₹3,108.55 crore, foundation stone laid by CM Mr. Vijay at Sholinganallur, implemented by CMWSSB, targeting equitable water supply across GCC. No primacy claims are made. However"
-    },
-    {
-      "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-government-orders-additional-25-days-of-guaranteed-employment-for-vulnerable-rural-households/article71603349.ece",
       "reasoning": "The article is well-sourced and verified across four outlets (The Hindu, DTNext, Deccan Chronicle, Hindustan Samachar), with the ₹100 crore GO, the 150-day extension for vulnerable households, and the August 5 Budget announcement all corroborated. The VB-G RAM G 125-day baseline is confirmed by offi"
     },
@@ -261,36 +256,6 @@
     }
   ],
   "skipped_list": [
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/mk-stalin-says-cm-vijay-must-visit-local-grocery-shops-to-understand-price-rise/article71587109.ece",
-      "skip_reason": "This article is a social media statement by M.K. Stalin (DMK president and opposition figure) criticising CM Mr. Vijay over rising prices. It contains no governance action, no executive order, no cabi"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/stalin-urges-tvk-government-to-file-appeal-in-supreme-court-over-bc-reservation-for-muslim-converts/article71587145.ece",
-      "skip_reason": "This article reports a political statement by M.K. Stalin (DMK president and opposition leader), urging the TVK government to file an SLP in the Supreme Court. No governance action has been taken by t"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-government-fully-prepared-to-face-northeast-monsoon-revenue-minister/article71587062.ece",
-      "skip_reason": "This is a routine ministerial press statement confirming monsoon preparedness status (98% complete), with no new executive order, scheme launch, cabinet decision, budget allocation, or trackable gover"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-governor-arlekar-cm-vijay-pay-tributes-to-apj-abdul-kalam-on-his-birth-anniversary/article71587110.ece",
-      "skip_reason": "This article describes a purely ceremonial tribute event — CM Mr. Vijay posted on X recalling Dr. Kalam's simplicity and scientific contributions on his birth anniversary (October 15). There is no exe"
-    },
-    {
-      "title": "",
-      "url": "https://theprint.in/india/mizoram-guv-calls-for-comprehensive-plan-to-strengthen-border-trade/3072840/",
-      "skip_reason": "This article has zero governance relevance to the Tamil Nadu government or CM Mr. Vijay (TVK). It concerns the Mizoram Governor — a Union-appointed constitutional official — calling for border trade m"
-    },
-    {
-      "title": "",
-      "url": "https://theprint.in/india/cmrl-case-bjp-welcomes-kerala-hc-order-rejecting-vijayans-plea-cpim-to-face-it-legally/3072829/",
-      "skip_reason": "This article is entirely about Kerala state politics — specifically a Kerala High Court ruling on pleas filed by former Kerala CM Pinarayi Vijayan (CPI-M) in the CMRL bribery case, and reactions from "
-    },
     {
       "title": "",
       "url": "https://www.thehindu.com/news/cities/Tiruchirapalli/minister-attributes-rise-in-milk-procurement-to-revision-in-price/article71588145.ece",
@@ -840,6 +805,21 @@
       "title": "",
       "url": "https://theprint.in/india/palaniswami-slams-tn-cm-over-silence-on-mlas-conduct-rising-crimes/3097710/",
       "skip_reason": "This article is an opposition political statement by AIADMK general secretary Edappadi K. Palaniswami criticising CM Mr. Vijay over law-and-order conditions and MLA conduct. It contains no governance "
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/aiadmk-to-protest-seeking-action-against-deputy-speaker-in-thuraiyur-assault-incident/article71702408.ece",
+      "skip_reason": "This article covers AIADMK's announcement of a protest and EPS's criticism of CM Mr. Vijay's silence — it is an opposition political reaction, not a governance action. The underlying Deputy Speaker as"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/stalin-writes-to-cm-vijay-seeking-all-party-meeting-on-cauvery-issue/article71702157.ece",
+      "skip_reason": "This article reports a letter from opposition leader M.K. Stalin (DMK) to CM Mr. Vijay requesting that the government convene an all-party meeting on the Cauvery/Mekedatu issue. The subject of the art"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/former-civil-servants-urge-cm-vijay-to-restore-mandate-of-panel-on-union-state-relations/article71702175.ece",
+      "skip_reason": "This article covers a civil society open letter from 72 former civil servants urging CM Mr. Vijay to reverse the government's November 6 disbanding of the High-Level Committee on Union-State Relations"
     }
   ],
   "recent_commits": [
@@ -905,10 +885,10 @@
     }
   ],
   "last_run": {
-    "ts": "2026-11-14T02:23:12.304931+05:30",
-    "candidates": 13,
-    "published": 3,
-    "escalated": 2,
+    "ts": "2026-11-15T00:28:33.218796+05:30",
+    "candidates": 3,
+    "published": 0,
+    "escalated": 0,
     "errors": 0
   }
 }
