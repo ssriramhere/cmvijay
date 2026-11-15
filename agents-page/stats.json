@@ -1,17 +1,23 @@
 {
   "period": "Rolling 30 days",
-  "as_of": "2026-11-15T00:28:35.289679+05:30",
+  "as_of": "2026-11-16T01:06:52.194113+05:30",
   "candidates_surfaced": 190,
-  "auto_verified": 53,
-  "auto_verified_pct": 28,
-  "escalated": 24,
+  "auto_verified": 51,
+  "auto_verified_pct": 27,
+  "escalated": 25,
   "escalated_pct": 13,
-  "autonomous_commits": 53,
+  "autonomous_commits": 51,
   "operator_edited": 0,
-  "skipped": 113,
-  "cost_this_month_usd": 9.25,
-  "cost_per_published_entry_usd": 0.17,
+  "skipped": 114,
+  "cost_this_month_usd": 9.22,
+  "cost_per_published_entry_usd": 0.18,
   "autonomous_commits_list": [
+    {
+      "sha": "ffc9ab7",
+      "prefix": "agent",
+      "title": "🟢 TNIPC holds first meeting — 112 MoUs, ₹1.14 lakh crore proposed, 74% implement",
+      "timestamp": "2026-11-15T19:36:49Z"
+    },
     {
       "sha": "c008e8a",
       "prefix": "agent",
@@ -125,12 +131,6 @@
       "prefix": "agent",
       "title": "⚖️ Madras HC sends Thiruverumbur election petition to trial; MLA's seat remains",
       "timestamp": "2026-11-07T18:31:11Z"
-    },
-    {
-      "sha": "7b9ed06",
-      "prefix": "agent",
-      "title": "🟢 CM Mr. Vijay begins using renovated 'Pamani Illam' bungalow as camp office",
-      "timestamp": "2026-11-05T21:00:10Z"
     }
   ],
   "escalated_list": [
@@ -253,24 +253,14 @@
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/kallakurichi-tvk-mla-collector-row-tamil-nadu-minister-vanni-arasu-says-vck-will-stand-by-victims/article71697242.ece",
       "reasoning": "The article is factually well-corroborated across three whitelisted sources (The Hindu, New Indian Express, The News Minute) and involves a genuine governance-accountability story: a VCK coalition minister publicly defending a District Collector against alleged harassment by a TVK MLA, signalling in"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/former-civil-servants-urge-cm-vijay-to-restore-mandate-of-panel-on-union-state-relations/article71702201.ece",
+      "reasoning": "The article is well-sourced and corroborated by at least two independent outlets (The Hindu and Economic Times Education), and the underlying facts — the November 6 dissolution of the Justice Kurian Joseph HLC, the removal of Part I of its report from tn.gov.in, and the CCG open letter signed by 72 "
     }
   ],
   "skipped_list": [
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/cities/Tiruchirapalli/minister-attributes-rise-in-milk-procurement-to-revision-in-price/article71588145.ece",
-      "skip_reason": "The article covers a ministerial field visit to Tiruchi on Oct 15, 2026, where Minister Vijayalakshmi launched Aavin product variants and attributed rising milk procurement to a price hike. The substa"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/nation-parliament-must-debate-political-appeals-to-children-during-elections-madras-high-court/article71591152.ece",
-      "skip_reason": "This article reports a Madras High Court observation made while rejecting a DMK election petition (K Sivakumar v R Rajendran, Salem North constituency). The court's remarks about children in TVK campa"
-    },
-    {
-      "title": "",
-      "url": "https://theprint.in/india/andhra-cm-naidu-prays-to-goddess-kanaka-durga-for-rains-poverty-free-state/3074007/",
-      "skip_reason": "This article is about Andhra Pradesh Chief Minister N. Chandrababu Naidu offering prayers at a temple in Vijayawada — a different state, a different Chief Minister, and a different government entirely"
-    },
     {
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-governor-arlekar-cm-vijay-express-condolences-over-passing-of-composer-deva/article71595806.ece",
@@ -820,9 +810,35 @@
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/former-civil-servants-urge-cm-vijay-to-restore-mandate-of-panel-on-union-state-relations/article71702175.ece",
       "skip_reason": "This article covers a civil society open letter from 72 former civil servants urging CM Mr. Vijay to reverse the government's November 6 disbanding of the High-Level Committee on Union-State Relations"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/palaniswami-urges-vijay-to-raise-mekedatu-issue-with-congress-leadership/article71704352.ece",
+      "skip_reason": "This article records an opposition statement by AIADMK's Palaniswami urging CM Mr. Vijay to raise the Mekedatu issue during a Delhi visit — it is not a governance action by the TVK government. No exec"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/dhinakaran-vasan-urge-vijay-to-protect-interests-of-tn-farmers-in-mekedatu-issue/article71704365.ece",
+      "skip_reason": "This article is a political opposition statement — AMMK's T.T.V. Dhinakaran and TMC(M)'s G.K. Vasan criticising CM Mr. Vijay over the Mekedatu issue. There is no governance action, executive order, ca"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/police-intensify-investigation-in-sexual-harassment-case-against-tvk-functionary/article71702411.ece",
+      "skip_reason": "This article covers a sexual harassment case against a TVK party functionary (Karamadai union secretary Karupusamy) and a police investigation update. While factually corroborated by The News Minute a"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/bjp-to-stage-protest-over-allegations-of-tvk-mlas-inappropriate-messages-to-collector/article71701990.ece",
+      "skip_reason": "This article reports a BJP opposition party's announcement of a protest rally scheduled for November 18 — it is a political opposition action, not a governance action by the Tamil Nadu government. The"
     }
   ],
   "recent_commits": [
+    {
+      "sha": "ffc9ab7",
+      "prefix": "agent",
+      "title": "🟢 TNIPC holds first meeting — 112 MoUs, ₹1.14 lakh crore proposed, 74% implement",
+      "timestamp": "2026-11-15T19:36:49Z"
+    },
     {
       "sha": "c008e8a",
       "prefix": "agent",
@@ -876,19 +892,13 @@
       "prefix": "agent",
       "title": "🟢 Minister Rajmohan announces procurement committee after library book scam surf",
       "timestamp": "2026-11-11T21:09:16Z"
-    },
-    {
-      "sha": "7936736",
-      "prefix": "agent",
-      "title": "🟢 Korean auto firms Hwashin and Seoyon commit ₹1,370 cr to Tamil Nadu amid AP-sh",
-      "timestamp": "2026-11-11T21:09:16Z"
     }
   ],
   "last_run": {
-    "ts": "2026-11-15T00:28:33.218796+05:30",
-    "candidates": 3,
-    "published": 0,
-    "escalated": 0,
+    "ts": "2026-11-16T01:06:49.428046+05:30",
+    "candidates": 6,
+    "published": 1,
+    "escalated": 1,
     "errors": 0
   }
 }

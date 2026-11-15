@@ -1,5 +1,17 @@
 [
   {
+    "title": "🟢 TNIPC holds first meeting — 112 MoUs, ₹1.14 lakh crore proposed, 74% implemented",
+    "date": "November 14, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 936,
+        "output_tokens": 1017,
+        "cache_read_tokens": 1373,
+        "cache_creation_tokens": 0
+      }
+    }
+  },
+  {
     "title": "🟢 TN imposes stock limits on paddy, rice, and pulses; clearance deadline November 16",
     "date": "November 13, 2026",
     "reasoning": {
@@ -554,26 +566,12 @@
   {
     "title": "🔵 Speaker sets two-month deadline on disqualification of four ex-AIADMK MLAs",
     "date": "October 16, 2026",
-    "reasoning": {
-      "drafter_usage": {
-        "input_tokens": 931,
-        "output_tokens": 888,
-        "cache_read_tokens": 0,
-        "cache_creation_tokens": 1373
-      }
-    }
+    "reasoning": null
   },
   {
     "title": "🟢 CM Mr. Vijay inaugurates Periyar Arivulagam library and science centre, Coimbatore",
     "date": "October 16, 2026",
-    "reasoning": {
-      "drafter_usage": {
-        "input_tokens": 821,
-        "output_tokens": 557,
-        "cache_read_tokens": 1373,
-        "cache_creation_tokens": 0
-      }
-    }
+    "reasoning": null
   },
   {
     "title": "⚖️ SC upholds patta cancellation over Tiruvallur water body; TN ordered to rehouse 20 flat owners",
@@ -612,14 +610,7 @@
   {
     "title": "🟢 Tamil Nadu Semiconductor Ecosystem Scheme 2026 launched at state-level event",
     "date": "October 15, 2026",
-    "reasoning": {
-      "drafter_usage": {
-        "input_tokens": 955,
-        "output_tokens": 870,
-        "cache_read_tokens": 1373,
-        "cache_creation_tokens": 0
-      }
-    }
+    "reasoning": null
   },
   {
     "title": "🟢 TN fixes powerloom weaving wages for Pongal 2027 dhoti and saree scheme",
