@@ -1,17 +1,23 @@
 {
   "period": "Rolling 30 days",
-  "as_of": "2026-11-16T01:06:52.194113+05:30",
-  "candidates_surfaced": 190,
-  "auto_verified": 51,
+  "as_of": "2026-11-17T04:45:42.578911+05:30",
+  "candidates_surfaced": 194,
+  "auto_verified": 52,
   "auto_verified_pct": 27,
-  "escalated": 25,
-  "escalated_pct": 13,
-  "autonomous_commits": 51,
+  "escalated": 27,
+  "escalated_pct": 14,
+  "autonomous_commits": 52,
   "operator_edited": 0,
-  "skipped": 114,
-  "cost_this_month_usd": 9.22,
+  "skipped": 115,
+  "cost_this_month_usd": 9.49,
   "cost_per_published_entry_usd": 0.18,
   "autonomous_commits_list": [
+    {
+      "sha": "b4ed75a",
+      "prefix": "agent",
+      "title": "🟢 Government issues orders withdrawing 600 cases against farmers and teachers",
+      "timestamp": "2026-11-16T23:15:39Z"
+    },
     {
       "sha": "ffc9ab7",
       "prefix": "agent",
@@ -124,12 +130,6 @@
       "sha": "7e97679",
       "prefix": "agent",
       "title": "🟨 CM Mr. Vijay writes to PM Modi urging halt to Mekedatu approvals without co-ba",
-      "timestamp": "2026-11-07T18:31:11Z"
-    },
-    {
-      "sha": "5c3af3c",
-      "prefix": "agent",
-      "title": "⚖️ Madras HC sends Thiruverumbur election petition to trial; MLA's seat remains",
       "timestamp": "2026-11-07T18:31:11Z"
     }
   ],
@@ -258,19 +258,19 @@
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/former-civil-servants-urge-cm-vijay-to-restore-mandate-of-panel-on-union-state-relations/article71702201.ece",
       "reasoning": "The article is well-sourced and corroborated by at least two independent outlets (The Hindu and Economic Times Education), and the underlying facts — the November 6 dissolution of the Justice Kurian Joseph HLC, the removal of Part I of its report from tn.gov.in, and the CCG open letter signed by 72 "
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/ncw-calls-for-inquiry-seeks-report-from-dgp-over-kallakurichi-issue/article71705800.ece",
+      "reasoning": "The core facts are well-corroborated across four independent outlets (The Hindu, The Print, Hindustan Times, The News Minute) and the NCW's own official X/Twitter post. The NCW chairperson Vijaya Rahatkar's letter to the TN DGP is confirmed, as are the identities of MLA C. Arul Vignesh and IAS Colle"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tn-government-introduces-planning-permission-system-based-on-third-party-certification/article71705487.ece",
+      "reasoning": "The underlying governance action — a Government Order by the TN Housing and Urban Development Department introducing third-party certification for building plan approvals — is real, well-corroborated by two whitelisted sources (The Hindu and The New Indian Express), and has no contradictions with ex"
     }
   ],
   "skipped_list": [
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-governor-arlekar-cm-vijay-express-condolences-over-passing-of-composer-deva/article71595806.ece",
-      "skip_reason": "This article covers CM Mr. Vijay expressing condolences and announcing state honours for the funeral of music director Deva — a cultural/ceremonial event with no governance policy action, executive or"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/tvk-has-become-a-breaking-bad-party-alleges-mk-stalin/article71595541.ece",
-      "skip_reason": "This article reports an opposition leader (DMK's M.K. Stalin) making a social media political attack on the ruling TVK party following the DRI arrest of a TVK functionary for drug trafficking. While t"
-    },
     {
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/dhinakaran-criticises-tvk-led-government-over-monsoon-preparedness/article71599527.ece",
@@ -830,9 +830,30 @@
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/bjp-to-stage-protest-over-allegations-of-tvk-mlas-inappropriate-messages-to-collector/article71701990.ece",
       "skip_reason": "This article reports a BJP opposition party's announcement of a protest rally scheduled for November 18 — it is a political opposition action, not a governance action by the Tamil Nadu government. The"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/annamalai-condemns-use-of-arohara-chant-to-praise-tamil-nadu-cm-vijay-minister/article71707097.ece",
+      "skip_reason": "This article is entirely about BJP opposition politicians (K. Annamalai and Nainar Nagenthran) condemning a social media-reported incident at a religious festival — a committee member allegedly chanti"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/karthigai-deepam-lit-only-at-deepa-mandapam-for-over-150-years-tn-tells-sc/article71705025.ece",
+      "skip_reason": "This article reports a Supreme Court affidavit filed by the Tamil Nadu HR&CE Department defending the state's position in a long-running religious dispute over the Karthigai Deepam lighting at Thirupp"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/cities/Madurai/why-tamil-nadus-pastoralists-are-demanding-a-voice-in-wildlife-conservation/article71704546.ece",
+      "skip_reason": "This article is a community advocacy/opinion piece, not a report of a new governance action. The underlying governance event — the GO dated October 28, 2026 reconstituting the State Board for Wildlife"
     }
   ],
   "recent_commits": [
+    {
+      "sha": "b4ed75a",
+      "prefix": "agent",
+      "title": "🟢 Government issues orders withdrawing 600 cases against farmers and teachers",
+      "timestamp": "2026-11-16T23:15:39Z"
+    },
     {
       "sha": "ffc9ab7",
       "prefix": "agent",
@@ -886,19 +907,13 @@
       "prefix": "agent",
       "title": "🟢 TASMAC mandates 3-year tenure cap for shop staff; A/B/C classification sets mi",
       "timestamp": "2026-11-11T21:09:17Z"
-    },
-    {
-      "sha": "2e8f0eb",
-      "prefix": "agent",
-      "title": "🟢 Minister Rajmohan announces procurement committee after library book scam surf",
-      "timestamp": "2026-11-11T21:09:16Z"
     }
   ],
   "last_run": {
-    "ts": "2026-11-16T01:06:49.428046+05:30",
+    "ts": "2026-11-17T04:45:39.453942+05:30",
     "candidates": 6,
     "published": 1,
-    "escalated": 1,
+    "escalated": 2,
     "errors": 0
   }
 }

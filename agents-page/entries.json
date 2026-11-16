@@ -1,5 +1,17 @@
 [
   {
+    "title": "🟢 Government issues orders withdrawing 600 cases against farmers and teachers",
+    "date": "November 16, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 611,
+        "output_tokens": 612,
+        "cache_read_tokens": 1373,
+        "cache_creation_tokens": 0
+      }
+    }
+  },
+  {
     "title": "🟢 TNIPC holds first meeting — 112 MoUs, ₹1.14 lakh crore proposed, 74% implemented",
     "date": "November 14, 2026",
     "reasoning": {
