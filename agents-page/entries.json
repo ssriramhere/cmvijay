@@ -1,5 +1,41 @@
 [
   {
+    "title": "🟢 CM Mr. Vijay inspects 108 emergency call centre; directs expedited ambulance procurement",
+    "date": "November 17, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 680,
+        "output_tokens": 696,
+        "cache_read_tokens": 0,
+        "cache_creation_tokens": 1373
+      }
+    }
+  },
+  {
+    "title": "🟢 TN ministers submit ₹9,618 cr maritime memorandum to Centre; education dues raised separately",
+    "date": "November 17, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 1045,
+        "output_tokens": 847,
+        "cache_read_tokens": 1373,
+        "cache_creation_tokens": 0
+      }
+    }
+  },
+  {
+    "title": "⚖️ Madras HC strikes down TN's inter-state mineral transport ban as unconstitutional",
+    "date": "November 17, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 943,
+        "output_tokens": 967,
+        "cache_read_tokens": 1373,
+        "cache_creation_tokens": 0
+      }
+    }
+  },
+  {
     "title": "🟢 Government issues orders withdrawing 600 cases against farmers and teachers",
     "date": "November 16, 2026",
     "reasoning": {
@@ -627,14 +663,7 @@
   {
     "title": "🟢 TN fixes powerloom weaving wages for Pongal 2027 dhoti and saree scheme",
     "date": "October 15, 2026",
-    "reasoning": {
-      "drafter_usage": {
-        "input_tokens": 898,
-        "output_tokens": 718,
-        "cache_read_tokens": 0,
-        "cache_creation_tokens": 1373
-      }
-    }
+    "reasoning": null
   },
   {
     "title": "⚖️ Madras HC upholds Speaker's acceptance of six AIADMK-to-TVK MLA resignations",

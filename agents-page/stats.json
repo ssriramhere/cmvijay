@@ -1,17 +1,35 @@
 {
   "period": "Rolling 30 days",
-  "as_of": "2026-11-17T04:45:42.578911+05:30",
-  "candidates_surfaced": 194,
-  "auto_verified": 52,
+  "as_of": "2026-11-18T03:35:23.077207+05:30",
+  "candidates_surfaced": 197,
+  "auto_verified": 54,
   "auto_verified_pct": 27,
-  "escalated": 27,
-  "escalated_pct": 14,
-  "autonomous_commits": 52,
+  "escalated": 29,
+  "escalated_pct": 15,
+  "autonomous_commits": 54,
   "operator_edited": 0,
-  "skipped": 115,
-  "cost_this_month_usd": 9.49,
+  "skipped": 114,
+  "cost_this_month_usd": 9.79,
   "cost_per_published_entry_usd": 0.18,
   "autonomous_commits_list": [
+    {
+      "sha": "d692168",
+      "prefix": "agent",
+      "title": "⚖️ Madras HC strikes down TN's inter-state mineral transport ban as unconstituti",
+      "timestamp": "2026-11-17T22:05:19Z"
+    },
+    {
+      "sha": "39f4174",
+      "prefix": "agent",
+      "title": "🟢 TN ministers submit ₹9,618 cr maritime memorandum to Centre; education dues ra",
+      "timestamp": "2026-11-17T22:05:18Z"
+    },
+    {
+      "sha": "68625a2",
+      "prefix": "agent",
+      "title": "🟢 CM Mr. Vijay inspects 108 emergency call centre; directs expedited ambulance p",
+      "timestamp": "2026-11-17T22:05:18Z"
+    },
     {
       "sha": "b4ed75a",
       "prefix": "agent",
@@ -113,24 +131,6 @@
       "prefix": "agent",
       "title": "🟢 G.O. issued — ₹1 crore compensation for families of police personnel killed on",
       "timestamp": "2026-11-09T23:20:01Z"
-    },
-    {
-      "sha": "92768bb",
-      "prefix": "agent",
-      "title": "🟢 Vetri Laptop Scheme sanctioned — ₹2,000 crore for 2026-27 college students",
-      "timestamp": "2026-11-07T18:31:11Z"
-    },
-    {
-      "sha": "2cbc54f",
-      "prefix": "agent",
-      "title": "🟢 Crop loan waiver restructured — ₹2,842.77 cr added, eligibility window extende",
-      "timestamp": "2026-11-07T18:31:11Z"
-    },
-    {
-      "sha": "7e97679",
-      "prefix": "agent",
-      "title": "🟨 CM Mr. Vijay writes to PM Modi urging halt to Mekedatu approvals without co-ba",
-      "timestamp": "2026-11-07T18:31:11Z"
     }
   ],
   "escalated_list": [
@@ -268,19 +268,19 @@
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/tn-government-introduces-planning-permission-system-based-on-third-party-certification/article71705487.ece",
       "reasoning": "The underlying governance action — a Government Order by the TN Housing and Urban Development Department introducing third-party certification for building plan approvals — is real, well-corroborated by two whitelisted sources (The Hindu and The New Indian Express), and has no contradictions with ex"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tn-govt-issues-guidelines-for-annan-seer-marriage-assistance-scheme/article71711629.ece",
+      "reasoning": "The Hindu article (Nov 17, 2026) reports a genuine governance action — a Government Order issuing detailed eligibility guidelines for the Annan Seer marriage assistance scheme. Two sources (The Hindu and New Indian Express) corroborate the scheme mechanics and the ₹812 crore allocation. However, a s"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-medical-services-corporation-floats-tenders-for-repair-works-at-tasmac-warehouses/article71702150.ece",
+      "reasoning": "The core facts are strongly verified: the Tamil Nadu government's own eProcurement portal (tntenders.gov.in) independently confirms all four TNMSC tenders for TASMAC warehouse repairs at Ambattur, Thirumazhisai, and Thanjavur, floated on November 12, 2026 with a closing date of November 20. The stor"
     }
   ],
   "skipped_list": [
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/dhinakaran-criticises-tvk-led-government-over-monsoon-preparedness/article71599527.ece",
-      "skip_reason": "This article is a pure opposition criticism piece by AMMK founder T.T.V. Dhinakaran regarding Chennai waterlogging after heavy rain on October 17–18, 2026. It contains no governance action — no execut"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/cities/chennai/when-chief-minister-c-joseph-vijay-made-it-to-the-navarathri-golu/article71596765.ece",
-      "skip_reason": "This article is a piece of cultural/human-interest journalism about CM Mr. Vijay's likeness appearing as a Navarathri Golu doll in private homes, alongside historical figures like Gandhi and Ambedkar."
-    },
     {
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/cm-vijays-negligence-is-costing-lives-alleges-mk-stalin/article71602334.ece",
@@ -845,9 +845,32 @@
       "title": "",
       "url": "https://www.thehindu.com/news/cities/Madurai/why-tamil-nadus-pastoralists-are-demanding-a-voice-in-wildlife-conservation/article71704546.ece",
       "skip_reason": "This article is a community advocacy/opinion piece, not a report of a new governance action. The underlying governance event — the GO dated October 28, 2026 reconstituting the State Board for Wildlife"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/call-for-cancellation-of-tnmsc-tenders-for-repair-works-at-tasmac-warehouses-in-tamil-nadu/article71709061.ece",
+      "skip_reason": "The article reports a professional association (TNMOA) calling for cancellation of TNMSC tenders for TASMAC warehouse repairs — it is a civil society demand, not a government executive action, cabinet"
     }
   ],
   "recent_commits": [
+    {
+      "sha": "d692168",
+      "prefix": "agent",
+      "title": "⚖️ Madras HC strikes down TN's inter-state mineral transport ban as unconstituti",
+      "timestamp": "2026-11-17T22:05:19Z"
+    },
+    {
+      "sha": "39f4174",
+      "prefix": "agent",
+      "title": "🟢 TN ministers submit ₹9,618 cr maritime memorandum to Centre; education dues ra",
+      "timestamp": "2026-11-17T22:05:18Z"
+    },
+    {
+      "sha": "68625a2",
+      "prefix": "agent",
+      "title": "🟢 CM Mr. Vijay inspects 108 emergency call centre; directs expedited ambulance p",
+      "timestamp": "2026-11-17T22:05:18Z"
+    },
     {
       "sha": "b4ed75a",
       "prefix": "agent",
@@ -889,30 +912,12 @@
       "prefix": "agent",
       "title": "⚖️ PMO sanctions prosecution of two IAS officers in ₹98.25-cr tender case",
       "timestamp": "2026-11-12T21:27:08Z"
-    },
-    {
-      "sha": "00bf127",
-      "prefix": "agent",
-      "title": "🟢 Justice M.V. Muralidharan appointed chairperson of TN SC/ST Commission",
-      "timestamp": "2026-11-11T21:09:17Z"
-    },
-    {
-      "sha": "2b716b7",
-      "prefix": "agent",
-      "title": "🟢 CM virtually inaugurates Raptee.HV experience centre; TIDCO commits ₹25 cr equ",
-      "timestamp": "2026-11-11T21:09:17Z"
-    },
-    {
-      "sha": "c241595",
-      "prefix": "agent",
-      "title": "🟢 TASMAC mandates 3-year tenure cap for shop staff; A/B/C classification sets mi",
-      "timestamp": "2026-11-11T21:09:17Z"
     }
   ],
   "last_run": {
-    "ts": "2026-11-17T04:45:39.453942+05:30",
+    "ts": "2026-11-18T03:35:19.296525+05:30",
     "candidates": 6,
-    "published": 1,
+    "published": 3,
     "escalated": 2,
     "errors": 0
   }
