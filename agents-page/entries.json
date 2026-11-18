@@ -1,5 +1,29 @@
 [
   {
+    "title": "🟢 CM Mr. Vijay virtually inaugurates hospital and college infrastructure worth ₹262.15 crore",
+    "date": "November 18, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 948,
+        "output_tokens": 840,
+        "cache_read_tokens": 0,
+        "cache_creation_tokens": 1373
+      }
+    }
+  },
+  {
+    "title": "🟢 CM inaugurates ₹174.97 cr Chennai civic projects; Amazon-funded modular STP at Kotturpuram",
+    "date": "November 18, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 1098,
+        "output_tokens": 880,
+        "cache_read_tokens": 1373,
+        "cache_creation_tokens": 0
+      }
+    }
+  },
+  {
     "title": "🟢 CM Mr. Vijay inspects 108 emergency call centre; directs expedited ambulance procurement",
     "date": "November 17, 2026",
     "reasoning": {

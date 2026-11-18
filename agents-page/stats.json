@@ -1,17 +1,29 @@
 {
   "period": "Rolling 30 days",
-  "as_of": "2026-11-18T03:35:23.077207+05:30",
-  "candidates_surfaced": 197,
-  "auto_verified": 54,
+  "as_of": "2026-11-19T03:19:23.644608+05:30",
+  "candidates_surfaced": 208,
+  "auto_verified": 56,
   "auto_verified_pct": 27,
   "escalated": 29,
-  "escalated_pct": 15,
-  "autonomous_commits": 54,
+  "escalated_pct": 14,
+  "autonomous_commits": 56,
   "operator_edited": 0,
-  "skipped": 114,
-  "cost_this_month_usd": 9.79,
+  "skipped": 122,
+  "cost_this_month_usd": 10.23,
   "cost_per_published_entry_usd": 0.18,
   "autonomous_commits_list": [
+    {
+      "sha": "7fd07a5",
+      "prefix": "agent",
+      "title": "🟢 CM inaugurates ₹174.97 cr Chennai civic projects; Amazon-funded modular STP at",
+      "timestamp": "2026-11-18T21:49:20Z"
+    },
+    {
+      "sha": "130017c",
+      "prefix": "agent",
+      "title": "🟢 CM Mr. Vijay virtually inaugurates hospital and college infrastructure worth ₹",
+      "timestamp": "2026-11-18T21:49:20Z"
+    },
     {
       "sha": "d692168",
       "prefix": "agent",
@@ -119,18 +131,6 @@
       "prefix": "agent",
       "title": "🟢 School Education Minister announces procurement committee, DVAC inquiry into l",
       "timestamp": "2026-11-10T20:47:38Z"
-    },
-    {
-      "sha": "9a0114d",
-      "prefix": "agent",
-      "title": "🟢 TASMAC enforces three-year transfer norm across all 38 districts, effective No",
-      "timestamp": "2026-11-10T20:47:37Z"
-    },
-    {
-      "sha": "317db09",
-      "prefix": "agent",
-      "title": "🟢 G.O. issued — ₹1 crore compensation for families of police personnel killed on",
-      "timestamp": "2026-11-09T23:20:01Z"
     }
   ],
   "escalated_list": [
@@ -850,9 +850,61 @@
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/call-for-cancellation-of-tnmsc-tenders-for-repair-works-at-tasmac-warehouses-in-tamil-nadu/article71709061.ece",
       "skip_reason": "The article reports a professional association (TNMOA) calling for cancellation of TNMSC tenders for TASMAC warehouse repairs — it is a civil society demand, not a government executive action, cabinet"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/reels-of-tvk-cadres-releasing-water-from-sothuparai-dam-embarrasses-government/article71715320.ece",
+      "skip_reason": "This article covers TVK party cadres opening a downstream irrigation sluice without permission and posting misleading social media reels — a factional indiscipline/embarrassment story with no substant"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tangedco-foreman-held-in-ranipet-for-bribery/article71715938.ece",
+      "skip_reason": "This is a routine DVAC trap-and-arrest of a low-level Tangedco foreman for a ₹3,000 bribe — a standard operational law enforcement action by a pre-existing institution. It does not represent a new exe"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/eps-condemns-opening-of-sothuparai-dam-by-tvk-functionaries/article71715916.ece",
+      "skip_reason": "This article covers TVK party cadres unauthorisedly opening a dam sluice gate for social media reels, followed by opposition condemnation from EPS. While the WRD filing a police complaint is a real pr"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/disgruntled-tvk-mlas-may-topple-the-government-says-regupathy/article71716338.ece",
+      "skip_reason": "This article reports opposition rhetoric from former DMK minister S. Regupathy, who himself qualifies his claim as 'unconfirmed information.' There is no governance action — no floor test called, no f"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/bjp-seeks-action-against-kallakurichi-tvk-mla/article71715957.ece",
+      "skip_reason": "This article reports a BJP opposition demonstration demanding CM Mr. Vijay take action against a TVK MLA — it is a political pressure event, not a governance action. No executive order, cabinet decisi"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tvk-versus-dmk-social-media-war-should-remain-constructive-not-turn-ugly-madras-high-court-judge/article71715987.ece",
+      "skip_reason": "This article reports oral observations by a Madras High Court judge during a hearing — no binding order, injunction, or judgment was issued. The substantive content is inter-party factional friction b"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/vice-president-tn-governor-cm-vijay-pay-tribute-to-freedom-fighter-vo-chidambaranar-on-death-anniversary/article71715386.ece",
+      "skip_reason": "This article covers a purely ceremonial tribute event — CM Mr. Vijay, the Vice-President, and the TN Governor each posted on X and a minister laid floral tributes at a portrait on V.O. Chidambaranar's"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/annamalai-flays-tvk-led-govt-over-delay-in-appointing-cauvery-technical-cell-vice-chairman/article71715094.ece",
+      "skip_reason": "This article reports K. Annamalai's social media criticism of the TVK government over an administrative vacancy — it is opposition political commentary, not a governance action. No executive order, ca"
     }
   ],
   "recent_commits": [
+    {
+      "sha": "7fd07a5",
+      "prefix": "agent",
+      "title": "🟢 CM inaugurates ₹174.97 cr Chennai civic projects; Amazon-funded modular STP at",
+      "timestamp": "2026-11-18T21:49:20Z"
+    },
+    {
+      "sha": "130017c",
+      "prefix": "agent",
+      "title": "🟢 CM Mr. Vijay virtually inaugurates hospital and college infrastructure worth ₹",
+      "timestamp": "2026-11-18T21:49:20Z"
+    },
     {
       "sha": "d692168",
       "prefix": "agent",
@@ -900,25 +952,13 @@
       "prefix": "agent",
       "title": "🟢 TN imposes stock limits on paddy, rice, and pulses; clearance deadline Novembe",
       "timestamp": "2026-11-13T20:53:11Z"
-    },
-    {
-      "sha": "828c17d",
-      "prefix": "agent",
-      "title": "🟢 CM orders ₹5.25 cr additional relief for 2018 Thoothukudi anti-Sterlite victim",
-      "timestamp": "2026-11-12T21:27:09Z"
-    },
-    {
-      "sha": "e2eb19b",
-      "prefix": "agent",
-      "title": "⚖️ PMO sanctions prosecution of two IAS officers in ₹98.25-cr tender case",
-      "timestamp": "2026-11-12T21:27:08Z"
     }
   ],
   "last_run": {
-    "ts": "2026-11-18T03:35:19.296525+05:30",
-    "candidates": 6,
-    "published": 3,
-    "escalated": 2,
-    "errors": 0
+    "ts": "2026-11-19T03:19:20.835238+05:30",
+    "candidates": 11,
+    "published": 2,
+    "escalated": 0,
+    "errors": 1
   }
 }
