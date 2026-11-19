@@ -1,5 +1,17 @@
 [
   {
+    "title": "🟢 CM Mr. Vijay meets Renault Group CEO, urges expanded Tamil Nadu investment",
+    "date": "November 19, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 962,
+        "output_tokens": 860,
+        "cache_read_tokens": 1373,
+        "cache_creation_tokens": 0
+      }
+    }
+  },
+  {
     "title": "🟢 CM Mr. Vijay virtually inaugurates hospital and college infrastructure worth ₹262.15 crore",
     "date": "November 18, 2026",
     "reasoning": {
@@ -614,14 +626,7 @@
   {
     "title": "🟢 CM Mr. Vijay announces ₹30 lakh each for two TN para table tennis bronze medallists",
     "date": "October 20, 2026",
-    "reasoning": {
-      "drafter_usage": {
-        "input_tokens": 893,
-        "output_tokens": 764,
-        "cache_read_tokens": 0,
-        "cache_creation_tokens": 1373
-      }
-    }
+    "reasoning": null
   },
   {
     "title": "📅 TN extends Special Officers' tenure in rural local bodies until April 2027",
@@ -648,14 +653,7 @@
   {
     "title": "⚖️ SC upholds patta cancellation over Tiruvallur water body; TN ordered to rehouse 20 flat owners",
     "date": "October 16, 2026",
-    "reasoning": {
-      "drafter_usage": {
-        "input_tokens": 877,
-        "output_tokens": 1062,
-        "cache_read_tokens": 0,
-        "cache_creation_tokens": 1373
-      }
-    }
+    "reasoning": null
   },
   {
     "title": "🟢 G.O.(Ms) No. 184 mandates repair of rainwater harvesting structures statewide",

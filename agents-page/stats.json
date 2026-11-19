@@ -1,17 +1,23 @@
 {
   "period": "Rolling 30 days",
-  "as_of": "2026-11-19T03:19:23.644608+05:30",
-  "candidates_surfaced": 208,
-  "auto_verified": 56,
+  "as_of": "2026-11-20T03:32:45.684289+05:30",
+  "candidates_surfaced": 203,
+  "auto_verified": 55,
   "auto_verified_pct": 27,
-  "escalated": 29,
-  "escalated_pct": 14,
-  "autonomous_commits": 56,
+  "escalated": 30,
+  "escalated_pct": 15,
+  "autonomous_commits": 55,
   "operator_edited": 0,
-  "skipped": 122,
-  "cost_this_month_usd": 10.23,
+  "skipped": 117,
+  "cost_this_month_usd": 10.03,
   "cost_per_published_entry_usd": 0.18,
   "autonomous_commits_list": [
+    {
+      "sha": "9d6e416",
+      "prefix": "agent",
+      "title": "🟢 CM Mr. Vijay meets Renault Group CEO, urges expanded Tamil Nadu investment",
+      "timestamp": "2026-11-19T22:02:42Z"
+    },
     {
       "sha": "7fd07a5",
       "prefix": "agent",
@@ -125,20 +131,9 @@
       "prefix": "agent",
       "title": "🟢 CM Mr. Vijay launches 'Eri' portal for online NOC applications on waterbody re",
       "timestamp": "2026-11-10T20:47:38Z"
-    },
-    {
-      "sha": "bca80a4",
-      "prefix": "agent",
-      "title": "🟢 School Education Minister announces procurement committee, DVAC inquiry into l",
-      "timestamp": "2026-11-10T20:47:38Z"
     }
   ],
   "escalated_list": [
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-government-orders-additional-25-days-of-guaranteed-employment-for-vulnerable-rural-households/article71603349.ece",
-      "reasoning": "The article is well-sourced and verified across four outlets (The Hindu, DTNext, Deccan Chronicle, Hindustan Samachar), with the ₹100 crore GO, the 150-day extension for vulnerable households, and the August 5 Budget announcement all corroborated. The VB-G RAM G 125-day baseline is confirmed by offi"
-    },
     {
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/use-of-chief-minister-c-joseph-vijays-deep-fake-videos-to-collect-money-rajasthan-youth-moves-madras-high-court-seeking-bail/article71611607.ece",
@@ -278,49 +273,19 @@
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-medical-services-corporation-floats-tenders-for-repair-works-at-tasmac-warehouses/article71702150.ece",
       "reasoning": "The core facts are strongly verified: the Tamil Nadu government's own eProcurement portal (tntenders.gov.in) independently confirms all four TNMSC tenders for TASMAC warehouse repairs at Ambattur, Thirumazhisai, and Thanjavur, floated on November 12, 2026 with a closing date of November 20. The stor"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/cities/chennai/dri-seizes-over-70-kg-of-heroin-worth-700-crore-in-chennai/article71719314.ece",
+      "reasoning": "The DRI heroin seizure is factually confirmed by multiple credible sources (TOI, PTI/Rediff, NDTV, Deccan Herald) and is a significant law-enforcement event. However, three issues require human judgment: (1) The article summary contains a factual inaccuracy — DRI intercepted a vehicle *near* an ice "
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/cities/chennai/ministers-remarks-hint-at-further-delays-in-ecr-4-lane-corridor-project/article71713084.ece",
+      "reasoning": "The Hindu (two bylined journalists) reports that State Highways Minister Aadhav Arjuna stated on November 13, 2026 that the ₹2,100 crore ECR elevated corridor (Thiruvanmiyur–Uthandi, 13.4 km) has been referred to a high-level committee and may be cancelled, citing tender irregularities (contract awa"
     }
   ],
   "skipped_list": [
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/cm-vijays-negligence-is-costing-lives-alleges-mk-stalin/article71602334.ece",
-      "skip_reason": "This article is an opposition political statement by DMK president M.K. Stalin criticising CM Mr. Vijay's governance of the police department. While the underlying incidents it references are real and"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/nagenthran-criticises-tvk-led-government-over-lack-of-monsoon-preparedness/article71599923.ece",
-      "skip_reason": "This article is a political opposition statement by BJP Tamil Nadu State President Nainar Nagenthran criticising the TVK government's monsoon preparedness. It contains no governance action, executive "
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/over-50-lakh-devotees-expected-to-attend-karthigai-deepam-festival-in-tiruvannamalai-minister-aadhav-arjuna/article71596673.ece",
-      "skip_reason": "This article covers a pre-festival administrative review meeting by two ministers inspecting crowd management, CCTV, and traffic logistics for the Karthigai Deepam festival in Tiruvannamalai. While it"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/naam-tamilar-katchi-dharapuram-bypoll-candidate-karthika-arrested/article71603935.ece",
-      "skip_reason": "This article covers the post-election arrest of NTK's Dharapuram bypoll candidate Karthika by Tamil Nadu police, in connection with a road blockade during CM Mr. Vijay's campaign roadshow on October 4"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/palaniswami-questions-vijays-silence-over-arrest-of-tvk-functionary-in-narcotics-seizure/article71604647.ece",
-      "skip_reason": "This article covers AIADMK general secretary Palaniswami's political statement criticising CM Mr. Vijay's alleged silence over a TVK functionary's arrest in a narcotics case. While the underlying drug"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/nainar-nagenthran-criticises-tvk-led-government-over-death-of-undertrial-in-tirunelveli/article71604597.ece",
-      "skip_reason": "This article is an opposition press statement by BJP State president Nainar Nagenthran criticising the TVK government over an undertrial's death — it contains no governance action, executive order, ca"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/hrce-executive-officer-was-rightly-dismissed-from-service-for-failing-to-protect-temple-land-madras-high-court/article71603321.ece",
-      "skip_reason": "This Madras High Court ruling upholds the dismissal of an HR&CE Executive Officer for a dereliction of duty that occurred in 2012 — well before the TVK government. The court's direction to the HR&CE C"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/cities/chennai/dmk-woman-councillor-booked-in-chennai-for-defamatory-remarks-against-tamil-nadu-cm-vijay/article71603395.ece",
-      "skip_reason": "This article describes a police FIR filed by a TVK party functionary against a DMK councillor for allegedly making derogatory remarks about CM Mr. Vijay at a party event. While it is factually well-co"
-    },
     {
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/police-commemoration-day-tamil-nadu-cm-vijay-pays-floral-tributes/article71607030.ece",
@@ -890,9 +855,30 @@
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/annamalai-flays-tvk-led-govt-over-delay-in-appointing-cauvery-technical-cell-vice-chairman/article71715094.ece",
       "skip_reason": "This article reports K. Annamalai's social media criticism of the TVK government over an administrative vacancy — it is opposition political commentary, not a governance action. No executive order, ca"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tn-bjp-chief-nainar-nagenthran-slams-tvk-govt-over-alleged-halting-of-1000-assistance-to-women/article71719838.ece",
+      "skip_reason": "This article reports an opposition BJP leader's political accusation that the ₹1,000 Kalaignar Magalir Urimai Thogai scheme has been halted — a claim the TVK government explicitly denied within the sa"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tvk-mla-vs-babu-who-defeated-mk-stalin-in-kolathur-passes-away/article71719587.ece",
+      "skip_reason": "V.S. Babu's death is confirmed by multiple credible sources (The Hindu, TNIE, Times of India, Tribune India, Wikipedia) and the facts are internally consistent — age 75, cardiac arrest on November 19,"
+    },
+    {
+      "title": "",
+      "url": "https://theprint.in/india/tn-tvk-functionaries-obsession-with-reels-lands-them-in-trouble-over-unauthorised-dam-opening-row/3103061/",
+      "skip_reason": "This article covers a political embarrassment involving TVK party functionaries who unauthorisedly opened a canal sluice gate and posted misleading reels — it is factional/party misconduct noise, not "
     }
   ],
   "recent_commits": [
+    {
+      "sha": "9d6e416",
+      "prefix": "agent",
+      "title": "🟢 CM Mr. Vijay meets Renault Group CEO, urges expanded Tamil Nadu investment",
+      "timestamp": "2026-11-19T22:02:42Z"
+    },
     {
       "sha": "7fd07a5",
       "prefix": "agent",
@@ -946,19 +932,13 @@
       "prefix": "agent",
       "title": "🟢 CM chairs NE monsoon fishermen safety review; Coast Guard and Navy on standby",
       "timestamp": "2026-11-13T20:53:11Z"
-    },
-    {
-      "sha": "9841d0a",
-      "prefix": "agent",
-      "title": "🟢 TN imposes stock limits on paddy, rice, and pulses; clearance deadline Novembe",
-      "timestamp": "2026-11-13T20:53:11Z"
     }
   ],
   "last_run": {
-    "ts": "2026-11-19T03:19:20.835238+05:30",
-    "candidates": 11,
-    "published": 2,
-    "escalated": 0,
-    "errors": 1
+    "ts": "2026-11-20T03:32:42.680856+05:30",
+    "candidates": 6,
+    "published": 1,
+    "escalated": 2,
+    "errors": 0
   }
 }
