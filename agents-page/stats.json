@@ -1,16 +1,16 @@
 {
   "period": "Rolling 30 days",
-  "as_of": "2026-11-20T03:32:45.684289+05:30",
-  "candidates_surfaced": 203,
-  "auto_verified": 55,
+  "as_of": "2026-11-21T03:11:16.654303+05:30",
+  "candidates_surfaced": 197,
+  "auto_verified": 53,
   "auto_verified_pct": 27,
   "escalated": 30,
   "escalated_pct": 15,
-  "autonomous_commits": 55,
+  "autonomous_commits": 53,
   "operator_edited": 0,
-  "skipped": 117,
-  "cost_this_month_usd": 10.03,
-  "cost_per_published_entry_usd": 0.18,
+  "skipped": 113,
+  "cost_this_month_usd": 9.85,
+  "cost_per_published_entry_usd": 0.19,
   "autonomous_commits_list": [
     {
       "sha": "9d6e416",
@@ -286,36 +286,6 @@
     }
   ],
   "skipped_list": [
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/police-commemoration-day-tamil-nadu-cm-vijay-pays-floral-tributes/article71607030.ece",
-      "skip_reason": "This article describes CM Mr. Vijay attending Police Commemoration Day on October 21, 2026 — an annual ceremonial event observed every year on this date across all Indian states. The core activity (la"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/india-marks-dasara-burnings-and-durga-immersions-in-pictures/article71603735.ece",
-      "skip_reason": "This is a national photo essay covering Dasara, Vijayadashami, and Durga Puja festivities across India. It contains no governance action, no executive order, no policy launch, no cabinet decision, and"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/govt-closely-monitoring-rainfall-situation-says-sengottaiyan/article71607486.ece",
-      "skip_reason": "This article is a ministerial press statement confirming that the government is 'monitoring' the rainfall situation — a routine reassurance with no new executive order, scheme launch, cabinet decision"
-    },
-    {
-      "title": "",
-      "url": "https://theprint.in/india/vijayan-inspects-fire-damaged-portion-of-cantonment-house/3077552/",
-      "skip_reason": "This article is entirely outside the scope of cmvijay.ai. The subject is Pinarayi Vijayan, the Leader of the Opposition in Kerala — not CM Mr. Joseph Vijay (TVK) of Tamil Nadu. The site tracks the Tam"
-    },
-    {
-      "title": "",
-      "url": "https://theprint.in/india/vijayawada-utsav-ends-brings-together-folk-traditions-crafts-across-india/3077549/",
-      "skip_reason": "This article covers the Vijayawada Utsav, a 10-day cultural festival held in Vijayawada, Andhra Pradesh — a completely different state from Tamil Nadu. It has no connection to CM Mr. Vijay (TVK), the "
-    },
-    {
-      "title": "",
-      "url": "https://theprint.in/india/vijaya-dashami-symbolises-new-beginnings-says-assam-cm/3077539/",
-      "skip_reason": "This article is entirely about Assam CM Himanta Biswa Sarma's social media post on Vijaya Dashami — a different state, a different chief minister, and a purely symbolic/cultural statement with no gove"
-    },
     {
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/coimbatore-student-ends-life-family-alleges-harassment-by-teacher-classmates-over-caste-beef-consumption/article71610784.ece",
@@ -870,6 +840,16 @@
       "title": "",
       "url": "https://theprint.in/india/tn-tvk-functionaries-obsession-with-reels-lands-them-in-trouble-over-unauthorised-dam-opening-row/3103061/",
       "skip_reason": "This article covers a political embarrassment involving TVK party functionaries who unauthorisedly opened a canal sluice gate and posted misleading reels — it is factional/party misconduct noise, not "
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/cm-vijay-turns-pallbearer-at-kolathur-mla-vs-babus-funeral/article71724434.ece",
+      "skip_reason": "This article documents CM Mr. Vijay acting as a pallbearer at the funeral of Kolathur MLA V.S. Babu — a personal and ceremonial act of mourning, not a governance action, executive order, cabinet decis"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/madras-high-court-dismisses-as-withdrawn-former-minister-c-vijayabaskars-plea-in-gutkha-case/article71723413.ece",
+      "skip_reason": "This article covers a procedural court development — a withdrawal of a defective petition — in a legacy 2016 CBI gutkha scam case against C. Vijayabaskar, a former AIADMK minister now affiliated with "
     }
   ],
   "recent_commits": [
@@ -935,10 +915,10 @@
     }
   ],
   "last_run": {
-    "ts": "2026-11-20T03:32:42.680856+05:30",
-    "candidates": 6,
-    "published": 1,
-    "escalated": 2,
+    "ts": "2026-11-21T03:11:14.773278+05:30",
+    "candidates": 2,
+    "published": 0,
+    "escalated": 0,
     "errors": 0
   }
 }
