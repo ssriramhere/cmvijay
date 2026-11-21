@@ -36,6 +36,18 @@
     }
   },
   {
+    "title": "🟢 State sanctions ₹386.91 cr for 1,604 urban infrastructure projects under CMIUDM",
+    "date": "November 18, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 920,
+        "output_tokens": 926,
+        "cache_read_tokens": 0,
+        "cache_creation_tokens": 1373
+      }
+    }
+  },
+  {
     "title": "🟢 CM Mr. Vijay inspects 108 emergency call centre; directs expedited ambulance procurement",
     "date": "November 17, 2026",
     "reasoning": {
@@ -602,14 +614,7 @@
   {
     "title": "🟢 CM Mr. Vijay inspects State Emergency Operations Centre ahead of Northeast monsoon",
     "date": "October 22, 2026",
-    "reasoning": {
-      "drafter_usage": {
-        "input_tokens": 763,
-        "output_tokens": 758,
-        "cache_read_tokens": 0,
-        "cache_creation_tokens": 1373
-      }
-    }
+    "reasoning": null
   },
   {
     "title": "🟢 Government sanctions ₹71.01 crore to raise contingency funds at all police stations",
@@ -624,14 +629,7 @@
   {
     "title": "📅 TN extends Special Officers' tenure in rural local bodies until April 2027",
     "date": "October 20, 2026",
-    "reasoning": {
-      "drafter_usage": {
-        "input_tokens": 831,
-        "output_tokens": 775,
-        "cache_read_tokens": 1373,
-        "cache_creation_tokens": 0
-      }
-    }
+    "reasoning": null
   },
   {
     "title": "🔵 Speaker sets two-month deadline on disqualification of four ex-AIADMK MLAs",

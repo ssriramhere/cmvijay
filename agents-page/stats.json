@@ -1,17 +1,23 @@
 {
   "period": "Rolling 30 days",
-  "as_of": "2026-11-21T03:11:16.654303+05:30",
-  "candidates_surfaced": 197,
-  "auto_verified": 53,
+  "as_of": "2026-11-22T01:53:28.639430+05:30",
+  "candidates_surfaced": 193,
+  "auto_verified": 52,
   "auto_verified_pct": 27,
   "escalated": 30,
-  "escalated_pct": 15,
-  "autonomous_commits": 53,
+  "escalated_pct": 16,
+  "autonomous_commits": 52,
   "operator_edited": 0,
-  "skipped": 113,
-  "cost_this_month_usd": 9.85,
+  "skipped": 110,
+  "cost_this_month_usd": 9.65,
   "cost_per_published_entry_usd": 0.19,
   "autonomous_commits_list": [
+    {
+      "sha": "967c882",
+      "prefix": "agent",
+      "title": "🟢 State sanctions ₹386.91 cr for 1,604 urban infrastructure projects under CMIUD",
+      "timestamp": "2026-11-21T20:23:25Z"
+    },
     {
       "sha": "9d6e416",
       "prefix": "agent",
@@ -124,12 +130,6 @@
       "sha": "ffd3547",
       "prefix": "agent",
       "title": "🔵 Speaker opens fresh disqualification inquiry into four ex-AIADMK MLAs who join",
-      "timestamp": "2026-11-10T20:47:38Z"
-    },
-    {
-      "sha": "236a1a9",
-      "prefix": "agent",
-      "title": "🟢 CM Mr. Vijay launches 'Eri' portal for online NOC applications on waterbody re",
       "timestamp": "2026-11-10T20:47:38Z"
     }
   ],
@@ -286,31 +286,6 @@
     }
   ],
   "skipped_list": [
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/coimbatore-student-ends-life-family-alleges-harassment-by-teacher-classmates-over-caste-beef-consumption/article71610784.ece",
-      "skip_reason": "This is a verified, well-sourced crime/atrocity incident — a Dalit student's death by suicide following caste-based harassment, with an FIR filed by Peelamedu police against a teacher, principal, and "
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/cities/chennai/social-media-influencer-jason-samuel-arrested-in-connection-with-death-of-youtuber-harish/article71611632.ece",
-      "skip_reason": "The article describes a routine police arrest (abetment to suicide) of a private individual — social media influencer Jason Samuel Vijaykumar — following the death of YouTuber V. Harish. While the fac"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/tn-cm-vijay-hands-over-order-for-supply-of-45-kg-of-sandalwood-to-nagore-dargah-for-kandoori-festival/article71610778.ece",
-      "skip_reason": "This is a routine annual ceremonial act — the Tamil Nadu government has issued a free sandalwood supply order to Nagore Dargah for the Kandoori festival every year for at least a decade, confirmed by "
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-government-releases-list-of-public-holidays-for-2027/article71611311.ece",
-      "skip_reason": "The release of an annual public holiday list is a routine administrative notification issued by every state government every year, with no connection to any TVK manifesto promise and no governance acc"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/vijay-congratulates-kasthuri-rajamani-for-clinching-silver-medal-in-5th-asian-para-games/article71606546.ece",
-      "skip_reason": "This article covers CM Mr. Vijay congratulating two athletes (Kasthuri Rajamani and Sivarajan Solaimalai) on their silver medals at the 5th Asian Para Games via posts on X, with informal announcements"
-    },
     {
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/vijay-congratulates-tn-medallists-of-5th-asian-para-games/article71615836.ece",
@@ -850,9 +825,25 @@
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/madras-high-court-dismisses-as-withdrawn-former-minister-c-vijayabaskars-plea-in-gutkha-case/article71723413.ece",
       "skip_reason": "This article covers a procedural court development — a withdrawal of a defective petition — in a legacy 2016 CBI gutkha scam case against C. Vijayabaskar, a former AIADMK minister now affiliated with "
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/political-rivals-cinema-veterans-share-spotlight-at-anirudh-kavya-wedding-reception/article71729098.ece",
+      "skip_reason": "This article covers a private celebrity wedding reception (composer Anirudh's wedding) where CM Mr. Vijay happened to be present alongside political rivals and film industry figures. It contains zero "
+    },
+    {
+      "title": "",
+      "url": "https://theprint.in/india/thirupparankundram-lamp-row-aiadmk-bjp-hail-sc-order-vck-opposes-move/3104937/",
+      "skip_reason": "This article covers political party reactions (AIADMK, BJP, VCK, DMK) to a Supreme Court order on the Thirupparankundram lamp dispute. The SC order itself is real and well-sourced (Bar & Bench, Nov 20"
     }
   ],
   "recent_commits": [
+    {
+      "sha": "967c882",
+      "prefix": "agent",
+      "title": "🟢 State sanctions ₹386.91 cr for 1,604 urban infrastructure projects under CMIUD",
+      "timestamp": "2026-11-21T20:23:25Z"
+    },
     {
       "sha": "9d6e416",
       "prefix": "agent",
@@ -906,18 +897,12 @@
       "prefix": "agent",
       "title": "🟢 G.O. raises guest lecturer honoraria by ₹5,000 across Tamil Nadu government co",
       "timestamp": "2026-11-13T20:53:12Z"
-    },
-    {
-      "sha": "d8ce67f",
-      "prefix": "agent",
-      "title": "🟢 CM chairs NE monsoon fishermen safety review; Coast Guard and Navy on standby",
-      "timestamp": "2026-11-13T20:53:11Z"
     }
   ],
   "last_run": {
-    "ts": "2026-11-21T03:11:14.773278+05:30",
-    "candidates": 2,
-    "published": 0,
+    "ts": "2026-11-22T01:53:25.643020+05:30",
+    "candidates": 3,
+    "published": 1,
     "escalated": 0,
     "errors": 0
   }
