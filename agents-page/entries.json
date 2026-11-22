@@ -1,5 +1,17 @@
 [
   {
+    "title": "🟢 TASMAC mandates digital-only payment for liquor purchases above ₹1,000",
+    "date": "November 23, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 764,
+        "output_tokens": 777,
+        "cache_read_tokens": 0,
+        "cache_creation_tokens": 1373
+      }
+    }
+  },
+  {
     "title": "🟢 CM Mr. Vijay meets Renault Group CEO, urges expanded Tamil Nadu investment",
     "date": "November 19, 2026",
     "reasoning": {
@@ -590,14 +602,7 @@
   {
     "title": "🟢 CM Mr. Vijay distributes appointment orders to 69 TNPSC-selected Agriculture Department candidates",
     "date": "October 23, 2026",
-    "reasoning": {
-      "drafter_usage": {
-        "input_tokens": 802,
-        "output_tokens": 743,
-        "cache_read_tokens": 1373,
-        "cache_creation_tokens": 0
-      }
-    }
+    "reasoning": null
   },
   {
     "title": "🟢 Tamil Nadu cuts ATF VAT from 29% to 16% at Chennai airport, seeks airline expansion",
@@ -729,14 +734,7 @@
   {
     "title": "🟢 TN gazette fixes car purchase ceiling: ₹26 lakh for ministers, ₹15 lakh for MLAs",
     "date": "October 1, 2026",
-    "reasoning": {
-      "drafter_usage": {
-        "input_tokens": 920,
-        "output_tokens": 804,
-        "cache_read_tokens": 0,
-        "cache_creation_tokens": 1373
-      }
-    }
+    "reasoning": null
   },
   {
     "title": "🟢 CM Mr. Vijay inaugurates renovated Gandhi Memorial Museum, Madurai — ₹10.25 cr PWD work",

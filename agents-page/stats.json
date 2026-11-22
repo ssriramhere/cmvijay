@@ -1,17 +1,23 @@
 {
   "period": "Rolling 30 days",
-  "as_of": "2026-11-22T01:53:28.639430+05:30",
-  "candidates_surfaced": 193,
-  "auto_verified": 52,
+  "as_of": "2026-11-23T02:07:39.125080+05:30",
+  "candidates_surfaced": 191,
+  "auto_verified": 51,
   "auto_verified_pct": 27,
-  "escalated": 30,
-  "escalated_pct": 16,
-  "autonomous_commits": 52,
+  "escalated": 29,
+  "escalated_pct": 15,
+  "autonomous_commits": 51,
   "operator_edited": 0,
   "skipped": 110,
-  "cost_this_month_usd": 9.65,
+  "cost_this_month_usd": 9.58,
   "cost_per_published_entry_usd": 0.19,
   "autonomous_commits_list": [
+    {
+      "sha": "a375ba7",
+      "prefix": "agent",
+      "title": "🟢 TASMAC mandates digital-only payment for liquor purchases above ₹1,000",
+      "timestamp": "2026-11-22T20:37:36Z"
+    },
     {
       "sha": "967c882",
       "prefix": "agent",
@@ -125,20 +131,9 @@
       "prefix": "agent",
       "title": "🟢 Korean auto firms Hwashin and Seoyon commit ₹1,370 cr to Tamil Nadu amid AP-sh",
       "timestamp": "2026-11-11T21:09:16Z"
-    },
-    {
-      "sha": "ffd3547",
-      "prefix": "agent",
-      "title": "🔵 Speaker opens fresh disqualification inquiry into four ex-AIADMK MLAs who join",
-      "timestamp": "2026-11-10T20:47:38Z"
     }
   ],
   "escalated_list": [
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/use-of-chief-minister-c-joseph-vijays-deep-fake-videos-to-collect-money-rajasthan-youth-moves-madras-high-court-seeking-bail/article71611607.ece",
-      "reasoning": "The candidate article (The Hindu, published 10:14 AM IST on Oct 23) only reports that the bail plea was listed for hearing — it does not capture the final outcome. LiveLaw and New Indian Express, published the same afternoon, confirm that Justice N. Ramesh actually granted conditional bail to Shyabu"
-    },
     {
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/dmk-councillor-arrested-over-controversial-remark-on-karur-stampede/article71635787.ece",
@@ -286,26 +281,6 @@
     }
   ],
   "skipped_list": [
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/vijay-congratulates-tn-medallists-of-5th-asian-para-games/article71615836.ece",
-      "skip_reason": "This article documents CM Mr. Vijay congratulating TN para-athletes via a post on X and announcing cash incentives. While the monetary amounts (₹75L, ₹50L, ₹50L, ₹30L) give it a minor governance dimen"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/tvk-dmk-walk-out-of-chief-electoral-officers-meeting-on-special-summary-revision-in-tamil-nadu/article71615243.ece",
-      "skip_reason": "This article covers a walkout by TVK and DMK representatives from an Election Commission of India-convened all-party meeting on the Special Summary Revision of electoral rolls. While well-sourced acro"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/cities/chennai/chennai-northeast-monsoon-rains-tn-cm-vijay-directs-officials-to-maintain-continuous-vigil/article71600485.ece",
-      "skip_reason": "This article documents a routine administrative review — CM Mr. Vijay visiting the ICCC at Ripon Buildings on October 18, 2026 to monitor Northeast monsoon preparedness and waterlogging at 35 location"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/two-girls-from-pudukottai-sexually-assaulted-at-velankanni-lodge-two-men-arrested/article71614642.ece",
-      "skip_reason": "This article reports a criminal incident — the sexual assault of two minors in Velankanni — not a governance action. The Singappen Task Force's role was incidental (shopkeepers alerted them; they cond"
-    },
     {
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-cm-vijay-condoles-death-of-chef-damu/article71622743.ece",
@@ -835,9 +810,35 @@
       "title": "",
       "url": "https://theprint.in/india/thirupparankundram-lamp-row-aiadmk-bjp-hail-sc-order-vck-opposes-move/3104937/",
       "skip_reason": "This article covers political party reactions (AIADMK, BJP, VCK, DMK) to a Supreme Court order on the Thirupparankundram lamp dispute. The SC order itself is real and well-sourced (Bar & Bench, Nov 20"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/cm-vijay-to-hold-meeting-with-mlas-of-allies-supporting-parties/article71731205.ece",
+      "skip_reason": "This article reports a scheduled (not yet held) consultative meeting between CM Mr. Vijay and coalition/support-party MLAs, sourced entirely from unnamed 'sources.' No executive order, cabinet decisio"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/hc-judges-reference-to-harassment-of-kallakurichi-collector-triggers-call-for-action-against-tvk-mla/article71731408.ece",
+      "skip_reason": "This article is primarily about factional/political manoeuvring and judicial commentary at an awareness programme — not a governance action, executive order, cabinet decision, or policy launch. Justic"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/palaniswami-criticises-tvk-led-government-over-sc-dismissal-of-tns-cauvery-pleas/article71730986.ece",
+      "skip_reason": "This article is an opposition political statement — AIADMK chief Palaniswami's social media post criticising CM Mr. Vijay over the SC's Cauvery dismissal. While the underlying Supreme Court ruling (No"
+    },
+    {
+      "title": "",
+      "url": "https://theprint.in/india/palaniswami-slams-state-govt-over-dismissal-of-cauvery-petitions-in-sc/3105752/",
+      "skip_reason": "This article is an opposition political statement by AIADMK's Palaniswami criticising the TVK government — it is factional/political reaction content, not a governance action by the CM Vijay administr"
     }
   ],
   "recent_commits": [
+    {
+      "sha": "a375ba7",
+      "prefix": "agent",
+      "title": "🟢 TASMAC mandates digital-only payment for liquor purchases above ₹1,000",
+      "timestamp": "2026-11-22T20:37:36Z"
+    },
     {
       "sha": "967c882",
       "prefix": "agent",
@@ -891,17 +892,11 @@
       "prefix": "agent",
       "title": "🟢 TNIPC holds first meeting — 112 MoUs, ₹1.14 lakh crore proposed, 74% implement",
       "timestamp": "2026-11-15T19:36:49Z"
-    },
-    {
-      "sha": "c008e8a",
-      "prefix": "agent",
-      "title": "🟢 G.O. raises guest lecturer honoraria by ₹5,000 across Tamil Nadu government co",
-      "timestamp": "2026-11-13T20:53:12Z"
     }
   ],
   "last_run": {
-    "ts": "2026-11-22T01:53:25.643020+05:30",
-    "candidates": 3,
+    "ts": "2026-11-23T02:07:36.315479+05:30",
+    "candidates": 5,
     "published": 1,
     "escalated": 0,
     "errors": 0
