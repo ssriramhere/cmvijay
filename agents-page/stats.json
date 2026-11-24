@@ -1,16 +1,16 @@
 {
   "period": "Rolling 30 days",
-  "as_of": "2026-11-24T07:05:46.665078+05:30",
-  "candidates_surfaced": 201,
+  "as_of": "2026-11-25T04:58:39.320304+05:30",
+  "candidates_surfaced": 205,
   "auto_verified": 53,
   "auto_verified_pct": 26,
-  "escalated": 32,
-  "escalated_pct": 16,
+  "escalated": 36,
+  "escalated_pct": 18,
   "autonomous_commits": 53,
   "operator_edited": 0,
   "skipped": 114,
-  "cost_this_month_usd": 10.11,
-  "cost_per_published_entry_usd": 0.19,
+  "cost_this_month_usd": 10.47,
+  "cost_per_published_entry_usd": 0.2,
   "autonomous_commits_list": [
     {
       "sha": "5454b33",
@@ -293,24 +293,29 @@
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/tn-chief-secretary-did-not-receive-complaint-from-woman-ias-officer-over-kallakurichi-tvk-mlas-alleged-misbehaviour-madras-hc-told/article71733781.ece",
       "reasoning": "The article is well-corroborated across four outlets (The Hindu, Deccan Herald, The Week, DT Next) and involves a genuine court proceeding with named actors. However, it warrants escalation for three reasons: (1) it is politically sensitive — a ruling TVK MLA is accused of misconduct against a woman"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamizhselvi-named-vice-chairperson-of-cauvery-technical-cell-cum-inter-state-waters-wing/article71738591.ece",
+      "reasoning": "The article is a genuine governance action — a Government Order from the Water Resources Department appointing T. Tamizhselvi as vice-chairperson of the Cauvery Technical Cell-cum-Inter-State Waters Wing — and is corroborated by a second Hindu article (Nov 18) and an X post by journalist Vignesh The"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-police-register-fir-against-kallakurichi-tvk-mla-for-misbehaving-with-woman-ias-officer-madras-hc-told/article71737381.ece",
+      "reasoning": "The core facts are well-verified across multiple whitelisted sources (The Hindu, The News Minute, NDTV, ANI): an FIR was registered on 2026-11-23/24 against Kallakurichi TVK MLA C. Arul Vignesh for alleged sexual harassment of a woman IAS officer (District Collector), the Madras HC intervened, Justi"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/stalin-urges-tamil-nadu-government-to-act-against-kallakurichi-tvk-mla-over-messages-to-collector/article71737120.ece",
+      "reasoning": "The article is well-sourced and corroborated by at least four major outlets (Indian Express, Deccan Herald, Times of India, The Print), confirming an FIR under BNS Section 75 against TVK MLA C. Arul Vignesh and active Madras HC oversight. No existing site entry exists, so there is no duplication ris"
+    },
+    {
+      "title": "",
+      "url": "https://theprint.in/india/fir-registered-on-charges-of-kallakkurichi-tvk-mla-sending-obscene-message-to-collector-govt/3107353/",
+      "reasoning": "The FIR registration against TVK MLA C Arul Vignesh is confirmed by four independent outlets (ThePrint/PTI, NDTV, Rediff, Times of India), so the core facts are solid. However, escalation is warranted for three reasons: (1) This is politically sensitive — it involves a sitting MLA from CM Mr. Vijay'"
     }
   ],
   "skipped_list": [
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-cm-vijay-condoles-death-of-chef-damu/article71622743.ece",
-      "skip_reason": "This article covers CM Mr. Vijay's condolence message on the death of Chef Damu — a social/ceremonial gesture with no governance action, executive order, policy implication, or manifesto relevance. Th"
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/stalin-calls-on-dmk-cadres-to-prepare-to-oust-tvk-led-government-soon-in-tamil-nadu/article71622737.ece",
-      "skip_reason": "This article reports a speech by DMK president M.K. Stalin at a marriage function in Chennai, calling on party cadres to 'oust' the TVK-led government and predicting it will not last six months. This "
-    },
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/we-only-tried-to-make-thirumavalavan-the-chief-minister-says-dhinakaran/article71620472.ece",
-      "skip_reason": "This article is a retrospective political statement by AMMK general secretary T.T.V. Dhinakaran about opposition manoeuvring during government formation — specifically, an alleged effort to install VC"
-    },
     {
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/cm-vijay-to-chair-tn-cabinet-meeting-on-october-29/article71631327.ece",
@@ -865,6 +870,21 @@
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/implement-sc-order-on-thirupparankundram-deepam-lighting-annamalai-urges-tvk-government/article71734339.ece",
       "skip_reason": "This article is an opposition political statement by K. Annamalai urging the TVK government to comply with a Supreme Court order — it is not a governance action by the TVK government itself. The under"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/cities/Madurai/residents-accuse-tvk-man-of-demanding-party-fund-to-give-drinking-water-connection/article71739145.ece",
+      "skip_reason": "This article reports a local-level allegation — a single TVK ward functionary in Tirunelveli allegedly demanding 'party fund' from residents before facilitating drinking water connections. While the i"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/cities/Madurai/tncc-president-manickam-tagore-demands-legal-action-against-tvk-mla/article71737123.ece",
+      "skip_reason": "This article is a political demand by TNCC president Manickam Tagore (an opposition Congress MP) calling on the Tamil Nadu government to take legal action against TVK MLA Arul Vignesh. It is a politic"
+    },
+    {
+      "title": "",
+      "url": "https://theprint.in/india/palaniswami-says-kallakurichi-collector-lodged-plaint-against-tvk-mla-seeks-legislators-arrest/3107356/",
+      "skip_reason": "This article is an opposition political statement by AIADMK's Palaniswami demanding arrest of a TVK MLA and a CBI probe — it is factional/political manoeuvring, not a governance action by the TVK gove"
     }
   ],
   "recent_commits": [
@@ -930,10 +950,10 @@
     }
   ],
   "last_run": {
-    "ts": "2026-11-24T07:05:43.812715+05:30",
-    "candidates": 10,
-    "published": 2,
-    "escalated": 3,
-    "errors": 1
+    "ts": "2026-11-25T04:58:37.435435+05:30",
+    "candidates": 7,
+    "published": 0,
+    "escalated": 4,
+    "errors": 0
   }
 }
