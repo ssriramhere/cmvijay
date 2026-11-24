@@ -12,6 +12,30 @@
     }
   },
   {
+    "title": "⚖️ Election petitions filed at Madras HC challenging two TVK bypoll wins",
+    "date": "November 23, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 747,
+        "output_tokens": 528,
+        "cache_read_tokens": 1373,
+        "cache_creation_tokens": 0
+      }
+    }
+  },
+  {
+    "title": "⚖️ Supreme Court bars TN government from coercive action against SASTRA over 31.37-acre dispute",
+    "date": "November 23, 2026",
+    "reasoning": {
+      "drafter_usage": {
+        "input_tokens": 860,
+        "output_tokens": 809,
+        "cache_read_tokens": 1373,
+        "cache_creation_tokens": 0
+      }
+    }
+  },
+  {
     "title": "🟢 CM Mr. Vijay meets Renault Group CEO, urges expanded Tamil Nadu investment",
     "date": "November 19, 2026",
     "reasoning": {

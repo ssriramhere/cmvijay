@@ -1,17 +1,29 @@
 {
   "period": "Rolling 30 days",
-  "as_of": "2026-11-23T02:07:39.125080+05:30",
-  "candidates_surfaced": 191,
-  "auto_verified": 51,
-  "auto_verified_pct": 27,
-  "escalated": 29,
-  "escalated_pct": 15,
-  "autonomous_commits": 51,
+  "as_of": "2026-11-24T07:05:46.665078+05:30",
+  "candidates_surfaced": 201,
+  "auto_verified": 53,
+  "auto_verified_pct": 26,
+  "escalated": 32,
+  "escalated_pct": 16,
+  "autonomous_commits": 53,
   "operator_edited": 0,
-  "skipped": 110,
-  "cost_this_month_usd": 9.58,
+  "skipped": 114,
+  "cost_this_month_usd": 10.11,
   "cost_per_published_entry_usd": 0.19,
   "autonomous_commits_list": [
+    {
+      "sha": "5454b33",
+      "prefix": "agent",
+      "title": "⚖️ Supreme Court bars TN government from coercive action against SASTRA over 31.",
+      "timestamp": "2026-11-24T01:35:43Z"
+    },
+    {
+      "sha": "a7d9d3a",
+      "prefix": "agent",
+      "title": "⚖️ Election petitions filed at Madras HC challenging two TVK bypoll wins",
+      "timestamp": "2026-11-24T01:35:43Z"
+    },
     {
       "sha": "a375ba7",
       "prefix": "agent",
@@ -119,18 +131,6 @@
       "prefix": "agent",
       "title": "🟢 TASMAC mandates 3-year tenure cap for shop staff; A/B/C classification sets mi",
       "timestamp": "2026-11-11T21:09:17Z"
-    },
-    {
-      "sha": "2e8f0eb",
-      "prefix": "agent",
-      "title": "🟢 Minister Rajmohan announces procurement committee after library book scam surf",
-      "timestamp": "2026-11-11T21:09:16Z"
-    },
-    {
-      "sha": "7936736",
-      "prefix": "agent",
-      "title": "🟢 Korean auto firms Hwashin and Seoyon commit ₹1,370 cr to Tamil Nadu amid AP-sh",
-      "timestamp": "2026-11-11T21:09:16Z"
     }
   ],
   "escalated_list": [
@@ -278,6 +278,21 @@
       "title": "",
       "url": "https://www.thehindu.com/news/cities/chennai/ministers-remarks-hint-at-further-delays-in-ecr-4-lane-corridor-project/article71713084.ece",
       "reasoning": "The Hindu (two bylined journalists) reports that State Highways Minister Aadhav Arjuna stated on November 13, 2026 that the ₹2,100 crore ECR elevated corridor (Thiruvanmiyur–Uthandi, 13.4 km) has been referred to a high-level committee and may be cancelled, citing tender irregularities (contract awa"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/collector-files-complaint-against-kallakurichi-tvk-mla/article71736185.ece",
+      "reasoning": "This is a significant political-legal development involving a sitting TVK MLA (C. Arul Vignesh, Kallakurichi) accused of harassing a woman IAS officer (the district Collector), with an active Madras HC petition. However, there is a direct and unresolved factual contradiction between The Hindu's clai"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tn-speaker-declares-kolathur-constituency-vacant/article71735919.ece",
+      "reasoning": "The core event — Speaker J.C.D. Prabhakar formally declaring Kolathur constituency vacant following the death of TVK MLA V.S. Babu on 19 November 2026 — is confirmed by multiple sources including NDTV, New Indian Express, and Wikipedia. However, the article contains a verifiable factual error in its"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tn-chief-secretary-did-not-receive-complaint-from-woman-ias-officer-over-kallakurichi-tvk-mlas-alleged-misbehaviour-madras-hc-told/article71733781.ece",
+      "reasoning": "The article is well-corroborated across four outlets (The Hindu, Deccan Herald, The Week, DT Next) and involves a genuine court proceeding with named actors. However, it warrants escalation for three reasons: (1) it is politically sensitive — a ruling TVK MLA is accused of misconduct against a woman"
     }
   ],
   "skipped_list": [
@@ -830,9 +845,41 @@
       "title": "",
       "url": "https://theprint.in/india/palaniswami-slams-state-govt-over-dismissal-of-cauvery-petitions-in-sc/3105752/",
       "skip_reason": "This article is an opposition political statement by AIADMK's Palaniswami criticising the TVK government — it is factional/political reaction content, not a governance action by the CM Vijay administr"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/vijay-holds-consultations-with-mlas-of-tvk-allieson-demands-for-their-constituencies/article71735551.ece",
+      "skip_reason": "The article describes a routine consultation meeting between CM Mr. Vijay and alliance/supporting-party MLAs at Pamani Illam on November 23, 2026. While well-sourced (The Hindu and ANI independently c"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/cities/Madurai/vck-chief-hails-tvk-govt-for-upholding-dmk-stand-on-dheepathoon-row/article71735516.ece",
+      "skip_reason": "This article is a political speech by VCK MP Thirumavalavan at a public demonstration, praising the TVK government's stance on the Thirupparankundram dheepathoon dispute. While the underlying Supreme "
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/what-stands-atop-thiruparankundram-hill-is-a-survey-pillar-ascertains-tn-government-report/article71735742.ece",
+      "skip_reason": "This article reports a Tamil Nadu government survey report confirming the nature of a pillar atop Thiruparankundram hill as a British-era Great Trigonometrical Survey (GTS) pillar — a technical findin"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/implement-sc-order-on-thirupparankundram-deepam-lighting-annamalai-urges-tvk-government/article71734339.ece",
+      "skip_reason": "This article is an opposition political statement by K. Annamalai urging the TVK government to comply with a Supreme Court order — it is not a governance action by the TVK government itself. The under"
     }
   ],
   "recent_commits": [
+    {
+      "sha": "5454b33",
+      "prefix": "agent",
+      "title": "⚖️ Supreme Court bars TN government from coercive action against SASTRA over 31.",
+      "timestamp": "2026-11-24T01:35:43Z"
+    },
+    {
+      "sha": "a7d9d3a",
+      "prefix": "agent",
+      "title": "⚖️ Election petitions filed at Madras HC challenging two TVK bypoll wins",
+      "timestamp": "2026-11-24T01:35:43Z"
+    },
     {
       "sha": "a375ba7",
       "prefix": "agent",
@@ -880,25 +927,13 @@
       "prefix": "agent",
       "title": "🟢 CM Mr. Vijay inspects 108 emergency call centre; directs expedited ambulance p",
       "timestamp": "2026-11-17T22:05:18Z"
-    },
-    {
-      "sha": "b4ed75a",
-      "prefix": "agent",
-      "title": "🟢 Government issues orders withdrawing 600 cases against farmers and teachers",
-      "timestamp": "2026-11-16T23:15:39Z"
-    },
-    {
-      "sha": "ffc9ab7",
-      "prefix": "agent",
-      "title": "🟢 TNIPC holds first meeting — 112 MoUs, ₹1.14 lakh crore proposed, 74% implement",
-      "timestamp": "2026-11-15T19:36:49Z"
     }
   ],
   "last_run": {
-    "ts": "2026-11-23T02:07:36.315479+05:30",
-    "candidates": 5,
-    "published": 1,
-    "escalated": 0,
-    "errors": 0
+    "ts": "2026-11-24T07:05:43.812715+05:30",
+    "candidates": 10,
+    "published": 2,
+    "escalated": 3,
+    "errors": 1
   }
 }
