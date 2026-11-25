@@ -1,17 +1,23 @@
 {
   "period": "Rolling 30 days",
-  "as_of": "2026-11-25T04:58:39.320304+05:30",
-  "candidates_surfaced": 205,
-  "auto_verified": 53,
-  "auto_verified_pct": 26,
-  "escalated": 36,
-  "escalated_pct": 18,
-  "autonomous_commits": 53,
+  "as_of": "2026-11-26T04:35:39.540532+05:30",
+  "candidates_surfaced": 217,
+  "auto_verified": 54,
+  "auto_verified_pct": 25,
+  "escalated": 42,
+  "escalated_pct": 19,
+  "autonomous_commits": 54,
   "operator_edited": 0,
-  "skipped": 114,
-  "cost_this_month_usd": 10.47,
-  "cost_per_published_entry_usd": 0.2,
+  "skipped": 119,
+  "cost_this_month_usd": 11.21,
+  "cost_per_published_entry_usd": 0.21,
   "autonomous_commits_list": [
+    {
+      "sha": "d7b6a69",
+      "prefix": "agent",
+      "title": "🟢 Home Dept. G.O. withdraws 600 protest cases against farmers and teachers",
+      "timestamp": "2026-11-25T23:05:36Z"
+    },
     {
       "sha": "5454b33",
       "prefix": "agent",
@@ -124,12 +130,6 @@
       "sha": "2b716b7",
       "prefix": "agent",
       "title": "🟢 CM virtually inaugurates Raptee.HV experience centre; TIDCO commits ₹25 cr equ",
-      "timestamp": "2026-11-11T21:09:17Z"
-    },
-    {
-      "sha": "c241595",
-      "prefix": "agent",
-      "title": "🟢 TASMAC mandates 3-year tenure cap for shop staff; A/B/C classification sets mi",
       "timestamp": "2026-11-11T21:09:17Z"
     }
   ],
@@ -313,6 +313,36 @@
       "title": "",
       "url": "https://theprint.in/india/fir-registered-on-charges-of-kallakkurichi-tvk-mla-sending-obscene-message-to-collector-govt/3107353/",
       "reasoning": "The FIR registration against TVK MLA C Arul Vignesh is confirmed by four independent outlets (ThePrint/PTI, NDTV, Rediff, Times of India), so the core facts are solid. However, escalation is warranted for three reasons: (1) This is politically sensitive — it involves a sitting MLA from CM Mr. Vijay'"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/kallakurichi-tvk-mla-arul-vignesh-summoned-for-questioning-in-harassment-case/article71742298.ece",
+      "reasoning": "Two whitelisted/credible sources (The Hindu, The News Minute) corroborate the core facts: FIR registered against TVK MLA C. Arul Vignesh for harassing a woman IAS officer (District Collector J.E. Padmaja), summons served on Nov 25, Madras HC directing the investigation, and the National Commission f"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/hc-refuses-to-reject-two-election-petitions-related-to-manamadurai-and-lalgudi-constituencies/article71743706.ece",
+      "reasoning": "The article is well-sourced and corroborated by two whitelisted outlets (The Hindu and Times of India), with consistent facts across both. The Manamadurai case is directly relevant to cmvijay.ai — a TVK MLA's (D. Elangovan) Assembly seat is under active legal challenge, which has governance implicat"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/kallakurichi-police-serve-summons-on-tvk-mla/article71741206.ece",
+      "reasoning": "The core facts are well-verified across four independent outlets (The Hindu, Deccan Chronicle, India Today, The Week): Kallakurichi All Women Police served summons on TVK MLA C. Arul Vignesh on 2026-11-25 over a harassment complaint by a woman IAS officer, with the POSH Act invoked and the Madras HC"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/kallakurichi-tvk-mla-case-internal-complaints-committee-has-been-constituted-madras-high-court-told/article71741836.ece",
+      "reasoning": "The core facts are well-corroborated across three independent sources (The Hindu, New Indian Express, The South First): the Tamil Nadu government issued a G.O. constituting a four-member ICC under the POSH Act to investigate a sexual harassment complaint against Kallakurichi TVK MLA C. Arul Vignesh,"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tn-government-constitutes-4-member-panel-to-inquire-into-complaint-against-kallakurichi-tvk-mla/article71742275.ece",
+      "reasoning": "The core facts are well-verified across multiple credible sources (two The Hindu articles, NDTV, The South First, India Today): a 4-member ICC was constituted by GO dated November 24, 2026, to investigate a sexual harassment complaint by a woman IAS officer against Kallakurichi TVK MLA C. Arul Vigne"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-government-set-to-ink-70-mous-for-investments-to-the-tune-of-over-50000-crore/article71739635.ece",
+      "reasoning": "The candidate article is a pre-event piece from The Hindu (published morning of Nov 25, 2026) citing 'sources' for 70 MoUs / ₹50,000 crore at the 2nd VETTRI Investment and Conversion Conclave. Post-event reporting from multiple corroborating sources (UNI India, Utkarsh/current affairs aggregator, Bu"
     }
   ],
   "skipped_list": [
@@ -885,9 +915,40 @@
       "title": "",
       "url": "https://theprint.in/india/palaniswami-says-kallakurichi-collector-lodged-plaint-against-tvk-mla-seeks-legislators-arrest/3107356/",
       "skip_reason": "This article is an opposition political statement by AIADMK's Palaniswami demanding arrest of a TVK MLA and a CBI probe — it is factional/political manoeuvring, not a governance action by the TVK gove"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadus-water-dispute-with-karnataka-palaniswami-dhinakaran-criticise-tvk-government/article71741699.ece",
+      "skip_reason": "This article is squarely about opposition political criticism — AIADMK's Palaniswami and AMMK's Dhinakaran attacking the TVK government over the Karnataka water dispute. While the underlying Karnataka"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/bjp-accuses-tamil-nadu-government-india-bloc-of-contempt-in-thirupparankundram-issue/article71741932.ece",
+      "skip_reason": "This article is a BJP press conference statement by MP Sudhanshu Trivedi making political accusations against the Tamil Nadu government and the INDIA alliance — characterising their actions as driven "
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/udhayanidhi-stalin-submits-petition-to-tamil-nadu-dgp-demanding-arrest-of-kallakurichi-and-thuraiyur-tvk-mlas/article71741706.ece",
+      "skip_reason": "This article reports on an opposition political action — Leader of Opposition Udhayanidhi Stalin (DMK) submitting a petition to the Tamil Nadu DGP demanding arrest of two TVK MLAs and CBI transfer of "
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/before-arohara-for-tamil-nadu-cm-vijay-two-eminent-musicians-composed-ragas-in-praise-of-jayalalithaa/article71738102.ece",
+      "skip_reason": "This article is a piece of political and cultural commentary — it contextualises the 'Arohara' chant controversy by drawing historical parallels to musical tributes made to former CM Jayalalithaa. The"
+    },
+    {
+      "title": "",
+      "url": "https://theprint.in/india/kallakurichi-mla-row-udhayanidhi-stalin-submits-complaint-to-dgp-demands-arrest-cbi-probe/3108409/",
+      "skip_reason": "This article documents an opposition political action — DMK Leader of Opposition Udhayanidhi Stalin filing a complaint with the TN DGP against a TVK MLA. While the underlying incident (alleged harassm"
     }
   ],
   "recent_commits": [
+    {
+      "sha": "d7b6a69",
+      "prefix": "agent",
+      "title": "🟢 Home Dept. G.O. withdraws 600 protest cases against farmers and teachers",
+      "timestamp": "2026-11-25T23:05:36Z"
+    },
     {
       "sha": "5454b33",
       "prefix": "agent",
@@ -941,19 +1002,13 @@
       "prefix": "agent",
       "title": "🟢 TN ministers submit ₹9,618 cr maritime memorandum to Centre; education dues ra",
       "timestamp": "2026-11-17T22:05:18Z"
-    },
-    {
-      "sha": "68625a2",
-      "prefix": "agent",
-      "title": "🟢 CM Mr. Vijay inspects 108 emergency call centre; directs expedited ambulance p",
-      "timestamp": "2026-11-17T22:05:18Z"
     }
   ],
   "last_run": {
-    "ts": "2026-11-25T04:58:37.435435+05:30",
-    "candidates": 7,
-    "published": 0,
-    "escalated": 4,
+    "ts": "2026-11-26T04:35:36.927098+05:30",
+    "candidates": 12,
+    "published": 1,
+    "escalated": 6,
     "errors": 0
   }
 }
