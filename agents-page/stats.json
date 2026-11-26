@@ -1,17 +1,23 @@
 {
   "period": "Rolling 30 days",
-  "as_of": "2026-11-26T04:35:39.540532+05:30",
-  "candidates_surfaced": 217,
+  "as_of": "2026-11-27T04:24:50.802420+05:30",
+  "candidates_surfaced": 226,
   "auto_verified": 54,
-  "auto_verified_pct": 25,
-  "escalated": 42,
-  "escalated_pct": 19,
+  "auto_verified_pct": 24,
+  "escalated": 45,
+  "escalated_pct": 20,
   "autonomous_commits": 54,
   "operator_edited": 0,
-  "skipped": 119,
-  "cost_this_month_usd": 11.21,
-  "cost_per_published_entry_usd": 0.21,
+  "skipped": 125,
+  "cost_this_month_usd": 11.67,
+  "cost_per_published_entry_usd": 0.22,
   "autonomous_commits_list": [
+    {
+      "sha": "75ce3dc",
+      "prefix": "agent",
+      "title": "🟢 148 houses inaugurated at Krishnagiri Sri Lankan Tamil camp; cash assistance e",
+      "timestamp": "2026-11-26T22:54:47Z"
+    },
     {
       "sha": "d7b6a69",
       "prefix": "agent",
@@ -124,12 +130,6 @@
       "sha": "00bf127",
       "prefix": "agent",
       "title": "🟢 Justice M.V. Muralidharan appointed chairperson of TN SC/ST Commission",
-      "timestamp": "2026-11-11T21:09:17Z"
-    },
-    {
-      "sha": "2b716b7",
-      "prefix": "agent",
-      "title": "🟢 CM virtually inaugurates Raptee.HV experience centre; TIDCO commits ₹25 cr equ",
       "timestamp": "2026-11-11T21:09:17Z"
     }
   ],
@@ -343,6 +343,21 @@
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-government-set-to-ink-70-mous-for-investments-to-the-tune-of-over-50000-crore/article71739635.ece",
       "reasoning": "The candidate article is a pre-event piece from The Hindu (published morning of Nov 25, 2026) citing 'sources' for 70 MoUs / ₹50,000 crore at the 2nd VETTRI Investment and Conversion Conclave. Post-event reporting from multiple corroborating sources (UNI India, Utkarsh/current affairs aggregator, Bu"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/supreme-court-to-hear-contempt-pleas-in-thirupparankundram-deepathoon-lamp-lighting-row-on-november-27-2026/article71745742.ece",
+      "reasoning": "The core facts are well-corroborated across five independent outlets (The Hindu, Bar & Bench, Times of India, Deccan Herald, New Indian Express): the Supreme Court agreed on November 26, 2026 to list contempt pleas for hearing on November 27, following the Tamil Nadu government's non-compliance with"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/videos/shows/watch-vijay-promised-womens-safety-did-his-government-deliver-focus-tamil-nadu/article71747412.ece",
+      "reasoning": "The core facts are strongly verified across five independent outlets (The Hindu, Indian Express, Deccan Herald, Times of India, Deccan Chronicle): Kallakurichi TVK MLA C. Arul Vignesh was booked on a harassment complaint by a woman IAS officer (the District Collector), police summons were served on "
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/governor-arlekar-writes-to-cm-vijay-expressing-concerns-over-vice-chancellor-vacancies-in-state-universities/article71746713.ece",
+      "reasoning": "The article is well-sourced and factually consistent across four independent outlets (The Hindu, Hindustan Times, India Today, Times of India, The South First). The core facts — Governor Arlekar's letter dated 25 November 2026 to CM Mr. Vijay, the VC vacancy dispute, the Convenor Committee arrangeme"
     }
   ],
   "skipped_list": [
@@ -940,9 +955,45 @@
       "title": "",
       "url": "https://theprint.in/india/kallakurichi-mla-row-udhayanidhi-stalin-submits-complaint-to-dgp-demands-arrest-cbi-probe/3108409/",
       "skip_reason": "This article documents an opposition political action — DMK Leader of Opposition Udhayanidhi Stalin filing a complaint with the TN DGP against a TVK MLA. While the underlying incident (alleged harassm"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/pil-filed-in-madras-hc-seeking-cbi-probe-into-400-crore-schools-fraud-case/article71747075.ece",
+      "skip_reason": "This article reports a PIL filing — a legal petition, not a court ruling or government action. The core governance-relevant allegation (that Finance Minister Marie Wilson has not been examined by CCB "
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/kallakurichi-tvk-mla-case-dmk-former-mp-moves-madras-high-court-seeking-cbi-probe/article71746416.ece",
+      "skip_reason": "This article covers a PIL filed by a DMK former MP seeking a CBI probe into a TVK MLA's sexual harassment case — it is opposition-initiated legal manoeuvring, not a governance action by the CM's admin"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/no-need-for-cbi-probe-in-kallakurichi-tvk-mla-case-says-thirumavalavan/article71746154.ece",
+      "skip_reason": "This article is a political statement by VCK leader Thol. Thirumavalavan opposing a CBI probe into the Kallakurichi TVK MLA harassment case. While the underlying scandal (MLA C. Arul Vignesh allegedly"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-cm-vijay-warns-students-against-corruption-says-steps-being-taken-to-curb-it/article71746078.ece",
+      "skip_reason": "This article covers a speech by Mr. Vijay at a TVK party-organised student felicitation event in Neelankarai. The content is motivational/rhetorical — warning students against corruption and drugs — w"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/cpim-urges-tamil-nadu-government-to-act-against-kallakurichi-tvk-mla-arul-vignesh/article71745890.ece",
+      "skip_reason": "This article is a political party statement — CPI(M) Politburo member U. Vasuki urging the Tamil Nadu government to act against TVK MLA Arul Vignesh. There is no executive order, cabinet decision, cou"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/aiadmk-announces-protests-across-tamil-nadu-against-tvk-government-on-december-2-2026/article71745989.ece",
+      "skip_reason": "This article describes an opposition party (AIADMK) announcing a future protest rally — a scheduled political event, not a governance action by the TVK government. It contains no executive order, cabi"
     }
   ],
   "recent_commits": [
+    {
+      "sha": "75ce3dc",
+      "prefix": "agent",
+      "title": "🟢 148 houses inaugurated at Krishnagiri Sri Lankan Tamil camp; cash assistance e",
+      "timestamp": "2026-11-26T22:54:47Z"
+    },
     {
       "sha": "d7b6a69",
       "prefix": "agent",
@@ -996,19 +1047,13 @@
       "prefix": "agent",
       "title": "⚖️ Madras HC strikes down TN's inter-state mineral transport ban as unconstituti",
       "timestamp": "2026-11-17T22:05:19Z"
-    },
-    {
-      "sha": "39f4174",
-      "prefix": "agent",
-      "title": "🟢 TN ministers submit ₹9,618 cr maritime memorandum to Centre; education dues ra",
-      "timestamp": "2026-11-17T22:05:18Z"
     }
   ],
   "last_run": {
-    "ts": "2026-11-26T04:35:36.927098+05:30",
-    "candidates": 12,
+    "ts": "2026-11-27T04:24:47.260184+05:30",
+    "candidates": 10,
     "published": 1,
-    "escalated": 6,
+    "escalated": 3,
     "errors": 0
   }
 }
