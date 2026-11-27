@@ -1,17 +1,29 @@
 {
   "period": "Rolling 30 days",
-  "as_of": "2026-11-27T04:24:50.802420+05:30",
-  "candidates_surfaced": 226,
-  "auto_verified": 54,
-  "auto_verified_pct": 24,
-  "escalated": 45,
+  "as_of": "2026-11-28T04:06:18.105131+05:30",
+  "candidates_surfaced": 234,
+  "auto_verified": 53,
+  "auto_verified_pct": 23,
+  "escalated": 47,
   "escalated_pct": 20,
-  "autonomous_commits": 54,
+  "autonomous_commits": 53,
   "operator_edited": 0,
-  "skipped": 125,
-  "cost_this_month_usd": 11.67,
-  "cost_per_published_entry_usd": 0.22,
+  "skipped": 132,
+  "cost_this_month_usd": 12.05,
+  "cost_per_published_entry_usd": 0.23,
   "autonomous_commits_list": [
+    {
+      "sha": "c85a8e3",
+      "prefix": "agent",
+      "title": "⚖️ Madras HC refuses to dismiss election petition against CM Mr. Vijay's Perambu",
+      "timestamp": "2026-11-27T22:36:15Z"
+    },
+    {
+      "sha": "612cfc9",
+      "prefix": "agent",
+      "title": "🟢 CM reviews rainfall deficit; issues six-point directive, allocates ₹13.26 cr f",
+      "timestamp": "2026-11-27T22:36:13Z"
+    },
     {
       "sha": "75ce3dc",
       "prefix": "agent",
@@ -119,18 +131,6 @@
       "prefix": "agent",
       "title": "🟢 CM orders ₹5.25 cr additional relief for 2018 Thoothukudi anti-Sterlite victim",
       "timestamp": "2026-11-12T21:27:09Z"
-    },
-    {
-      "sha": "e2eb19b",
-      "prefix": "agent",
-      "title": "⚖️ PMO sanctions prosecution of two IAS officers in ₹98.25-cr tender case",
-      "timestamp": "2026-11-12T21:27:08Z"
-    },
-    {
-      "sha": "00bf127",
-      "prefix": "agent",
-      "title": "🟢 Justice M.V. Muralidharan appointed chairperson of TN SC/ST Commission",
-      "timestamp": "2026-11-11T21:09:17Z"
     }
   ],
   "escalated_list": [
@@ -358,14 +358,19 @@
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/governor-arlekar-writes-to-cm-vijay-expressing-concerns-over-vice-chancellor-vacancies-in-state-universities/article71746713.ece",
       "reasoning": "The article is well-sourced and factually consistent across four independent outlets (The Hindu, Hindustan Times, India Today, Times of India, The South First). The core facts — Governor Arlekar's letter dated 25 November 2026 to CM Mr. Vijay, the VC vacancy dispute, the Convenor Committee arrangeme"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/kallakurichi-tvk-mla-arul-vignesh-arrested-on-charges-of-harassing-ias-officer/article71751055.ece",
+      "reasoning": "The arrest of Kallakurichi TVK MLA C. Arul Vignesh on November 27, 2026 is a confirmed, significant political-governance development corroborated by two independent whitelisted sources (The Hindu and The Statesman). The site state shows no existing entry on this event, so there is no duplication. Ho"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/thirupparankundram-deepathoon-row-tamil-nadu-governor-arlekar-seeks-cm-vijays-report/article71744124.ece",
+      "reasoning": "The core facts are well-corroborated across The Hindu, Rediff/PTI, Times Now, and SC Observer: Governor Arlekar did invoke Article 167(b) on November 25, 2026, seeking a report from CM Mr. Vijay on non-compliance with the Supreme Court's November 20 Thirupparankundram deepathoon order. However, esca"
     }
   ],
   "skipped_list": [
-    {
-      "title": "",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/cm-vijay-to-chair-tn-cabinet-meeting-on-october-29/article71631327.ece",
-      "skip_reason": "This article is a pre-event announcement of a cabinet meeting scheduled for October 29, 2026 — published two days before the meeting occurs. No governance decisions have been taken yet; the agenda ite"
-    },
     {
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/mids-professor-alleges-police-harassment-over-fake-instagram-account/article71637364.ece",
@@ -985,9 +990,61 @@
       "title": "",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/aiadmk-announces-protests-across-tamil-nadu-against-tvk-government-on-december-2-2026/article71745989.ece",
       "skip_reason": "This article describes an opposition party (AIADMK) announcing a future protest rally — a scheduled political event, not a governance action by the TVK government. It contains no executive order, cabi"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-government-acted-against-hindus-says-bjp/article71751066.ece",
+      "skip_reason": "This article is squarely opposition political rhetoric — a BJP president's social media statement characterizing the TN government as 'anti-Sanatan', paired with PM Modi's symbolic Lord Murugan tweet."
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/thirupparankundram-row-vijay-led-govt-brought-unprecedented-threats-to-tamil-nadus-traditions-religious-harmony-and-state-rights-says-stalin/article71751796.ece",
+      "skip_reason": "This article is an opposition political statement by DMK president M.K. Stalin criticising the Vijay government over the Thirupparankundram/Deepathoon Supreme Court row. It contains no governance acti"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/chennai-mayor-to-take-legal-action-over-ai-generated-video/article71747931.ece",
+      "skip_reason": "This article describes a DMK Chennai Mayor (R. Priya) accusing TVK's 'Vulgar Warriors' of circulating an AI-generated deepfake video and announcing legal action via a social media post. There is no go"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/stalin-seeks-action-against-those-who-pressured-ias-officer-to-settle-harassment-complaint-against-tvk-mla/article71750977.ece",
+      "skip_reason": "This article is an opposition political statement — DMK president M.K. Stalin's X post criticising the TVK government's handling of the Arul Vignesh harassment case. While the underlying MLA arrest is"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/cities/Madurai/congress-mp-says-kallakurichi-mla-issue-is-a-setback-to-tvk-govt/article71747682.ece",
+      "skip_reason": "This article is a political reaction statement by Congress MP Karti Chidambaram criticising the TVK government's handling of the Kallakurichi MLA harassment case — it contains no governance action, ex"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/traffic-disrupted-as-truck-carrying-liquor-overturns-on-orr-near-avadi/article71750238.ece",
+      "skip_reason": "This article reports a road accident — a TASMAC liquor truck overturning on the Outer Ring Road near Avadi, injuring four people and causing a traffic jam. It is a routine road incident report with no"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/cm-vijay-honours-former-ministers-vv-swaminathan-hv-hande-on-their-centenaries/article71749883.ece",
+      "skip_reason": "This article describes a ceremonial felicitation event at the Secretariat where CM Mr. Vijay honoured two centenarian former ministers — a gesture of respect with no governance action, executive order"
+    },
+    {
+      "title": "",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-govt-has-acquired-only-24-of-land-required-for-railway-projects-ashwini-vaishnav/article71747955.ece",
+      "skip_reason": "This article reports a statement made by Union Railways Minister Ashwini Vaishnaw — a BJP Central government minister — at a BJP party event (Constitution Day), criticising the TVK state government's "
     }
   ],
   "recent_commits": [
+    {
+      "sha": "c85a8e3",
+      "prefix": "agent",
+      "title": "⚖️ Madras HC refuses to dismiss election petition against CM Mr. Vijay's Perambu",
+      "timestamp": "2026-11-27T22:36:15Z"
+    },
+    {
+      "sha": "612cfc9",
+      "prefix": "agent",
+      "title": "🟢 CM reviews rainfall deficit; issues six-point directive, allocates ₹13.26 cr f",
+      "timestamp": "2026-11-27T22:36:13Z"
+    },
     {
       "sha": "75ce3dc",
       "prefix": "agent",
@@ -1035,25 +1092,13 @@
       "prefix": "agent",
       "title": "🟢 CM inaugurates ₹174.97 cr Chennai civic projects; Amazon-funded modular STP at",
       "timestamp": "2026-11-18T21:49:20Z"
-    },
-    {
-      "sha": "130017c",
-      "prefix": "agent",
-      "title": "🟢 CM Mr. Vijay virtually inaugurates hospital and college infrastructure worth ₹",
-      "timestamp": "2026-11-18T21:49:20Z"
-    },
-    {
-      "sha": "d692168",
-      "prefix": "agent",
-      "title": "⚖️ Madras HC strikes down TN's inter-state mineral transport ban as unconstituti",
-      "timestamp": "2026-11-17T22:05:19Z"
     }
   ],
   "last_run": {
-    "ts": "2026-11-27T04:24:47.260184+05:30",
-    "candidates": 10,
-    "published": 1,
-    "escalated": 3,
+    "ts": "2026-11-28T04:06:15.216372+05:30",
+    "candidates": 12,
+    "published": 2,
+    "escalated": 2,
     "errors": 0
   }
 }
